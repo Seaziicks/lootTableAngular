@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
@@ -26,91 +26,79 @@ export class LootTableComponent implements OnInit {
 
    idMonstre = -1;
 
-  stateForm: FormGroup = this.formBuialder.group({
-    stateGroup: '',
-  });
+  animalForm: FormGroup;
 
-  stateGroups: StateGroup[] = [{
-    letter: 'A',
-    names: ['Alabama', 'Alaska', 'Arizona', 'Arkansas']
-  }, {
-    letter: 'C',
-    names: ['California', 'Colorado', 'Connecticut']
-  }, {
-    letter: 'D',
-    names: ['Delaware']
-  }, {
-    letter: 'F',
-    names: ['Florida']
-  }, {
-    letter: 'G',
-    names: ['Georgia']
-  }, {
-    letter: 'H',
-    names: ['Hawaii']
-  }, {
-    letter: 'I',
-    names: ['Idaho', 'Illinois', 'Indiana', 'Iowa']
-  }, {
-    letter: 'K',
-    names: ['Kansas', 'Kentucky']
-  }, {
-    letter: 'L',
-    names: ['Louisiana']
-  }, {
-    letter: 'M',
-    names: ['Maine', 'Maryland', 'Massachusetts', 'Michigan',
-      'Minnesota', 'Mississippi', 'Missouri', 'Montana']
-  }, {
-    letter: 'N',
-    names: ['Nebraska', 'Nevada', 'New Hampshire', 'New Jersey',
-      'New Mexico', 'New York', 'North Carolina', 'North Dakota']
-  }, {
-    letter: 'O',
-    names: ['Ohio', 'Oklahoma', 'Oregon']
-  }, {
-    letter: 'P',
-    names: ['Pennsylvania']
-  }, {
-    letter: 'R',
-    names: ['Rhode Island']
-  }, {
-    letter: 'S',
-    names: ['South Carolina', 'South Dakota']
-  }, {
-    letter: 'T',
-    names: ['Tennessee', 'Texas']
-  }, {
-    letter: 'U',
-    names: ['Utah']
-  }, {
-    letter: 'V',
-    names: ['Vermont', 'Virginia']
-  }, {
-    letter: 'W',
-    names: ['Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
-  }];
+  species = [
+    'Castor',
+    'Cat',
+    'Dog',
+    'Dragon',
+    'Horse',
+    'Snake'
+  ];
 
-  stateGroupOptions: Observable<StateGroup[]>;
+  speciesGroup: SpeciesGroup[] = [
+    {
+      letter : 'C',
+      name : [ 'Castor', 'Cat']
+    },
+    {
+      letter : 'D',
+      name : [ 'Dog', 'Dragon']
+    }
+  ];
 
-  constructor(private formBuialder: FormBuilder) {}
+  speciesOptions: Observable<string[]>;
+  speciesGroupeOptions: Observable<SpeciesGroup[]>;
+
+  constructor(private fb: FormBuilder) {
+    this.buildForm();
+  }
 
   ngOnInit() {
-    this.stateGroupOptions = this.stateForm.get('stateGroup')!.valueChanges
+    this.speciesOptions = this.animalForm.get('species').valueChanges
       .pipe(
         startWith(''),
-        map(value => this._filterGroup(value))
+        map(val => this.filter(val))
+      );
+
+    this.speciesGroupeOptions = this.animalForm.get('speciesGroup').valueChanges
+      .pipe(
+        startWith(''),
+        map(val => this.filterGroup(val))
       );
   }
 
-  private _filterGroup(value: string): StateGroup[] {
-    if (value) {
-      return this.stateGroups
-        .map(group => ({letter: group.letter, names: filter(group.names, value)}))
-        .filter(group => group.names.length > 0);
-    }
-
-    return this.stateGroups;
+  filter(val: string): string[] {
+    const res = this.species.filter(name =>
+      name.toLowerCase().indexOf(val) === 0);
+    return res;
   }
 
+  filterGroup(val: string): SpeciesGroup[] {
+    if (val) {
+      return this.speciesGroup
+        .map(group => ({ letter: group.letter, name: this._filter(group.name, val) }))
+        .filter(group => group.name.length > 0);
+    }
+
+    return this.speciesGroup;
+  }
+
+  private _filter(opt: string[], val: string) {
+    const filterValue = val.toLowerCase();
+    return opt.filter(item => item.toLowerCase().startsWith(filterValue));
+  }
+
+  buildForm() {
+    this.animalForm = this.fb.group({
+      species: ['', [Validators.required]],
+      speciesGroup: ['', [Validators.required]]
+    });
+  }
+}
+
+class SpeciesGroup {
+  letter: string;
+  name: string[];
 }
