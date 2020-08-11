@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LootTableComponent } from './loot-table/loot-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LootTableComponent
   ],
   imports: [
     BrowserModule,
