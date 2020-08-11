@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@media only screen and (min-width:1200px) and (min-height:720px) {
+  body {
+    /*overflow: hidden;*/
+  }
+}
+
+.increase-popover-width{
+  max-width: 800px!important;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  font-size: 15px;
+  width : 100px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+.tab button {
+  width : 122px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  overflow : auto;
+}
+
+
+/*--- ScrollBar pour le choix et le modification des effets ---*/
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger{ height: 55px; }
+
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9); background-color: rgba(100, 25, 25, 0.9); }
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5); background-color: rgba(175,0,0,0.5); }

@@ -1,1 +1,33 @@
-<p>loot-table works!</p>
+<div id="fakebody">
+  <div class="principal">
+    <div id="caracterSelection" class="caracterSelection">
+      <h3 *ngIf="idMonstre == -1">Selectionnez un monstre</h3>
+
+
+      <form [formGroup]="stateForm">
+        <mat-form-field>
+          <input type="text"
+                 matInput
+                 placeholder="States Group"
+                 formControlName="stateGroup"
+                 required
+                 [matAutocomplete]="autoGroup">
+          <mat-autocomplete #autoGroup="matAutocomplete">
+            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+              <mat-option *ngFor="let name of group.names" [value]="name">
+                {{name}}
+              </mat-option>
+            </mat-optgroup>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AutocompleteOptgroupComponent} from '../autocomplete-optgroup/autocomplete-optgroup.component';
 
 @Component({
   selector: 'app-loot-table',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LootTableComponent implements OnInit {
 
-  constructor() { }
+   idMonstre = -1;
+  private autoComplete: AutocompleteOptgroupComponent;
+   stateForm = this.autoComplete.stateForm;
+   stateGroupOptions = this.autoComplete.stateGroupOptions;
+
+  constructor(autoComplete: AutocompleteOptgroupComponent) { }
 
   ngOnInit(): void {
   }
