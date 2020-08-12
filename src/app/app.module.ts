@@ -9,8 +9,11 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import {HttpClientModule} from '@angular/common/http';
+import {DemoMaterialModule} from './material-module';
+import {MatNativeDateModule} from '@angular/material/core';
 import {AutocompleteOptgroupComponent} from './loot-table/autocomplete-optgroup-component';
-import {MatInputModule} from '@angular/material/input';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 
 
@@ -18,7 +21,7 @@ import {MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     LootTableComponent,
-    AutocompleteOptgroupComponent
+    AutocompleteOptgroupComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,12 +31,17 @@ import {MatInputModule} from '@angular/material/input';
     ReactiveFormsModule,
     MatAutocompleteModule,
     MatFormFieldModule,
-    MatInputModule
+    HttpClientModule,
+    DemoMaterialModule,
+    MatNativeDateModule,
   ],
-  entryComponents: [],
+  entryComponents: [AutocompleteOptgroupComponent],
   bootstrap: [AppComponent],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
 })
 export class AppModule { }
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
