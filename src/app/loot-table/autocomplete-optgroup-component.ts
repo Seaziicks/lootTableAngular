@@ -3,10 +3,10 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 
-export const filter = (opt: string[], value: string): string[] => {
+export const filter = (opt: Monstre[], value: string): Monstre[] => {
   const filterValue = value.toLowerCase();
 
-  return opt.filter(item => item.toLowerCase().indexOf(filterValue) === 0);
+  return opt.filter(item => item.libelle.toLowerCase().indexOf(filterValue) !== -1);
 };
 
 /**
@@ -38,8 +38,8 @@ export class AutocompleteOptgroupComponent implements OnInit {
   private _filterGroup(value: string): MonstreGroupe[] {
     if (value) {
       return this.monsterGroupes
-        .map(group => ({letter: group.letter, names: filter(group.names, value)}))
-        .filter(group => group.names.length > 0);
+        .map(group => ({Famille: group.Famille, Membres: filter(group.Membres, value)}))
+        .filter(group => group.Membres.length > 0);
     }
 
     return this.monsterGroupes;

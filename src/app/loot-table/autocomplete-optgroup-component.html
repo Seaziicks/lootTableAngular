@@ -8,9 +8,9 @@
              [matAutocomplete]="autoGroup">
       <!-- #docregion mat-autocomplete -->
       <mat-autocomplete #autoGroup="matAutocomplete">
-        <mat-optgroup *ngFor="let group of monstreGroupOptions | async" [label]="group.letter">
-          <mat-option *ngFor="let name of group.names" [value]="name">
-            {{name}}
+        <mat-optgroup *ngFor="let group of monstreGroupOptions | async" [label]="group.Famille">
+          <mat-option *ngFor="let name of group.Membres" [value]="name.libelle">
+            {{name.libelle}}
           </mat-option>
         </mat-optgroup>
       </mat-autocomplete>
