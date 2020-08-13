@@ -2,10 +2,10 @@
   <div class="principal">
     <div id="caracterSelection" class="caracterSelection">
       <h3>Selectionnez un monstre</h3>
-        <app-autocomplete-optgroup-component (monstreEventEmitter)="selectionMonstre($event)"
+        <app-autocomplete-groupe (monstreEventEmitter)="selectionMonstre($event)"
                                              [monsterGroupes]="monstresGroupes">
           loading
-        </app-autocomplete-optgroup-component>
+        </app-autocomplete-groupe>
     </div>
     <div style="width: 100%">
       <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>

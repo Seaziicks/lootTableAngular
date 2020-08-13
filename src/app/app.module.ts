@@ -12,8 +12,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {DemoMaterialModule} from './material-module';
 import {MatNativeDateModule} from '@angular/material/core';
-import {AutocompleteOptgroupComponent} from './loot-table/autocomplete-optgroup-component';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { AutocompleteGroupeComponent } from './autocomplete-groupe/autocomplete-groupe.component';
 
 
 
@@ -21,7 +21,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
   declarations: [
     AppComponent,
     LootTableComponent,
-    AutocompleteOptgroupComponent,
+    AutocompleteGroupeComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +35,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
     DemoMaterialModule,
     MatNativeDateModule,
   ],
-  entryComponents: [AutocompleteOptgroupComponent],
+  entryComponents: [],
   bootstrap: [AppComponent],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },

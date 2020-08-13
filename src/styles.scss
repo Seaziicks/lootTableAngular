@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: red;
-  opacity: 1; /* Firefox */
-}
+
 body {
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
@@ -79,5 +76,7 @@ body {
 .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger{ height: 55px; }
 
 .mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9); background-color: rgba(100, 25, 25, 0.9); }
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5); background-color: rgba(175,0,0,0.5); }
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9);
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5);
+}

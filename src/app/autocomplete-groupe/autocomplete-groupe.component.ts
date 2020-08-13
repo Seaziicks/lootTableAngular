@@ -13,11 +13,12 @@ export const filter = (opt: Monstre[], value: string): Monstre[] => {
  * @title Option groups autocomplete
  */
 @Component({
-  selector: 'app-autocomplete-optgroup-component',
-  templateUrl: './autocomplete-optgroup-component.html',
+  selector: 'app-autocomplete-groupe',
+  templateUrl: './autocomplete-groupe.component.html',
+  styleUrls: ['./autocomplete-groupe.component.scss']
 })
+export class AutocompleteGroupeComponent implements OnInit {
 
-export class AutocompleteOptgroupComponent implements OnInit {
   monstreForm: FormGroup = this.formBuilder.group({
     monstreGroup: '',
   });
@@ -54,3 +55,4 @@ export class AutocompleteOptgroupComponent implements OnInit {
     // alert((event.srcElement as Element).nodeValue);
   }
 }
+
