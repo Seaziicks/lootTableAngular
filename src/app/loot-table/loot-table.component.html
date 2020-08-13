@@ -1,10 +1,66 @@
 <div id="fakebody">
   <div class="principal">
     <div id="caracterSelection" class="caracterSelection">
-      <h3 *ngIf="idMonstre == -1">Selectionnez un monstre</h3>
+      <h3>Selectionnez un monstre</h3>
+        <app-autocomplete-optgroup-component (monstreEventEmitter)="selectionMonstre($event)"
+                                             [monsterGroupes]="monstresGroupes">
+          loading
+        </app-autocomplete-optgroup-component>
+    </div>
+    <div style="width: 100%">
+      <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
+      <form class="needs-validation" id="competenceEffectForm">
+        <div class="form-row">
+          <div class="col-md-2 mb-3" *ngIf="monstreCourrant">
+            <label for="validationEffectOrder">Dé de drop
+            </label>
+            <input min="1" max="20" type="number" class="form-control" id="validationEffectOrder"
+                   name="validationEffectOrder"
+                   placeholder="Dé de drop" [(ngModel)]="this.deDeDrop" (keyup)="selectionLoot($event)" required>
+          </div>
 
-        <app-autocomplete-optgroup-component [monsterGroupes]="monstresGroupesBis">loading</app-autocomplete-optgroup-component>
-
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.deDeDrop >= this.getMinRoll('Cuivre') && this.deDeDrop <= this.getMaxRoll('Cuivre')">
+            <label for="validationCuivre"> Pièces de cuivres : 1D{{this.getDicePower('Cuivre')}} </label>
+            <input min="1" max="37" type="number" class="form-control" id="validationCuivre"
+                   name="validationCuivre"
+                   placeholder="Cuivre"
+                   [(ngModel)]="this.Cuivre" required>
+          </div>
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.deDeDrop >= this.getMinRoll('Argent') && this.deDeDrop <= this.getMaxRoll('Argent')">
+            <label for="validationArgent"> Pièces d'Argent : 1D{{this.getDicePower('Argent')}} </label>
+            <input min="1" max="37" type="number" class="form-control" id="validationArgent"
+                   name="validationArgent"
+                   placeholder="Argent"
+                   [(ngModel)]="this.Argent" required>
+          </div>
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.deDeDrop >= this.getMinRoll('Or') && this.deDeDrop <= this.getMaxRoll('Or')">
+            <label for="validationOr"> Pièces d'Or : 1D{{this.getDicePower('Or')}} </label>
+            <input min="1" max="37" type="number" class="form-control" id="validationOr"
+                   name="validationOr"
+                   placeholder="Pièce d'Or"
+                   [(ngModel)]="this.Or" required>
+          </div>
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.deDeDrop >= this.getMinRoll('Objet Magique') && this.deDeDrop <= this.getMaxRoll('Objet Magique')">
+            <label for="validationObjetMagique"> Objet Magique : 1D{{this.getDicePower('Objet Magique')}} </label>
+            <input min="1" max="37" type="number" class="form-control" id="validationObjetMagique"
+                   name="validationObjetMagique"
+                   placeholder="ObjetMagique"
+                   [(ngModel)]="this.ObjetMagique" required>
+          </div>
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.deDeDrop >= this.getMinRoll('Objet Maudit') && this.deDeDrop <= this.getMaxRoll('Objet Maudit')">
+            <label for="validationObjetMaudit"> Objet Maudit : 1D{{this.getDicePower('Objet Maudit')}} </label>
+            <input min="1" max="37" type="number" class="form-control" id="validationObjetMaudit"
+                   name="validationObjetMaudit"
+                   placeholder="ObjetMaudit"
+                   [(ngModel)]="this.ObjetMaudit" required>
+          </div>
+        </div>
+      </form>
     </div>
 
   </div>

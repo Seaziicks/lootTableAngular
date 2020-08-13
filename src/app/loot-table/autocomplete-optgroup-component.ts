@@ -1,12 +1,12 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 
 export const filter = (opt: Monstre[], value: string): Monstre[] => {
-  const filterValue = value.toLowerCase();
+  const filterValue = value.toLowerCase().trim();
 
-  return opt.filter(item => item.libelle.toLowerCase().indexOf(filterValue) !== -1);
+  return opt.filter(item => item.libelle.toLowerCase().trim().indexOf(filterValue) !== -1);
 };
 
 /**
@@ -22,6 +22,7 @@ export class AutocompleteOptgroupComponent implements OnInit {
     monstreGroup: '',
   });
   @Input() monsterGroupes: MonstreGroupe[];
+  @Output() monstreEventEmitter = new EventEmitter<Monstre>();
 
   monstreGroupOptions: Observable<MonstreGroupe[]>;
 
@@ -43,5 +44,13 @@ export class AutocompleteOptgroupComponent implements OnInit {
     }
 
     return this.monsterGroupes;
+  }
+
+  selection(monstre: Monstre) {
+    this.monstreEventEmitter.emit(monstre);
+  }
+
+  handleEmpty() {
+    // alert((event.srcElement as Element).nodeValue);
   }
 }

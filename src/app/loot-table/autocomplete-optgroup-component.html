@@ -1,16 +1,21 @@
 <div class="mat-app-background basic-container">
   <form [formGroup]="monstreForm">
     <mat-form-field>
+      <label for="Familles"></label>
       <input type="text"
              matInput
-             placeholder="PlaceOlderFucks"
+             placeholder="Selectionnez un monstre"
              formControlName="monstreGroup"
-             [matAutocomplete]="autoGroup">
+             [matAutocomplete]="autoGroup"
+             (change)="handleEmpty()"
+             id="Familles">
+      <mat-label>Monstres</mat-label>
       <!-- #docregion mat-autocomplete -->
       <mat-autocomplete #autoGroup="matAutocomplete">
         <mat-optgroup *ngFor="let group of monstreGroupOptions | async" [label]="group.Famille">
-          <mat-option *ngFor="let name of group.Membres" [value]="name.libelle">
-            {{name.libelle}}
+          <mat-option *ngFor="let membre of group.Membres" [value]="membre.libelle"
+                      (onSelectionChange)="selection(membre)">
+            {{membre.libelle}}
           </mat-option>
         </mat-optgroup>
       </mat-autocomplete>
