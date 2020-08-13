@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {BASE_URL} from '../services/rest.service';
 import {Observable, Subscription} from 'rxjs';
-import {map} from 'rxjs/operators';
 
 export interface SpecialResponse {
   status: number;

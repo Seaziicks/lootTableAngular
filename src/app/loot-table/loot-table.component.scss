@@ -148,10 +148,14 @@ button {
 
 /* --- Scrollbar --- */
 .mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9); background-color: rgba(100, 25, 25, 0.9); }
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5); background-color: rgba(175,0,0,0.5); }
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9);
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5);
+}
 
 
 #competenceSelection .mCSB_dragger:hover .mCSB_dragger_bar,
-#competenceSelection .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9); background-color: rgba(100, 25, 25, 0.9); }
-#competenceSelection .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5); background-color: rgba(175,0,0,0.5); }
+#competenceSelection .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9);
+}
+#competenceSelection .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5);
+}

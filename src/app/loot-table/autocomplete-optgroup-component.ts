@@ -28,7 +28,7 @@ export class AutocompleteOptgroupComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit() {
-    this.monstreGroupOptions = this.monstreForm.get('monstreGroup')!.valueChanges
+    this.monstreGroupOptions = this.monstreForm.get('monstreGroup').valueChanges
       .pipe(
         startWith(''),
         map(value => this._filterGroup(value))
