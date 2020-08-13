@@ -32,16 +32,43 @@
           </div>
           <div class="col-md-2 mb-3"
                *ngIf="deDeDrop && this.isObjet()">
+            <label for="validationEffetMagique"> EffetMagique : 1D100 </label>
+            <input min="1" max="100" type="number" class="form-control" id="validationEffetMagique"
+                   name="validationEffetMagique"
+                   placeholder="Effet Magique"
+                   [(ngModel)]="this.effetMagique"
+                   required>
+          </div>
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.isObjet()">
             <label for="validationMalediction"> Malediction : 1D100 </label>
             <input min="1" max="100" type="number" class="form-control" id="validationMalediction"
                    name="validationMalediction"
                    placeholder="Malediction"
                    [disabled]="!this.isObjetMaudit()"
+                   [(ngModel)]="this.malediction"
                    required>
           </div>
 
         </div>
+        <div class="form-row" *ngIf="this.isObjet() && this.isDoubleObjet()">
+          <h3 style="width: 100%;">Double objet</h3>
+          <div class="col-md-2 mb-3"
+               *ngIf="deDeDrop && this.isObjet() && !this.isObjetMaudit()">
+            <label for="validationEffetMagique2"> Effet Magique deuxième item : 1D100 </label>
+            <input min="1" max="100" type="number" class="form-control" id="validationEffetMagique2"
+                   name="validationEffetMagique2"
+                   placeholder="Effet Magique deuxième item"
+                   [(ngModel)]="this.effetMagique2"
+                   required>
+          </div>
+        </div>
       </form>
+    </div>
+    <hr style="width: 75%; background-color: lightgrey; margin-left: 0; height : 1px" *ngIf="isRecompenseValide()">
+    <div style="width: 100%" *ngIf="isRecompenseValide()">
+      <h3>Récompense</h3>
+      <p>{{this.getRecompense()}}</p>
     </div>
 
   </div>

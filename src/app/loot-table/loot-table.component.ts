@@ -21,8 +21,12 @@ export class LootTableComponent implements OnInit {
   monstreCourrant: Monstre;
   monstreSelectionneLootChance: MonstreLootChance[];
   lootSelectionne: MonstreLootChance;
-  input1: number;
+  input1: number = null;
   deDeDrop: number;
+  malediction: number;
+  effetMagique: number;
+  effetMagique2: number;
+
 
   ngOnInit(): void {
     this.chargerFamilles(this.http);
@@ -78,6 +82,9 @@ export class LootTableComponent implements OnInit {
   }
 
   selectionLoot(event: any) {
+    if (+event.target.value > 20) {
+      event.target.value = 20;
+    }
     this.deDeDrop  = +event.target.value;
     this.lootSelectionne = this.monstreSelectionneLootChance
       .filter(item => (item.minRoll <= this.deDeDrop  && item.maxRoll >= this.deDeDrop ))[0];
@@ -89,5 +96,53 @@ export class LootTableComponent implements OnInit {
 
   public isObjetMaudit(): boolean {
     return this.lootSelectionne && (this.lootSelectionne.libelle.toLocaleLowerCase() ===  'objet maudit');
+  }
+
+  public isDoubleObjet() {
+    return this.input1 >= 80 && this.input1 <= 90;
+  }
+
+  public isRecompenseValide(): boolean {
+    if (!(this.deDeDrop && this.lootSelectionne)) {
+      return false;
+    }
+    switch (this.lootSelectionne.libelle.toLowerCase()) {
+      case 'cuivre':
+      case 'argent':
+      case 'or':
+        return this.input1 != null;
+      case 'objet magique':
+        return this.input1 != null && this.effetMagique != null;
+      case 'objet maudit':
+        return this.malediction != null && this.input1 != null && this.effetMagique != null;
+    }
+  }
+
+  public getRecompense() {
+    switch (this.lootSelectionne.libelle.toLowerCase()) {
+      case 'cuivre':
+        return 'Vous avez gagné ' + this.getRecompenseValue() + ' pièces de cuivre.';
+      case 'argent':
+        return 'Vous avez gagné ' + this.getRecompenseValue() + ' pièces d\'argent.';
+      case 'or':
+        return 'Vous avez gagné ' + this.getRecompenseValue() + ' pièces d\'or.';
+      case 'objet magique':
+        break;
+      case 'objet maudit':
+        break;
+    }
+  }
+
+  public getRecompenseValue() {
+    switch (this.lootSelectionne.libelle.toLowerCase()) {
+      case 'cuivre':
+      case 'argent':
+      case 'or':
+        return this.input1 * this.lootSelectionne.multiplier;
+      case 'objet magique':
+        break;
+      case 'objet maudit':
+        break;
+    }
   }
 }
