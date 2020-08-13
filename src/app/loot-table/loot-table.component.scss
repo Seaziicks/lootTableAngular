@@ -4,6 +4,10 @@ body {
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
 }
+
+.form-control:disabled {
+  background-color: rgba(12, 50, 50, 0.9);
+}
 .basic-container {
   padding: 30px;
 }
@@ -13,11 +17,6 @@ body {
   float: right;
   margin: 8px;
 }
-
-.mat-input-element::placeholder {
-    color: red;
-}
-
 
 body {
   padding: 0;
@@ -47,115 +46,4 @@ body {
   padding : 50px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.caracterSelection, #caracterSelection {
-  width : 100%;
-  padding : 25px;
-  background-color: rgba(12, 4, 4, 0.55);
-  border-radius: 5px;
-}
-#hiddenPersonnageSelection {
-  padding : 15px;
-  background-color: rgba(12, 4, 4, 0.85);
-  border-radius: 0 15px 15px 15px;
-  display: none;
-  opacity: 0;
-}
-
-ul, li, #divImageSelectedPersonnage, #imageSelectedPersonnage {
-  list-style-type: none;
-  padding : 0;
-}
-
-#hiddenPersonnageSelection img {
-  height: 50px;
-  border-radius: 50px;
-}
-
-#divPersonnage {
-  display: flex;
-  height : 75px;
-  margin-bottom: 50px;
-}
-#divImageSelectedPersonnage {
-  margin-right : 50px;
-}
-
-#divImageSelectedPersonnage, #imageSelectedPersonnage {
-  height : 75px;
-  width : 75px;
-  border-radius: 50px;
-}
-
-#divImageSelectedPersonnage:hover #hiddenPersonnageSelection, #hiddenPersonnageSelection:hover #hiddenPersonnageSelection{
-  display: block;
-  opacity: 1;
-  z-index: 1000;
-}
-
-#hiddenPersonnageSelection {
-  transition: all ease-in-out 2s;
-  position : absolute;
-}
-
-.buttonSelectCompetence {
-  font-size: 12px;
-  width : 100%;
-}
-
-#competenceList li {
-  margin : 2px;
-  background-color: rgba(100, 25, 25, 0.8);
-  border: solid 1px rgba(75,20,20,0.8);
-  border-radius: 5px;
-  font-size : 14px;
-}
-
-
-#competenceList li img {
-  height : 32px;
-  border-radius: 5px;
-  margin-right : 7px;
-}
-
-#effectSelection, #competenceSelection {
-  min-height : 50vh;
-}
-
-#competenceSelection {
-  overflow: auto;
-  display : inline-block;
-  width : 21%;
-  min-width : 150px;
-  max-width : 250px;
-  margin-right: 1%;
-  max-height: 50vh;
-}
-
-#effectSelection {
-  padding : 20px;
-  display : inline-block;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgba(75,20,20,0.8);
-  width : 75%;
-}
-
-button {
-  font-size : 10px;
-}
-
-/* --- Scrollbar --- */
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9);
-}
-.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5);
-}
-
-
-#competenceSelection .mCSB_dragger:hover .mCSB_dragger_bar,
-#competenceSelection .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(100, 25, 25, 0.9);
-}
-#competenceSelection .mCSB_dragger_bar{ background-color: rgba(175,0,0,0.5);
 }

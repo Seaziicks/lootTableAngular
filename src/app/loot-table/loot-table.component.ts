@@ -21,11 +21,7 @@ export class LootTableComponent implements OnInit {
   monstreCourrant: Monstre;
   monstreSelectionneLootChance: MonstreLootChance[];
   lootSelectionne: MonstreLootChance;
-  Cuivre: number;
-  Argent: number;
-  Or: number;
-  ObjetMagique: number;
-  ObjetMaudit: number;
+  input1: number;
   deDeDrop: number;
 
   ngOnInit(): void {
@@ -82,19 +78,16 @@ export class LootTableComponent implements OnInit {
   }
 
   selectionLoot(event: any) {
-    const dice = event.target.value;
+    this.deDeDrop  = +event.target.value;
     this.lootSelectionne = this.monstreSelectionneLootChance
-      .filter(item => (item.minRoll <= dice && item.maxRoll >= dice))[0];
+      .filter(item => (item.minRoll <= this.deDeDrop  && item.maxRoll >= this.deDeDrop ))[0];
   }
 
-  public getMinRoll(libelle: string): number {
-    return this.monstreSelectionneLootChance.filter(item => item.libelle.toLowerCase().indexOf(libelle.toLowerCase()) === 0)[0].minRoll;
-  }
-  public getMaxRoll(libelle: string): number {
-    return this.monstreSelectionneLootChance.filter(item => item.libelle.toLowerCase().indexOf(libelle.toLowerCase()) === 0)[0].maxRoll;
+  public isObjet(): boolean {
+    return this.lootSelectionne && (this.lootSelectionne.libelle.toLowerCase() ===  'objet magique' || this.isObjetMaudit());
   }
 
-  public getDicePower(libelle: string): number {
-    return this.monstreSelectionneLootChance.filter(item => item.libelle.toLowerCase().indexOf(libelle.toLowerCase()) === 0)[0].dicePower;
+  public isObjetMaudit(): boolean {
+    return this.lootSelectionne && (this.lootSelectionne.libelle.toLocaleLowerCase() ===  'objet maudit');
   }
 }
