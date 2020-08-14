@@ -1,1 +1,1 @@
-export let BASE_URL = 'http://localhost:81/lootTable/PHP/REST/';
+export let BASE_URL = 'http://localhost/lootTablePHP/Rest/';
