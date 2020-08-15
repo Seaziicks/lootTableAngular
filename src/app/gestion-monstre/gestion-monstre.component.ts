@@ -40,7 +40,12 @@ export class GestionMonstreComponent implements OnInit {
 
   ngOnInit(): void {
     this.chargerFamilles(this.http);
-    this.lootPossible = this.monstreLootChance.getLootPossibles(this.http);
+    this.monstreLootChance.getLootPossibles(this.http).then(
+      (data: any) => {
+        const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+        this.lootPossible  = response.data as string[];
+      }
+    );
   }
 
   public chargerFamilles(http: HttpClient) {
@@ -151,14 +156,26 @@ export class GestionMonstreComponent implements OnInit {
       console.log((this.unUpdatableMonstreLootChance.length + this.monstreLootChanceToPOST.length
         + this.monstreLootChanceToPUT.length + this.unchangesLootChance.length));
     }
-    this.monstreLootChance.envoyerLootChances(this.http, 'PUT', this.monstreCourrant.idMonstre, this.monstreLootChanceToPOST).then(
-      (data: any) => {
-        console.log(data);
-        this.monstreLootChanceToPOST = [];
-        this.monstreLootChanceToPUT = [];
-        this.unUpdatableMonstreLootChance = [];
-        this.unchangesLootChance = [];
-      });
+    if (this.monstreLootChanceToPOST.length > 0) {
+      this.monstreLootChance.envoyerLootChances(this.http, 'POST', this.monstreCourrant.idMonstre, this.monstreLootChanceToPOST).then(
+        (data: any) => {
+          console.log(data);
+          this.monstreLootChanceToPOST = [];
+          this.monstreLootChanceToPUT = [];
+          this.unUpdatableMonstreLootChance = [];
+          this.unchangesLootChance = [];
+        });
+    }
+    if (this.monstreLootChanceToPUT.length > 0) {
+      this.monstreLootChance.envoyerLootChances(this.http, 'PUT', this.monstreCourrant.idMonstre, this.monstreLootChanceToPUT).then(
+        (data: any) => {
+          console.log(data);
+          this.monstreLootChanceToPOST = [];
+          this.monstreLootChanceToPUT = [];
+          this.unUpdatableMonstreLootChance = [];
+          this.unchangesLootChance = [];
+        });
+    }
   }
 
   public uncompleteForm(): boolean {

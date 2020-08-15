@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 // @ts-ignore
 import {MonstreGroupe} from '../interface/MonstreGroupe';
-import {BASE_URL} from './rest.service';
+import {BASE_URL, URL_MONSTRE} from './rest.service';
 import {Observable, Subscription} from 'rxjs';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
@@ -15,7 +15,7 @@ export class FamilleMonstreService {
 
   public chargerFamilles(http: HttpClient): MonstreGroupe[] {
     const monstresGroupes: MonstreGroupe[] = [];
-    const baseUrlBis = BASE_URL + 'monstresRest.php?withFamille=true';
+    const baseUrlBis = BASE_URL + URL_MONSTRE + '?withFamille=true';
     const applicationTypeObservable: Observable<SpecialResponse> =
       http.get<SpecialResponse>(baseUrlBis);
     const applicationTypeSubscription: Subscription = applicationTypeObservable.subscribe(
