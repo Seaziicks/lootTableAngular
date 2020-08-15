@@ -37,7 +37,7 @@ export class LootTableComponent implements OnInit {
                private monstreLootChance: MonstreLootChanceService ) { }
 
   public chargerFamilles(http: HttpClient) {
-    this.monstresGroupes = this.familleMonstre.chargerFamilles(http);
+    this.monstresGroupes = this.familleMonstre.chargerFamillesAvecMonstres(http);
   }
 
   public chargerMonstreLootChance(http: HttpClient, idMonstre: number) {

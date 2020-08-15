@@ -14,6 +14,7 @@ import { DemoMaterialModule } from './material-module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AutocompleteGroupeComponent } from './autocomplete-groupe/autocomplete-groupe.component';
+import { GestionDropMonstreComponent } from './gestion-drop-monstre/gestion-drop-monstre.component';
 import { GestionMonstreComponent } from './gestion-monstre/gestion-monstre.component';
 
 
@@ -23,6 +24,7 @@ import { GestionMonstreComponent } from './gestion-monstre/gestion-monstre.compo
     AppComponent,
     LootTableComponent,
     AutocompleteGroupeComponent,
+    GestionDropMonstreComponent,
     GestionMonstreComponent,
   ],
   imports: [

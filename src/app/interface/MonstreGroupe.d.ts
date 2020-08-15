@@ -8,6 +8,11 @@ declare interface Monstre {
   libelle: string;
 }
 
+declare interface Famille {
+  idFamille: number;
+  libelle: string;
+}
+
 declare interface MonstreLootChance {
   idLoot: number;
   libelle: string;
