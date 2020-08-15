@@ -41,7 +41,12 @@ export class LootTableComponent implements OnInit {
   }
 
   public chargerMonstreLootChance(http: HttpClient, idMonstre: number) {
-    this.monstreSelectionneLootChance = this.monstreLootChance.chargerMonstreLootChance(http, idMonstre);
+    this.monstreSelectionneLootChance = [];
+    this.monstreLootChance.getMonstreLootChanceTest(this.http, this.monstreCourrant.idMonstre).then(
+      (data: any) => {
+        const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+        this.monstreSelectionneLootChance  = response.data as MonstreLootChance[];
+      });
   }
 
   selectionMonstre($event: Monstre) {

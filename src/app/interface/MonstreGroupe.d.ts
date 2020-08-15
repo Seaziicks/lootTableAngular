@@ -9,6 +9,7 @@ declare interface Monstre {
 }
 
 declare interface MonstreLootChance {
+  idLoot: number;
   libelle: string;
   minRoll: number;
   maxRoll: number;

@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import {BASE_URL} from './rest.service';
 import {Observable, Subscription} from 'rxjs';
 import {SpecialResponse} from '../loot-table/loot-table.component';
@@ -15,52 +15,31 @@ export class MonstreLootChanceService {
   }
   public addedRow: boolean[] = [];
 
-  public chargerMonstreLootChance(http: HttpClient, idMonstre: number, lootPossible?: string[]): MonstreLootChance[] {
-    const monstreSelectionneLootChance: MonstreLootChance[] = [];
-    const baseUrlBis = BASE_URL + 'lootChanceRest.php?idMonstre=' + idMonstre;
-    const applicationTypeObservable: Observable<SpecialResponse> =
-      http.get<SpecialResponse>(baseUrlBis);
-    const applicationTypeSubscription: Subscription = applicationTypeObservable.subscribe(
-      (response) => {
-        // monstreSelectionneLootChance = [];
-        const lootChances: MonstreLootChance[] = response.data as MonstreLootChance[];
-        for (const lootChance of lootChances) {
-          monstreSelectionneLootChance.push(lootChance);
-        }
-        if (lootPossible && monstreSelectionneLootChance.length < 5) {
-          this.addedRow = this.remplissageLootManquant(monstreSelectionneLootChance, lootPossible);
-        }
-        console.log(this.addedRow);
-        console.log(monstreSelectionneLootChance);
-        applicationTypeSubscription.unsubscribe();
-      },
-      (error) => {
-        console.log('Une erreur est survenue dans la suscription: ' + error);
-      },
-      () => {
-        console.log('Je suis complete !');
-      }
-    );
-    console.log(JSON.stringify(monstreSelectionneLootChance));
-    return monstreSelectionneLootChance;
+  public envoyerLootChances(http: HttpClient, httpMethod: string, idMonstre: number, Loot: MonstreLootChance[]): Promise<string> {
+    const values = {idMonstre: undefined, Loot: undefined};
+    values.idMonstre = idMonstre;
+    values.Loot = Loot;
+    const baseUrlBis = BASE_URL + 'lootChanceRest.php';
+    const params = new HttpParams().set('Loot', JSON.stringify(values));
+    console.log(JSON.stringify(values));
+    console.log(params);
+
+    /* PUT is not working. Only POST don't rise error ... */
+    // const requestType = this.ActionType === 5 ? 'POST' :  'PUT';
+
+    return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
   }
 
-  public remplissageLootManquant(monstreSelectionneLootChance: MonstreLootChance[], lootPossible: string[]): boolean[] {
-    const addedRow: boolean[] = [];
-    for (const value of lootPossible) {
-      addedRow.push(false);
-    }
-    for (let i = 0; i < lootPossible.length; i++) {
-      if (!monstreSelectionneLootChance.map(a => a.libelle).includes(lootPossible[i])) {
-        monstreSelectionneLootChance.splice(i, 0,
-          {
-            libelle: lootPossible[i], minRoll: null, maxRoll: null, niveauMonstre: null, multiplier: null, dicePower: null,
-            poids: null
-          } as unknown as MonstreLootChance);
-        addedRow[i] = true;
-      }
-    }
-    return addedRow;
+  public getMonstreLootChanceTest(http: HttpClient, idMonstre: number): Promise<string> {
+    const values = {idMonstre: undefined};
+    values.idMonstre = idMonstre;
+    const baseUrlBis = BASE_URL + 'lootChanceRest.php?idMonstre=' + idMonstre;
+    console.log(baseUrlBis);
+    const params = new HttpParams().set('param', JSON.stringify(values));
+    console.log(JSON.stringify(values));
+    console.log(params);
+
+    return http.request('GET', baseUrlBis, {responseType: 'text', params}).toPromise();
   }
 
   public getLootPossibles(http: HttpClient): string[] {
