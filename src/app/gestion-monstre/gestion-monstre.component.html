@@ -6,9 +6,58 @@
                                [monsterGroupes]="monstresGroupes">
         loading
       </app-autocomplete-groupe>
+      <div style="width: 100%">
+        <div style="width: 100%" *ngIf="monstreCourrant">
+          <h3> {{monstreCourrant.libelle}}</h3>
+        </div>
+        <div style="width: 100%">
+          <form class="needs-validation" id="monstre">
+            <div class="form-row">
+              <div class="col-md-3 mb-5">
+                <label for="monstreLibelle"> Libelle
+                </label>
+                <input type="text" class="form-control" id="monstreLibelle"
+                       name="monstreLibelle"
+                       placeholder="libelle"
+                       (change)="this.updateMonstreCourant()"
+                       required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputFamilleMonstre">Famille</label>
+                <select id="inputFamilleMonstre" class="form-control" (change)="updateFamille()">
+                  <option selected value=0> </option>
+                  <option *ngFor="let famille of familles" [value]="famille.idFamilleMonstre">
+                    {{famille.idFamilleMonstre}} - {{famille.libelle}}
+                  </option>
+                </select>
+              </div>
 
-        <form class="example-form">
-        <mat-form-field class="example-full-width">
+
+            </div>
+
+            <div style="float: right;">
+              <button class="btn btn-danger pull-right" type="submit" id="submissionModifierMonstreButton"
+                      style="transition: 0.5s ; margin-right: 50px"
+                      (click)="this.modifierMonstre()">
+                Modifier un monstre
+              </button>
+              <button class="btn btn-outline-warning pull-right" type="submit" id="submissionCreerMonstreButton"
+                      style="transition: 0.5s;"
+                      *ngIf="!this.alreadyExist()"
+                      (click)="this.creerMonstre()">
+                Créer un monstre
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="familleSelection" class="familleSelection">
+      <h3>Selectionnez une Famille</h3>
+      <form class="example-form">
+        <mat-form-field class="">
           <input type="text"
                  aria-label="Number"
                  matInput
@@ -23,23 +72,14 @@
             </mat-option>
           </mat-autocomplete>
         </mat-form-field>
-        </form>
-
-    </div>
-    <div style="width: 100%">
-      <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
-    </div>
-    <div style="width: 100%">
-      <h3 *ngIf="familleCourante"> {{familleCourante.libelle}}</h3>
-    </div>
-    <div style="width: 100%">
-      <form class="needs-validation" id="competenceEffectForm">
-
-
       </form>
-
+      <div style="width: 100%" *ngIf="familleCourante">
+        <div style="width: 100%">
+          <h3> {{familleCourante.libelle}}</h3>
+        </div>
+      </div>
     </div>
+
   </div>
+
 </div>
-
-

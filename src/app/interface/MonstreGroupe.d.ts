@@ -5,11 +5,12 @@ declare interface MonstreGroupe {
 
 declare interface Monstre {
   idMonstre: number;
+  idFamilleMonstre: number;
   libelle: string;
 }
 
 declare interface Famille {
-  idFamille: number;
+  idFamilleMonstre: number;
   libelle: string;
 }
 
