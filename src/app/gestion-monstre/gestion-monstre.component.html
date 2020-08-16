@@ -6,58 +6,36 @@
                                [monsterGroupes]="monstresGroupes">
         loading
       </app-autocomplete-groupe>
+
+        <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input type="text"
+                 aria-label="Number"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto"
+                 (click)="$event.target.select()">
+          <mat-label>Familles</mat-label>
+          <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selectionFamille($event)">
+            <mat-option *ngFor="let famille of filteredFamilles | async" [value]="famille.libelle"
+                        (onSelectionChange)="selectionFamille(famille)">
+              {{famille.libelle}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        </form>
+
     </div>
     <div style="width: 100%">
       <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
     </div>
     <div style="width: 100%">
+      <h3 *ngIf="familleCourante"> {{familleCourante.libelle}}</h3>
+    </div>
+    <div style="width: 100%">
       <form class="needs-validation" id="competenceEffectForm">
-        <div class="form-row" *ngFor="let lootChance of monstreSelectionneLootChance; let index = index;">
-          <div style="display: flex; align-items: center; justify-content: left; width : 150px;" [ngClass]="{'missingValue': this.missingAtLeastOneValue(index)}">
-            {{ monstreSelectionneLootChance[index].libelle }} ({{this.monstreSelectionneLootChance[index].idLoot}}) : </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].minRoll, 'missingValue': this.missingMyValue(index, 'minRoll')}">
-            <label [for]="'minRoll'+index"> MinRoll
-            </label>
-            <input min="1" max="20" type="number" class="form-control" [id]="'minRoll'+index"
-                   [name]="'minRoll'+index"
-                   [placeholder]="'minRoll'+monstreSelectionneLootChance[index].libelle"
-                   [(ngModel)]="this.monstreSelectionneLootChance[index].minRoll"
-                   required>
-          </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].maxRoll, 'missingValue': this.missingMyValue(index, 'maxRoll')}">
-            <label [for]="'maxRoll'+index"> MaxRoll
-            </label>
-            <input min="1" max="20" type="number" class="form-control" [id]="'maxRoll'+index"
-                   [name]="'maxRoll'+index"
-                   [placeholder]="'maxRoll'+monstreSelectionneLootChance[index].libelle"
-                   [(ngModel)]="this.monstreSelectionneLootChance[index].maxRoll"
-                   required>
-          </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].dicePower, 'missingValue': this.missingMyValue(index, 'dicePower')}">
-            <label [for]="'dicePower'+index"> dicePower
-            </label>
-            <input min="1" max="20" type="number" class="form-control" [id]="'dicePower'+index"
-                   [name]="'dicePower'+index"
-                   [placeholder]="'dicePower'+monstreSelectionneLootChance[index].libelle"
-                   [(ngModel)]="this.monstreSelectionneLootChance[index].dicePower"
-                   required>
-          </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].multiplier, 'missingValue': this.missingMyValue(index, 'multiplier')}">
-            <label [for]="'multiplier'+index"> Multiplier
-            </label>
-            <input min="1" max="20" type="number" class="form-control" [id]="'multiplier'+index"
-                   [name]="'multiplier'+index"
-                   [placeholder]="'multiplier'+monstreSelectionneLootChance[index].libelle"
-                   [(ngModel)]="this.monstreSelectionneLootChance[index].multiplier"
-                   required>
-          </div>
-        </div>
 
-        <button class="btn btn-danger pull-right" type="submit" id="submissionEffectButton" style="transition: 0.5s"
-                (click)="this.updateOrCreateLootChance();"
-                [ngClass]="{'btn-outline-warning': !this.uncompleteForm(), 'btn-danger': this.uncompleteForm()}">
-          Valider les chances de loot
-        </button>
+
       </form>
 
     </div>
