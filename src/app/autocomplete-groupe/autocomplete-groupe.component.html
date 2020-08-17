@@ -1,5 +1,5 @@
 <form [formGroup]="monstreForm">
-  <mat-form-field>
+  <mat-form-field #MonstresGroupes>
     <label for="Familles"></label>
     <input type="text"
            matInput
@@ -7,7 +7,8 @@
            [matAutocomplete]="autoGroup"
            (change)="handleEmpty()"
            (click)="$event.target.select()"
-           id="Familles">
+           id="Familles"
+           >
     <mat-label>Monstres</mat-label>
     <!-- #docregion mat-autocomplete -->
     <mat-autocomplete #autoGroup="matAutocomplete">

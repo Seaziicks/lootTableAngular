@@ -2,7 +2,7 @@
   <div class="principal">
     <div id="caracterSelection" class="caracterSelection">
       <h3>Selectionnez un monstre</h3>
-      <app-autocomplete-groupe (monstreEventEmitter)="selectionMonstre($event)"
+      <app-autocomplete-groupe #autocompleteGroupeMonstre (monstreEventEmitter)="selectionMonstre($event)"
                                [monsterGroupes]="monstresGroupes">
         loading
       </app-autocomplete-groupe>
@@ -19,12 +19,12 @@
                 <input type="text" class="form-control" id="monstreLibelle"
                        name="monstreLibelle"
                        placeholder="libelle"
-                       (change)="this.updateMonstreCourant()"
+                       (keyup)="this.updateMonstreCourant()"
                        required>
               </div>
               <div class="form-group col-md-4">
                 <label for="inputFamilleMonstre">Famille</label>
-                <select id="inputFamilleMonstre" class="form-control" (change)="updateFamille()">
+                <select id="inputFamilleMonstre" class="form-control" (change)="updateFamilleMonstreSelectionnee()">
                   <option selected value=0> </option>
                   <option *ngFor="let famille of familles" [value]="famille.idFamilleMonstre">
                     {{famille.idFamilleMonstre}} - {{famille.libelle}}
@@ -38,13 +38,18 @@
             <div style="float: right;">
               <button class="btn btn-danger pull-right" type="submit" id="submissionModifierMonstreButton"
                       style="transition: 0.5s ; margin-right: 50px"
-                      (click)="this.modifierMonstre()">
+                      *ngIf="!this.monstreExactMatch()"
+                      (click)="this.modifierMonstre()"
+                      [disabled]="this.monstreExactMatch()"
+                      [title]="this.monstreExactMatch() ? 'Le nom choisi existe déjà. Les noms sont uniques.' : ''">
                 Modifier un monstre
               </button>
               <button class="btn btn-outline-warning pull-right" type="submit" id="submissionCreerMonstreButton"
                       style="transition: 0.5s;"
-                      *ngIf="!this.alreadyExist()"
-                      (click)="this.creerMonstre()">
+                      *ngIf="!this.monstreExactMatch()"
+                      (click)="this.creerMonstre()"
+                      [disabled]="this.inputMonstreNameAlreadyExist()"
+                      [title]="this.inputMonstreNameAlreadyExist() ? 'Le nom choisi existe déjà. Les noms doivent être uniques.' : ''">
                 Créer un monstre
               </button>
             </div>
@@ -54,6 +59,10 @@
       </div>
     </div>
 
+    <!-- /*---------------------------------------------------*
+          |                  Partie famille                   |
+          *---------------------------------------------------*/ -->
+
     <div id="familleSelection" class="familleSelection">
       <h3>Selectionnez une Famille</h3>
       <form class="example-form">
@@ -62,20 +71,52 @@
                  aria-label="Number"
                  matInput
                  [formControl]="myControl"
-                 [matAutocomplete]="auto"
-                 (click)="$event.target.select()">
+                 [matAutocomplete]="auto">
           <mat-label>Familles</mat-label>
-          <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selectionFamille($event)">
-            <mat-option *ngFor="let famille of filteredFamilles | async" [value]="famille.libelle"
-                        (onSelectionChange)="selectionFamille(famille)">
+          <mat-autocomplete #auto="matAutocomplete"
+                            (optionSelected)="selectionFamille($event.option.value)">
+            <mat-option *ngFor="let famille of filteredFamilles | async" [value]="famille.libelle">
               {{famille.libelle}}
             </mat-option>
           </mat-autocomplete>
         </mat-form-field>
       </form>
-      <div style="width: 100%" *ngIf="familleCourante">
-        <div style="width: 100%">
+      <div style="width: 100%">
+        <div style="width: 100%" *ngIf="familleCourante">
           <h3> {{familleCourante.libelle}}</h3>
+        </div>
+        <div style="width: 100%">
+          <form class="needs-validation" id="famille">
+            <div class="form-row">
+              <div class="col-md-3 mb-5">
+                <label for="familleLibelle"> Libelle
+                </label>
+                <input type="text" class="form-control" id="familleLibelle"
+                       name="familleLibelle"
+                       placeholder="libelle"
+                       (keyup)="this.updateFamilleCourante()"
+                       required>
+              </div>
+
+
+            </div>
+
+            <div style="float: right;">
+              <button class="btn btn-danger pull-right" type="submit" id="submissionModifierFamilleButton"
+                      style="transition: 0.5s ; margin-right: 50px"
+                      *ngIf="!this.familleExactMatch()"
+                      (click)="this.modifierFamille()">
+                Modifier une famille
+              </button>
+              <button class="btn btn-outline-warning pull-right" type="submit" id="submissionCreerFamilleButton"
+                      style="transition: 0.5s;"
+                      *ngIf="!this.familleExactMatch()"
+                      (click)="this.creerFamille()">
+                Créer une famille
+              </button>
+            </div>
+          </form>
+
         </div>
       </div>
     </div>

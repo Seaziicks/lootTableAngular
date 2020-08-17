@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {FamilleMonstreService} from '../services/famille-monstre.service';
+import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
 
 export interface SpecialResponse {
@@ -33,7 +33,7 @@ export class LootTableComponent implements OnInit {
   }
 
   constructor( private http: HttpClient,
-               private familleMonstre: FamilleMonstreService,
+               private familleMonstre: FamilleAndMonstreService,
                private monstreLootChance: MonstreLootChanceService ) { }
 
   public chargerFamilles(http: HttpClient) {

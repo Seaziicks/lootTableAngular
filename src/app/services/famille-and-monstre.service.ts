@@ -9,7 +9,7 @@ import {SpecialResponse} from '../loot-table/loot-table.component';
 @Injectable({
   providedIn: 'root'
 })
-export class FamilleMonstreService {
+export class FamilleAndMonstreService {
 
   constructor() { }
 
@@ -57,28 +57,24 @@ export class FamilleMonstreService {
     return allFamilles;
   }
 
+  /* ---------------------------------------------------*
+  |           Partie familles & monstres                |
+  *-----------------------------------------------------*/
+
   public getFamillesAvecMonstres(http: HttpClient): Promise<string> {
     const baseUrlBis = BASE_URL + URL_MONSTRES + '?withFamille=true';
     return http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise();
   }
 
-  public getAllFamilles(http: HttpClient): Promise<string> {
-    const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
-    return http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise();
-  }
-
-  public getFamille(http: HttpClient, idFamille: number): Promise<string> {
-    const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idFamille=' + idFamille;
-    return http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise();
-  }
+  /* ---------------------------------------------------*
+  |                  Partie monstre                     |
+  *-----------------------------------------------------*/
 
   public creerMonstre(http: HttpClient, idFamilleMonstre: number, libelle: string): Promise<string> {
     const values = {idFamilleMonstre: undefined, libelle: undefined};
     values.idFamilleMonstre = idFamilleMonstre;
     values.libelle = libelle;
-    console.log(values);
     const baseUrlBis = BASE_URL + URL_MONSTRE;
-    console.log(baseUrlBis);
     const params = new HttpParams().set('Monstre', JSON.stringify(values));
 
     return http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise();
@@ -86,15 +82,39 @@ export class FamilleMonstreService {
 
   public modifierMonstre(http: HttpClient, idMonstre: number, idFamilleMonstre: number, libelle: string): Promise<string> {
     const values = {idMonstre: undefined, idFamilleMonstre: undefined, libelle: undefined};
-    console.log(values);
     values.idMonstre = idMonstre;
-    console.log(idFamilleMonstre);
     values.idFamilleMonstre = idFamilleMonstre === 0 ? 'NULL' : idFamilleMonstre;
     values.libelle = libelle;
-    console.log(values);
     const baseUrlBis = BASE_URL + URL_MONSTRE + '?idMonstre=' + idMonstre;
-    console.log(baseUrlBis);
     const params = new HttpParams().set('Monstre', JSON.stringify(values));
+
+    return http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
+  }
+
+  /* ---------------------------------------------------*
+  |                  Partie famille                     |
+  *-----------------------------------------------------*/
+
+  public getAllFamilles(http: HttpClient): Promise<string> {
+    const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
+    return http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise();
+  }
+
+  public creerFamille(http: HttpClient, libelle: string): Promise<string> {
+    const values = { libelle: undefined};
+    values.libelle = libelle;
+    const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
+    const params = new HttpParams().set('Famille', JSON.stringify(values));
+    return http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise();
+  }
+
+  public modifierFamille(http: HttpClient, idFamilleMonstre: number, libelle: string): Promise<string> {
+    const values = { idFamilleMonstre: undefined, libelle: undefined };
+    values.idFamilleMonstre = idFamilleMonstre;
+    values.libelle = libelle;
+    const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE + '?idFamilleMonstre=' + idFamilleMonstre;
+    console.log(baseUrlBis);
+    const params = new HttpParams().set('Famille', JSON.stringify(values));
 
     return http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
   }

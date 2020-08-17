@@ -1,6 +1,6 @@
 import {Component, IterableDiffers, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {FamilleMonstreService} from '../services/famille-monstre.service';
+import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
@@ -31,7 +31,7 @@ export class GestionDropMonstreComponent implements OnInit {
   differ: any;
 
   constructor(private http: HttpClient,
-              private familleMonstre: FamilleMonstreService,
+              private familleMonstre: FamilleAndMonstreService,
               private monstreLootChance: MonstreLootChanceService,
               ) {
   }
