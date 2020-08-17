@@ -38,17 +38,17 @@
             <div style="float: right;">
               <button class="btn btn-danger pull-right" type="submit" id="submissionModifierMonstreButton"
                       style="transition: 0.5s ; margin-right: 50px"
-                      *ngIf="!this.monstreExactMatch()"
+                      *ngIf="!this.monstreExactMatchV"
                       (click)="this.modifierMonstre()"
-                      [disabled]="this.monstreExactMatch()"
-                      [title]="this.monstreExactMatch() ? 'Le nom choisi existe déjà. Les noms sont uniques.' : ''">
+                      [disabled]="this.monstreExactMatchV || this.emptyMonstre()"
+                      [title]="this.monstreExactMatchV ? 'Le nom choisi existe déjà. Les noms sont uniques.' : ''">
                 Modifier un monstre
               </button>
               <button class="btn btn-outline-warning pull-right" type="submit" id="submissionCreerMonstreButton"
                       style="transition: 0.5s;"
-                      *ngIf="!this.monstreExactMatch()"
+                      *ngIf="!this.monstreExactMatchV"
                       (click)="this.creerMonstre()"
-                      [disabled]="this.inputMonstreNameAlreadyExist()"
+                      [disabled]="this.inputMonstreNameAlreadyExist() || this.emptyMonstre()"
                       [title]="this.inputMonstreNameAlreadyExist() ? 'Le nom choisi existe déjà. Les noms doivent être uniques.' : ''">
                 Créer un monstre
               </button>
@@ -105,12 +105,14 @@
               <button class="btn btn-danger pull-right" type="submit" id="submissionModifierFamilleButton"
                       style="transition: 0.5s ; margin-right: 50px"
                       *ngIf="!this.familleExactMatch()"
+                      [disabled]="this.emptyFamille()"
                       (click)="this.modifierFamille()">
                 Modifier une famille
               </button>
               <button class="btn btn-outline-warning pull-right" type="submit" id="submissionCreerFamilleButton"
                       style="transition: 0.5s;"
                       *ngIf="!this.familleExactMatch()"
+                      [disabled]="this.emptyFamille()"
                       (click)="this.creerFamille()">
                 Créer une famille
               </button>
