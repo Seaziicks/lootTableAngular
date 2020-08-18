@@ -24,10 +24,10 @@
 
           <div class="col-md-2 mb-3"
                *ngIf="deDeDrop && this.lootSelectionne">
-            <label for="validationInput1"> {{this.lootSelectionne.libelle}} : 1D{{this.lootSelectionne.dicePower}} </label>
+            <label for="validationInput1"> {{this.lootSelectionneNom()}} : {{this.lootSelectionne.diceNumber}}D{{this.lootSelectionne.dicePower}} </label>
             <input min="1" max="{{this.lootSelectionne.dicePower}}" type="number" class="form-control" id="validationInput1"
                    name="validationInput1"
-                   placeholder="{{this.lootSelectionne.libelle}}"
+                   placeholder="{{this.lootSelectionneNom()}}"
                    [(ngModel)]="this.input1" required>
           </div>
           <div class="col-md-2 mb-3"

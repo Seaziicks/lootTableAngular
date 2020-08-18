@@ -1,5 +1,6 @@
 export let BASE_URL = 'http://localhost:81/lootTable/lootTablePHP/Rest/';
 export let URL_DROP_CHANCE = 'dropChanceRest.php';
+export let URL_DROP_CHANCE_BIS = 'dropChanceBisRest.php';
 export let URL_EFFET_MAGIQUE = 'effetMagiqueRest.php';
 export let URL_MONSTRES = 'monstresRest.php';
 export let URL_MONSTRE = 'monstreRest.php';

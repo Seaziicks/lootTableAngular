@@ -24,3 +24,18 @@ declare interface MonstreLootChance {
   dicePower: number;
   poids: number;
 }
+
+declare interface MonstreLootChanceBis {
+  roll: number;
+  idLoot: number;
+  niveauMonstre: number;
+  multiplier: number;
+  diceNumber: number;
+  dicePower: number;
+  poids: number;
+}
+
+declare interface Loot {
+  idLoot: number;
+  libelle: string;
+}

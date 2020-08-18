@@ -21,6 +21,7 @@ import {
   FadingInfoComponent,
   BannerComponent
 } from './fading-info/fading-info.component';
+import { GestionDropMonstreBisComponent } from './gestion-drop-monstre-bis/gestion-drop-monstre-bis.component';
 
 
 
@@ -34,6 +35,7 @@ import {
     FadingInfoComponent,
     AdDirective,
     BannerComponent,
+    GestionDropMonstreBisComponent,
   ],
   imports: [
     BrowserModule,
