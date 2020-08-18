@@ -6,6 +6,7 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {AutocompleteGroupeComponent} from '../autocomplete-groupe/autocomplete-groupe.component';
+import {FadingInfoComponent} from '../fading-info/fading-info.component';
 
 @Component({
   selector: 'app-gestion-monstre',
@@ -16,6 +17,7 @@ export class GestionMonstreComponent implements OnInit {
 
   @ContentChild('monstreLibelle') child: HTMLInputElement;
   @ViewChild('autocompleteGroupeMonstre') autocompleteGroupeMonstre: AutocompleteGroupeComponent;
+  @ViewChild('Banner') banner: FadingInfoComponent;
 
 
   myControl = new FormControl();
@@ -68,7 +70,6 @@ export class GestionMonstreComponent implements OnInit {
       }
     );
     if (this.monstresGroupes) {
-      console.log('Il y a bien un MG');
       this.updateMonstreCourant();
     }
     this.monstreExactMatchV = this.monstreExactMatch();
@@ -91,11 +92,6 @@ export class GestionMonstreComponent implements OnInit {
       || (this.familleMonstreSelectionne
         && this.familleMonstreSelectionne.libelle !== (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
         .options.item(this.familleMonstreSelectionne.idFamilleMonstre).label)) {
-      if (this.familleMonstreSelectionne &&
-        this.familleMonstreSelectionne.libelle !== (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options.item(this.familleMonstreSelectionne.idFamilleMonstre).label) {
-        console.log('On est rentré en famille !');
-      }
 
       // On met à jour le monstre courant, et on change la selection en JS vanilla. A voir si on peut faire autrement.
       this.monstreCourrant = $event;
@@ -104,30 +100,23 @@ export class GestionMonstreComponent implements OnInit {
       // Selection de la famille et affichage en JS vanilla, car je n'arrive pas à le faire sans JS Vanilla.
       this.familleMonstreSelectionne = this.familles.filter(f => +f.idFamilleMonstre === +$event.idFamilleMonstre)[0];
       const familleToSelect: number = this.familleMonstreSelectionne !== undefined ? this.familleMonstreSelectionne.idFamilleMonstre : 0;
-      console.log((document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options[+familleToSelect].value + ' : ' + (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options.item(+familleToSelect).label + ' => ' + (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options[+familleToSelect].selected);
-      (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options[+familleToSelect].selected = true;
-      console.log((document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options[+familleToSelect].value + ' : ' + (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options.item(+familleToSelect).label + ' => ' + (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
-        .options[+familleToSelect].selected);
+
+      // Oblige de mettre un Timeout, sinon ça ne passe pas du tout ... Sinon ça reste à la première valeur.
+      setTimeout( () => { (document.getElementById('inputFamilleMonstre') as HTMLSelectElement)
+        .options[+familleToSelect].selected = true; }, 15);
+
       // Changement de valeur de l'autocomplete des monstres, pour garder un affichage cohérent
       this.autocompleteGroupeMonstre.monstreForm.patchValue({
         monstreGroup: this.monstreCourrant.libelle,
       });
-      this.monstreExactMatchV = this.monstreExactMatch();
+      setTimeout( () => { this.monstreExactMatchV = this.monstreExactMatch(); }, 10);
     }
   }
 
   public updateMonstreCourant() {
     const libelleCourant: string = (document.getElementById('monstreLibelle') as HTMLInputElement).value;
     const monstre: Monstre = this.searchExistingMonstreByName(libelleCourant);
-    console.log(monstre);
     if (monstre !== undefined) {
-      console.log('Monstre === defined');
       this.selectionMonstre(monstre);
     }
   }
@@ -142,8 +131,6 @@ export class GestionMonstreComponent implements OnInit {
   }
 
   monstreExactMatch(): boolean {
-    console.log('Je suis dedans');
-    console.log(this.monstreCourrant);
     if (this.monstreCourrant) {
       // On cherche si un monstre du même nom existe déja.
       const libelleCourant: string = (document.getElementById('monstreLibelle') as HTMLInputElement).value;
@@ -154,12 +141,7 @@ export class GestionMonstreComponent implements OnInit {
       const idFamille = +select.options[select.selectedIndex].value !== 0 ? +select.options[select.selectedIndex].value : undefined;
 
       // Si le monstre existe, et qu'il a la même famille que celle selectionnée, et le même nom que le monstre selectionné.
-      console.log('Je vaux : ' + (monstre && monstre.idFamilleMonstre === idFamille
-      && (document.getElementById('monstreLibelle') as HTMLInputElement).value === this.monstreCourrant.libelle));
-      console.log((document.getElementById('inputFamilleMonstre') as HTMLSelectElement).selectedIndex + ' / ' +
-        (document.getElementById('inputFamilleMonstre') as HTMLSelectElement).options[
-        (document.getElementById('inputFamilleMonstre') as HTMLSelectElement).selectedIndex].innerHTML);
-      return monstre && monstre.idFamilleMonstre === idFamille
+      return monstre !== undefined && monstre.idFamilleMonstre === idFamille
         && (document.getElementById('monstreLibelle') as HTMLInputElement).value === this.monstreCourrant.libelle;
     }
     return false;
@@ -175,9 +157,7 @@ export class GestionMonstreComponent implements OnInit {
         }
         return undefined;
       });
-    console.log('Je suis ici : ');
     monstre = monstre.filter(element => element !== undefined);
-    console.log(monstre[0]);
     return monstre[0];
   }
 
@@ -198,6 +178,9 @@ export class GestionMonstreComponent implements OnInit {
             this.updateMonstreCourant();
           }
         );
+        const responseModification: SpecialResponse = JSON.parse(data) as SpecialResponse;
+        this.banner.loadComponent(responseModification.status_message, JSON.stringify(responseModification.data),
+          '' + responseModification.status);
       }
     );
   }
@@ -215,6 +198,9 @@ export class GestionMonstreComponent implements OnInit {
             this.updateMonstreCourant();
           }
         );
+        const responseCreation: SpecialResponse = JSON.parse(data) as SpecialResponse;
+        this.banner.loadComponent(responseCreation.status_message, JSON.stringify(responseCreation.data),
+          '' + responseCreation.status);
       }
     );
     this.monstresGroupes = this.familleAndMonstreService.chargerFamillesAvecMonstres(this.http);
@@ -279,6 +265,8 @@ export class GestionMonstreComponent implements OnInit {
     this.familleAndMonstreService.modifierFamille(this.http, this.familleCourante.idFamilleMonstre, libelle).then(
       (data: any) => {
         this.chargerNouvellesDonnees(data);
+        const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+        this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
       }
     );
   }
@@ -289,6 +277,8 @@ export class GestionMonstreComponent implements OnInit {
     this.familleAndMonstreService.creerFamille(this.http, libelle).then(
       (data: any) => {
         this.chargerNouvellesDonnees(data);
+        const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+        this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
       }
     );
   }

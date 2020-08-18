@@ -38,15 +38,15 @@
             <div style="float: right;">
               <button class="btn btn-danger pull-right" type="submit" id="submissionModifierMonstreButton"
                       style="transition: 0.5s ; margin-right: 50px"
-                      *ngIf="!this.monstreExactMatchV"
+                      *ngIf="!this.monstreExactMatch()"
                       (click)="this.modifierMonstre()"
-                      [disabled]="this.monstreExactMatchV || this.emptyMonstre()"
-                      [title]="this.monstreExactMatchV ? 'Le nom choisi existe déjà. Les noms sont uniques.' : ''">
+                      [disabled]="this.inputMonstreNameAlreadyExist() || this.emptyMonstre()"
+                      [title]="this.inputMonstreNameAlreadyExist() ? 'Le nom choisi existe déjà. Les noms sont uniques.' : ''">
                 Modifier un monstre
               </button>
               <button class="btn btn-outline-warning pull-right" type="submit" id="submissionCreerMonstreButton"
                       style="transition: 0.5s;"
-                      *ngIf="!this.monstreExactMatchV"
+                      *ngIf="!this.monstreExactMatch()"
                       (click)="this.creerMonstre()"
                       [disabled]="this.inputMonstreNameAlreadyExist() || this.emptyMonstre()"
                       [title]="this.inputMonstreNameAlreadyExist() ? 'Le nom choisi existe déjà. Les noms doivent être uniques.' : ''">
@@ -126,3 +126,5 @@
   </div>
 
 </div>
+
+<app-fading-info #Banner></app-fading-info>

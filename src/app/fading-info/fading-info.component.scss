@@ -1,0 +1,35 @@
+.ad-banner-example {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width : 350px;
+  right: 0;
+  bottom: 0;
+}
+
+.banner {
+  border : 3px solid rgba(127, 127, 127, 0.5);
+  border-radius: 5px;
+  padding: 15px;
+  transition: 2.5s ease-out;
+  margin-bottom: 15px;
+  margin-right: 2px;
+  width : 350px;
+  overflow-wrap: break-word;
+}
+
+.Mission-Complete {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.Server-Error {
+  background-color: rgba(255, 195, 0, 0.5);
+}
+
+.SQL-Error {
+  background-color: rgba(199, 0, 57, 0.5);
+}
+
+.Unknown-Error {
+  background-color: rgba(255, 87, 51, 0.5);
+}
