@@ -1,0 +1,2460 @@
+[
+    {
+        "title": "Acidifi\u00e9",
+        "description": [
+            "Une armure ou un bouclier acidifi\u00e9 est en permanence couverte d'une couche d'acide fumant. Le porteur ainsi que tout ce qu'il porte est immunis\u00e9 \u00e0 l'acide. Une armure acidifi\u00e9e inflige 2d4 d\u00e9g\u00e2ts d'acide en situation de lutte \u00e0 l'adversaire. Un simple contact ne suffit pas \u00e0 infliger des d\u00e9g\u00e2ts. Il est possible d'infliger des d\u00e9g\u00e2ts \u00e0 un objet, mais il faut un contact d'un round entier pour infliger 2d4 d\u00e9g\u00e2ts d'acide."
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "fl\u00e8che acide de Melf",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "bonus de +4."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Affameur",
+        "description": [
+            "Une armure pourvue de cette propri\u00e9t\u00e9 sp\u00e9ciale est ainsi nomm\u00e9e car plus d'un flagelleur mental en a fait les frais en perdant quelques tentacules. L'armure inclut une protection sp\u00e9ciale contre l\u00e8s cr\u00e9atures qui tentent d'\u00e9treindre ou d'engloutir le porteur. Quand un ennemi tente un test de lutt\u00e9 contre lui, des lames aiguis\u00e9s en jaillissent, infligeant 2d6 points de d\u00e9g\u00e2ts tranchants \u00e0 l'assaillant. Ces lames se r\u00e9tractent aussit\u00f4t qu'on l\u00e2che le porteur de l'armure. Dans le cas contraire, elles continuent d'infliger 2d6 points de d\u00e9g\u00e2ts par round, au tour de jeu du porteur. Elles infligent \u00e9galement ces d\u00e9g\u00e2ts \u00e0 toute cr\u00e9ature ayant englouti le personnage. Si ce dernier meurt, les lames deviennent inertes."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Alli\u00e9",
+        "description": [
+            "Un bouclier ayant cette propri\u00e9t\u00e9 sp\u00e9ciale est d\u00e9cor\u00e9e d'anneaux. Ces anneaux semblent se li\u00e9s avec ceux d'autres boucliers d'alli\u00e9 quand ils sont mis c\u00f4te \u00e0 c\u00f4te.",
+            "Le bonus d'alt\u00e9ration d'un bouclier d'alli\u00e9 augmente de +1 pour chaque alli\u00e9 adjacent portant aussi un bouclier d'alli\u00e9."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Allonge",
+        "description": [
+            "Une armure d'allonge d\u00e9fend son porteur contre les attaques \u00e9loign\u00e9es. Elle conf\u00e8re un bonus de circonstance de +6 \u00e0 la CA contre les attaques de corps \u00e0 corps port\u00e9es par des cr\u00e9atures non-adjacentes."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "armure de mage",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Amphibie",
+        "description": [
+            "Un \u00e9l\u00e9mentaire de l'Eau de taille G est asservi \u00e0 l'armure, lui donnant une coloration d'un bleu laiteux. Le porteur de l'armure peut respirer sous l'eau comme s'il \u00e9tait sous l'effet d'un sort de respiration aquatique, et l'armure ne conf\u00e8re aucun malus aux tests de Natation. Deux fois par jour. l'utilisateur peut ordonner \u00e0 l'armure de produire un effet d'extincfion des feux."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Asservissement d\u2019\u00e9l\u00e9mentaire",
+                "contrat interm\u00e9diaire",
+                "Prix",
+                "+86 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ancrage",
+        "description": [
+            "Un personnage portant une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale est quasiment ind\u00e9racinable en combat. Il b\u00e9n\u00e9ficie en effet d'un bonus d'alt\u00e9ration de +5 aux tests de caract\u00e9ristique visant \u00e0 r\u00e9sister aux tentatives de bousculade, de croc-en-jambe ou de renversement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "force de taureau",
+                "Prix",
+                "+3 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ancrage supr\u00eame",
+        "description": [
+            "Comme ci-dessus, mais conf\u00e8re un bonus d'alt\u00e9ration de +10 aux tests de caract\u00e9ristique visant \u00e0 r\u00e9sister \u00e0 une tentative de bousculade, de croc-en-jambe ou de renversement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "force de taureau",
+                "Prix",
+                "+15 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ang\u00e9lique",
+        "description": [
+            "Cette armure (ou ce bouclier) est orn\u00e9e de motifs c\u00e9lestes et autres repr\u00e9sentations de plumes. L'objet augmente le bonus d'alt\u00e9ration \u00e0 la CA du porteur de +1 contre les attaques\r\nport\u00e9es par des cr\u00e9atures mal\u00e9fiques. Il conf\u00e8re \u00e9galement \u00e0 son utilisateur un bonus de saintet\u00e9 de +4 aux jets de sauvegarde contre les sorts pr\u00e9sentant le registre du Mal. Bien entendu, une cr\u00e9ature mal\u00e9fique qui enfile l'armure ou use du bouclier ne b\u00e9n\u00e9ficie pas de ces avantages."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "d\u00e9termination de Phi\u00e9ran",
+                "rejet du Mal",
+                ", le cr\u00e9ateur doit \u00eatre d\u2019alignement bon ;",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anim\u00e9",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur un bouclier. Sur commande, un bouclier anim\u00e9 flotte \u00e0 moins de 60 centim\u00e8tres de son propri\u00e9taire, le prot\u00e9geant aussi bien que si celui-ci le tenait lui-m\u00eame, bien qu\u2019il ait les deux mains libres. Un personnage ne peut utiliser qu\u2019un bouclier \u00e0 la fois. M\u00eame un bouclier anim\u00e9 impose des d\u00e9savantages, comme un malus d\u2019armure aux tests, un risque d\u2019\u00e9chec des sorts profanes et un malus pour non formation."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "animation d\u2019objets",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anti-impact",
+        "description": [
+            "Une armure anti-impact est con\u00e7ue pour absorber les chocs importants. Elle ne prot\u00e8ge pas contre les attaques des armes (sauf par son bonus \u00e0 la classe d'armure), mais par contre les d\u00e9g\u00e2ts contondants qui affectent l'ensemble du corps (comme ceux d'une chute ou de la constriction) sont r\u00e9duits de moiti\u00e9."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "4 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", chute de plume ;",
+                "Prix",
+                "+2 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Antiprojectiles",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur un bouclier. Un bouclier antiprojectiles prot\u00e8ge son porteur comme si celui-ci avait le don Parade de projectiles. Une fois par round, quand le personnage devrait normalement \u00eatre touch\u00e9 par une arme \u00e0 distance, le bouclier d\u00e9tourne le projectile. Le personnage doit voir venir l\u2019attaque et ne pas \u00eatre pris au d\u00e9pourvu. Parer un projectile n\u2019est pas consid\u00e9r\u00e9 comme une action. Il est impossible de d\u00e9tourner les projectiles hors norme, comme un rocher lanc\u00e9 par un g\u00e9ant ou une fl\u00e8che acide."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "bouclier",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Aquatique",
+        "description": [
+            "Les armures et les boucliers ainsi enchant\u00e9s sont dot\u00e9s de formes harmonieuses et paraissent l\u00e9g\u00e8rement teint\u00e9 de vert. Ils permettent au porteur de se d\u00e9placer librement sou l'eau, sans qu'un test de Natation soit n\u00e9cessaire. Les r\u00e8gles de noyade s\u2019appliquent n\u00e9anmoins toujours, \u00e0 moins que l\u2019objet soit \u00e9galement dot\u00e9 de l'enchantement respiration aquatique."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "libert\u00e9 de mouvement",
+                "respiration aquatique",
+                "Prix",
+                "bonus de +2 (normal) ou +3 (avec respiration aquatique)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Astringente",
+        "description": [
+            "Le porteur d'une armure dot\u00e9e de cette propri\u00e9t\u00e9 ne subit pas d'h\u00e9morragies lorsqu'il est mourant ou souffre de blessures internes. Les blessures se referment automatiquement, emp\u00eachant de perdre d'autres points de vie et stabilisant l'\u00e9tat d'un personnage mourant. De plus, le porteur a 25% de chances de ne pas \u00eatre affect\u00e9 par les attaques visant \u00e0 lui sucer le sang et qui r\u00e9duisent la Constitution, comme la capacit\u00e9 d'absorption de sang d'un vampire ou d'une strige ou les effets d'une arme sanglante."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", le cr\u00e9ateur doit avoir un degr\u00e9 de ma\u00eetrise de 10 en Premiers secours ;",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Attaque",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur un \u00e9cu ou une rondache. Un bouclier d\u2019attaque est con\u00e7u pour porter des coups de bouclier, et il inflige des d\u00e9g\u00e2ts correspondant \u00e0 un bouclier de deux cat\u00e9gories de taille sup\u00e9rieures \u00e0 sa taille r\u00e9elle. (Par exemple, un \u00e9cu de taille M inflige alors 1d8 points de d\u00e9g\u00e2ts et une rondache de taille M 1d6 points de d\u00e9g\u00e2ts.) Un bouclier d\u2019attaque conf\u00e8re un bonus de +1 sur les jets d\u2019attaque et de d\u00e9g\u00e2ts quand on l\u2019utilise pour attaquer, et il compte comme une arme magique."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "force de taureau",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Aveuglant",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur un bouclier. Sur commande et jusqu\u2019\u00e0 deux fois par jour, un bouclier aveuglant peut g\u00e9n\u00e9rer une vive lumi\u00e8re. Toutes les cr\u00e9atures distantes de 6 m\u00e8tres ou moins (\u00e0 l\u2019exception du porteur) doivent r\u00e9ussir un jet de R\u00e9flexes de DD 14 sous peine d\u2019\u00eatre aveugl\u00e9es pendant 1d4 rounds."
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "lumi\u00e8re br\u00fblante",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bestiale",
+        "description": [
+            "Cr\u00e9\u00e9es \u00e0 l'origine par de puissants druides, les armures dot\u00e9es de cette propri\u00e9t\u00e9 sp\u00e9ciale sont particuli\u00e8rement utiles aux personnages de cette classe. Lorsque le porteur d'une armure bestiale utilise son aptitude de forme animale, il peut d\u00e9penser une utilisation quotidienne suppl\u00e9mentaire de son aptitude pour l'amener \u00e0 se transformer avec lui. Quand on l'utilise de la sorte, l'armure bestiale prend une configuration adapt\u00e9e \u00e0 la nouvelle forme du personnage au lieu de simplement se fondre dans son corps. Elle continue a conf\u00e9rer son bonus d'armure, a appliquer son malus d'armure aux tests, \u00e0 ralentir la vitesse de d\u00e9placement du personnage, et fonctionne du reste comme une armure adapt\u00e9e \u00e0 la nouvelle forme. Le poids de l'armure augmente ou r\u00e9duit afin de s'adapter \u00e0 la nouvelle taille du porteur (et \u00e0 sa forme, s'il prend une forme quadrup\u00e8de), et peut par cons\u00e9quent changer sa cat\u00e9gorie de charge par rapport \u00e0 sa forme naturelle.",
+            "Si, dans sa forme naturelle, le personnage est form\u00e9 au port du type de l'armure bestiale, il est toujours form\u00e9 \u00e0 son port une fois transform\u00e9, quelle que soit la forme qu'il prend.",
+            "Cette propri\u00e9t\u00e9 sp\u00e9ciale ne peut \u00eatre appliqu\u00e9e qu'aux armures, et non aux boucliers."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", boidacier ;",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Branchies",
+        "description": [
+            "Cette propri\u00e9t\u00e9 sp\u00e9ciale ne peut \u00eatre plac\u00e9e que sur une armure. une armure \u00e0 branchies poss\u00e8des des d\u00e9coration autour du cou. Elles permet \u00e0 une cr\u00e9ature aquatique de respirer librement dans l'air."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "respiration a\u00e9rienne",
+                "Prix",
+                "+ 7 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Brise-ligne",
+        "description": [
+            "Une armure brise-ligne semble avoir \u00e9t\u00e9 faite de plusieurs armures, avec peu d'effort pour l'esth\u00e9tique.",
+            "Son bonus d'alt\u00e9ration augmente de +2 contre les attaques des cr\u00e9atures loyales. une cr\u00e9ature qui charge un porteur d'une armure brise-ligne provoque pour lui une attaque d'opportunit\u00e9."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "[Chaos] faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre la loi",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Br\u00fblante",
+        "description": [
+            "Un \u00e9l\u00e9mentaire du Feu de taille G est asservi \u00e0 cette armure, o\u00f9 semble couver une incandescence rougeoyante. Le porteur de cette armure gagne une r\u00e9sistance au froid de 10. Trois fois par jour, il peut ordonner \u00e0 l'armure de prendre feu. Ces flammes ne blessent pas le porteur, mais toute cr\u00e9ature qui le frappe avec une partie de son corps ou une arme tenue \u00e0 la main subit 2d6 points de d\u00e9g\u00e2ts de feu, et prend \u00e9galement feu \u00e0 moins de r\u00e9ussir un jet de R\u00e9flexes (DD 17). Les cr\u00e9atures qui portent des armes \u00e0 allonge, comme des piques, ne sont pas sujettes \u00e0 cet effet. Les flammes durent 11 rounds."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Asservissement d\u2019\u00e9l\u00e9mentaire",
+                "contrat interm\u00e9diaire",
+                "Prix",
+                "+90 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Chanceux",
+        "description": [
+            "Une fois par semaine, le porteur d'une armure ou d'un bouclier chanceux peut demander \u00e0 ce qu\u2019un jet d\u2019attaque effectu\u00e9 contre lui soit rejou\u00e9. \u00c0 noter que l'armure ou le bouclier offre seulement une seconde chance, comme son nom l\u2019indique, mais que le second r\u00e9sultat peut \u00eatre pire que le premier (par exemple, en se traduisant par un coup critique). Le porteur doit se d\u00e9cider avant que les d\u00e9g\u00e2ts ne soient d\u00e9termin\u00e9s."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "b\u00e9n\u00e9diction",
+                "Prix",
+                "+2 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Charme",
+        "description": [
+            "Les armures et les boucliers ainsi enchant\u00e9s sont con\u00e7us pour l\u2019esth\u00e9tique autant que la protection. La forme de l\u2019objet accro\u00eet la prestance de son porteur. Un adversaire qui frappe ce dernier doit r\u00e9ussir un jet de sauvegarde (DD 13) ou \u00eatre charm\u00e9. S'il adversaire a r\u00e9ussit son attaque, il re\u00e7oit un bonus de +4 \u00e0 ce jet de sauvegarde."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "mod\u00e9r\u00e9 ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "charme-monstre"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Chauffante",
+        "description": [
+            "Cette armure en m\u00e9tal est d'un contact plut\u00f4t chaud, quel que soit l'environnement. Le porteur est prot\u00e9g\u00e9 des temp\u00e9ratures basses comme par un sort d'endurance aux \u00e9nergies destructives."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "endurance aux \u00e9nergies destructives",
+                "Prix",
+                "+1 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Clignotement",
+        "description": [
+            "Sur commande, le personnage portant une armure accompagn\u00e9e de cette propri\u00e9t\u00e9 sp\u00e9ciale passe rapidement du plan Mat\u00e9riel au plan \u00c9th\u00e9r\u00e9. Ce pouvoir peut \u00eatre activ\u00e9 1 fois par jour et dure 1 minute."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "clignotement",
+                "Prix",
+                "+15 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Combat rituel",
+        "description": [
+            "Une armure de combat rituel appara\u00eet douce au touch\u00e9 et est d\u00e9cor\u00e9 de motif tribaux. Les puissant guerriers portent ces protections magique alors de combat rituel pour \u00e9viter les risques d'accident.",
+            "Une armure de combat rituel transforme les 4 premiers point de d\u00e9g\u00e2ts inflig\u00e9s par une attaque physique en d\u00e9g\u00e2ts non-l\u00e9taux. Les effets d'une armure de combat rituel et d'un bouclier de combat rituel se cumulent."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9 ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "peau de pierre",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Confort",
+        "description": [
+            "Une armure accompagn\u00e9e de cette propri\u00e9t\u00e9 sp\u00e9ciale permet \u00e0 celui qui la porte d'ignorer les effets de la chaleur et du froid. Le personnage peut donc \u00e9voluer sous des temp\u00e9ratures comprises entre -45\u00b0 et +55\u00b0 sans avoir \u00e0 effectuer de jets de Vigueur. Son \u00e9quipement est \u00e9galement prot\u00e9g\u00e9."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "endurance aux \u00e9nergies destructives",
+                "Prix",
+                "+5 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Conseiller",
+        "description": [
+            "Les armures du conseiller sont g\u00e9n\u00e9ralement des armures l\u00e9g\u00e8res. Elles sont souvent port\u00e9es par des officiels qui supervisent les op\u00e9rations.",
+            "une armure du conseiller conf\u00e8re un bonus d'aptitude de +2 aux tests de Diplomatie et Psychologie."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "faible ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "h\u00e9ro\u00efsme",
+                "Prix",
+                "+13 200 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Contr\u00f4le des morts-vivants",
+        "description": [
+            "Une armure (ou un bouclier) de contr\u00f4le des morts-vivants semble \u00eatre int\u00e9gralement faite d\u2019ossements. Cet effet d\u00e9coratif n\u2019a cependant aucune incidence sur la solidit\u00e9 de l\u2019objet. Le porteur de cet objet peut contr\u00f4ler jusqu\u2019\u00e0 26 DV de morts-vivants par jour, comme s\u2019il utilisait le sort contr\u00f4le des morts-vivants. Le personnage maintient son contr\u00f4le jusqu\u2019\u00e0 la prochaine aube."
+        ],
+        "infos": {
+            "data": [
+                "N\u00e9cromancie",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "contr\u00f4le des morts-vivants",
+                "Prix",
+                "+49 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Contr\u00f4le des vermines",
+        "description": [
+            "Le porteur d'une armure ou d'un bouclier accompagn\u00e9 d\u00e9 cette propri\u00e9t\u00e9 sp\u00e9ciale peut contr\u00f4ler jusqu'\u00e0 26 DV de vermines par jour, sur le m\u00eame principe que la propri\u00e9t\u00e9 de contr\u00f4le de morts-vivants. \u00c0 l'aube de chaque jour, le porteur perd le contr\u00f4le des vermines qui sont encore sous son influence. Les armures et boucliers jouissant de cette propri\u00e9t\u00e9 semblent faits d'\u00e9l\u00e9ments de corps segment\u00e9s (par exemple, d'arachnides ou d'insectes) ; ce trait est purement d\u00e9coratif et n'a aucun effet sur l'objet."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "charme-monstre de groupe",
+                "Prix",
+                "+49 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cr\u00e9pusculaire",
+        "description": [
+            "Tr\u00e8s appr\u00e9ci\u00e9e des lanceurs de sorts \u00e9ladrins, cette armure devient partiellement intangible et translucide quand on l'enfile. En outre, elle pr\u00e9sente des reflets qui ne sont pas sans rappeler les couleurs d'un coucher de soleil. L'armure cr\u00e9pusculaire r\u00e9duit le risque d'\u00e9chec des sorts profanes de 10 %."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9fense",
+        "description": [
+            "Une armure (ou un bouclier) de d\u00e9fense g\u00e9n\u00e8re un champ de force prot\u00e9geant plus efficacement les organes vitaux du porteur. Quand ce dernier est victime d\u2019un coup critique ou d\u2019une attaque sournoise, il y a des chances pour que l\u2019attaque inflige seulement des d\u00e9g\u00e2ts normaux."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", soit miracle, soit souhait limit\u00e9 ;",
+                "Prix",
+                "variable (voir ci-dessus)."
+            ]
+        },
+        "ul": null,
+        "table": [
+            [
+                0.0,
+                "<table border=\"1\">\r\n<tbody><tr><th>Type de d\u00e9fense</th><th>Chance que les d\u00e9g\u00e2ts soient normaux</th><th>Modificateur au prix de base</th></tr>\r\n<tr><td>L\u00e9g\u00e8re</td><td>25%</td><td>Bonus de +1</td></tr>\r\n<tr><td>Interm\u00e9diaire</td><td>75%</td><td>Bonus de +3</td></tr>\r\n<tr><td>Lourde</td><td>100%</td><td>Bonus de +5</td></tr>\r\n</tbody></table>"
+            ]
+        ]
+    },
+    {
+        "title": "D\u00e9fense d\u00e9moniaque",
+        "description": [
+            "Cette armure augmente le bonus d\u2019alt\u00e9ration \u00e0 la classe d\u2019armure de +1 contre les attaques ass\u00e9n\u00e9es par des cr\u00e9atures d\u2019alignement bon, et de +2 contre les attaques venant d\u2019Ext\u00e9rieurs d\u2019alignement bon. De plus, elle conf\u00e8re un bonus de +1 aux jets de sauvegarde contre les sorts et les effets magiques g\u00e9n\u00e9r\u00e9s par des cr\u00e9atures d\u2019alignement bon, et un bonus de +2 aux jets de sauvegarde contre les sorts du Bien."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "rejet du Bien",
+                "gardeciel",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9placement furtif",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Une armure de d\u00e9placement furtif est si bien huil\u00e9e et fabriqu\u00e9e de telle fa\u00e7on qu\u2019elle ne fait presque aucun bruit et qu\u2019elle assourdit les bruits environnants. Le porteur b\u00e9n\u00e9ficie d\u2019un bonus d\u2019aptitude de +5 \u00e0 ses tests de D\u00e9placement silencieux. (Le malus d\u2019armure aux tests s\u2019applique normalement)."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "silence",
+                "Prix",
+                "+3 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9placement furtif sup\u00e9rieur",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de d\u00e9placement furtif, mais elle conf\u00e8re un bonus d\u2019aptitude de +10 aux tests de D\u00e9placement silencieux."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "silence",
+                "Prix",
+                "+15 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9placement furtif supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de d\u00e9placement furtif, mais elle conf\u00e8re un bonus d\u2019aptitude de +15 aux tests de D\u00e9placement silencieux."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "silence",
+                "Prix",
+                "+33 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9placement xorn",
+        "description": [
+            "Cette propri\u00e9t\u00e9 conf\u00e8re au porteur de l'armure les avantages du sort d\u00e9placement xorn pendant 9 rounds par jour (cette dur\u00e9e peut \u00eatre d\u00e9compos\u00e9e en plusieurs fois)."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "d\u00e9placement xorn",
+                "Prix",
+                "+36 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9voreuse de magie",
+        "description": [
+            "Ce type d'armure est habituellement orn\u00e9 de spirales et de gueules arm\u00e9es de crocs. Elle offre une r\u00e9sistance \u00e0 la magie (13), mais les sorts qui prennent le porteur pour cible sont d\u00e9vor\u00e9s par la propri\u00e9t\u00e9 de l'armure s'ils ne parviennent pas \u00e0 passer outre la RM qu'elle conf\u00e8re. Le porteur b\u00e9n\u00e9ficie alors de 1d8 points de vie temporaires (jusqu'\u00e0 un maximum de 8 points, quel que soit le nombre de sorts d\u00e9vor\u00e9s). Les points de vie temporaires ainsi glan\u00e9s disparaissent au bout de 1 heure."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance \u00e0 la magie",
+                "souhait limit\u00e9",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Drow",
+        "description": [
+            "Jadis, les armures drows \u00e9taient monnaie courante, mais elles sont pass\u00e9es de mode dans de nombreuses cit\u00e9s d'elfes noirs. Une armure drow conf\u00e8re un bonus de parade de +2 \u00e0 la CA si le porteur se trouve au sein d'un node tellurien ou d'une zone de faezrzress. En dehors de telles zones, l'armure ne conf\u00e8re pas son bonus de parade mais fonctionne normalement.",
+            "Une armure drow expos\u00e9e \u00e0 la lumi\u00e8re du soleil doit r\u00e9ussir un jet de Vigueur (DD 8) sous peine de tomber en poussi\u00e8re. Un nouveau jet de sauvegarde (m\u00eame DD) est n\u00e9cessaire pour chaque journ\u00e9e d'exposition. Les armures prot\u00e9g\u00e9es ou expos\u00e9es \u00e0 une lumi\u00e8re indirecte (par exemple, en int\u00e9rieur) restent vuln\u00e9rables, mais celles qui sont rang\u00e9es dans un contenant chemis\u00e9 de plomb sont en s\u00e9curit\u00e9. Une armure drow enduite d'huile noire est immunis\u00e9e contre les effets de la lumi\u00e8re du soleil"
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "d\u00e9sint\u00e9gration",
+                "pr\u00e9voyance",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Durable",
+        "description": [
+            "Une armure durable n'est pas affect\u00e9e par les pouvoirs sp\u00e9ciaux la rouillant (comme le pouvoir d'un oxydeur) ou la dissolvant (comme l'effet de nombreuses vases). De plus, l'armure est immunis\u00e9e aux d\u00e9g\u00e2ts d'acide. Cette protection ne s'\u00e9tend pas \u00e0 son porteur.",
+            "Seules les armures en m\u00e9tal peuvent profiter de ce pouvoir."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "R\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+500po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Emplum\u00e9",
+        "description": [
+            "Les armures et les boucliers pourvus de cet enchantement semblent avoir \u00e9t\u00e9 cr\u00e9\u00e9s de milliers de plumes chatoyantes. Cette particularit\u00e9 n'a aucun effet sur le poids, les p\u00e9nalit\u00e9s d'armure ou d'autres facteurs, L'enchantement permet au porteur de voler 5 minutes par jour avec une vitesse de 30 m (20 m si l'armure est interm\u00e9diaire ou lourde) et une man\u0153uvrabilit\u00e9 bonne. La dur\u00e9e peut \u00eatre d\u00e9coup\u00e9e autant que le d\u00e9sir le porteur, mais chaque dur\u00e9e aussi petite soit-elle compte au minimum pour 1 round. Activer ou d\u00e9sactiver cet effet est une action simple purement mentale."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "vol",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Empyr\u00e9ale",
+        "description": [
+            "Cette armure (ou ce bouclier) magnifiquement ouvrag\u00e9e, v\u00e9ritable objet de culte parmi les champions c\u00e9lestes du Bien, est g\u00e9n\u00e9ralement incrust\u00e9e de pierres pr\u00e9cieuses et orn\u00e9e de repr\u00e9sentations de puissants archons, \u00e9ladrins ou guardinals. Le porteur peut transformer tout ou partie de son bonus d'alt\u00e9ration en bonus de saintet\u00e9 aux jets de sauvegarde. Il d\u00e9cide d'effectuer le transfert \u00e0 son tour de jeu, l'effet perdurant alors jusqu'\u00e0 son tour de jeu suivant. Quand une cr\u00e9ature mal\u00e9fique enfile une armure ou porte un bouclier de ce type, elle est fi\u00e9vreuse (malus de -2 aux jets d'attaque, jets de sauvegarde, tests de caract\u00e9ristique et tests de comp\u00e9tence), et ce tant qu'elle utilise l'objet (pas de jet de sauvegarde),"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "N\u00e9cromancie",
+                "|Bien] mod\u00e9r\u00e9es ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "bouclier de la foi",
+                "enfi\u00e8vrement du Mal",
+                "r\u00e9sistance",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Endurance",
+        "description": [
+            "Une armure d'endurance conf\u00e8re \u00e0 son porteur un bonus de r\u00e9sistance de +1 aux jets de Vigueur"
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance",
+                "endurance de l\u2019ours",
+                "Prix",
+                "+500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c9pines d\u2019hamatula",
+        "description": [
+            "Toute cr\u00e9ature frappant le porteur de cette armure avec une arme tenue \u00e0 la main ou naturelle subit 1d8 points de d\u00e9g\u00e2ts tranchants et per\u00e7ants \u00e0 cause des \u00e9pines. Ces d\u00e9g\u00e2ts ne s'appliquent pas aux assaillants munis d'armes \u00e0 allonge comme les piques. Le porteur n'est pas bless\u00e9 par les \u00e9pines de son armure."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", \u00e9pines d\u2019hamatula ;",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c9th\u00e9r\u00e9e",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Sur commande et une fois par jour, une armure \u00e9th\u00e9r\u00e9e rend son porteur \u00e9th\u00e9r\u00e9 (voir le sort forme \u00e9th\u00e9r\u00e9e). Le personnage peut rester dans cet \u00e9tat aussi longtemps qu\u2019il le souhaite, mais \u00e0 partir du moment o\u00f9 il revient dans le plan Mat\u00e9riel, il lui faut attendre 24 heures pour pouvoir retourner dans le plan \u00c9th\u00e9r\u00e9."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "forme \u00e9th\u00e9r\u00e9e",
+                "Prix",
+                "+49 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Exalt\u00e9e",
+        "description": [
+            "S'il est d'alignement bon, le porteur de cette armure immacul\u00e9e ne subit que la moiti\u00e9 des d\u00e9g\u00e2ts inflig\u00e9s par les armes impies (+1d6 et non +2d6) et b\u00e9n\u00e9ficie d'une protection contre le Mal permanente. De plus, l'armure annule les d\u00e9g\u00e2ts mal\u00e9fiques inflig\u00e9s par les armes naturelles, \u00e0 distance ou au corps \u00e0 corps mal\u00e9fiques."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre le Mal",
+                ", le cr\u00e9ateur doit \u00eatre d\u2019alignement bon ;",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Flamme spirituelle",
+        "description": [
+            "Le porteur de cette armure est immunis\u00e9 contre les sorts de mort, les effets de mort magique, l'absorption d'\u00e9nergie et les effets li\u00e9s \u00e0 l'\u00e9nergie n\u00e9gative (comme contact glacial ou un sort de blessure)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre la mort",
+                "Prix",
+                "bonus de +4."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Flottante",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Celle-ci n'apparait pas diff\u00e9remment dune autre armure, mais elle est plus l\u00e9g\u00e8re. Son poids est divis\u00e9 par deux et le malus d'armure aux tests de Natation n'est pas doubl\u00e9. Elle reste g\u00eanante, et une armure interm\u00e9diaire ou lourde continue de ralentir son porteur."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "libert\u00e9 de mouvement",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Flou",
+        "description": [
+            "La silhouette du porteur de cette armure ou de ce bouclier est vague et impr\u00e9cise. Cette distorsion lui conf\u00e8re un camouflage (20 % de chances que les attaques le ratent). Ceux qui ne voient pas le porteur ignorent l'effet, ce qui vaut aussi pour les cr\u00e9atures jouissant de vision lucide."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "flou",
+                "Prix",
+                "+36 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Focalis\u00e9",
+        "description": [
+            "Un bouclier focalis\u00e9 aide le personnage \u00e0 anticiper les mouvements de l'ennemi lors du combat, \u00e0 mieux percer a jour les feintes et mouvements semblables, et conf\u00e8re des avantages suppl\u00e9mentaires quand il combat contre une seule cr\u00e9ature.",
+            "Un bouclier focalis\u00e9 conf\u00e8re un bonus de circonstances de +10 aux tests de Psychologie oppos\u00e9s \u00e0 des tests de Bluff effectu\u00e9s pour feinter. De plus, \u00e0 chaque fois que son porteur\r\nn'est menac\u00e9 que par une cr\u00e9ature, le bonus du bouclier a la CA augmente de 1.",
+            "Cette propri\u00e9t\u00e9 sp\u00e9ciale ne peut \u00eatre appliqu\u00e9e qu'aux boucliers et non aux armures."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "bouclier",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Force",
+        "description": [
+            "Le porteur de cette armure b\u00e9n\u00e9ficie d'un bonus d'alt\u00e9ration de +2 ou de +4 en Force."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "12 ; Cr\u00e9ation d\u2019armes et d\u2019armures magiques, force du taureau ;",
+                "Prix",
+                "+8000 po (+2), +32 000 po (+4)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Forme animale",
+        "description": [
+            "Une armure (ou un bouclier) de forme animale est d\u00e9cor\u00e9e de motifs repr\u00e9sentant des feuilles. Lorsque son porteur prend une forme animale (aptitude de classe de druide), il conserve son bonus d\u2019armure (ou de bouclier), ainsi que le bonus d\u2019alt\u00e9ration correspondant. L\u2019armure (ou le bouclier) n\u2019est cependant alors pas visible."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "m\u00e9tamorphose funeste",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Glacis bleu",
+        "description": [
+            "Cette propri\u00e9t\u00e9 peut \u00eatre appliqu\u00e9e seulement \u00e0 des armures m\u00e9talliques qui gagnent alors une coloration bleu-noir une fois trait\u00e9es. L'armure qui a subit ce traitement ne ternira jamais et sera d\u00e9finitivement immunis\u00e9e aux attaques d'acide et de rouille. Le porteur de l'armure gagne aussi un bonus de circonstances de +5 sur ses jets de Discr\u00e9tion. Ce bonus ne se cumule pas avec celui fournit par une cape d'elfe."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "12 ; Cr\u00e9ation d\u2019arm\u00e9s et armures magiques, jeteur de sorts de niveau 12+, degr\u00e9 de ma\u00eetrise de 5+ en Artisanat (Alchimie) ;",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Gluant",
+        "description": [
+            "Une armure ou un bouclier dot\u00e9 de cette propri\u00e9t\u00e9 semble collant comme s'il \u00e9tait recouvert d'une gel\u00e9e rouge encore gluante. Jusqu'\u00e0 trois fois par jour, son porteur peut prononcer un mot de commande pour b\u00e9n\u00e9ficier de l'effet d'un sort de mucus de babau."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "mucus de babau",
+                "Prix",
+                "+16 200 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Graisseuse",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Une armure graisseuse semble en permanence recouverte d\u2019un film gras conf\u00e9rant un bonus d\u2019aptitude de +5 aux tests d\u2019\u00c9vasion de son porteur. (Le malus d\u2019armure aux tests s\u2019applique normalement)."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "4 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "graisse",
+                "Prix",
+                "+3 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Graisseuse sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 graisseuse, mais elle conf\u00e8re un bonus d\u2019aptitude de +10 aux tests d\u2019\u00c9vasion."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "graisse",
+                "Prix",
+                "+15 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Graisseuse supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 graisseuse, mais elle conf\u00e8re un bonus d\u2019aptitude de +15 aux tests d\u2019\u00c9vasion."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "graisse",
+                "Prix",
+                "+33 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Gu\u00e9rison",
+        "description": [
+            "Quand un personnage portant une armure accompagn\u00e9e de cette propri\u00e9t\u00e9 sp\u00e9ciale est hors de combat ou mourant en raison d'un trop grand nombre de blessures re\u00e7ues, l'objet lui rend automatiquement 20 points de vie (le porteur n'a pas besoin d'activer cette propri\u00e9t\u00e9). Ce pouvoir fonctionne 1 fois par jour."
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "pr\u00e9voyance",
+                "soins mod\u00e9r\u00e9s",
+                "Prix",
+                "+32 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Hideux",
+        "description": [
+            "Une armure ou un bouclier avec cette propri\u00e9t\u00e9 est d\u00e9cor\u00e9e avec des os, des scalps, des visc\u00e8res et autres horreurs. Une odeur putride \u00e9mane de l'amure ou du bouclier.",
+            "Le porter d'une armure ou d'un bouclier hideux gagne un bonus d'aptitude de +4 \u00e0 se tests d'Intimidation, mais subit un malus de -2 \u00e0 ses tests de Diplomatie."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "4 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", le cr\u00e9ateur doit avoir un degr\u00e9 de ma\u00eetrise de 5 en Intimidation ;",
+                "Prix",
+                "+3570 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Illithid",
+        "description": [
+            "Les armures pourvues de cette propri\u00e9t\u00e9 sont relativement courantes dans les r\u00e9gions contr\u00f4l\u00e9es par les illithids, mais peu connues dans le reste du monde. Les armures illithids sont parfois dou\u00e9es de conscience, \u00e9voluant et changeant presque imperceptiblement, m\u00eame quand on ne les porte pas. Une armure illithid conf\u00e8re \u00e0 celui qui la porte un bonus d'intuition de +1 \u00e0 la CA. Ce bonus passe \u00e0 +2 si l'int\u00e9ress\u00e9 est un psionique."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Cr\u00e9ation d\u2019armes et armures psioniques",
+                ", cr\u00e9ature psionique ;",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Image miroir",
+        "description": [
+            "Sur commande, 3 fois par jour, une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale permet \u00e0 son utilisateur de cr\u00e9er des images de lui-m\u00eame, semblables \u00e0 celles que produit le sort image miroir. Le pouvoir cr\u00e9e six images qui restent jusqu'\u00e0 ce qu'on les frappe mais disparaissent quoiqu'il arrive au bout de 6 minutes."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "image miroir",
+                "Prix",
+                "+20 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Immobile",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Un porteur d'une armure immobile est trait\u00e9 comme d'une taille suppl\u00e9mentaire face \u00e0 une bousculade ou un renversement.",
+            "Un effet secondaire de cet enchantement est que l'armure p\u00e8se 10% de plus."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "agrandissement",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Immunit\u00e9 contre la transformation",
+        "description": [
+            "Le porteur de cette armure est immunis\u00e9 contre les effets de transmutation susceptibles de modifier sa forme, ce qui inclut la m\u00e9tamorphose et la p\u00e9trification,  mais  \u00e9galement la d\u00e9sint\u00e9gration (d\u00e9sint\u00e9gration peut tuer le porteur mais ne transforme alors pas ses restes en poussi\u00e8re). Le porteur peut d\u00e9cider de laisser certains sorts franchir la protection que lui offre l'armure (pour se lancer des sorts de Transmutation, par exemple, ou pour b\u00e9n\u00e9ficier d'une m\u00e9tamorphose ou d'un agrandissement lanc\u00e9 par un alli\u00e9)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "immunit\u00e9 contre les sorts",
+                "Prix",
+                "bonus de +5."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Insensibilit\u00e9 au feu",
+        "description": [
+            "Cette armure annule la vuln\u00e9rabilit\u00e9 au feu de son porteur. Par exemple, un g\u00e9ant du givre portant cette armure subit des d\u00e9g\u00e2ts normaux des attaques de feu."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre les \u00e9nergies destructives",
+                ", le cr\u00e9ateur doit \u00eatre du sous-type froid ;",
+                "Prix",
+                "+24 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Insensibilit\u00e9 au froid",
+        "description": [
+            "Cette armure annule la vuln\u00e9rabilit\u00e9 au froid de son porteur. Par exemple, un g\u00e9ant du feu portant cette armure subit des d\u00e9g\u00e2ts normaux des attaques de froid."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre les \u00e9nergies destructives",
+                ", le cr\u00e9ateur doit \u00eatre du sous-type Feu ;",
+                "Prix",
+                "+24 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Insensibilit\u00e9 aux enchantements",
+        "description": [
+            "Un personnage portant une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale est immunis\u00e9 contre les trois premiers sorts d'Enchantement cens\u00e9s l'affecter chaque jour."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "annulation d\u2019enchantement",
+                "Prix",
+                "+50 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Interception de projectiles",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur un bouclier. Sur commande, un bouclier d\u2019interception de projectiles attire sur lui les armes \u00e0 distance (armes de jets ou \u00e0 projectiles) visant son porteur. Il lui conf\u00e8re donc un bonus de parade de +1 \u00e0 la CA contre les armes \u00e0 distance. De plus, toute arme de jet et tout projectile visant une cible situ\u00e9e \u00e0 1,50 m\u00e8tre ou moins du porteur de ce bouclier sont eux aussi attir\u00e9s. L\u2019attaque change alors automatiquement de cible pour viser le porteur (\u00e0 moins qu\u2019il ne dispose d\u2019un abri total vis-\u00e0-vis de l\u2019attaquant, ou que l\u2019arme n\u2019ait un bonus d\u2019alt\u00e9ration sup\u00e9rieur au bonus de bouclier de base du bouclier, auxquels cas rien ne se passe). Ce n\u2019est pas sans d\u00e9savantage, et notamment, les attaques \u00e0 distance contre le porteur ne souffrent d\u2019aucun risque d\u2019\u00e9chec, d\u00fb par exemple \u00e0 un camouflage. Le porteur peut activer et d\u00e9sactiver les effets de cette propri\u00e9t\u00e9 gr\u00e2ce \u00e0 un mot de commande."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "bouclier entropique",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Invocable",
+        "description": [
+            "Ce puissant enchantement permet au possesseur d'appeler \u00e0 lui d\u2019un simple mot de commande, son armure ou son bouclier. Il s'agit d'une action simple et, \u00e0 la fin de celle-ci, l'armure est parfaitement ajust\u00e9e sur le porteur, le boucher quant \u00e0 lui apparaissant au (bon) bras de ce dernier. L'armure comme le bouclier semblent par ailleurs parfaitement normaux.",
+            "L'armure ou le bouclier doivent avoir \u00e9t\u00e9 port\u00e9s pendant au moins 4 heures cons\u00e9cutives pour \u00eatre li\u00e9 \u00e0 leur possesseur."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ; Cr\u00e9ation d\u2019armes et d\u2019armures magiques,",
+                "t\u00e9l\u00e9portation",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Invuln\u00e9rabilit\u00e9",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Une armure d\u2019invuln\u00e9rabilit\u00e9 conf\u00e8re \u00e0 son porteur une r\u00e9duction des d\u00e9g\u00e2ts de 5/magie."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e (et",
+                "\u00c9vocation",
+                "si l\u2019on utilise miracle) ;",
+                "NLS",
+                "18 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "peau de pierre",
+                ", et soit miracle, soit souhait ;",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Libert\u00e9",
+        "description": [
+            "Un personnage portant une armure accompagn\u00e9e de cette propri\u00e9t\u00e9 sp\u00e9ciale agit comme s'il jouissait d'un effet de libert\u00e9 de mouvement continu."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "libert\u00e9 de mouvement",
+                "Prix",
+                "+60 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Lithofusion",
+        "description": [
+            "Un \u00e9l\u00e9mentaire de la Terre de taille G est asservi \u00e0 cette armure, et des structures cristallines apparaissent \u00e0 divers endroits de sa surface. Le porteur de l'armure gagne une r\u00e9duction des d\u00e9g\u00e2ts de 5/\u2014 et peut utiliser fusion dans la pierre sur commande, trois fois par jour."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Asservissement d\u2019\u00e9l\u00e9mentaire",
+                "contrat interm\u00e9diaire",
+                "Prix",
+                "+80 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ma\u00eetrise",
+        "description": [
+            "Une armure de ma\u00eetrise voit son bonus d'alt\u00e9ration \u00e0 la CA augment\u00e9 de +5. Cette augmentation du bonus d'alt\u00e9ration ne s'applique pas pour calculer la solidit\u00e9, les points de r\u00e9sistance ou tout autre effet d\u00e9pendant du bonus d\u2019alt\u00e9ration de l'armure autre que la CA."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Panoplie magique",
+                "Prix",
+                "bonus de +5."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Mall\u00e9able",
+        "description": [
+            "Une armure mall\u00e9able permet \u00e0 son porteur d'\u00e9voluer dans les espaces confin\u00e9s des cavernes et des tunnels. Le personnage ignore la r\u00e9duction de vitesse de d\u00e9placement due aux espaces confin\u00e9s (une zone inf\u00e9rieure \u00e0 son espace occup\u00e9 mais au moins \u00e9gal \u00e0 la moiti\u00e9 de celui-ci) et aux espaces bas (inf\u00e9rieure \u00e0 sa taille mais au moins \u00e9gale \u00e0 la moiti\u00e9 de celle-ci). De plus, il conserve son bonus de Dext\u00e9rit\u00e9 \u00e0 la CA (le cas \u00e9ch\u00e9ant). Si l'espace en question est \u00e0 la fois confin\u00e9 et bas, une seule condition s'applique."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ; Cr\u00e9ation d\u2019armes et amures magiques, Coureur des tunnels ;",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Marchebois",
+        "description": [
+            "Une armure marchebois permet \u00e0 son porteur d'entrer et de sortir d'un arbre par une action libre comme par le sort voyage par les arbres.",
+            "Ce pouvoir n'est utilisable que si le porteur a l\u2019aptitude de D\u00e9placement facilit\u00e9e et est utilisable 3 fois par jour."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "voyage par les arbres",
+                "Prix",
+                "+9 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Masque",
+        "description": [
+            "Une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale prot\u00e8ge son porteur et son \u00e9quipement des sorts et objets de Divination (comme la boule de cristal). Si le porteur est la cible d'une divination, l'auteur de celle-ci doit r\u00e9ussir un test de niveau de lanceur de sorts (DD 20)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "antid\u00e9tection",
+                "Prix",
+                "+45 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Menace",
+        "description": [
+            "Une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale permet \u00e0 son utilisateur de terrifier ses adversaires. Trois fois par jour, sur simple commande, le porteur devient effrayant, obligeant les adversaires situ\u00e9s dans un rayon de 9 m\u00e8tres et ayant moins de d\u00e9s de vie que lui \u00e0 effectuer un jet de Volont\u00e9 (DD 10 + 1/2 d\u00e9s de vie du porteur + son modificateur de Charisme). Ceux qui le ratent sont paniqu\u00e9s pendant 10 rounds et se recroquevillent sur eux-m\u00eames s'ils sont accul\u00e9s. Ceux qui le r\u00e9ussissent sont quant \u00e0 eux secou\u00e9s pendant 1 round, mais sont ensuite immunis\u00e9s contre les utilisations de la propri\u00e9t\u00e9 de cette m\u00eame armure pendant 24 heures."
+        ],
+        "infos": {
+            "data": [
+                "N\u00e9cromancie",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", Sort s\u00e9lectif,",
+                "terreur",
+                "Prix",
+                "+60 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Mim\u00e9tisme",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Une armure de mim\u00e9tisme a l\u2019air normale. Pourtant, sur commande, elle change de forme pour prendre l\u2019aspect de v\u00eatements. M\u00eame transform\u00e9e, elle conserve toutes ses propri\u00e9t\u00e9s (y compris son poids). Seul le sort vision lucide r\u00e9v\u00e8le la v\u00e9ritable nature d\u2019une armure de mim\u00e9tisme transform\u00e9e."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "d\u00e9guisement",
+                "Prix",
+                "+2 700 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Mordante",
+        "description": [
+            "Une armure mordante est couverte de visage grima\u00e7ant. Ceux-ci repr\u00e9sentent g\u00e9n\u00e9ralement des monstres ou personnes terrorisant la r\u00e9gion o\u00f9 a \u00e9t\u00e9 cr\u00e9\u00e9e l'armure. Une armure mordante s'active automatique lorsque son porteur est en situation de lutte. Les visages s'animent alors, mordant l'adversaire. L'armure inflige 1d6 d\u00e9g\u00e2ts \u00e0 chaque ennemi en situation de lutte avec son porteur. Ces d\u00e9g\u00e2ts sont consid\u00e9r\u00e9s tranchant, perforant et contondant."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "animation d\u2019objets",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Nacr\u00e9e",
+        "description": [
+            "Un bouclier ou une arme nacr\u00e9e brille comme une perle. Elle est plus efficace contre les armes perforantes et conf\u00e8re un bonus d'alt\u00e9ration \u00e0 la CA suppl\u00e9mentaire de +2 contre les armes perforantes."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "armure de mage",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Navigation",
+        "description": [
+            "Le porteur d'une armure accompagn\u00e9e de cette propri\u00e9t\u00e9 sp\u00e9ciale r\u00e9ussit automatiquement ses tests d'\u00c9quilibre (jusqu'\u00e0 un DD 20) quand il est \u00e0 bord d'un navire. Bien que son poids ne change pas, l'armure est l\u00e9g\u00e8rement flottante et conf\u00e8re au porteur un bonus de circonstances de +5 aux tests de Natation."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "pied marin",
+                ", le cr\u00e9ateur doit avoir un degr\u00e9 de ma\u00eetrise de 5 en Natation ;",
+                "Prix",
+                ".+20 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Occulaire",
+        "description": [
+            "Une armure oculaire est d\u00e9cor\u00e9e de plusieurs petits yeux. Le personnage gagne la vision \u00e0 360\u00b0, ce qui lui conf\u00e8re un bonus de +4 \u00e0 ses jets de D\u00e9tection et de Fouille. De plus, il ne peut plus \u00eatre pris en tenaille"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", oeil de mage ;",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ombre",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Une armure d\u2019ombre est d\u2019un noir de jais et la silhouette de son porteur semble se brouiller chaque fois qu\u2019il tente de se cacher, ce qui se traduit par un bonus d\u2019aptitude de +5 \u00e0 ses tests de Discr\u00e9tion. (Le malus d\u2019armure aux tests s\u2019applique normalement)."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "invisibilit\u00e9",
+                "Prix",
+                "+3 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ombre sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle d\u2019ombre, mais elle conf\u00e8re un bonus d\u2019aptitude de +10 aux tests de Discr\u00e9tion."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "invisibilit\u00e9",
+                "Prix",
+                "+15 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ombre supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle d\u2019ombre, mais elle conf\u00e8re un bonus d\u2019aptitude de +15 aux tests de Discr\u00e9tion."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "invisibilit\u00e9",
+                "Prix",
+                "+33 750 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Plong\u00e9e",
+        "description": [
+            "Cette armure, souvent d\u00e9cor\u00e9e de motifs de vagues, permet au personnage de respirer sous l'eau. Son porteur gagne \u00e9galement un bonus d'aptitude de +5 aux tests de Natation."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "respiration aquatique",
+                "Prix",
+                "+21 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Poids plume",
+        "description": [
+            "Les armures poids plume sont d\u00e9 v\u00e9ritables \u0153uvres d'art dont la conception inclut un savoir-faire psionique, des mat\u00e9riaux d'une qualit\u00e9 exceptionnelle et une science de l'ing\u00e9nierie incroyable, le tout permettant de r\u00e9duire leur poids de moiti\u00e9. L'armure poids plume est donc une armure l\u00e9g\u00e8re \u00e0 part enti\u00e8re, si ce n'est que la protection qu'elle conf\u00e8re n'est pas affect\u00e9e. Ainsi, une cuirasse +1 poids plume est une armure l\u00e9g\u00e8re et peut \u00eatre utilis\u00e9e sans malus par tout personnage form\u00e9 au port des armures l\u00e9g\u00e8res."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Cr\u00e9ation d\u2019armes et armures psioniques",
+                ", cr\u00e9ature psionique ;",
+                "Prix",
+                "bonus de +3 (bonus de +2 si utilis\u00e9 sur une armure illithid)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pointes empoisonn\u00e9es",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est identique \u00e0 des pointes pour armure classiques, \u00e0 la diff\u00e9rence que celles-ci se r\u00e9tractent dans des compartiments cach\u00e9s de l'armure. Quand elles surgissent, en r\u00e9ponse \u00e0 un mot de commande, elles infligent 1d6 points de d\u00e9g\u00e2ts perforants (comme des pointes pour armure normales) et le poison dont elles sont enduites provoque un affaiblissement temporaire de 1d3 points de Force, aussi bien en effet initial qu'en effet secondaire (DD 16)."
+        ],
+        "infos": {
+            "data": [
+                "N\u00e9cromancie",
+                "faible ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "empoisonnement",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Protection contre la mort",
+        "description": [
+            "Une fois par jour, le porteur de cette armure peut ignorer un effet de mort dont il est la cible (ce qui inclut les sorts de mort, les effets de mort magique, l'absorption d'\u00e9nergie et les effets d'\u00e9nergie n\u00e9gative comme les sorts de blessure et contact glacial)."
+        ],
+        "infos": {
+            "data": [
+                "N\u00e9cromancie",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre la mort",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Protection des damn\u00e9s",
+        "description": [
+            "\u2019il est d\u2019alignement mauvais, le porteur de cette armure ne subit que la moiti\u00e9 des d\u00e9g\u00e2ts inflig\u00e9s par les sorts et effets magiques qui sont particuli\u00e8rement efficaces contres les cr\u00e9atures mal\u00e9fiques, tels que le sort de ch\u00e2timent sacr\u00e9, le pouvoir de ch\u00e2timent du Mal des paladins ou les d\u00e9g\u00e2ts suppl\u00e9mentaires occasionn\u00e9s par une arme sainte."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "protection contre le Bien",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Protection fantomatique",
+        "description": [
+            "Une armure ou un bouclier pourvu de cette propri\u00e9t\u00e9 permet au porteur de b\u00e9n\u00e9ficier du bonus d\u2019alt\u00e9ration de l\u2019objet (mais pas de son bonus d\u2019armure ou de bouclier) \u00e0 la CA contre les attaques de contact intangibles (mais pas contre les autres attaques de contact)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "armure de mage",
+                "Prix",
+                "bonus +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Prot\u00e8ge-nu\u00e9e",
+        "description": [
+            "Une rune d\u00e9licate est grav\u00e9e autour de chaque couture et faille qui sont absolument n\u00e9cessaires d'une armure prot\u00e8ge-bu\u00e9e, prot\u00e9geant son porteur contre l'intrusion de la vermine. Lorsqu'il est expos\u00e9 \u00e0 une attaque de nu\u00e9e, les runes s'illuminent, bloquant les cr\u00e9atures qui tentent de p\u00e9n\u00e9trer les d\u00e9fenses de l'armure.",
+            "Une armure prot\u00e8ge-nu\u00e9e conf\u00e8re une r\u00e9duction de d\u00e9g\u00e2ts de 5/\u2014 contre les attaques des nu\u00e9es. Elle conf\u00e8re de plus un bonus aux tests de Concentration et aux jets de sauvegarde contre l'effet de distraction d'une nu\u00e9e \u00e9gal au bonus d'armure de l'armure prot\u00e8ge-nu\u00e9e."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9pulsif",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Rafraichissante",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur une armure. Une armure rafraichissante n'impose pas son malus normal de -4 aux jets de Vigueur pour r\u00e9sister aux effets de la chaleur"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "endurance aux \u00e9nergies destructives",
+                "Prix",
+                "+ 2 400 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9action ectoplasmique",
+        "description": [
+            "Une armure pourvue de cette propri\u00e9t\u00e9 g\u00e9n\u00e8re un choc d\u2019\u00e9nergie positive quand son porteur est touch\u00e9 par une attaque de contact au corps \u00e0 corps intangible. Celle-ci inflige 1d6 points de d\u00e9g\u00e2ts \u00e0 l\u2019assaillant (pas de jet de sauvegarde). Cette propri\u00e9t\u00e9 n\u2019a aucun effet sur les cr\u00e9atures tangibles."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9action ectoplasmique",
+                "Prix",
+                "+ 8 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9fl\u00e9chissant",
+        "description": [
+            "Cette propri\u00e9t\u00e9 ne peut \u00eatre plac\u00e9e que sur un bouclier. Un bouclier r\u00e9fl\u00e9chissant est lisse comme un miroir et on se voit parfaitement dedans. Une fois par jour, son porteur peut s\u2019en servir pour retourner un sort \u00e0 son lanceur (voir renvoi des sorts)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "14 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "renvoi des sorts",
+                "Prix",
+                "bonus de +5."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Refroidissante",
+        "description": [
+            "Cette armure en m\u00e9tal est d'un contact plut\u00f4t frais, quel que soit l'environnement Le porteur est prot\u00e9g\u00e9 des temp\u00e9ratures \u00e9lev\u00e9es comme par un sort \u00e0'endurance aux \u00e9nergies destructives."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "endurance aux \u00e9nergies destructives",
+                "Prix",
+                "1500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Repr\u00e9saille",
+        "description": [
+            "Une armure avec cette propri\u00e9t\u00e9 sp\u00e9ciale est capable de frapper ceux qui ont durement frapp\u00e9 leur porteur. A chaque fois que le porteur subit 10 points de d\u00e9g\u00e2ts ou plus \u00e0 cause d'une attaque au corps \u00e0 corps, l'armure inflige 1d6 points de d\u00e9g\u00e2ts \u00e0 celui qui a port\u00e9 l'attaque. Si le porteur tombe \u00e0 0 points de vie ou moins suite \u00e0 une attaque au corps \u00e0 corps, l'armure inflige 3d6 points de d\u00e9g\u00e2ts \u00e0 celui qui a port\u00e9 l'attaque"
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "puissante ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "symbole de douleur",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 la magie",
+        "description": [
+            "Une armure (ou un bouclier) de r\u00e9sistance \u00e0 la magie conf\u00e8re \u00e0 son porteur une r\u00e9sistance \u00e0 la magie dont la valeur varie en fonction du mod\u00e8le (13, 15, 17 ou 19)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance \u00e0 la magie",
+                "Prix",
+                "bonus de +2 (RM 13), de +3 (RM 15), de +4 (RM 17) ou de +5 (RM 19)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 l\u2019acide",
+        "description": [
+            "Une armure (ou un bouclier) de r\u00e9sistance \u00e0 l\u2019acide est souvent d\u2019un gris terme. Chaque fois que le porteur doit subir des d\u00e9g\u00e2ts d\u2019acide, leur montant est r\u00e9duit de 10 points (comme par le sort r\u00e9sistance aux \u00e9nergies destructives)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+18 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 l\u2019acide sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance \u00e0 l\u2019acide, mais elle absorbe 20 points de d\u00e9g\u00e2ts d\u2019acide par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+42 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 l\u2019acide supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance \u00e0 l\u2019acide, mais elle absorbe 30 points de d\u00e9g\u00e2ts d\u2019acide par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+66 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 l\u2019\u00e9lectricit\u00e9",
+        "description": [
+            "Une armure (ou un bouclier) de r\u00e9sistance \u00e0 l\u2019\u00e9lectricit\u00e9 est souvent bleut\u00e9e et s\u2019orne dans la plupart des cas d\u2019un symbole de foudre ou de temp\u00eate. Chaque fois que le porteur doit subir des d\u00e9g\u00e2ts d\u2019\u00e9lectricit\u00e9, leur montant est r\u00e9duit de 10 points (comme par le sort r\u00e9sistance aux \u00e9nergies destructives)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+18 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 l\u2019\u00e9lectricit\u00e9 sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance \u00e0 l\u2019\u00e9lectricit\u00e9, mais elle absorbe 20 points de d\u00e9g\u00e2ts d\u2019\u00e9lectricit\u00e9 par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+42 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance \u00e0 l\u2019\u00e9lectricit\u00e9 supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance \u00e0 l\u2019\u00e9lectricit\u00e9, mais elle absorbe 30 points de d\u00e9g\u00e2ts d\u2019\u00e9lectricit\u00e9 par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+66 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au feu",
+        "description": [
+            "Une armure (ou un bouclier) de r\u00e9sistance au feu est souvent rouge\u00e2tre et s\u2019orne dans la plupart des cas d\u2019un symbole de dragon. Chaque fois que le porteur doit subir des d\u00e9g\u00e2ts de feu, leur montant est r\u00e9duit de 10 points (comme par le sort r\u00e9sistance aux \u00e9nergies destructives)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+18 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au feu sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance au feu, mais elle absorbe 20 points de d\u00e9g\u00e2ts de feu par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+42 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au feu supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance au feu, mais elle absorbe 30 points de d\u00e9g\u00e2ts de feu par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+66 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au froid",
+        "description": [
+            "Une armure (ou un bouclier) de r\u00e9sistance au froid est souvent blanc-bleu ou recouverte de fourrure ou de peaux d\u2019animaux laineux. Chaque fois que le porteur doit subir des d\u00e9g\u00e2ts de froid, leur montant est r\u00e9duit de 10 points (comme par le sort r\u00e9sistance aux \u00e9nergies destructives)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+18 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au froid sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance au froid, mais elle absorbe 20 points de d\u00e9g\u00e2ts de froid par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+42 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au froid supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance au froid, mais elle absorbe 30 points de d\u00e9g\u00e2ts de froid par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+66 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au son",
+        "description": [
+            "Une armure (ou un bouclier) de r\u00e9sistance au son luit l\u00e9g\u00e8rement. Chaque fois que le porteur doit subir des d\u00e9g\u00e2ts de son, leur montant est r\u00e9duit de 10 points (comme par le sort r\u00e9sistance aux \u00e9nergies destructives)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+18 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au son sup\u00e9rieure",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance au son, mais elle absorbe 20 points de d\u00e9g\u00e2ts de son par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+42 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "R\u00e9sistance au son supr\u00eame",
+        "description": [
+            "Cette propri\u00e9t\u00e9 est similaire \u00e0 celle de r\u00e9sistance au son, mais elle absorbe 30 points de d\u00e9g\u00e2ts de son par attaque."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "r\u00e9sistance aux \u00e9nergies destructives",
+                "Prix",
+                "+66 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sacr\u00e9e",
+        "description": [
+            "Une armure (ou un bouclier) \u00e9quip\u00e9e de cette propri\u00e9t\u00e9 n'est d'utilit\u00e9 qu'aupr\u00e8s d'un porteur pourvu du pouvoir de renvoyer ou d'intimider les morts-vivants. L'objet augmente le niveau de son propri\u00e9taire de +2 pour ce qui est des tests de renvoi. Une armure (ou un bouclier) dot\u00e9e de cette propri\u00e9t\u00e9 rel\u00e8ve toujours d'un dieu pr\u00e9cis et arbore son symbole sacr\u00e9."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", pouvoir de renvoi ou d\u2019intimidation des morts-vivants ;",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sanctuaire",
+        "description": [
+            "Trois fois par jour, sur commande, un personnage portant une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale est prot\u00e9g\u00e9 comme s'il jouissait d'un sort de sanctuaire (Volont\u00e9, DD 11, annule). L'effet dure 1 minute."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "sanctuaire",
+                "Prix",
+                "bonus +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sant\u00e9",
+        "description": [
+            "Un personnage portant une armure ou un bouclier accompagn\u00e9 de cette propri\u00e9t\u00e9 sp\u00e9ciale est immunis\u00e9 contre toutes les maladies, naturelles et magiques."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "gu\u00e9rison des maladies",
+                "Prix",
+                "+11 250 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sombre",
+        "description": [
+            "Une armure sombre est pens\u00e9e pour se fondre dans l'environnement lorsqu'elle est regard\u00e9e par la vision dans le noir. Son porteur gagne un bonus de circonstance de +5 aux tests de Discr\u00e9tion pour se cacher de cr\u00e9atures disposant de la vision dans le noir. De plus, il gagne un camouflage lorsqu'il combat de telles cr\u00e9atures.",
+            "Ces effets ne sont pas actifs lorsque le porteur de l'armure sombre est dans une zone de lumi\u00e8re vive."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "invisibilit\u00e9",
+                "Prix",
+                "+ 8 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Souplesse",
+        "description": [
+            "Cette armure semble plus l\u00e9g\u00e8re et plus souple que les autres armures du m\u00eame type. Bien que le poids r\u00e9el reste inchang\u00e9, le bonus maximum de Dext\u00e9rit\u00e9 est augment\u00e9 de +2 et la p\u00e9nalit\u00e9 d'armure est r\u00e9duite de 1."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "gr\u00e2ce f\u00e9line",
+                "Prix",
+                "bonus de +1."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Spectral(e)",
+        "description": [
+            "Une armure (ou un bouclier) spectrale semble presque translucide. Son bonus d\u2019armure (ou de bouclier) et son bonus d\u2019alt\u00e9ration sont tous deux pris en compte contre les attaques des cr\u00e9atures intangibles. L\u2019armure (ou le bouclier) peut \u00eatre utilis\u00e9e normalement par les cr\u00e9atures intangibles, qui b\u00e9n\u00e9ficient de sa protection contre les attaques des cr\u00e9atures dot\u00e9es d\u2019un corps physique, tout en pouvant continuer de passer au travers des solides."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "passage dans l\u2019\u00e9ther",
+                "Prix",
+                "bonus de +3."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Stoppe-hache",
+        "description": [
+            "Une armure stoppe-hache repousse les armes tranchantes comme les haches et les \u00e9p\u00e9es. Son porteur b\u00e9n\u00e9ficie d'une r\u00e9duction des d\u00e9g\u00e2ts 5/contondant ou perforant.",
+            "Les propri\u00e9t\u00e9s sp\u00e9ciales stoppe-hache, stoppe-lance et stoppe-marteau se cumulent en type d'arme repouss\u00e9e (on retire celles qui apparaissent plusieurs fois), mais pas en valeur de d\u00e9g\u00e2ts annul\u00e9s. Par exemple, une armure stoppe-hache stoppe-lance fournit une r\u00e9duction des d\u00e9g\u00e2ts 5/contondant."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "m\u00e9tamorphose universelle",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Stoppe-lance",
+        "description": [
+            "Une armure stoppe-lance repousse les armes perforantes comme les lances et les fl\u00e8ches. Son porteur b\u00e9n\u00e9ficie d'une r\u00e9duction des d\u00e9g\u00e2ts 5,/contondant ou tranchant."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "m\u00e9tamorphose universelle",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Stoppe-marteau",
+        "description": [
+            "Une armure stoppe-marteau repousse les armes contondantes comme les marteaux et les masses d'armes. Son porteur b\u00e9n\u00e9ficie d'une r\u00e9duction des d\u00e9g\u00e2ts 5/tranchant ou perforant."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "m\u00e9tamorphose universelle",
+                "Prix",
+                "bonus de +2."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Tol\u00e9rance planaire",
+        "description": [
+            "Une armure ou un bouclier dot\u00e9 de cette propri\u00e9t\u00e9 annule les effets naturels de tous les plans comme si son porteur \u00e9tait affect\u00e9 par un sort de tol\u00e9rance planaire."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", tol\u00e9rance planaire ;",
+                "Prix",
+                "+25 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Tourbillon",
+        "description": [
+            "Un \u00e9l\u00e9mentaire de l'Air de taille G est asservi \u00e0 cette armure, qui semble presque translucide. Quand le porteur de l'armure prononce un mot de commande, l'armure lui permet de voler \u00e0 une vitesse de 18 m\u00e8tres (man\u0153uvrabilit\u00e9 bonne). Une fois par jour, le porteur peut se transformer. lui et tout son \u00e9quipement, en un tourbillon, comme s il \u00e9tait un \u00e9l\u00e9mentaire de l'air de taille G, et rester sous cette forme pendant 4 rounds au maximum.",
+            "Les armures qui suivent poss\u00e8dent syst\u00e9matiquement les propri\u00e9t\u00e9s d\u00e9taill\u00e9es dans leur description."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Asservissement d\u2019\u00e9l\u00e9mentaire",
+                "contrat interm\u00e9diaire",
+                "Prix",
+                "+90 000 po."
+            ]
+        },
+        "ul": null,
+        "table": [
+            [
+                8.0,
+                "<table border=\"1\">\r\n<tbody><tr><th>Faible</th><th>Interm\u00e9diaire</th><th>Puissante</th><th>Armure sp\u00e9ciale</th><th>Prix de vente</th></tr>\r\n<tr><td>01\u201350</td><td>01\u201325</td><td>\u2014</td><td>Chemise de mailles en mithral</td><td>1 100 po</td></tr>\r\n<tr><td>51\u201380</td><td>26\u201345</td><td>\u2014</td><td>Harnois en peau de dragon</td><td>3 300 po</td></tr>\r\n<tr><td>81\u2013100</td><td>46\u201357</td><td>\u2014</td><td>Cotte de mailles elfique</td><td>4 150 po</td></tr>\r\n<tr><td>\u2014</td><td>58\u201367</td><td>\u2014</td><td>Armure de peau de rhinoc\u00e9ros</td><td>5 165 po</td></tr>\r\n<tr><td>\u2014</td><td>68\u201382</td><td>01\u201310</td><td>Cuirasse en adamantium</td><td>10 200 po</td></tr>\r\n<tr><td>\u2014</td><td>83\u201397</td><td>11\u201320</td><td>Harnois nain</td><td>16 500 po</td></tr>\r\n<tr><td>\u2014</td><td>98\u2013100</td><td>21\u201332</td><td>Crevice de la seconde chance</td><td>18 900 po</td></tr>\r\n<tr><td>\u2014</td><td>\u2014</td><td>33\u201350</td><td>Armure c\u00e9leste</td><td>22 400 po</td></tr>\r\n<tr><td>\u2014</td><td>\u2014</td><td>51\u201360</td><td>Harnois des profondeurs</td><td>24 650 po</td></tr>\r\n<tr><td>\u2014</td><td>\u2014</td><td>61\u201375</td><td>Cuirasse de commandement</td><td>25 400 po</td></tr>\r\n<tr><td>\u2014</td><td>\u2014</td><td>76\u201390</td><td>Harnois en mithral de vitesse</td><td>26 500 po</td></tr>\r\n<tr><td>\u2014</td><td>\u2014</td><td>91\u2013100</td><td>Armure d\u00e9moniaque</td><td>52 260 po</td></tr>\r\n</tbody></table>"
+            ]
+        ]
+    }
+]

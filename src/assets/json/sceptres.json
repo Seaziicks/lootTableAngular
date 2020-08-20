@@ -1,0 +1,1015 @@
+[
+    {
+        "title": "Absorption",
+        "description": [
+            "Le sceptre d\u00e2\u0080\u0099absorption agit comme un aimant, si ce n\u00e2\u0080\u0099est que ce sont les sorts et les pouvoirs magiques qu\u00e2\u0080\u0099il attire \u00c3  lui. L\u00e2\u0080\u0099effet absorb\u00c3\u00a9 doit \u00c3\u00aatre un effet \u00c3  cible unique ou un rayon prenant pour cible le possesseur du sceptre ou son \u00c3\u00a9quipement. Dans ce cas, le sceptre annule l\u00e2\u0080\u0099attaque et stocke son potentiel magique, jusqu\u00e2\u0080\u0099\u00c3  ce que le personnage d\u00c3\u00a9cide de la lib\u00c3\u00a9rer sous la forme de sorts qu\u00e2\u0080\u0099il est capable de lancer. L\u00e2\u0080\u0099absorption ne n\u00c3\u00a9cessite aucune action pour peu que l\u00e2\u0080\u0099aventurier ait le sceptre en main. Ce dernier indique instantan\u00c3\u00a9ment \u00c3  son possesseur le niveau des sorts qu\u00e2\u0080\u0099il absorbe.",
+            "Il est souhaitable de comptabiliser les niveaux de sort absorb\u00c3\u00a9s et d\u00c3\u00a9pens\u00c3\u00a9s. Le personnage peut se servir de l\u00e2\u0080\u0099\u00c3\u00a9nergie absorb\u00c3\u00a9e pour jeter les sorts qu\u00e2\u0080\u0099il a pr\u00c3\u00a9par\u00c3\u00a9s, sans que ceux-ci disparaissent de sa m\u00c3\u00a9moire (il pourra donc les lancer normalement par la suite). Les seules restrictions \u00c3  cette r\u00c3\u00a8gle sont que les sorts jet\u00c3\u00a9s de la sorte ne doivent pas d\u00c3\u00a9passer la quantit\u00c3\u00a9 d\u00e2\u0080\u0099\u00c3\u00a9nergie contenue dans le sceptre, que l\u00e2\u0080\u0099aventurier doit tenir le sceptre en main au moment de l\u00e2\u0080\u0099incantation et qu\u00e2\u0080\u0099il doit poss\u00c3\u00a9der les composantes mat\u00c3\u00a9rielles exig\u00c3\u00a9es par le sort. Dans le cas d\u00e2\u0080\u0099un barde ou d\u00e2\u0080\u0099un ensorceleur, qui n\u00e2\u0080\u0099a pas besoin de pr\u00c3\u00a9parer ses sorts \u00c3  l\u00e2\u0080\u0099avance, le personnage peut se servir du sceptre pour lancer n\u00e2\u0080\u0099importe quel sort qu\u00e2\u0080\u0099il conna\u00c3\u00aet.",
+            "Le sceptre d\u00e2\u0080\u0099absorption ne peut absorber qu\u00e2\u0080\u0099un maximum de 50 niveaux de sort, et c\u00e2\u0080\u0099est l\u00e2\u0080\u0099\u00c3\u00a9nergie accumul\u00c3\u00a9e de la sorte qui d\u00c3\u00a9termine les sorts qu\u00e2\u0080\u0099il permet de lib\u00c3\u00a9rer (cette limite est donc la m\u00c3\u00aame que la pr\u00c3\u00a9c\u00c3\u00a9dente, \u00c3  savoir 50 niveaux de sort). Il ne peut pas \u00c3\u00aatre recharg\u00c3\u00a9. Le personnage sait \u00c3  tout moment combien le sceptre peut absorber de niveaux de sort et quelle \u00c3\u00a9nergie magique il a emmagasin\u00c3\u00a9.",
+            "Pour d\u00c3\u00a9terminer la puissance d\u00e2\u0080\u0099un sceptre d\u00c3\u00a9couvert au hasard d\u00e2\u0080\u0099une aventure, jetez 1d100 et divisez le r\u00c3\u00a9sultat par deux, en arrondissant \u00c3  l\u00e2\u0080\u0099entier inf\u00c3\u00a9rieur, afin d\u00e2\u0080\u0099obtenir le nombre de niveaux de sort qu\u00e2\u0080\u0099il peut encore absorber. Cela fait, jouez de nouveau 1d100. Sur un r\u00c3\u00a9sultat de 71\u00e2\u0080\u0093100, la moiti\u00c3\u00a9 des niveaux de sort absorb\u00c3\u00a9s sont encore pr\u00c3\u00a9sents \u00c3  l\u00e2\u0080\u0099int\u00c3\u00a9rieur du sceptre ; sinon, ils ont \u00c3\u00a9t\u00c3\u00a9 utilis\u00c3\u00a9s par un propri\u00c3\u00a9taire pr\u00c3\u00a9c\u00c3\u00a9dent. Par exemple, si le premier jet de d\u00c3\u00a9 indique que le sceptre peut encore absorber 34 niveaux de sort, cela signifie qu\u00e2\u0080\u0099il en a d\u00c3\u00a9j\u00c3  absorb\u00c3\u00a9 16. Il y a donc 30% de chances pour que 8 niveaux de sort soient toujours utilisables. Sur un r\u00c3\u00a9sultat de 01\u00e2\u0080\u009330, toute l\u00e2\u0080\u0099\u00c3\u00a9nergie stock\u00c3\u00a9e a \u00c3\u00a9t\u00c3\u00a9 d\u00c3\u00a9pens\u00c3\u00a9e."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "renvoi des sorts",
+                "Prix",
+                "50 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Aggravation des blessures",
+        "description": [
+            "Chaque centim\u00c3\u00a8tre de ce sceptre en ivoire est d\u00c3\u00a9cor\u00c3\u00a9 de symbole abstrait, formant un ensemble complexe.",
+            "Au prix d'une action simple, le porteur de ce sceptre peut l'activer pour infliger 1d8 d\u00c3\u00a9g\u00c3\u00a2ts \u00c3  toute cr\u00c3\u00a9ature adjacente ayant moins de points de vie que son maximum. Ce pouvoir peut \u00c3\u00aatre activ\u00c3\u00a9 5 fois par jour."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "blessure l\u00c3\u00a9g\u00c3\u00a8re",
+                "Prix",
+                "2 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anciens",
+        "description": [
+            "Ce sceptre est g\u00c3\u00a9n\u00c3\u00a9ralement taill\u00c3\u00a9 dans le bois afin de repr\u00c3\u00a9senter un symbole de jeunesse et de virilit\u00c3\u00a9. Il est g\u00c3\u00a9n\u00c3\u00a9ralement utilis\u00c3\u00a9 comme symbole de puissance par des chefs tribaux.",
+            "Lorsque ce sceptre est tenu, il annule les malus (mais pas les bonus) aux caract\u00c3\u00a9ristiques dus \u00c3  l'\u00c3\u00a2ge. Les malus reprennent d\u00c3\u00a8s que le sceptre n'est plus tenu."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "endurance de l\u00e2\u0080\u0099ours",
+                "force de taureau",
+                "gr\u00c3\u00a2ce f\u00c3\u00a9line",
+                "Prix",
+                "40 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Annulation",
+        "description": [
+            "Ce sceptre annule les pouvoirs magiques des autres objets. Son possesseur n\u00e2\u0080\u0099a qu\u00e2\u0080\u0099\u00c3  le pointer vers l\u00e2\u0080\u0099objet de son choix pour qu\u00e2\u0080\u0099un rayon perl\u00c3\u00a9 jaillisse du sceptre d\u00e2\u0080\u0099annulation. Si l\u00e2\u0080\u0099objet pris pour cible est touch\u00c3\u00a9 (ce qui n\u00c3\u00a9cessite une attaque de contact \u00c3  distance), tous ses pouvoirs actifs sont imm\u00c3\u00a9diatement dissip\u00c3\u00a9s et le fonctionnement de tous ses autres sorts et pouvoirs magiques a 75% de chances d\u00e2\u0080\u0099\u00c3\u00aatre interrompu pendant 2d4 rounds, quelle que soit leur puissance. Pour pouvoir annuler un effet instantan\u00c3\u00a9, le possesseur du sceptre doit se tenir pr\u00c3\u00aat \u00c3  l\u00e2\u0080\u0099intercepter. L\u00e2\u0080\u0099objet vis\u00c3\u00a9 n\u00e2\u0080\u0099a droit \u00c3  aucun jet de sauvegarde, mais le sceptre d\u00e2\u0080\u0099annulation ne peut affecter les artefacts (pas m\u00c3\u00aame ceux qui sont \u00e2\u0080\u009c seulement \u00e2\u0080\u009d rares). Il fonctionne un maximum de 3 fois par jour."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089cole mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "dissipation de la magie",
+                ", souhait limit\u00c3\u00a9 ou miracle ;",
+                "Prix",
+                "37 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Annulation de faerzress",
+        "description": [
+            "La faerzress pose des probl\u00c3\u00a8mes \u00c3  de nombreux voyageurs de l'Outreterre. Ce sceptre constitue un moyen co\u00c3\u00bbteux mais utile de contrer les effets de la faerzress. A volont\u00c3\u00a9, le porteur peut annuler les effets de la faerzress dans un rayon de 3 m\u00c3\u00a8tres jusqu'\u00c3  1 heure pas jour (cette dur\u00c3\u00a9e peut \u00c3\u00aatre 'd\u00c3\u00a9compos\u00c3\u00a9e en plusieurs fois). La faerzress reste annul\u00c3\u00a9e dans la zone jusqu'\u00c3  ce que le porteur d\u00c3\u00a9cide de mettre un terme \u00c3  l'effet ou jusqu'\u00c3  ce que la dur\u00c3\u00a9e arrive \u00c3  expiration."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", zone\u00c2\u00bb d\u00e2\u0080\u0099antimagie ;",
+                "Prix",
+                "70 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Canne de nuit",
+        "description": [
+            "Ce sceptre noir taill\u00c3\u00a9 dans un bois sombre est recouvert de symboles religieux de divers dieux. Son possesseur dispose de quatre tentatives de renvoi ou d\u00e2\u0080\u0099intimidation des morts-vivants quotidiennes suppl\u00c3\u00a9mentaires (encore faut-il qu\u00e2\u0080\u0099il ait ce pouvoir)."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Emprise sur les morts-vivants, aptitude de classe de renvoi ou d\u00e2\u0080\u0099intimidation des morts-vivants ;",
+                "Prix",
+                "7 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cherche-portails",
+        "description": [
+            "Ce sceptre vibre dans la main de son porteur et d\u00c3\u00a9signe le portail le plus proche dans un rayon de 18 m\u00c3\u00a8tres. Le porteur conna\u00c3\u00aet \u00c3\u00a9galement la destination du portail et sait s'il est possible de l'activer."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "analyse de portail",
+                "localisation d\u00e2\u0080\u0099objet",
+                "Prix",
+                "73 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00c3\u00a9fi",
+        "description": [
+            "Ce sceptre blanc en forme de gourdin est utilisable comme une masse d\u00e2\u0080\u0099armes lourde +2. Tous les morts-vivants situ\u00c3\u00a9s dans un rayon de 9 m\u00c3\u00a8tres du porteur du sceptre sont victimes d\u00e2\u0080\u0099un malus de -4 en r\u00c3\u00a9sistance au renvoi des morts-vivants."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", aptitude de classe de renvoi ou d\u00e2\u0080\u0099intimidation des morts-vivants ;",
+                "Prix",
+                "13 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00c3\u00a9tection de l\u00e2\u0080\u0099hostilit\u00c3\u00a9",
+        "description": [
+            "Ce sceptre vibre dans la main de son possesseur et indique dans quelle direction se trouvent les cr\u00c3\u00a9atures hostiles au personnage (en commen\u00c3\u00a7ant par les plus proches). Ces cr\u00c3\u00a9atures sont d\u00c3\u00a9tect\u00c3\u00a9es qu\u00e2\u0080\u0099elles soient visibles, d\u00c3\u00a9guis\u00c3\u00a9es, cach\u00c3\u00a9es, invisibles ou \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9es. Le sceptre a une port\u00c3\u00a9e de 18 m\u00c3\u00a8tres. Si le porteur du sceptre se concentre pendant un round entier, l\u00e2\u0080\u0099objet lui indique la position exacte de l\u00e2\u0080\u0099ennemi le plus proche et le nombre d\u00e2\u0080\u0099ennemis se trouvant \u00c3  port\u00c3\u00a9e. Il peut \u00c3\u00aatre utilis\u00c3\u00a9 3 fois par jour, chaque utilisation durant 10 minutes. Une action simple est n\u00c3\u00a9cessaire pour l\u00e2\u0080\u0099activer."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "vision lucide",
+                "Prix",
+                "23 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00c3\u00a9tection des m\u00c3\u00a9taux et des min\u00c3\u00a9raux",
+        "description": [
+            "Ce sceptre vibre dans la main de son possesseur et lui indique la plus importante masse m\u00c3\u00a9tallique comprise dans un rayon de 9 m\u00c3\u00a8tres. S\u00e2\u0080\u0099il le souhaite, le personnage peut se concentrer sur un m\u00c3\u00a9tal ou un min\u00c3\u00a9ral sp\u00c3\u00a9cifique (or, platine, quartz, b\u00c3\u00a9ryl, diamant, corindon, etc.). Si le m\u00c3\u00a9tal ou le min\u00c3\u00a9ral recherch\u00c3\u00a9 est pr\u00c3\u00a9sent \u00c3  moins de 9 m\u00c3\u00a8tres de distance, le sceptre r\u00c3\u00a9v\u00c3\u00a8le tous les endroits o\u00c3\u00b9 il se trouve, en commen\u00c3\u00a7ant par les plus importantes concentrations. \u00c3\u0080 chaque fois, le personnage a conscience de la quantit\u00c3\u00a9 de minerai contenue dans le gisement. Le sceptre a besoin d\u00e2\u0080\u0099une action complexe pour d\u00c3\u00a9tecter chaque veine ; plusieurs rounds seront donc n\u00c3\u00a9cessaires s\u00e2\u0080\u0099il y a divers filons du m\u00c3\u00a9tal ou du min\u00c3\u00a9ral recherch\u00c3\u00a9 \u00c3  port\u00c3\u00a9e."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "localisation d\u00e2\u0080\u0099objet",
+                "Prix",
+                "10 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Divergence",
+        "description": [
+            "Chacun de ces sceptres est cisel\u00c3\u00a9 de runes protectrices et surmont\u00c3\u00a9 d'une gemme. Le type de cette gemme d\u00c3\u00a9pend de la forme d'\u00c3\u00a9nergie destructive contre laquelle le sceptre a \u00c3\u00a9t\u00c3\u00a9 con\u00c3\u00a7u (une \u00c3\u00a9meraude pour l'acide, une topaze pour l'\u00c3\u00a9lectricit\u00c3\u00a9, un rubis pour le feu, un saphir pour le froid et un diamant pour le son). Quand un effet relevant du type d'\u00c3\u00a9nergie ad\u00c3\u00a9quat vise le porteur du tout point situ\u00c3\u00a9 dans un rayon de 3 m\u00c3\u00a8tres de celui-ci, il a le droit de sacrifier 3 charges pour rediriger l'attaque en un point de son choix situ\u00c3\u00a9 dans un rayon de 18 m\u00c3\u00a8tres (action libre). Un sort de zone doit \u00c3\u00aatre centr\u00c3\u00a9 dans un rayon de 3 m\u00c3\u00a8tres du porteur pour que celui-ci puisse le rediriger. (En d'autres termes, une boule de feu jet\u00c3\u00a9e \u00c3  4,50 m\u00c3\u00a8tres ne saurait \u00c3\u00aatre redirig\u00c3\u00a9e, m\u00c3\u00aame si une partie de l'effet entre bel et bien dans un p\u00c3\u00a9rim\u00c3\u00a8tre de 3 m\u00c3\u00a8tres du porteur.) De plus, le sceptre de divergence peut reproduire les effets d'un sort de lueur f\u00c3\u00a9erique. Ce pouvoir ne co\u00c3\u00bbte aucune charge. Le sceptre de divergence a 50 charges au moment de sa cr\u00c3\u00a9ation."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "lueur f\u00c3\u00a9erique",
+                "renvoi des sorts",
+                "Prix",
+                "117 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Enfers",
+        "description": [
+            "La longueur de ce simple b\u00c3\u00a2ton d\u00e2\u0080\u0099acier est parcourue de glyphes offrant un certain pouvoir sur les morts-vivants. Quand il a recours \u00c3  son pouvoir de renvoi ou d\u00e2\u0080\u0099intimidation des morts-vivants, le porteur b\u00c3\u00a9n\u00c3\u00a9ficie d\u00e2\u0080\u0099un bonus de +3 \u00c3  son niveau de pr\u00c3\u00aatre."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", aptitude de classe de renvoi ou d\u00e2\u0080\u0099intimidation des morts-vivants ;",
+                "Prix",
+                "9 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089ternelle vigilance",
+        "description": [
+            "Un sceptre d\u00e2\u0080\u0099\u00c3\u00a9ternelle vigilance ressemble \u00c3  s\u00e2\u0080\u0099y m\u00c3\u00a9prendre \u00c3  une masse d\u00e2\u0080\u0099armes l\u00c3\u00a9g\u00c3\u00a8re +1 dot\u00c3\u00a9e de huit ailettes. Il transmet un bonus d\u00e2\u0080\u0099intuition de +1 sur les tests d\u00e2\u0080\u0099initiative de son porteur. Si le personnage le tient fermement, le sceptre lui conf\u00c3\u00a8re les pouvoirs suivants : d\u00c3\u00a9tection de l\u00e2\u0080\u0099invisibilit\u00c3\u00a9, d\u00c3\u00a9tection de la Loi, d\u00c3\u00a9tection de la magie, d\u00c3\u00a9tection du Bien, d\u00c3\u00a9tection du Chaos, d\u00c3\u00a9tection du Mal, d\u00c3\u00a9tection du mensonge et lumi\u00c3\u00a8re. Chaque pouvoir peut \u00c3\u00aatre utilis\u00c3\u00a9 sur simple concentration, au prix d\u00e2\u0080\u0099une action simple.",
+            "Si la t\u00c3\u00aate du sceptre est plant\u00c3\u00a9e dans le sol et si son possesseur lui demande de se mettre en mode de veille (ce qui n\u00c3\u00a9cessite une action simple), l\u00e2\u0080\u0099objet d\u00c3\u00a9tecte aussit\u00c3\u00b4t les intentions hostiles \u00c3  36 m\u00c3\u00a8tres de distance. Dans le m\u00c3\u00aame temps, le sceptre jette pri\u00c3\u00a8re sur son propri\u00c3\u00a9taire et tous ses alli\u00c3\u00a9s compris dans un rayon de 6 m\u00c3\u00a8tres, puis pr\u00c3\u00a9vient par t\u00c3\u00a9l\u00c3\u00a9pathie tout le monde si des cr\u00c3\u00a9atures hostiles se trouvent \u00c3  l\u00e2\u0080\u0099int\u00c3\u00a9rieur de la zone sond\u00c3\u00a9e. Cet effet dure 10 minutes. Le possesseur du sceptre peut y faire appel une fois par jour.",
+            "Enfin, le sceptre peut \u00c3\u00aatre utilis\u00c3\u00a9 pour lancer l\u00e2\u0080\u0099\u00c3\u00a9quivalent du sort animation d\u00e2\u0080\u0099objets sur un maximum de onze objets dispos\u00c3\u00a9s en cercle, \u00c3  1,50 m\u00c3\u00a8tre autour de lui environ. Les objets restent anim\u00c3\u00a9s pendant 11 rounds. Le sceptre doit \u00c3\u00aatre plant\u00c3\u00a9 dans le sol pour ex\u00c3\u00a9cuter cette fonction. Son possesseur peut y faire appel une fois par jour."
+        ],
+        "infos": {
+            "data": [
+                "Multiples mod\u00c3\u00a9r\u00c3\u00a9es ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "alarme",
+                "animation d\u00e2\u0080\u0099objets",
+                "d\u00c3\u00a9tection de la magie",
+                "d\u00c3\u00a9tection de l\u00e2\u0080\u0099invisibilit\u00c3\u00a9",
+                "d\u00c3\u00a9tection de la Loi",
+                "d\u00c3\u00a9tection du Bien",
+                "d\u00c3\u00a9tection du Chaos",
+                "d\u00c3\u00a9tection du Mal",
+                "d\u00c3\u00a9tection du mensonge",
+                "lumi\u00c3\u00a8re",
+                "pri\u00c3\u00a8re",
+                "Prix",
+                "85 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Extinction des feux",
+        "description": [
+            "D\u00e2\u0080\u0099un seul contact (une action simple), ce sceptre \u00c3\u00a9teint les feux non magiques de taille M ou moins. Pour que le sceptre d\u00e2\u0080\u0099extinction des feux fonctionne face \u00c3  des feux plus importants ou magiques, il faut d\u00c3\u00a9penser une ou plusieurs charges.",
+            "Il faut d\u00c3\u00a9penser 1 charge pour \u00c3\u00a9teindre un brasier de taille G ou plus, ou un feu magique de taille M ou moins (tel que celui cr\u00c3\u00a9\u00c3\u00a9 par une arme de feu ou le sort mains br\u00c3\u00bblantes). Les flammes, br\u00c3\u00bblant en permanence comme celles qui entourent une arme de feu ou un \u00c3\u00a9l\u00c3\u00a9mentaire de cet \u00c3\u00a9l\u00c3\u00a9ment, sont r\u00c3\u00a9prim\u00c3\u00a9es pendant 6 rounds avant de se rallumer. Pour pouvoir \u00c3\u00a9teindre un sort instantan\u00c3\u00a9, le sceptre doit se trouver \u00c3  l\u00e2\u0080\u0099int\u00c3\u00a9rieur de la zone d\u00e2\u0080\u0099effet et son possesseur doit se tenir pr\u00c3\u00aat (comme s\u00e2\u0080\u0099il cherchait \u00c3  lancer un contresort). Si le feu magique est de taille G ou plus (boule de feu, colonne de feu, mur de feu, etc.), il faut d\u00c3\u00a9penser 2 charges pour l\u00e2\u0080\u0099\u00c3\u00a9teindre.",
+            "Si le sceptre est utilis\u00c3\u00a9 contre une cr\u00c3\u00a9ature constitu\u00c3\u00a9e de feu (en r\u00c3\u00a9ussissant une attaque de contact au corps \u00c3  corps), chaque attaque inflige 6d6 points de d\u00c3\u00a9g\u00c3\u00a2ts \u00c3  cette derni\u00c3\u00a8re, mais le sceptre perd 3 charges \u00c3  chaque fois.",
+            "Un sceptre nouvellement cr\u00c3\u00a9\u00c3\u00a9 poss\u00c3\u00a8de un total de 10 charges. Ces charges se renouvellent tous les jours, ce qui permet au porteur de d\u00c3\u00a9penser jusqu\u00e2\u0080\u0099\u00c3  10 charges chaque jour."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "pyrotechnie",
+                "Prix",
+                "15 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Fl\u00c3\u00a9au du c\u00c3\u00a9leste",
+        "description": [
+            "Ce sceptre m\u00c3\u00a9tallique, de couleur rouge sang profond et mesurant 60 centim\u00c3\u00a8tres de long, est surmont\u00c3\u00a9 d'une pointe courb\u00c3\u00a9e. Tous les c\u00c3\u00a9lestes situ\u00c3\u00a9s dans un rayon de 18 m\u00c3\u00a8tres du sceptre subissent un malus de malfaisance de -4 aux jets d'attaque, de d\u00c3\u00a9g\u00c3\u00a2ts, de sauvegarde et de comp\u00c3\u00a9tence. Aucun jet de sauvegarde ou r\u00c3\u00a9sistance \u00c3  la magie n'est accord\u00c3\u00a9 pour passer outre ces effets."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "mal\u00c3\u00a9diction",
+                "souhait limit\u00c3\u00a9",
+                ", le cr\u00c3\u00a9ateur doit \u00c3\u00aatre un Ext\u00c3\u00a9rieur d\u00e2\u0080\u0099alignement mauvais ;",
+                "Prix",
+                "56 000 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Fl\u00c3\u00a9trissement",
+        "description": [
+            "Le sceptre de fl\u00c3\u00a9trissement s\u00e2\u0080\u0099utilise au combat comme une masse d\u00e2\u0080\u0099armes l\u00c3\u00a9g\u00c3\u00a8re +1, si ce n\u00e2\u0080\u0099est qu\u00e2\u0080\u0099il n\u00e2\u0080\u0099inflige pas le moindre point de d\u00c3\u00a9g\u00c3\u00a2t. Au lieu de cela, toute cr\u00c3\u00a9ature touch\u00c3\u00a9e (par une attaque de contact au corps \u00c3  corps) subit un affaiblissement temporaire de 1d4 points de Force et 1d4 points de Constitution. En cas de coup critique, l\u00e2\u0080\u0099effet est le m\u00c3\u00aame, si ce n\u00e2\u0080\u0099est que l\u00e2\u0080\u0099affaiblissement temporaire devient une diminution permanente. Dans les deux cas, la victime a droit \u00c3  un jet de Vigueur (DD 17). Si elle le r\u00c3\u00a9ussit, l\u00e2\u0080\u0099attaque est sans effet."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "contagion",
+                "Prix",
+                "25 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Frappe d\u00c3\u00a9bilitante",
+        "description": [
+            "Sculpt\u00c3\u00a9 dans du bois expos\u00c3\u00a9 \u00c3  un marasme (une zone mineure o\u00c3\u00b9 l'\u00c3\u00a9nergie n\u00c3\u00a9gative est minoritaire) du plan de l'\u00c3\u00a9nergie n\u00c3\u00a9gative lui-m\u00c3\u00aame, un sceptre de frappe d\u00c3\u00a9bilitante fonctionne comme une masse d'armes lourde +1. De plus, toute cr\u00c3\u00a9ature qu'il frappe au corps \u00c3  corps est victime d'un sort de blessure l\u00c3\u00a9g\u00c3\u00a8re. Si le sceptre obtient un coup critique, la cr\u00c3\u00a9ature subit un sort de blessure grave \u00c3  la place. Quand on l'utilise dans un plan o\u00c3\u00b9 l'\u00c3\u00a9nergie n\u00c3\u00a9gative est minoritaire, les effets magiques du sceptre sont \u00c3\u00a9tendus (comme par le don Extension d'effet). Quand on l'utilise dans un plan o\u00c3\u00b9 l'\u00c3\u00a9nergie n\u00c3\u00a9gative est dominante, ces effets sont soumis \u00c3  la quintessence (comme le don Quintessence des sorts)."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "blessure grave",
+                "Prix",
+                "47 312 po ;",
+                "Co\u00c3\u00bbt",
+                "23 812 po + 1 880 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Fureur",
+        "description": [
+            "Un tel sceptre est g\u00c3\u00a9n\u00c3\u00a9ralement termin\u00c3\u00a9 en forme de t\u00c3\u00aate de divinit\u00c3\u00a9 courrouc\u00c3\u00a9e. En plus de conf\u00c3\u00a9rer un bonus de parade \u00c3  la CA de son porteur (+1 \u00c3  +5 selon le type), le sceptre de fureur permet au lanceur de sorts d\u00e2\u0080\u0099augmenter l\u00e2\u0080\u0099efficacit\u00c3\u00a9 de l\u00e2\u0080\u0099un de ses sorts de 6e niveau ou moins, 1 fois par jour, comme s\u00e2\u0080\u0099il jouissait du don Extension d\u00e2\u0080\u0099effet. On active ce pouvoir au prix d\u00e2\u0080\u0099une action libre. Le niveau r\u00c3\u00a9el du sort et le temps d\u00e2\u0080\u0099incantation de celui-ci ne sont pas affect\u00c3\u00a9s (m\u00c3\u00aame pour les ensorceleurs et autres lanceurs de sorts spontan\u00c3\u00a9s)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", \u00c3\u0089cole renforc\u00c3\u00a9e, Extension d\u00e2\u0080\u0099effet, protection contre le Bien/le Chaos/la Loi/le Mal, le niveau de lanceur de sorts du cr\u00c3\u00a9ateur doit \u00c3\u00aatre sup\u00c3\u00a9rieur ou \u00c3\u00a9gal \u00c3  trois fois le bonus plac\u00c3\u00a9 dans le sceptre ;",
+                "Prix",
+                "26 800 po (+1), 38 800 po (+2), 58 800 po (+3), 77 600 po (+4), 95 600 po (+5)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Gel",
+        "description": [
+            "Ce sceptre en acier bleu de 60 centim\u00c3\u00a8tres de long est translucide, comme s'il \u00c3\u00a9tait fait de glace.",
+            "Trois fois par jour, en pronon\u00c3\u00a7ant le mot de commande (une action simple) son porteur peut cr\u00c3\u00a9er une ligne de glace de 9 m\u00c3\u00a8tres \u00c3  partir du sceptre. la ligne inflige 2d6 d\u00c3\u00a9g\u00c3\u00a2ts de froid aux cr\u00c3\u00a9atures (R\u00c3\u00a9fl\u00c3\u00a8xes, DD 14, demi). Les feux non-magiques dans la zones sont automatiquement \u00c3\u00a9teints et l'eau libre est gel\u00c3\u00a9 jusqu'\u00c3  une profondeur de 30 centim\u00c3\u00a8tres, assez pour permettre \u00c3  une cr\u00c3\u00a9ature de taille G de passer sans la briser. L'eau fond normalement par la suite."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "rayon de givre",
+                "Prix",
+                "1 400 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Grand fl\u00c3\u00a9au",
+        "description": [
+            "Sur ordre de son possesseur, ce sceptre d\u00e2\u0080\u0099apparence anodine se transforme en fl\u00c3\u00a9au double +3. Comme son nom l\u00e2\u0080\u0099indique, ce fl\u00c3\u00a9au est une arme double, ce qui signifie que, chaque round, ses deux t\u00c3\u00aates peuvent \u00c3\u00aatre utilis\u00c3\u00a9es au corps \u00c3  corps. Le personnage gagne une attaque suppl\u00c3\u00a9mentaire au cours du round (avec la seconde t\u00c3\u00aate), \u00c3  condition d\u00e2\u0080\u0099accepter un malus de \u00e2\u0080\u00932 \u00c3  toutes ses attaques (comme s\u00e2\u0080\u0099il poss\u00c3\u00a9dait le don Combat \u00c3  deux armes).",
+            "Une fois par jour, le possesseur du sceptre du grand fl\u00c3\u00a9au peut b\u00c3\u00a9n\u00c3\u00a9ficier d\u00e2\u0080\u0099un bonus de parade de +4 \u00c3  la CA et d\u00e2\u0080\u0099un bonus de r\u00c3\u00a9sistance (\u00c3\u00a9galement de +4) \u00c3  tous les jets de sauvegarde. Ce pouvoir dure 10 minutes, et le sceptre n\u00e2\u0080\u0099a pas besoin d\u00e2\u0080\u0099\u00c3\u00aatre transform\u00c3\u00a9 en arme pour le conf\u00c3\u00a9rer. La transformation du sceptre en fl\u00c3\u00a9au double (et inversement) correspond \u00c3  une action de mouvement."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "mod\u00c3\u00a9r\u00c3\u00a9 ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "b\u00c3\u00a9n\u00c3\u00a9diction",
+                "Prix",
+                "50 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Inamovible",
+        "description": [
+            "Un sceptre inamovible est une simple barre en fer plate dot\u00c3\u00a9e d\u00e2\u0080\u0099un petit bouton \u00c3  l\u00e2\u0080\u0099une de ses extr\u00c3\u00a9mit\u00c3\u00a9s. Il suffit d\u00e2\u0080\u0099appuyer sur ce bouton pour que le sceptre reste totalement immobile, m\u00c3\u00aame si la position qu\u00e2\u0080\u0099il occupe d\u00c3\u00a9fie les lois de la pesanteur. On peut donc le \u00e2\u0080\u009c fixer \u00e2\u0080\u009d n\u00e2\u0080\u0099importe o\u00c3\u00b9, m\u00c3\u00aame dans le vide. Il s\u00e2\u0080\u0099av\u00c3\u00a8re extr\u00c3\u00aamement utile pour attacher une corde, barrer une porte, etc. Nombre d\u00e2\u0080\u0099aventuriers aiment avoir plusieurs sceptres inamovibles, pour s\u00e2\u0080\u0099en servir par exemple d\u00e2\u0080\u0099\u00c3\u00a9chelle (il suffit d\u00e2\u0080\u0099en poss\u00c3\u00a9der deux pour les utiliser de la sorte, en les immobilisant puis en les lib\u00c3\u00a9rant l\u00e2\u0080\u0099un apr\u00c3\u00a8s l\u00e2\u0080\u0099autre). Un sceptre inamovible peut supporter un total de 4 tonnes avant de tomber au sol. Si une cr\u00c3\u00a9ature tente de le pousser apr\u00c3\u00a8s qu\u00e2\u0080\u0099il a \u00c3\u00a9t\u00c3\u00a9 arrim\u00c3\u00a9, elle doit r\u00c3\u00a9ussir un test de Force (DD 30) pour le d\u00c3\u00a9placer de 3 m\u00c3\u00a8tres (ce qui lui prend 1 round)."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "l\u00c3\u00a9vitation",
+                "Prix",
+                "7 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Libert\u00c3\u00a9",
+        "description": [
+            "Arme des plus puissantes contre les monstres qui charment ou asservissent d'autres cr\u00c3\u00a9atures, le sceptre de libert\u00c3\u00a9 \u00c3\u00a9quivaut \u00c3  une masse d'armes lourde en argent +3. Il a en outre trois pouvoirs sp\u00c3\u00a9ciaux.",
+            "Premi\u00c3\u00a8rement, son utilisateur peut choisir d'infliger des d\u00c3\u00a9g\u00c3\u00a2ts non-l\u00c3\u00a9taux sans malus aux jets d'attaque (mais il doit toutefois prendre sa d\u00c3\u00a9cision avant d'effectuer son jet).\r\nDeuxi\u00c3\u00a8mement, chaque fois qu'il utilise le sceptre pour frapper une cr\u00c3\u00a9ature affect\u00c3\u00a9e par un charme ou une coercition, il effectue un test de niveau de lanceur de sorts sp\u00c3\u00a9cial (ld20+9) pour dissiper l'effet (DD 11 + niveau de lanceur de sorts de l'effet).",
+            "Enfin, tant qu'il a le sceptre de libert\u00c3\u00a9 en main, l'utilisateur b\u00c3\u00a9n\u00c3\u00a9ficie d'un bonus de moral de +4 aux jets de sauvegarde contre les charmes et la coercition."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "annulation d\u00e2\u0080\u0099enchantement",
+                "Prix",
+                "53 000 po ;",
+                "Poids",
+                "3 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ma\u00c3\u00aetrise des morts-vivants",
+        "description": [
+            "Ce sceptre en m\u00c3\u00a9tal est cisel\u00c3\u00a9 de mani\u00c3\u00a8re \u00c3  ressembler \u00c3  une pile de petits cr\u00c3\u00a2nes. Son porteur peut contr\u00c3\u00b4ler deux fois plus de morts-vivants que la normale. Par exemple, un personnage ne peut habituellement pas contr\u00c3\u00b4ler plus de quatre fois son niveau de lanceur de sorts en d\u00c3\u00a9s de vie de morts-vivants. Quand il porte le sceptre, il peut repousser cette limite \u00c3  huit fois son niveau de lanceur de sorts."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "profanation",
+                "Prix",
+                "10 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Merveilleux",
+        "description": [
+            "Le sceptre merveilleux est un objet aussi \u00c3\u00a9trange qu\u00e2\u0080\u0099impr\u00c3\u00a9visible, dont l\u00e2\u0080\u0099effet est d\u00c3\u00a9termin\u00c3\u00a9 al\u00c3\u00a9atoirement \u00c3  chaque utilisation. Il faut une action simple pour l\u00e2\u0080\u0099activer. Les effets les plus courants sont regroup\u00c3\u00a9s sur la table suivante, mais vous pouvez les modifier \u00c3  l\u00e2\u0080\u0099envi en fonction de votre campagne."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "mod\u00c3\u00a9r\u00c3\u00a9 ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "confusion",
+                ", alignement chaotique ;",
+                "Prix",
+                "12 000 po."
+            ]
+        },
+        "ul": null,
+        "table": [
+            [
+                0.0,
+                "<table border=\"1\">\r\n<tbody><tr><th>1d100</th><th>Effet produit par le sceptre</th></tr>\r\n<tr><td>01\u00e2\u0080\u009305</td><td>Lenteur sur la cr\u00c3\u00a9ature d\u00c3\u00a9sign\u00c3\u00a9e pendant 10 rounds (jet de Volont\u00c3\u00a9 DD 15 pour annuler).</td></tr>\r\n<tr><td>06\u00e2\u0080\u009310</td><td>Lueur f\u00c3\u00a9erique autour de la cible.</td></tr>\r\n<tr><td>11\u00e2\u0080\u009315</td><td>Le porteur croit pendant 1 round que le sceptre produit un effet d\u00c3\u00a9termin\u00c3\u00a9 par un second jet de d\u00c3\u00a9 (pas de jet de sauvegarde).</td></tr>\r\n<tr><td>16\u00e2\u0080\u009320</td><td>Bourrasque, mais avec la violence correspondant \u00c3\u00a0 une temp\u00c3\u00aate (jet de Vigueur DD 14 pour annuler).</td></tr>\r\n<tr><td>21\u00e2\u0080\u009325</td><td>Le porteur conna\u00c3\u00aet les pens\u00c3\u00a9es superficielles de la cible (comme \u00c3\u00a0 l\u00e2\u0080\u0099aide de d\u00c3\u00a9tection de pens\u00c3\u00a9es) pendant 1d4 rounds (pas de jet de sauvegarde).</td></tr>\r\n<tr><td>26\u00e2\u0080\u009330</td><td>Nuage naus\u00c3\u00a9abond \u00c3\u00a0 9 m\u00c3\u00a8tres de distance (jet de Vigueur DD 15 pour annuler).</td></tr>\r\n<tr><td>31\u00e2\u0080\u009333</td><td>Une forte pluie s\u00e2\u0080\u0099abat pendant 1 round dans un rayon de 18 m\u00c3\u00a8tres autour du porteur.</td></tr>\r\n<tr><td>34\u00e2\u0080\u009336</td><td>Convocation d\u00e2\u0080\u0099un animal, soit un rhinoc\u00c3\u00a9ros (01\u00e2\u0080\u009325 sur 1d100), soit un \u00c3\u00a9l\u00c3\u00a9phant (26\u00e2\u0080\u009350) soit une souris (51\u00e2\u0080\u0093100).</td></tr>\r\n<tr><td>37\u00e2\u0080\u009346</td><td>\u00c3\u0089clair (21 m\u00c3\u00a8tres de long, 1,50 m\u00c3\u00a8tre de large), 6d6 points de d\u00c3\u00a9g\u00c3\u00a2ts (jet de R\u00c3\u00a9flexes DD 14 pour annuler).</td></tr>\r\n<tr><td>47\u00e2\u0080\u009349</td><td>600 gros papillons jaillissent du sceptre et volettent alentour pendant 2 rounds avant de dispara\u00c3\u00aetre. Leur pr\u00c3\u00a9sence aveugle toutes les cr\u00c3\u00a9atures comprises dans un rayon de 7,50 m\u00c3\u00a8tres, y compris le porteur (jet de R\u00c3\u00a9flexes DD 14 pour annuler).</td></tr>\r\n<tr><td>50\u00e2\u0080\u009353</td><td>Agrandissement sur la cible (18 m\u00c3\u00a8tres de port\u00c3\u00a9e, accroissement de taille de 50%, jet de Vigueur DD 11 pour annuler).</td></tr>\r\n<tr><td>54\u00e2\u0080\u009358</td><td>T\u00c3\u00a9n\u00c3\u00a8bres, h\u00c3\u00a9misph\u00c3\u00a8re de 4,50 m\u00c3\u00a8tres de rayon, centr\u00c3\u00a9 \u00c3\u00a0 9 m\u00c3\u00a8tres du sceptre.</td></tr>\r\n<tr><td>59\u00e2\u0080\u009362</td><td>L\u00e2\u0080\u0099herbe se met \u00c3\u00a0 pousser sur 15 m2 devant le sceptre. S\u00e2\u0080\u0099il y en avait d\u00c3\u00a9j\u00c3\u00a0 \u00c3\u00a0 cet endroit, elle atteint dix fois sa hauteur normale.</td></tr>\r\n<tr><td>63\u00e2\u0080\u009365</td><td>Un objet non vivant ne faisant pas plus de 1 m3 pour 500 kg devient \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9.</td></tr>\r\n<tr><td>66\u00e2\u0080\u009369</td><td>Le porteur est r\u00c3\u00a9duit \u00c3\u00a0 1/12e de sa taille habituelle (pas de jet de sauvegarde).</td></tr>\r\n<tr><td>70\u00e2\u0080\u009379</td><td>Boule de feu sur la cible ou droit devant, jusqu\u00e2\u0080\u0099\u00c3\u00a0 une port\u00c3\u00a9e de 30 m\u00c3\u00a8tres, 6d6 points de d\u00c3\u00a9g\u00c3\u00a2ts (jet de R\u00c3\u00a9flexes DD 15 pour demi-d\u00c3\u00a9g\u00c3\u00a2ts).</td></tr>\r\n<tr><td>80\u00e2\u0080\u009384</td><td>Invisibilit\u00c3\u00a9 sur le personnage.</td></tr>\r\n<tr><td>85\u00e2\u0080\u009387</td><td>Des feuilles poussent sur la cible si celle-ci se trouve \u00c3\u00a0 18 m\u00c3\u00a8tres ou moins du sceptre. Elles tombent au bout de 24 heures.</td></tr>\r\n<tr><td>88\u00e2\u0080\u009390</td><td>10\u00e2\u0080\u009340 \u00c3\u00a9clats de pierres fines, d\u00e2\u0080\u0099une valeur unitaire de 1 po, jaillissent du sceptre et atteignent une port\u00c3\u00a9e de 9 m\u00c3\u00a8tres. Chaque \u00c3\u00a9clat inflige 1 point de d\u00c3\u00a9g\u00c3\u00a2ts s\u00e2\u0080\u0099il touche quelqu\u00e2\u0080\u0099un. Jetez 5d4 pour d\u00c3\u00a9terminer le nombre d\u00e2\u0080\u0099impacts et r\u00c3\u00a9partissez \u00c3\u00a9quitablement le total entre les cibles potentielles.</td></tr>\r\n<tr><td>91\u00e2\u0080\u009395</td><td>Des lueurs dansantes apparaissent dans un rectangle de 12,50 m\u00c3\u00a8tres x 9 m\u00c3\u00a8tres devant le sceptre. Toutes les cr\u00c3\u00a9atures prises dans cette zone sont aveugl\u00c3\u00a9es pendant 1d6 rounds (jet de Vigueur DD 15 pour annuler).</td></tr>\r\n<tr><td>96\u00e2\u0080\u009397</td><td>L\u00e2\u0080\u0099\u00c3\u00a9piderme du porteur ou de la cible (une chance sur deux) devient bleu, vert ou violet, et ce de fa\u00c3\u00a7on permanente (pas de jet de sauvegarde).</td></tr>\r\n<tr><td>98\u00e2\u0080\u0093100</td><td>P\u00c3\u00a9trification sur la cible (ou transmutation de la pierre en chair si la cible est d\u00c3\u00a9j\u00c3\u00a0 en pierre) si elle se trouve \u00c3\u00a0 18 m\u00c3\u00a8tres ou moins du sceptre (jet de Vigueur DD 19 pour annuler).</td></tr>\r\n</tbody></table>"
+            ]
+        ]
+    },
+    {
+        "title": "M\u00c3\u00a9tamagie",
+        "description": [
+            "Les sceptres de m\u00c3\u00a9tamagie contiennent l\u00e2\u0080\u0099essence d\u00e2\u0080\u0099un don de m\u00c3\u00a9tamagie qu\u00e2\u0080\u0099ils peuvent appliquer \u00c3  un sort sans en modifier le niveau de l\u00e2\u0080\u0099emplacement de sort n\u00c3\u00a9cessaire. Tous les sceptres de ce type sont des objets \u00c3  usage (mais lancer un sort dans une zone de contr\u00c3\u00b4le provoque tout de m\u00c3\u00aame une attaque d\u00e2\u0080\u0099opportunit\u00c3\u00a9). Un personnage ne peut utiliser qu\u00e2\u0080\u0099un sceptre de m\u00c3\u00a9tamagie sur un sort donn\u00c3\u00a9, mais il est possible de combiner l\u00e2\u0080\u0099utilisation de l\u00e2\u0080\u0099un d\u00e2\u0080\u0099entre eux avec les dons de m\u00c3\u00a9tamagie effectivement poss\u00c3\u00a9d\u00c3\u00a9s par le personnage. Dans ce cas, seuls ces derniers modifient le niveau de l\u00e2\u0080\u0099emplacement de sort n\u00c3\u00a9cessaire.",
+            "Un personnage poss\u00c3\u00a9dant un sceptre de m\u00c3\u00a9tamagie n\u00e2\u0080\u0099est pas consid\u00c3\u00a9r\u00c3\u00a9 comme ayant le don en question (par exemple, pour remplir des pr\u00c3\u00a9 requis pour un autre don ou une classe de prestige). Il ne peut utiliser le sceptre qu\u00e2\u0080\u0099un certain nombre de fois par jour pour modifier un sort. Un ensorceleur ou un barde utilisant un sceptre de m\u00c3\u00a9tamagie doit passer plus de temps \u00c3  l\u00e2\u0080\u0099incantation, de la m\u00c3\u00aame fa\u00c3\u00a7on que s\u00e2\u0080\u0099il utilisait un don qu\u00e2\u0080\u0099il poss\u00c3\u00a9dait.",
+            "Les sceptres de m\u00c3\u00a9tamagie mineure ne peuvent \u00c3\u00aatre utilis\u00c3\u00a9s que sur des sorts du 3e niveau ou moins. Les sceptres de m\u00c3\u00a9tamagie mod\u00c3\u00a9r\u00c3\u00a9e ne peuvent \u00c3\u00aatre utilis\u00c3\u00a9s que sur des sorts du 6e niveau ou moins. Enfin, les sceptres de m\u00c3\u00a9tamagie majeure peuvent \u00c3\u00aatre utilis\u00c3\u00a9s sur tous les sorts jusqu\u00e2\u0080\u0099au 9e niveau.",
+            ".\r\n Trois fois par jour, le porteur de ce sceptre peut lancer un sort \u00c3  dur\u00c3\u00a9e \u00c3\u00a9tendue comme s\u00e2\u0080\u0099il utilisait le don Extension de dur\u00c3\u00a9e.",
+            ".\r\nTrois fois par jour, le porteur de ce sceptre peut lancer un sort \u00c3  port\u00c3\u00a9e \u00c3\u00a9tendue comme s\u00e2\u0080\u0099il utilisait le don Extension de port\u00c3\u00a9e.",
+            ".\r\nTrois fois par jour, le porteur de ce sceptre peut lancer un sort \u00c3  effet \u00c3\u00a9tendu comme s\u00e2\u0080\u0099il utilisait le don Extension d\u00e2\u0080\u0099effet.",
+            ".\r\nTrois fois par jour, le porteur de ce sceptre peut lancer un sort \u00c3  incantation rapide comme s\u00e2\u0080\u0099il utilisait le don Incantation rapide.",
+            ".\r\nTrois fois par jour, le porteur de ce sceptre peut lancer un sort \u00c3  incantation silencieuse comme s\u00e2\u0080\u0099il utilisait le don Incantation silencieuse.",
+            ".\r\nTrois fois par jour, le porteur de ce sceptre peut lancer la quintessence d\u00e2\u0080\u0099un sort comme s\u00e2\u0080\u0099il utilisait le don Quintessence de sort.",
+            ".\r\nTrois fois par jour, le porteur de ce sceptre peut lancer un sort \u00c3  dur\u00c3\u00a9e \u00c3\u00a9tendue comme s\u00e2\u0080\u0099il utilisait le don Substitution non-l\u00c3\u00a9tale."
+        ],
+        "infos": {
+            "data": [
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Extension de dur\u00c3\u00a9e ;",
+                "Prix",
+                "3 000 po (mineur), 11 000 po (mod\u00c3\u00a9r\u00c3\u00a9e), 24 500 po (majeure).",
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Extension de port\u00c3\u00a9e ;",
+                "Prix",
+                "3 000 po (mineur), 11 000 po (mod\u00c3\u00a9r\u00c3\u00a9e), 24 500 po (majeure).",
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Extension d\u00e2\u0080\u0099effet ;",
+                "Prix",
+                "9 000 po (mineur), 32 500 po (mod\u00c3\u00a9r\u00c3\u00a9e), 73 000 po (majeure).",
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Incantation rapide ;",
+                "Prix",
+                "35 000 po (mineur), 75 500 po (mod\u00c3\u00a9r\u00c3\u00a9e), 170 000 po (majeure).",
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Incantation silencieuse ;",
+                "Prix",
+                "3 000 po (mineur), 11 000 po (mod\u00c3\u00a9r\u00c3\u00a9e), 24 500 po (majeure).",
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Quintessence de sort ;",
+                "Prix",
+                "14 000 po (mineur), 54 000 po (mod\u00c3\u00a9r\u00c3\u00a9e), 121 500 po (majeure).",
+                "Aura puissante (pas d\u00e2\u0080\u0099\u00c3\u00a9cole) ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Substitution non-l\u00c3\u00a9tale ;",
+                "Prix",
+                "3 000 po (mineur), 11 000 po (mod\u00c3\u00a9r\u00c3\u00a9e), 24 500 po (majeure)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Morts",
+        "description": [
+            "Le fait de toucher un cadavre avec le sceptre des morts anime celui-ci, comme si on venait de lui jeter un sort Animation des morts. De plus, le sceptre permet \u00c3  son possesseur d'intimider ou de contr\u00c3\u00b4ler les morts-vivants comme s'il avait quatre niveaux de plus, du moins s'il est d\u00c3\u00a9j\u00c3  capable d'exercer ce pouvoir contre ce type de cr\u00c3\u00a9atures. Le sceptre peut animer jusqu'\u00c3  20 DV de morts-vivants par jour."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "animation des morts",
+                ", le cr\u00c3\u00a9ateur doit \u00c3\u00aatre un pr\u00c3\u00aatre ;",
+                "Prix",
+                "75 000 po,."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ob\u00c3\u00a9issance",
+        "description": [
+            "Ce sceptre conf\u00c3\u00a8re \u00c3  celui qui le tient un bonus d'aptitude de +5 aux tests de Charisme et de comp\u00c3\u00a9tences li\u00c3\u00a9es au Charisme."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "charme-personne",
+                "Prix",
+                "12 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Oblit\u00c3\u00a9ration",
+        "description": [
+            "Ce sceptre redout\u00c3\u00a9 par la plupart des aventuriers est le pire ennemi des objets magiques, qu\u00e2\u0080\u0099il peut vider de toute \u00c3\u00a9nergie. L\u00e2\u0080\u0099objet touch\u00c3\u00a9 a droit \u00c3  un jet de Volont\u00c3\u00a9 de DD 23 pour r\u00c3\u00a9sister aux effets. Si quelqu\u00e2\u0080\u0099un le tient en main ou le porte au moment de l\u00e2\u0080\u0099attaque, l\u00e2\u0080\u0099objet peut utiliser le bonus de base de son possesseur aux jets de Volont\u00c3\u00a9 \u00c3  la place du sien propre (c\u00e2\u0080\u0099est le bonus le plus avantageux qui est syst\u00c3\u00a9matiquement pris en compte). Le personnage peut toucher l\u00e2\u0080\u0099objet qu\u00e2\u0080\u0099il vise \u00c3  l\u00e2\u0080\u0099aide du sceptre en r\u00c3\u00a9ussissant une attaque de contact au corps \u00c3  corps. Si l\u00e2\u0080\u0099objet rate son jet de sauvegarde, il perd toute magie, tandis que le sceptre devient cassant et ne peut plus \u00c3\u00aatre r\u00c3\u00a9utilis\u00c3\u00a9. Un objet vid\u00c3\u00a9 de son \u00c3\u00a9nergie magique par un sceptre d\u00e2\u0080\u0099oblit\u00c3\u00a9ration ne peut retrouver ses propri\u00c3\u00a9t\u00c3\u00a9s que gr\u00c3\u00a2ce \u00c3  un souhait ou un miracle. Si un sceptre d\u00e2\u0080\u0099oblit\u00c3\u00a9ration et une sph\u00c3\u00a8re d\u00e2\u0080\u0099annihilation s\u00e2\u0080\u0099entre-d\u00c3\u00a9truisent, rien ne permet de les r\u00c3\u00a9cup\u00c3\u00a9rer, ni l\u00e2\u0080\u0099un, ni l\u00e2\u0080\u0099autre."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", disjonction ;",
+                "Prix",
+                "11 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Orage",
+        "description": [
+            "Ce sceptre de fer orn\u00c3\u00a9 de rivets en argent se comporte en tout point comme une masse d\u00e2\u0080\u0099armes l\u00c3\u00a9g\u00c3\u00a8re +2. Il poss\u00c3\u00a8de \u00c3\u00a9galement les pouvoirs suivants :"
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "\u00c3\u00a9clair",
+                "cri",
+                "Prix",
+                "33 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li>Tonnerre. Une fois par jour, le sceptre peut frapper comme une masse d\u00e2\u0080\u0099armes l\u00c3\u00a9g\u00c3\u00a8re +3. En cas de coup au but, la cible est \u00c3\u00a9tourdie par la d\u00c3\u00a9flagration qui se produit au moment de l\u00e2\u0080\u0099impact (jet de Vigueur DD 13 pour annuler). L\u00e2\u0080\u0099activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, lequel doit \u00c3\u00aatre touch\u00c3\u00a9 au cours du round.</li>\r\n<li>\u00c3\u0089lectricit\u00c3\u00a9 statique. Une fois par jour, une violente \u00c3\u00a9tincelle jaillit du sceptre pour frapper la cr\u00c3\u00a9ature touch\u00c3\u00a9e lors d\u00e2\u0080\u0099une attaque de corps \u00c3\u00a0 corps. La cible subit alors les d\u00c3\u00a9g\u00c3\u00a2ts normaux pour une masse d\u00e2\u0080\u0099armes l\u00c3\u00a9g\u00c3\u00a8re +2 (1d6+2 points), auxquels viennent s\u00e2\u0080\u0099ajouter les d\u00c3\u00a9g\u00c3\u00a2ts dus \u00c3\u00a0 la d\u00c3\u00a9charge \u00c3\u00a9lectrique (+2d6 points d\u00e2\u0080\u0099\u00c3\u00a9lectricit\u00c3\u00a9). M\u00c3\u00aame si l\u00e2\u0080\u0099attaque ne suffit pas pour toucher, la cible encaisse la d\u00c3\u00a9charge \u00c3\u00a9lectrique (2d6) si le r\u00c3\u00a9sultat obtenu est suffisant pour valider une attaque de contact au corps \u00c3\u00a0 corps. L\u00e2\u0080\u0099activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, qui doit \u00c3\u00aatre touch\u00c3\u00a9 au cours du round.</li>\r\n<li>Coup de tonnerre. Une fois par jour, au prix d\u00e2\u0080\u0099une action simple, le sceptre peut produire un bruit assourdissant dont les effets sont identiques \u00c3\u00a0 ceux du sort cri (jet de Vigueur DD 16 pour effet partiel, attaque sonique infligeant 2d6 points de d\u00c3\u00a9g\u00c3\u00a2ts, cible assourdie pendant 2d6 rounds).</li>\r\n<li>Foudre. Une fois par jour, au prix d\u00e2\u0080\u0099une action simple, le porteur peut invoquer un \u00c3\u00a9clair de 1,50 m\u00c3\u00a8tre de large (jet de R\u00c3\u00a9flexes DD 16 pour demi-d\u00c3\u00a9g\u00c3\u00a2ts, 9d6 points de d\u00c3\u00a9g\u00c3\u00a2ts d\u00e2\u0080\u0099\u00c3\u00a9lectricit\u00c3\u00a9) jaillissant de l\u00e2\u0080\u0099extr\u00c3\u00a9mit\u00c3\u00a9 du sceptre (port\u00c3\u00a9e 60 m\u00c3\u00a8tres).</li>\r\n<li>Fureur de l\u00e2\u0080\u0099orage. Une fois par semaine, au prix d\u00e2\u0080\u0099une action simple, le sceptre a la possibilit\u00c3\u00a9 de combiner les deux pouvoirs pr\u00c3\u00a9c\u00c3\u00a9dents (coup de tonnerre et foudre). Le coup de tonnerre affecte toutes les cr\u00c3\u00a9atures se trouvant \u00c3\u00a0 moins de 3 m\u00c3\u00a8tres de la trajectoire de l\u00e2\u0080\u0099\u00c3\u00a9clair, tandis que la puissance de ce dernier est augment\u00c3\u00a9e (il inflige toujours 9d6 points de d\u00c3\u00a9g\u00c3\u00a2ts, mais tous les 1 et les 2 sont consid\u00c3\u00a9r\u00c3\u00a9s comme des 3, pour un total de d\u00c3\u00a9g\u00c3\u00a2ts compris entre 27 et 54 points, plus 2d6 dus au coup de tonnerre). Les cibles ont droit \u00c3\u00a0 un jet de R\u00c3\u00a9flexes unique (DD 16) pour se pr\u00c3\u00a9munir contre les deux effets. En cas de succ\u00c3\u00a8s, elles ne sont pas assourdies et les d\u00c3\u00a9g\u00c3\u00a2ts sont r\u00c3\u00a9duits de moiti\u00c3\u00a9.</li>\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Prestance",
+        "description": [
+            "Le possesseur de ce sceptre jouit d\u00e2\u0080\u0099un bonus d\u00e2\u0080\u0099alt\u00c3\u00a9ration de +4 \u00c3  sa valeur de Charisme tant qu\u00e2\u0080\u0099il le tient ou le porte sur lui. Une fois par jour, le sceptre peut \u00c3\u00a9galement le v\u00c3\u00aatir des plus belles soieries et le parer de fourrures et de bijoux.",
+            "Les v\u00c3\u00aatements cr\u00c3\u00a9\u00c3\u00a9s par le sceptre ont une dur\u00c3\u00a9e d\u00e2\u0080\u0099existence de 12 heures, sauf si le personnage cherche \u00c3  les vendre, \u00c3  les donner ou \u00c3  les utiliser comme composantes mat\u00c3\u00a9rielles pour sort (auquel cas ils disparaissent imm\u00c3\u00a9diatement). Cela s\u00e2\u0080\u0099applique \u00c3\u00a9galement si les habits sont arrach\u00c3\u00a9s de force au personnage.",
+            "La valeur totale de ces atours varie entre 7 000 et 10 000 po (1d4+6 x 1 000) : 1 000 po de soieries, 5 000 po de fourrures, le reste \u00c3\u00a9tant constitu\u00c3\u00a9 de pierres fines (20 au maximum, d\u00e2\u0080\u0099une valeur unitaire de 200 po).",
+            "Le sceptre poss\u00c3\u00a8de un second pouvoir, utilisable une fois par semaine. Sur ordre de son possesseur, il peut cr\u00c3\u00a9er une tente gigantesque, un pavillon de soie de forme carr\u00c3\u00a9e et de pr\u00c3\u00a8s de 18 m\u00c3\u00a8tres de c\u00c3\u00b4t\u00c3\u00a9. Les meubles (chaises, grande table, etc.) et la nourriture apparaissant avec sont suffisants pour accueillir et sustenter une centaine de convives. La tente et son contenu n\u00e2\u0080\u0099ont qu\u00e2\u0080\u0099une journ\u00c3\u00a9e d\u00e2\u0080\u0099existence, apr\u00c3\u00a8s quoi ils disparaissent sans laisser de trace (de m\u00c3\u00aame que tout ce qui aurait pu \u00c3\u00aatre pris dans le pavillon)."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "Transmutation",
+                "puissantes ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "cr\u00c3\u00a9ation majeure",
+                "fabrication",
+                "splendeur de l\u00e2\u0080\u0099aigle",
+                "Prix",
+                "25 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Puissance c\u00c3\u00a9leste",
+        "description": [
+            "Sculpt\u00c3\u00a9 dans un morceau unique de fr\u00c3\u00aane droit et mince muni d'embouts en\r\nor et de bandes en argent, ce sceptre est con\u00c3\u00a7u pour \u00c3\u00aatre port\u00c3\u00a9 au combat par ceux qui cherchent \u00c3  conqu\u00c3\u00a9rir les plans inf\u00c3\u00a9rieurs.",
+            "Un sceptre de puissance c\u00c3\u00a9leste fonctionne comme un b\u00c3\u00a2ton +2/+2. S'il frappe un Ext\u00c3\u00a9rieur d'alignement mauvais, son porteur peut d\u00c3\u00a9clencher un effet de ch\u00c3\u00a2timent sacr\u00c3\u00a9 centr\u00c3\u00a9 sur la cr\u00c3\u00a9ature touch\u00c3\u00a9e. Il s'agit d'une action libre que le porteur peut utiliser trois fois par jour.",
+            "Une fois par jour, si le porteur se trouve \u00c3  18 m\u00c3\u00a8tres ou moins d'un Ext\u00c3\u00a9rieur d'alignement mauvais, il peut convoquer un guar-dinal avoral au prix d'une action simple (comme avec convocation de monstres VII)."
+        ],
+        "infos": {
+            "data": [
+                "Diverses puissantes ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "ch\u00c3\u00a2timent sacr\u00c3\u00a9",
+                ", convocation de monstres VII ;",
+                "Prix",
+                "110 600 po ;",
+                "Co\u00c3\u00bbt",
+                "55 600 po + 4 400 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Python",
+        "description": [
+            "Ce sceptre est plus long que la moyenne, puisqu\u00e2\u0080\u0099il fait environ 1,20 m\u00c3\u00a8tre, pour un poids de 5 kg. On peut l\u00e2\u0080\u0099utiliser au corps \u00c3  corps comme un b\u00c3\u00a2ton +1/+1. Si son possesseur le jette par terre (ce qui demande une action simple), le sceptre enfle d\u00c3\u00a9mesur\u00c3\u00a9ment pour devenir, au terme du round, un serpent constricteur g\u00c3\u00a9ant. Le python ainsi cr\u00c3\u00a9\u00c3\u00a9 ob\u00c3\u00a9it fid\u00c3\u00a8lement aux ordres du possesseur du sceptre (sous forme animale, il b\u00c3\u00a9n\u00c3\u00a9ficie toujours du bonus d\u00e2\u0080\u0099alt\u00c3\u00a9ration de +1 \u00c3  l\u00e2\u0080\u0099attaque et aux d\u00c3\u00a9g\u00c3\u00a2ts). Le serpent se retransforme en sceptre (ce qui prend une action complexe) quand le personnage le souhaite, ou d\u00c3\u00a8s que 30 m\u00c3\u00a8tres le s\u00c3\u00a9parent de ce dernier. Si le python est tu\u00c3\u00a9, il redevient un sceptre, et il est alors impossible de le rappeler pendant 3 jours. Cet objet ne fonctionne qu\u00e2\u0080\u0099entre les mains d\u00e2\u0080\u0099un personnage d\u00e2\u0080\u0099alignement bon."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "m\u00c3\u00a9tamorphose funeste",
+                ", alignement bon ;",
+                "Prix",
+                "13 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Rupture de Toile",
+        "description": [
+            "Ce long sceptre est noir, avec une extr\u00c3\u00a9mit\u00c3\u00a9 pointue. L'autre extr\u00c3\u00a9mit\u00c3\u00a9 est un motif de fils mollement entrelac\u00c3\u00a9s, avec au milieu de l'\u00c3\u00a9nergie magique pure qui irradie une lumi\u00c3\u00a8re vert p\u00c3\u00a2le et qui ressemble \u00c3  une flamme de gaz naturel. Le sceptre de rupture de Toile fonctionne de la m\u00c3\u00aame fa\u00c3\u00a7on qu'un sceptre d'absorption : il absorbe automatiquement tout sort \u00c3  cible unique ou rayon (ou pouvoir magique dupliquant ces effets), qui affecte le possesseur du sceptre ou son \u00c3\u00a9quipement. Toutefois, plut\u00c3\u00b4t que de stocker l'\u00c3\u00a9nergie magique ainsi absorb\u00c3\u00a9e, le sceptre envoie imm\u00c3\u00a9diatement en retour un contrecoup d'\u00c3\u00a9nergie n\u00c3\u00a9gative qui inflige 1d6 points de d\u00c3\u00a9g\u00c3\u00a2ts par niveau de sort absorb\u00c3\u00a9 (un jet de Volont\u00c3\u00a9 r\u00c3\u00a9ussi r\u00c3\u00a9duit les d\u00c3\u00a9g\u00c3\u00a2ts de moiti\u00c3\u00a9). Une protection contre l\u00e2\u0080\u0099\u00c3\u00a9nergie n\u00c3\u00a9gative annule ces d\u00c3\u00a9g\u00c3\u00a2ts, et les lanceurs de sorts morts-vivants sont en fait soign\u00c3\u00a9s par cet effet."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "puissante ;",
+                "NLS",
+                "18 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "renvoi des sorts",
+                "absorption d\u00e2\u0080\u0099\u00c3\u00a9nergie",
+                "Prix",
+                "60 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sceptre de ma\u00c3\u00aetrise des dragons",
+        "description": [
+            "Ce sceptre fonctionne un peu sur le m\u00c3\u00aame principe qu'un sceptre de suzerainet\u00c3\u00a9, mais il n'affecte que les dragons. Son porteur gagne l'ob\u00c3\u00a9issance et la loyaut\u00c3\u00a9 des dragons situ\u00c3\u00a9s dans un rayon de 150 m\u00c3\u00a8tres d\u00c3\u00a8s qu'il l'active (action simple). Un total de 300 DV de dragons peut \u00c3\u00aatre dirig\u00c3\u00a9, mais ceux qui ont une valeur d'Intelligence de 16 ou plus ont droit \u00c3  un jet de Volont\u00c3\u00a9 (DD 22) pour annuler l'effet. Les dragons affect\u00c3\u00a9s ob\u00c3\u00a9issent au porteur comme si celui-ci \u00c3\u00a9tait leur monarque. Toutefois, si l'int\u00c3\u00a9ress\u00c3\u00a9 donne un ordre contraire \u00c3  leur nature, l'enchantement cesse de faire effet. Le sceptre de ma\u00c3\u00aetrise des dragons peut \u00c3\u00aatre utilis\u00c3\u00a9 pendant un total de 500 minutes avant de tomber en poussi\u00c3\u00a8re. Cette dur\u00c3\u00a9e n'est pas n\u00c3\u00a9cessairement continue.",
+            "Il existe deux versions de ce puissant objet magique. Le sceptre pourpre de ma\u00c3\u00aetrise des dragons n'affecte que les dragons d'alignement mauvais ou neutre, alors que le sceptre dor\u00c3\u00a9 de ma\u00c3\u00aetrise des dragons n'affecte que les dragons d'alignement bon ou neutre."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "20 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "charme-monstre de groupe",
+                "Prix",
+                "120 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sceptre de puissance fantastique",
+        "description": [
+            "Bien que les sceptres de puissance fantastique puissent varier en apparence, tous sont fait en fer noir. La majorit\u00c3\u00a9 ressemble \u00c3  une colonne vert\u00c3\u00a9brale avec au bout une t\u00c3\u00aate de cr\u00c3\u00a9ature sculpt\u00c3\u00a9e, g\u00c3\u00a9n\u00c3\u00a9ralement un d\u00c3\u00a9mon ou une f\u00c3\u00a9e, clairement trop petite par rapport \u00c3  la colonne vert\u00c3\u00a9brale.",
+            "Chaque sceptre de puissance fantastique renferme une invocation, soit une invocation fa\u00c3\u00a7onn\u00c3\u00a9e, soit une invocation fantastique. Un sorcier peut appliquer \u00c3  sa d\u00c3\u00a9charge fantastique l'invocation que contient le sceptre au prix d'une action imm\u00c3\u00a9diate. La d\u00c3\u00a9charge fantastique sort alors des yeux de la cr\u00c3\u00a9ature plut\u00c3\u00b4t que de la main du sorcier.",
+            "Le pouvoir du sceptre de puissance fantastique est utilisable 5 fois par jour.",
+            "Le prix"
+        ],
+        "infos": {
+            "data": [
+                "Universel faible (inf\u00c3\u00a9rieure), mod\u00c3\u00a9r\u00c3\u00a9e (mineure ou majeure) ou puissante (supr\u00c3\u00aame) ;",
+                "NLS",
+                "1 (mineure), 6 (mineure), 11 (majeure) ou 16 (supr\u00c3\u00aame) ; Cr\u00c3\u00a9ation de sceptres, le cr\u00c3\u00a9ateur doit conna\u00c3\u00aetre l\u00e2\u0080\u0099invocation en question ;",
+                "Prix",
+                "4 000 po (inf\u00c3\u00a9rieure), 16 000 po (mineure), 36 000 po (majeure), 64 000 po (supr\u00c3\u00aame) ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "S\u00c3\u00a9curit\u00c3\u00a9",
+        "description": [
+            "Cet objet a le pouvoir de cr\u00c3\u00a9er un espace non dimensionnel qui est en quelque sorte un paradis de poche. \u00c3\u0080 l\u00e2\u0080\u0099int\u00c3\u00a9rieur, le possesseur du sceptre et jusqu\u00e2\u0080\u0099\u00c3  199 cr\u00c3\u00a9atures peuvent vivre en totale s\u00c3\u00a9curit\u00c3\u00a9 pour une p\u00c3\u00a9riode maximale d\u00c3\u00a9pendant de leur nombre (200 jours, divis\u00c3\u00a9s par le nombre de cr\u00c3\u00a9atures). Seul, le possesseur du sceptre pourra rester un maximum de 200 jours dans son paradis de poche, tandis que ce total sera r\u00c3\u00a9duit \u00c3  50 jours pour 4 cr\u00c3\u00a9atures, et \u00c3  3 jours pour 60 cr\u00c3\u00a9atures. On arrondit syst\u00c3\u00a9matiquement \u00c3  l\u00e2\u0080\u0099entier int\u00c3\u00a9rieur, ce qui signifie qu\u00e2\u0080\u0099un groupe comprenant de 101 \u00c3  200 individus ne pourra \u00c3\u00aatre prot\u00c3\u00a9g\u00c3\u00a9 que durant une seule journ\u00c3\u00a9e.",
+            "\u00c3\u0080 l\u00e2\u0080\u0099int\u00c3\u00a9rieur de l\u00e2\u0080\u0099espace cr\u00c3\u00a9\u00c3\u00a9, les cr\u00c3\u00a9atures cessent de vieillir et la gu\u00c3\u00a9rison naturelle s\u00e2\u0080\u0099effectue deux fois plus rapidement. On trouve de l\u00e2\u0080\u0099eau potable en abondance, ainsi que de la nourriture (fruits et l\u00c3\u00a9gumes seulement). Le climat est agr\u00c3\u00a9able pour tous.",
+            "Quand le sceptre de s\u00c3\u00a9curit\u00c3\u00a9 est activ\u00c3\u00a9 (ce qui demande une action simple), son possesseur et tous ceux qui touchent le sceptre sont instantan\u00c3\u00a9ment transport\u00c3\u00a9s dans le paradis de poche. Si le groupe est trop important, ses membres peuvent se tenir par la main pour \u00c3\u00aatre eux aussi affect\u00c3\u00a9s. Les cr\u00c3\u00a9atures refusant de partir ont droit \u00c3  un jet de Volont\u00c3\u00a9 (DD 17) pour rester sur place. \u00c3\u0080 noter que, m\u00c3\u00aame si quelqu\u00e2\u0080\u0099un r\u00c3\u00a9ussit son jet de sauvegarde, les autres individus se trouvant au-del\u00c3  dans la cha\u00c3\u00aene sont tout de m\u00c3\u00aame transport\u00c3\u00a9s normalement.",
+            "Quand l\u00e2\u0080\u0099effet du sceptre expire ou est dissip\u00c3\u00a9, toutes les cr\u00c3\u00a9atures affect\u00c3\u00a9es r\u00c3\u00a9apparaissent instantan\u00c3\u00a9ment \u00c3  leur point de d\u00c3\u00a9part. Si un solide occupe d\u00c3\u00a9sormais l\u00e2\u0080\u0099espace o\u00c3\u00b9 un des voyageurs devrait revenir, celui-ci effectue une translation spatiale suffisante pour r\u00c3\u00a9appara\u00c3\u00aetre dans le plus proche endroit d\u00c3\u00a9gag\u00c3\u00a9. Le possesseur du sceptre peut mettre un terme \u00c3  l\u00e2\u0080\u0099effet quand il le souhaite, mais le sceptre de s\u00c3\u00a9curit\u00c3\u00a9 ne peut \u00c3\u00aatre utilis\u00c3\u00a9 qu\u00e2\u0080\u0099une seule fois par semaine."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "20 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "portail",
+                "Prix",
+                "61 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Seigneurs de la guerre",
+        "description": [
+            "Ce sceptre poss\u00c3\u00a8de des pouvoirs magiques et peut se transformer en plusieurs armes et outils. Plus \u00c3\u00a9pais que les autres objets de ce type, le sceptre des seigneurs de la guerre est en m\u00c3\u00a9tal. Son extr\u00c3\u00a9mit\u00c3\u00a9 s\u00e2\u0080\u0099orne d\u00e2\u0080\u0099une t\u00c3\u00aate \u00c3  ailettes et il arbore six boutons ressemblant \u00c3  de gros clous \u00c3  t\u00c3\u00aate plate (appuyer sur l\u00e2\u0080\u0099un d\u00e2\u0080\u0099eux revient \u00c3  d\u00c3\u00a9gainer une arme). Il p\u00c3\u00a8se 5 kg.",
+            "Chacun des pouvoirs magiques suivants peut \u00c3\u00aatre utilis\u00c3\u00a9 1 fois par jour.",
+            "Les fonctions martiales suivantes peuvent \u00c3\u00aatre invoqu\u00c3\u00a9es \u00c3  volont\u00c3\u00a9, sans limite d\u00e2\u0080\u0099utilisation.",
+            "Enfin, le possesseur du sceptre peut \u00c3\u00a9galement faire appel aussi souvent qu\u00e2\u0080\u0099il le souhaite aux fonctions suivantes."
+        ],
+        "infos": {
+            "data": [
+                "Multiples puissantes ;",
+                "NLS",
+                "19 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "blessure l\u00c3\u00a9g\u00c3\u00a8re",
+                "force de taureau",
+                "immobilisation de personne",
+                "lame de feu",
+                "terreur",
+                "Prix",
+                "70 000 po."
+            ]
+        },
+        "ul": [
+            [
+                1.0,
+                "<ul>\r\n<li>Immobilisation de personne au contact (jet de Volont\u00c3\u00a9 DD 14 pour annuler). Le possesseur du sceptre doit d\u00c3\u00a9cider d\u00e2\u0080\u0099utiliser le pouvoir, puis r\u00c3\u00a9ussir une attaque de contact au corps \u00c3\u00a0 corps pour l\u00e2\u0080\u0099activer. Si l\u00e2\u0080\u0099attaque rate, l\u00e2\u0080\u0099effet est perdu pour la journ\u00c3\u00a9e.</li>\r\n<li>Terreur affectant tous les adversaires voyant le sceptre, dans une port\u00c3\u00a9e maximale de 3 m\u00c3\u00a8tres (jet de Volont\u00c3\u00a9 DD 16 pour effet partiel). Il faut une action simple pour invoquer ce pouvoir.</li>\r\n<li>Sur une attaque de contact au corps \u00c3\u00a0 corps r\u00c3\u00a9ussie, le sceptre inflige 2d4 points de d\u00c3\u00a9g\u00c3\u00a2ts \u00c3\u00a0 la cible (jet de Volont\u00c3\u00a9 DD 17 pour demi-d\u00c3\u00a9g\u00c3\u00a2ts) et le porteur r\u00c3\u00a9cup\u00c3\u00a8re la m\u00c3\u00aame quantit\u00c3\u00a9 de points de vie. Le personnage doit annoncer son intention avant de porter son coup, comme pour immobilisation de personne.</li>\r\n</ul>"
+            ],
+            [
+                2.0,
+                "<ul>\r\n<li>Sous sa forme habituelle, le sceptre fonctionne comme une masse d\u00e2\u0080\u0099armes l\u00c3\u00a9g\u00c3\u00a8re +2.</li>\r\n<li>Pour peu qu\u00e2\u0080\u0099on appuie sur le bouton 1, il se transforme en \u00c3\u00a9p\u00c3\u00a9e longue +1 de feu. Le fer jaillit de la t\u00c3\u00aate de masse, laquelle devient la garde de l\u00e2\u0080\u0099\u00c3\u00a9p\u00c3\u00a9e nouvellement cr\u00c3\u00a9\u00c3\u00a9e. La longueur totale du sceptre est alors de 1,20 m\u00c3\u00a8tre.</li>\r\n<li>Si l\u00e2\u0080\u0099on presse le bouton 2, le sceptre devient une hache d\u00e2\u0080\u0099armes +4. Le fer jaillit de la t\u00c3\u00aate de masse et le manche s\u00e2\u0080\u0099allonge pour donner \u00c3\u00a0 l\u00e2\u0080\u0099ensemble une longueur totale de 1,20 m\u00c3\u00a8tre.</li>\r\n<li>En appuyant sur le bouton 3, on transforme le sceptre en \u00c3\u00a9pieu +3 ou pique +3, au choix. La lame jaillit de la t\u00c3\u00aate de masse et le manche s\u00e2\u0080\u0099allonge jusqu\u00e2\u0080\u0099\u00c3\u00a0 une longueur d\u00c3\u00a9termin\u00c3\u00a9e par le possesseur mais ne pouvant d\u00c3\u00a9passer 3,60 m\u00c3\u00a8tres. L\u00e2\u0080\u0099arme mesure alors entre 1,80 m\u00c3\u00a8tre et 4,50 m\u00c3\u00a8tres de long. En choisissant la longue maximale, on peut m\u00c3\u00aame s\u00e2\u0080\u0099en servir comme d\u00e2\u0080\u0099une lance d\u00e2\u0080\u0099ar\u00c3\u00a7on.</li>\r\n</ul>"
+            ],
+            [
+                3.0,
+                "<ul>\r\n<li>Perche/\u00c3\u00a9chelle. Quand on presse le bouton 4, une pointe capable de se planter dans le granit jaillit de la t\u00c3\u00aate de masse, tandis que trois crochets pointus apparaissent en bas du manche. En 1 round, le manche s\u00e2\u0080\u0099allonge pour atteindre une longueur totale allant de 1,50 m\u00c3\u00a8tre \u00c3\u00a0 15 m\u00c3\u00a8tres (il s\u00e2\u0080\u0099arr\u00c3\u00aate quand on appuie une seconde fois sur le bouton 4). Une fois le sceptre arrim\u00c3\u00a9 par les crochets et la pointe, des barreaux d\u00e2\u0080\u0099\u00c3\u00a9chelle se d\u00c3\u00a9ploient sur toute sa longueur, \u00c3\u00a0 30 centim\u00c3\u00a8tres d\u00e2\u0080\u0099intervalle (un \u00c3\u00a0 gauche, puis \u00c3\u00a0 droite, etc.). Le sceptre peut soutenir un poids total de 2 tonnes. Il se r\u00c3\u00a9tracte automatiquement quand on appuie sur le bouton 5.</li>\r\n<li>L\u00e2\u0080\u0099\u00c3\u00a9chelle peut \u00c3\u00a9galement \u00c3\u00aatre d\u00c3\u00a9ploy\u00c3\u00a9e de mani\u00c3\u00a8re \u00c3\u00a0 enfoncer les portes. Le personnage plante le sceptre dans le sol \u00c3\u00a0 moins de 9 m\u00c3\u00a8tres de l\u00e2\u0080\u0099obstacle et l\u00e2\u0080\u0099incline dans la direction de ce dernier avant de presser le bouton 4. La force exerc\u00c3\u00a9e par le sceptre correspond \u00c3\u00a0 modificateur de Force de +12.</li>\r\n<li>Quand on appuie sur le bouton 6, le sceptre indique o\u00c3\u00b9 se trouve le nord magn\u00c3\u00a9tique et r\u00c3\u00a9v\u00c3\u00a8le la profondeur ou l\u00e2\u0080\u0099altitude \u00c3\u00a0 laquelle se trouve son possesseur (par rapport \u00c3\u00a0 la surface, pas au niveau de la mer).</li>\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Sourcier",
+        "description": [
+            "Ce sceptre en bouleau blanc est toujours froid et humide au toucher. Il d\u00c3\u00a9signe la source d'eau potable la plus proche dans un rayon de 175 m\u00c3\u00a8tres."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "localisation d\u00e2\u0080\u0099objet",
+                "Prix",
+                "12 000 po ;",
+                "Poids",
+                "700 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sph\u00c3\u00a8res",
+        "description": [
+            "Elminster aurait con\u00c3\u00a7u le premier de ces rares et \u00c3\u00a9tranges sceptres, mais des magiciens de tout Toril en ont depuis cr\u00c3\u00a9\u00c3\u00a9 de nouveaux exemplaires. L'unique fonction du sceptre des sph\u00c3\u00a8res est de cr\u00c3\u00a9er de grosses bulles transparentes de 90 centim\u00c3\u00a8tres de diam\u00c3\u00a8tre d\u00c3\u00a9gageant autant de lumi\u00c3\u00a8re qu'une bougie. Les bulles flottent dans les airs \u00c3  la vitesse de 6 m\u00c3\u00a8tres par round dans la direction choisie par le porteur. Chacune peut renfermer jusqu'\u00c3  70 kilos de cr\u00c3\u00a9atures ou d'objets. Tout objet situ\u00c3\u00a9 dans une telle sph\u00c3\u00a8re est prot\u00c3\u00a9g\u00c3\u00a9 des \u00c3\u00a9l\u00c3\u00a9ments (pluie, vent, neige, etc., mais pas de bonus ou de r\u00c3\u00a9sistance contre les attaques d'\u00c3\u00a9nergie destructive) et jouit d'un effet as feuille morte si elle tombe de plus de 3 m\u00c3\u00a8tres. Les bulles ont une dur\u00c3\u00a9e de vie de 8 heures (sauf si on les brise avant).",
+            "Une bulle n'est pas une prison. Tout \u00c3\u00aatre intelligent peut en sortir facilement en la brisant. Le sceptre des sph\u00c3\u00a8res a 50 charges au moment de sa cr\u00c3\u00a9ation et la formation de chaque bulle co\u00c3\u00bbte 1 charge."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "[force] mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "disque flottant de Tenser",
+                "feuille morte",
+                "Prix",
+                "25 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Suzerainet\u00c3\u00a9",
+        "description": [
+            "Cet objet a l\u00e2\u0080\u0099air d\u00e2\u0080\u0099un sceptre royal d\u00e2\u0080\u0099une valeur apparente de 5 000 po minimum. Son possesseur peut gagner l\u00e2\u0080\u0099ob\u00c3\u00a9issance et la loyaut\u00c3\u00a9 de toutes les cr\u00c3\u00a9atures distantes de moins de 36 m\u00c3\u00a8tres d\u00c3\u00a8s qu\u00e2\u0080\u0099il l\u00e2\u0080\u0099active (ce qui n\u00c3\u00a9cessite une action simple). Un total de 300 DV de cr\u00c3\u00a9atures peut \u00c3\u00aatre dirig\u00c3\u00a9, mais celles qui ont 12 ou plus en Intelligence ont droit \u00c3  un jet de Volont\u00c3\u00a9 (DD 16) pour conserver leur libre arbitre. Les cr\u00c3\u00a9atures affect\u00c3\u00a9es ob\u00c3\u00a9issent au personnage comme si ce dernier \u00c3\u00a9tait leur roi de droit divin. L\u00e2\u0080\u0099enchantement cesse toutefois de faire effet si le possesseur du sceptre donne un ordre contraire \u00c3  la nature des cr\u00c3\u00a9atures soumises. Le sceptre de suzerainet\u00c3\u00a9 peut \u00c3\u00aatre utilis\u00c3\u00a9 pendant un total de 500 minutes avant de tomber en poussi\u00c3\u00a8re. Cette dur\u00c3\u00a9e n\u00e2\u0080\u0099a pas besoin d\u00e2\u0080\u0099\u00c3\u00aatre continue."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "20 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "charme-monstre de groupe",
+                "Prix",
+                "60 000 po ;",
+                "Co\u00c3\u00bbt",
+                "27 500 po + 2 200 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Tissage",
+        "description": [
+            "Ce b\u00c3\u00a2ton est orn\u00c3\u00a9 de motifs d'araign\u00c3\u00a9es et de toiles. Le porteur est continuellement prot\u00c3\u00a9g\u00c3\u00a9 par un effet de peau d'araign\u00c3\u00a9e qui lui conf\u00c3\u00a8re un bonus d'alt\u00c3\u00a9ration de +2 au- bonus d'armure naturelle, un bonus racial de +2 aux sauvegardes contre le poison et un bonus racial de +2 aux tests de Discr\u00c3\u00a9tion. De plus, le porteur peut prononcer un mot de commande pour activer un sort de toile d'araign\u00c3\u00a9e, 3 fois par jour. Enfin, il peut se d\u00c3\u00a9placer et attaquer au sein de toiles naturelles et magiques comme s'il jouissait d'un effet de libert\u00c3\u00a9 de mouvement (si ce n'est qu'il ne s'applique qu'aux toiles)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9es ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "libert\u00c3\u00a9 de mouvement",
+                "peau d\u00e2\u0080\u0099araign\u00c3\u00a9e",
+                "toile d\u00e2\u0080\u0099araign\u00c3\u00a9e",
+                "Prix",
+                "90 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Tueur de dragons",
+        "description": [
+            "Fait d'adamantium et d\u00c3\u00a9cor\u00c3\u00a9 de pierre pr\u00c3\u00a9cieuse, ce sceptre permet \u00c3  son porteur de p\u00c3\u00a9n\u00c3\u00a9trer les d\u00c3\u00a9fenses magiques des dragons. Il conf\u00c3\u00a8re un bonus de +4 aux tests de niveau de lanceur de sort pour p\u00c3\u00a9n\u00c3\u00a9trer la r\u00c3\u00a9sistance \u00c3  la magie des dragons."
+        ],
+        "infos": {
+            "data": [
+                "Universelle mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                ", Efficacit\u00c3\u00a9 des sorts sup\u00c3\u00a9rieure ;",
+                "Prix",
+                "5 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Vip\u00c3\u00a8re",
+        "description": [
+            "Au corps \u00c3  corps, ce sceptre se comporte comme une masse d\u00e2\u0080\u0099armes lourde +2. Une fois par jour, sur ordre de son possesseur (ce qui ne demande qu\u00e2\u0080\u0099une action libre), la t\u00c3\u00aate de l\u00e2\u0080\u0099arme se transforme en t\u00c3\u00aate de serpent vivant pendant 10 minutes. Durant ce temps, tout coup port\u00c3\u00a9 \u00c3  l\u00e2\u0080\u0099aide du sceptre inflige les d\u00c3\u00a9g\u00c3\u00a2ts normaux et empoisonne la cr\u00c3\u00a9ature touch\u00c3\u00a9e. Le venin provoque imm\u00c3\u00a9diatement un affaiblissement temporaire de 1d10 points de Constitution (jet de Vigueur DD 14 pour annuler), auxquels il faut ajouter 1d10 nouveaux points d\u00e2\u0080\u0099affaiblissement temporaire de Constitution, une minute plus tard (jet de Vigueur DD 14 pour annuler). Le sceptre de la vip\u00c3\u00a8re ne fonctionne qu\u00e2\u0080\u0099entre les mains d\u00e2\u0080\u0099un individu mal\u00c3\u00a9fique."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "empoisonnement",
+                ", alignement mauvais ;",
+                "Prix",
+                "19 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    }
+]

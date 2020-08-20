@@ -5,9 +5,11 @@ import {GestionDropMonstreComponent} from './gestion-drop-monstre/gestion-drop-m
 import {GestionMonstreComponent} from './gestion-monstre/gestion-monstre.component';
 import {FadingInfoComponent} from './fading-info/fading-info.component';
 import {GestionDropMonstreBisComponent} from './gestion-drop-monstre-bis/gestion-drop-monstre-bis.component';
+import {TestLoadJSonComponent} from './test-load-json/test-load-json.component';
 
 
 const routes: Routes = [
+  {path: 'testJSon', component: TestLoadJSonComponent},
   {path: 'testBanner', component: FadingInfoComponent},
   {path: 'GestionMonstre', component: GestionMonstreComponent},
   {path: 'GestionDropMonstre', component: GestionDropMonstreComponent},

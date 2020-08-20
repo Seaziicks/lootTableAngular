@@ -1,0 +1,365 @@
+[
+    {
+        "title": "Bouclier ail\u00e9",
+        "description": [
+            "Cet \u00e9cu en bois +3 est de forme ronde. Il est entour\u00e9 de petites ailes \u00e0 plumes. Sur commande et une fois par jour, il peut g\u00e9n\u00e9rer les effets du sort vol, emportant son porteur avec lui. Le bouclier peut porter jusqu\u2019\u00e0 66,5 kg \u00e0 une vitesse de 18 m\u00e8tres et jusqu\u2019\u00e0 133,5 kg \u00e0 une vitesse de 12 m\u00e8tres."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "vol",
+                "Prix",
+                "17 257 po ;",
+                "Co\u00fbt",
+                "8 628 po + 690 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier asura",
+        "description": [
+            "Les soldats d'\u00e9lite asura portent habituellement ce bouclier en temps de guerre. Aur\u00e9ol\u00e9 de flammes saintes, cet \u00e9cu \u00e0 pointes en acier +2 d'attaque inflige les d\u00e9g\u00e2ts habituels (2d6+2 pour un bouclier \u00e0 pointes de taille M) plus 1d6 points de d\u00e9g\u00e2ts de feu et 1d6 points de d\u00e9g\u00e2ts d'origine divine qui n'affectent que les cr\u00e9atures mal\u00e9fiques.",
+            "Le simple fait de toucher le bouclier embras\u00e9 inflige 1d6 points de d\u00e9g\u00e2ts de feu et 1d6 points de d\u00e9g\u00e2ts d'origine divine qui n'affectent que les cr\u00e9atures mal\u00e9fiques."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "colonne de feu",
+                "force de taureau",
+                "Prix",
+                "27 180 po ;",
+                "Co\u00fbt",
+                "13 680 po+ 1 080 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier de la manticore",
+        "description": [
+            "Cet \u00e9cu en acier +1 est couvert d\u2019\u00e9pines et se comporte comme un bouclier \u00e0 pointes. Sur commande et jusqu\u2019\u00e0 trois fois par jour, son utilisateur peut \u00e9jecter l\u2019une des \u00e9pines comme un projectile. Les \u00e9pines ont un bonus d\u2019alt\u00e9ration de +1 et un facteur de port\u00e9e de 36 m\u00e8tres. Elles infligent 1d10 points de d\u00e9g\u00e2ts pour la version de taille M et 1d8 pour celle de taille P (critique 19\u201320/x2). Les pointes tir\u00e9es se r\u00e9g\u00e9n\u00e8rent en une journ\u00e9e."
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "projectile magique",
+                "Prix",
+                "5 580 po ;",
+                "Co\u00fbt",
+                "2 740 po + 233 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier de la vache",
+        "description": [
+            "Cette rondache en cuir +1 est g\u00e9n\u00e9ralement blanche tachet\u00e9e de noire. Une fois par jour, au prix d'un mot de commande, elle se transforme en une vache en bonne sant\u00e9. Elle peut \u00eatre traite, dirig\u00e9e comme une cr\u00e9ature convoqu\u00e9e ou m\u00eame tu\u00e9e et mang\u00e9e. Tant que la peau de la b\u00eate est globalement intact, un second mot de commande permet au bouclier de reprendre sa forme. Toute viande, lait, cornes ou autres produits issus de la vache pourrissent et se d\u00e9composent en 24 heures apr\u00e8s que le bouclier ait repris sa forme.",
+            "Bien que cet objet est consid\u00e9r\u00e9 comme utile par de nombreux guerriers nomades, beaucoup consid\u00e8rent leurs cr\u00e9ateurs comme d\u00e9rang\u00e9s."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "cr\u00e9ation de nourriture et d\u2019eau",
+                "convocation d\u2019alli\u00e9s naturels 3",
+                "Prix",
+                "6 555 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier de n\u00e9crophage",
+        "description": [
+            "Cet objet est une rondache en acier +1 recouverte d\u2019une peau de n\u00e9crophage. L\u2019utilisateur peut donner un coup de ce bouclier en usant de sa main non directrice. Dans ce cas, le bouclier de n\u00e9crophage est une arme de guerre contondante. Pour ce qui est des malus aux jets d\u2019attaque, consid\u00e9rez cet objet comme une arme l\u00e9g\u00e8re. Si l\u2019utilisateur s\u2019en sert comme d\u2019une arme, il perd le b\u00e9n\u00e9ficie du bonus \u00e0 la CA jusqu\u2019\u00e0 son action suivante. Le bonus d\u2019alt\u00e9ration du bouclier n\u2019accro\u00eet pas l\u2019efficacit\u00e9 des coups port\u00e9s \u00e0 l\u2019aide de celui-ci.",
+            "Quand l\u2019utilisateur inflige des d\u00e9g\u00e2ts \u00e0 une cr\u00e9ature vivante \u00e0 l\u2019aide d\u2019un coup de bouclier de n\u00e9crophage, la cible doit r\u00e9ussir un jet de Vigueur (DD 14) sous peine de gagner 1 niveau n\u00e9gatif."
+        ],
+        "infos": {
+            "data": [
+                "N\u00e9cromancie",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", degr\u00e9 de ma\u00eetrise de 5 en Connaissances (religion),",
+                "cr\u00e9ation de mort-vivant",
+                "Prix",
+                "16 309 po ;",
+                "Poids",
+                "3 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier des arcanes",
+        "description": [
+            "Cette rondache en bois +1 est \u00e9quip\u00e9e, sur sa face int\u00e9rieure, d\u2019une bande de cuir sur laquelle un pratiquant de la magie peut transcrire un sort, comme s\u2019il s\u2019agissait d\u2019un parchemin. Le co\u00fbt en mati\u00e8res premi\u00e8res de l\u2019inscription d\u2019un sort sur la bande est la moiti\u00e9 de celui li\u00e9 \u00e0 l\u2019\u00e9criture d\u2019un parchemin (le prix des composantes mat\u00e9rielles suppl\u00e9mentaires et la d\u00e9pense de PX restent les m\u00eames). La bande ne peut accueillir que des sorts du 3e niveau ou moins. Elle est r\u00e9utilisable.",
+            "Un bouclier des arcanes d\u00e9termin\u00e9 al\u00e9atoirement a 50% de chances d\u2019avoir d\u00e9j\u00e0 un sort inscrit dessus (parchemin interm\u00e9diaire, un seul sort). Ce sort est soit divin (01\u201380 sur 1d100), soit profane (81\u2013100).",
+            "Le risque d\u2019\u00e9chec des sorts profanes du bouclier (5%) s\u2019applique normalement."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "\u00c9criture de parchemins",
+                ", niveau 6 de lanceur de sorts ;",
+                "Prix",
+                "3 153 po (plus la valeur du sort s\u2019il y en a un dessus) ;",
+                "Co\u00fbt",
+                "1 653 po + 120 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier du lion",
+        "description": [
+            "Cet \u00e9cu en acier +2 a \u00e9t\u00e9 ouvrag\u00e9 afin de montrer une gueule de lion rugissant sur sa face ext\u00e9rieure. Par une action libre et jusqu\u2019\u00e0 trois fois par jour, le lion peut attaquer ind\u00e9pendamment du porteur. Il mord en utilisant le bonus de base \u00e0 l\u2019attaque de son porteur (avec \u00e9ventuellement le nombre d\u2019attaques qui en d\u00e9coule) et inflige 2d6 points de d\u00e9g\u00e2ts pour la version de taille M et 1d10 pour celle de taille P (critique x2). Cette attaque (ou ces attaques) vient en plus des actions ex\u00e9cut\u00e9es par le porteur au cours du round."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", convocation d\u2019alli\u00e9s naturels IV ;",
+                "Prix",
+                "9 170 po ;",
+                "Co\u00fbt",
+                "4 670 po + 360 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier du soleil",
+        "description": [
+            "Cet \u00e9cu en acier +2 poss\u00e8de une surface polie et r\u00e9flective au centre de a laquelle se trouve une pierre pr\u00e9cieuse dor\u00e9e. Deux fois par jour, le porteur du bouclier du soleil peut tirer un brillant rayon lumineux \u00e0 partir de la gemme. Ce rayon est l\u2019\u00e9quivalent d'un rayon du sort Rayon de soleil (niveau 13 de lanceur de sorts)."
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Rayon de soleil",
+                "Prix",
+                "74 170 po ;",
+                "Poids",
+                "7,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier herm\u00e9tique de Laeral",
+        "description": [
+            "Nomm\u00e9 d'apr\u00e8s Laeral Maindargent Arunsun, qui cr\u00e9a le premier bouclier de ce type, cet \u00e9cu d'acier +1 conf\u00e8re \u00e0 son porteur une r\u00e9sistance \u00e0 la magie de 17 contre tous les sorts relevant du registre de force."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "bouclier",
+                "mur de force",
+                "r\u00e9sistance \u00e0 la magie",
+                "Prix",
+                "9170 po ;",
+                "Co\u00fbt",
+                "4670 po + 360 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bouclier phagocyte",
+        "description": [
+            "Cet \u00e9cu en acier +1 est d\u2019un noir mat qui semble absorber la lumi\u00e8re. Sur commande et un jour sur deux, il peut d\u00e9sint\u00e9grer un objet au contact, comme par le sort d\u00e9sint\u00e9gration. Une attaque de contact au corps \u00e0 corps est cependant n\u00e9cessaire."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "d\u00e9sint\u00e9gration",
+                "Prix",
+                "50 170 po ;",
+                "Co\u00fbt",
+                "25 170 po + 2 000 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Carapace de tortue \u00e9toil\u00e9e",
+        "description": [
+            "Les hommes-l\u00e9zards sont les cr\u00e9ateur de cet \u00e9cu en bois +3 de forme ovale et d\u00e9cor\u00e9e d'\u00e9cailles de tortues de plusieurs couleurs. Les \u00e9cailles forment toujours un motif avec les \u00e9cailles les plus claires au centre et les plus fonc\u00e9s sur les bords.",
+            "La carapace de la tortue \u00e9toil\u00e9e conf\u00e8re un bonus d'armure naturelle de +1 \u00e0 son porteur. De plus, celui-ci est immunis\u00e9 \u00e0 l'effet d\u00e9capitant d'une arme vorpale ou effets similaires."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "Prix",
+                "18 157 po ;",
+                "Poids",
+                "6 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "D\u00e9fense de Traeken",
+        "description": [
+            "Un pr\u00eatre nomm\u00e9 Traeken d\u00e9veloppa cette id\u00e9e de bouclier comme ultime mesure de d\u00e9fense de sa forteresse assi\u00e9g\u00e9e de morts-vivants. Apr\u00e8s un an de si\u00e8ge, les guerriers arm\u00e9s de ces boucliers ont \u00e9t\u00e9 en mesure de repousser la horde de morts-vivants aussi longtemps que n\u00e9cessaire pour \u00e9vacuer la forteresse.",
+            "D\u00e9fense de Traeken est un \u00e9cu d'acier +1 dont le bonus d'alt\u00e9ration passe \u00e0 +3 contre les morts-vivants. De plus, son porteur peut lancer un sort de Lumi\u00e8re br\u00fblante sur un mort-vivant au niveau 5 de lanceur de sorts. Une fois ce pouvoir utiliser 3 fois, la d\u00e9fense de Traeken doit rester expos\u00e9 au soleil pendant 3 heures pour recharger ce pouvoir."
+        ],
+        "infos": {
+            "data": [
+                "\u00c9vocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "lumi\u00e8re br\u00fblante",
+                "Prix",
+                "17 650 po ;",
+                "Poids",
+                "7,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Le diablotin cracheur",
+        "description": [
+            "Prenant la forme d'un visage de diablotin grima\u00e7ant et malicieux, cet objet est une targe anim\u00e9e +4 qui, au prix d'un mot de commande (action simple), peut cracher un venin br\u00fblant, 1 fois par jour. Le crachat prend la forme d'une attaque de contact \u00e0 distance d'une port\u00e9e  de  9  m\u00e8tres  qui  inflige 1d4+6 points de d\u00e9g\u00e2ts de feu, un affaiblissement temporaire de 1d10 points de Constitution, puis un nouvel affaiblissement temporaire de 1d10 points de Constitution 1 minute plus tard. La victime peut annuler chaque affaiblissement en r\u00e9ussissant un jet de Vigueur (DD 17). Le diablotin cracheur est pris d'une malicieuse hilarit\u00e9 quand il pare l'arme d'un adversaire, propri\u00e9t\u00e9 inoffensive mais des plus troublantes."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "animation d\u2019objets",
+                "empoisonnement",
+                "flammes",
+                "Prix",
+                "46 245 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pavois \u00e0 bandelettes",
+        "description": [
+            "Ce bouclier est un pavois +2 envelopp\u00e9 de bandelettes de momie. Une fois par jour, son utilisateur peut s\u2019en servir pour b\u00e9n\u00e9ficier d\u2019un abri total. La simple vue du bouclier oblige alors les adversaires qui se situent devant lui \u00e0 r\u00e9ussir un jet de Volont\u00e9 (DD 16) sous peine d\u2019\u00eatre paralys\u00e9s de terreur pendant 1d4 rounds."
+        ],
+        "infos": {
+            "data": [
+                "N\u00e9cromancie",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                ", degr\u00e9 de ma\u00eetrise de 5 en Connaissances (religion),",
+                "cr\u00e9ation de mort-vivant",
+                "Prix",
+                "6 330 po ;",
+                "Poids",
+                "22,5 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pavois d\u2019antimagie",
+        "description": [
+            "Une fois par jour, le porteur de ce pavois +1 peut \u00e9mettre une zone d'antimagie (comme le sort, centr\u00e9 sur lui m\u00eame)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00e9r\u00e9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "zone d\u2019antimagie",
+                "Prix",
+                "27 580 po ;",
+                "Co\u00fbt",
+                "14 380 po + 575 PX ;",
+                "Poids",
+                "32,5 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Targe barricade",
+        "description": [
+            "Le mot de commande appropri\u00e9 transforme cette targe +1 en un pavois +1, conf\u00e9rant les bonus et malus normaux d'un pavois. Le bouclier change aussi de poids pour avoir celui d'un pavois normal (passant de 2,5 kg \u00e0 22,5 kg). Un second mot de commande la ram\u00e8ne \u00e0 la normale."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00e9ation d\u2019armes et armures magiques",
+                "agrandissement",
+                "Prix",
+                "4165 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    }
+]

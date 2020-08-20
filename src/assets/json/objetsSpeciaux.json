@@ -1,0 +1,1010 @@
+[
+    {
+        "title": "Amulette de fragilit\u00c3\u00a9",
+        "description": [
+            "Cette amulette dor\u00c3\u00a9e ressemble \u00c3  une Amulette de Constitution et fonctionne comme tel jusqu'\u00c3  ce que le personnage re\u00c3\u00a7oive des d\u00c3\u00a9g\u00c3\u00a2ts par une cr\u00c3\u00a9ature d'un FP \u00c3\u00a9gal ou sup\u00c3\u00a9rieur ou sien. A ce moment et par la suite, l'amulette impose un malus de -6 en Constitution \u00c3  son porteur. Une fois la mal\u00c3\u00a9diction activer, l'amulette ne peut plus \u00c3\u00aatre enlev\u00c3\u00a9 sauf par un sort de D\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "endurance de l\u00e2\u0080\u0099ours",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "1 300 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Amulette de localisation",
+        "description": [
+            "Cet objet se pr\u00c3\u00a9sente g\u00c3\u00a9n\u00c3\u00a9ralement sous forme de pendentif ou de broche. Si on l\u00e2\u0080\u0099\u00c3\u00a9tudie \u00c3  l\u00e2\u0080\u0099aide de moyens magiques, il semble prot\u00c3\u00a9ger contre la scrutation (ce qui inclut les objets tels que les boules de cristal) et les sorts (ou effets) de d\u00c3\u00a9tection, ou d\u00e2\u0080\u0099influence comme d\u00c3\u00a9tection de pens\u00c3\u00a9es, ou la t\u00c3\u00a9l\u00c3\u00a9pathie. Il se fait passer pour une amulette d\u00e2\u0080\u0099antid\u00c3\u00a9tection. En r\u00c3\u00a9alit\u00c3\u00a9, l\u00e2\u0080\u0099amulette inflige \u00c3  son porteur un malus de \u00e2\u0080\u009310 sur tous les jets de sauvegarde contre les sorts de divination."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "1 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anneau de gaucherie",
+        "description": [
+            "Cet anneau fonctionne exactement comme un anneau de feuille morte, mais il a \u00c3\u00a9galement pour effet de rendre qui le porte extr\u00c3\u00aamement maladroit : le personnage subit un malus de \u00e2\u0080\u00934 \u00c3  la Dext\u00c3\u00a9rit\u00c3\u00a9 et a 20% de chances de rater ses incantations de sorts profanes si celles-ci n\u00c3\u00a9cessitent des composantes gestuelles (ce pourcentage s\u00e2\u0080\u0099ajoute \u00c3  un \u00c3\u00a9ventuel risque d\u00e2\u0080\u0099\u00c3\u00a9chec des sorts profanes si l\u00e2\u0080\u0099aventurier porte une armure)."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099anneaux magiques",
+                "feuille morte",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anneau de respiration aqueuse",
+        "description": [
+            "Cet anneau semble fait de corail et ressemble \u00c3  des poissons se mordant la queue.",
+            "L'anneau de respiration aqueuse permet \u00c3  son utilisateur de respiration normalement sous l'eau. n\u00c3\u00a9anmoins, d\u00c3\u00a8s que le personne veut revenir \u00c3  la surface, il devient incapable de respirer \u00c3  nouveau \u00c3  l'air libre. Il ne peut rester hors de l'eau que aussi longtemps qu'il \u00c3\u00a9tait capable de rester dans l'eau avant la mal\u00c3\u00a9diction de l'anneau.",
+            "Une fois l'anneau port\u00c3\u00a9 sous l'eau, seul un sort de d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions permet de l'enlever. Sinon, il est enlevable normalement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099anneaux magiques",
+                "libert\u00c3\u00a9 de mouvement",
+                "respiration aquatique",
+                "Prix",
+                "6 000 po ;",
+                "Poids"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de fureur",
+        "description": [
+            "Ce harnois +1 semble fonctionner comme une cuirasse de commandement. En r\u00c3\u00a9alit\u00c3\u00a9, il impose \u00c3  son porteur un malus de \u00e2\u0080\u00934 en Charisme, et tous les ennemis distants de moins de 100 m\u00c3\u00a8tres b\u00c3\u00a9n\u00c3\u00a9ficient d\u00e2\u0080\u0099un bonus de moral de +1 au jet d\u00e2\u0080\u0099attaque quand ils s\u00e2\u0080\u0099en prennent \u00c3  lui. Ni le personnage, ni ses adversaires ne sont conscients de cet effet (en d\u00e2\u0080\u0099autres termes, l\u00e2\u0080\u0099aventurier ne sait pas que l\u00e2\u0080\u0099armure est la cause de ses probl\u00c3\u00a8mes relationnels, pas plus que ses ennemis ne comprennent pourquoi ils \u00c3\u00a9prouvent une telle haine \u00c3  son \u00c3\u00a9gard)."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "1 600 po ;",
+                "Poids",
+                "25 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure d\u00e2\u0080\u0099attraction des projectiles",
+        "description": [
+            "En cas d\u00e2\u0080\u0099analyse magique, cette armure donne l\u00e2\u0080\u0099impression d\u00e2\u0080\u0099\u00c3\u00aatre un harnois +3. Elle s\u00e2\u0080\u0099accompagne bien du bonus indiqu\u00c3\u00a9, mais elle est maudite. Si la protection qu\u00e2\u0080\u0099elle conf\u00c3\u00a8re au corps \u00c3  corps est normale pour une armure +3, elle pr\u00c3\u00a9sente l\u00e2\u0080\u0099inconv\u00c3\u00a9nient d\u00e2\u0080\u0099attirer les projectiles comme un aimant. Le porteur subit un malus de \u00e2\u0080\u009315 \u00c3  la CA contre les attaques des armes \u00c3  distance. La v\u00c3\u00a9ritable nature de l\u00e2\u0080\u0099armure est r\u00c3\u00a9v\u00c3\u00a9l\u00c3\u00a9e quand le personnage est pris pour cible par des ennemis, pas si on lui jette quelques pierres afin de s\u00e2\u0080\u0099assurer que le harnois n\u00e2\u0080\u0099est pas maudit."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "9 000 po ;",
+                "Poids",
+                "25 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Balai frappeur",
+        "description": [
+            "Ce balai a l\u00e2\u0080\u0099air on ne peut plus anodin, si ce n\u00e2\u0080\u0099est que les sorts de d\u00c3\u00a9tection r\u00c3\u00a9v\u00c3\u00a8lent qu\u00e2\u0080\u0099il est magique. Il semble \u00c3\u00aatre un balai volant si on l\u00e2\u0080\u0099examine \u00c3  l\u00e2\u0080\u0099aide des sorts appropri\u00c3\u00a9s, du moins tant qu\u00e2\u0080\u0099on n\u00e2\u0080\u0099essaye pas de s\u00e2\u0080\u0099en servir. \u00c3\u0080 partir de ce moment, le balai frappeur se montre tel qu\u00e2\u0080\u0099il est : un objet extr\u00c3\u00aamement malfaisant.",
+            "Si un ordre tel que \u00e2\u0080\u009c D\u00c3\u00a9colle \u00e2\u0080\u009d, \u00e2\u0080\u009c Envole-toi \u00e2\u0080\u009d, ou encore \u00e2\u0080\u009c Yaaa ! \u00e2\u0080\u009d lui est donn\u00c3\u00a9, le balai quitte le sol et ex\u00c3\u00a9cute instantan\u00c3\u00a9ment un looping serr\u00c3\u00a9, faisant tomber son passager d\u00e2\u0080\u0099une hauteur de (1d4+5) x 30 centim\u00c3\u00a8tres. La chute n\u00e2\u0080\u0099inflige aucun d\u00c3\u00a9g\u00c3\u00a2t, mais le balai se rue aussit\u00c3\u00b4t sur l\u00e2\u0080\u0099aventurier, qu\u00e2\u0080\u0099il frappe violemment de son manche tout en essayant de l\u00e2\u0080\u0099aveugler \u00c3  l\u00e2\u0080\u0099aide de son faisceau de paille.",
+            "Le balai dispose d\u00e2\u0080\u0099un total de quatre attaques par round (deux coups de manche et deux coups de faisceau). Il b\u00c3\u00a9n\u00c3\u00a9ficie d\u00e2\u0080\u0099un bonus de +5 \u00c3  tous les jets d\u00e2\u0080\u0099attaque. Le faisceau n\u00e2\u0080\u0099occasionne aucun d\u00c3\u00a9g\u00c3\u00a2t mais aveugle la cible pendant 1 round en cas de coup au but. Quant au manche, il inflige 1d6 points de d\u00c3\u00a9g\u00c3\u00a2ts \u00c3  chaque coup. Le balai frappeur a une CA de 13, 18 points de r\u00c3\u00a9sistance et une solidit\u00c3\u00a9 de 4."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "vol",
+                "animation d\u00e2\u0080\u0099objets",
+                "Prix",
+                "5 200 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bandeau d\u00e2\u0080\u0099hostilit\u00c3\u00a9",
+        "description": [
+            "Ce simple bandeau fonctionne comme un bandeau d'Intelligence +4. N\u00c3\u00a9anmoins, si le porteur utilise un sort, une facult\u00c3\u00a9 ou un effet de Convocation ou d'Appel, la cr\u00c3\u00a9ature invoqu\u00c3\u00a9e est hostile au porteur et l'attaque au mieux de ses capacit\u00c3\u00a9s. Une fois que cette fonction est activ\u00c3\u00a9e, le bandeau ne peut plus \u00c3\u00aatre enlev\u00c3\u00a9 sauf par un sort de D\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "charme-monstre",
+                "ruse du renard",
+                "Prix",
+                "13 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bandeau d\u00e2\u0080\u0099idiotie",
+        "description": [
+            "Cet objet merveilleux a tout l'air d'un simple bandeau et les sorts de d\u00c3\u00a9tection ne r\u00c3\u00a9v\u00c3\u00a8lent rien de plus que son aura magique. D\u00c3\u00a8s qu'il le met, son porteur subit un malus de -10 en Intelligence et en Sagesse (jusqu'\u00c3  un minimum de 3), oubliant ainsi les sorts et les connaissances magiques d\u00c3\u00a9coulant de ces valeurs de caract\u00c3\u00a9ristiques.",
+            "Le bandeau ne. peut \u00c3\u00aatre \u00c3\u00b4t\u00c3\u00a9 que si la victime b\u00c3\u00a9n\u00c3\u00a9ficie d'un sort de d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "permanence",
+                "Prix",
+                "5 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bottes ail\u00c3\u00a9es noires",
+        "description": [
+            "Ces bottes fonctionnent en tout point comme des",
+            ", si ce n'est que les ailes qui en sortent sont noirs.",
+            "De plus, lorsqu'elles sont utilis\u00c3\u00a9es, il y a 1% de chance cumulatif chaque round qu'elles cessent de fonctionner, laissant chuter leur porteur.",
+            "Une fois qu'elles ont ainsi cesser de fonctionner, les bottes ail\u00c3\u00a9es noires sont inertes pendant 24 heures, apr\u00c3\u00a8s quoi elles peuvent de nouveau \u00c3\u00aatre utilis\u00c3\u00a9es et les chances d'arr\u00c3\u00aat sont r\u00c3\u00a9initialis\u00c3\u00a9es."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "vol",
+                "Prix",
+                "12 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bottes de charge rat\u00c3\u00a9e",
+        "description": [
+            "Ces bottes ressemblent \u00c3  et fonctionnent comme des",
+            "Mais lorsque leur porteur essaie de courir, leur porteur doit r\u00c3\u00a9ussir un test d'Acrobaties (DD 20 ) ou tomber au sol au milieu du placement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "grand pas",
+                "Prix",
+                "2 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bottes de danse effr\u00c3\u00a9n\u00c3\u00a9e",
+        "description": [
+            "Au d\u00c3\u00a9part, ces bottes fonctionnent comme une autre paire de bottes magiques. Mais d\u00c3\u00a8s que leur porteur se retrouve au combat (ou d\u00c3\u00a8s qu\u00e2\u0080\u0099il essaye de fuir), elles entravent ses d\u00c3\u00a9placements en le for\u00c3\u00a7ant \u00c3  danser fr\u00c3\u00a9n\u00c3\u00a9tiquement, comme s\u00e2\u0080\u0099il \u00c3\u00a9tait affect\u00c3\u00a9 par le sort danse irr\u00c3\u00a9sistible d\u00e2\u0080\u0099Otto. Seule une d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions permet de se d\u00c3\u00a9barrasser des bottes une fois leur v\u00c3\u00a9ritable nature connue."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "danse irr\u00c3\u00a9sistible d\u00e2\u0080\u0099Otto",
+                "Prix",
+                "30 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Boule de cristal asservissante",
+        "description": [
+            "Rien ne permet de faire la diff\u00c3\u00a9rence entre cet objet maudit et une v\u00c3\u00a9ritable boule de cristal. Pourtant, quiconque cherche \u00c3  s\u00e2\u0080\u0099en servir est automatiquement fascin\u00c3\u00a9 pendant 1d6 minutes et re\u00c3\u00a7oit une suggestion par t\u00c3\u00a9l\u00c3\u00a9pathie (jet de Volont\u00c3\u00a9 DD 19 pour annuler).",
+            "S\u00e2\u0080\u0099il rate son jet de sauvegarde, l\u00e2\u0080\u0099utilisateur est persuad\u00c3\u00a9 d\u00e2\u0080\u0099avoir visualis\u00c3\u00a9 la sc\u00c3\u00a8ne ou la cr\u00c3\u00a9ature qui l\u00e2\u0080\u0099int\u00c3\u00a9ressait, mais en r\u00c3\u00a9alit\u00c3\u00a9, il est tomb\u00c3\u00a9 sous la coupe d\u00e2\u0080\u0099un puissant magicien, d\u00e2\u0080\u0099une liche, ou m\u00c3\u00aame d\u00e2\u0080\u0099une entit\u00c3\u00a9 originaire d\u00e2\u0080\u0099un autre plan (on doit choisir l\u00e2\u0080\u0099identit\u00c3\u00a9 du cr\u00c3\u00a9ateur de la boule, en fonction de sa campagne). \u00c3\u0080 chaque nouvelle utilisation, le personnage est un peu plus asservi par son lointain ma\u00c3\u00aetre. On doit d\u00c3\u00a9cider si le processus est lent ou rapide, en fonction de la force de caract\u00c3\u00a8re de l\u00e2\u0080\u0099individu et des conditions dans lesquelles la boule de cristal asservissante a \u00c3\u00a9t\u00c3\u00a9 d\u00c3\u00a9couverte. \u00c3\u0080 noter que le personnage n\u00e2\u0080\u0099a jamais conscience de ce qui lui arrive."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "17 ; cet objet est consid\u00c3\u00a9r\u00c3\u00a9 comme un artefact rare et ne peut pas \u00c3\u00aatre cr\u00c3\u00a9\u00c3\u00a9 ;",
+                "Poids",
+                "3,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bracelets de vuln\u00c3\u00a9rabilit\u00c3\u00a9",
+        "description": [
+            "Ces bracelets semblent \u00c3\u00aatre des bracelets d\u00e2\u0080\u0099armure +5 et fonctionnent en effet comme tel jusqu\u00e2\u0080\u0099\u00c3  ce que leur porteur soit attaqu\u00c3\u00a9 par un adversaire dont le facteur de puissance (FP) est sup\u00c3\u00a9rieur ou \u00c3\u00a9gal \u00c3  son niveau. \u00c3\u0080 partir de ce moment, les bracelets lui infligent un malus de \u00e2\u0080\u00935 \u00c3  la CA. Une fois que la v\u00c3\u00a9ritable nature de ces objets est r\u00c3\u00a9v\u00c3\u00a9l\u00c3\u00a9e, on ne peut s\u00e2\u0080\u0099en d\u00c3\u00a9barrasser que gr\u00c3\u00a2ce au sort d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "armure de mage",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "1 200 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Brassards de convocation lapine",
+        "description": [
+            "Ces brassards sont d\u00c3\u00a9cor\u00c3\u00a9s de symboles repr\u00c3\u00a9sentant plusieurs monstres stylis\u00c3\u00a9s, souvent des dragons, des anges, des fi\u00c3\u00a9lons et des \u00c3\u00a9l\u00c3\u00a9mentaires. Ils permettent de lancer une fois par jour Convocation de monstres II au niveau 5 de lanceur de sorts, une fois par jour.",
+            "A partir de leur seconde utilisation par leur porteur, ils convoquent \u00c3  la place 1d4 lapins. De plus, tout sort, pouvoirs magiques ou effet des sous-\u00c3\u00a9coles Convocation ou Appel lanc\u00c3\u00a9s par le porteur fera appara\u00c3\u00aetre \u00c3  la place de la ou des cr\u00c3\u00a9atures pr\u00c3\u00a9vues 1d4 lapins. Cela affecte y compris les effets des objets magiques du personnage ou ses aptitudes de classe.",
+            "Les brassards ne peuvent \u00c3\u00aatre \u00c3\u00b4t\u00c3\u00a9s que si la victime b\u00c3\u00a9n\u00c3\u00a9ficie d'un sort de d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "Convocation de monstres 2",
+                "Prix",
+                "3 300 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Brassards d\u00e2\u0080\u0099immobilit\u00c3\u00a9",
+        "description": [
+            "Cette paire de brassards maudits conf\u00c3\u00a8rent un bonus de r\u00c3\u00a9sistance de +2 aux jets de sauvegarde, mais un malus de -2 \u00c3  la CA. Une fois mis, un sort de d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions est n\u00c3\u00a9cessaire pour les enlever."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "armure de mage",
+                "mal\u00c3\u00a9diction",
+                "r\u00c3\u00a9sistance",
+                "Prix",
+                "4 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Broche du scarab\u00c3\u00a9e tueur",
+        "description": [
+            "Cette broche a l\u00e2\u0080\u0099air b\u00c3\u00a9n\u00c3\u00a9fique, mais il suffit de la tenir pendant 1 round ou de la placer pendant 1 minute dans un sac, ou un autre contenant non rigide, proche (moins de 30 centim\u00c3\u00a8tres) d\u00e2\u0080\u0099un individu \u00c3  sang chaud pour qu\u00e2\u0080\u0099elle se transforme en horrible cr\u00c3\u00a9ature qui traverse le cuir et s\u00e2\u0080\u0099enfonce dans les chairs de sa victime pour atteindre son c\u00c5\u0093ur en 1 round. La mort est alors automatique. Si le personnage r\u00c3\u00a9ussit un jet de R\u00c3\u00a9flexes (DD 25), il r\u00c3\u00a9ussit \u00c3  attraper le scarab\u00c3\u00a9e et \u00c3  le jeter au loin avant que celui-ci ne disparaisse dans ses chairs, mais il subit tout de m\u00c3\u00aame 3d6 points de d\u00c3\u00a9g\u00c3\u00a2ts. Le scarab\u00c3\u00a9e redevient une broche quand il n\u00e2\u0080\u0099est plus au contact d\u00e2\u0080\u0099un \u00c3\u00aatre vivant. \u00c3\u0080 noter qu\u00e2\u0080\u0099il ne se transforme pas si on le range dans une bo\u00c3\u00aete en bois, os, m\u00c3\u00a9tal ou ivoire. Il est donc possible de le d\u00c3\u00a9placer sans risque pour peu que l\u00e2\u0080\u0099on prenne les pr\u00c3\u00a9cautions n\u00c3\u00a9cessaires."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "19 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "ex\u00c3\u00a9cution",
+                "Prix",
+                "80 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cape empoisonn\u00c3\u00a9e",
+        "description": [
+            "Cette cape est le plus souvent en laine, m\u00c3\u00aame si l\u00e2\u0080\u0099on en trouve parfois en cuir. D\u00c3\u00a9tection du poison permet de remarquer que le tissu est impr\u00c3\u00a9gn\u00c3\u00a9 d\u00e2\u0080\u0099une substance toxique particuli\u00c3\u00a8rement sournoise. On peut la toucher et la manipuler sans crainte, mais quiconque la rev\u00c3\u00aat meurt dans la seconde qui suit, \u00c3  moins de r\u00c3\u00a9ussir un jet de Vigueur de DD 28.",
+            "Une fois la cape empoisonn\u00c3\u00a9e enfil\u00c3\u00a9e, on ne peut l\u00e2\u0080\u0099\u00c3\u00b4ter qu\u00e2\u0080\u0099\u00c3  l\u00e2\u0080\u0099aide de d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions, ce qui annihile toutes ses propri\u00c3\u00a9t\u00c3\u00a9s magiques. Une fois la cape enlev\u00c3\u00a9e, sa victime peut \u00c3\u00aatre ramen\u00c3\u00a9e \u00c3  la vie gr\u00c3\u00a2ce \u00c3  rappel \u00c3  la vie ou r\u00c3\u00a9surrection, mais seulement apr\u00c3\u00a8s avoir lanc\u00c3\u00a9 neutralisation du poison sur sa d\u00c3\u00a9pouille pour chasser le toxique de son organisme."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "empoisonnement",
+                ", soit souhait limit\u00c3\u00a9, soit miracle ;",
+                "Prix",
+                "62 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Casque de changement d\u00e2\u0080\u0099alignement",
+        "description": [
+            "Ce casque en m\u00c3\u00a9tal a l\u00e2\u0080\u0099air on ne peut plus anodin, mais sa mal\u00c3\u00a9diction prend effet d\u00c3\u00a8s qu\u00e2\u0080\u0099on le met (jet de Volont\u00c3\u00a9 DD 15 pour annuler). Si le personnage rate son jet de sauvegarde, son alignement est radicalement modifi\u00c3\u00a9, chaque extr\u00c3\u00aame passant \u00c3  l\u00e2\u0080\u0099oppos\u00c3\u00a9 (la composante loyale devient chaotique, la composante bonne devient mauvaise, et inversement ; un individu LB devient donc CM). Un enchantement accompagne ce changement, avec pour cons\u00c3\u00a9quence que l\u00e2\u0080\u0099aventurier est tout \u00c3  fait satisfait de son nouvel alignement. Un personnage ayant r\u00c3\u00a9ussi son jet de sauvegarde peut continuer \u00c3  porter le casque sans souffrir des effets de sa mal\u00c3\u00a9diction, mais s\u00e2\u0080\u0099il l\u00e2\u0080\u0099enl\u00c3\u00a8ve et le remet plus tard, il doit effectuer un nouveau jet de sauvegarde. La mal\u00c3\u00a9diction ne fonctionne qu\u00e2\u0080\u0099une fois par personnage, c\u00e2\u0080\u0099est-\u00c3 -dire qu\u00e2\u0080\u0099on ne peut retrouver son alignement d\u00e2\u0080\u0099origine en mettant le casque une deuxi\u00c3\u00a8me fois.",
+            "Seul un souhait ou un miracle peut rendre au porteur son alignement d\u00e2\u0080\u0099origine. Le personnage ne fait rien pour le r\u00c3\u00a9cup\u00c3\u00a9rer par ses actes, bien au contraire (une telle id\u00c3\u00a9e lui est insoutenable). Si la classe de l\u00e2\u0080\u0099aventurier lui impose un alignement particulier, il lui faudra faire p\u00c3\u00a9nitence apr\u00c3\u00a8s s\u00e2\u0080\u0099\u00c3\u00aatre d\u00c3\u00a9barrass\u00c3\u00a9 de la mal\u00c3\u00a9diction pour pouvoir la retrouver. Une fois qu\u00e2\u0080\u0099un casque de changement d\u00e2\u0080\u0099alignement a fonctionn\u00c3\u00a9, il perd toutes ses propri\u00c3\u00a9t\u00c3\u00a9s magiques."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                ", niveau 12 de lanceur de sorts ;",
+                "Prix",
+                "4 000 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ceinture de force du chat",
+        "description": [
+            "Cette large ceinture en cuir clout\u00c3\u00a9e est d\u00c3\u00a9cor\u00c3\u00a9e d'images de lion et apparait \u00c3\u00aatre une ceinture de force du g\u00c3\u00a9ant. Il fonctionne ainsi jusqu'\u00c3  ce que le porteur attaque une cr\u00c3\u00a9ature dont le Fp est \u00c3\u00a9gal ou sup\u00c3\u00a9rieur au sien. A partir de l\u00c3 , les images de lion se transforment en chat domestique et la ceinture impose un malus de -6 en Force. Une fois la mal\u00c3\u00a9diction activ\u00c3\u00a9e, la ceinture ne peut plus \u00c3\u00aatre enlev\u00c3\u00a9 qu'\u00c3  l'aide d'une D\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                ", force du taureau,",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "1 300 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Charme d\u00e2\u0080\u0099infection",
+        "description": [
+            "Cette pierre grav\u00c3\u00a9e n\u00e2\u0080\u0099a manifestement qu\u00e2\u0080\u0099une valeur limit\u00c3\u00a9e. Quiconque la garde en sa possession pendant 24 heures contracte une terrible infection provoquant une diminution permanente d\u00e2\u0080\u00991 point de Dext\u00c3\u00a9rit\u00c3\u00a9, de Constitution et de Charisme chaque semaine. Le m\u00c3\u00a9daillon (et l\u00e2\u0080\u0099infection) ne peut \u00c3\u00aatre retir\u00c3\u00a9 que par d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions, suivi de gu\u00c3\u00a9rison des maladies et enfin de gu\u00c3\u00a9rison supr\u00c3\u00aame, souhait limit\u00c3\u00a9, souhait ou miracle. Il est \u00c3\u00a9galement possible de le sauver en broyant un charme de sant\u00c3\u00a9 et en r\u00c3\u00a9pandant sur lui la poudre ainsi obtenue (une action complexe), ce qui r\u00c3\u00a9duit le charme d\u00e2\u0080\u0099infection en poussi\u00c3\u00a8re."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "l\u00c3\u00a9g\u00c3\u00a8re ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "contagion",
+                "Prix",
+                "17 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Collier d\u00e2\u0080\u0099esclavage",
+        "description": [
+            "Ce collier de cuir noir impose \u00c3  son porteur un malus de -10 aux jets de sauvegarde contre les effets de terreur ainsi qu'aux tests de niveau oppos\u00c3\u00a9 \u00c3  un test d'Intimidation"
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "mod\u00c3\u00a9r\u00c3\u00a9 ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "charme-monstre",
+                "Prix",
+                "8 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Collier d\u00e2\u0080\u0099ob\u00c3\u00a9issance",
+        "description": [
+            "Ce collier est un simple anneau en fer qui se porte autour du cou. Son porteur re\u00c3\u00a7oit un malus de -2 \u00c3  tous ses tests de Volont\u00c3\u00a9."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "anath\u00c3\u00a8me",
+                "Prix",
+                "3 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Collier \u00c3\u00a9trangleur",
+        "description": [
+            "Ce collier a l\u00e2\u0080\u0099air d\u00e2\u0080\u0099\u00c3\u00aatre un bijou pr\u00c3\u00a9cieux, et seul un sort aussi puissant que miracle ou souhait permet de l\u00e2\u0080\u0099identifier comme un objet maudit. D\u00c3\u00a8s que quelqu\u00e2\u0080\u0099un l\u00e2\u0080\u0099attache \u00c3  son cou, il se resserre aussit\u00c3\u00b4t, infligeant 6 points de d\u00c3\u00a9g\u00c3\u00a2ts par round \u00c3  l\u00e2\u0080\u0099infortun\u00c3\u00a9 personnage. Seuls les sorts souhait limit\u00c3\u00a9, souhait ou miracle permettent de s\u00e2\u0080\u0099en d\u00c3\u00a9barrasser. Il continue m\u00c3\u00aame de serrer la gorge de sa victime apr\u00c3\u00a8s sa mort, ne la l\u00c3\u00a2chant qu\u00e2\u0080\u0099une fois qu\u00e2\u0080\u0099elle s\u00e2\u0080\u0099est transform\u00c3\u00a9e en squelette dess\u00c3\u00a9ch\u00c3\u00a9 (ce qui prend environ un mois). \u00c3\u0080 ce moment, le collier redevient normal, dans l\u00e2\u0080\u0099attente d\u00e2\u0080\u0099une autre proie."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "18 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "ex\u00c3\u00a9cution",
+                "Prix",
+                "60 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Encens d\u00e2\u0080\u0099obsession",
+        "description": [
+            "Ces blocs d\u00e2\u0080\u0099encens ressemblent \u00c3  s\u00e2\u0080\u0099y m\u00c3\u00a9prendre \u00c3  de l\u00e2\u0080\u0099encens de m\u00c3\u00a9ditation. Si un pratiquant de la magie divine pr\u00c3\u00a9pare ses sorts apr\u00c3\u00a8s avoir fait br\u00c3\u00bbler un de ces blocs, la fum\u00c3\u00a9e d\u00c3\u00a9gag\u00c3\u00a9e le persuade que ses sorts sont les plus puissants qui soient, tout en l\u00e2\u0080\u0099encourageant \u00c3  les utiliser aussi souvent que possible pour le d\u00c3\u00a9montrer. Il fait donc appel \u00c3  sa magie autant qu\u00e2\u0080\u0099il le peut, m\u00c3\u00aame quand cela ne sert \u00c3  rien. Ce comportement obsessionnel se poursuit jusqu\u00e2\u0080\u0099\u00c3  ce que le personnage ait lanc\u00c3\u00a9 tous ses sorts ou pendant un total de 24 heures."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "mod\u00c3\u00a9r\u00c3\u00a9 ;",
+                "NLS",
+                "6 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "200 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089p\u00c3\u00a9e de berserker",
+        "description": [
+            "Cette arme se comporte en tout point comme une \u00c3\u00a9p\u00c3\u00a9e \u00c3  deux mains +2, sauf au combat. D\u00c3\u00a8s que son possesseur doit se battre, il le fait comme un berserker, sans avoir le contr\u00c3\u00b4le de ses actes (il gagne les avantages et subit les inconv\u00c3\u00a9nients dus \u00c3  la rage de barbare). Le personnage attaque la plus proche cr\u00c3\u00a9ature et continue de se battre jusqu\u00e2\u0080\u0099\u00c3  la mort ou l\u00e2\u0080\u0099\u00c3\u00a9vanouissement, ou jusqu\u00e2\u0080\u0099\u00c3  ce qu\u00e2\u0080\u0099il n\u00e2\u0080\u0099y ait plus le moindre \u00c3\u00aatre vivant \u00c3  moins de 9 m\u00c3\u00a8tres de lui. La plupart des gens consid\u00c3\u00a8rent cette \u00c3\u00a9p\u00c3\u00a9e comme maudite, mais pour certains barbares, c\u00e2\u0080\u0099est un v\u00c3\u00a9ritable don des dieux de la guerre."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "rage",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "17 500 po ;",
+                "Poids",
+                "4 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089p\u00c3\u00a9e \u00e2\u0080\u00932, maudite",
+        "description": [
+            "Cette \u00c3\u00a9p\u00c3\u00a9e longue d\u00c3\u00a9gage une aura magique et para\u00c3\u00aet tr\u00c3\u00a8s efficace \u00c3  l\u00e2\u0080\u0099entra\u00c3\u00aenement, mais d\u00c3\u00a8s qu\u00e2\u0080\u0099on l\u00e2\u0080\u0099utilise au combat, elle inflige un malus de \u00e2\u0080\u00932 au jet d\u00e2\u0080\u0099attaque.",
+            "Les d\u00c3\u00a9g\u00c3\u00a2ts sont eux aussi r\u00c3\u00a9duits de 2 points par coup, sans toutefois pouvoir descendre en dessous de 1 point de d\u00c3\u00a9g\u00c3\u00a2ts  par coup. Au bout d\u00e2\u0080\u0099une semaine, l\u00e2\u0080\u0099\u00c3\u00a9p\u00c3\u00a9e force l\u00e2\u0080\u0099aventurier qui la poss\u00c3\u00a8de \u00c3  l\u00e2\u0080\u0099employer, elle, plut\u00c3\u00b4t que toute autre arme. M\u00c3\u00aame si le personnage d\u00c3\u00a9cide d\u00e2\u0080\u0099utiliser une autre arme, c\u00e2\u0080\u0099est vers l\u00e2\u0080\u0099\u00c3\u00a9p\u00c3\u00a9e que sa main est attir\u00c3\u00a9e, et c\u00e2\u0080\u0099est elle qu\u00e2\u0080\u0099il d\u00c3\u00a9gaine \u00c3  tous les coups. On ne peut se d\u00c3\u00a9barrasser de cette arme envahissante que gr\u00c3\u00a2ce \u00c3  un sort tel que souhait limit\u00c3\u00a9, souhait ou miracle."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "mal\u00c3\u00a9diction",
+                ", soit souhait, soit miracle ;",
+                "Prix",
+                "1 500 po ;",
+                "Poids",
+                "2 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Filet aquatique",
+        "description": [
+            "Ce filet conf\u00c3\u00a8re un bonus de +3 au jet d\u00e2\u0080\u0099attaque, mais ne peut \u00c3\u00aatre utilis\u00c3\u00a9 que sous l\u00e2\u0080\u0099eau, ce qui en fait plus un objet assorti d\u00e2\u0080\u0099une condition d\u00e2\u0080\u0099utilisation restrictive qu\u00e2\u0080\u0099un objet maudit. Sous l\u00e2\u0080\u0099eau, son possesseur peut lui commander d\u00e2\u0080\u0099aller attraper la cr\u00c3\u00a9ature d\u00c3\u00a9sign\u00c3\u00a9e, auquel cas il se projette de lui-m\u00c3\u00aame jusqu\u00e2\u0080\u0099\u00c3  elle (9 m\u00c3\u00a8tres maximum)."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "libert\u00c3\u00a9 de mouvement",
+                "Prix",
+                "10 000 po ;",
+                "Poids",
+                "5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Flasque maudite",
+        "description": [
+            "Selon le mod\u00c3\u00a8le, cet objet ressemble \u00c3  une flasque, une carafe ou une petite urne normale. Elle pourrait contenir un liquide ou \u00c3\u00a9mettre de la fum\u00c3\u00a9e. La premi\u00c3\u00a8re fois que quelqu\u00e2\u0080\u0099un la d\u00c3\u00a9bouche, quiconque se trouve \u00c3  moins de 9 m\u00c3\u00a8tres doit r\u00c3\u00a9ussir un jet de Volont\u00c3\u00a9 (DD 17) pour ne pas \u00c3\u00aatre maudit. Ce mauvais sort se traduit par un malus de \u00e2\u0080\u00932 aux jets d\u00e2\u0080\u0099attaque, de sauvegarde et aux tests de comp\u00c3\u00a9tence jusqu\u00e2\u0080\u0099\u00c3  ce que la cr\u00c3\u00a9ature affect\u00c3\u00a9e b\u00c3\u00a9n\u00c3\u00a9ficie de d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "2 100 po ;",
+                "Poids",
+                "1 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Fl\u00c3\u00a8ches de br\u00c3\u00bblure",
+        "description": [
+            "Les t\u00c3\u00aate de ses fl\u00c3\u00a8ches ressemblent \u00c3  des flammes, oranges et rouge. D\u00c3\u00a9guis\u00c3\u00a9e par une aura magique de Nystul, ces fl\u00c3\u00a8ches apparaissent comme \u00c3\u00a9tant de sumples fl\u00c3\u00a8ches +1. Ces fl\u00c3\u00a8ches explosent d\u00c3\u00a8s qu'elles sont band\u00c3\u00a9es sur un arc, infligeant 2d6 d\u00c3\u00a9g\u00c3\u00a2ts de feu \u00c3  l'archer et \u00c3  l'arc (DD 18 R\u00c3\u00a9flexes, 1/2). De plus, si le jet de R\u00c3\u00a9flexes \u00c3\u00a9choue, l'explosion coupe la corde de l'arc, le rendant inutilisable jusqu'\u00c3  ce qu'elle soit chang\u00c3\u00a9e."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "mains br\u00c3\u00bblantes",
+                ", aura magique de Nystul ;",
+                "Prix",
+                "100 po ;",
+                "Poids"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Gants de maladresse",
+        "description": [
+            "Ces gants peuvent \u00c3\u00aatre en cuir souple ou en m\u00c3\u00a9tal (mailles ou plaques, selon le type d\u00e2\u0080\u0099armure auquel ils sont cens\u00c3\u00a9s s\u00e2\u0080\u0099int\u00c3\u00a9grer). S\u00e2\u0080\u0099ils sont l\u00c3\u00a9gers, ils ressemblent \u00c3  des gants de Dext\u00c3\u00a9rit\u00c3\u00a9. Dans le cas contraire (cuir rigide ou m\u00c3\u00a9tal), tout laisse penser qu\u00e2\u0080\u0099il s\u00e2\u0080\u0099agit de gantelets d\u00e2\u0080\u0099ogre. Ils se comportent en effet comme les gants ou gantelets qu\u00e2\u0080\u0099ils semblent \u00c3\u00aatre jusqu\u00e2\u0080\u0099\u00c3  ce que leur porteur se retrouve en situation de vie ou de mort, moment auquel leur mal\u00c3\u00a9diction se d\u00c3\u00a9clenche. Le personnage devient alors incroyablement maladroit et a 50% de chances par round de l\u00c3\u00a2cher ce qu\u00e2\u0080\u0099il tient dans ses deux mains. Les gants r\u00c3\u00a9duisent \u00c3\u00a9galement de 2 points la Dext\u00c3\u00a9rit\u00c3\u00a9 de leur porteur. Une fois la mal\u00c3\u00a9diction activ\u00c3\u00a9e, on ne peut s\u00e2\u0080\u0099en d\u00c3\u00a9barrasser qu\u00e2\u0080\u0099\u00c3  l\u00e2\u0080\u0099aide d\u00e2\u0080\u0099un sort tel que d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions, souhait ou miracle."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "1 300 po ;",
+                "Poids",
+                "n\u00c3\u00a9gligeable pour les souples, 1 kg chacun pour les rigides."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Grimoire de vacuit\u00c3\u00a9",
+        "description": [
+            "De prime abord, cet ouvrage a l\u00e2\u0080\u0099air de traiter d\u00e2\u0080\u0099un sujet peu int\u00c3\u00a9ressant. Toute personne ouvrant le livre et lisant ne serait-ce qu\u00e2\u0080\u0099un mot doit effectuer deux jets de Volont\u00c3\u00a9 (DD 15 chacun). Si le premier est rat\u00c3\u00a9, l\u00e2\u0080\u0099aventurier subit une diminution permanente de 1 point d\u00e2\u0080\u0099Intelligence, s\u00e2\u0080\u0099il rate le second, il subit une diminution permanente de 2 points de Sagesse. Pour d\u00c3\u00a9truire le livre, il faut le br\u00c3\u00bbler tout en lan\u00c3\u00a7ant d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions. Si le grimoire est plac\u00c3\u00a9 \u00c3  c\u00c3\u00b4t\u00c3\u00a9 d\u00e2\u0080\u0099autres ouvrages, son aspect se modifie instantan\u00c3\u00a9ment pour qu\u00e2\u0080\u0099il soit impossible de le diff\u00c3\u00a9rencier des autres."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "20 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "d\u00c3\u00a9bilit\u00c3\u00a9",
+                "Prix",
+                "6 000 po ;",
+                "Poids",
+                "2,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Lance tra\u00c3\u00aetresse",
+        "description": [
+            "Cette arme a toutes les caract\u00c3\u00a9ristiques d\u00e2\u0080\u0099une lance +2, mais chaque fois que son propri\u00c3\u00a9taire l\u00e2\u0080\u0099utilise au corps \u00c3  corps et qu\u00e2\u0080\u0099il obtient un 1 naturel au jet d\u00e2\u0080\u0099attaque, elle le frappe lui, au lieu de son adversaire. Chaque fois que la mal\u00c3\u00a9diction se d\u00c3\u00a9clenche, la hampe de la lance se tord et le fer vient automatiquement se ficher dans le dos du personnage, lui infligeant des d\u00c3\u00a9g\u00c3\u00a2ts normaux. La mal\u00c3\u00a9diction peut \u00c3\u00a9galement se d\u00c3\u00a9clencher si la lance est jet\u00c3\u00a9e, mais dans ce cas, l\u00e2\u0080\u0099aventurier subit le double des d\u00c3\u00a9g\u00c3\u00a2ts normaux s\u00e2\u0080\u0099il obtient un 1 naturel au jet d\u00e2\u0080\u0099attaque."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "mal\u00c3\u00a9diction",
+                "Prix",
+                "7 500 po ;",
+                "Poids",
+                "3 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Lunettes de c\u00c3\u00a9cit\u00c3\u00a9 nocturne",
+        "description": [
+            "Bien qu'elles apparaissent exactement comme une paire de lunettes de vision dans le noir, cet objet maudit a un effet oppos\u00c3\u00a9. Elles conf\u00c3\u00a8rent la vision dans le noir sur 18 m. Mais d\u00c3\u00a8s que le porteur tente d'attaquer une cr\u00c3\u00a9ature en utilisant la vision dans le noir, le porteur devient aveugle sauf dans une lumi\u00c3\u00a8re vive. Une fois la mal\u00c3\u00a9diction activ\u00c3\u00a9e, elles ne peuvent \u00c3\u00aatre enlev\u00c3\u00a9es sauf par un sort de D\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "vision dans le noir",
+                "Prix",
+                "1000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Masque de mort",
+        "description": [
+            "Ce masque ressemble toujours \u00c3  une autre masque enchant\u00c3\u00a9. n\u00c3\u00a9anmoins, une fois port\u00c3\u00a9, il devient extr\u00c3\u00aamement chaud et inflige 1d6+7 d\u00c3\u00a9g\u00c3\u00a2ts de feu par round \u00c3  son porteur (pas de jet de sauvegarde). De plus, il est impossible de l'enlever tant que son porteur est vivant \u00c3  moins d'un sort de D\u00c3\u00a9livrance des mal\u00c3\u00a9dictions."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "bouclier de feu",
+                "Prix",
+                "28 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Masse vampire",
+        "description": [
+            "Cette masse d\u00e2\u0080\u0099armes lourde +3 doit \u00c3\u00aatre couverte de sang tous les jours, sans quoi son bonus dispara\u00c3\u00aet (jusqu\u00e2\u0080\u0099\u00c3  son prochain bain d\u00e2\u0080\u0099h\u00c3\u00a9moglobine). Son possesseur doit r\u00c3\u00a9ussir chaque jour un jet de Volont\u00c3\u00a9 (DD 13), sous peine de devenir chaotique mauvais."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                ", niveau 9 de lanceur de sorts, alignement chaotique mauvais ;",
+                "Prix",
+                "16 000 po ;",
+                "Poids",
+                "4 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "M\u00c3\u00a9daillon d\u00e2\u0080\u0099\u00c3\u00a9mission de pens\u00c3\u00a9es",
+        "description": [
+            "Cet objet est presque identique au m\u00c3\u00a9daillon des pens\u00c3\u00a9es, m\u00c3\u00aame pour ce qui est de son mode de fonctionnement. Le probl\u00c3\u00a8me \u00c3\u00a9tant que les pens\u00c3\u00a9es capt\u00c3\u00a9es par son possesseur sont vagues et d\u00c3\u00a9form\u00c3\u00a9es, \u00c3  tel point qu\u00e2\u0080\u0099un jet de Volont\u00c3\u00a9 (DD 15) est n\u00c3\u00a9cessaire pour les comprendre. De plus, ce que le personnage prend pour des pens\u00c3\u00a9es d\u00e2\u0080\u0099autrui ne sont en r\u00c3\u00a9alit\u00c3\u00a9 que des chim\u00c3\u00a8res cr\u00c3\u00a9\u00c3\u00a9es par le m\u00c3\u00a9daillon. Celles-ci semblent toujours plausibles, \u00c3  tel point que le porteur du m\u00c3\u00a9daillon a de fortes chances de se laisser abuser par leur teneur. Et surtout, sans que l\u00e2\u0080\u0099aventurier s\u00e2\u0080\u0099en rende compte, le m\u00c3\u00a9daillon maudit \u00c3\u00a9met automatiquement les pens\u00c3\u00a9es de son porteur dans la direction o\u00c3\u00b9 celui-ci regarde, avec pour cons\u00c3\u00a9quence que toutes les cr\u00c3\u00a9atures se trouvant dans cette direction sont conscientes de sa pr\u00c3\u00a9sence ou de son arriv\u00c3\u00a9e."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "d\u00c3\u00a9tection de pens\u00c3\u00a9es",
+                ", son illusoire ;",
+                "Prix",
+                "1 800 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pierre de lest",
+        "description": [
+            "Cette pierre noire et polie r\u00c3\u00a9duit de moiti\u00c3\u00a9 la vitesse de d\u00c3\u00a9placement de son possesseur. De plus, une fois qu\u00e2\u0080\u0099on l\u00e2\u0080\u0099a ramass\u00c3\u00a9e, il est impossible de s\u00e2\u0080\u0099en d\u00c3\u00a9barrasser. M\u00c3\u00aame si son propri\u00c3\u00a9taire la jette au loin ou la brise en morceaux, elle r\u00c3\u00a9appara\u00c3\u00aet sur sa personne, intacte. Si d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions est lanc\u00c3\u00a9 sur une pierre de lest, celle-ci peut \u00c3\u00aatre abandonn\u00c3\u00a9e normalement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "lenteur",
+                "Prix",
+                "1 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pinceau de l\u00e2\u0080\u0099artiste maudit",
+        "description": [
+            "Originellement cr\u00c3\u00a9\u00c3\u00a9 par Xerith Bastil, un d\u00c3\u00a9monologiste qui enviait les talents des grands peintres, ce pince n'a plus \u00c3\u00a9t\u00c3\u00a9 vu depuis des si\u00c3\u00a8cles. Werith a vendu son \u00c3\u00a2me pour cr\u00c3\u00a9er ce pinceau, qui lui a aussi certainement co\u00c3\u00bbt\u00c3\u00a9 la vie. Ce pinceau \u00c3\u00a9l\u00c3\u00a9gant poss\u00c3\u00a8de un manche en \u00c3\u00a9benite et ses pils dor\u00c3\u00a9s fins sont en fait des cheveux d'un prince elfe assassin\u00c3\u00a9.",
+            "En ayant le mat\u00c3\u00a9riel n\u00c3\u00a9cessaire (peintures et toiles, essentiellement), le porteur du pinceau de l'artiste maudit peut cr\u00c3\u00a9er de magnifique toiles de ma\u00c3\u00aetre. Il conf\u00c3\u00a8re un bonus de comp\u00c3\u00a9tence de +20 aux jets d'Artisanat (peinture). N\u00c3\u00a9anmoins, \u00c3  chaque fois qu'il est utilis\u00c3\u00a9 pour cr\u00c3\u00a9er une oeuvre, le pinceau conf\u00c3\u00a8re un niveau n\u00c3\u00a9gatif \u00c3  son porteur. e niveau n\u00c3\u00a9gatif n\u00e2\u0080\u0099entra\u00c3\u00aene jamais une perte de niveau r\u00c3\u00a9elle, mais aucun sort, pas m\u00c3\u00aame restauration, ne permet de le r\u00c3\u00a9sorber tant que le personnage ne s'est pas d\u00c3\u00a9barrasser d\u00c3\u00a9finitivement du pinceau de l'artiste maudit. Malheureusement, se d\u00c3\u00a9barrasser du pinceau de l'artiste maudit n'est pas ais\u00c3\u00a9, et cela n\u00c3\u00a9cessite un jet de Volont\u00c3\u00a9 (DD 20 + nombre de toiles r\u00c3\u00a9alis\u00c3\u00a9e). Ce jet ne peut \u00c3\u00aatre tent\u00c3\u00a9 plus d'une fois par jour.",
+            "Pire, si le porteur du pinceau de l'artiste maudit n'a pas cr\u00c3\u00a9\u00c3\u00a9 de toiles pendant une semaine, il doit r\u00c3\u00a9ussir un jet de Volont\u00c3\u00a9 (DD 20 + nombre de semaines sans peindre) ou \u00c3\u00aatre forc\u00c3\u00a9 d'en cr\u00c3\u00a9er une, et donc gagn\u00c3\u00a9 un niveau n\u00c3\u00a9gatif."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "forte ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "\u00c3\u0089nergie n\u00c3\u00a9gative",
+                "Prix",
+                "20 000 po ;",
+                "Poids",
+                "\u00e2\u0080\u0094."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Potion toxique",
+        "description": [
+            "Cette potion magique a tourn\u00c3\u00a9 et est devenue un puissant poison. Quiconque la boit doit r\u00c3\u00a9ussir un jet de Vigueur (DD 16) pour ne pas subir un affaiblissement temporaire de 1d10 points de Constitution. Une minute plus tard, le personnage doit effectuer un second jet de Vigueur de DD 16 pour \u00c3\u00a9viter de subir un affaiblissement temporaire de 1d10 points de Constitution."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "empoisonnement",
+                "Prix",
+                "5 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Poudre \u00c3  \u00c3\u00a9ternuer",
+        "description": [
+            "Cette fine poussi\u00c3\u00a8re ressemble \u00c3  de la poudre d\u00e2\u0080\u0099apparition. Mais, si on la jette en l\u00e2\u0080\u0099air, elle a pour effet de faire violemment \u00c3\u00a9ternuer toutes les cr\u00c3\u00a9atures distantes de moins de 6 m\u00c3\u00a8tres. Celles qui ratent un jet de Vigueur (DD 15) subissent un affaiblissement temporaire de 2d6 points de Constitution. Un second jet de Vigueur (DD 15) est n\u00c3\u00a9cessaire 1 minute plus tard. Ceux qui le ratent subissent un affaiblissement temporaire de 1d6 points de Constitution. Les cr\u00c3\u00a9atures r\u00c3\u00a9ussissant un ou deux jets de Vigueur sont tout de m\u00c3\u00aame g\u00c3\u00aan\u00c3\u00a9es par une toux violente pendant 5d4 rounds (consid\u00c3\u00a9rez qu\u00e2\u0080\u0099elles sont \u00c3\u00a9tourdies pour ce qui est des effets qu\u00e2\u0080\u0099elles subissent en termes de jeu)."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "empoisonnement",
+                "Prix",
+                "2 400 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Robe de vermine",
+        "description": [
+            "Cette robe n\u00e2\u0080\u0099a rien d\u00e2\u0080\u0099inhabituel, si ce n\u00e2\u0080\u0099est qu\u00e2\u0080\u0099elle prot\u00c3\u00a8ge son porteur comme une cape de protection +4. Mais d\u00c3\u00a8s que le personnage se retrouve dans une situation o\u00c3\u00b9 il doit se concentrer ou agir face \u00c3  des adversaires hostiles, la v\u00c3\u00a9ritable nature de la robe se r\u00c3\u00a9v\u00c3\u00a8le et l\u00e2\u0080\u0099aventurier subit aussit\u00c3\u00b4t une multitude de morsures et de piq\u00c3\u00bbres de la part des myriades d\u00e2\u0080\u0099insectes dont le tissu semble magiquement infest\u00c3\u00a9. Il ne peut rien faire d\u00e2\u0080\u0099autre que se gratter et tirer le v\u00c3\u00aatement en tout sens pour tenter d\u00e2\u0080\u0099\u00c3\u00a9chapper \u00c3  la vermine.",
+            "Le porteur de la robe subit un malus de \u00e2\u0080\u00932 aux jets d\u00e2\u0080\u0099attaque, de sauvegarde et aux tests de comp\u00c3\u00a9tence. S\u00e2\u0080\u0099il tente de lancer un sort, il doit r\u00c3\u00a9ussir un test de Concentration (DD 20 + niveau du sort) sans quoi le sort est perdu."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "nu\u00c3\u00a9e grouillante",
+                ", niveau 8 de lanceur de sorts ;",
+                "Prix",
+                "16 500 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Robe d\u00e2\u0080\u0099impuissance",
+        "description": [
+            "Cette robe n\u00e2\u0080\u0099a aucun signe distinctif, et semble \u00c3\u00aatre un autre type de robe magique. D\u00c3\u00a8s qu\u00e2\u0080\u0099un personnage l\u00e2\u0080\u0099enfile, il subit imm\u00c3\u00a9diatement un malus de \u00e2\u0080\u009310  en Force et en Intelligence, oubliant du m\u00c3\u00aame coup tous ses sorts et toutes ses \u00c3\u00a9ventuelles connaissances en mati\u00c3\u00a8re de magie. Il peut \u00c3\u00b4ter la robe quand il le souhaite, mais les sorts d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions suivi de gu\u00c3\u00a9rison supr\u00c3\u00aame lui sont n\u00c3\u00a9cessaires pour retrouver ses facult\u00c3\u00a9s physiques et mentales."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "mal\u00c3\u00a9diction",
+                "permanence",
+                "Prix",
+                "5 500 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sac d\u00c3\u00a9voreur",
+        "description": [
+            "Ce sac a l\u00e2\u0080\u0099air on ne peut plus ordinaire, sauf si on l\u00e2\u0080\u0099examine \u00c3  l\u00e2\u0080\u0099aide de moyens magiques, auquel cas il semble \u00c3\u00aatre un sac sans fond. Mais ce n\u00e2\u0080\u0099est en fait qu\u00e2\u0080\u0099un app\u00c3\u00a2t utilis\u00c3\u00a9 par une cr\u00c3\u00a9ature extradimensionnelle, et l\u00e2\u0080\u0099un des orifices par lesquels elle se nourrit.",
+            "Toute mati\u00c3\u00a8re d\u00e2\u0080\u0099origine animale ou v\u00c3\u00a9g\u00c3\u00a9tale est aval\u00c3\u00a9e si on la glisse dans le sac. Celui-ci a 90% de chances de ne pas r\u00c3\u00a9agir \u00c3  la premi\u00c3\u00a8re intrusion, mais cela change tr\u00c3\u00a8s vite. Par la suite, d\u00c3\u00a8s qu\u00e2\u0080\u0099il sent de la chair vivante entre ses parois (par exemple, si quelqu\u00e2\u0080\u0099un plonge la main \u00c3  l\u00e2\u0080\u0099int\u00c3\u00a9rieur de sa bouche pour r\u00c3\u00a9cup\u00c3\u00a9rer un objet), il a 60% de chances de mordre et de tenter d\u00e2\u0080\u0099attirer sa proie \u00c3  lui. Il a un modificateur de lutte de +8 quand il essaye d\u00e2\u0080\u0099engloutir quelqu\u00e2\u0080\u0099un.",
+            "Le sac d\u00c3\u00a9gage une aura magique et peut contenir jusqu\u00e2\u0080\u0099\u00c3  1,25 m3 de mati\u00c3\u00a8re inerte. Il se comporte comme un sac sans fond (1er mod\u00c3\u00a8le), mais chaque heure, il a 5% de chances d\u00e2\u0080\u0099ingurgiter son contenu et de recracher ce qu\u00e2\u0080\u0099il ne peut pas dig\u00c3\u00a9rer dans un autre plan ou dans un espace non dimensionnel. Les cr\u00c3\u00a9atures englouties sont dig\u00c3\u00a9r\u00c3\u00a9es en 1 round. Le sac d\u00c3\u00a9truit le corps de sa victime et emp\u00c3\u00aache toute forme de rappel \u00c3  la vie ou de r\u00c3\u00a9surrection n\u00c3\u00a9cessitant un cadavre. Il y a 50% de chances qu\u00e2\u0080\u0099un souhait, un miracle ou une r\u00c3\u00a9surrection supr\u00c3\u00aame puisse ramener \u00c3  la vie une cr\u00c3\u00a9ature d\u00c3\u00a9vor\u00c3\u00a9e (lancez le d\u00c3\u00a9 pour chaque cr\u00c3\u00a9ature). Si cette tentative \u00c3\u00a9choue, la cr\u00c3\u00a9ature ne peut plus \u00c3\u00aatre ramen\u00c3\u00a9e \u00c3  la vie par des moyens accessibles \u00c3  de simples mortels."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "17 ; cet objet est consid\u00c3\u00a9r\u00c3\u00a9 comme une cr\u00c3\u00a9ature et ne peut pas \u00c3\u00aatre cr\u00c3\u00a9\u00c3\u00a9."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sandales \u00c3\u00a9pineuses",
+        "description": [
+            "Ces sandales ressemblent \u00c3  des sandales de vitesses jusqu'\u00c3  ce qu'elles soient port\u00c3\u00a9es. A ce moment l\u00c3 , des \u00c3\u00a9pines apparaissent \u00c3  l'int\u00c3\u00a9rieur, blessant le porteur. Les \u00c3\u00a9pines infligent 1d4 d\u00c3\u00a9g\u00c3\u00a2ts non-l\u00c3\u00a9taux si le porteur se d\u00c3\u00a9placent \u00c3  la moiti\u00c3\u00a9 de sa vitesse de d\u00c3\u00a9placement ou moins, ou 1d4 d\u00c3\u00a9g\u00c3\u00a2ts perforant s'il va plus vite que cela.",
+            "Seule une d\u00c3\u00a9livrance des mal\u00c3\u00a9dictions permet de se d\u00c3\u00a9barrasser des sandales une fois port\u00c3\u00a9es."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099objets merveilleux",
+                "croissance d\u00e2\u0080\u0099\u00c3\u00a9pines",
+                "Prix",
+                "10 800 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sceptre des morts anim\u00c3\u00a9s",
+        "description": [
+            "Cet objet semble taill\u00c3\u00a9 dans un f\u00c3\u00a9mur humain, avec un cr\u00c3\u00a2ne \u00c3  un bout. Il permet \u00c3  son porteur d'utiliser animation des morts, affectant tout cadavre dans un rayon de 9 m\u00c3\u00a8tres, jusqu'\u00c3  5 fois par jour.",
+            "N\u00c3\u00a9anmoins, le personnage ne contr\u00c3\u00b4le aucun des morts-vivants cr\u00c3\u00a9\u00c3\u00a9s et ceux-ci son hostiles, tentant d'attaquer toute cr\u00c3\u00a9ature vivante, mais surtout le porteur du sceptre."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "5 ;",
+                "Cr\u00c3\u00a9ation de sceptres magiques",
+                "animation des morts",
+                "Prix",
+                "24 000 po ;",
+                "Poids",
+                "1 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    }
+]

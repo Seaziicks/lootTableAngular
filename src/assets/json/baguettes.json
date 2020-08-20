@@ -1,0 +1,405 @@
+[
+    {
+        "title": "Baguette de Agrandissement (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Agrandissement ; 750 po; 375 po, 30 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Aide (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 3 de lanceur de sorts. ; NLS 3 ; , Aide ; 4400 po; 2200 po, 180 PX.",
+        "infos": {
+            "data": [
+                "Enchantement faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Apaisement des \u00e9motions (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 3 de lanceur de sorts. ; NLS 3 ; , Apaisement des \u00e9motions ; 4400 po; 2200 po, 180 PX.",
+        "infos": {
+            "data": [
+                "Enchantement faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Arme magique supr\u00eame (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 5 de lanceur de sorts. ; NLS 5 ; , Arme magique supr\u00eame ; 11250 po; 5625 po, 450 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Baiser du vampire (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 5 de lanceur de sorts. ; NLS 5 ; , Baiser du vampire ; 11150 po; 5575 po, 450 PX.",
+        "infos": {
+            "data": [
+                "N\u00e9cromancie faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Bouche magique (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 3 de lanceur de sorts. ; NLS 3 ; , Bouche magique ; 5500 po; 2750 po, 180 PX.",
+        "infos": {
+            "data": [
+                "Illusion faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Brume acide (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 7 de lanceur de sorts. ; NLS 7 ; , Brume acide ; 21000 po; 10500 po, 840 PX.",
+        "infos": {
+            "data": [
+                "Invocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Charme-monstre (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 8 de lanceur de sorts. ; NLS 8 ; , Charme-monstre ; 23900 po; 11950 po, 960 PX.",
+        "infos": {
+            "data": [
+                "Enchantement faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Communication avec les morts (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 6 de lanceur de sorts. ; NLS 6 ; , Communication avec les morts ; 13400 po; 6700 po, 540 PX.",
+        "infos": {
+            "data": [
+                "N\u00e9cromancie faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Convocation de monstres 4 (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 8 de lanceur de sorts. ; NLS 8 ; , Convocation de monstres 4 ; 23900 po; 11950 po, 960 PX.",
+        "infos": {
+            "data": [
+                "Invocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Convocation d\u0092alli\u00e9s naturels 4 (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Convocation d\u0092alli\u00e9s naturels 4 ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Invocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Cr\u00e9ation de nourriture et d\u0092eau (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 5 de lanceur de sorts. ; NLS 5 ; , Cr\u00e9ation de nourriture et d\u0092eau ; 11150 po; 5575 po, 450 PX.",
+        "infos": {
+            "data": [
+                "Invocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Cr\u00e9ation d\u0092eau (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 2 de lanceur de sorts. ; NLS 2 ; , Cr\u00e9ation d\u0092eau ; 650 po; 325 po, 30 PX.",
+        "infos": {
+            "data": [
+                "Invocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Croissance v\u00e9g\u00e9tale (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Croissance v\u00e9g\u00e9tale ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Disque flottant de Tenser (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Disque flottant de Tenser ; 750 po; 375 po, 30 PX.",
+        "infos": {
+            "data": [
+                "\u00c9vocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Force de taureau (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 4 de lanceur de sorts. ; NLS 4 ; , Force de taureau ; 6000 po; 3000 po, 240 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Gourdin magique (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Gourdin magique ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Hypnose des animaux (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Hypnose des animaux ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Enchantement faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Lumi\u00e8re br\u00fblante (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 5 de lanceur de sorts. ; NLS 5 ; , Lumi\u00e8re br\u00fblante ; 11150 po; 5575 po, 450 PX.",
+        "infos": {
+            "data": [
+                "\u00c9vocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Mains br\u00fblantes (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Mains br\u00fblantes ; 650 po; 325 po, 30 PX.",
+        "infos": {
+            "data": [
+                "\u00c9vocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Monture (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 3 de lanceur de sorts. ; NLS 3 ; , Monture ; 2250 po; 1125 po, 90 PX.",
+        "infos": {
+            "data": [
+                "Invocation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Panoplie magique (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 5 de lanceur de sorts. ; NLS 5 ; , Panoplie magique ; 11150 po; 5575 po, 450 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Pierres ac\u00e9r\u00e9es (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Pierres ac\u00e9r\u00e9es ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Prestidigitation (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Prestidigitation ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Universel faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Protection contre le Bien (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Protection contre le Bien ; 650 po; 325 po, 30 PX.",
+        "infos": {
+            "data": [
+                "Abjuration faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Protection contre le Bien (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Protection contre le Bien ; 650 po; 325 po, 30 PX.",
+        "infos": {
+            "data": [
+                "Abjuration faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Protection contre le Mal (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Protection contre le Mal ; 750 po; 375 po, 30 PX.",
+        "infos": {
+            "data": [
+                "Abjuration faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Rouille (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Rouille ; 276 po; 138 po, 15 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Sanctuaire (divin)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 1 de lanceur de sorts. ; NLS 1 ; , Sanctuaire ; 650 po; 325 po, 30 PX.",
+        "infos": {
+            "data": [
+                "Abjuration faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Splendeur de l\u0092aigle (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 3 de lanceur de sorts. ; NLS 3 ; , Splendeur de l\u0092aigle ; 4500 po; 2250 po, 180 PX.",
+        "infos": {
+            "data": [
+                "Transmutation faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Baguette de Texte illusoire (profane)",
+        "description": "Cette baguette poss\u00e8de 50 charges du sort , lanc\u00e9 au niveau 5 de lanceur de sorts. ; NLS 5 ; , Texte illusoire ; 16250 po; 8125 po, 450 PX.",
+        "infos": {
+            "data": [
+                "Illusion faible",
+                "Prix",
+                "Co\u00fbt"
+            ]
+        },
+        "ul": null,
+        "table": null
+    }
+]

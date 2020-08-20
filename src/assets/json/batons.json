@@ -1,0 +1,1662 @@
+[
+    {
+        "title": "Abjuration",
+        "description": [
+            "Ces b\u00c3\u00a2tons sont souvent taill\u00c3\u00a9s dans le tronc d\u00e2\u0080\u0099un ch\u00c3\u00aane ancestral ou d\u00e2\u0080\u0099un autre arbre de grande taille. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "bouclier",
+                "champ de force",
+                "dissipation de la magie",
+                "globe d\u00e2\u0080\u0099invuln\u00c3\u00a9rabilit\u00c3\u00a9 partielle",
+                "renvoi",
+                "r\u00c3\u00a9sistance aux \u00c3\u00a9nergies destructives",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">Bouclier</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">Dissipation de la magie</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-aux-energies-destructives.htm\">R\u00c3\u00a9sistance aux \u00c3\u00a9nergies destructives</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-globe-d-invulnerabilite-partielle.htm\">Globe d\u00e2\u0080\u0099invuln\u00c3\u00a9rabilit\u00c3\u00a9 partielle</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">Renvoi</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">Champ de force</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Action \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9e",
+        "description": [
+            "B\u00c3\u00a2ton de bois tendre ornement\u00c3\u00a9 de trois bandes d'argent, cet objet se comporte comme un b\u00c3\u00a2ton +1 spectral et il permet \u00c3  son porteur, de lancer les sorts suivants :",
+            "Une fois que toutes les charges ont \u00c3\u00a9t\u00c3\u00a9 utilis\u00c3\u00a9es, cet objet reste un b\u00c3\u00a2ton +1 spectral."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "clignotement",
+                "forme \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9e",
+                "Prix",
+                "57 300 po ;",
+                "Co\u00c3\u00bbt",
+                "28 800 po + 2280 PX."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">Clignotement</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">Forme \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9e</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Alt\u00c3\u00a9ration de taille",
+        "description": [
+            "Petit et solide, ce b\u00c3\u00a2ton de bois sombre propose les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "agrandissement",
+                "agrandissement de groupe",
+                "rapetissement",
+                "rapetissement de groupe",
+                "r\u00c3\u00a9duction d\u00e2\u0080\u0099objet",
+                "Prix",
+                "29 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement.htm\">Agrandissement</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement-de-groupe.htm\">Agrandissement de groupe</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">Rapetissement</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement-de-groupe.htm\">Rapetissement de groupe</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-reduction-d-objet.htm\">R\u00c3\u00a9duction d\u00e2\u0080\u0099objet</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Araign\u00c3\u00a9e",
+        "description": [
+            "Ce b\u00c3\u00a2ton en bois est recouvert de veines argent\u00c3\u00a9es \u00c3\u00a9voquant des toiles d'araign\u00c3\u00a9e. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9es ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "nu\u00c3\u00a9e grouillante",
+                "pattes d\u00e2\u0080\u0099araign\u00c3\u00a9e",
+                "peau d\u00e2\u0080\u0099araign\u00c3\u00a9e",
+                "Prix",
+                "33 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nu\u00c3\u00a9e grouillante</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-pattes-d-araignee.htm\">Pattes d\u00e2\u0080\u0099araign\u00c3\u00a9e</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-araignee.htm\">Peau d\u00e2\u0080\u0099araign\u00c3\u00a9e</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Bannissement",
+        "description": [
+            "Savengriffe d'Eauprofonde a d\u00c3\u00bb cr\u00c3\u00a9er une bonne dizaine de ces courts b\u00c3\u00a2tons, qu'il a confi\u00c3\u00a9s \u00c3  Khelben Arunsun et \u00c3  d'autres. Le b\u00c3\u00a2ton de bannissement permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "bannissement",
+                "champ de force",
+                "lenteur",
+                "renvoi",
+                "Prix",
+                "47 532 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lenteur.htm\">Lenteur</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">Renvoi</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-bannissement.htm\">Bannissement</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">Champ de force</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "B\u00c3\u00a9atif\u00c3\u00afque mineur",
+        "description": [
+            "Ce b\u00c3\u00a2ton, particuli\u00c3\u00a8rement int\u00c3\u00a9ressant pour les lanceurs de sons chaotiques bons, permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "ch\u00c3\u00a2timent sacr\u00c3\u00a9",
+                "marteau du Chaos",
+                "rejet de la Loi",
+                "rejet du Mal",
+                "Prix",
+                "28 266 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-sacre.htm\">Ch\u00c3\u00a2timent sacr\u00c3\u00a9</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-marteau-du-chaos.htm\">Marteau du Chaos</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rejet-de-la-loi.htm\">Rejet de la Loi</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rejet-du-mal.htm\">Rejet du Mal</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "B\u00c3\u00a9atifique supr\u00c3\u00aame",
+        "description": [
+            "Version plus puissante du b\u00c3\u00a2ton b\u00c3\u00a9atifique mineur, ce b\u00c3\u00a2ton permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "aura sacr\u00c3\u00a9e",
+                "manteau du Chaos",
+                "parole du Chaos",
+                "parole sacr\u00c3\u00a9e",
+                "Prix",
+                "78 750 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-du-chaos.htm\">Parole du Chaos</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-sacree.htm\">Parole sacr\u00c3\u00a9e</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-aura-sacree.htm\">Aura sacr\u00c3\u00a9e</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-manteau-du-chaos.htm\">Manteau du Chaos</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Cauchemar",
+        "description": [
+            "Des morceaux d'os li\u00c3\u00a9s ensemble avec des morceaux de cuir forment ce b\u00c3\u00a2ton d'apparence sinistre. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "Illusion",
+                "puissantes ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "Frayeur",
+                "effroi",
+                "Cauchemar",
+                "assassin imaginaire",
+                "symbole de terreur",
+                "Ennemi subconscient",
+                "Prix",
+                "51 000 po ;",
+                "Poids",
+                "2,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">Frayeur</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-assassin-imaginaire.htm\">Assassin imaginaire</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cauchemar.htm\">Cauchemar</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-effroi.htm\">Effroi</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-symbole-de-terreur.htm\">Symbole de terreur</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-ennemi-subconscient.htm\">Ennemi subconscient</a> (4 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Clart\u00c3\u00a9",
+        "description": [
+            "Ce b\u00c3\u00a2ton est g\u00c3\u00a9n\u00c3\u00a9ralement recouvert d\u00e2\u0080\u0099une couche d\u00e2\u0080\u0099argent sur lequel on grave des symboles solaires. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "explosion de lumi\u00c3\u00a8re",
+                "illumination",
+                "lumi\u00c3\u00a8re du jour",
+                "lumi\u00c3\u00a8res dansantes",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-illumination.htm\">Illumination</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">Lumi\u00c3\u00a8res dansantes</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">Lumi\u00c3\u00a8re du jour</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-de-lumiere.htm\">Explosion de lumi\u00c3\u00a8re</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Construction",
+        "description": [
+            "Ce b\u00c3\u00a2ton en bois, de 90 centim\u00c3\u00a8tres de long et entaill\u00c3\u00a9 tous les 2,5 centim\u00c3\u00a8tres, permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "animation d\u00e2\u0080\u0099objets",
+                "cr\u00c3\u00a9ation majeure",
+                "mur de pierre",
+                "Prix",
+                "38 156 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">Cr\u00c3\u00a9ation majeure</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-pierre.htm\">Mur de pierre</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">Animation d\u00e2\u0080\u0099objets</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Courant d\u00e2\u0080\u0099air",
+        "description": [
+            "Con\u00c3\u00a7u en tek rehauss\u00c3\u00a9 de filigranes dor\u00c3\u00a9s, le b\u00c3\u00a2ton du courant d'air permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "cyclone",
+                "cyclone supr\u00c3\u00aame",
+                "vent divin",
+                "Prix",
+                "89 250 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cyclone.htm\">Cyclone</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vent-divin.htm\">Vent divin</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cyclone-supreme.htm\">Cyclone supr\u00c3\u00aame</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Cuistot",
+        "description": [
+            "Ce long b\u00c3\u00a2ton en bois ressemble \u00c3  une cuill\u00c3\u00a8re g\u00c3\u00a9ante. il en \u00c3\u00a9mane toujours une d\u00c3\u00a9licate odeur de nourriture. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "cr\u00c3\u00a9ation de nourriture et d\u00e2\u0080\u0099eau",
+                "festin des h\u00c3\u00a9ros",
+                "purification de nourriture et d\u00e2\u0080\u0099eau",
+                "Prix",
+                "16 688 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-nourriture-et-d-eau.htm\">Cr\u00c3\u00a9ation de nourriture et d\u00e2\u0080\u0099eau</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-purification-de-nourriture-et-d-eau.htm\">Purification de nourriture et d\u00e2\u0080\u0099eau</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-festin-des-heros.htm\">Festin des h\u00c3\u00a9ros</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "D\u00c3\u00a9fense",
+        "description": [
+            "Le b\u00c3\u00a2ton de d\u00c3\u00a9fense semble normal, mais il se met \u00c3  luire d\u00e2\u0080\u0099une aura magique battant comme un c\u00c5\u0093ur quand on s\u00e2\u0080\u0099en sert pour se prot\u00c3\u00a9ger. Il permet d\u00e2\u0080\u0099utiliser les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "bouclier",
+                "bouclier de la foi",
+                "bouclier de la Loi",
+                "protection d\u00e2\u0080\u0099autrui",
+                "Prix",
+                "58 250 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">Bouclier</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-foi.htm\">Bouclier de la foi</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">Protection d\u00e2\u0080\u0099autrui</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-loi.htm\">Bouclier de la Loi</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Des mar\u00c3\u00a9es et des profondeurs",
+        "description": [
+            "Incrust\u00c3\u00a9 sur toute sa longueur de minuscules aigues-marines de plus en plus sombres et toujours l\u00c3\u00a9g\u00c3\u00a8rement humides au toucher, ce b\u00c3\u00a2ton propose les sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "contr\u00c3\u00b4le de l\u00e2\u0080\u0099eau",
+                "marche sur l\u00e2\u0080\u0099onde",
+                "Prix",
+                "11 200 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-de-l-eau.htm\">Contr\u00c3\u00b4le de l\u00e2\u0080\u0099eau</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-sur-l-onde.htm\">Marche sur l\u00e2\u0080\u0099onde</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Devin",
+        "description": [
+            "Le b\u00c3\u00a2ton du devin est g\u00c3\u00a9n\u00c3\u00a9ralement dans une branche noueuse de noisetier. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "analyse d\u00e2\u0080\u0099enchantement",
+                "identification",
+                "localisation de cr\u00c3\u00a9ature",
+                "localisation d\u00e2\u0080\u0099objet",
+                "vision mystique",
+                "Prix",
+                "137 375 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-identification.htm\">Identification</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-de-creature.htm\">Localisation de cr\u00c3\u00a9ature</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">Localisation d\u00e2\u0080\u0099objet</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-d-enchantement.htm\">Analyse d\u00e2\u0080\u0099enchantement</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-mystique.htm\">Vision mystique</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Divination",
+        "description": [
+            "Constitu\u00c3\u00a9 d\u00e2\u0080\u0099une branche flexible de saule et souvent pourvu d\u00e2\u0080\u0099une extr\u00c3\u00a9mit\u00c3\u00a9 fourchue, ce b\u00c3\u00a2ton permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "d\u00c3\u00a9tection des passages secrets",
+                "don des langues",
+                "localisation d\u00e2\u0080\u0099objet",
+                ", localisation de cr\u00c3\u00a9atures, \u00c5\u0093il indiscret,",
+                "vision lucide",
+                "Prix",
+                "73 500 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-des-passages-secrets.htm\">D\u00c3\u00a9tection des passages secrets</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-don-des-langues.htm\">Don des langues</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">Localisation d\u00e2\u0080\u0099objet</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-de-creature.htm\">Localisation de cr\u00c3\u00a9ature</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-oeil-indiscret.htm\">Oeil indiscret</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">Vision lucide</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Du vent et du ciel",
+        "description": [
+            "Surmont\u00c3\u00a9 d'un prisme de saphir long comme une main humaine et envelopp\u00c3\u00a9 de filigranes d'argent, ce b\u00c3\u00a2ton propose les sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "contr\u00c3\u00b4le des vents",
+                "marche dans les airs",
+                "Prix",
+                "27 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-des-vents.htm\">Contr\u00c3\u00b4le des vents</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-dans-les-airs.htm\">Marche dans les airs</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Enchantement",
+        "description": [
+            "Souvent constitu\u00c3\u00a9 du bois d\u00e2\u0080\u0099un pommier et surmont\u00c3\u00a9 d\u00e2\u0080\u0099un cristal transparent, ce b\u00c3\u00a2ton permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "brume mentale",
+                ", d\u00c3\u00a9sespoir, fou rire,",
+                "sommeil",
+                "suggestion",
+                ", suggestion de masse ;",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-fou-rire-de-tasha.htm\">Fou rire de Tasha</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil.htm\">Sommeil</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-suggestion.htm\">Suggestion</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-mentale.htm\">Brume mentale</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-desespoir-foudroyant.htm\">D\u00c3\u00a9sespoir foudroyant</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-suggestion-de-groupe.htm\">Suggestion de groupe</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Envo\u00c3\u00bbtement",
+        "description": [
+            "Ce b\u00c3\u00a2ton en bois noueux et sculpt\u00c3\u00a9 permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "mod\u00c3\u00a9r\u00c3\u00a9 ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "charme-monstre",
+                "charme-personne",
+                "Prix",
+                "16 500 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-personne.htm\">Charme-personne</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre.htm\">Charme-monstre</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089pid\u00c3\u00a9mique",
+        "description": [
+            "Ce b\u00c3\u00a2ton de bois est recouvert de chancres morbides suintant d\u00e2\u0080\u0099un pus jaun\u00c3\u00a2tre. Il \u00c3\u00a9met une horrible puanteur de chair en d\u00c3\u00a9composition, mais permet l\u00e2\u0080\u0099utilisation des sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "contagion",
+                "fl\u00c3\u00a9au d\u00e2\u0080\u0099insectes",
+                "syphilis",
+                "Prix",
+                "70 000 o ;",
+                "Poids",
+                "2,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">Contagion</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-d-insectes.htm\">Fl\u00c3\u00a9au d\u00e2\u0080\u0099insectes</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-syphilis.htm\">Syphilis</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089vocation",
+        "description": [
+            "Habituellement lisse et taill\u00c3\u00a9 dans du ch\u00c3\u00a2taignier, du saule ou de l\u00e2\u0080\u0099if, ce b\u00c3\u00a2ton permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "boule de feu",
+                "\u00c3\u00a9clair multiple",
+                "fracassement",
+                "mur de force",
+                "projectile magique",
+                "temp\u00c3\u00aate de gr\u00c3\u00aale",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">Boule de feu</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">Fracassement</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">Projectile magique</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">Mur de force</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">Temp\u00c3\u00aate de gr\u00c3\u00aale</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair-multiple.htm\">\u00c3\u0089clair multiple</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Extase",
+        "description": [
+            "Ce b\u00c3\u00a2ton de fr\u00c3\u00aane arbore quelques \u00c3\u00a9crits saints sans v\u00c3\u00a9ritable importance. Entre les mains d'un pr\u00c3\u00aatre, il \u00c3\u00a9met une lueur dor\u00c3\u00a9e aussi vive que celle d'une torche.",
+            "Le b\u00c3\u00a2ton d'extase est un b\u00c3\u00a2ton +1, mais il inflige des d\u00c3\u00a9g\u00c3\u00a2ts non-l\u00c3\u00a9taux. Face \u00c3  des cr\u00c3\u00a9atures mal\u00c3\u00a9fiques, sa zone de critique possible est de 17-20.",
+            "Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Multiples puissantes ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "divination",
+                "\u00c3\u00a9p\u00c3\u00a9e de conscience",
+                "exaltation",
+                "p\u00c3\u00a9nitence",
+                "vision des cieux",
+                ", le cr\u00c3\u00a9ateur doit \u00c3\u00aatre d\u00e2\u0080\u0099alignement bon ;",
+                "Prix",
+                "73 800 po ;",
+                "Co\u00c3\u00bbt",
+                "37 050 po + 2 940 PX."
+            ]
+        },
+        "ul": [
+            [
+                2.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-divination.htm\">Divination</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-exaltation.htm\">Exaltation</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-epee-de-conscience.htm\">\u00c3\u0089p\u00c3\u00a9e de conscience</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-penitence.htm\">P\u00c3\u00a9nitence</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Fer abyssal",
+        "description": [
+            "Forg\u00c3\u00a9 dans le m\u00c3\u00a9tal des lacs de Fer Fondu de la plaine des Portails Infinis (la strate sup\u00c3\u00a9rieure des Strates Infinies des Abysses), ce b\u00c3\u00a2ton ressemble simplement \u00c3  un sceptre de fer particuli\u00c3\u00a8rement long et l\u00c3\u00a9g\u00c3\u00a8rement tordu, dot\u00c3\u00a9 d'encoches sur toute sa longueur. Il \u00c3\u00a9met une odeur de m\u00c3\u00a9tal br\u00c3\u00bbl\u00c3\u00a9, comme celle qu'on sent dans une fonderie, et laisse toujours une marque noire sur les mains de son porteur. Un b\u00c3\u00a2ton de fer abyssal propose les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Diverses puissantes ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "blasph\u00c3\u00a8me",
+                "cercle magique contre le Bien",
+                "cercle magique contre la Loi",
+                "protection contre le Bien",
+                "protection contre la Loi",
+                "mur de fer",
+                "parole du Chaos",
+                "Prix",
+                "39 350 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-la-loi.htm\">Protection contre la Loi</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-le-bien.htm\">Protection contre le Bien</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-la-loi.htm\">Cercle magique contre la Loi</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-le-bien.htm\">Cercle magique contre le Bien</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-fer.htm\">Mur de fer</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-blaspheme.htm\">Blasph\u00c3\u00a8me</a> (4 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-du-chaos.htm\">Parole du Chaos</a> (4 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Feu",
+        "description": [
+            "Taill\u00c3\u00a9 dans le bois de fer et ferr\u00c3\u00a9 de laiton \u00c3  ses deux extr\u00c3\u00a9mit\u00c3\u00a9s, le b\u00c3\u00a2ton du feu offre la possibilit\u00c3\u00a9 de jeter les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "boule de feu",
+                "mains br\u00c3\u00bblantes",
+                "mur de feu",
+                "Prix",
+                "17 750 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">Boule de feu</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mains-brulantes.htm\">Mains br\u00c3\u00bblantes</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-feu.htm\">Mur de feu</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Filou",
+        "description": [
+            "Ce b\u00c3\u00a2ton apparait comme un simple b\u00c3\u00a2ton de marche sans fioriture. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "convocation d\u00e2\u0080\u0099arme",
+                "convocation de composante",
+                "convocation d\u00e2\u0080\u0099instrument",
+                "serviteur invisible",
+                "Prix",
+                "13 500 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-composante.htm\">Convocation de composante</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-instrument.htm\">Convocation d\u00e2\u0080\u0099instrument</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">Serviteur invisible</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-arme.htm\">Convocation d\u00e2\u0080\u0099arme</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "For\u00c3\u00aat profonde",
+        "description": [
+            "Le b\u00c3\u00a2ton de la for\u00c3\u00aat profonde semble avoir pris forme naturellement, sans aide ext\u00c3\u00a9rieure. Fait de ch\u00c3\u00aane, de fr\u00c3\u00aane ou d\u00e2\u0080\u0099if, il contient les sorts suivants :",
+            "Le b\u00c3\u00a2ton de la for\u00c3\u00aat profonde fonctionne au combat comme un b\u00c3\u00a2ton +2. Enfin, il permet \u00c3  son possesseur d\u00e2\u0080\u0099utiliser le pouvoir passage sans trace, \u00c3  volont\u00c3\u00a9 et sans la moindre d\u00c3\u00a9pense de charge. Ces deux pouvoirs fonctionnent encore lorsque toutes les charges du b\u00c3\u00a2ton ont \u00c3\u00a9t\u00c3\u00a9 d\u00c3\u00a9pens\u00c3\u00a9es."
+        ],
+        "infos": {
+            "data": [
+                "Multiples mod\u00c3\u00a9r\u00c3\u00a9es ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                "animation des plantes",
+                "charme-animal",
+                "communication avec les animaux",
+                ", convocation d\u00e2\u0080\u0099alli\u00c3\u00a9s naturels VI,",
+                "mur d\u00e2\u0080\u0099\u00c3\u00a9pines",
+                "passage sans trace",
+                "peau d\u00e2\u0080\u0099\u00c3\u00a9corce",
+                "Prix",
+                "101 250 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-animal.htm\">Charme-animal</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-ecorce.htm\">Peau d\u00e2\u0080\u0099\u00c3\u00a9corce</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-allies-naturels-6.htm\">Convocation d\u00e2\u0080\u0099alli\u00c3\u00a9s naturels 6</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-d-epines.htm\">Mur d\u00e2\u0080\u0099\u00c3\u00a9pines</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-plantes.htm\">Animation des plantes</a> (4 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Givre",
+        "description": [
+            "Le b\u00c3\u00a2ton du givre s\u00e2\u0080\u0099orne d\u00e2\u0080\u0099un diamant \u00c3\u00a9tincelant \u00c3  chacune de ses extr\u00c3\u00a9mit\u00c3\u00a9s et des runes courent sur toute sa longueur. Il propose les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "10 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "c\u00c3\u00b4ne de froid",
+                "mur de glace",
+                "temp\u00c3\u00aate de gr\u00c3\u00aale",
+                "Prix",
+                "56 250 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-glace.htm\">Mur de glace</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">Temp\u00c3\u00aate de gr\u00c3\u00aale</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cone-de-froid.htm\">C\u00c3\u00b4ne de froid</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Glouton",
+        "description": [
+            "Ce b\u00c3\u00a2ton +2/+2 semble \u00c3\u00aatre fait de chair fondue. \u00c3\u0080 son sommet, une  t\u00c3\u00aate  humano\u00c3\u00afde montre ses crocs et para\u00c3\u00aet entrer en fusion avec le b\u00c3\u00a2ton. Sur un coup critique, la t\u00c3\u00aate garnie de crocs, \u00c3  l'extr\u00c3\u00a9mit\u00c3\u00a9  du  b\u00c3\u00a2ton, mord la victime et lui inflige 1d8 points de d\u00c3\u00a9g\u00c3\u00a2ts en plus des d\u00c3\u00a9g\u00c3\u00a2ts critiques normaux. Par ailleurs, le b\u00c3\u00a2ton du glouton propose les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "brume acide",
+                "nu\u00c3\u00a9e grouillante",
+                "Prix",
+                "58 200 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-acide.htm\">Brume acide</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nu\u00c3\u00a9e grouillante</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Grand essaim",
+        "description": [
+            "Le b\u00c3\u00a2ton du grand essaim est taill\u00c3\u00a9 dans un bois sombre et noueux. Il se pare de taches noires naturelles, qui ressemblent \u00c3  des insectes et paraissent ramper \u00c3  sa surface. Il contient les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "fl\u00c3\u00a9au d\u00e2\u0080\u0099insectes",
+                "nu\u00c3\u00a9e grouillante",
+                "Prix",
+                "24 750 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nu\u00c3\u00a9e grouillante</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-d-insectes.htm\">Fl\u00c3\u00a9au d\u00e2\u0080\u0099insectes</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Gu\u00c3\u00a9rison",
+        "description": [
+            "Ce b\u00c3\u00a2ton de fr\u00c3\u00aane blanc s\u00e2\u0080\u0099orne de runes argent\u00c3\u00a9es. Il permet de jeter les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "gu\u00c3\u00a9rison de la c\u00c3\u00a9cit\u00c3\u00a9/surdit\u00c3\u00a9",
+                "gu\u00c3\u00a9rison des maladies",
+                "restauration partielle",
+                "soins importants",
+                "Prix",
+                "27 750 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-restauration-partielle.htm\">Restauration partielle</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-importants.htm\">Soins importants</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-de-la-cecite-surdite.htm\">Gu\u00c3\u00a9rison de la c\u00c3\u00a9cit\u00c3\u00a9/surdit\u00c3\u00a9</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-des-maladies.htm\">Gu\u00c3\u00a9rison des maladies</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Illumination",
+        "description": [
+            "Ce b\u00c3\u00a2ton est habituellement rehauss\u00c3\u00a9 d'argent et garni de motifs solaires. Il permet de lancer les sons suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "explosion de lumi\u00c3\u00a8re",
+                "illumination",
+                "lumi\u00c3\u00a8res dansantes",
+                "lumi\u00c3\u00a8re du jour",
+                "Prix",
+                "51 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-illumination.htm\">Illumination</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">Lumi\u00c3\u00a8res dansantes</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-de-lumiere.htm\">Explosion de lumi\u00c3\u00a8re</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">Lumi\u00c3\u00a8re du jour</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Illusion",
+        "description": [
+            "Ce b\u00c3\u00a2ton, fait d\u00e2\u0080\u0099\u00c3\u00a9b\u00c3\u00a8ne ou d\u00e2\u0080\u0099un autre bois sombre, adopte une forme subtilement tordue, en spirale ou stri\u00c3\u00a9e. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "d\u00c3\u00a9guisement",
+                "double illusoire",
+                "image accomplie",
+                "image miroir",
+                "image pr\u00c3\u00a9d\u00c3\u00a9termin\u00c3\u00a9e",
+                "lueur d\u00e2\u0080\u0099arc-en-ciel",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-deguisement.htm\">D\u00c3\u00a9guisement</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-image-accomplie.htm\">Image accomplie</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-image-miroir.htm\">Image miroir</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-image-predeterminee.htm\">Image pr\u00c3\u00a9d\u00c3\u00a9termin\u00c3\u00a9e</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lueur-d-arc-en-ciel.htm\">Lueur d\u00e2\u0080\u0099arc-en-ciel</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-double-illusoire.htm\">Double illusoire</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Immortel",
+        "description": [
+            "Ce b\u00c3\u00a2ton est constitu\u00c3\u00a9 d'ossements humains li\u00c3\u00a9s ensemble. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "animation des morts",
+                "cr\u00c3\u00a9ation de mort-vivant",
+                "Prix",
+                "27 375 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">Animation des morts</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-mort-vivant.htm\">Cr\u00c3\u00a9ation de mort-vivant</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Incarc\u00c3\u00a9ration",
+        "description": [
+            "Utilis\u00c3\u00a9 pour capturer ses adversaires sans les tuer, le b\u00c3\u00a2ton d'incarc\u00c3\u00a9ration permet de lancer les sorts suivants"
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "ancre dimensionnelle",
+                "barri\u00c3\u00a8re de lames",
+                "immobilisation de monstre",
+                "Prix",
+                "51 563 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-ancre-dimensionnelle.htm\">Ancre dimensionnelle</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-barriere-de-lames.htm\">Barri\u00c3\u00a8re de lames</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Invocation",
+        "description": [
+            "Ce b\u00c3\u00a2ton est fr\u00c3\u00a9quemment taill\u00c3\u00a9 dans le tronc d\u00e2\u0080\u0099un fr\u00c3\u00aane ou d\u00e2\u0080\u0099un noyer et porte de multiples gravures repr\u00c3\u00a9sentant diverses cr\u00c3\u00a9atures. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "brume mortelle",
+                ", convocation de monstres VI,",
+                "cr\u00c3\u00a9ation mineure",
+                "nuage naus\u00c3\u00a9abond",
+                "nu\u00c3\u00a9e grouillante",
+                "serviteur invisible",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-nuage-nauseabond.htm\">Nuage naus\u00c3\u00a9abond</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nu\u00c3\u00a9e grouillante</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">Serviteur invisible</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-mortelle.htm\">Brume mortelle</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">Cr\u00c3\u00a9ation majeure</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-monstres-6.htm\">Convocation de monstres 6</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "M\u00c3\u00a9tamorphe",
+        "description": [
+            "Ce b\u00c3\u00a2ton en bois semble bouger de sa propre volont\u00c3\u00a9 et ne jamais garder la m\u00c3\u00aame forme. Il donne acc\u00c3\u00a8s aux sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Transmuation puissante ;",
+                "NLS",
+                "17 ; Cr\u00c3\u00a9ation de batons magiques,",
+                "Forme draconique mineure",
+                "Forme du troll",
+                "Forme de la b\u00c3\u00aate aux trois visages",
+                "Forme terrifiante de l\u00e2\u0080\u0099oeil tyran",
+                "M\u00c3\u00a9tamorphose",
+                "Prix",
+                "95 625 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-de-la-bete-aux-trois-visages.htm\">Forme de la b\u00c3\u00aate aux trois visages</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-draconique-mineure.htm\">Forme draconique mineure</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-du-troll.htm\">Forme du troll</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-terrifiante-de-l-oeil-tyran.htm\">Forme terrifiante de l\u00e2\u0080\u0099oeil tyran</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">M\u00c3\u00a9tamorphose</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "M\u00c3\u00a9t\u00c3\u00a9orologue",
+        "description": [
+            "Ce b\u00c3\u00a2ton simple en bois est tr\u00c3\u00a8s appr\u00c3\u00a9ci\u00c3\u00a9 par les druides souhaitant repousser les intrus de la mani\u00c3\u00a8re la plus naturelle possible. Il poss\u00c3\u00a8de les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "Brume de dissimulation",
+                "Contr\u00c3\u00b4le des vents",
+                "Contr\u00c3\u00b4le du climat",
+                "Rafale de pluie",
+                "Prix",
+                "33 516 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-de-dissimulation.htm\">Brume de dissimulation</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rafale-de-pluie.htm\">Rafale de pluie</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-des-vents.htm\">Contr\u00c3\u00b4le des vents</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-du-climat.htm\">Contr\u00c3\u00b4le du climat</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "N\u00c3\u00a9cromancie",
+        "description": [
+            "Ce b\u00c3\u00a2ton est fait d\u00e2\u0080\u0099\u00c3\u00a9b\u00c3\u00a8ne ou d\u00e2\u0080\u0099un autre bois sombre et porte les images d\u00e2\u0080\u0099ossements et de cr\u00c3\u00a2nes. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "N\u00c3\u00a9cromancie",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "baiser de la goule",
+                "cercle de mort",
+                "\u00c3\u00a9nergie n\u00c3\u00a9gative",
+                "frayeur",
+                ", immobilisation de monstres,",
+                "vagues de fatigue",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-baiser-de-la-goule.htm\">Baiser de la goule</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">Frayeur</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">\u00c3\u0089nergie n\u00c3\u00a9gative</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vagues-de-fatigue.htm\">Vagues de fatigue</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-mort.htm\">Cercle de mort</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Ombre mineure",
+        "description": [
+            "Ce b\u00c3\u00a2ton d'\u00c3\u00a9b\u00c3\u00a8ne est parcouru de runes d'obsidienne. A ce sujet, on dirait que l'objet absorbe la lumi\u00c3\u00a8re. Le b\u00c3\u00a2ton d'ombre mineure permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "convocation d\u00e2\u0080\u0099ombres",
+                ", magie des ombres,",
+                "travers\u00c3\u00a9e des ombres",
+                "Prix",
+                "48 500 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-ombres.htm\">Convocation d\u00e2\u0080\u0099ombres</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-magie-des-ombres.htm\">Magie des ombres</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-traversee-des-ombres.htm\">Travers\u00c3\u00a9e des ombres</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Outreterre",
+        "description": [
+            "Ce simple b\u00c3\u00a2ton de bois est tr\u00c3\u00a8s utile pour \u00c3\u00a9voluer au sein de l'Outreterre. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9es ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "\u00c3\u00a9tat informe",
+                "orientation",
+                "passe-muraille",
+                "Prix",
+                "48 500 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-informe.htm\">\u00c3\u0089tat informe</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">Passe-muraille</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-orientation.htm\">Orientation</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Passage dans l\u00e2\u0080\u0099\u00c3\u00a9ther",
+        "description": [
+            "Sculpt\u00c3\u00a9 dans un bois gris fum\u00c3\u00a9, ce b\u00c3\u00a2ton propose les sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "Diverses puissantes ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "forme \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9e",
+                "passage dans l\u00e2\u0080\u0099\u00c3\u00a9ther",
+                "t\u00c3\u00a9l\u00c3\u00a9portation d\u00e2\u0080\u0099objet",
+                "Prix",
+                "43 300 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">Forme \u00c3\u00a9th\u00c3\u00a9r\u00c3\u00a9e</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-passage-dans-l-ether.htm\">Passage dans l\u00e2\u0080\u0099\u00c3\u00a9ther</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-d-objet.htm\">T\u00c3\u00a9l\u00c3\u00a9portation d\u00e2\u0080\u0099objet</a> (4 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Patrie",
+        "description": [
+            "Ce b\u00c3\u00a2ton intensifie le lien que le druide entretient avec son environnement et permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "communion avec la nature",
+                "dissimulation foresti\u00c3\u00a8re",
+                "orientation",
+                "Prix",
+                "48 469 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-communion-avec-la-nature.htm\">Communion avec la nature</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-dissimulation-forestiere.htm\">Dissimulation foresti\u00c3\u00a8re</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-orientation.htm\">Orientation</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Pierre et terre",
+        "description": [
+            "Le b\u00c3\u00a2ton de la pierre et de la terre est serti en son extr\u00c3\u00a9mit\u00c3\u00a9 d\u00e2\u0080\u0099une \u00c3\u00a9meraude grosse comme le poing, au c\u00c5\u0093ur de laquelle luit une \u00c3\u00a9tincelle magique. Son possesseur peut utiliser les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "glissement de terrain",
+                "passe-muraille",
+                "Prix",
+                "80 500 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-glissement-de-terrain.htm\">Glissement de terrain</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">Passe-muraille</a> (1 charge)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Planaire",
+        "description": [
+            "Con\u00c3\u00a7u pour assister les voyageurs planaires, ce b\u00c3\u00a2ton propose les sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "Diverses puissantes ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "analyse de portail",
+                ", convocation de monstres VI,",
+                "portail",
+                "Prix",
+                "43 100 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-de-portail.htm\">Analyse de portail</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-monstres-6.htm\">Convocation de monstres 6</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-portail.htm\">Portail</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Rejet",
+        "description": [
+            "Trobriand a cr\u00c3\u00a9\u00c3\u00a9 plusieurs de ces b\u00c3\u00a2tons d'ivoire finement cisel\u00c3\u00a9s. Le b\u00c3\u00a2ton de rejet permet de lancer le sort suivant :",
+            "La plupart des b\u00c3\u00a2tons sont associ\u00c3\u00a9s \u00c3  un sous-niveau de Mont-profond, le \u00c2\u00ab cimeti\u00c3\u00a8re de Trobriand \u00c2\u00bb, et ne peuvent \u00c3\u00aatre utilis\u00c3\u00a9s pour exp\u00c3\u00a9dier la cible ailleurs."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "t\u00c3\u00a9l\u00c3\u00a9portation funeste de Trobriand",
+                "Prix",
+                "12 375 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-funeste-de-trobriand.htm\">T\u00c3\u00a9l\u00c3\u00a9portation funeste de Trobriand</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "R\u00c3\u00aave",
+        "description": [
+            "Un b\u00c3\u00a2ton de r\u00c3\u00aave est sculpt\u00c3\u00a9 en bois de fr\u00c3\u00aane et poss\u00c3\u00a8de des motifs marbr\u00c3\u00a9s \u00c3\u00a9tranges qui courent et descendent su toute la longueur. Il est exceptionnellement mince et surmont\u00c3\u00a9 d'une finition en cristal. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "Illusion",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "cauchemar",
+                "sommeil profond",
+                "sommeil sans fin",
+                "songe",
+                "Prix",
+                "54 000 po ;",
+                "Poids",
+                "2,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil-profond.htm\">Sommeil profond</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil-sans-fin.htm\">Sommeil sans fin</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cauchemar.htm\">Cauchemar</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-songe.htm\">Songe</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Revitalisant",
+        "description": [
+            "Sculpt\u00c3\u00a9 dans un morceau de bois qui a repos\u00c3\u00a9 dans une zone frontali\u00c3\u00a8re du plan de l'\u00c3\u00a9nergie positive, ce b\u00c3\u00a2ton propose les sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "soins l\u00c3\u00a9gers de groupe",
+                "soins mod\u00c3\u00a9r\u00c3\u00a9s de groupe",
+                "soins importants de groupe",
+                "soins intensifs de groupe",
+                "gu\u00c3\u00a9rison supr\u00c3\u00aame de groupe",
+                "Prix",
+                "54 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-legers-de-groupe.htm\">Soins l\u00c3\u00a9gers de groupe</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-moderes-de-groupe.htm\">Soins mod\u00c3\u00a9r\u00c3\u00a9s de groupe</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-importants-de-groupe.htm\">Soins importants de groupe</a> (3 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-intensifs-de-groupe.htm\">Soins intensifs de groupe</a> (4 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme-de-groupe.htm\">Gu\u00c3\u00a9rison supr\u00c3\u00aame de groupe</a> (5 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Solaire",
+        "description": [
+            "Ce b\u00c3\u00a2ton d'\u00c3\u00a9b\u00c3\u00a9nite blanchie est surmont\u00c3\u00a9 d'une pi\u00c3\u00a8ce d'orf\u00c3\u00a8vrerie en forme de soleil au milieu de laquelle tr\u00c3\u00b4ne un diamant taill\u00c3\u00a9.",
+            "Au prix d'une action libre, il est possible de faire de cet objet un b\u00c3\u00a2ton +3 de lumi\u00c3\u00a8re. Pour rendre au b\u00c3\u00a2ton sa forme d'origine, on entreprend \u00c3\u00a9galement une action libre.",
+            "Il permet alors de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Multiples puissantes ;",
+                "NLS",
+                "16 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "b\u00c3\u00a9n\u00c3\u00a9diction",
+                "cercle magique contre le Mal",
+                "couronne de flamme",
+                "\u00c3\u00a9tat gazeux",
+                "flamme \u00c3\u00a9ternelle",
+                "lumi\u00c3\u00a8re br\u00c3\u00bblante",
+                "pri\u00c3\u00a8re",
+                "protection d\u00e2\u0080\u0099autrui",
+                ", le cr\u00c3\u00a9ateur doit \u00c3\u00aatre d\u00e2\u0080\u0099alignement bon ;",
+                "Prix",
+                "173 300 po ;",
+                "Co\u00c3\u00bbt",
+                "86 800 po + 6 920 PX."
+            ]
+        },
+        "ul": [
+            [
+                2.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction.htm\">B\u00c3\u00a9n\u00c3\u00a9diction</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-brulante.htm\">Lumi\u00c3\u00a8re br\u00c3\u00bblante</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">Protection d\u00e2\u0080\u0099autrui</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-couronne-de-flamme.htm\">Couronne de flamme</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Surpuissance",
+        "description": [
+            "Comme son nom peut le laisser penser, le b\u00c3\u00a2ton de surpuissance est l\u00e2\u0080\u0099un des objets magiques les plus puissants qui soient. Le plus souvent droit et lisse, il s\u00e2\u0080\u0099ach\u00c3\u00a8ve g\u00c3\u00a9n\u00c3\u00a9ralement par une gemme d\u00e2\u0080\u0099une grande puret\u00c3\u00a9. Les sorts qu\u00e2\u0080\u0099il permet de lancer sont les suivants :",
+            "En plus de ces sorts, le b\u00c3\u00a2ton de surpuissance conf\u00c3\u00a8re un bonus de chance de +2 \u00c3  la CA et \u00c3  tous les jets de sauvegarde. Il se comporte en combat comme un b\u00c3\u00a2ton +2 et peut \u00c3\u00aatre utilis\u00c3\u00a9 pour infliger un ch\u00c3\u00a2timent. Par une action libre et au prix d\u00e2\u0080\u0099une charge, les d\u00c3\u00a9g\u00c3\u00a2ts qu\u00e2\u0080\u0099il inflige sont doubl\u00c3\u00a9s pendant 1 round (x3 en cas de coup critique).",
+            "Un b\u00c3\u00a2ton de surpuissance peut accomplir une immolation vengeresse s\u00e2\u0080\u0099il est bris\u00c3\u00a9 dans ce but. (Si son porteur annonce clairement son intention, il peut briser le b\u00c3\u00a2ton par une action simple ne n\u00c3\u00a9cessitant pas de test de Force.). \u00c3\u0080 ce moment, toute l\u00e2\u0080\u0099\u00c3\u00a9nergie contenue dans le b\u00c3\u00a2ton est violemment lib\u00c3\u00a9r\u00c3\u00a9e dans un rayon de 9 m\u00c3\u00a8tres. Le nombre de points de d\u00c3\u00a9g\u00c3\u00a2ts inflig\u00c3\u00a9s par l\u00e2\u0080\u0099immolation est \u00c3\u00a9gal au nombre total de charges restant dans le b\u00c3\u00a2ton au moment de sa destruction multipli\u00c3\u00a9 par un nombre d\u00c3\u00a9pendant de la distance entre la cr\u00c3\u00a9ature et le centre de l\u00e2\u0080\u0099explosion : x8 \u00c3  3 m\u00c3\u00a8tres ou moins, x6 \u00c3  6 m\u00c3\u00a8tres ou moins (et plus de 3 m\u00c3\u00a8tres), x4 \u00c3  9 m\u00c3\u00a8tres ou moins (et plus de 6 m\u00c3\u00a8tres). Dans tous les cas, un jet de R\u00c3\u00a9flexes r\u00c3\u00a9ussi (DD 17) r\u00c3\u00a9duit les d\u00c3\u00a9g\u00c3\u00a2ts de moiti\u00c3\u00a9.",
+            "Le personnage cassant le b\u00c3\u00a2ton en deux a 50% de chances d\u00e2\u0080\u0099\u00c3\u00aatre projet\u00c3\u00a9 dans un autre plan d\u00e2\u0080\u0099existence. Si cela ne se produit pas, la violente lib\u00c3\u00a9ration d\u00e2\u0080\u0099\u00c3\u00a9nergie l\u00e2\u0080\u0099annihile totalement. Seuls quelques rares objets comme le b\u00c3\u00a2ton de surpuissance et le b\u00c3\u00a2ton de thaumaturge peuvent provoquer une immolation vengeresse.\r\nM\u00c3\u00aame une fois que toutes ses charges sont \u00c3\u00a9puis\u00c3\u00a9es, le b\u00c3\u00a2ton reste un b\u00c3\u00a2ton +2 (\u00c3  partir de ce moment, il est incapable d\u00e2\u0080\u0099une immolation vengeresse)."
+        ],
+        "infos": {
+            "data": [
+                "Multiples puissantes ;",
+                "NLS",
+                "15 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "Cr\u00c3\u00a9ation d\u00e2\u0080\u0099armes et armures magiques",
+                ", Augmentation d\u00e2\u0080\u0099intensit\u00c3\u00a9,",
+                "boule de feu",
+                "c\u00c3\u00b4ne de froid",
+                "\u00c3\u00a9clair",
+                "flamme \u00c3\u00a9ternelle",
+                "globe d\u00e2\u0080\u0099invuln\u00c3\u00a9rabilit\u00c3\u00a9 renforc\u00c3\u00a9e",
+                "immobilisation de monstre",
+                "l\u00c3\u00a9vitation",
+                "mur de force",
+                "projectile magique",
+                "rayon affaiblissant",
+                "Prix",
+                "211 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">Boule de feu</a> \u00c3\u00a0 intensit\u00c3\u00a9 augment\u00c3\u00a9e au 5e niveau (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">\u00c3\u0089clair</a> \u00c3\u00a0 intensit\u00c3\u00a9 augment\u00c3\u00a9e au 5e niveau (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-flamme-eternelle.htm\">Flamme \u00c3\u00a9ternelle</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-levitation.htm\">L\u00c3\u00a9vitation</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">Projectile magique</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-affaiblissant.htm\">Rayon affaiblissant</a> \u00c3\u00a0 intensit\u00c3\u00a9 augment\u00c3\u00a9e au 5e niveau (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-cone-de-froid.htm\">C\u00c3\u00b4ne de froid</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-globe-d-invulnerabilite-renforcee.htm\">Globe d\u00e2\u0080\u0099invuln\u00c3\u00a9rabilit\u00c3\u00a9 renforc\u00c3\u00a9e</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">Mur de force</a> (uniquement possible sous forme d\u00e2\u0080\u0099h\u00c3\u00a9misph\u00c3\u00a8re de 3 m\u00c3\u00a8tres de rayon entourant le personnage) (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Temp\u00c3\u00aate",
+        "description": [
+            "Ce b\u00c3\u00a2ton souvent utilis\u00c3\u00a9 par des druides contr\u00c3\u00b4les les nuages, aussi bien localement qu'\u00c3  une lus grande \u00c3\u00a9chelle. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "forte ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "brume de dissimulation",
+                "appel de la foudre",
+                "contr\u00c3\u00b4le du climat",
+                "Prix",
+                "18 890 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-de-dissimulation.htm\">Brume de dissimulation</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-appel-de-la-foudre.htm\">Appel de la foudre</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-du-climat.htm\">Contr\u00c3\u00b4le du climat</a> (4 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "T\u00c3\u00a9n\u00c3\u00a8bres",
+        "description": [
+            "Il est dit que ce b\u00c3\u00a2ton fut cr\u00c3\u00a9\u00c3\u00a9 pour la premi\u00c3\u00a8re fois par un ensorceleur drow dans les profondeurs d\u00e2\u0080\u0099un sanctuaire abandonn\u00c3\u00a9 de l\u00e2\u0080\u0099Outreterre. Ce b\u00c3\u00a2ton lisse fait d\u00e2\u0080\u0099un m\u00c3\u00a9tal noir \u00c3\u00a9tonnamment l\u00c3\u00a9ger permet l\u00e2\u0080\u0099utilisation des sorts suivants."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "7 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "sombre trait",
+                "t\u00c3\u00a9n\u00c3\u00a8bres",
+                "t\u00c3\u00a9n\u00c3\u00a8bres des damn\u00c3\u00a9s",
+                "t\u00c3\u00a9n\u00c3\u00a8bres profondes",
+                "Prix",
+                "24 000 po ;",
+                "Poids",
+                "2,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-sombre-trait.htm\">Sombre trait</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres.htm\">T\u00c3\u00a9n\u00c3\u00a8bres</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-des-damnes.htm\">T\u00c3\u00a9n\u00c3\u00a8bres des damn\u00c3\u00a9s</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-profondes.htm\">T\u00c3\u00a9n\u00c3\u00a8bres profondes</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Transmutation",
+        "description": [
+            "Habituellement fait ou d\u00c3\u00a9cor\u00c3\u00a9 de bois p\u00c3\u00a9trifi\u00c3\u00a9, ce b\u00c3\u00a2ton permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "clignotement",
+                "d\u00c3\u00a9sint\u00c3\u00a9gration",
+                "m\u00c3\u00a9tamorphose",
+                "m\u00c3\u00a9tamorphose funeste",
+                "modification d\u00e2\u0080\u0099apparence",
+                "repli exp\u00c3\u00a9ditif",
+                "Prix",
+                "65 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">Clignotement</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-modification-d-apparence.htm\">Modification d\u00e2\u0080\u0099apparence</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-repli-expeditif.htm\">Repli exp\u00c3\u00a9ditif</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">M\u00c3\u00a9tamorphose</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-funeste.htm\">M\u00c3\u00a9tamorphose funeste</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">D\u00c3\u00a9sint\u00c3\u00a9gration</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Transport",
+        "description": [
+            "L\u00e2\u0080\u0099utilisateur de ce puissant b\u00c3\u00a2ton peut faire appel aux sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Multiples puissantes ;",
+                "NLS",
+                "17 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "passe-muraille",
+                "porte de phase",
+                "porte dimensionnelle",
+                "projection astrale",
+                ", t\u00c3\u00a9l\u00c3\u00a9portation sans erreur ;",
+                "Prix",
+                "170 500 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">Passe-muraille</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-porte-dimensionnelle.htm\">Porte dimensionnelle</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-porte-de-phase.htm\">Porte de phase</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-projection-astrale.htm\">Projection astrale</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-supreme.htm\">T\u00c3\u00a9l\u00c3\u00a9portation supr\u00c3\u00aame</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Trucs",
+        "description": [
+            "Un b\u00c3\u00a2ton des trucs est un simple b\u00c3\u00a2ton en bois d\u00c3\u00a9cor\u00c3\u00a9 \u00c3  une extr\u00c3\u00a9mit\u00c3\u00a9.Il est plus l\u00c3\u00a9ger qu'il n'en a l'air. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "8 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "convocation d\u00e2\u0080\u0099arme",
+                "convocation d\u00e2\u0080\u0099instrument",
+                "convocation de composante",
+                "serviteur invisible",
+                "Prix",
+                "13 500 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-composante.htm\">Convocation de composante</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-instrument.htm\">Convocation d\u00e2\u0080\u0099instrument</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">Serviteur invisible</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-arme.htm\">Convocation d\u00e2\u0080\u0099arme</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Tueur de dragons",
+        "description": [
+            "Ce b\u00c3\u00a2ton a \u00c3\u00a9t\u00c3\u00a9 taill\u00c3\u00a9 dans le f\u00c3\u00a9mur d'un dragon de taille TG ou sup\u00c3\u00a9rieure. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "Transmutation",
+                "mod\u00c3\u00a9r\u00c3\u00a9s ;",
+                "NLS",
+                "9 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "\u00c3\u00a9cailles ramollies",
+                "r\u00c3\u00a9sistance \u00c3  la magie r\u00c3\u00a9duite",
+                "souffle r\u00c3\u00a9prim\u00c3\u00a9",
+                "vuln\u00c3\u00a9rabilit\u00c3\u00a9",
+                "Prix",
+                "54 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-ecailles-ramollies.htm\">\u00c3\u0089cailles ramollies</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-a-la-magie-reduite.htm\">R\u00c3\u00a9sistance \u00c3\u00a0 la magie r\u00c3\u00a9duite</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-souffle-reprime.htm\">Souffle r\u00c3\u00a9prim\u00c3\u00a9</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vulnerabilite.htm\">Vuln\u00c3\u00a9rabilit\u00c3\u00a9</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Vie",
+        "description": [
+            "Ce b\u00c3\u00a2ton en ch\u00c3\u00aane massif ferr\u00c3\u00a9 d\u00e2\u0080\u0099or permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "11 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "gu\u00c3\u00a9rison supr\u00c3\u00aame",
+                "rappel \u00c3  la vie",
+                "Prix",
+                "155 750 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme.htm\">Gu\u00c3\u00a9rison supr\u00c3\u00aame</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-rappel-a-la-vie.htm\">Rappel \u00c3\u00a0 la vie</a> (5 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Visage divin",
+        "description": [
+            "Ce b\u00c3\u00a2ton ferr\u00c3\u00a9, habituellement orn\u00c3\u00a9 du symbole religieux d'un dieu pr\u00c3\u00a9cis, permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "17 ; Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques,",
+                "visage divin",
+                "visage divin mineur",
+                "visage divin supr\u00c3\u00aame",
+                "Prix",
+                "60 563 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin-mineur.htm\">Visage divin mineur</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin.htm\">Visage divin</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin-supreme.htm\">Visage divin supr\u00c3\u00aame</a> (3 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    },
+    {
+        "title": "Vision",
+        "description": [
+            "Ce long b\u00c3\u00a2ton en bois poss\u00c3\u00a8de un effet secondaire : \u00c3  chaque fois qu'il est utilis\u00c3\u00a9 pour lancer un sort, son porteur doit r\u00c3\u00a9ussir un jet de Volont\u00c3\u00a9 (DD 12) ou subir un affaiblissement temporaire de 1 point d'Intelligence. Il permet de lancer les sorts suivants :"
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "mod\u00c3\u00a9r\u00c3\u00a9e ;",
+                "NLS",
+                "12 ;",
+                "Cr\u00c3\u00a9ation de b\u00c3\u00a2tons magiques",
+                "d\u00c3\u00a9tection de l\u00e2\u0080\u0099invisibilit\u00c3\u00a9",
+                "vision dans le noir",
+                "vision lucide",
+                "gu\u00c3\u00a9rison de la c\u00c3\u00a9cit\u00c3\u00a9/surdit\u00c3\u00a9",
+                "Prix",
+                "24 000 po."
+            ]
+        },
+        "ul": [
+            [
+                0.0,
+                "<ul>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-l-invisibilite.htm\">D\u00c3\u00a9tection de l\u00e2\u0080\u0099invisibilit\u00c3\u00a9</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-dans-le-noir.htm\">Vision dans le noir</a> (1 charge)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-de-la-cecite-surdite.htm\">Gu\u00c3\u00a9rison de la c\u00c3\u00a9cit\u00c3\u00a9/surdit\u00c3\u00a9</a> (2 charges)</li>\r\n<li><a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">Vision lucide</a> (2 charges)</li>\r\n\r\n</ul>"
+            ]
+        ],
+        "table": null
+    }
+]

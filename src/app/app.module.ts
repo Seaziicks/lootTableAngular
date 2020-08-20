@@ -22,6 +22,7 @@ import {
   BannerComponent
 } from './fading-info/fading-info.component';
 import { GestionDropMonstreBisComponent } from './gestion-drop-monstre-bis/gestion-drop-monstre-bis.component';
+import { TestLoadJSonComponent } from './test-load-json/test-load-json.component';
 
 
 
@@ -36,6 +37,7 @@ import { GestionDropMonstreBisComponent } from './gestion-drop-monstre-bis/gesti
     AdDirective,
     BannerComponent,
     GestionDropMonstreBisComponent,
+    TestLoadJSonComponent,
   ],
   imports: [
     BrowserModule,
