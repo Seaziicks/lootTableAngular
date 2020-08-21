@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {MagicalProperty} from '../test-load-json/test-load-json.component';
 
 @Injectable({
     providedIn: 'root'

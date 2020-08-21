@@ -6,87 +6,104 @@
     ],
     "data": [
         [
-            "01–10",
+            1,
+            10,
             "Arbalète légère",
             "+335 po"
         ],
         [
-            "11–20",
+            11,
+            20,
             "Arbalète lourde",
             "+350 po"
         ],
         [
-            "21–25",
+            21,
+            25,
             "Arc court",
             "+330 po"
         ],
         [
-            "26–30",
+            26,
+            30,
             "Arc court composite (limite de bonus de For de +0)",
             "+375 po"
         ],
         [
-            "31–35",
+            31,
+            35,
             "Arc court composite (limite de bonus de For de +1)",
             "+450 po"
         ],
         [
-            "36–40",
+            36,
+            40,
             "Arc court composite (limite de bonus de For de +2)",
             "+525 po"
         ],
         [
-            "41–50",
+            41,
+            50,
             "Arc long",
             "+375 po"
         ],
         [
-            "51–55",
+            51,
+            55,
             "Arc long composite (limite de bonus de For de +0)",
             "+400 po"
         ],
         [
-            "56–60",
+            56,
+            60,
             "Arc long composite (limite de bonus de For de +1)",
             "+500 po"
         ],
         [
-            "61–65",
+            61,
+            65,
             "Arc long composite (limite de bonus de For de +2)",
             "+600 po"
         ],
         [
-            "66–70",
+            66,
+            70,
             "Arc long composite (limite de bonus de For de +3)",
             "+700 po"
         ],
         [
-            "71–75",
+            71,
+            75,
             "Arc long composite (limite de bonus de For de +4)",
             "+800 po"
         ],
         [
-            "76–79",
+            76,
+            79,
             "Dard",
             "+300 po et 5 pa"
         ],
         [
-            "80–83",
+            80,
+            83,
             "Fronde",
             "+300 po"
         ],
         [
-            "84–88",
+            84,
+            88,
             "Hache de lancer",
             "+308 po"
         ],
         [
-            "89–90",
+            89,
+            90,
             "Javeline",
             "+301 po"
         ],
         [
-            "91–100",
+            91,
+            100,
             "Munitions"
         ]
     ]

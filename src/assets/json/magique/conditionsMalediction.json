@@ -1,88 +1,43 @@
 {
     "titles": [
         "1d100",
-        "Condition"
+        "Malédiction"
     ],
     "data": [
         [
-            "01–03",
-            "Température inférieure à 0° C"
+            1,
+            15,
+            "Pouvoir imaginaire"
         ],
         [
-            "04–05",
-            "Température supérieure à 0° C"
+            16,
+            35,
+            "Effet (ou cible) inversé"
         ],
         [
-            "06–10",
-            "De jour"
+            36,
+            45,
+            "Fonctionnement intermittent"
         ],
         [
-            "11–15",
-            "De nuit"
+            46,
+            60,
+            "Conditions de fonctionnement"
         ],
         [
-            "16–20",
-            "À la lumière (directe) du soleil"
+            61,
+            75,
+            "Inconvénient"
         ],
         [
-            "21–25",
-            "Loin de la lumière du soleil"
+            76,
+            90,
+            "Effet radicalement différent"
         ],
         [
-            "26–34",
-            "Sous l’eau"
-        ],
-        [
-            "35–37",
-            "Hors de l’eau"
-        ],
-        [
-            "38–45",
-            "Sous terre"
-        ],
-        [
-            "46–55",
-            "À la surface"
-        ],
-        [
-            "56–60",
-            "À moins de 3 m d’un type de créature déterminé aléatoirement"
-        ],
-        [
-            "61–64",
-            "À moins de 3 m d’une race ou espèce de créature déterminée aléatoirement"
-        ],
-        [
-            "65–72",
-            "À moins de 3 m d’un lanceur de sorts profanes"
-        ],
-        [
-            "73–80",
-            "À moins de 3 m d’un lanceur de sorts divins"
-        ],
-        [
-            "81–85",
-            "Dans les mains d’une créature autre qu’un lanceur de sorts"
-        ],
-        [
-            "86–90",
-            "Dans les mains d’un lanceur de sorts"
-        ],
-        [
-            "91–95",
-            "Dans les mains d’une créature d’un alignement donné"
-        ],
-        [
-            "96",
-            "Dans les mains d’une créature d’un sexe donné"
-        ],
-        [
-            "97–99",
-            "Durant les jours saints (ou inversement) ou en cas d’alignement astrologique donné"
-        ],
-        [
-            "100",
-            "À moins de 100 km d’un site donné."
+            91,
+            100,
+            "Remplacé l’objet par un objet maudit spécifique"
         ]
     ]
 }

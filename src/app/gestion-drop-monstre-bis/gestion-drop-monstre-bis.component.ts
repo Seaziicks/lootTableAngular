@@ -3,7 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
-import {FadingInfoComponent} from "../fading-info/fading-info.component";
+import {FadingInfoComponent} from '../fading-info/fading-info.component';
+import {Loot, Monstre, MonstreGroupe, MonstreLootChanceBis} from '../interface/MonstreGroupe';
 
 @Component({
   selector: 'app-gestion-drop-monstre-bis',

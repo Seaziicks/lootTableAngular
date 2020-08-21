@@ -39,3 +39,36 @@ declare interface Loot {
   idLoot: number;
   libelle: string;
 }
+
+
+
+
+/* ---------------------------------------------------*
+|                  Partie JSon                        |
+*-----------------------------------------------------*/
+
+
+export interface MagicalProperty {
+    title: string;
+    description: string[];
+    infos: Informations;
+    table: string[];
+    ul: string[];
+}
+
+export interface Informations {
+    data: string[];
+}
+
+export interface TablesChances {
+    title: string[];
+    chances: Chances[];
+}
+
+export interface Chances {
+    lootChanceMin: number;
+    lootChanceMax: number;
+    name: string;
+    price: number;
+}
+

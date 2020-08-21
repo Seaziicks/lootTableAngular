@@ -1,17 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {MagicalProperty} from '../interface/MonstreGroupe';
 
-export interface MagicalProperty {
-  title: string;
-  description: string[];
-  infos: Informations;
-  table: string[];
-  ul: string[];
-}
-
-export interface Informations {
-  data: string[];
-}
 
 @Component({
   selector: 'app-test-load-json',

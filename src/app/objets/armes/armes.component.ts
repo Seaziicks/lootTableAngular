@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {MagicalProperty} from '../../test-load-json/test-load-json.component';
 import {HttpClient} from '@angular/common/http';
 import {JSonLoadService} from '../../services/json-load.service';
+import {MagicalProperty} from '../../interface/MonstreGroupe';
 
 @Component({
     selector: 'app-armes',
