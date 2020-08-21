@@ -1,0 +1,36 @@
+{
+    "titles": [
+        "1d100",
+        "Malédiction"
+    ],
+    "data": [
+        [
+            "01–15",
+            "Pouvoir imaginaire"
+        ],
+        [
+            "16–35",
+            "Effet (ou cible) inversé"
+        ],
+        [
+            "36–45",
+            "Fonctionnement intermittent"
+        ],
+        [
+            "46–60",
+            "Conditions de fonctionnement"
+        ],
+        [
+            "61–75",
+            "Inconvénient"
+        ],
+        [
+            "76–90",
+            "Effet radicalement différent"
+        ],
+        [
+            "91–100",
+            "Remplacé l’objet par un objet maudit spécifique"
+        ]
+    ]
+}

@@ -1,0 +1,1274 @@
+[
+    {
+        "title": "Acier infernal",
+        "description": [
+            "Le premier Acier infernal a été créé par un forgeron abishaï du nom de Nirzayal, et il fut celui qui baptisa cette armure ainsi. Cette armure est faite avec des écailles d'un remorhaz plongés dans les flammes des neufs Enfers. Des veines rouges marbrés la parcours.",
+            "Acier infernal est un harnois +3 qui confère à son porteur une résistance au feu de 5. De plus, si son porteur est d'alignement mauvais, il peut au prix d'une action libre activé un effet de bouclier de feu une fois par jour. Toute créature autre que le porteur qui touche alors l'armure pendant un round entier(via une situation de lutte par exemple) subit 1d6 dégâts de feu par round."
+        ],
+        "infos": {
+            "data": [
+                "Évocation",
+                "[Feu] modérée ;",
+                "NLS",
+                "10 ;",
+                "Création d’armes et armures magiques",
+                "bouclier de feu",
+                "résistance aux énergies destructives",
+                "Prix",
+                "25 650 po ;",
+                "Poids",
+                "25 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure céleste",
+        "description": [
+            "Cette cotte de mailles +3 en argent ou en or est si fine et légère qu’on peut la porter sous des habits normaux sans trahir sa présence. Ses attributs sont les suivants : bonus de Dextérité maximal de +8, malus d’armure aux tests de –2 et risque d’échec des sorts profanes de 15%. Elle pèse 10 kg et est considérée comme une armure légère. Sur commande et une fois par jour, elle permet de voler comme avec le sort vol."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "(Bien) faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                ", alignement bon,",
+                "vol",
+                "Prix",
+                "22 400 po ;",
+                "Coût",
+                "12 550 po + 1 004 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure corticale",
+        "description": [
+            "Ce harnais +1 illithid et poids plume est constitué de plaques d'acier articulées en forme de feuilles et recouvertes de mucosité. (Une armure illithid confère à un porteur psionique un bonus d'intuition supplémentaire de +2 à la CA. L'armure corticale fonctionne alors sur le même principe qu'un harnais +3. Si une créature non psionique la revêt, il s'agit d'un harnois +2) De plus, le porteur est en permanence protégé par un effet d'esprit impénétrable (niveau 15 de lanceur de sorts)."
+        ],
+        "infos": {
+            "data": [
+                "Puissantes multiples ;",
+                "NLS",
+                "15 ;",
+                "Création d’armes et armures magiques",
+                "Création d’armes et armures psioniques",
+                ", créature psionique,",
+                "esprit impénétrable",
+                "Prix",
+                "146 650 po ;",
+                "Coût",
+                "74 150 po + 5 800PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure cramoisie d’Ilpharzz",
+        "description": [
+            "Recouverte d'une teinte brillante et écarlate, l'armure cramoisie d'Ilpharzz est une armure de cuir +4 brodée de fils d'or représentant des motifs enflammés. Au prix d'une action libre, le porteur peut embraser l'armure et s'envelopper de flammes magiques dégageant autant de lumière qu'une torche. Ce pouvoir est utilisable 3 fois par jour. Le porteur n'est pas blessé par le feu. Il bénéficie alors d'un bonus de parade de +4 à la CA et d'une résistance au feu (15). Toute créature l'attaquant à l'aide d'une arme naturelle ou d'une arme de corps à corps dépourvue d'allonge subit 1d4 points de dégâts de feu par attaque. L'armure cramoisie brûle à chaque fois jusqu'à 1 minute d'affilée."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "12 ;",
+                "Création d’armes et armures magiques",
+                "bouclier",
+                "bouclier de feu",
+                ", résistance aux énergies négatives ;",
+                "Prix",
+                "28 300 po ;",
+                "Coût",
+                "14 230 po + 1125 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de cavaller draconique",
+        "description": [
+            "Ce harnois +1 a été conçu à partir d'écailles d'un dragon les ayant perdues naturellement (et non d'un dragon terrassé). Il confère une résistance (10) contre un type d'énergie destructive précis, selon l'espèce du dragon dont on a ramassé les écailles (acide pour cuivre, noir ou vert ; électricité pour bleu ou bronze ; feu pour airain, or ou rouge ; froid pour argent ou blanc). Il confère également à celui qui le porte un bonus de +5 aux tests d'Équitation quand il chevauche un dragon. Enfin, il active un sort de feuille morte quand le cavalier tombe d'une hauteur de plus de 1,50 mètre."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Création d’armes et armures magiques",
+                "feuille morte",
+                "Prix",
+                "26 150 po ;",
+                "Coût",
+                "13 400 po + 1 000 PX ;",
+                "Poids",
+                "25 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de forme draconique",
+        "description": [
+            "Cette armure de peau draconique +3 confère une résistance (5) contre un type d'énergie destructive précis, selon l'espèce du dragon dont on a prélevé les écailles (acide pour cuivre, noir ou vert ; électricité pour bleu ou bronze ; feu pour airain, or ou rouge ; froid pour argent ou blanc). Cette résistance est considérée comme un effet extraordinaire (et non magique) conféré par l'armure.",
+            "Si le porteur a le pouvoir de forme animale, il est capable de se transformer en dragon de taille P ou M de la couleur de l'armure. Il peut alors conserver cette forme jusqu'à 7 heures. Cette transformation ne compte pas dans le nombre d'utilisations quotidiennes de forme animale dont dispose le personnage."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "7 ; Artisan draconique,",
+                "Création d’armes et armures magiques",
+                ", pouvoir de forme animale ;",
+                "Prix",
+                "23 165 po ;",
+                "Coût",
+                "14 665 po + 680 PX ;",
+                "Poids",
+                "12,5 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de la bête",
+        "description": [
+            "Cette armure de cuir cloutée est maintenue par des os et non des rivets métalliques. Sur le torse est peint un arbre stylisé dont les branches vont vers les épaules.",
+            "Cette armure de cuir cloutée +1 de forme animale confère à son porteur une utilisation supplémentaire de son aptitude de classe de Forme animale, s'il la possède."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "10 ;",
+                "Création d’armes et armures magiques",
+                ", aptitude de classe de forme animale ;",
+                "Prix",
+                "26 175 po ;",
+                "Poids",
+                "10 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de la chasse sans fin",
+        "description": [
+            "Cette cotte de mailles +2 en mithral est fabriquée par les elfes pour les rôdeurs qui partent en patrouille pour de longues périodes. En dehors de ses capacités de protection, elle immunise également son porteur contre la fatigue et l'épuisement."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d’armes et armures magiques",
+                "restauration",
+                "Prix",
+                "21 500 po ;",
+                "Coût",
+                "10 900 po + 848 PX ;",
+                "Poids",
+                "10kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de la nuit",
+        "description": [
+            "Cette armure de cuir +1 est d'un noir absolu, comme si elle absorbait la lumière. Cette armure confère un bonus de +3 contre les sorts et effets du registre de la lumière ainsi qu'un bonus de parade de +3 à la CA. Enfin, son risque d'échec aux sorts tombe à 0 pour les sorts du registre de l'obscurité ou de l'école Illusion (ombre)."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d’armes et armures magiques",
+                "Armure des ténèbres",
+                "Prix",
+                "26 984 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de l’apiculteur",
+        "description": [
+            "Le porteur de cette armure matelassée +1 est protégé en permanence par un effet de Répulsif (comme le sort, NLS 7).",
+            "De plus, une fois par jour, il peut générer de la fumée comme par un effet du sort Pyrotechnie"
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "7 ;",
+                "Création d’armes et armures magiques",
+                "pyrotechnie",
+                "répulsif",
+                "Prix",
+                "85 162 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de l’autruche",
+        "description": [
+            "Cette armure de cuir +1 est faite à partir d'une peau d'autruche (y compris les plumes). La vitesse de base au sol de son porteur passe à 15 mètres (si elle n'est pas supérieure). De plus, l'armure confère à son porteur une attaque de coup de pied en attaque naturelle. Celle-ci inflige 1d6 dégâts pour une créature de taille M, 1d4 pour une taille P, plus 1,5 fois le bonus de Force. Il est possible de l'utiliser en tant qu'attaque naturelle secondaire (avec un malus de -5 au jet d'attaque, 1/2 bonus de Force aux dégâts) lors d'une attaque à outrance."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "repli expéditif",
+                "Prix",
+                "9 160 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de rasoirs",
+        "description": [
+            "Accumulant de nombreuses couches d’écailles coupantes comme des rasoirs, cette armure d'écailles +2 inflige 2d6 points de dégâts tranchants sur un jet de lutte réussi intervenant pendant que le porteur poursuit une lutte. Le porteur est considéré comme capable de manier les rasoirs avec maîtrise (comme pour les dons de maniement d’armes). Une fois par jour, le porteur peut, au prix d’une action simple, projeter jusqu’à six écailles tranchantes qui jaillissent de l’armure comme autant de shuriken +1."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "6 ;",
+                "Création d’armes et armures magiques",
+                "arme magique",
+                "Prix",
+                "5 600 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de souplesse du serpent",
+        "description": [
+            "Cette armure de cuir +2 confère à celui qui la porte le don Souplesse du serpent, même s'il ne satisfait pas aux conditions requises."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                "grâce féline",
+                "Prix",
+                "16 160 po ;",
+                "Coût",
+                "8 160 po + 320 PX ;",
+                "Poids",
+                "7,5 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de transport",
+        "description": [
+            "Cette cuirasse +1 en mithral est très prisé par ceux qui adoptent des tactiques d'attaque éclair. Une fois par jour, le porteur de cette armure peut utiliser porte dimensionelle, comme le sort, au niveau 7 de lanceur de sorts."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "modérée ;",
+                "NLS",
+                "7 ;",
+                "Création d’armes et armures magiques",
+                ", porte dimensionelle ;",
+                "Prix",
+                "25 300 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure démoniaque",
+        "description": [
+            "Ce harnois +4 a été ouvragé de manière à ce que son porteur ait l’air d’un démon. Le heaume prend la forme d’une tête cornue, le personnage regardant par la bouche garnie de crocs. Une armure démoniaque possède des griffes +1, qui infligent 1d10 points de dégâts de base pour une armure de taille M ou 1d8 pour une armure de taille P (critique x2). Toute créature frappée et blessée par ces griffes subit les effets d’un sort de contagion (jet de Vigueur DD 14 pour annuler). Les “ griffes ” sont intégrées aux gantelets et aux canons d’avant-bras de l’armure.",
+            "Si le porteur du harnois n’est pas d’alignement mauvais, il acquiert instantanément un niveau négatif qui persiste tant que l’armure est portée. Ce niveau négatif ne risque pas de causer une perte de niveau définitive, mais aucun sort (pas même restauration) ne peut le faire disparaître tant que l’armure est portée. Dès qu’on l’enlève, il se dissipe sans effet néfaste."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "(Mal) puissante ;",
+                "NLS",
+                "13 ;",
+                "Création d’armes et armures magiques",
+                "contagion",
+                "Prix",
+                "52 260 po ;",
+                "Coût",
+                "26 130 po + 2 090 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure des arcanes",
+        "description": [
+            "Cette armure fonctionne en tout point comme un harnois, sauf que le risque d'échec aux sorts profane est de 0%."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                "Prix",
+                "10 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure draconique d’invincibilité",
+        "description": [
+            "Cet objet magique est une armure à plaques +5 (une barde) conçue pour un dragon d'une taille précise. Elle s'ajuste donc à tout dragon d'une catégorie de taille déterminée, M ou supérieure. En plus du bonus d'armure de +12 qu'elle octroie, elle est pourvue de pointes et de lames qui renforcent les attaques du dragon, conférant ainsi à ses armes naturelles un bonus d'altération de +5 (comme s'il bénéficiait d'un effet de morsure magique supérieure)."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Création d’armes et armures magiques",
+                "Création d’armes et armures magiques épiques",
+                ", morsure magique supérieure ;",
+                "Prix",
+                "276 350 po (taille M), 327 500 po (taille G), 379 950 po (taille TG), 434 750 po (taille Gig), 444 350 po (taille C) ;",
+                "Coût",
+                "138 850 po + 11 000 PX (taille M), 165 050 po + 13 000 PX (taille G), 192 450 po + 15 000 PX (taille TG), 222 250 po + 17 000 PX (taille Gig), 321 850 PX + 17 000 PX (taille C) ;",
+                "Poids",
+                "25 kilos (taille M), 50 kilos (taille G), 125 kilos (taille TG), 250 kilos (taille Gig), 500 kilos (taille C)."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du blaireau",
+        "description": [
+            "Cette armure à plaques +1 est typiquement décoré par des motifs représentant un blaireau et portée par les guerriers gnomes. Une fois par jour, au prix d'une action simple, son porteur peut se transformer en blaireau ou blaireau sanguinaire, comme par le sort Métamorphose, lancé au niveau 7 de lanceur de sorts. Lorsqu'il est dans cette forme, le porteur peut communiquer avec les blaireaux et blaireaux sanguinaire comme par le sort Communication avec les animaux."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "communication avec les animaux",
+                "métamorphose",
+                "Prix",
+                "9 562 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du changepeau",
+        "description": [
+            "Confectionnée à partir de peaux d'humanoïdes, cette armure de cuir +1 permet à son porteur de bénéficier, à volonté, d'effets identiques à ceux produits par le sort modification d'apparence."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Création d’armes et armures magiques",
+                "modification d’apparence",
+                "Prix",
+                "13 160 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du crocodile",
+        "description": [
+            "Cette armure de peau +4 augmente de 4 l'armure naturelle de son porteur. Si celui-ci ne possédait pas d'armure naturelle, il en acquiert une de +4.",
+            "Ce bonus vient en plus du bonus d'armure et d'altération."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d’armes et armures magiques",
+                "peau d’écorce",
+                "Prix",
+                "20 165 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du guépard",
+        "description": [
+            "Cette armure de peau +3 est créée à partir de la fourrure d'un guépard. Une fois par heure, son  porteur peut, pendant 1 round, courir à une vitesse égale à 10 fois sa vitesse de base au sol."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "6 ;",
+                "Création d’armes et armures magiques",
+                "repli expéditif",
+                "Prix",
+                "11 165 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du nécromant",
+        "description": [
+            "Cette armure d'os +2 est faite d'une cage thoracique de tigre maintenue par des morceaux de cuir et d'un casque fait d'un crâne de tigre.",
+            "Au prix d'une action simple, son porteur peut prononcer un mot de commande pour convoquer un tigre squelette pour 7 rounds. Le tigre obéit aux ordres du porteur de l'armure. Cet effet peut être utilisé à volonté, mais après avoir été utilisé, le porteur doit attendre au moins 1 heure avant de réutiliser ce pouvoir. Si le tigre squelette est détruit, il faut attendre 24 heures avant de pouvoir utilisé ce pouvoir."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "7 ;",
+                "Création d’armes et armures magiques",
+                "convocation de morts-vivants IV",
+                "Prix",
+                "32 190 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du nécrophage",
+        "description": [
+            "Cette armure de cuir cloutée d'ombre +1 confère à son porteur la vision dans le noir sur 18 mètres et la protection de l'invisibilité pour les morts-vivants comme le sort lancé par un prêtre de niveau 5."
+        ],
+        "infos": {
+            "data": [
+                "Illusion",
+                "faible ;",
+                "NLS",
+                "6 ;",
+                "Création d’armes et armures magiques",
+                "invisibilité pour les morts-vivants",
+                "Prix",
+                "26 175po ;",
+                "Poids",
+                "10 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure du vassal",
+        "description": [
+            "Portée par les émissaires et les représentants de puissants dieux et autres souverains planaires, cette armure à plaques +3 exaltée a été renforcée à l'aide de maille ysgardienne, ce qui augmente la CA du porteur de +2 dans le cadre du jet visant à confirmer un critique."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "18 ;",
+                "Création d’armes et armures magiques",
+                "protection contre le Mal",
+                "Prix",
+                "38 250 po ;",
+                "Coût",
+                "20 250 po + 1 620 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure d’esquive draconique",
+        "description": [
+            "Cette armure de cuir cloutée +3 confère à celui qui la porte le pouvoir d'esquive totale, mais seulement contre les souffles. Quand un souffle autorise un jet de Réflexes pour réduire les dégâts de moitié, un jet de sauvegarde réussi permet de ne subir aucun dégât."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "aura d’esquive totale",
+                "Prix",
+                "15 675 po ;",
+                "Coût",
+                "7 925 po + 620 PX ;",
+                "Poids",
+                "10 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure d’os du chaman",
+        "description": [
+            "Cette armure d'os +2 renferme un esprit protecteur qui fait bénéficier son porteur d'un bonus de résistance de +2 aux jets de sauvegarde."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                "résistance",
+                "Prix",
+                "12 170 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure en peau de renard",
+        "description": [
+            "Cette armure de cuir est recouverte de fourrure rousse aux bouts blancs. Son porteur peut utiliser Ruse du renard sur lui-même une fois par jour au niveau 9 de lanceur de sorts. De plus, l'armure lui confère un bonus de +2 à tous ses tests de Discrétion et Déplacement silencieux.",
+            "Jusqu'à 10 rounds par jour, son porteur peut gagner le pouvoir spécial d'odorat. Activer ou désactiver ce pouvoir est une action libre. Les rounds d'activations n'ont pas besoin d'être consécutifs.",
+            "Une fois par jour, le porteur peut profiter d'un effet de Passage sans trace, comme le sort, au niveau 9 de lanceur de sorts. Tant que cet effet est actif, le porteur est aussi affecté comme s'il disposait de l'aptitude de 	Déplacement facilité."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "ruse du renard",
+                "passage sans trace",
+                ", polymorphisme ou pouvoir de forme animal ;",
+                "Prix",
+                "18 960 po ;",
+                "Coût",
+                "9 560 po + 752 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure en peau de rhinocéros",
+        "description": [
+            "Cette armure de peau +2 a été confectionnée à partir du cuir d’un rhinocéros. Son malus d’armure aux tests de –1 seulement et inflige +2d6 points de dégâts supplémentaires lorsque son porteur charge (y compris lors d’une charge montée)."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "force de taureau",
+                "Prix",
+                "5 165 po ;",
+                "Coût",
+                "2 665 po + 200 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure en peau de tigre",
+        "description": [
+            "Cette chemise de mailles de +4 est très populaire parmi les rôdeurs elfes. Elle est recouverte d'une d'une fourrure tigrées de noirs. Son porteur peut utiliser Grâce féline sur lui-même une fois par jour au niveau 9 de lanceur de sorts. De plus, l'armure lui confère un bonus de +2 à tous ses tests d'Escalade, natation et Saut.",
+            "Jusqu'à 10 rounds par jour, son porteur peut gagner le pouvoir spécial d'odorat. Activer ou désactiver ce pouvoir est une action libre. Les rounds d'activations n'ont pas besoin d'être consécutifs.",
+            "Au prix d'une action libre, le porteur de l'armure peut faire jaillir d'énormes griffes (infligeant 1d4 dégâts pour un porteur de taille M, 1d3 pour un de taille P). Le porteur considère ces deux griffes comme des attaques naturelles. Il peut lors d'une attaque à outrance donc en plus d'une attaque avec une arme porter une attaque avec une griffe comme une attaque secondaire ou bien attaquer avec les deux griffes avec son plein bonus à l'attaque et en tant qu'arme principal (dans ce cas, il ne gagne pas d'attaque supplémentaire de par un haut bonus de base à l’attaque). Le porteur peut activer les griffes pendant 10 rounds, qui n'ont pas besoin d'être continus."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "grâce féline",
+                ", polymorphisme ou pouvoir de forme animal ;",
+                "Prix",
+                "33 150 po ;",
+                "Coût",
+                "6 750 po + 1 312 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure en peau d’ours",
+        "description": [
+            "Favorite de nombreux elfes guerriers et barbares, cette cuirasse +5 est recouverte d'une peau marron ou brune. Son porteur peut utiliser Endurance de l'ours sur lui-même une fois par jour au niveau 9 de lanceur de sorts. De plus, l'armure lui confère un bonus de +2 à tous ses tests de lutte.",
+            "Jusqu'à 10 rounds par jour, son porteur peut gagner le pouvoir spécial d'odorat. Activer ou désactiver ce pouvoir est une action libre. Les rounds d'activations n'ont pas besoin d'être consécutifs.",
+            "Au prix d'une action libre, le porteur de l'armure peut faire jaillir d'énormes griffes (infligeant 1d6 dégâts pour un porteur d taille M, 1d4 pour un de taille P). Lorsqu'il utilise ces griffes, la portée d'allonge du porteur augmente de 1,50 m. Le porteur considère ces deux griffes comme des attaques naturelles. Il peut lors d'une attaque à outrance donc en plus d'une attaque avec une arme porter une attaque avec une griffe comme une attaque secondaire ou bien attaquer avec les deux griffes avec son plein bonus à l'attaque et en tant qu'arme principal (dans ce cas, il ne gagne pas d'attaque supplémentaire de par un haut bonus de base à l’attaque). Le porteur peut activer les griffes pendant 10 rounds, qui n'ont pas besoin d'être continus."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "endurance de l’ours",
+                ", polymorphisme ou pouvoir de forme animal ;",
+                "Prix",
+                "38 550 po ;",
+                "Coût",
+                "19 450 po + 1 528 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure en plumes de hibou",
+        "description": [
+            "Cette armure de cuir +1 est populaire parmi les éclaireurs nocturnes. Elle est recouverte de plumes grises mouchetées de noire. Son porteur peut utiliser Sagesse du hibou sur lui-même une fois par jour au niveau 9 de lanceur de sorts. De plus, l'armure lui confère un bonus de +8 à tous ses tests de Détection dans des conditions d'éclairage faible ainsi qu'un bonus de +4 aux tests de Déplacement silencieux et de Perception auditive.",
+            "Jusqu'à 10 rounds par jour, le porteur peut faire jaillir des ailes de l'armure, lui permettant de voler à vitesse de 12 m (manoeuvrabilité bonne). Activer et désactiver cet effet est une action libre. Les rounds n'ont pas besoin d'être consécutifs."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "sagesse du hibou",
+                ", polymorphisme ou pouvoir de forme animal ;",
+                "Prix",
+                "20 175 po ;",
+                "Coût",
+                "10 525 po + 828 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure en plumes d’aigle",
+        "description": [
+            "Cette armure de cuir cloutée +3 est populaire parmi les bardes elfes et halfelins. Elle est recouverte de plumes dorées. Son porteur peut utiliser Splendeur de l'aigle sur lui-même une fois par jour au niveau 9 de lanceur de sorts. De plus, l'armure lui confère un bonus de +8 à tous ses tests de détection.",
+            "Jusqu'à 10 rounds par jour, le porteur peut faire jaillir des ailes de l'armure, lui permettant de voler à vitesse de 18 (manoeuvrabilité bonne). Activer et désactiver cet effet est une action libre. Les rounds n'ont pas besoin d'être consécutifs."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "splendeur de l’aigle",
+                ", polymorphisme ou pouvoir de forme animal ;",
+                "Prix",
+                "28 775 po ;",
+                "Coût",
+                "14 475 po + 1 144 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure rugissante d’Ammarindar",
+        "description": [
+            "Ces 12 cuirasses +2 sont ornées de runes elfiques en argent sur le devant et d'une tête d'ours ou de dragon incrustée dans le dos. Toute flèche, bille de fronde, tout carreau d'arbalète ou autre projectile du même ordre qui atteint le porteur en lui infligeant 10 points de dégâts ou moins est automatiquement renvoyé par l'armure avant d'aller frapper la créature qui l'a envoyé (les dégâts sont tirés de nouveau contre l'agresseur et le porteur sort finalement indemne de cette attaque). Étant donné que la tête d'ours ou de dragon gravée sur l'armure se met à rugir dès qu'un danger approche, le porteur bénéficie des aptitudes d'esquive instinctive et d'esquive instinctive supérieure d'un roublard de niveau 6 (il conserve son bonus de Dex à la CA même s'il est pris au dépourvu où attaqué par un agresseur invisible et ne peut être pris en tenaille que par un roublard de niveau 10 ou supérieur). On raconte que l'ensemble de ces douze cuirasses est entre les mains des tanarukks du fort des portes de l'Enfer, qui l'ont pillé à Ammarindar."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "Abjuration",
+                "puissantes ;",
+                "NLS",
+                "13 ;",
+                "Création d’armes et armures magiques",
+                ", protection-contre les projectiles,",
+                "vision lucide",
+                "Prix",
+                "49 350 po ;",
+                "Coût",
+                "24 850 + 1960 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure serpentine",
+        "description": [
+            "Cette armure de cuir +3 semble être confectionnée à partir de peaux d'un ou plusieurs grands serpents. Bien que certains prétendent que l'armure serpentine est faite avec la peau d'un naga, personne ne l'a jamais prouvé. En plus de sa valeur en tant qu'armure, cet objet confère au porteur un bonus d'intuition de +2 aux jets de Réflexes et lui offre les avantages du don Attaques réflexes."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "grâce féline",
+                "Prix",
+                "21 660 po ;",
+                "Poids",
+                "7,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure tempête de Laeral",
+        "description": [
+            "Ce harnois +2 résistant au feu et à l'électricité est composé de matières non métalliques (on prétend qu'elles proviennent d'un autre plan) qui ne conduisent pas l'électricité. Le porteur de cette armure n'est jamais gêné ou déplacé contre sa volonté par des vents violents."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "6 ;",
+                "Création d’armes et armures magiques",
+                "bourrasque",
+                ", résistance aux énergies destructrices, le créateur doit être de niveau 6+ ;",
+                "Prix",
+                "66 650 po ;",
+                "Coût",
+                "34 150 po + 2600 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure-tempête des enfants de la terre",
+        "description": [
+            "Ce harnois +3 résistant au feu, au froid et à l’électricité ne s'adapte qu'à des tailles de nains, de gnomes ou de halfelins."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                ", résistance aux énergies destructrices, le créateur doit être un nain, un gnome ou un halfelin ;",
+                "Prix",
+                "111 650 po ;",
+                "Coût",
+                "56 650 po + 4400 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Carapace de goule",
+        "description": [
+            "Cette armure est composée de pans de peau de goule entrelacés et cousus de manière à recouvrir tout le corps, à l’exception de la tête, des mains et des pieds. Les résidus nécromantiques de l’objet lui assurent toutefois une grande souplesse. Cette armure de cuir +3 permet à celui qui la porte d’effectuer trois attaques de baiser de la goule par jour (Vigueur, DD 15)."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Création d’armes et armures magiques",
+                ", degré de maîtrise de 5 en Connaissances (religion),",
+                "création de mort-vivant",
+                "Prix",
+                "35 230 po ;",
+                "Poids",
+                "7,5 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Chemise de mailles en mithral embrumée",
+        "description": [
+            "Forgée à partir d'un alliage de mithral blanc-argent, cette armure est une chemise de mailles en mithral +2 qui remplit la case du porteur d'une brume argentée et tourbillonnante sur commande. La brume confère au porteur un camouflage mais elle n'affecte pas sa vue. L'armure génère la brume argentée pendant 1 minute par utilisation, jusqu'à 7 fois par jour. Une fois par jour, le porteur peut également adopter un état gazeux pendant 10 minutes maximum."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "6 ;",
+                "Création d’armes et armures magiques",
+                "brume de dissimulation",
+                "état gazeux",
+                "Prix",
+                "21 300 po ;",
+                "Coût",
+                "11 200 po + 808 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Coque du diable",
+        "description": [
+            "Cette armure de peau +5 a été taillée dans la dépouille d'un diable barbelé. Des barbillons la recouvrent et permettent au porteur d'infliger 3d8 points de dégâts plus 1,5 fois sa Force à un adversaire agrippé s'il réussit un test de lutte."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Création d’armes et armures magiques",
+                "Prix",
+                "33 165 po ;",
+                "Coût",
+                "16 655 po + 1 320 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Crevice de la seconde chance",
+        "description": [
+            "Dix pierres fines d’une valeur unitaire de 100 po ornent cette crevice +3. Une fois par semaine, le porteur de l’armure peut demander à ce qu’un jet d’attaque effectué contre lui soit rejoué. À noter que l’armure offre seulement une seconde chance, comme son nom l’indique, mais que le second résultat peut être pire que le premier (par exemple, en se traduisant par un coup critique). Le porteur de la crevice doit se décider avant que les dégâts ne soient déterminés."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "12 ;",
+                "Création d’armes et armures magiques",
+                "bénédiction",
+                "Prix",
+                "18 900 po ;",
+                "Coût",
+                "10 150 po + 700 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Croc-vipère",
+        "description": [
+            "Conçue par Hadrhune selon les spécifications de la Vipère Noire, ce qui en fait un objet magique de la Toile d'Ombre, cette dague de venin de l'assassin de corrosion +2 est un poignard noir à la lame incurvée et en dents de scie. Son porteur peut utiliser un effet d'empoisonnement (comme le sort DD 14) contre une créature touchée, 1 fois par jour. Le porteur peut même décider d'utiliser le pouvoir après avoir touché. Pour ce faire, il doit entreprendre une action libre, mais l'effet d'empoisonnement doit être utilisé au round où la dague frappe. De plus, l'arme ajoute +1 au DD des jets de Vigueur associés à l'attaque mortelle de l'assassin."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "modérée ;",
+                "NLS",
+                "15 ;",
+                "Création d’armes et armures magiques",
+                "brume acide",
+                "flèche acide de Melf",
+                ", tempête acide ou tempête vengeresse,",
+                "empoisonnement",
+                "Prix",
+                "50 302 po ;",
+                "Coût",
+                "25 302 po + 2 000 PX ;",
+                "Poids",
+                "1 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cuirasse de commandement",
+        "description": [
+            "Cette cuirasse +2 finement ouvragée dégage une puissante aura magique. Elle confère une grande prestance à son porteur, ce qui se traduit par un bonus d’aptitude de +2 sur tous les tests de Charisme, y compris les tests de renvoi des morts-vivants et les tests de compétences associées au Charisme. Le porteur obtient aussi un bonus de +2 sur sa valeur de Prestige. Les troupes alliées se trouvant à moins de 120 mètres de lui se sentent plus braves qu’en temps normal (par exemple, elles acceptent plus facilement d’aller affronter un terrible adversaire). Comme cet effet provient en grande partie de l’aspect distinctif de l’armure, le personnage ne peut pas en bénéficier s’il se cache ou s’il camoufle son apparence."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "15 ;",
+                "Création d’armes et armures magiques",
+                "charme-monstre de groupe",
+                "Prix",
+                "25 400 po ;",
+                "Coût",
+                "10 975 po + 850 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cuirasse de terreur",
+        "description": [
+            "Cette cuirasse en adamantium porte sur le torse le symbole d'un oeil grand ouvert entouré de rayons en mythral scintillant.",
+            "Cette armure fonctionne comme une cuirasse +1 en adamantium.",
+            "De plus, une fois par jour, au prix d'une action immédiate purement mentale, son porteur peut, juste après avoir été blessé par une attaque au corps à corps, activer le pouvoir de l'armure pour rendre l'ennemi l'ayant frappé effrayé pour 1 round. Sur un jet de Volonté réussi (DD 20), il est juste secoué."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                "frayeur",
+                "Prix",
+                "13 200 po ;",
+                "Poids",
+                "15 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cuirasse écarlate",
+        "description": [
+            "Cette cuirasse rouge est généralement décoré de lierres épineux. Il agit comme un harnois +3 et confère une résistance à la magie de 19 ainsi qu'un bonus de +2 en Force mais un malus de -2 en Sagesse.Lorsqu'un ennemi portant une arme dégainée est à portée de charge, le porteur de la cuirasse écarlate doit réussir un jet de Volonté (DD 15) ou devoir immédiatement chargé cet adversaire. Si plusieurs ennemis sont à portée, le plus proche est chargé. En cas d'égalité, le porteur décide lequel il charge."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                ", force du taureau ;",
+                "Prix",
+                "60 000 po ;",
+                "Poids",
+                "15 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Écailles du basilic",
+        "description": [
+            "Cette armure d'écaille +3 rend son porteur immunisé à la pétrification. De plus, trois par jour, il peut affecter un objet en pierre ou une créature pétrifiée d'un effet de Transmutation de la pierre en chair d'un simple contact."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "11 ;",
+                "Création d’armes et armures magiques",
+                "Transmutation de la pierre en chair",
+                "Prix",
+                "81 200 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Exoarmure",
+        "description": [
+            "Ce harnois +2 illithid est composé d'épaisses plaques métalliques renforcées et d'entretoises qui lui confèrent un air de carapace. (Une armure illithid confère à un porteur psionique un bonus d'intuition supplémentaire de +2 à la CA. L'exoarmure fonctionne alors sur le même principe qu'un harnais +4. Si une créature non psionique la revêt, il s'agit d'un harnois +3) Le porteur de l'exoarmure bénéficie également d'un bonus d'altération de +4 en Force et en Constitution."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "Transmutation",
+                "modérées ;",
+                "NLS",
+                "8 ;",
+                "Création d’armes et armures magiques",
+                "Création d’armes et armures psioniques",
+                ", créature psionique,",
+                "endurance de l’ours",
+                "force de taureau",
+                "Prix",
+                "81 650 po ;",
+                "Coût",
+                "41 650 po + 3 200 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Exosquelette",
+        "description": [
+            "Cette armure est conçue à partir d’un squelette mort-vivant. Elle recouvre la moitié supérieure du corps. Elle confère la même protection qu’une cuirasse +2 ainsi qu’une réduction des dégâts (5/contondant)."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                ", degré de maîtrise de 5 en Connaissances (religion),",
+                "animation des morts",
+                "Prix",
+                "49 500 po ;",
+                "Poids",
+                "15 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Harnois des profondeurs",
+        "description": [
+            "Ce harnois +1 s’orne de motifs représentant les vagues et les poissons. Le malus d’armure aux tests d’un harnois des profondeurs ne s’applique pas aux tests de Natation. Le porteur est capable de respirer sous l’eau et de parler avec toutes les créatures possédant un langage et respirant sous l’eau."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "11 ;",
+                "Création d’armes et armures magiques",
+                "don des langues",
+                "liberté de mouvement",
+                "respiration aquatique",
+                "Prix",
+                "24 650 po ;",
+                "Coût",
+                "17 150 po + 600 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Harnois en mithral de vitesse",
+        "description": [
+            "Par une action libre et jusqu’à dix fois par jour, le porteur de ce harnois en mithral +1 peut activer un effet semblable au sort rapidité pendant 1 round. En tant qu’armure de mithral, ses attributs sont les suivants : bonus de Dextérité maximal de +3, malus d’armure aux tests de –3 et risque d’échec des sorts profanes de 25%. Elle pèse 12,5 kg et est considérée comme une armure intermédiaire."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                "rapidité",
+                "Prix",
+                "26 500 po ;",
+                "Coût",
+                "18 500 po + 640 PX."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Harnois parasite",
+        "description": [
+            "Ce harnois +1 de couleur sombre a été conçue par des adeptes des créatures ineffables du Royaume Lointain. Mais depuis, certains guerriers apprécient la protection qu'elle offre pour un coût modique, du moins en or.",
+            "Lorsque cette armure est enfilée, elle inflige 2d4 dégâts perforants alors que des tentacules entrent dans les chairs du porteur. De plus, l''armure est capable de se nourrir de l'énergie vitale du porteur pour améliorer sa défense. Au prix d'une action rapide, le porteur du harnois parasite peut augmenter le bonus d'altération de de +1 à +5 pour une durée de 1 minute. Ce bonus est cumulatif, mais le bonus d'altération de l'armure ne peut dépasser +10. L'armure inflige 2d8 dégâts pour chaque point d'altération. Ces dégâts ne sont pas affectés par des résistances ou réductions des dégâts."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                "armure de mage",
+                "baiser du vampire",
+                "Prix",
+                "6 650 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Lâche protecteur",
+        "description": [
+            "Une fois par jour, le porteur de cette cuirasse +1 peut transférer les dégâts qui lui sont infligés par une attaque de corps à corps vers une autre créature que l’assaillant située dans un rayon de 30 mètres. Si cette créature réussit un jet de Vigueur (DD 16), elle ne subit aucun dégât et le porteur du lâche protecteur voit les siens doublés."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "7 ;",
+                "Création d’armes et armures magiques",
+                "protection d’autrui",
+                "Prix",
+                "11 350 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Linceul de fantôme",
+        "description": [
+            "Cet objet est un linceul dont on enveloppe communément les morts avant de les mettre en terre. Parfois, il a une allure spectrale et translucide. Le linceul de fantôme empêche de porter quelque autre armure. Il confère un bonus de parade de +4 à la CA et permet à celui qui le revêt de porter des attaques comme s’il jouissait d’une arme spectrale."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Création d’armes et armures magiques",
+                ", degré de maîtrise de 5 en Connaissances (religion),",
+                "création de mort-vivant",
+                "Prix",
+                "35 000 po ;",
+                "Poids"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Peau de l’anguille électrique",
+        "description": [
+            "Cette armure de peau flottante et graisseuse +2 est noir et semble sans cesse humide. Les adversaires touchant le personnage à mains nues, avec une arme naturelle ou avec une arme au corps à corps constituée majoritairement de métal (comme une épée, mais pas une lance) subissent 1d6 dégâts électrique. De plus, 3 fois par jour, le personnage peut infliger 5d6 dégâts électrique par une attaque de contact au corps à corps. S'il est sous l'eau, il peut à la place choisir de créé un choc électrique infligeant 2d6 dégâts d'électricité dans un rayon de 1,50 mètres à toutes les créatures sauf le porteur."
+        ],
+        "infos": {
+            "data": [
+                "Évocation",
+                "modérée ;",
+                "NLS",
+                "9 ;",
+                "Création d’armes et armures magiques",
+                "graisse",
+                "liberté de mouvement",
+                "décharge électrique",
+                "Prix",
+                "23 015 po ;",
+                "Coût",
+                "11 590 po + 914 XP."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Peau de vampire",
+        "description": [
+            "Cette armure est conçue à partir d’une couche de peau de vampire. Les résidus nécromantiques de l’objet lui assurent toutefois une grande souplesse. En plus d’agir comme une armure de cuir cloutée +3, la peau de vampire confère à celui qui la porte une réduction des dégâts (5/argent et magie)."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Création d’armes et armures magiques",
+                ", degré de maîtrise de 5 en Connaissances (religion),",
+                "création de mort-vivant",
+                "Prix",
+                "63 325 po ;",
+                "Poids",
+                "10 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Peau de zombi",
+        "description": [
+            "Cette armure est conçue à l’aide d’une couche de peau de zombi. Bien qu’elle soit rigide, les articulations offrent un minimum de souplesse. Cette armure de peau +1 confère à celui qui la porte une réduction des dégâts (5/tranchant)."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d’armes et armures magiques",
+                ", degré de maîtrise de 5 en Connaissances (religion),",
+                "animation des morts",
+                "Prix",
+                "46 315 po ;",
+                "Poids",
+                "12,5 kilos."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Voile d’ombre",
+        "description": [
+            "Le voile d’ombre ressemble vaguement à une longue cape à capuche. Il empêche de porter quelque autre armure mais confère un bonus de parade de +2 à la CA. Toute créature qui le porte se cache facilement dans les ombres et bénéficie alors d’un camouflage (20 % de chances de la rater) contre les créatures dénuées de vision dans le noir, de vision aveugle ou de quelque autre pouvoir ne s’appuyant pas sur la vue.",
+            "Les boucliers qui suivent possèdent systématiquement les propriétés détaillées dans leur description."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Création d’armes et armures magiques",
+                ", degré de maîtrise de 5 en Connaissances (religion),",
+                "création de mort-vivant",
+                "Prix",
+                "10 000 po ;",
+                "Poids"
+            ]
+        },
+        "ul": null,
+        "table": [
+            [
+                8.0,
+                "<table border=\"1\"><tbody><tr><th>Mineur</th><th>Interm&#233;diaire</th><th>Puissant</th><th>Bouclier sp&#233;cial<b></b></th><th>Prix de vente</th></tr><tr><td>01&#8211;30</td><td>01&#8211;20</td><td>&#8212;</td><td>Rondache en &#233;b&#233;nite</td><td>203 po</td></tr><tr><td>31&#8211;80</td><td>21&#8211;45</td><td>&#8212;</td><td>&#201;cu en &#233;b&#233;nite</td><td>257 po</td></tr><tr><td>81&#8211;95</td><td>46&#8211;70</td><td>&#8212;</td><td>&#201;cu en mithral</td><td>1 020 po</td></tr><tr><td>96&#8211;100</td><td>71&#8211;85</td><td>01&#8211;20</td><td>Bouclier des arcanes</td><td>3 153 po</td></tr><tr><td>&#8212;</td><td>86&#8211;90</td><td>21&#8211;40</td><td>Bouclier de la manticore</td><td>5 580 po</td></tr><tr><td>&#8212;</td><td>91&#8211;95</td><td>41&#8211;60</td><td>Bouclier du lion</td><td>9 170 po</td></tr><tr><td>&#8212;</td><td>96&#8211;100</td><td>61&#8211;80</td><td>Bouclier ail&#233;</td><td>17 257 po</td></tr><tr><td>&#8212;</td><td>&#8212;</td><td>81&#8211;100</td><td>Bouclier phagocyte</td><td>50 170 po</td></tr></tbody></table>"
+            ]
+        ]
+    }
+]

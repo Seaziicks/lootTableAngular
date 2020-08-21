@@ -1,0 +1,132 @@
+{
+    "titles": [
+        "1d100",
+        "Inconvénient"
+    ],
+    "data": [
+        [
+            "01–04",
+            "Les cheveux du personnage poussent d’une trentaine de centimètres (ne se produit qu’une fois)."
+        ],
+        [
+            "05–09",
+            "Le personnage rapetisse ou grandit d’une quinzaine de centimètres (une chance sur deux ; ne se produit qu’une fois)."
+        ],
+        [
+            "10–13",
+            "La température est plus froide autour de l’objet (–5° C)."
+        ],
+        [
+            "14–17",
+            "La température est plus chaude autour de l’objet (+5° C)."
+        ],
+        [
+            "18–21",
+            "Les cheveux du personnage changent de couleur."
+        ],
+        [
+            "22–25",
+            "La peau du personnage change de couleur."
+        ],
+        [
+            "26–29",
+            "Le personnage acquiert une marque distinctive (tatouage, aura lumineuse, etc.)."
+        ],
+        [
+            "30–32",
+            "Le personnage change de sexe."
+        ],
+        [
+            "33–34",
+            "Le personnage change de race ou d’espèce."
+        ],
+        [
+            "35",
+            "Le personnage contracte une maladie (déterminée aléatoirement) que rien ni personne ne peut soigner."
+        ],
+        [
+            "36–39",
+            "L’objet émet continuellement un bruit gênant (gémissements, pleurs, cris, jurons, insultes, etc.)."
+        ],
+        [
+            "40",
+            "L’objet a l’air ridicule (couleur outrancière, forme risible, aura rose bonbon, etc.)."
+        ],
+        [
+            "41–45",
+            "Le personnage devient extrêmement possessif pour ce qui est de l’objet."
+        ],
+        [
+            "46–49",
+            "Le personnage a une peur panique de perdre l’objet ou qu’il lui arrive quelque chose."
+        ],
+        [
+            "50–51",
+            "Le personnage change d’alignement."
+        ],
+        [
+            "52–54",
+            "Le personnage attaque la créature la plus proche (5% de chances chaque jour, à un moment aléatoire de la journée)."
+        ],
+        [
+            "55–57",
+            "Le personnage est étourdi pendant 1d4 rounds dès que l’objet cesse de fonctionner (ou aléatoirement, 1 fois/jour)."
+        ],
+        [
+            "58–60",
+            "Le personnage voit trouble en permanence (–2 aux jets d’attaque, de sauvegarde et de compétences nécessitant de voir)."
+        ],
+        [
+            "61–64",
+            "Le personnage acquiert un niveau négatif."
+        ],
+        [
+            "65",
+            "Le personnage acquiert deux niveaux négatifs."
+        ],
+        [
+            "66–70",
+            "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point d’Intelligence (tous les jours)."
+        ],
+        [
+            "71–75",
+            "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Sagesse (tous les jours)."
+        ],
+        [
+            "76–80",
+            "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Charisme (tous les jours)."
+        ],
+        [
+            "81–85",
+            "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Constitution (tous les jours)."
+        ],
+        [
+            "86–90",
+            "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Force (tous les jours)."
+        ],
+        [
+            "91–95",
+            "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Dextérité (tous les jours)."
+        ],
+        [
+            "96",
+            "Le personnage se métamorphose en une créature donnée (5% de chances par jour, toujours la même)."
+        ],
+        [
+            "97",
+            "Le personnage ne peut plus lancer de sorts profanes."
+        ],
+        [
+            "98",
+            "Le personnage ne peut plus lancer de sorts divins."
+        ],
+        [
+            "99",
+            "Le personnage ne peut plus lancer le moindre sort."
+        ],
+        [
+            "100",
+            "Au choix : choisissez un inconvénient qui vous paraisse convenir à la nature de l’objet ou créez-en un autre."
+        ]
+    ]
+}

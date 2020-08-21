@@ -1,0 +1,1010 @@
+[
+    {
+        "title": "Amulette de fragilité",
+        "description": [
+            "Cette amulette dorée ressemble à une Amulette de Constitution et fonctionne comme tel jusqu'à ce que le personnage re\u00c3\u00a7oive des dég\u00c3\u00a2ts par une créature d'un FP égal ou supérieur ou sien. A ce moment et par la suite, l'amulette impose un malus de -6 en Constitution à son porteur. Une fois la malédiction activer, l'amulette ne peut plus \u00c3\u00aatre enlevé sauf par un sort de Délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "16 ;",
+                "Création d'objets merveilleux",
+                "endurance de l'ours",
+                "malédiction",
+                "Prix",
+                "1 300 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Amulette de localisation",
+        "description": [
+            "Cet objet se présente généralement sous forme de pendentif ou de broche. Si on l'étudie à l'aide de moyens magiques, il semble protéger contre la scrutation (ce qui inclut les objets tels que les boules de cristal) et les sorts (ou effets) de détection, ou d'influence comme détection de pensées, ou la télépathie. Il se fait passer pour une amulette d'antidétection. En réalité, l'amulette inflige à son porteur un malus de \u00e2\u0080\u009310 sur tous les jets de sauvegarde contre les sorts de divination."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "10 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "Prix",
+                "1 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anneau de gaucherie",
+        "description": [
+            "Cet anneau fonctionne exactement comme un anneau de feuille morte, mais il a également pour effet de rendre qui le porte extr\u00c3\u00aamement maladroit : le personnage subit un malus de \u00e2\u0080\u00934 à la Dextérité et a 20% de chances de rater ses incantations de sorts profanes si celles-ci nécessitent des composantes gestuelles (ce pourcentage s'ajoute à un éventuel risque d'échec des sorts profanes si l'aventurier porte une armure)."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Création d'anneaux magiques",
+                "feuille morte",
+                "malédiction",
+                "Prix",
+                "500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Anneau de respiration aqueuse",
+        "description": [
+            "Cet anneau semble fait de corail et ressemble à des poissons se mordant la queue.",
+            "L'anneau de respiration aqueuse permet à son utilisateur de respiration normalement sous l'eau. néanmoins, dès que le personne veut revenir à la surface, il devient incapable de respirer à nouveau à l'air libre. Il ne peut rester hors de l'eau que aussi longtemps qu'il était capable de rester dans l'eau avant la malédiction de l'anneau.",
+            "Une fois l'anneau porté sous l'eau, seul un sort de délivrance des malédictions permet de l'enlever. Sinon, il est enlevable normalement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "12 ;",
+                "Création d'anneaux magiques",
+                "liberté de mouvement",
+                "respiration aquatique",
+                "Prix",
+                "6 000 po ;",
+                "Poids"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure de fureur",
+        "description": [
+            "Ce harnois +1 semble fonctionner comme une cuirasse de commandement. En réalité, il impose à son porteur un malus de \u00e2\u0080\u00934 en Charisme, et tous les ennemis distants de moins de 100 mètres bénéficient d'un bonus de moral de +1 au jet d'attaque quand ils s'en prennent à lui. Ni le personnage, ni ses adversaires ne sont conscients de cet effet (en d'autres termes, l'aventurier ne sait pas que l'armure est la cause de ses problèmes relationnels, pas plus que ses ennemis ne comprennent pourquoi ils éprouvent une telle haine à son égard)."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Création d'armes et armures magiques",
+                "malédiction",
+                "Prix",
+                "1 600 po ;",
+                "Poids",
+                "25 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Armure d'attraction des projectiles",
+        "description": [
+            "En cas d'analyse magique, cette armure donne l'impression d'\u00c3\u00aatre un harnois +3. Elle s'accompagne bien du bonus indiqué, mais elle est maudite. Si la protection qu'elle confère au corps à corps est normale pour une armure +3, elle présente l'inconvénient d'attirer les projectiles comme un aimant. Le porteur subit un malus de \u00e2\u0080\u009315 à la CA contre les attaques des armes à distance. La véritable nature de l'armure est révélée quand le personnage est pris pour cible par des ennemis, pas si on lui jette quelques pierres afin de s'assurer que le harnois n'est pas maudit."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Création d'armes et armures magiques",
+                "malédiction",
+                "Prix",
+                "9 000 po ;",
+                "Poids",
+                "25 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Balai frappeur",
+        "description": [
+            "Ce balai a l'air on ne peut plus anodin, si ce n'est que les sorts de détection révèlent qu'il est magique. Il semble \u00c3\u00aatre un balai volant si on l'examine à l'aide des sorts appropriés, du moins tant qu'on n'essaye pas de s'en servir. \u00c3\u0080 partir de ce moment, le balai frappeur se montre tel qu'il est : un objet extr\u00c3\u00aamement malfaisant.",
+            "Si un ordre tel que \u00e2\u0080\u009c Décolle \u00e2\u0080\u009d, \u00e2\u0080\u009c Envole-toi \u00e2\u0080\u009d, ou encore \u00e2\u0080\u009c Yaaa ! \u00e2\u0080\u009d lui est donné, le balai quitte le sol et exécute instantanément un looping serré, faisant tomber son passager d'une hauteur de (1d4+5) x 30 centimètres. La chute n'inflige aucun dég\u00c3\u00a2t, mais le balai se rue aussit\u00c3\u00b4t sur l'aventurier, qu'il frappe violemment de son manche tout en essayant de l'aveugler à l'aide de son faisceau de paille.",
+            "Le balai dispose d'un total de quatre attaques par round (deux coups de manche et deux coups de faisceau). Il bénéficie d'un bonus de +5 à tous les jets d'attaque. Le faisceau n'occasionne aucun dég\u00c3\u00a2t mais aveugle la cible pendant 1 round en cas de coup au but. Quant au manche, il inflige 1d6 points de dég\u00c3\u00a2ts à chaque coup. Le balai frappeur a une CA de 13, 18 points de résistance et une solidité de 4."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "10 ;",
+                "Création d'objets merveilleux",
+                "vol",
+                "animation d'objets",
+                "Prix",
+                "5 200 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bandeau d'hostilité",
+        "description": [
+            "Ce simple bandeau fonctionne comme un bandeau d'Intelligence +4. Néanmoins, si le porteur utilise un sort, une faculté ou un effet de Convocation ou d'Appel, la créature invoquée est hostile au porteur et l'attaque au mieux de ses capacités. Une fois que cette fonction est activée, le bandeau ne peut plus \u00c3\u00aatre enlevé sauf par un sort de Délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Création d'objets merveilleux",
+                "charme-monstre",
+                "ruse du renard",
+                "Prix",
+                "13 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bandeau d'idiotie",
+        "description": [
+            "Cet objet merveilleux a tout l'air d'un simple bandeau et les sorts de détection ne révèlent rien de plus que son aura magique. Dès qu'il le met, son porteur subit un malus de -10 en Intelligence et en Sagesse (jusqu'à un minimum de 3), oubliant ainsi les sorts et les connaissances magiques découlant de ces valeurs de caractéristiques.",
+            "Le bandeau ne. peut \u00c3\u00aatre \u00c3\u00b4té que si la victime bénéficie d'un sort de délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "13 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "permanence",
+                "Prix",
+                "5 500 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bottes ailées noires",
+        "description": [
+            "Ces bottes fonctionnent en tout point comme des",
+            ", si ce n'est que les ailes qui en sortent sont noirs.",
+            "De plus, lorsqu'elles sont utilisées, il y a 1% de chance cumulatif chaque round qu'elles cessent de fonctionner, laissant chuter leur porteur.",
+            "Une fois qu'elles ont ainsi cesser de fonctionner, les bottes ailées noires sont inertes pendant 24 heures, après quoi elles peuvent de nouveau \u00c3\u00aatre utilisées et les chances d'arr\u00c3\u00aat sont réinitialisées."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d'objets merveilleux",
+                "vol",
+                "Prix",
+                "12 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bottes de charge ratée",
+        "description": [
+            "Ces bottes ressemblent à et fonctionnent comme des",
+            "Mais lorsque leur porteur essaie de courir, leur porteur doit réussir un test d'Acrobaties (DD 20 ) ou tomber au sol au milieu du placement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Création d'objets merveilleux",
+                "grand pas",
+                "Prix",
+                "2 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bottes de danse effrénée",
+        "description": [
+            "Au départ, ces bottes fonctionnent comme une autre paire de bottes magiques. Mais dès que leur porteur se retrouve au combat (ou dès qu'il essaye de fuir), elles entravent ses déplacements en le for\u00c3\u00a7ant à danser frénétiquement, comme s'il était affecté par le sort danse irrésistible d'Otto. Seule une délivrance des malédictions permet de se débarrasser des bottes une fois leur véritable nature connue."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "16 ;",
+                "Création d'objets merveilleux",
+                "danse irrésistible d'Otto",
+                "Prix",
+                "30 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Boule de cristal asservissante",
+        "description": [
+            "Rien ne permet de faire la différence entre cet objet maudit et une véritable boule de cristal. Pourtant, quiconque cherche à s'en servir est automatiquement fasciné pendant 1d6 minutes et re\u00c3\u00a7oit une suggestion par télépathie (jet de Volonté DD 19 pour annuler).",
+            "S'il rate son jet de sauvegarde, l'utilisateur est persuadé d'avoir visualisé la scène ou la créature qui l'intéressait, mais en réalité, il est tombé sous la coupe d'un puissant magicien, d'une liche, ou m\u00c3\u00aame d'une entité originaire d'un autre plan (on doit choisir l'identité du créateur de la boule, en fonction de sa campagne). \u00c3\u0080 chaque nouvelle utilisation, le personnage est un peu plus asservi par son lointain ma\u00c3\u00aetre. On doit décider si le processus est lent ou rapide, en fonction de la force de caractère de l'individu et des conditions dans lesquelles la boule de cristal asservissante a été découverte. \u00c3\u0080 noter que le personnage n'a jamais conscience de ce qui lui arrive."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "modérée ;",
+                "NLS",
+                "17 ; cet objet est considéré comme un artefact rare et ne peut pas \u00c3\u00aatre créé ;",
+                "Poids",
+                "3,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Bracelets de vulnérabilité",
+        "description": [
+            "Ces bracelets semblent \u00c3\u00aatre des bracelets d'armure +5 et fonctionnent en effet comme tel jusqu'à ce que leur porteur soit attaqué par un adversaire dont le facteur de puissance (FP) est supérieur ou égal à son niveau. \u00c3\u0080 partir de ce moment, les bracelets lui infligent un malus de \u00e2\u0080\u00935 à la CA. Une fois que la véritable nature de ces objets est révélée, on ne peut s'en débarrasser que gr\u00c3\u00a2ce au sort délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "modérée ;",
+                "NLS",
+                "16 ;",
+                "Création d'objets merveilleux",
+                "armure de mage",
+                "malédiction",
+                "Prix",
+                "1 200 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Brassards de convocation lapine",
+        "description": [
+            "Ces brassards sont décorés de symboles représentant plusieurs monstres stylisés, souvent des dragons, des anges, des fiélons et des élémentaires. Ils permettent de lancer une fois par jour Convocation de monstres II au niveau 5 de lanceur de sorts, une fois par jour.",
+            "A partir de leur seconde utilisation par leur porteur, ils convoquent à la place 1d4 lapins. De plus, tout sort, pouvoirs magiques ou effet des sous-écoles Convocation ou Appel lancés par le porteur fera appara\u00c3\u00aetre à la place de la ou des créatures prévues 1d4 lapins. Cela affecte y compris les effets des objets magiques du personnage ou ses aptitudes de classe.",
+            "Les brassards ne peuvent \u00c3\u00aatre \u00c3\u00b4tés que si la victime bénéficie d'un sort de délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d'objets merveilleux",
+                "Convocation de monstres 2",
+                "Prix",
+                "3 300 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Brassards d'immobilité",
+        "description": [
+            "Cette paire de brassards maudits confèrent un bonus de résistance de +2 aux jets de sauvegarde, mais un malus de -2 à la CA. Une fois mis, un sort de délivrance des malédictions est nécessaire pour les enlever."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "faible ;",
+                "NLS",
+                "6 ;",
+                "Création d'objets merveilleux",
+                "armure de mage",
+                "malédiction",
+                "résistance",
+                "Prix",
+                "4 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Broche du scarabée tueur",
+        "description": [
+            "Cette broche a l'air bénéfique, mais il suffit de la tenir pendant 1 round ou de la placer pendant 1 minute dans un sac, ou un autre contenant non rigide, proche (moins de 30 centimètres) d'un individu à sang chaud pour qu'elle se transforme en horrible créature qui traverse le cuir et s'enfonce dans les chairs de sa victime pour atteindre son c\u00c5\u0093ur en 1 round. La mort est alors automatique. Si le personnage réussit un jet de Réflexes (DD 25), il réussit à attraper le scarabée et à le jeter au loin avant que celui-ci ne disparaisse dans ses chairs, mais il subit tout de m\u00c3\u00aame 3d6 points de dég\u00c3\u00a2ts. Le scarabée redevient une broche quand il n'est plus au contact d'un \u00c3\u00aatre vivant. \u00c3\u0080 noter qu'il ne se transforme pas si on le range dans une bo\u00c3\u00aete en bois, os, métal ou ivoire. Il est donc possible de le déplacer sans risque pour peu que l'on prenne les précautions nécessaires."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "19 ;",
+                "Création d'objets merveilleux",
+                "exécution",
+                "Prix",
+                "80 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Cape empoisonnée",
+        "description": [
+            "Cette cape est le plus souvent en laine, m\u00c3\u00aame si l'on en trouve parfois en cuir. Détection du poison permet de remarquer que le tissu est imprégné d'une substance toxique particulièrement sournoise. On peut la toucher et la manipuler sans crainte, mais quiconque la rev\u00c3\u00aat meurt dans la seconde qui suit, à moins de réussir un jet de Vigueur de DD 28.",
+            "Une fois la cape empoisonnée enfilée, on ne peut l'\u00c3\u00b4ter qu'à l'aide de délivrance des malédictions, ce qui annihile toutes ses propriétés magiques. Une fois la cape enlevée, sa victime peut \u00c3\u00aatre ramenée à la vie gr\u00c3\u00a2ce à rappel à la vie ou résurrection, mais seulement après avoir lancé neutralisation du poison sur sa dépouille pour chasser le toxique de son organisme."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Création d'objets merveilleux",
+                "empoisonnement",
+                ", soit souhait limité, soit miracle ;",
+                "Prix",
+                "62 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Casque de changement d'alignement",
+        "description": [
+            "Ce casque en métal a l'air on ne peut plus anodin, mais sa malédiction prend effet dès qu'on le met (jet de Volonté DD 15 pour annuler). Si le personnage rate son jet de sauvegarde, son alignement est radicalement modifié, chaque extr\u00c3\u00aame passant à l'opposé (la composante loyale devient chaotique, la composante bonne devient mauvaise, et inversement ; un individu LB devient donc CM). Un enchantement accompagne ce changement, avec pour conséquence que l'aventurier est tout à fait satisfait de son nouvel alignement. Un personnage ayant réussi son jet de sauvegarde peut continuer à porter le casque sans souffrir des effets de sa malédiction, mais s'il l'enlève et le remet plus tard, il doit effectuer un nouveau jet de sauvegarde. La malédiction ne fonctionne qu'une fois par personnage, c'est-à-dire qu'on ne peut retrouver son alignement d'origine en mettant le casque une deuxième fois.",
+            "Seul un souhait ou un miracle peut rendre au porteur son alignement d'origine. Le personnage ne fait rien pour le récupérer par ses actes, bien au contraire (une telle idée lui est insoutenable). Si la classe de l'aventurier lui impose un alignement particulier, il lui faudra faire pénitence après s'\u00c3\u00aatre débarrassé de la malédiction pour pouvoir la retrouver. Une fois qu'un casque de changement d'alignement a fonctionné, il perd toutes ses propriétés magiques."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "12 ;",
+                "Création d'objets merveilleux",
+                ", niveau 12 de lanceur de sorts ;",
+                "Prix",
+                "4 000 po ;",
+                "Poids",
+                "1,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Ceinture de force du chat",
+        "description": [
+            "Cette large ceinture en cuir cloutée est décorée d'images de lion et apparait \u00c3\u00aatre une ceinture de force du géant. Il fonctionne ainsi jusqu'à ce que le porteur attaque une créature dont le Fp est égal ou supérieur au sien. A partir de là, les images de lion se transforment en chat domestique et la ceinture impose un malus de -6 en Force. Une fois la malédiction activée, la ceinture ne peut plus \u00c3\u00aatre enlevé qu'à l'aide d'une Délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Création d'objets merveilleux",
+                ", force du taureau,",
+                "malédiction",
+                "Prix",
+                "1 300 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Charme d'infection",
+        "description": [
+            "Cette pierre gravée n'a manifestement qu'une valeur limitée. Quiconque la garde en sa possession pendant 24 heures contracte une terrible infection provoquant une diminution permanente d'1 point de Dextérité, de Constitution et de Charisme chaque semaine. Le médaillon (et l'infection) ne peut \u00c3\u00aatre retiré que par délivrance des malédictions, suivi de guérison des maladies et enfin de guérison supr\u00c3\u00aame, souhait limité, souhait ou miracle. Il est également possible de le sauver en broyant un charme de santé et en répandant sur lui la poudre ainsi obtenue (une action complexe), ce qui réduit le charme d'infection en poussière."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "légère ;",
+                "NLS",
+                "10 ;",
+                "Création d'objets merveilleux",
+                "contagion",
+                "Prix",
+                "17 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Collier d'esclavage",
+        "description": [
+            "Ce collier de cuir noir impose à son porteur un malus de -10 aux jets de sauvegarde contre les effets de terreur ainsi qu'aux tests de niveau opposé à un test d'Intimidation"
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "modéré ;",
+                "NLS",
+                "7 ;",
+                "Création d'objets merveilleux",
+                "charme-monstre",
+                "Prix",
+                "8 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Collier d'obéissance",
+        "description": [
+            "Ce collier est un simple anneau en fer qui se porte autour du cou. Son porteur re\u00c3\u00a7oit un malus de -2 à tous ses tests de Volonté."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "faible ;",
+                "NLS",
+                "3 ;",
+                "Création d'objets merveilleux",
+                "anathème",
+                "Prix",
+                "3 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Collier étrangleur",
+        "description": [
+            "Ce collier a l'air d'\u00c3\u00aatre un bijou précieux, et seul un sort aussi puissant que miracle ou souhait permet de l'identifier comme un objet maudit. Dès que quelqu'un l'attache à son cou, il se resserre aussit\u00c3\u00b4t, infligeant 6 points de dég\u00c3\u00a2ts par round à l'infortuné personnage. Seuls les sorts souhait limité, souhait ou miracle permettent de s'en débarrasser. Il continue m\u00c3\u00aame de serrer la gorge de sa victime après sa mort, ne la l\u00c3\u00a2chant qu'une fois qu'elle s'est transformée en squelette desséché (ce qui prend environ un mois). \u00c3\u0080 ce moment, le collier redevient normal, dans l'attente d'une autre proie."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "puissante ;",
+                "NLS",
+                "18 ;",
+                "Création d'objets merveilleux",
+                "exécution",
+                "Prix",
+                "60 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Encens d'obsession",
+        "description": [
+            "Ces blocs d'encens ressemblent à s'y méprendre à de l'encens de méditation. Si un pratiquant de la magie divine prépare ses sorts après avoir fait br\u00c3\u00bbler un de ces blocs, la fumée dégagée le persuade que ses sorts sont les plus puissants qui soient, tout en l'encourageant à les utiliser aussi souvent que possible pour le démontrer. Il fait donc appel à sa magie autant qu'il le peut, m\u00c3\u00aame quand cela ne sert à rien. Ce comportement obsessionnel se poursuit jusqu'à ce que le personnage ait lancé tous ses sorts ou pendant un total de 24 heures."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "modéré ;",
+                "NLS",
+                "6 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "Prix",
+                "200 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089pée de berserker",
+        "description": [
+            "Cette arme se comporte en tout point comme une épée à deux mains +2, sauf au combat. Dès que son possesseur doit se battre, il le fait comme un berserker, sans avoir le contr\u00c3\u00b4le de ses actes (il gagne les avantages et subit les inconvénients dus à la rage de barbare). Le personnage attaque la plus proche créature et continue de se battre jusqu'à la mort ou l'évanouissement, ou jusqu'à ce qu'il n'y ait plus le moindre \u00c3\u00aatre vivant à moins de 9 mètres de lui. La plupart des gens considèrent cette épée comme maudite, mais pour certains barbares, c'est un véritable don des dieux de la guerre."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d'armes et armures magiques",
+                "rage",
+                "malédiction",
+                "Prix",
+                "17 500 po ;",
+                "Poids",
+                "4 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "\u00c3\u0089pée \u00e2\u0080\u00932, maudite",
+        "description": [
+            "Cette épée longue dégage une aura magique et para\u00c3\u00aet très efficace à l'entra\u00c3\u00aenement, mais dès qu'on l'utilise au combat, elle inflige un malus de \u00e2\u0080\u00932 au jet d'attaque.",
+            "Les dég\u00c3\u00a2ts sont eux aussi réduits de 2 points par coup, sans toutefois pouvoir descendre en dessous de 1 point de dég\u00c3\u00a2ts  par coup. Au bout d'une semaine, l'épée force l'aventurier qui la possède à l'employer, elle, plut\u00c3\u00b4t que toute autre arme. M\u00c3\u00aame si le personnage décide d'utiliser une autre arme, c'est vers l'épée que sa main est attirée, et c'est elle qu'il dégaine à tous les coups. On ne peut se débarrasser de cette arme envahissante que gr\u00c3\u00a2ce à un sort tel que souhait limité, souhait ou miracle."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "puissante ;",
+                "NLS",
+                "15 ;",
+                "Création d'armes et armures magiques",
+                "malédiction",
+                ", soit souhait, soit miracle ;",
+                "Prix",
+                "1 500 po ;",
+                "Poids",
+                "2 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Filet aquatique",
+        "description": [
+            "Ce filet confère un bonus de +3 au jet d'attaque, mais ne peut \u00c3\u00aatre utilisé que sous l'eau, ce qui en fait plus un objet assorti d'une condition d'utilisation restrictive qu'un objet maudit. Sous l'eau, son possesseur peut lui commander d'aller attraper la créature désignée, auquel cas il se projette de lui-m\u00c3\u00aame jusqu'à elle (9 mètres maximum)."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d'armes et armures magiques",
+                "liberté de mouvement",
+                "Prix",
+                "10 000 po ;",
+                "Poids",
+                "5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Flasque maudite",
+        "description": [
+            "Selon le modèle, cet objet ressemble à une flasque, une carafe ou une petite urne normale. Elle pourrait contenir un liquide ou émettre de la fumée. La première fois que quelqu'un la débouche, quiconque se trouve à moins de 9 mètres doit réussir un jet de Volonté (DD 17) pour ne pas \u00c3\u00aatre maudit. Ce mauvais sort se traduit par un malus de \u00e2\u0080\u00932 aux jets d'attaque, de sauvegarde et aux tests de compétence jusqu'à ce que la créature affectée bénéficie de délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "modérée ;",
+                "NLS",
+                "7 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "Prix",
+                "2 100 po ;",
+                "Poids",
+                "1 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Flèches de br\u00c3\u00bblure",
+        "description": [
+            "Les t\u00c3\u00aate de ses flèches ressemblent à des flammes, oranges et rouge. Déguisée par une aura magique de Nystul, ces flèches apparaissent comme étant de sumples flèches +1. Ces flèches explosent dès qu'elles sont bandées sur un arc, infligeant 2d6 dég\u00c3\u00a2ts de feu à l'archer et à l'arc (DD 18 Réflexes, 1/2). De plus, si le jet de Réflexes échoue, l'explosion coupe la corde de l'arc, le rendant inutilisable jusqu'à ce qu'elle soit changée."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d'armes et armures magiques",
+                "mains br\u00c3\u00bblantes",
+                ", aura magique de Nystul ;",
+                "Prix",
+                "100 po ;",
+                "Poids"
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Gants de maladresse",
+        "description": [
+            "Ces gants peuvent \u00c3\u00aatre en cuir souple ou en métal (mailles ou plaques, selon le type d'armure auquel ils sont censés s'intégrer). S'ils sont légers, ils ressemblent à des gants de Dextérité. Dans le cas contraire (cuir rigide ou métal), tout laisse penser qu'il s'agit de gantelets d'ogre. Ils se comportent en effet comme les gants ou gantelets qu'ils semblent \u00c3\u00aatre jusqu'à ce que leur porteur se retrouve en situation de vie ou de mort, moment auquel leur malédiction se déclenche. Le personnage devient alors incroyablement maladroit et a 50% de chances par round de l\u00c3\u00a2cher ce qu'il tient dans ses deux mains. Les gants réduisent également de 2 points la Dextérité de leur porteur. Une fois la malédiction activée, on ne peut s'en débarrasser qu'à l'aide d'un sort tel que délivrance des malédictions, souhait ou miracle."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "7 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "Prix",
+                "1 300 po ;",
+                "Poids",
+                "négligeable pour les souples, 1 kg chacun pour les rigides."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Grimoire de vacuité",
+        "description": [
+            "De prime abord, cet ouvrage a l'air de traiter d'un sujet peu intéressant. Toute personne ouvrant le livre et lisant ne serait-ce qu'un mot doit effectuer deux jets de Volonté (DD 15 chacun). Si le premier est raté, l'aventurier subit une diminution permanente de 1 point d'Intelligence, s'il rate le second, il subit une diminution permanente de 2 points de Sagesse. Pour détruire le livre, il faut le br\u00c3\u00bbler tout en lan\u00c3\u00a7ant délivrance des malédictions. Si le grimoire est placé à c\u00c3\u00b4té d'autres ouvrages, son aspect se modifie instantanément pour qu'il soit impossible de le différencier des autres."
+        ],
+        "infos": {
+            "data": [
+                "Enchantement",
+                "puissant ;",
+                "NLS",
+                "20 ;",
+                "Création d'objets merveilleux",
+                "débilité",
+                "Prix",
+                "6 000 po ;",
+                "Poids",
+                "2,5 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Lance tra\u00c3\u00aetresse",
+        "description": [
+            "Cette arme a toutes les caractéristiques d'une lance +2, mais chaque fois que son propriétaire l'utilise au corps à corps et qu'il obtient un 1 naturel au jet d'attaque, elle le frappe lui, au lieu de son adversaire. Chaque fois que la malédiction se déclenche, la hampe de la lance se tord et le fer vient automatiquement se ficher dans le dos du personnage, lui infligeant des dég\u00c3\u00a2ts normaux. La malédiction peut également se déclencher si la lance est jetée, mais dans ce cas, l'aventurier subit le double des dég\u00c3\u00a2ts normaux s'il obtient un 1 naturel au jet d'attaque."
+        ],
+        "infos": {
+            "data": [
+                "\u00c3\u0089vocation",
+                "modérée ;",
+                "NLS",
+                "10 ;",
+                "Création d'armes et armures magiques",
+                "malédiction",
+                "Prix",
+                "7 500 po ;",
+                "Poids",
+                "3 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Lunettes de cécité nocturne",
+        "description": [
+            "Bien qu'elles apparaissent exactement comme une paire de lunettes de vision dans le noir, cet objet maudit a un effet opposé. Elles confèrent la vision dans le noir sur 18 m. Mais dès que le porteur tente d'attaquer une créature en utilisant la vision dans le noir, le porteur devient aveugle sauf dans une lumière vive. Une fois la malédiction activée, elles ne peuvent \u00c3\u00aatre enlevées sauf par un sort de Délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "puissante ;",
+                "NLS",
+                "16 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "vision dans le noir",
+                "Prix",
+                "1000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Masque de mort",
+        "description": [
+            "Ce masque ressemble toujours à une autre masque enchanté. néanmoins, une fois porté, il devient extr\u00c3\u00aamement chaud et inflige 1d6+7 dég\u00c3\u00a2ts de feu par round à son porteur (pas de jet de sauvegarde). De plus, il est impossible de l'enlever tant que son porteur est vivant à moins d'un sort de Délivrance des malédictions."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "7 ;",
+                "Création d'objets merveilleux",
+                "bouclier de feu",
+                "Prix",
+                "28 000 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Masse vampire",
+        "description": [
+            "Cette masse d'armes lourde +3 doit \u00c3\u00aatre couverte de sang tous les jours, sans quoi son bonus dispara\u00c3\u00aet (jusqu'à son prochain bain d'hémoglobine). Son possesseur doit réussir chaque jour un jet de Volonté (DD 13), sous peine de devenir chaotique mauvais."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d'armes et armures magiques",
+                ", niveau 9 de lanceur de sorts, alignement chaotique mauvais ;",
+                "Prix",
+                "16 000 po ;",
+                "Poids",
+                "4 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Médaillon d'émission de pensées",
+        "description": [
+            "Cet objet est presque identique au médaillon des pensées, m\u00c3\u00aame pour ce qui est de son mode de fonctionnement. Le problème étant que les pensées captées par son possesseur sont vagues et déformées, à tel point qu'un jet de Volonté (DD 15) est nécessaire pour les comprendre. De plus, ce que le personnage prend pour des pensées d'autrui ne sont en réalité que des chimères créées par le médaillon. Celles-ci semblent toujours plausibles, à tel point que le porteur du médaillon a de fortes chances de se laisser abuser par leur teneur. Et surtout, sans que l'aventurier s'en rende compte, le médaillon maudit émet automatiquement les pensées de son porteur dans la direction o\u00c3\u00b9 celui-ci regarde, avec pour conséquence que toutes les créatures se trouvant dans cette direction sont conscientes de sa présence ou de son arrivée."
+        ],
+        "infos": {
+            "data": [
+                "Divination",
+                "modérée ;",
+                "NLS",
+                "8 ;",
+                "Création d'objets merveilleux",
+                "détection de pensées",
+                ", son illusoire ;",
+                "Prix",
+                "1 800 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pierre de lest",
+        "description": [
+            "Cette pierre noire et polie réduit de moitié la vitesse de déplacement de son possesseur. De plus, une fois qu'on l'a ramassée, il est impossible de s'en débarrasser. M\u00c3\u00aame si son propriétaire la jette au loin ou la brise en morceaux, elle réappara\u00c3\u00aet sur sa personne, intacte. Si délivrance des malédictions est lancé sur une pierre de lest, celle-ci peut \u00c3\u00aatre abandonnée normalement."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "faible ;",
+                "NLS",
+                "5 ;",
+                "Création d'objets merveilleux",
+                "lenteur",
+                "Prix",
+                "1 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Pinceau de l'artiste maudit",
+        "description": [
+            "Originellement créé par Xerith Bastil, un démonologiste qui enviait les talents des grands peintres, ce pince n'a plus été vu depuis des siècles. Werith a vendu son \u00c3\u00a2me pour créer ce pinceau, qui lui a aussi certainement co\u00c3\u00bbté la vie. Ce pinceau élégant possède un manche en ébenite et ses pils dorés fins sont en fait des cheveux d'un prince elfe assassiné.",
+            "En ayant le matériel nécessaire (peintures et toiles, essentiellement), le porteur du pinceau de l'artiste maudit peut créer de magnifique toiles de ma\u00c3\u00aetre. Il confère un bonus de compétence de +20 aux jets d'Artisanat (peinture). Néanmoins, à chaque fois qu'il est utilisé pour créer une oeuvre, le pinceau confère un niveau négatif à son porteur. e niveau négatif n'entra\u00c3\u00aene jamais une perte de niveau réelle, mais aucun sort, pas m\u00c3\u00aame restauration, ne permet de le résorber tant que le personnage ne s'est pas débarrasser définitivement du pinceau de l'artiste maudit. Malheureusement, se débarrasser du pinceau de l'artiste maudit n'est pas aisé, et cela nécessite un jet de Volonté (DD 20 + nombre de toiles réalisée). Ce jet ne peut \u00c3\u00aatre tenté plus d'une fois par jour.",
+            "Pire, si le porteur du pinceau de l'artiste maudit n'a pas créé de toiles pendant une semaine, il doit réussir un jet de Volonté (DD 20 + nombre de semaines sans peindre) ou \u00c3\u00aatre forcé d'en créer une, et donc gagné un niveau négatif."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "forte ;",
+                "NLS",
+                "15 ;",
+                "Création d'objets merveilleux",
+                "\u00c3\u0089nergie négative",
+                "Prix",
+                "20 000 po ;",
+                "Poids",
+                "\u00e2\u0080\u0094."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Potion toxique",
+        "description": [
+            "Cette potion magique a tourné et est devenue un puissant poison. Quiconque la boit doit réussir un jet de Vigueur (DD 16) pour ne pas subir un affaiblissement temporaire de 1d10 points de Constitution. Une minute plus tard, le personnage doit effectuer un second jet de Vigueur de DD 16 pour éviter de subir un affaiblissement temporaire de 1d10 points de Constitution."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "modérée ;",
+                "NLS",
+                "12 ;",
+                "Création d'objets merveilleux",
+                "empoisonnement",
+                "Prix",
+                "5 000 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Poudre à éternuer",
+        "description": [
+            "Cette fine poussière ressemble à de la poudre d'apparition. Mais, si on la jette en l'air, elle a pour effet de faire violemment éternuer toutes les créatures distantes de moins de 6 mètres. Celles qui ratent un jet de Vigueur (DD 15) subissent un affaiblissement temporaire de 2d6 points de Constitution. Un second jet de Vigueur (DD 15) est nécessaire 1 minute plus tard. Ceux qui le ratent subissent un affaiblissement temporaire de 1d6 points de Constitution. Les créatures réussissant un ou deux jets de Vigueur sont tout de m\u00c3\u00aame g\u00c3\u00aanées par une toux violente pendant 5d4 rounds (considérez qu'elles sont étourdies pour ce qui est des effets qu'elles subissent en termes de jeu)."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "faible ;",
+                "NLS",
+                "7 ;",
+                "Création d'objets merveilleux",
+                "empoisonnement",
+                "Prix",
+                "2 400 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Robe de vermine",
+        "description": [
+            "Cette robe n'a rien d'inhabituel, si ce n'est qu'elle protège son porteur comme une cape de protection +4. Mais dès que le personnage se retrouve dans une situation o\u00c3\u00b9 il doit se concentrer ou agir face à des adversaires hostiles, la véritable nature de la robe se révèle et l'aventurier subit aussit\u00c3\u00b4t une multitude de morsures et de piq\u00c3\u00bbres de la part des myriades d'insectes dont le tissu semble magiquement infesté. Il ne peut rien faire d'autre que se gratter et tirer le v\u00c3\u00aatement en tout sens pour tenter d'échapper à la vermine.",
+            "Le porteur de la robe subit un malus de \u00e2\u0080\u00932 aux jets d'attaque, de sauvegarde et aux tests de compétence. S'il tente de lancer un sort, il doit réussir un test de Concentration (DD 20 + niveau du sort) sans quoi le sort est perdu."
+        ],
+        "infos": {
+            "data": [
+                "Abjuration",
+                "modérée ;",
+                "NLS",
+                "13 ;",
+                "Création d'objets merveilleux",
+                "nuée grouillante",
+                ", niveau 8 de lanceur de sorts ;",
+                "Prix",
+                "16 500 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Robe d'impuissance",
+        "description": [
+            "Cette robe n'a aucun signe distinctif, et semble \u00c3\u00aatre un autre type de robe magique. Dès qu'un personnage l'enfile, il subit immédiatement un malus de \u00e2\u0080\u009310  en Force et en Intelligence, oubliant du m\u00c3\u00aame coup tous ses sorts et toutes ses éventuelles connaissances en matière de magie. Il peut \u00c3\u00b4ter la robe quand il le souhaite, mais les sorts délivrance des malédictions suivi de guérison supr\u00c3\u00aame lui sont nécessaires pour retrouver ses facultés physiques et mentales."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "13 ;",
+                "Création d'objets merveilleux",
+                "malédiction",
+                "permanence",
+                "Prix",
+                "5 500 po ;",
+                "Poids",
+                "500 g."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sac dévoreur",
+        "description": [
+            "Ce sac a l'air on ne peut plus ordinaire, sauf si on l'examine à l'aide de moyens magiques, auquel cas il semble \u00c3\u00aatre un sac sans fond. Mais ce n'est en fait qu'un app\u00c3\u00a2t utilisé par une créature extradimensionnelle, et l'un des orifices par lesquels elle se nourrit.",
+            "Toute matière d'origine animale ou végétale est avalée si on la glisse dans le sac. Celui-ci a 90% de chances de ne pas réagir à la première intrusion, mais cela change très vite. Par la suite, dès qu'il sent de la chair vivante entre ses parois (par exemple, si quelqu'un plonge la main à l'intérieur de sa bouche pour récupérer un objet), il a 60% de chances de mordre et de tenter d'attirer sa proie à lui. Il a un modificateur de lutte de +8 quand il essaye d'engloutir quelqu'un.",
+            "Le sac dégage une aura magique et peut contenir jusqu'à 1,25 m3 de matière inerte. Il se comporte comme un sac sans fond (1er modèle), mais chaque heure, il a 5% de chances d'ingurgiter son contenu et de recracher ce qu'il ne peut pas digérer dans un autre plan ou dans un espace non dimensionnel. Les créatures englouties sont digérées en 1 round. Le sac détruit le corps de sa victime et emp\u00c3\u00aache toute forme de rappel à la vie ou de résurrection nécessitant un cadavre. Il y a 50% de chances qu'un souhait, un miracle ou une résurrection supr\u00c3\u00aame puisse ramener à la vie une créature dévorée (lancez le dé pour chaque créature). Si cette tentative échoue, la créature ne peut plus \u00c3\u00aatre ramenée à la vie par des moyens accessibles à de simples mortels."
+        ],
+        "infos": {
+            "data": [
+                "Invocation",
+                "modérée ;",
+                "NLS",
+                "17 ; cet objet est considéré comme une créature et ne peut pas \u00c3\u00aatre créé."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sandales épineuses",
+        "description": [
+            "Ces sandales ressemblent à des sandales de vitesses jusqu'à ce qu'elles soient portées. A ce moment là, des épines apparaissent à l'intérieur, blessant le porteur. Les épines infligent 1d4 dég\u00c3\u00a2ts non-létaux si le porteur se déplacent à la moitié de sa vitesse de déplacement ou moins, ou 1d4 dég\u00c3\u00a2ts perforant s'il va plus vite que cela.",
+            "Seule une délivrance des malédictions permet de se débarrasser des sandales une fois portées."
+        ],
+        "infos": {
+            "data": [
+                "Transmutation",
+                "modérée ;",
+                "NLS",
+                "10 ;",
+                "Création d'objets merveilleux",
+                "croissance d'épines",
+                "Prix",
+                "10 800 po."
+            ]
+        },
+        "ul": null,
+        "table": null
+    },
+    {
+        "title": "Sceptre des morts animés",
+        "description": [
+            "Cet objet semble taillé dans un fémur humain, avec un cr\u00c3\u00a2ne à un bout. Il permet à son porteur d'utiliser animation des morts, affectant tout cadavre dans un rayon de 9 mètres, jusqu'à 5 fois par jour.",
+            "Néanmoins, le personnage ne contr\u00c3\u00b4le aucun des morts-vivants créés et ceux-ci son hostiles, tentant d'attaquer toute créature vivante, mais surtout le porteur du sceptre."
+        ],
+        "infos": {
+            "data": [
+                "Nécromancie",
+                "modérée ;",
+                "NLS",
+                "5 ;",
+                "Création de sceptres magiques",
+                "animation des morts",
+                "Prix",
+                "24 000 po ;",
+                "Poids",
+                "1 kg."
+            ]
+        },
+        "ul": null,
+        "table": null
+    }
+]

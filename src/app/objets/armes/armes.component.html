@@ -1,0 +1,136 @@
+<div style="width: 100%">
+    <h1>Ceci est une arme</h1>
+    <form class="needs-validation" id="competenceEffectForm">
+        <div class="form-row">
+            <div class="col-md-2 mb-3">
+                <label for="dePuissanceArme">Dé de puissance de l'arme
+                </label>
+                <input min="1" max="3" type="number" class="form-control" id="dePuissanceArme"
+                       name="dePuissanceArme"
+                       placeholder="Puissance de l'arme"
+                       [(ngModel)]="this.dePuissance"
+                       required>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <label for="DeBonusArme">Dé de bonus de l'arme
+                </label>
+                <input min="1" max="100" type="number" class="form-control" id="DeBonusArme"
+                       name="DeBonusArme"
+                       placeholder="Bonus Arme"
+                       [(ngModel)]="this.deBonus"
+                       (ngModelChange)="this.setBonusArme()"
+                       required>
+            </div>
+
+            <div *ngIf="this.isSpeciale" style="width: 100%">
+                <h3>Cette arme sera spéciale</h3>
+                <div class="col-md-2 mb-3">
+                    <label for="ArmeSpec">Dé d'arme Spéciale
+                    </label>
+                    <input min="1" [max]="this.getNbArmesSpeciales()" type="number" class="form-control" id="ArmeSpec"
+                           name="ArmeSpec"
+                           placeholder="Arme Spéciale"
+                           [(ngModel)]="this.deArmeSpeciale"
+                           (ngModelChange)="this.getArmeSpeciale()"
+                           required>
+                </div>
+            </div>
+
+            <div *ngIf="!this.isSpeciale && this.dePuissance" style="width: 100%">
+                <h3>Type de l'arme</h3>
+                <div class="col-md-2 mb-3">
+                    <label for="TypeArme">Dé typeArme
+                    </label>
+                    <input min="1" max="100" type="number" class="form-control" id="TypeArme"
+                           name="TypeArme"
+                           placeholder="Type arme"
+                           [(ngModel)]="this.deTypeArme"
+                           required>
+                </div>
+
+                <div *ngIf="this.isCaC">
+                    <h3>Arme corps à corps</h3>
+                    <div class="col-md-2 mb-3">
+                        <label for="ArmeCaC">Dé arme càc
+                        </label>
+                        <input min="1" max="100" type="number" class="form-control" id="ArmeCaC"
+                               name="ArmeCaC"
+                               placeholder="Arme CaC"
+                               [(ngModel)]="this.deArmeCaC"
+                               required>
+                    </div>
+                </div>
+
+                <div *ngIf="this.isDistance">
+                    <h3>Arme à distance</h3>
+                    <div class="col-md-2 mb-3">
+                        <label for="ArmeDistance">Dé Arme distance
+                        </label>
+                        <input min="1" max="100" type="number" class="form-control" id="ArmeDistance"
+                               name="ArmeDistance"
+                               placeholder="Arme distance"
+                               [(ngModel)]="this.deArmeDistance"
+                               required>
+                    </div>
+                </div>
+
+                <div *ngIf="this.isInhabituelle">
+                    <h3>Arme inhabituelle</h3>
+                    <div class="col-md-2 mb-3">
+                        <label for="ArmeInhabituelle">Dé Arme inhabituelle
+                        </label>
+                        <input min="1" max="100" type="number" class="form-control" id="ArmeInhabituelle"
+                               name="ArmeInhabituelle"
+                               placeholder="Arme inhabituelle"
+                               [(ngModel)]="this.deArmeInhabituelle"
+                               required>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div *ngIf="this.isMagique" style="width: 100%">
+                <h3>Cette arme sera magique</h3>
+                <div class="col-md-2 mb-3">
+                    <label for="PropMag">Dé de propriété magique
+                    </label>
+                    <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                           id="PropMag"
+                           name="PropMag"
+                           placeholder="Propriété Magique"
+                           [(ngModel)]="this.deProprieteMagique"
+                           (ngModelChange)="this.getProprieteMagique()"
+                           required>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+    <div style="width: 100%">
+        <h1>Résultat de l'arme</h1>
+        <h3>Arme {{this.nom}}</h3>
+        <p>Arme {{this.typeArme}}</p>
+
+        <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
+            <span *ngFor="let description of proprieteMagique.description; let index = index;">
+                <span>{{description}}<br/></span>
+
+                <ng-container *ngFor="let table of proprieteMagique.table;">
+                    <span *ngIf="+table[0] === index"
+                          [innerHTML]="table[1]"></span>
+                </ng-container>
+
+                <ng-container *ngFor="let ul of proprieteMagique.ul;">
+                <span *ngIf="+ul[0] === index"
+                      [innerHTML]="ul[1]"></span>
+                </ng-container>
+            </span>
+            <br/>
+            <br/>
+            {{proprieteMagique.infos.data}}<br/><br/>
+        </ng-container>
+    </div>
+</div>

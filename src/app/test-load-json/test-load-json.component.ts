@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-export interface TestObject {
+export interface MagicalProperty {
   title: string;
   description: string[];
   infos: Informations;
@@ -20,7 +20,7 @@ export interface Informations {
 })
 export class TestLoadJSonComponent implements OnInit {
 
-  currentTestObject: TestObject;
+  currentTestObject: MagicalProperty;
 
   constructor(private http: HttpClient) {
   }
@@ -28,7 +28,7 @@ export class TestLoadJSonComponent implements OnInit {
   ngOnInit(): void {
     this.getJSON().then(
       (data: any) => {
-        const response: TestObject[] = JSON.parse(data) as TestObject[];
+        const response: MagicalProperty[] = JSON.parse(data) as MagicalProperty[];
         console.log(response[45]);
         this.currentTestObject = response[45];
       }
@@ -36,7 +36,7 @@ export class TestLoadJSonComponent implements OnInit {
   }
 
   public getJSON(): Promise<string> {
-    const baseUrlBis = 'assets/json/anneauxMagiques.json';
+    const baseUrlBis = 'assets/json/magique/anneauxMagiques.json';
     return this.http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise();
 
   }

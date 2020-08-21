@@ -1,0 +1,39 @@
+{
+    "titles": [
+        "1d100",
+        "Bouclier",
+        "Prix du bouclier"
+    ],
+    "data": [
+        [
+            "01–65",
+            "Écu en acier",
+            "+170 po"
+        ],
+        [
+            "66–75",
+            "Écu en bois",
+            "+157 po"
+        ],
+        [
+            "76–80",
+            "Pavois",
+            "+180 po"
+        ],
+        [
+            "81–85",
+            "Rondache en acier",
+            "+159 po"
+        ],
+        [
+            "86–90",
+            "Rondache en bois",
+            "+153 po"
+        ],
+        [
+            "91–100",
+            "Targe",
+            "+165 po"
+        ]
+    ]
+}

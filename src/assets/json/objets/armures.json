@@ -1,0 +1,69 @@
+{
+    "titles": [
+        "1d100",
+        "Armure",
+        "Prix de l’armure"
+    ],
+    "data": [
+        [
+            "01",
+            "Armure d’écailles",
+            "+200 po"
+        ],
+        [
+            "02",
+            "Armure de cuir",
+            "+160 po"
+        ],
+        [
+            "03–17",
+            "Armure de cuir clouté",
+            "+175 po"
+        ],
+        [
+            "18–27",
+            "Armure de peau",
+            "+165 po"
+        ],
+        [
+            "28",
+            "Armure matelassée",
+            "+155 po"
+        ],
+        [
+            "29–43",
+            "Chemise de mailles",
+            "+250 po"
+        ],
+        [
+            "44",
+            "Clibanion",
+            "+350 po"
+        ],
+        [
+            "45",
+            "Cotte de mailles",
+            "+300 po"
+        ],
+        [
+            "46",
+            "Crevice",
+            "+400 po"
+        ],
+        [
+            "47–59",
+            "Cuirasse",
+            "+350 po"
+        ],
+        [
+            "60–99",
+            "Harnois",
+            "+1 650 po"
+        ],
+        [
+            "100",
+            "Plaques",
+            "+750 po"
+        ]
+    ]
+}
