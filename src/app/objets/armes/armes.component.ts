@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {JSonLoadService} from '../../services/json-load.service';
-import {MagicalProperty} from '../../interface/MonstreGroupe';
+import {MagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
 
 @Component({
     selector: 'app-armes',
@@ -14,21 +14,24 @@ export class ArmesComponent implements OnInit {
     bonusArme: number;
     typeArme: string;
     proprietesMagiques: MagicalProperty[] = [];
+    prix: number;
 
-    deBonus: number;
     dePuissance: number;
+    deBonus: number;
     deProprieteMagique: number;
     deArmeSpeciale: number;
     deTypeArme: number;
     deArmeCaC: number;
     deArmeDistance: number;
     deArmeInhabituelle: number;
+    deMunitions: number;
 
     isSpeciale = false;
     isMagique = false;
     isCaC = false;
     isDistance = false;
     isInhabituelle = false;
+    isMunitions = false;
 
     allProprietesMagiques: MagicalProperty[] = [];
     allArmesSpeciales: MagicalProperty[] = [];
@@ -40,11 +43,9 @@ export class ArmesComponent implements OnInit {
         this.jsonService.getJSON('magique', 'effetsMagiquesArmes').then(
             (effetsMagiquesArmes: any) => {
                 this.allProprietesMagiques = JSON.parse(effetsMagiquesArmes) as MagicalProperty[];
-                console.log(this.allProprietesMagiques[0]);
                 this.jsonService.getJSON('magique', 'armesSpeciales').then(
                     (armesSpeciales: any) => {
                         this.allArmesSpeciales = JSON.parse(armesSpeciales) as MagicalProperty[];
-                        console.log(this.allArmesSpeciales[0]);
                     }
                 );
             }
@@ -52,8 +53,16 @@ export class ArmesComponent implements OnInit {
     }
 
     setBonusArme() {
+        this.resetArme();
         this.isSpeciale = false;
         this.isMagique = false;
+        this.deArmeSpeciale = undefined;
+        this.deProprieteMagique = undefined;
+        this.deTypeArme = undefined;
+        this.deArmeCaC = undefined;
+        this.deArmeDistance = undefined;
+        this.deArmeInhabituelle = undefined;
+        this.deMunitions = undefined;
         switch (this.dePuissance) {
             case 1:
                 if (this.deBonus <= 70) {
@@ -107,26 +116,36 @@ export class ArmesComponent implements OnInit {
         this.isCaC = false;
         this.isDistance = false;
         this.isInhabituelle = false;
+        this.deArmeCaC = undefined;
+        this.deArmeDistance = undefined;
+        this.deArmeInhabituelle = undefined;
+        this.deMunitions = undefined;
         if (this.deTypeArme <= 70) {
             this.isCaC = true;
-            this.typeArme = 'de corp à corp';
+            this.typeArme = 'Armes de corp à corp';
         } else if (this.deTypeArme > 70 && this.deTypeArme <= 90) {
             this.isDistance = true;
-            this.typeArme = 'à distance';
+            this.typeArme = 'Armes à distance';
         } else if (this.deTypeArme > 90 && this.deTypeArme <= 100) {
             this.isInhabituelle = true;
-            this.typeArme = 'inhabituelle';
+            this.typeArme = 'Armes inhabituelle';
         }
     }
 
     getProprieteMagique() {
         this.proprietesMagiques = [];
-        this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique]);
+        this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
     }
 
     getArmeSpeciale() {
+        this.deProprieteMagique = undefined;
+        this.deTypeArme = undefined;
+        this.deArmeCaC = undefined;
+        this.deArmeDistance = undefined;
+        this.deArmeInhabituelle = undefined;
+        this.deMunitions = undefined;
         this.resetArme();
-        const armeSpecial: MagicalProperty = this.allArmesSpeciales[this.deArmeSpeciale];
+        const armeSpecial: MagicalProperty = this.allArmesSpeciales[this.deArmeSpeciale - 1];
         this.typeArme = 'Speciale';
         this.bonusArme = 0;
         this.proprietesMagiques.push(armeSpecial);
@@ -146,7 +165,76 @@ export class ArmesComponent implements OnInit {
         this.typeArme = undefined;
         this.bonusArme = undefined;
         this.nom = undefined;
+        this.prix = 0;
     }
 
+    getTypeArme() {
+        if (this.isCaC) {
+            this.getArme('armesCac');
+        } else if (this.isDistance) {
+            this.setIsMunitions();
+            if (this.isMunitions) {
+                this.getArme('munitions');
+            } else {
+                this.getArme('armesDistance');
+            }
+        } else if (this.isInhabituelle) {
+            this.getArme('armesInhabituelles');
+        }
+    }
 
+    getArme(file: string) {
+        this.jsonService.getJSON('objets', file).then(
+            (data: any) => {
+                const armes: TablesChances = JSON.parse(data) as TablesChances;
+                const de = this.getCurrentDe();
+                if (de) {
+                    this.getFromChance(armes, de);
+                }
+            }
+        );
+    }
+
+    getCurrentDe() {
+        if (this.isCaC) {
+            this.deArmeDistance = undefined;
+            this.deArmeInhabituelle = undefined;
+            this.deMunitions = undefined;
+            return this.deArmeCaC;
+        } else if (this.isMunitions) {
+            this.deArmeCaC = undefined;
+            this.deArmeInhabituelle = undefined;
+            return this.deMunitions;
+        } else if (this.isDistance) {
+            this.deArmeCaC = undefined;
+            this.deArmeInhabituelle = undefined;
+            if (!this.isMunitions) {
+                this.deMunitions = undefined;
+            }
+            return this.deArmeDistance;
+        } else if (this.isInhabituelle) {
+            this.deArmeCaC = undefined;
+            this.deArmeDistance = undefined;
+            this.deMunitions = undefined;
+            return this.deArmeInhabituelle;
+        }
+    }
+
+    getFromChance(armes: TablesChances, dice: number) {
+        const arme = armes.data.filter(chance => (chance[0] <= dice && chance[1] >= dice))[0];
+        this.nom = arme[2];
+        this.prix += +(arme[3].replace('+', '').replace(' po', ''));
+    }
+
+    setIsMunitions() {
+        if (this.nom === 'Munitions' || this.deArmeDistance >= 91) {
+            this.isMunitions = true;
+            this.typeArme = 'Munitions';
+        }
+    }
+
+    getNomsProprieteMagique(): string {
+        return this.proprietesMagiques.length < 2 ? this.proprietesMagiques[0].title :
+            this.proprietesMagiques[0].title + ' et ' + this.proprietesMagiques[1].title;
+    }
 }

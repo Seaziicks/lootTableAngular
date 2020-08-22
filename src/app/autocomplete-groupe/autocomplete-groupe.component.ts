@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 import {MatAutocompleteTrigger} from '@angular/material/autocomplete';
+import {Monstre, MonstreGroupe} from "../interface/MonstreGroupe";
 
 export const filter = (opt: Monstre[], value: string): Monstre[] => {
   const filterValue = value.toLowerCase().trim();

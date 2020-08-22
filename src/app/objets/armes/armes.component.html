@@ -46,6 +46,7 @@
                            name="TypeArme"
                            placeholder="Type arme"
                            [(ngModel)]="this.deTypeArme"
+                           (ngModelChange)="this.setTypeArme()"
                            required>
                 </div>
 
@@ -58,6 +59,7 @@
                                name="ArmeCaC"
                                placeholder="Arme CaC"
                                [(ngModel)]="this.deArmeCaC"
+                               (ngModelChange)="this.getTypeArme()"
                                required>
                     </div>
                 </div>
@@ -71,6 +73,7 @@
                                name="ArmeDistance"
                                placeholder="Arme distance"
                                [(ngModel)]="this.deArmeDistance"
+                               (ngModelChange)="this.getTypeArme()"
                                required>
                     </div>
                 </div>
@@ -84,11 +87,27 @@
                                name="ArmeInhabituelle"
                                placeholder="Arme inhabituelle"
                                [(ngModel)]="this.deArmeInhabituelle"
+                               (ngModelChange)="this.getTypeArme()"
                                required>
                     </div>
                 </div>
 
 
+            </div>
+
+            <div *ngIf="this.isMunitions" style="width: 100%">
+                <h3>Ce seront des munitions</h3>
+                <div class="col-md-2 mb-3">
+                    <label for="munitions">Dé de munitions
+                    </label>
+                    <input min="1" max="100" type="number" class="form-control"
+                           id="munitions"
+                           name="munitions"
+                           placeholder="Munitions"
+                           [(ngModel)]="this.deMunitions"
+                           (ngModelChange)="this.getTypeArme()"
+                           required>
+                </div>
             </div>
 
             <div *ngIf="this.isMagique" style="width: 100%">
@@ -109,12 +128,13 @@
         </div>
 
     </form>
-    <div style="width: 100%">
+    <div style="width: 100%" *ngIf="this.nom">
         <h1>Résultat de l'arme</h1>
-        <h3>Arme {{this.nom}}</h3>
-        <p>Arme {{this.typeArme}}</p>
+        <h3>Arme : {{this.nom}} <span *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+        <p>{{this.typeArme}} - Bonus +{{this.bonusArme}}</p>
 
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
+            <h4>{{proprieteMagique.title}}</h4>
             <span *ngFor="let description of proprieteMagique.description; let index = index;">
                 <span>{{description}}<br/></span>
 

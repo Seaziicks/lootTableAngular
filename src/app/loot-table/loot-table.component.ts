@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
+import {Loot, Monstre, MonstreGroupe, MonstreLootChanceBis} from "../interface/MonstreGroupe";
 
 export interface SpecialResponse {
   status: number;

@@ -61,8 +61,8 @@ export interface Informations {
 }
 
 export interface TablesChances {
-    title: string[];
-    chances: Chances[];
+    titles: string[];
+    data: Chances[];
 }
 
 export interface Chances {

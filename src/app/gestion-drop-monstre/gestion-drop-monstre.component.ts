@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
+import {Monstre, MonstreGroupe, MonstreLootChance} from "../interface/MonstreGroupe";
 
 
 export const filterMissing = (opt: MonstreLootChance[], values: any[]): string[] => {
