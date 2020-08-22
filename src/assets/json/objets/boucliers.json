@@ -4,42 +4,48 @@
         "Bouclier",
         "Prix du bouclier"
     ],
-    "data": [
-        [
-            1,
-            65,
-            "Écu en acier",
-            "+170 po"
-        ],
-        [
-            66,
-            75,
-            "Écu en bois",
-            "+157 po"
-        ],
-        [
-            76,
-            80,
-            "Pavois",
-            "+180 po"
-        ],
-        [
-            81,
-            85,
-            "Rondache en acier",
-            "+159 po"
-        ],
-        [
-            86,
-            90,
-            "Rondache en bois",
-            "+153 po"
-        ],
-        [
-            91,
-            100,
-            "Targe",
-            "+165 po"
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": 65,
+            "name": "Écu en acier",
+            "price": 170,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 66,
+            "lootChanceMax": 75,
+            "name": "Écu en bois",
+            "price": 157,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 76,
+            "lootChanceMax": 80,
+            "name": "Pavois",
+            "price": 180,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 81,
+            "lootChanceMax": 85,
+            "name": "Rondache en acier",
+            "price": 159,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 86,
+            "lootChanceMax": 90,
+            "name": "Rondache en bois",
+            "price": 153,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 91,
+            "lootChanceMax": 100,
+            "name": "Targe",
+            "price": 165,
+            "currencyType": "po"
+        }
     ]
 }

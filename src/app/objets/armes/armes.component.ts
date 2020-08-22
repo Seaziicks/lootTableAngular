@@ -186,7 +186,9 @@ export class ArmesComponent implements OnInit {
     getArme(file: string) {
         this.jsonService.getJSON('objets', file).then(
             (data: any) => {
+                console.log(data);
                 const armes: TablesChances = JSON.parse(data) as TablesChances;
+                console.log(armes);
                 const de = this.getCurrentDe();
                 if (de) {
                     this.getFromChance(armes, de);
@@ -221,9 +223,9 @@ export class ArmesComponent implements OnInit {
     }
 
     getFromChance(armes: TablesChances, dice: number) {
-        const arme = armes.data.filter(chance => (chance[0] <= dice && chance[1] >= dice))[0];
-        this.nom = arme[2];
-        this.prix += +(arme[3].replace('+', '').replace(' po', ''));
+        const arme = armes.Chances.filter(chance => (chance.lootChanceMin <= dice && chance.lootChanceMax >= dice))[0];
+        this.nom = arme.name;
+        this.prix += +(arme.price);
     }
 
     setIsMunitions() {

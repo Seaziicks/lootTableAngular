@@ -3,161 +3,223 @@
         "1d100",
         "Inconvénient"
     ],
-    "data": [
-        [
-            1,
-            4,
-            "Les cheveux du personnage poussent d’une trentaine de centimètres (ne se produit qu’une fois)."
-        ],
-        [
-            5,
-            9,
-            "Le personnage rapetisse ou grandit d’une quinzaine de centimètres (une chance sur deux ; ne se produit qu’une fois)."
-        ],
-        [
-            10,
-            13,
-            "La température est plus froide autour de l’objet (–5° C)."
-        ],
-        [
-            14,
-            17,
-            "La température est plus chaude autour de l’objet (+5° C)."
-        ],
-        [
-            18,
-            21,
-            "Les cheveux du personnage changent de couleur."
-        ],
-        [
-            22,
-            25,
-            "La peau du personnage change de couleur."
-        ],
-        [
-            26,
-            29,
-            "Le personnage acquiert une marque distinctive (tatouage, aura lumineuse, etc.)."
-        ],
-        [
-            30,
-            32,
-            "Le personnage change de sexe."
-        ],
-        [
-            33,
-            34,
-            "Le personnage change de race ou d’espèce."
-        ],
-        [
-            35,
-            35,
-            "Le personnage contracte une maladie (déterminée aléatoirement) que rien ni personne ne peut soigner."
-        ],
-        [
-            36,
-            39,
-            "L’objet émet continuellement un bruit gênant (gémissements, pleurs, cris, jurons, insultes, etc.)."
-        ],
-        [
-            40,
-            40,
-            "L’objet a l’air ridicule (couleur outrancière, forme risible, aura rose bonbon, etc.)."
-        ],
-        [
-            41,
-            45,
-            "Le personnage devient extrêmement possessif pour ce qui est de l’objet."
-        ],
-        [
-            46,
-            49,
-            "Le personnage a une peur panique de perdre l’objet ou qu’il lui arrive quelque chose."
-        ],
-        [
-            50,
-            51,
-            "Le personnage change d’alignement."
-        ],
-        [
-            52,
-            54,
-            "Le personnage attaque la créature la plus proche (5% de chances chaque jour, à un moment aléatoire de la journée)."
-        ],
-        [
-            55,
-            57,
-            "Le personnage est étourdi pendant 1d4 rounds dès que l’objet cesse de fonctionner (ou aléatoirement, 1 fois/jour)."
-        ],
-        [
-            58,
-            60,
-            "Le personnage voit trouble en permanence (–2 aux jets d’attaque, de sauvegarde et de compétences nécessitant de voir)."
-        ],
-        [
-            61,
-            64,
-            "Le personnage acquiert un niveau négatif."
-        ],
-        [
-            65,
-            65,
-            "Le personnage acquiert deux niveaux négatifs."
-        ],
-        [
-            66,
-            70,
-            "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point d’Intelligence (tous les jours)."
-        ],
-        [
-            71,
-            75,
-            "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Sagesse (tous les jours)."
-        ],
-        [
-            76,
-            80,
-            "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Charisme (tous les jours)."
-        ],
-        [
-            81,
-            85,
-            "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Constitution (tous les jours)."
-        ],
-        [
-            86,
-            90,
-            "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Force (tous les jours)."
-        ],
-        [
-            91,
-            95,
-            "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Dextérité (tous les jours)."
-        ],
-        [
-            96,
-            96,
-            "Le personnage se métamorphose en une créature donnée (5% de chances par jour, toujours la même)."
-        ],
-        [
-            97,
-            97,
-            "Le personnage ne peut plus lancer de sorts profanes."
-        ],
-        [
-            98,
-            98,
-            "Le personnage ne peut plus lancer de sorts divins."
-        ],
-        [
-            99,
-            99,
-            "Le personnage ne peut plus lancer le moindre sort."
-        ],
-        [
-            100,
-            100,
-            "Au choix : choisissez un inconvénient qui vous paraisse convenir à la nature de l’objet ou créez-en un autre."
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": 4,
+            "name": "Les cheveux du personnage poussent d’une trentaine de centimètres (ne se produit qu’une fois).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 5,
+            "lootChanceMax": 9,
+            "name": "Le personnage rapetisse ou grandit d’une quinzaine de centimètres (une chance sur deux ; ne se produit qu’une fois).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 10,
+            "lootChanceMax": 13,
+            "name": "La température est plus froide autour de l’objet (–5° C).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 14,
+            "lootChanceMax": 17,
+            "name": "La température est plus chaude autour de l’objet (+5° C).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 18,
+            "lootChanceMax": 21,
+            "name": "Les cheveux du personnage changent de couleur.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 22,
+            "lootChanceMax": 25,
+            "name": "La peau du personnage change de couleur.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 26,
+            "lootChanceMax": 29,
+            "name": "Le personnage acquiert une marque distinctive (tatouage, aura lumineuse, etc.).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 30,
+            "lootChanceMax": 32,
+            "name": "Le personnage change de sexe.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 33,
+            "lootChanceMax": 34,
+            "name": "Le personnage change de race ou d’espèce.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 35,
+            "lootChanceMax": null,
+            "name": "Le personnage contracte une maladie (déterminée aléatoirement) que rien ni personne ne peut soigner.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 36,
+            "lootChanceMax": 39,
+            "name": "L’objet émet continuellement un bruit gênant (gémissements, pleurs, cris, jurons, insultes, etc.).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 40,
+            "lootChanceMax": null,
+            "name": "L’objet a l’air ridicule (couleur outrancière, forme risible, aura rose bonbon, etc.).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 41,
+            "lootChanceMax": 45,
+            "name": "Le personnage devient extrêmement possessif pour ce qui est de l’objet.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 46,
+            "lootChanceMax": 49,
+            "name": "Le personnage a une peur panique de perdre l’objet ou qu’il lui arrive quelque chose.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 50,
+            "lootChanceMax": 51,
+            "name": "Le personnage change d’alignement.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 52,
+            "lootChanceMax": 54,
+            "name": "Le personnage attaque la créature la plus proche (5% de chances chaque jour, à un moment aléatoire de la journée).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 55,
+            "lootChanceMax": 57,
+            "name": "Le personnage est étourdi pendant 1d4 rounds dès que l’objet cesse de fonctionner (ou aléatoirement, 1 fois/jour).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 58,
+            "lootChanceMax": 60,
+            "name": "Le personnage voit trouble en permanence (–2 aux jets d’attaque, de sauvegarde et de compétences nécessitant de voir).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 61,
+            "lootChanceMax": 64,
+            "name": "Le personnage acquiert un niveau négatif.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 65,
+            "lootChanceMax": null,
+            "name": "Le personnage acquiert deux niveaux négatifs.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 66,
+            "lootChanceMax": 70,
+            "name": "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point d’Intelligence (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 71,
+            "lootChanceMax": 75,
+            "name": "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Sagesse (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 76,
+            "lootChanceMax": 80,
+            "name": "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Charisme (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 81,
+            "lootChanceMax": 85,
+            "name": "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Constitution (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 86,
+            "lootChanceMax": 90,
+            "name": "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Force (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 91,
+            "lootChanceMax": 95,
+            "name": "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Dextérité (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 96,
+            "lootChanceMax": null,
+            "name": "Le personnage se métamorphose en une créature donnée (5% de chances par jour, toujours la même).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 97,
+            "lootChanceMax": null,
+            "name": "Le personnage ne peut plus lancer de sorts profanes.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 98,
+            "lootChanceMax": null,
+            "name": "Le personnage ne peut plus lancer de sorts divins.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 99,
+            "lootChanceMax": null,
+            "name": "Le personnage ne peut plus lancer le moindre sort.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 100,
+            "lootChanceMax": null,
+            "name": "Au choix : choisissez un inconvénient qui vous paraisse convenir à la nature de l’objet ou créez-en un autre.",
+            "price": null,
+            "currencyType": null
+        }
     ]
 }

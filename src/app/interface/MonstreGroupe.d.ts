@@ -62,7 +62,7 @@ export interface Informations {
 
 export interface TablesChances {
     titles: string[];
-    data: Chances[];
+    Chances: Chances[];
 }
 
 export interface Chances {
@@ -70,5 +70,6 @@ export interface Chances {
     lootChanceMax: number;
     name: string;
     price: number;
+    currencyType: string;
 }
 

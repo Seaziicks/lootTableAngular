@@ -4,107 +4,125 @@
         "Arme",
         "Prix de l’arme"
     ],
-    "data": [
-        [
-            1,
-            10,
-            "Arbalète légère",
-            "+335 po"
-        ],
-        [
-            11,
-            20,
-            "Arbalète lourde",
-            "+350 po"
-        ],
-        [
-            21,
-            25,
-            "Arc court",
-            "+330 po"
-        ],
-        [
-            26,
-            30,
-            "Arc court composite (limite de bonus de For de +0)",
-            "+375 po"
-        ],
-        [
-            31,
-            35,
-            "Arc court composite (limite de bonus de For de +1)",
-            "+450 po"
-        ],
-        [
-            36,
-            40,
-            "Arc court composite (limite de bonus de For de +2)",
-            "+525 po"
-        ],
-        [
-            41,
-            50,
-            "Arc long",
-            "+375 po"
-        ],
-        [
-            51,
-            55,
-            "Arc long composite (limite de bonus de For de +0)",
-            "+400 po"
-        ],
-        [
-            56,
-            60,
-            "Arc long composite (limite de bonus de For de +1)",
-            "+500 po"
-        ],
-        [
-            61,
-            65,
-            "Arc long composite (limite de bonus de For de +2)",
-            "+600 po"
-        ],
-        [
-            66,
-            70,
-            "Arc long composite (limite de bonus de For de +3)",
-            "+700 po"
-        ],
-        [
-            71,
-            75,
-            "Arc long composite (limite de bonus de For de +4)",
-            "+800 po"
-        ],
-        [
-            76,
-            79,
-            "Dard",
-            "+300 po et 5 pa"
-        ],
-        [
-            80,
-            83,
-            "Fronde",
-            "+300 po"
-        ],
-        [
-            84,
-            88,
-            "Hache de lancer",
-            "+308 po"
-        ],
-        [
-            89,
-            90,
-            "Javeline",
-            "+301 po"
-        ],
-        [
-            91,
-            100,
-            "Munitions"
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": 10,
+            "name": "Arbalète légère",
+            "price": 335,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 11,
+            "lootChanceMax": 20,
+            "name": "Arbalète lourde",
+            "price": 350,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 21,
+            "lootChanceMax": 25,
+            "name": "Arc court",
+            "price": 330,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 26,
+            "lootChanceMax": 30,
+            "name": "Arc court composite (limite de bonus de For de +0)",
+            "price": 375,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 31,
+            "lootChanceMax": 35,
+            "name": "Arc court composite (limite de bonus de For de +1)",
+            "price": 450,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 36,
+            "lootChanceMax": 40,
+            "name": "Arc court composite (limite de bonus de For de +2)",
+            "price": 525,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 41,
+            "lootChanceMax": 50,
+            "name": "Arc long",
+            "price": 375,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 51,
+            "lootChanceMax": 55,
+            "name": "Arc long composite (limite de bonus de For de +0)",
+            "price": 400,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 56,
+            "lootChanceMax": 60,
+            "name": "Arc long composite (limite de bonus de For de +1)",
+            "price": 500,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 61,
+            "lootChanceMax": 65,
+            "name": "Arc long composite (limite de bonus de For de +2)",
+            "price": 600,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 66,
+            "lootChanceMax": 70,
+            "name": "Arc long composite (limite de bonus de For de +3)",
+            "price": 700,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 71,
+            "lootChanceMax": 75,
+            "name": "Arc long composite (limite de bonus de For de +4)",
+            "price": 800,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 76,
+            "lootChanceMax": 79,
+            "name": "Dard",
+            "price": 300,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 80,
+            "lootChanceMax": 83,
+            "name": "Fronde",
+            "price": 300,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 84,
+            "lootChanceMax": 88,
+            "name": "Hache de lancer",
+            "price": 308,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 89,
+            "lootChanceMax": 90,
+            "name": "Javeline",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 91,
+            "lootChanceMax": 100,
+            "name": "Munitions",
+            "price": null,
+            "currencyType": null
+        }
     ]
 }

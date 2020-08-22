@@ -3,41 +3,55 @@
         "1d100",
         "Malédiction"
     ],
-    "data": [
-        [
-            1,
-            15,
-            "Pouvoir imaginaire"
-        ],
-        [
-            16,
-            35,
-            "Effet (ou cible) inversé"
-        ],
-        [
-            36,
-            45,
-            "Fonctionnement intermittent"
-        ],
-        [
-            46,
-            60,
-            "Conditions de fonctionnement"
-        ],
-        [
-            61,
-            75,
-            "Inconvénient"
-        ],
-        [
-            76,
-            90,
-            "Effet radicalement différent"
-        ],
-        [
-            91,
-            100,
-            "Remplacé l’objet par un objet maudit spécifique"
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": 15,
+            "name": "Pouvoir imaginaire",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 16,
+            "lootChanceMax": 35,
+            "name": "Effet (ou cible) inversé",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 36,
+            "lootChanceMax": 45,
+            "name": "Fonctionnement intermittent",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 46,
+            "lootChanceMax": 60,
+            "name": "Conditions de fonctionnement",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 61,
+            "lootChanceMax": 75,
+            "name": "Inconvénient",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 76,
+            "lootChanceMax": 90,
+            "name": "Effet radicalement différent",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 91,
+            "lootChanceMax": 100,
+            "name": "Remplacé l’objet par un objet maudit spécifique",
+            "price": null,
+            "currencyType": null
+        }
     ]
 }

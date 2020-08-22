@@ -4,252 +4,293 @@
         "Arme",
         "Prix de l’arme"
     ],
-    "data": [
-        [
-            1,
-            2,
-            "Arbalète légère à répétition",
-            "+550 po"
-        ],
-        [
-            3,
-            4,
-            "Arbalète lourde à répétition",
-            "+700 po"
-        ],
-        [
-            5,
-            7,
-            "Arbalète de poing",
-            "+400 po"
-        ],
-        [
-            8,
-            9,
-            "Bolas",
-            "+305 po"
-        ],
-        [
-            10,
-            12,
-            "Chaîne cloutée",
-            "+325 po"
-        ],
-        [
-            13,
-            14,
-            "Cimeterre à deux mains",
-            "+375 po"
-        ],
-        [
-            15,
-            16,
-            "Corsèque",
-            "+310 po"
-        ],
-        [
-            17,
-            18,
-            "Coutille",
-            "+308 po"
-        ],
-        [
-            19,
-            20,
-            "Dague coup-de-poing",
-            "+302 po"
-        ],
-        [
-            21,
-            23,
-            "Double-lame",
-            "+700 po"
-        ],
-        [
-            24,
-            26,
-            "Épieu",
-            "+301 po"
-        ],
-        [
-            27,
-            28,
-            "Faux",
-            "+318 po"
-        ],
-        [
-            29,
-            30,
-            "Filet",
-            "+320 po"
-        ],
-        [
-            31,
-            33,
-            "Fléau d’armes léger",
-            "+308 po"
-        ],
-        [
-            33,
-            36,
-            "Fléau d’armes lourd",
-            "+315 po"
-        ],
-        [
-            37,
-            39,
-            "Fléau double",
-            "+690 po"
-        ],
-        [
-            40,
-            41,
-            "Fouet",
-            "+301 po"
-        ],
-        [
-            42,
-            43,
-            "Gantelet",
-            "+302 po"
-        ],
-        [
-            44,
-            45,
-            "Gantelet clouté",
-            "+305 po"
-        ],
-        [
-            46,
-            47,
-            "Gourdin",
-            "+300 po"
-        ],
-        [
-            48,
-            49,
-            "Guisarme",
-            "+309 po"
-        ],
-        [
-            50,
-            53,
-            "Hache d’armes",
-            "+310 po"
-        ],
-        [
-            54,
-            56,
-            "Hache double orque2",
-            "+660 po"
-        ],
-        [
-            57,
-            58,
-            "Hachette",
-            "+306 po"
-        ],
-        [
-            59,
-            61,
-            "Hallebarde",
-            "+310 po"
-        ],
-        [
-            62,
-            64,
-            "Kukri",
-            "+308 po"
-        ],
-        [
-            65,
-            67,
-            "Lance d’arçon",
-            "+310 po"
-        ],
-        [
-            68,
-            70,
-            "Marteau de guerre",
-            "+312 po"
-        ],
-        [
-            71,
-            72,
-            "Marteau léger",
-            "+301 po"
-        ],
-        [
-            73,
-            75,
-            "Marteau-piolet gnome",
-            "+620 po"
-        ],
-        [
-            76,
-            77,
-            "Massue",
-            "+305 po"
-        ],
-        [
-            78,
-            79,
-            "Matraque",
-            "+301 po"
-        ],
-        [
-            80,
-            82,
-            "Morgenstern",
-            "+308 po"
-        ],
-        [
-            83,
-            84,
-            "Pic de guerre léger",
-            "+304 po"
-        ],
-        [
-            85,
-            86,
-            "Pic de guerre lourd",
-            "+308 po"
-        ],
-        [
-            87,
-            89,
-            "Pique",
-            "+305 po"
-        ],
-        [
-            90,
-            91,
-            "Sai",
-            "+301 po"
-        ],
-        [
-            92,
-            93,
-            "Serpe",
-            "+306 po"
-        ],
-        [
-            94,
-            95,
-            "Shuriken (50)",
-            "+301 po"
-        ],
-        [
-            96,
-            97,
-            "Trident",
-            "+315 po"
-        ],
-        [
-            98,
-            100,
-            "Urgrosh nain",
-            "+650 po"
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": 2,
+            "name": "Arbalète légère à répétition",
+            "price": 550,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 3,
+            "lootChanceMax": 4,
+            "name": "Arbalète lourde à répétition",
+            "price": 700,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 5,
+            "lootChanceMax": 7,
+            "name": "Arbalète de poing",
+            "price": 400,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 8,
+            "lootChanceMax": 9,
+            "name": "Bolas",
+            "price": 305,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 10,
+            "lootChanceMax": 12,
+            "name": "Chaîne cloutée",
+            "price": 325,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 13,
+            "lootChanceMax": 14,
+            "name": "Cimeterre à deux mains",
+            "price": 375,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 15,
+            "lootChanceMax": 16,
+            "name": "Corsèque",
+            "price": 310,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 17,
+            "lootChanceMax": 18,
+            "name": "Coutille",
+            "price": 308,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 19,
+            "lootChanceMax": 20,
+            "name": "Dague coup-de-poing",
+            "price": 302,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 21,
+            "lootChanceMax": 23,
+            "name": "Double-lame",
+            "price": 700,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 24,
+            "lootChanceMax": 26,
+            "name": "Épieu",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 27,
+            "lootChanceMax": 28,
+            "name": "Faux",
+            "price": 318,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 29,
+            "lootChanceMax": 30,
+            "name": "Filet",
+            "price": 320,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 31,
+            "lootChanceMax": 33,
+            "name": "Fléau d’armes léger",
+            "price": 308,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 33,
+            "lootChanceMax": 36,
+            "name": "Fléau d’armes lourd",
+            "price": 315,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 37,
+            "lootChanceMax": 39,
+            "name": "Fléau double",
+            "price": 690,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 40,
+            "lootChanceMax": 41,
+            "name": "Fouet",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 42,
+            "lootChanceMax": 43,
+            "name": "Gantelet",
+            "price": 302,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 44,
+            "lootChanceMax": 45,
+            "name": "Gantelet clouté",
+            "price": 305,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 46,
+            "lootChanceMax": 47,
+            "name": "Gourdin",
+            "price": 300,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 48,
+            "lootChanceMax": 49,
+            "name": "Guisarme",
+            "price": 309,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 50,
+            "lootChanceMax": 53,
+            "name": "Hache d’armes",
+            "price": 310,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 54,
+            "lootChanceMax": 56,
+            "name": "Hache double orque2",
+            "price": 660,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 57,
+            "lootChanceMax": 58,
+            "name": "Hachette",
+            "price": 306,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 59,
+            "lootChanceMax": 61,
+            "name": "Hallebarde",
+            "price": 310,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 62,
+            "lootChanceMax": 64,
+            "name": "Kukri",
+            "price": 308,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 65,
+            "lootChanceMax": 67,
+            "name": "Lance d’arçon",
+            "price": 310,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 68,
+            "lootChanceMax": 70,
+            "name": "Marteau de guerre",
+            "price": 312,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 71,
+            "lootChanceMax": 72,
+            "name": "Marteau léger",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 73,
+            "lootChanceMax": 75,
+            "name": "Marteau-piolet gnome",
+            "price": 620,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 76,
+            "lootChanceMax": 77,
+            "name": "Massue",
+            "price": 305,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 78,
+            "lootChanceMax": 79,
+            "name": "Matraque",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 80,
+            "lootChanceMax": 82,
+            "name": "Morgenstern",
+            "price": 308,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 83,
+            "lootChanceMax": 84,
+            "name": "Pic de guerre léger",
+            "price": 304,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 85,
+            "lootChanceMax": 86,
+            "name": "Pic de guerre lourd",
+            "price": 308,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 87,
+            "lootChanceMax": 89,
+            "name": "Pique",
+            "price": 305,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 90,
+            "lootChanceMax": 91,
+            "name": "Sai",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 92,
+            "lootChanceMax": 93,
+            "name": "Serpe",
+            "price": 306,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 94,
+            "lootChanceMax": 95,
+            "name": "Shuriken (50)",
+            "price": 301,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 96,
+            "lootChanceMax": 97,
+            "name": "Trident",
+            "price": 315,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 98,
+            "lootChanceMax": 100,
+            "name": "Urgrosh nain",
+            "price": 650,
+            "currencyType": "po"
+        }
     ]
 }

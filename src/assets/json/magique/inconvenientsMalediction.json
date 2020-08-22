@@ -3,106 +3,146 @@
         "1d100",
         "Condition"
     ],
-    "data": [
-        [
-            1,
-            3,
-            "Température inférieure à 0° C"
-        ],
-        [
-            4,
-            5,
-            "Température supérieure à 0° C"
-        ],
-        [
-            6,
-            10,
-            "De jour"
-        ],
-        [
-            11,
-            15,
-            "De nuit"
-        ],
-        [
-            16,
-            20,
-            "À la lumière (directe) du soleil"
-        ],
-        [
-            21,
-            25,
-            "Loin de la lumière du soleil"
-        ],
-        [
-            26,
-            34,
-            "Sous l’eau"
-        ],
-        [
-            35,
-            37,
-            "Hors de l’eau"
-        ],
-        [
-            38,
-            45,
-            "Sous terre"
-        ],
-        [
-            46,
-            55,
-            "À la surface"
-        ],
-        [
-            56,
-            60,
-            "À moins de 3 m d’un type de créature déterminé aléatoirement"
-        ],
-        [
-            61,
-            64,
-            "À moins de 3 m d’une race ou espèce de créature déterminée aléatoirement"
-        ],
-        [
-            65,
-            72,
-            "À moins de 3 m d’un lanceur de sorts profanes"
-        ],
-        [
-            73,
-            80,
-            "À moins de 3 m d’un lanceur de sorts divins"
-        ],
-        [
-            81,
-            85,
-            "Dans les mains d’une créature autre qu’un lanceur de sorts"
-        ],
-        [
-            86,
-            90,
-            "Dans les mains d’un lanceur de sorts"
-        ],
-        [
-            91,
-            95,
-            "Dans les mains d’une créature d’un alignement donné"
-        ],
-        [
-            96,
-            96,
-            "Dans les mains d’une créature d’un sexe donné"
-        ],
-        [
-            97,
-            99,
-            "Durant les jours saints (ou inversement) ou en cas d’alignement astrologique donné"
-        ],
-        [
-            100,
-            100,
-            "À moins de 100 km d’un site donné."
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": 3,
+            "name": "Température inférieure à 0° C",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 4,
+            "lootChanceMax": 5,
+            "name": "Température supérieure à 0° C",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 6,
+            "lootChanceMax": 10,
+            "name": "De jour",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 11,
+            "lootChanceMax": 15,
+            "name": "De nuit",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 16,
+            "lootChanceMax": 20,
+            "name": "À la lumière (directe) du soleil",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 21,
+            "lootChanceMax": 25,
+            "name": "Loin de la lumière du soleil",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 26,
+            "lootChanceMax": 34,
+            "name": "Sous l’eau",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 35,
+            "lootChanceMax": 37,
+            "name": "Hors de l’eau",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 38,
+            "lootChanceMax": 45,
+            "name": "Sous terre",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 46,
+            "lootChanceMax": 55,
+            "name": "À la surface",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 56,
+            "lootChanceMax": 60,
+            "name": "À moins de 3 m d’un type de créature déterminé aléatoirement",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 61,
+            "lootChanceMax": 64,
+            "name": "À moins de 3 m d’une race ou espèce de créature déterminée aléatoirement",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 65,
+            "lootChanceMax": 72,
+            "name": "À moins de 3 m d’un lanceur de sorts profanes",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 73,
+            "lootChanceMax": 80,
+            "name": "À moins de 3 m d’un lanceur de sorts divins",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 81,
+            "lootChanceMax": 85,
+            "name": "Dans les mains d’une créature autre qu’un lanceur de sorts",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 86,
+            "lootChanceMax": 90,
+            "name": "Dans les mains d’un lanceur de sorts",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 91,
+            "lootChanceMax": 95,
+            "name": "Dans les mains d’une créature d’un alignement donné",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 96,
+            "lootChanceMax": null,
+            "name": "Dans les mains d’une créature d’un sexe donné",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 97,
+            "lootChanceMax": 99,
+            "name": "Durant les jours saints (ou inversement) ou en cas d’alignement astrologique donné",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 100,
+            "lootChanceMax": null,
+            "name": "À moins de 100 km d’un site donné.",
+            "price": null,
+            "currencyType": null
+        }
     ]
 }

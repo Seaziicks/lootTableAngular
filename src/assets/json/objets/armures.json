@@ -4,78 +4,90 @@
         "Armure",
         "Prix de l’armure"
     ],
-    "data": [
-        [
-            1,
-            1,
-            "Armure d’écailles",
-            "+200 po"
-        ],
-        [
-            2,
-            2,
-            "Armure de cuir",
-            "+160 po"
-        ],
-        [
-            3,
-            17,
-            "Armure de cuir clouté",
-            "+175 po"
-        ],
-        [
-            18,
-            27,
-            "Armure de peau",
-            "+165 po"
-        ],
-        [
-            28,
-            28,
-            "Armure matelassée",
-            "+155 po"
-        ],
-        [
-            29,
-            43,
-            "Chemise de mailles",
-            "+250 po"
-        ],
-        [
-            44,
-            44,
-            "Clibanion",
-            "+350 po"
-        ],
-        [
-            45,
-            45,
-            "Cotte de mailles",
-            "+300 po"
-        ],
-        [
-            46,
-            46,
-            "Crevice",
-            "+400 po"
-        ],
-        [
-            47,
-            59,
-            "Cuirasse",
-            "+350 po"
-        ],
-        [
-            60,
-            99,
-            "Harnois",
-            "+1 650 po"
-        ],
-        [
-            100,
-            100,
-            "Plaques",
-            "+750 po"
-        ]
+    "Chances": [
+        {
+            "lootChanceMin": 1,
+            "lootChanceMax": null,
+            "name": "Armure d’écailles",
+            "price": 200,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 2,
+            "lootChanceMax": null,
+            "name": "Armure de cuir",
+            "price": 160,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 3,
+            "lootChanceMax": 17,
+            "name": "Armure de cuir clouté",
+            "price": 175,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 18,
+            "lootChanceMax": 27,
+            "name": "Armure de peau",
+            "price": 165,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 28,
+            "lootChanceMax": null,
+            "name": "Armure matelassée",
+            "price": 155,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 29,
+            "lootChanceMax": 43,
+            "name": "Chemise de mailles",
+            "price": 250,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 44,
+            "lootChanceMax": null,
+            "name": "Clibanion",
+            "price": 350,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 45,
+            "lootChanceMax": null,
+            "name": "Cotte de mailles",
+            "price": 300,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 46,
+            "lootChanceMax": null,
+            "name": "Crevice",
+            "price": 400,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 47,
+            "lootChanceMax": 59,
+            "name": "Cuirasse",
+            "price": 350,
+            "currencyType": "po"
+        },
+        {
+            "lootChanceMin": 60,
+            "lootChanceMax": 99,
+            "name": "Harnois",
+            "price": 1,
+            "currencyType": ""
+        },
+        {
+            "lootChanceMin": 100,
+            "lootChanceMax": null,
+            "name": "Plaques",
+            "price": 750,
+            "currencyType": "po"
+        }
     ]
 }
