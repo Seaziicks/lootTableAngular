@@ -30,6 +30,7 @@ import { BatonsComponent } from './objets/batons/batons.component';
 import { MaledictionsComponent } from './objets/maledictions/maledictions.component';
 import { ObjetsMerveilleuxComponent } from './objets/objets-merveilleux/objets-merveilleux.component';
 import { SceptresComponent } from './objets/sceptres/sceptres.component';
+import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.component';
 
 
 
@@ -52,6 +53,7 @@ import { SceptresComponent } from './objets/sceptres/sceptres.component';
     MaledictionsComponent,
     ObjetsMerveilleuxComponent,
     SceptresComponent,
+    ObjetSimpleComponent,
   ],
   imports: [
     BrowserModule,

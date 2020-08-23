@@ -11,10 +11,11 @@ import {MagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
 export class ArmesComponent implements OnInit {
 
     nom: string;
-    bonusArme: number;
-    typeArme: string;
+    bonus: number;
+    type: string;
     proprietesMagiques: MagicalProperty[] = [];
     prix: number;
+    currencyType: string;
 
     dePuissance: number;
     deBonus: number;
@@ -66,46 +67,46 @@ export class ArmesComponent implements OnInit {
         switch (this.dePuissance) {
             case 1:
                 if (this.deBonus <= 70) {
-                    this.bonusArme = 1;
+                    this.bonus = 1;
                 } else if (this.deBonus > 70 && this.deBonus <= 85) {
-                    this.bonusArme = 2;
+                    this.bonus = 2;
                 } else if (this.deBonus > 85 && this.deBonus <= 90) {
-                    this.bonusArme = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                 } else if (this.deBonus > 90 && this.deBonus <= 100) {
-                    this.bonusArme = 0;
+                    this.bonus = 0;
                     this.isMagique = true;
                 }
                 break;
             case 2:
                 if (this.deBonus <= 10) {
-                    this.bonusArme = 1;
+                    this.bonus = 1;
                 } else if (this.deBonus > 10 && this.deBonus <= 29) {
-                    this.bonusArme = 2;
+                    this.bonus = 2;
                 } else if (this.deBonus > 29 && this.deBonus <= 58) {
-                    this.bonusArme = 3;
+                    this.bonus = 3;
                 } else if (this.deBonus > 58 && this.deBonus <= 62) {
-                    this.bonusArme = 4;
+                    this.bonus = 4;
                 } else if (this.deBonus > 62 && this.deBonus <= 68) {
-                    this.bonusArme = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                 } else if (this.deBonus > 68 && this.deBonus <= 100) {
-                    this.bonusArme = 0;
+                    this.bonus = 0;
                     this.isMagique = true;
                 }
                 break;
             case 3:
                 if (this.deBonus <= 20) {
-                    this.bonusArme = 3;
+                    this.bonus = 3;
                 } else if (this.deBonus > 20 && this.deBonus <= 38) {
-                    this.bonusArme = 4;
+                    this.bonus = 4;
                 } else if (this.deBonus > 38 && this.deBonus <= 49) {
-                    this.bonusArme = 5;
+                    this.bonus = 5;
                 } else if (this.deBonus > 49 && this.deBonus <= 63) {
-                    this.bonusArme = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                 } else if (this.deBonus > 63 && this.deBonus <= 100) {
-                    this.bonusArme = 0;
+                    this.bonus = 0;
                     this.isMagique = true;
                 }
                 break;
@@ -122,19 +123,21 @@ export class ArmesComponent implements OnInit {
         this.deMunitions = undefined;
         if (this.deTypeArme <= 70) {
             this.isCaC = true;
-            this.typeArme = 'Armes de corp à corp';
+            this.type = 'Armes de corp à corp';
         } else if (this.deTypeArme > 70 && this.deTypeArme <= 90) {
             this.isDistance = true;
-            this.typeArme = 'Armes à distance';
+            this.type = 'Armes à distance';
         } else if (this.deTypeArme > 90 && this.deTypeArme <= 100) {
             this.isInhabituelle = true;
-            this.typeArme = 'Armes inhabituelle';
+            this.type = 'Armes inhabituelle';
         }
     }
 
     getProprieteMagique() {
         this.proprietesMagiques = [];
-        this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
+        if (this.deProprieteMagique && this.deProprieteMagique <= this.allProprietesMagiques.length) {
+            this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
+        }
     }
 
     getArmeSpeciale() {
@@ -145,11 +148,13 @@ export class ArmesComponent implements OnInit {
         this.deArmeInhabituelle = undefined;
         this.deMunitions = undefined;
         this.resetArme();
-        const armeSpecial: MagicalProperty = this.allArmesSpeciales[this.deArmeSpeciale - 1];
-        this.typeArme = 'Speciale';
-        this.bonusArme = 0;
-        this.proprietesMagiques.push(armeSpecial);
-        this.nom = armeSpecial.title;
+        if (this.deArmeSpeciale && this.deArmeSpeciale <= this.allArmesSpeciales.length) {
+            const armeSpecial: MagicalProperty = this.allArmesSpeciales[this.deArmeSpeciale - 1];
+            this.type = 'Speciale';
+            this.bonus = 0;
+            this.proprietesMagiques.push(armeSpecial);
+            this.nom = armeSpecial.title;
+        }
     }
 
     getNbProprietesMagiques(): number {
@@ -162,8 +167,8 @@ export class ArmesComponent implements OnInit {
 
     resetArme() {
         this.proprietesMagiques = [];
-        this.typeArme = undefined;
-        this.bonusArme = undefined;
+        this.type = undefined;
+        this.bonus = undefined;
         this.nom = undefined;
         this.prix = 0;
     }
@@ -226,12 +231,13 @@ export class ArmesComponent implements OnInit {
         const arme = armes.Chances.filter(chance => (chance.lootChanceMin <= dice && chance.lootChanceMax >= dice))[0];
         this.nom = arme.name;
         this.prix += +(arme.price);
+        this.currencyType = arme.currencyType;
     }
 
     setIsMunitions() {
         if (this.nom === 'Munitions' || this.deArmeDistance >= 91) {
             this.isMunitions = true;
-            this.typeArme = 'Munitions';
+            this.type = 'Munitions';
         }
     }
 

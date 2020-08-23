@@ -30,7 +30,7 @@
                         <input min="1" [max]="this.getNbSpecials()" type="number" class="form-control" id="ArmeSpec"
                                name="ArmeSpec"
                                placeholder="Arme Spéciale"
-                               [(ngModel)]="this.deArmureSpeciale"
+                               [(ngModel)]="this.deSpecial"
                                (ngModelChange)="this.getSpecial()"
                                required>
                     </div>
@@ -72,7 +72,7 @@
         <h1>Résultat</h1>
         <h3>{{this.type}} : {{this.nom}} <span
             *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
-        <p>{{this.type}} - Bonus +{{this.bonusArmure}}</p>
+        <p>{{this.type}} - Bonus +{{this.bonus}}</p>
 
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
             <h4>{{proprieteMagique.title}}</h4>

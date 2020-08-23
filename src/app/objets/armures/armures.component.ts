@@ -11,15 +11,16 @@ import {JSonLoadService} from '../../services/json-load.service';
 export class ArmuresComponent implements OnInit {
 
     nom: string;
-    bonusArmure: number;
+    bonus: number;
     type: string;
     proprietesMagiques: MagicalProperty[] = [];
     prix: number;
+    currencyType: string;
 
     dePuissance: number;
     deBonus: number;
     deProprieteMagique: number;
-    deArmureSpeciale: number;
+    deSpecial: number;
     deType: number;
 
     isSpeciale = false;
@@ -55,109 +56,109 @@ export class ArmuresComponent implements OnInit {
         this.reset();
         this.isSpeciale = false;
         this.isMagique = false;
-        this.deArmureSpeciale = undefined;
+        this.deSpecial = undefined;
         this.deProprieteMagique = undefined;
         this.deType = undefined;
         switch (this.dePuissance) {
             case 1:
                 if (this.deBonus <= 60) {
-                    this.bonusArmure = 1;
+                    this.bonus = 1;
                     this.bouclier = true;
                 } else if (this.deBonus > 60 && this.deBonus <= 80) {
-                    this.bonusArmure = 1;
+                    this.bonus = 1;
                     this.bouclier = false;
                 } else if (this.deBonus > 80 && this.deBonus <= 85) {
-                    this.bonusArmure = 2;
+                    this.bonus = 2;
                     this.bouclier = true;
                 } else if (this.deBonus > 85 && this.deBonus <= 87) {
-                    this.bonusArmure = 2;
+                    this.bonus = 2;
                     this.bouclier = false;
                 } else if (this.deBonus > 87 && this.deBonus <= 89) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                     this.bouclier = false;
                     this.type = 'Armure speciale';
                 } else if (this.deBonus > 89 && this.deBonus <= 91) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                     this.bouclier = true;
                     this.type = 'Bouclier special';
                 } else if (this.deBonus > 91 && this.deBonus <= 100) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isMagique = true;
                 }
                 break;
             case 2:
                 if (this.deBonus <= 5) {
-                    this.bonusArmure = 1;
+                    this.bonus = 1;
                     this.bouclier = true;
                 } else if (this.deBonus > 5 && this.deBonus <= 10) {
-                    this.bonusArmure = 1;
+                    this.bonus = 1;
                     this.bouclier = false;
                 } else if (this.deBonus > 10 && this.deBonus <= 20) {
-                    this.bonusArmure = 2;
+                    this.bonus = 2;
                     this.bouclier = true;
                 } else if (this.deBonus > 20 && this.deBonus <= 30) {
-                    this.bonusArmure = 2;
+                    this.bonus = 2;
                     this.bouclier = false;
                 } else if (this.deBonus > 30 && this.deBonus <= 40) {
-                    this.bonusArmure = 3;
+                    this.bonus = 3;
                     this.bouclier = true;
                 } else if (this.deBonus > 40 && this.deBonus <= 50) {
-                    this.bonusArmure = 3;
+                    this.bonus = 3;
                     this.bouclier = false;
                 } else if (this.deBonus > 50 && this.deBonus <= 55) {
-                    this.bonusArmure = 4;
+                    this.bonus = 4;
                     this.bouclier = true;
                 } else if (this.deBonus > 55 && this.deBonus <= 57) {
-                    this.bonusArmure = 4;
+                    this.bonus = 4;
                     this.bouclier = false;
                 } else if (this.deBonus > 57 && this.deBonus <= 60) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                     this.bouclier = false;
                     this.type = 'Armure speciale';
                 } else if (this.deBonus > 60 && this.deBonus <= 63) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                     this.bouclier = true;
                     this.type = 'Bouclier special';
                 } else if (this.deBonus > 63 && this.deBonus <= 100) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isMagique = true;
                 }
                 break;
             case 3:
                 if (this.deBonus <= 8) {
-                    this.bonusArmure = 3;
+                    this.bonus = 3;
                     this.bouclier = true;
                 } else if (this.deBonus > 8 && this.deBonus <= 16) {
-                    this.bonusArmure = 3;
+                    this.bonus = 3;
                     this.bouclier = false;
                 } else if (this.deBonus > 16 && this.deBonus <= 27) {
-                    this.bonusArmure = 4;
+                    this.bonus = 4;
                     this.bouclier = true;
                 } else if (this.deBonus > 27 && this.deBonus <= 38) {
-                    this.bonusArmure = 4;
+                    this.bonus = 4;
                     this.bouclier = false;
                 } else if (this.deBonus > 38 && this.deBonus <= 49) {
-                    this.bonusArmure = 5;
+                    this.bonus = 5;
                     this.bouclier = true;
                 } else if (this.deBonus > 49 && this.deBonus <= 57) {
-                    this.bonusArmure = 5;
+                    this.bonus = 5;
                     this.bouclier = false;
                 } else if (this.deBonus > 57 && this.deBonus <= 60) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                     this.bouclier = false;
                     this.type =  'Armure speciale';
                 } else if (this.deBonus > 60 && this.deBonus <= 63) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isSpeciale = true;
                     this.bouclier = true;
                     this.type = 'Bouclier special';
                 } else if (this.deBonus > 63 && this.deBonus <= 100) {
-                    this.bonusArmure = 0;
+                    this.bonus = 0;
                     this.isMagique = true;
                 }
                 break;
@@ -194,18 +195,28 @@ export class ArmuresComponent implements OnInit {
 
     getProprieteMagique() {
         this.proprietesMagiques = [];
-        this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
+        if (this.deProprieteMagique && this.deProprieteMagique <= this.allProprietesMagiques.length) {
+            this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
+        }
     }
 
     getSpecial() {
         this.deProprieteMagique = undefined;
         this.deType = undefined;
         this.reset();
-        const special: MagicalProperty = this.bouclier ?
-            this.allBoucliersSpeciaux[this.deArmureSpeciale - 1] : this.allArmuresSpeciales[this.deArmureSpeciale - 1];
-        this.bonusArmure = 0;
-        this.proprietesMagiques.push(special);
-        this.nom = special.title;
+        if (this.deSpecial) {
+            let special: MagicalProperty = null;
+            if (this.bouclier && this.deSpecial <= this.allBoucliersSpeciaux.length) {
+                special = this.allBoucliersSpeciaux[this.deSpecial - 1];
+            } else if (!this.bouclier && this.deSpecial <= this.allArmuresSpeciales.length) {
+                special = this.allArmuresSpeciales[this.deSpecial - 1];
+            }
+            if (special) {
+                this.bonus = 0;
+                this.proprietesMagiques.push(special);
+                this.nom = special.title;
+            }
+        }
     }
 
     getNbProprietesMagiques(): number {
@@ -219,7 +230,7 @@ export class ArmuresComponent implements OnInit {
     reset() {
         this.proprietesMagiques = [];
         // this.type = undefined;
-        this.bonusArmure = undefined;
+        this.bonus = undefined;
         this.nom = undefined;
         this.prix = 0;
     }

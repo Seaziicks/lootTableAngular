@@ -12,9 +12,11 @@ import {AnneauxComponent} from './objets/anneaux/anneaux.component';
 import {ObjetsMerveilleuxComponent} from './objets/objets-merveilleux/objets-merveilleux.component';
 import {BatonsComponent} from './objets/batons/batons.component';
 import {SceptresComponent} from './objets/sceptres/sceptres.component';
+import {ObjetSimpleComponent} from './objets/objet-simple/objet-simple.component';
 
 
 const routes: Routes = [
+    {path: 'testObjet', component: ObjetSimpleComponent},
     {path: 'testSceptres', component: SceptresComponent},
     {path: 'testBatons', component: BatonsComponent},
     {path: 'testObjetsMerveilleux', component: ObjetsMerveilleuxComponent},

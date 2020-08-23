@@ -131,7 +131,7 @@
     <div style="width: 100%" *ngIf="this.nom">
         <h1>Résultat de l'arme</h1>
         <h3>Arme : {{this.nom}} <span *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
-        <p>{{this.typeArme}} - Bonus +{{this.bonusArme}}</p>
+        <p>{{this.type}} - Bonus +{{this.bonus}}</p>
 
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
             <h4>{{proprieteMagique.title}}</h4>

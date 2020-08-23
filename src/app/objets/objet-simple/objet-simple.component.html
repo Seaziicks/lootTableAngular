@@ -1,0 +1,50 @@
+<div style="width: 100%">
+    <h1>{{this.parametres[0]}}</h1>
+    <form class="needs-validation" id="competenceEffectForm">
+        <div class="form-row">
+            <div style="width: 100%">
+                <div class="col-md-2 mb-3">
+                    <label for="PropMag">{{this.parametres[1]}}
+                    </label>
+                    <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                           id="PropMag"
+                           name="PropMag"
+                           placeholder="Propriété Magique"
+                           [(ngModel)]="this.deProprieteObjet"
+                           (ngModelChange)="this.getProprieteMagique()"
+                           required>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0" id="proprieteObjet">
+        <h1>Résultat</h1>
+        <div>
+            <h3>{{this.parametres[2]}} : {{this.nom}} <span
+                *ngIf="this.proprietesObjet.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+
+            <ng-container *ngFor="let proprieteObjet of this.proprietesObjet;">
+                <h4>{{proprieteObjet.title}}</h4>
+                <span *ngFor="let description of proprieteObjet.description; let index = index;">
+                    <span [innerHTML]="description"></span><br/>
+
+                    <ng-container *ngFor="let table of proprieteObjet.table;">
+                        <span *ngIf="+table[0] === index"
+                              [innerHTML]="table[1]"></span>
+                    </ng-container>
+
+                    <ng-container *ngFor="let ul of proprieteObjet.ul;">
+                    <span *ngIf="+ul[0] === index"
+                          [innerHTML]="ul[1]"></span>
+                    </ng-container>
+                </span>
+                <br/>
+                <br/>
+                {{proprieteObjet.infos.data}}<br/><br/>
+            </ng-container>
+        </div>
+        <button (click)="this.modifierContenu()">Modifier</button>
+    </div>
+</div>
