@@ -19,7 +19,7 @@
 
 
     </form>
-    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0" id="proprieteObjet">
+    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0 && !this.modificationEnCours">
         <h1>Résultat</h1>
         <div>
             <h3>{{this.parametres[2]}} : {{this.nom}} <span
@@ -31,13 +31,13 @@
                     <span [innerHTML]="description"></span><br/>
 
                     <ng-container *ngFor="let table of proprieteObjet.table;">
-                        <span *ngIf="+table[0] === index"
-                              [innerHTML]="table[1]"></span>
+                        <span *ngIf="+table.position === index"
+                              [innerHTML]="table.data"></span>
                     </ng-container>
 
                     <ng-container *ngFor="let ul of proprieteObjet.ul;">
-                    <span *ngIf="+ul[0] === index"
-                          [innerHTML]="ul[1]"></span>
+                    <span *ngIf="+ul.position === index"
+                          [innerHTML]="ul.data"></span>
                     </ng-container>
                 </span>
                 <br/>
@@ -46,5 +46,36 @@
             </ng-container>
         </div>
         <button (click)="this.modifierContenu()">Modifier</button>
+    </div>
+
+    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0 && this.modificationEnCours">
+        <h1>Résultat</h1>
+        <div>
+            <h3>{{this.parametres[2]}} : {{this.nom}} <span
+                *ngIf="this.proprietesObjet.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+
+            <ng-container *ngFor="let proprieteObjet of this.proprietesObjet; let indexPropriete = index">
+                <h4>{{this.proprietesObjet[indexPropriete].title}}</h4>
+                <span *ngFor="let description of this.proprietesObjet[indexPropriete].description; let indexDescription = index;">
+                    <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].description[indexDescription]"></textarea><br/>
+
+                    <ng-container *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index;">
+                        <textarea *ngIf="+this.proprietesObjet[indexPropriete].table[indexTable].position=== indexPropriete"
+                              [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].data"></textarea>
+                    </ng-container>
+
+                    <ng-container *ngFor="let ul of this.proprietesObjet[indexPropriete].ul; let indexUl = index;">
+                    <textarea *ngIf="this.proprietesObjet[indexPropriete].ul[indexUl].position === indexPropriete"
+                          [(ngModel)]="this.proprietesObjet[indexPropriete].ul[indexUl].data"
+                              oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'"></textarea>
+                    </ng-container>
+                </span>
+                <br/>
+                <br/>
+                {{this.proprietesObjet[indexPropriete].infos.data}}<br/><br/>
+            </ng-container>
+        </div>
+        <button (click)="this.modifierContenu()">Valider</button>
+        <button (click)="this.modifierContenu()">Reset</button>
     </div>
 </div>

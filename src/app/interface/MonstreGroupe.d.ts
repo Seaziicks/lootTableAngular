@@ -52,8 +52,18 @@ export interface MagicalProperty {
     title: string;
     description: string[];
     infos: Informations;
-    table: string[];
-    ul: string[];
+    table: TableMagicalProperty[];
+    ul: UlMagicalProperty[];
+}
+
+export interface TableMagicalProperty {
+    position: number;
+    data: string;
+}
+
+export interface UlMagicalProperty {
+    position: number;
+    data: string;
 }
 
 export interface Informations {
