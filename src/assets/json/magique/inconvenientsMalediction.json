@@ -125,7 +125,7 @@
         },
         {
             "lootChanceMin": 96,
-            "lootChanceMax": null,
+            "lootChanceMax": 96,
             "name": "Dans les mains d’une créature d’un sexe donné",
             "price": null,
             "currencyType": null
@@ -139,7 +139,7 @@
         },
         {
             "lootChanceMin": 100,
-            "lootChanceMax": null,
+            "lootChanceMax": 100,
             "name": "À moins de 100 km d’un site donné.",
             "price": null,
             "currencyType": null

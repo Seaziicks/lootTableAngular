@@ -69,7 +69,7 @@
         },
         {
             "lootChanceMin": 35,
-            "lootChanceMax": null,
+            "lootChanceMax": 35,
             "name": "Le personnage contracte une maladie (déterminée aléatoirement) que rien ni personne ne peut soigner.",
             "price": null,
             "currencyType": null
@@ -83,7 +83,7 @@
         },
         {
             "lootChanceMin": 40,
-            "lootChanceMax": null,
+            "lootChanceMax": 40,
             "name": "L’objet a l’air ridicule (couleur outrancière, forme risible, aura rose bonbon, etc.).",
             "price": null,
             "currencyType": null
@@ -139,7 +139,7 @@
         },
         {
             "lootChanceMin": 65,
-            "lootChanceMax": null,
+            "lootChanceMax": 65,
             "name": "Le personnage acquiert deux niveaux négatifs.",
             "price": null,
             "currencyType": null
@@ -188,35 +188,35 @@
         },
         {
             "lootChanceMin": 96,
-            "lootChanceMax": null,
+            "lootChanceMax": 96,
             "name": "Le personnage se métamorphose en une créature donnée (5% de chances par jour, toujours la même).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 97,
-            "lootChanceMax": null,
+            "lootChanceMax": 97,
             "name": "Le personnage ne peut plus lancer de sorts profanes.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 98,
-            "lootChanceMax": null,
+            "lootChanceMax": 98,
             "name": "Le personnage ne peut plus lancer de sorts divins.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 99,
-            "lootChanceMax": null,
+            "lootChanceMax": 99,
             "name": "Le personnage ne peut plus lancer le moindre sort.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 100,
-            "lootChanceMax": null,
+            "lootChanceMax": 100,
             "name": "Au choix : choisissez un inconvénient qui vous paraisse convenir à la nature de l’objet ou créez-en un autre.",
             "price": null,
             "currencyType": null

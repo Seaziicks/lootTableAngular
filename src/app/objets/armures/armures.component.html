@@ -1,1 +1,97 @@
-<p>armures works!</p>
+<div style="width: 100%">
+    <h1>Ceci est une armure ou un bouclier</h1>
+    <form class="needs-validation" id="competenceEffectForm">
+        <div class="form-row">
+            <div class="col-md-2 mb-3">
+                <label for="dePuissanceArme">Dé de puissance
+                </label>
+                <input min="1" max="3" type="number" class="form-control" id="dePuissanceArme"
+                       name="dePuissanceArme"
+                       placeholder="Puissance de l'arme"
+                       [(ngModel)]="this.dePuissance"
+                       required>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <label for="DeBonusArme">Dé de bonus
+                </label>
+                <input min="1" max="100" type="number" class="form-control" id="DeBonusArme"
+                       name="DeBonusArme"
+                       placeholder="Bonus Arme"
+                       [(ngModel)]="this.deBonus"
+                       (ngModelChange)="this.isBouclier()"
+                       required>
+            </div>
+                <div *ngIf="this.isSpeciale && this.dePuissance && this.deBonus" style="width: 100%">
+                    <h3>{{this.type}}</h3>
+                    <div class="col-md-2 mb-3">
+                        <label for="ArmeSpec">Dé spécial
+                        </label>
+                        <input min="1" [max]="this.getNbSpecials()" type="number" class="form-control" id="ArmeSpec"
+                               name="ArmeSpec"
+                               placeholder="Arme Spéciale"
+                               [(ngModel)]="this.deArmureSpeciale"
+                               (ngModelChange)="this.getSpecial()"
+                               required>
+                    </div>
+                </div>
+
+                <div *ngIf="!this.isSpeciale && this.dePuissance && this.deBonus" style="width: 100%">
+                    <h3>Type</h3>
+                    <div class="col-md-2 mb-3">
+                        <label for="TypeArme">Dé type
+                        </label>
+                        <input min="1" max="100" type="number" class="form-control" id="TypeArme"
+                               name="TypeArme"
+                               placeholder="Type arme"
+                               [(ngModel)]="this.deType"
+                               (ngModelChange)="this.setType()"
+                               required>
+                    </div>
+                </div>
+
+                <div *ngIf="this.isMagique" style="width: 100%">
+                    <h3>Cette arme sera magique</h3>
+                    <div class="col-md-2 mb-3">
+                        <label for="PropMag">Dé de propriété magique
+                        </label>
+                        <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                               id="PropMag"
+                               name="PropMag"
+                               placeholder="Propriété Magique"
+                               [(ngModel)]="this.deProprieteMagique"
+                               (ngModelChange)="this.getProprieteMagique()"
+                               required>
+                    </div>
+                </div>
+        </div>
+
+
+    </form>
+    <div style="width: 100%" *ngIf="this.nom">
+        <h1>Résultat</h1>
+        <h3>{{this.type}} : {{this.nom}} <span
+            *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+        <p>{{this.type}} - Bonus +{{this.bonusArmure}}</p>
+
+        <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
+            <h4>{{proprieteMagique.title}}</h4>
+            <span *ngFor="let description of proprieteMagique.description; let index = index;">
+                <span [innerHTML]="description"></span><br/>
+
+                <ng-container *ngFor="let table of proprieteMagique.table;">
+                    <span *ngIf="+table[0] === index"
+                          [innerHTML]="table[1]"></span>
+                </ng-container>
+
+                <ng-container *ngFor="let ul of proprieteMagique.ul;">
+                <span *ngIf="+ul[0] === index"
+                      [innerHTML]="ul[1]"></span>
+                </ng-container>
+            </span>
+            <br/>
+            <br/>
+            {{proprieteMagique.infos.data}}<br/><br/>
+        </ng-container>
+    </div>
+</div>

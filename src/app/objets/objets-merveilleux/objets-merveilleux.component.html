@@ -1,1 +1,47 @@
-<p>objets-merveilleux works!</p>
+<div style="width: 100%">
+    <h1>Ceci est un objet merveilleux</h1>
+    <form class="needs-validation" id="competenceEffectForm">
+        <div class="form-row">
+            <div *ngIf="this.isMagique" style="width: 100%">
+                <div class="col-md-2 mb-3">
+                    <label for="PropMag">Dé d'objet merveilleux
+                    </label>
+                    <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                           id="PropMag"
+                           name="PropMag"
+                           placeholder="Propriété Magique"
+                           [(ngModel)]="this.deProprieteMagique"
+                           (ngModelChange)="this.getProprieteMagique()"
+                           required>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+    <div style="width: 100%" *ngIf="this.proprietesMagiques.length > 0">
+        <h1>Résultat</h1>
+        <h3>Objet Merveilleux : {{this.nom}} <span
+            *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+
+        <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
+            <h4>{{proprieteMagique.title}}</h4>
+            <span *ngFor="let description of proprieteMagique.description; let index = index;">
+                <span [innerHTML]="description"></span><br/>
+
+                <ng-container *ngFor="let table of proprieteMagique.table;">
+                    <span *ngIf="+table[0] === index"
+                          [innerHTML]="table[1]"></span>
+                </ng-container>
+
+                <ng-container *ngFor="let ul of proprieteMagique.ul;">
+                <span *ngIf="+ul[0] === index"
+                      [innerHTML]="ul[1]"></span>
+                </ng-container>
+            </span>
+            <br/>
+            <br/>
+            {{proprieteMagique.infos.data}}<br/><br/>
+        </ng-container>
+    </div>
+</div>

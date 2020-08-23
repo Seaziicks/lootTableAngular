@@ -136,7 +136,7 @@
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
             <h4>{{proprieteMagique.title}}</h4>
             <span *ngFor="let description of proprieteMagique.description; let index = index;">
-                <span>{{description}}<br/></span>
+                <span [innerHTML]="description"></span><br/>
 
                 <ng-container *ngFor="let table of proprieteMagique.table;">
                     <span *ngIf="+table[0] === index"

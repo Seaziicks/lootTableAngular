@@ -7,14 +7,14 @@
     "Chances": [
         {
             "lootChanceMin": 1,
-            "lootChanceMax": null,
+            "lootChanceMax": 1,
             "name": "Armure d’écailles",
             "price": 200,
             "currencyType": "po"
         },
         {
             "lootChanceMin": 2,
-            "lootChanceMax": null,
+            "lootChanceMax": 2,
             "name": "Armure de cuir",
             "price": 160,
             "currencyType": "po"
@@ -35,7 +35,7 @@
         },
         {
             "lootChanceMin": 28,
-            "lootChanceMax": null,
+            "lootChanceMax": 28,
             "name": "Armure matelassée",
             "price": 155,
             "currencyType": "po"
@@ -49,21 +49,21 @@
         },
         {
             "lootChanceMin": 44,
-            "lootChanceMax": null,
+            "lootChanceMax": 44,
             "name": "Clibanion",
             "price": 350,
             "currencyType": "po"
         },
         {
             "lootChanceMin": 45,
-            "lootChanceMax": null,
+            "lootChanceMax": 45,
             "name": "Cotte de mailles",
             "price": 300,
             "currencyType": "po"
         },
         {
             "lootChanceMin": 46,
-            "lootChanceMax": null,
+            "lootChanceMax": 46,
             "name": "Crevice",
             "price": 400,
             "currencyType": "po"
@@ -84,7 +84,7 @@
         },
         {
             "lootChanceMin": 100,
-            "lootChanceMax": null,
+            "lootChanceMax": 100,
             "name": "Plaques",
             "price": 750,
             "currencyType": "po"
