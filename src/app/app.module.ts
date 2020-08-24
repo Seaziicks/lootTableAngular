@@ -25,11 +25,7 @@ import { GestionDropMonstreBisComponent } from './gestion-drop-monstre-bis/gesti
 import { TestLoadJSonComponent } from './test-load-json/test-load-json.component';
 import { ArmesComponent } from './objets/armes/armes.component';
 import { ArmuresComponent } from './objets/armures/armures.component';
-import { AnneauxComponent } from './objets/anneaux/anneaux.component';
-import { BatonsComponent } from './objets/batons/batons.component';
 import { MaledictionsComponent } from './objets/maledictions/maledictions.component';
-import { ObjetsMerveilleuxComponent } from './objets/objets-merveilleux/objets-merveilleux.component';
-import { SceptresComponent } from './objets/sceptres/sceptres.component';
 import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.component';
 
 
@@ -48,11 +44,7 @@ import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.compone
     TestLoadJSonComponent,
     ArmesComponent,
     ArmuresComponent,
-    AnneauxComponent,
-    BatonsComponent,
     MaledictionsComponent,
-    ObjetsMerveilleuxComponent,
-    SceptresComponent,
     ObjetSimpleComponent,
   ],
   imports: [
