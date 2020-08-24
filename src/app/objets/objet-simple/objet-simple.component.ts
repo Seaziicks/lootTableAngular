@@ -29,8 +29,8 @@ export class ObjetSimpleComponent implements OnInit {
     constructor(private  http: HttpClient, private jsonService: JSonLoadService) {
         this.parametres = ['Ceci est un sceptre', 'Dé septentrional', 'Sceptre', 'magique', 'sceptres'];
         this.parametres = ['Ceci est un bâton', 'Dé bâton', 'Bâton', 'magique', 'batons'];
-        this.parametres = ['Ceci est un objet merveilleux', 'Dé merveilleux', 'Objet merveileux', 'magique', 'objetsMerveilleux'];
         this.parametres = ['Ceci sera un anneau', 'Dead Anno', 'Anneau', 'magique', 'anneauxMagiques'];
+        this.parametres = ['Ceci est un objet merveilleux', 'Dé merveilleux', 'Objet merveileux', 'magique', 'objetsMerveilleux'];
     }
 
     ngOnInit(): void {
@@ -47,7 +47,10 @@ export class ObjetSimpleComponent implements OnInit {
     getProprieteMagique() {
         this.proprietesObjet = [];
         if (this.deProprieteObjet && this.deProprieteObjet <= this.getNbProprietesMagiques()) {
-            this.proprietesObjet.push(this.getPropretesMagiques()[this.deProprieteObjet - 1]);
+            this.modificationEnCours = false;
+            this.proprietesObjet
+                .push(JSON.parse(JSON.stringify(this.getPropretesMagiques()[this.deProprieteObjet - 1])) as MagicalProperty);
+            this.nom = this.proprietesObjet[0].title;
         }
     }
 
@@ -58,7 +61,7 @@ export class ObjetSimpleComponent implements OnInit {
     getPropretesMagiques() {
         return this.dePuissance === 1 ? this.allObjets.weakAndSmall.concat(this.allObjets.unknown)
             : this.dePuissance === 2 ? this.allObjets.moderate.concat(this.allObjets.unknown)
-            : this.allObjets.strongAnfPowerful.concat(this.allObjets.unknown);
+                : this.allObjets.strongAnfPowerful.concat(this.allObjets.unknown);
     }
 
     reset() {
@@ -78,9 +81,17 @@ export class ObjetSimpleComponent implements OnInit {
         this.modificationEnCours = !this.modificationEnCours;
     }
 
+    resetContenu() {
+        this.getProprieteMagique();
+    }
+
     printTest(object: any) {
         console.log(JSON.stringify(object));
         console.log(object);
+    }
+
+    trackByFn(index, item) {
+        return index;
     }
 
 }

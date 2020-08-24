@@ -11,6 +11,7 @@
                            name="PuissMag"
                            placeholder="Puissance Magique"
                            [(ngModel)]="this.dePuissance"
+                           (ngModelChange)="this.getProprieteMagique()"
                            required>
                 </div>
                 <div class="col-md-2 mb-3">
@@ -84,10 +85,10 @@
             <h3>{{this.parametres[2]}} : {{this.nom}} <span
                 *ngIf="this.proprietesObjet.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
 
-            <ng-container *ngFor="let proprieteObjet of this.proprietesObjet; let indexPropriete = index">
-                <h4>{{this.proprietesObjet[indexPropriete].title}}</h4>
-                <span *ngFor="let description of this.proprietesObjet[indexPropriete].description; let indexDescription = index;">
-                    <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].description[indexDescription]"></textarea><br/>
+            <ng-container *ngFor="let proprieteObjet of this.proprietesObjet; let indexPropriete = index; trackBy: trackByFn">
+                <h4><textarea [(ngModel)]="this.proprietesObjet[indexPropriete].title"></textarea></h4>
+                <span *ngFor="let description of this.proprietesObjet[indexPropriete].description; let indexDescription = index; trackBy: trackByFn">
+                    <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].description[indexDescription]" ></textarea><br/>
 
                     <!--ng-container *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index;">
                         <textarea *ngIf="+this.proprietesObjet[indexPropriete].table[indexTable].position=== indexPropriete"
@@ -105,7 +106,7 @@
                             <table>
                                 <tbody>
                                 <tr *ngFor="let th of this.proprietesObjet[indexPropriete].table[indexTable].title; let thIndex = index">
-                                    <ng-container *ngFor="let title of this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index">
+                                    <ng-container *ngFor="let title of this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
                                         <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0][tdIndex].length < table.title[1][tdIndex].length; else elseBlock"
                                             [colSpan]="table.title[1][tdIndex].length / table.title[0][tdIndex].length">
                                             <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
@@ -118,7 +119,7 @@
                                     </ng-container>
                                 </tr>
                                 <tr *ngFor="let td of this.proprietesObjet[indexPropriete].table[indexTable].tr; let trIndex = index">
-                                    <ng-container *ngFor="let content of this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index">
+                                    <ng-container *ngFor="let content of this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index; trackBy: trackByFn">
                                         <td>
                                             <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex][tdIndex]"></textarea>
                                         </td>
@@ -132,7 +133,7 @@
                     <ng-container *ngFor="let shit of this.proprietesObjet[indexPropriete].ul; let indexUl = index;">
                         <span *ngIf="this.proprietesObjet[indexPropriete].ul[indexUl].position === indexDescription">
                             <ul>
-                                <li *ngFor="let shitBis of this.proprietesObjet[indexPropriete].ul[indexUl].li; let indexLi = index">
+                                <li *ngFor="let shitBis of this.proprietesObjet[indexPropriete].ul[indexUl].li; let indexLi = index; trackBy: trackByFn">
                                     <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].ul[indexUl].li[indexLi]"
                                               [name]="'positon'+this.proprietesObjet[indexPropriete].ul[indexUl].position+'ul'+indexUl+'li'+indexLi"></textarea>
                                 </li>
@@ -142,10 +143,12 @@
                 </span>
                 <br/>
                 <br/>
-                {{this.proprietesObjet[indexPropriete].infos.data}}<br/><br/>
+                <ng-container *ngFor="let shit of this.proprietesObjet[indexPropriete].infos.data; let indexData = index; trackBy: trackByFn">
+                    <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].infos.data[indexData]"></textarea>
+                </ng-container >
             </ng-container>
         </div>
         <button (click)="this.modifierContenu()">Valider</button>
-        <button (click)="this.modifierContenu()">Reset</button>
+        <button (click)="this.resetContenu()">Reset</button>
     </div>
 </div>
