@@ -600,7 +600,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Tonnerre. Une fois par jour, le sceptre peut frapper comme une masse d’armes légère +3. En cas de coup au but, la cible est étourdie par la déflagration qui se produit au moment de l’impact (jet de Vigueur DD 13 pour annuler). L’activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, lequel doit être touché au cours du round.",
                         "Électricité statique. Une fois par jour, une violente étincelle jaillit du sceptre pour frapper la créature touchée lors d’une attaque de corps à corps. La cible subit alors les dégâts normaux pour une masse d’armes légère +2 (1d6+2 points), auxquels viennent s’ajouter les dégâts dus à la décharge électrique (+2d6 points d’électricité). Même si l’attaque ne suffit pas pour toucher, la cible encaisse la décharge électrique (2d6) si le résultat obtenu est suffisant pour valider une attaque de contact au corps à corps. L’activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, qui doit être touché au cours du round.",
                         "Coup de tonnerre. Une fois par jour, au prix d’une action simple, le sceptre peut produire un bruit assourdissant dont les effets sont identiques à ceux du sort cri (jet de Vigueur DD 16 pour effet partiel, attaque sonique infligeant 2d6 points de dégâts, cible assourdie pendant 2d6 rounds).",
@@ -1084,7 +1084,7 @@
             "ul": [
                 {
                     "position": 2.0,
-                    "ul": [
+                    "li": [
                         "Immobilisation de personne au contact (jet de Volonté DD 14 pour annuler). Le possesseur du sceptre doit décider d’utiliser le pouvoir, puis réussir une attaque de contact au corps à corps pour l’activer. Si l’attaque rate, l’effet est perdu pour la journée.",
                         "Terreur affectant tous les adversaires voyant le sceptre, dans une portée maximale de 3 mètres (jet de Volonté DD 16 pour effet partiel). Il faut une action simple pour invoquer ce pouvoir.",
                         "Sur une attaque de contact au corps à corps réussie, le sceptre inflige 2d4 points de dégâts à la cible (jet de Volonté DD 17 pour demi-dégâts) et le porteur récupère la même quantité de points de vie. Le personnage doit annoncer son intention avant de porter son coup, comme pour immobilisation de personne."
@@ -1092,7 +1092,7 @@
                 },
                 {
                     "position": 3.0,
-                    "ul": [
+                    "li": [
                         "Sous sa forme habituelle, le sceptre fonctionne comme une masse d’armes légère +2.",
                         "Pour peu qu’on appuie sur le bouton 1, il se transforme en épée longue +1 de feu. Le fer jaillit de la tête de masse, laquelle devient la garde de l’épée nouvellement créée. La longueur totale du sceptre est alors de 1,20 mètre.",
                         "Si l’on presse le bouton 2, le sceptre devient une hache d’armes +4. Le fer jaillit de la tête de masse et le manche s’allonge pour donner à l’ensemble une longueur totale de 1,20 mètre.",
@@ -1101,7 +1101,7 @@
                 },
                 {
                     "position": 4.0,
-                    "ul": [
+                    "li": [
                         "Perche/échelle. Quand on presse le bouton 4, une pointe capable de se planter dans le granit jaillit de la tête de masse, tandis que trois crochets pointus apparaissent en bas du manche. En 1 round, le manche s’allonge pour atteindre une longueur totale allant de 1,50 mètre à 15 mètres (il s’arrête quand on appuie une seconde fois sur le bouton 4). Une fois le sceptre arrimé par les crochets et la pointe, des barreaux d’échelle se déploient sur toute sa longueur, à 30 centimètres d’intervalle (un à gauche, puis à droite, etc.). Le sceptre peut soutenir un poids total de 2 tonnes. Il se rétracte automatiquement quand on appuie sur le bouton 5.",
                         "L’échelle peut également être déployée de manière à enfoncer les portes. Le personnage plante le sceptre dans le sol à moins de 9 mètres de l’obstacle et l’incline dans la direction de ce dernier avant de presser le bouton 4. La force exercée par le sceptre correspond à modificateur de Force de +12.",
                         "Quand on appuie sur le bouton 6, le sceptre indique où se trouve le nord magnétique et révèle la profondeur ou l’altitude à laquelle se trouve son possesseur (par rapport à la surface, pas au niveau de la mer)."

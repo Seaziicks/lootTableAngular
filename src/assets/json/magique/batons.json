@@ -24,12 +24,12 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement.htm\">Agrandissement</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement-de-groupe.htm\">Agrandissement de groupe</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">Rapetissement</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement-de-groupe.htm\">Rapetissement de groupe</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-reduction-d-objet.htm\">Réduction d’objet</a> (1 charge)"
                     ]
                 }
             ],
@@ -62,9 +62,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">Clignotement</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">Forme éthérée</a> (1 charge)"
                     ]
                 }
             ],
@@ -93,10 +93,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nuée grouillante</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-pattes-d-araignee.htm\">Pattes d’araignée</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-araignee.htm\">Peau d’araignée</a> (1 charge)"
                     ]
                 }
             ],
@@ -125,11 +125,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-sacre.htm\">Châtiment sacré</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-marteau-du-chaos.htm\">Marteau du Chaos</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rejet-de-la-loi.htm\">Rejet de la Loi</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rejet-du-mal.htm\">Rejet du Mal</a> (2 charges)"
                     ]
                 }
             ],
@@ -157,10 +157,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">Création majeure</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-pierre.htm\">Mur de pierre</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">Animation d’objets</a> (2 charges)"
                     ]
                 }
             ],
@@ -190,10 +190,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-nourriture-et-d-eau.htm\">Création de nourriture et d’eau</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-purification-de-nourriture-et-d-eau.htm\">Purification de nourriture et d’eau</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-festin-des-heros.htm\">Festin des héros</a> (2 charges)"
                     ]
                 }
             ],
@@ -220,9 +220,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-de-l-eau.htm\">Contrôle de l’eau</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-sur-l-onde.htm\">Marche sur l’onde</a> (1 charge)"
                     ]
                 }
             ],
@@ -252,12 +252,12 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-identification.htm\">Identification</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-de-creature.htm\">Localisation de créature</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">Localisation d’objet</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-d-enchantement.htm\">Analyse d’enchantement</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-mystique.htm\">Vision mystique</a> (2 charges)"
                     ]
                 }
             ],
@@ -284,9 +284,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-des-vents.htm\">Contrôle des vents</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-dans-les-airs.htm\">Marche dans les airs</a> (1 charge)"
                     ]
                 }
             ],
@@ -313,9 +313,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-personne.htm\">Charme-personne</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre.htm\">Charme-monstre</a> (2 charges)"
                     ]
                 }
             ],
@@ -345,10 +345,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">Contagion</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-d-insectes.htm\">Fléau d’insectes</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-syphilis.htm\">Syphilis</a> (2 charges)"
                     ]
                 }
             ],
@@ -376,10 +376,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">Boule de feu</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mains-brulantes.htm\">Mains brûlantes</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-feu.htm\">Mur de feu</a> (2 charges)"
                     ]
                 }
             ],
@@ -410,11 +410,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-composante.htm\">Convocation de composante</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-instrument.htm\">Convocation d’instrument</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">Serviteur invisible</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-arme.htm\">Convocation d’arme</a> (2 charges)"
                     ]
                 }
             ],
@@ -447,12 +447,12 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)",
-                        " (3 charges)",
-                        " (4 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-animal.htm\">Charme-animal</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-ecorce.htm\">Peau d’écorce</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-allies-naturels-6.htm\">Convocation d’alliés naturels 6</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-d-epines.htm\">Mur d’épines</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-plantes.htm\">Animation des plantes</a> (4 charges)"
                     ]
                 }
             ],
@@ -480,10 +480,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-glace.htm\">Mur de glace</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">Tempête de grêle</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cone-de-froid.htm\">Cône de froid</a> (2 charges)"
                     ]
                 }
             ],
@@ -510,9 +510,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-acide.htm\">Brume acide</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nuée grouillante</a> (2 charges)"
                     ]
                 }
             ],
@@ -539,9 +539,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nuée grouillante</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-d-insectes.htm\">Fléau d’insectes</a> (3 charges)"
                     ]
                 }
             ],
@@ -570,11 +570,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-restauration-partielle.htm\">Restauration partielle</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-importants.htm\">Soins importants</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-de-la-cecite-surdite.htm\">Guérison de la cécité/surdité</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-des-maladies.htm\">Guérison des maladies</a> (3 charges)"
                     ]
                 }
             ],
@@ -601,9 +601,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">Animation des morts</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-mort-vivant.htm\">Création de mort-vivant</a> (2 charges)"
                     ]
                 }
             ],
@@ -631,10 +631,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-ancre-dimensionnelle.htm\">Ancre dimensionnelle</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-barriere-de-lames.htm\">Barrière de lames</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> (1 charge)"
                     ]
                 }
             ],
@@ -662,10 +662,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-ombres.htm\">Convocation d’ombres</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-magie-des-ombres.htm\">Magie des ombres</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-traversee-des-ombres.htm\">Traversée des ombres</a> (2 charges)"
                     ]
                 }
             ],
@@ -694,10 +694,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-informe.htm\">État informe</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">Passe-muraille</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-orientation.htm\">Orientation</a> (3 charges)"
                     ]
                 }
             ],
@@ -725,10 +725,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-communion-avec-la-nature.htm\">Communion avec la nature</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-dissimulation-forestiere.htm\">Dissimulation forestière</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-orientation.htm\">Orientation</a> (1 charge)"
                     ]
                 }
             ],
@@ -755,9 +755,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-glissement-de-terrain.htm\">Glissement de terrain</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">Passe-muraille</a> (1 charge)"
                     ]
                 }
             ],
@@ -789,11 +789,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil-profond.htm\">Sommeil profond</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil-sans-fin.htm\">Sommeil sans fin</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cauchemar.htm\">Cauchemar</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-songe.htm\">Songe</a> (3 charges)"
                     ]
                 }
             ],
@@ -824,11 +824,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-sombre-trait.htm\">Sombre trait</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres.htm\">Ténèbres</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-des-damnes.htm\">Ténèbres des damnés</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-profondes.htm\">Ténèbres profondes</a> (2 charges)"
                     ]
                 }
             ],
@@ -859,11 +859,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-composante.htm\">Convocation de composante</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-instrument.htm\">Convocation d’instrument</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">Serviteur invisible</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-arme.htm\">Convocation d’arme</a> (2 charges)"
                     ]
                 }
             ],
@@ -893,11 +893,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-ecailles-ramollies.htm\">Écailles ramollies</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-a-la-magie-reduite.htm\">Résistance à la magie réduite</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-souffle-reprime.htm\">Souffle réprimé</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vulnerabilite.htm\">Vulnérabilité</a> (2 charges)"
                     ]
                 }
             ],
@@ -924,9 +924,9 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (5 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme.htm\">Guérison suprême</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rappel-a-la-vie.htm\">Rappel à la vie</a> (5 charges)"
                     ]
                 }
             ],
@@ -955,11 +955,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-l-invisibilite.htm\">Détection de l’invisibilité</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-dans-le-noir.htm\">Vision dans le noir</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-de-la-cecite-surdite.htm\">Guérison de la cécité/surdité</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">Vision lucide</a> (2 charges)"
                     ]
                 }
             ],
@@ -992,13 +992,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">Bouclier</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">Dissipation de la magie</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-aux-energies-destructives.htm\">Résistance aux énergies destructives</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-globe-d-invulnerabilite-partielle.htm\">Globe d’invulnérabilité partielle</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">Renvoi</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">Champ de force</a> (3 charges)"
                     ]
                 }
             ],
@@ -1029,11 +1029,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lenteur.htm\">Lenteur</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">Renvoi</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-bannissement.htm\">Bannissement</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">Champ de force</a> (2 charges)"
                     ]
                 }
             ],
@@ -1062,11 +1062,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-du-chaos.htm\">Parole du Chaos</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-sacree.htm\">Parole sacrée</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-aura-sacree.htm\">Aura sacrée</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-manteau-du-chaos.htm\">Manteau du Chaos</a> (2 charges)"
                     ]
                 }
             ],
@@ -1100,13 +1100,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)",
-                        " (4 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">Frayeur</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-assassin-imaginaire.htm\">Assassin imaginaire</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cauchemar.htm\">Cauchemar</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-effroi.htm\">Effroi</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-symbole-de-terreur.htm\">Symbole de terreur</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-ennemi-subconscient.htm\">Ennemi subconscient</a> (4 charges)"
                     ]
                 }
             ],
@@ -1135,11 +1135,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-illumination.htm\">Illumination</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">Lumières dansantes</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">Lumière du jour</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-de-lumiere.htm\">Explosion de lumière</a> (3 charges)"
                     ]
                 }
             ],
@@ -1167,10 +1167,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cyclone.htm\">Cyclone</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vent-divin.htm\">Vent divin</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cyclone-supreme.htm\">Cyclone suprême</a> (2 charges)"
                     ]
                 }
             ],
@@ -1199,11 +1199,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">Bouclier</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-foi.htm\">Bouclier de la foi</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">Protection d’autrui</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-loi.htm\">Bouclier de la Loi</a> (3 charges)"
                     ]
                 }
             ],
@@ -1233,13 +1233,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-des-passages-secrets.htm\">Détection des passages secrets</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-don-des-langues.htm\">Don des langues</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">Localisation d’objet</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-de-creature.htm\">Localisation de créature</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-oeil-indiscret.htm\">Oeil indiscret</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">Vision lucide</a> (2 charges)"
                     ]
                 }
             ],
@@ -1269,13 +1269,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-fou-rire-de-tasha.htm\">Fou rire de Tasha</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil.htm\">Sommeil</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-suggestion.htm\">Suggestion</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-mentale.htm\">Brume mentale</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-desespoir-foudroyant.htm\">Désespoir foudroyant</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-suggestion-de-groupe.htm\">Suggestion de groupe</a> (3 charges)"
                     ]
                 }
             ],
@@ -1306,13 +1306,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">Boule de feu</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">Fracassement</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">Projectile magique</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">Mur de force</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">Tempête de grêle</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair-multiple.htm\">Éclair multiple</a> (3 charges)"
                     ]
                 }
             ],
@@ -1346,11 +1346,11 @@
             "ul": [
                 {
                     "position": 3.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-divination.htm\">Divination</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-exaltation.htm\">Exaltation</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-epee-de-conscience.htm\">Épée de conscience</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-penitence.htm\">Pénitence</a> (2 charges)"
                     ]
                 }
             ],
@@ -1381,14 +1381,14 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)",
-                        " (4 charges)",
-                        " (4 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-la-loi.htm\">Protection contre la Loi</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-le-bien.htm\">Protection contre le Bien</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-la-loi.htm\">Cercle magique contre la Loi</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-le-bien.htm\">Cercle magique contre le Bien</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-fer.htm\">Mur de fer</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-blaspheme.htm\">Blasphème</a> (4 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-du-chaos.htm\">Parole du Chaos</a> (4 charges)"
                     ]
                 }
             ],
@@ -1417,11 +1417,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-illumination.htm\">Illumination</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">Lumières dansantes</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-de-lumiere.htm\">Explosion de lumière</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">Lumière du jour</a> (2 charges)"
                     ]
                 }
             ],
@@ -1452,13 +1452,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-deguisement.htm\">Déguisement</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-image-accomplie.htm\">Image accomplie</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-image-miroir.htm\">Image miroir</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-image-predeterminee.htm\">Image prédéterminée</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lueur-d-arc-en-ciel.htm\">Lueur d’arc-en-ciel</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-double-illusoire.htm\">Double illusoire</a> (3 charges)"
                     ]
                 }
             ],
@@ -1489,13 +1489,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-nuage-nauseabond.htm\">Nuage nauséabond</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">Nuée grouillante</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">Serviteur invisible</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-mortelle.htm\">Brume mortelle</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">Création majeure</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-monstres-6.htm\">Convocation de monstres 6</a> (3 charges)"
                     ]
                 }
             ],
@@ -1523,12 +1523,12 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-de-la-bete-aux-trois-visages.htm\">Forme de la bête aux trois visages</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-draconique-mineure.htm\">Forme draconique mineure</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-du-troll.htm\">Forme du troll</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-terrifiante-de-l-oeil-tyran.htm\">Forme terrifiante de l’oeil tyran</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">Métamorphose</a> (2 charges)"
                     ]
                 }
             ],
@@ -1557,11 +1557,11 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-de-dissimulation.htm\">Brume de dissimulation</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rafale-de-pluie.htm\">Rafale de pluie</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-des-vents.htm\">Contrôle des vents</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-du-climat.htm\">Contrôle du climat</a> (2 charges)"
                     ]
                 }
             ],
@@ -1592,13 +1592,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-baiser-de-la-goule.htm\">Baiser de la goule</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">Frayeur</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">Énergie négative</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-vagues-de-fatigue.htm\">Vagues de fatigue</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-mort.htm\">Cercle de mort</a> (3 charges)"
                     ]
                 }
             ],
@@ -1625,10 +1625,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (3 charges)",
-                        " (3 charges)",
-                        " (4 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">Forme éthérée</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-passage-dans-l-ether.htm\">Passage dans l’éther</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-d-objet.htm\">Téléportation d’objet</a> (4 charges)"
                     ]
                 }
             ],
@@ -1655,10 +1655,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-de-portail.htm\">Analyse de portail</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-monstres-6.htm\">Convocation de monstres 6</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-portail.htm\">Portail</a> (3 charges)"
                     ]
                 }
             ],
@@ -1687,8 +1687,8 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-funeste-de-trobriand.htm\">Téléportation funeste de Trobriand</a> (2 charges)"
                     ]
                 }
             ],
@@ -1718,12 +1718,12 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)",
-                        " (4 charges)",
-                        " (5 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-legers-de-groupe.htm\">Soins légers de groupe</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-moderes-de-groupe.htm\">Soins modérés de groupe</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-importants-de-groupe.htm\">Soins importants de groupe</a> (3 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-intensifs-de-groupe.htm\">Soins intensifs de groupe</a> (4 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme-de-groupe.htm\">Guérison suprême de groupe</a> (5 charges)"
                     ]
                 }
             ],
@@ -1760,11 +1760,11 @@
             "ul": [
                 {
                     "position": 3.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction.htm\">Bénédiction</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-brulante.htm\">Lumière brûlante</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">Protection d’autrui</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-couronne-de-flamme.htm\">Couronne de flamme</a> (2 charges)"
                     ]
                 }
             ],
@@ -1803,17 +1803,17 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " à intensité augmentée au 5e niveau (1 charge)",
-                        " à intensité augmentée au 5e niveau (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " à intensité augmentée au 5e niveau (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (uniquement possible sous forme d’hémisphère de 3 mètres de rayon entourant le personnage) (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">Boule de feu</a> à intensité augmentée au 5e niveau (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">Éclair</a> à intensité augmentée au 5e niveau (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-flamme-eternelle.htm\">Flamme éternelle</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-levitation.htm\">Lévitation</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">Projectile magique</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-affaiblissant.htm\">Rayon affaiblissant</a> à intensité augmentée au 5e niveau (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-cone-de-froid.htm\">Cône de froid</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-globe-d-invulnerabilite-renforcee.htm\">Globe d’invulnérabilité renforcée</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">Mur de force</a> (uniquement possible sous forme d’hémisphère de 3 mètres de rayon entourant le personnage) (2 charges)"
                     ]
                 }
             ],
@@ -1841,10 +1841,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (4 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-de-dissimulation.htm\">Brume de dissimulation</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-appel-de-la-foudre.htm\">Appel de la foudre</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-du-climat.htm\">Contrôle du climat</a> (4 charges)"
                     ]
                 }
             ],
@@ -1875,13 +1875,13 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">Clignotement</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-modification-d-apparence.htm\">Modification d’apparence</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-repli-expeditif.htm\">Repli expéditif</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">Métamorphose</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-funeste.htm\">Métamorphose funeste</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">Désintégration</a> (3 charges)"
                     ]
                 }
             ],
@@ -1910,12 +1910,12 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (2 charges)",
-                        " (2 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">Passe-muraille</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-porte-dimensionnelle.htm\">Porte dimensionnelle</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-porte-de-phase.htm\">Porte de phase</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-projection-astrale.htm\">Projection astrale</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-supreme.htm\">Téléportation suprême</a> (2 charges)"
                     ]
                 }
             ],
@@ -1942,10 +1942,10 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
-                        " (1 charge)",
-                        " (2 charges)",
-                        " (3 charges)"
+                    "li": [
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin-mineur.htm\">Visage divin mineur</a> (1 charge)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin.htm\">Visage divin</a> (2 charges)",
+                        "<a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin-supreme.htm\">Visage divin suprême</a> (3 charges)"
                     ]
                 }
             ],

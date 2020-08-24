@@ -4,6 +4,16 @@
         <div class="form-row">
             <div style="width: 100%">
                 <div class="col-md-2 mb-3">
+                    <label for="PuissMag">Puissance
+                    </label>
+                    <input min="1" max="3" type="number" class="form-control"
+                           id="PuissMag"
+                           name="PuissMag"
+                           placeholder="Puissance Magique"
+                           [(ngModel)]="this.dePuissance"
+                           required>
+                </div>
+                <div class="col-md-2 mb-3">
                     <label for="PropMag">{{this.parametres[1]}}
                     </label>
                     <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
@@ -29,15 +39,35 @@
                 <h4>{{proprieteObjet.title}}</h4>
                 <span *ngFor="let description of proprieteObjet.description; let index = index;">
                     <span [innerHTML]="description"></span><br/>
-
                     <ng-container *ngFor="let table of proprieteObjet.table;">
-                        <span *ngIf="+table.position === index"
-                              [innerHTML]="table.data"></span>
+                        <span *ngIf="table.position === index">
+                            <table cellspacing="1" border="1">
+                                <tbody>
+                                <tr *ngFor="let th of table.title; let thIndex = index">
+                                    <ng-container *ngFor="let title of th; let titleIndex = index">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
+                                            [colSpan]="table.title[1][thIndex].length / table.title[0][thIndex].length">{{title}}</th>
+                                        <ng-template  #elseBlock>
+                                            <th>{{title}}</th>
+                                        </ng-template >
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of table.tr; let tdIndex = index">
+                                    <ng-container *ngFor="let content of td">
+                                        <td>{{content}}</td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
                     </ng-container>
 
                     <ng-container *ngFor="let ul of proprieteObjet.ul;">
-                    <span *ngIf="+ul.position === index"
-                          [innerHTML]="ul.data"></span>
+                        <span *ngIf="+ul.position === index">
+                            <ul>
+                                <li *ngFor="let li of ul.li;">{{li}}</li>
+                            </ul>
+                        </span>
                     </ng-container>
                 </span>
                 <br/>
@@ -59,7 +89,7 @@
                 <span *ngFor="let description of this.proprietesObjet[indexPropriete].description; let indexDescription = index;">
                     <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].description[indexDescription]"></textarea><br/>
 
-                    <ng-container *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index;">
+                    <!--ng-container *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index;">
                         <textarea *ngIf="+this.proprietesObjet[indexPropriete].table[indexTable].position=== indexPropriete"
                               [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].data"></textarea>
                     </ng-container>
@@ -68,6 +98,46 @@
                     <textarea *ngIf="this.proprietesObjet[indexPropriete].ul[indexUl].position === indexPropriete"
                           [(ngModel)]="this.proprietesObjet[indexPropriete].ul[indexUl].data"
                               oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'"></textarea>
+                    </ng-container-->
+
+                    <ng-container *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index">
+                        <span *ngIf="+table.position === indexDescription">
+                            <table>
+                                <tbody>
+                                <tr *ngFor="let th of this.proprietesObjet[indexPropriete].table[indexTable].title; let thIndex = index">
+                                    <ng-container *ngFor="let title of this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0][tdIndex].length < table.title[1][tdIndex].length; else elseBlock"
+                                            [colSpan]="table.title[1][tdIndex].length / table.title[0][tdIndex].length">
+                                            <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                        </th>
+                                        <ng-template  #elseBlock>
+                                            <th>
+                                                <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                            </th>
+                                        </ng-template>
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of this.proprietesObjet[indexPropriete].table[indexTable].tr; let trIndex = index">
+                                    <ng-container *ngFor="let content of this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index">
+                                        <td>
+                                            <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex][tdIndex]"></textarea>
+                                        </td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </ng-container>
+
+                    <ng-container *ngFor="let shit of this.proprietesObjet[indexPropriete].ul; let indexUl = index;">
+                        <span *ngIf="this.proprietesObjet[indexPropriete].ul[indexUl].position === indexDescription">
+                            <ul>
+                                <li *ngFor="let shitBis of this.proprietesObjet[indexPropriete].ul[indexUl].li; let indexLi = index">
+                                    <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].ul[indexUl].li[indexLi]"
+                                              [name]="'positon'+this.proprietesObjet[indexPropriete].ul[indexUl].position+'ul'+indexUl+'li'+indexLi"></textarea>
+                                </li>
+                            </ul>
+                        </span>
                     </ng-container>
                 </span>
                 <br/>

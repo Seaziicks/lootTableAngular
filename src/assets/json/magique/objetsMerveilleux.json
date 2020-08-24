@@ -3606,7 +3606,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Le premier mot de commande fait apparaître une pâle lueur naissant au cœur de la gemme et éclairant comme une lanterne à capote. Cette fonction ne consomme aucune charge.",
                         "Le deuxième mot de commande libère un rai de lumière aveuglante de 30 centimètres de large et de 15 mètres de long. Toute créature touchée par ce rayon (ce qui nécessite une attaque de contact à distance) est aveuglée pendant 1d4 rounds, à moins de réussir un jet de Vigueur (DD 14). Cette utilisation dépense 1 charge.",
                         "Le troisième mot de commande génère une lumière aveuglante dans un cône de 9 mètres de long. Même si cette vive lueur ne dure qu’une fraction de seconde, toutes les créatures prises dans la zone d’effet doivent réussir un jet de Vigueur (DD 14) sous peine d’être aveuglées pendant 1d4 rounds. Cette utilisation dépense 5 charges."
@@ -7761,7 +7761,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Fontaine fournit 4 litres d’eau par round.",
                         "Geyser produit un jet d’eau de 1,50 mètre de long déversant 20 litres par round.",
                         "Torrent produit un violent jet d’eau de 6 mètres de long correspondant à 120 litres par round."
@@ -8882,7 +8882,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Calmer les eaux agitées dans un rayon de 1,5 kilomètre. Cette fonction peut dissiper un élémentaire de l’Eau convoqué s’il rate son jet de Volonté de DD 16.",
                         "Attirer 5d4 requins de taille G (01–30 sur 1d100), 5d6 requins de taille M (31–80) ou 1d10 félins marins (81–100), à condition que le personnage se trouve dans un plan d’eau ou un océan accueillant de telles créatures. Les créatures appelées se montrent amicales envers l’aventurier, à qui elles obéissent de leur mieux.",
                         "Provoquer la panique dans un rayon de 150 mètres chez les créatures aquatiques ayant 1 ou 2 en Intelligence, comme si elles venaient d’être affectées par le sort terreur (jet de Volonté DD 16 pour effet partiel). Les cibles réussissant leur jet de Volonté sont tout de même secouées pendant 3d6 rounds."
@@ -10427,7 +10427,7 @@
             "ul": [
                 {
                     "position": 2.0,
-                    "ul": [
+                    "li": [
                         "Le porteur peut user de détection de pensées à volonté. Il peut également envoyer des messages télépathiques (ce qui inclut des souvenirs archivés dans son kiira NVaelahr) à ceux dont il lit les pensées.",
                         "Le porteur bénéficie d'un bonus de résistance de +2 aux jets de Volonté.",
                         "Le porteur de la gemme peut user d'image accomplie, 1 fois par jour. Seuls les souvenirs enregistrés par le kiira N'Vhaelahr peuvent être ainsi projetés.",
@@ -11888,7 +11888,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Corde de chanvre (15 mètres)",
                         "Dague",
                         "Lanterne sourde (pleine d’huile et allumée)",
@@ -12055,7 +12055,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Gobelin squelette (taille P)",
                         "Humain (homme du peuple) squelette (taille M)",
                         "Loup squelette (taille M)",
@@ -12619,7 +12619,7 @@
             "ul": [
                 {
                     "position": 20.0,
-                    "ul": [
+                    "li": [
                         "Chèvre de la terreur. Quand son possesseur prononce le mot de commande, cette statuette se transforme en monture ayant les mêmes caractéristiques qu’un destrier léger (mais bien plus poilue). Ses cornes sont détachables, et son cavalier peut s’en servir d’armes ; l’une d’elles est l’équivalent d’une lance d’arçon +3, l’autre d’une épée longue +5. En situation de combat, cette chèvre justifie son nom en dégageant une aura de terreur dans un rayon de 9 mètres (comme le sort du même nom, jet de Volonté DD 15 pour effet partiel). On peut s’en servir une fois tous les quinze jours, pour un maximum de 3 heures à chaque fois.",
                         "Chèvre des titans. Cette statuette se transforme en chèvre monstrueuse, plus grosse qu’un taureau et dont les caractéristiques sont les mêmes que celles d’un destrier noir, sauf qu’elle peut également combattre à l’aide de ses cornes acérées (deux attaques supplémentaires, infligeant 1d8+4 points de dégâts chacune). Si la chèvre charge, elle ne peut attaquer qu’à l’aide de ses cornes, mais si elle touche, elle bénéficie d’un bonus de +6 points de dégâts à chaque coup au but. Elle ne peut être appelée qu’une fois par mois, pour 12 heures seulement.",
                         "Chèvre de voyage. Cette statuette se transforme en monture rapide et résistante à l’effort, dont les caractéristiques sont les mêmes que celles d’un cheval lourd, même si son apparence diffère sensiblement. Elle peut voyager un maximum d’un jour par semaine, en continu ou par périodes ne dépassant pas un total de 24 heures. Une fois ce temps écoulé, elle retrouve sa forme de statuette pendant au moins 24 heures (voire plus si la semaine entière n’était pas écoulée lors de son utilisation précédente)."
@@ -13382,7 +13382,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Diamant : rayons prismatiques (jet de sauvegarde DD 20)",
                         "Rubis : mur de feu",
                         "Opale de feu : boule de feu (10d6, jet de Réflexes DD 20 pour demi-dégâts)",
@@ -13391,9 +13391,9 @@
                 },
                 {
                     "position": 2.0,
-                    "ul": [
+                    "li": [
                         "Quand des morts-vivants approchent à moins de 9 mètres, il émet une lueur bleutée qui leur inflige une vive douleur (1d6 points de dégâts par round).",
-                        "Sur commande, le casque peut transformer n’importe laquelle des armes de son porteur en arme de feu. Cette propriété spéciale s’ajoute à celles que l’arme possède déjà (à moins que celle-ci ne soit déjà une arme de feu). Le pouvoir se manifeste au bout de 1 round. ",
+                        "Sur commande, le casque peut transformer n’importe laquelle des armes de son porteur en arme de feu. Cette propriété spéciale s’ajoute à celles que l’arme possède déjà (à moins que celle-ci ne soit déjà une arme de feu). Le pouvoir se manifeste au bout de 1 round.",
                         "Le casque confère une résistance au feu de 30 points. Cette protection ne s’ajoute à aucune autre défense similaire (telle que résistance aux énergies destructives)."
                     ]
                 }
@@ -13792,7 +13792,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Cercle magique contre la Loi",
                         "Confusion mineure",
                         "Manteau du Chaos",
@@ -14295,7 +14295,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Sur prononciation d'un mot de commande, le porteur peut obtenir les effets de ténèbres profondes (le heaume dévoile le mot de commande à son utilisateur.) Ce pouvoir provient du saphir qui peut générer un tel effet quatre-vingt-dix-neuf fois avant de tomber en poussière.",
                         "Lorsque le porteur rate un jet de sauvegarde contre n'importe quel type d'effet de mort, une opale noire tombe aussitôt en poussière et l'effet est annulé. De plus, le heaume annule les attaques d'absorption d'énergie. A chaque fois que le porteur devrait subir une perte de un ou plusieurs niveaux, une opale noire tombe en poussière, annulant ainsi la perte d'un niveau. (Une attaque qui provoque la perte de deux niveaux consumera deux opales.)",
                         "Chaque round, le heaume absorbe les 30 premiers points de dégâts de froid que le porteur aurait dû subir. Cette protection n'est toutefois pas cumulative avec d'autres protections similaires issues d'autres sources (tel qu'un sort d'endurance aux énergies destructrices)."
@@ -15121,7 +15121,7 @@
             "ul": [
                 {
                     "position": 2.0,
-                    "ul": [
+                    "li": [
                         "Les déplacements astraux et éthérés.",
                         "Les sorts de Divination (scrutation).",
                         "Les sorts d'Invocation (téléportation).",
@@ -15243,7 +15243,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Bonus d’armure de +5 à la CA.",
                         "Résistance à la magie de 18.",
                         "Bonus de résistance de +4 à tous les jets de sauvegarde.",
@@ -15275,7 +15275,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Elle lui permet de se rendre physiquement dans le plan Astral, de même que tout ce qu’il porte sur lui ou à la main.",
                         "Elle lui confère un bonus de chance de +1 à tous les jets de sauvegarde.",
                         "Six des étoiles brodées au niveau de la poitrine peuvent être décrochées et utilisées comme des shurikens +5. Grâce à la robe, le personnage est automatiquement formé au maniement de ces projectiles, qui disparaissent une fois jetés (ils ne sont pas réutilisables)."

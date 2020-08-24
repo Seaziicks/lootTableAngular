@@ -2201,7 +2201,7 @@
             "ul": [
                 {
                     "position": 1.0,
-                    "ul": [
+                    "li": [
                         "Alhalbrin : Métal brûlant sur la cible.",
                         "Faerindyl : Mains brûlantes sur la cible.",
                         "Thundaril : Métamorphose provoquée sur la cible (qui est généralement transformée en crapaud ou en escargot)."

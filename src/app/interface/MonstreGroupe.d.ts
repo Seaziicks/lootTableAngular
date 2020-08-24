@@ -47,6 +47,13 @@ declare interface Loot {
 |                  Partie JSon                        |
 *-----------------------------------------------------*/
 
+export interface SortedMagicalProperty {
+    weakAndSmall: MagicalProperty[];
+    moderate: MagicalProperty[];
+    strongAnfPowerful: MagicalProperty[];
+    unknown: MagicalProperty[];
+}
+
 
 export interface MagicalProperty {
     title: string;
@@ -58,8 +65,8 @@ export interface MagicalProperty {
 
 export interface TableMagicalProperty {
     position: number;
-    title: TR[];
-    tr: TR[];
+    title: string[][];
+    tr: string[][];
 }
 
 export interface TR {
@@ -68,7 +75,7 @@ export interface TR {
 
 export interface UlMagicalProperty {
     position: number;
-    ul: string[];
+    li: string[];
 }
 
 export interface Informations {
