@@ -1,0 +1,45 @@
+{
+    "title": "Conditions de fonctionnement",
+    "description": [
+        "D’une certaine manière, un mot de commande est une condition de fonctionnement, mais certains objets en ont d’autres, qui sont nettement plus restrictives. Pour que l’objet continue de fonctionner, le personnage doit satisfaire à une ou plusieurs des conditions suivantes.",
+        "Les conditions de fonctionnement déterminent l’intérêt de l’objet, aussi est-il conseillé de les choisir avec soin plutôt que de laisser faire le hasard. Si l’objet est également intelligent, il impose ses conditions en fonction de sa personnalité. Si les conditions ne sont pas remplies, il cesse de fonctionner. Dans le cas contraire, il fonctionne le temps spécifié (le plus souvent, une journée), après quoi le personnage doit de nouveau satisfaire aux conditions indiquées."
+    ],
+    "infos": {
+        "data": [
+            "Invocation",
+            "puissante ;",
+            "NLS",
+            "15 ;",
+            "Création d’anneaux magiques",
+            ", convocation de monstres VI, ainsi que tous les autres sorts que l’anneau met à la disposition de son porteur ;",
+            "Prix",
+            "200 000 po."
+        ]
+    },
+    "ul": [
+        {
+            "position": 1.0,
+            "li": [
+                "Manger deux fois plus que la normale.",
+                "Dormir deux fois plus que la normale.",
+                "Accomplir une quête bien précise (une fois seulement, après quoi l’objet fonctionne correctement).",
+                "Sacrifier (autrement dit détruire) pour 100 po d’objets de valeur chaque jour.",
+                "Sacrifier (détruire) pour 2 000 po d’objets magiques par semaine.",
+                "Prêter serment d’allégeance auprès d’un noble donné ou de sa famille.",
+                "Se débarrasser de tous ses autres objets magiques.",
+                "Vénérer un dieu particulier.",
+                "Changer de nom pour en prendre un autre choisi par l’objet (celui-ci ne fonctionne que si son possesseur porte le nom en question).",
+                "Changer de classe à la prochaine occasion (à moins qu’il ne soit déjà de la seule classe tolérée par l’objet).",
+                "Avoir atteint un certain degré de maîtrise dans une compétence donnée.",
+                "Sacrifier (une fois seulement) une partie de son énergie vitale (équivalent à 2 points de Constitution). Si le personnage récupère les points de Constitution par le biais d’un sort tel que restauration, l’objet cesse de fonctionner (par contre, il continue de marcher si l’aventurier augmente sa Constitution grâce à son niveau, un souhait ou un autre objet magique).",
+                "Purifier l’objet à l’aide d’eau bénite (tous les jours).",
+                "Utiliser l’objet pour tuer une créature vivante (tous les jours).",
+                "Tremper l’objet dans la lave d’un volcan (une fois par mois).",
+                "Utiliser l’objet au moins une fois par jour, sans quoi il cesse de fonctionner pour son propriétaire actuel.",
+                "Faire en sorte que l’objet fasse couler le sang chaque fois qu’il est utilisé (seulement s’il s’agit d’une arme). L’objet ne peut être rangé ou échangé contre une autre arme tant qu’il n’a pas servi à blesser une créature ayant du sang dans les veines (morts-vivants, créatures artificielles et autres vases sont exclus).",
+                "Lancer un certain sort sur l’objet, tel que bénédiction, pénitence ou animation d’objets (tous les jours)."
+            ]
+        }
+    ],
+    "table": null
+}

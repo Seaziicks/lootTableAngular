@@ -25,6 +25,18 @@
                            (ngModelChange)="this.getProprieteMagique()"
                            required>
                 </div>
+
+                <div class="col-md-2 mb-3">
+                    <label for="Malediction">Malédiction
+                    </label>
+                    <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                           id="Malediction"
+                           name="Malediction"
+                           placeholder="Malediction"
+                           [(ngModel)]="this.deMalediction"
+                           (ngModelChange)="this.getProprieteMagique()"
+                           required>
+                </div>
             </div>
         </div>
 

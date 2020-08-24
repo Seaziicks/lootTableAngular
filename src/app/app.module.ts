@@ -22,7 +22,6 @@ import {
   BannerComponent
 } from './fading-info/fading-info.component';
 import { GestionDropMonstreBisComponent } from './gestion-drop-monstre-bis/gestion-drop-monstre-bis.component';
-import { TestLoadJSonComponent } from './test-load-json/test-load-json.component';
 import { ArmesComponent } from './objets/armes/armes.component';
 import { ArmuresComponent } from './objets/armures/armures.component';
 import { MaledictionsComponent } from './objets/maledictions/maledictions.component';
@@ -41,7 +40,6 @@ import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.compone
     AdDirective,
     BannerComponent,
     GestionDropMonstreBisComponent,
-    TestLoadJSonComponent,
     ArmesComponent,
     ArmuresComponent,
     MaledictionsComponent,

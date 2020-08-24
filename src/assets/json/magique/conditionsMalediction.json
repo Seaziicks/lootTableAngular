@@ -1,55 +1,146 @@
 {
     "titles": [
         "1d100",
-        "Malédiction"
+        "Condition"
     ],
     "Chances": [
         {
             "lootChanceMin": 1,
+            "lootChanceMax": 3,
+            "name": "Température inférieure à 0° C",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 4,
+            "lootChanceMax": 5,
+            "name": "Température supérieure à 0° C",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 6,
+            "lootChanceMax": 10,
+            "name": "De jour",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 11,
             "lootChanceMax": 15,
-            "name": "Pouvoir imaginaire",
+            "name": "De nuit",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 16,
-            "lootChanceMax": 35,
-            "name": "Effet (ou cible) inversé",
+            "lootChanceMax": 20,
+            "name": "À la lumière (directe) du soleil",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 36,
+            "lootChanceMin": 21,
+            "lootChanceMax": 25,
+            "name": "Loin de la lumière du soleil",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 26,
+            "lootChanceMax": 34,
+            "name": "Sous l’eau",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 35,
+            "lootChanceMax": 37,
+            "name": "Hors de l’eau",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 38,
             "lootChanceMax": 45,
-            "name": "Fonctionnement intermittent",
+            "name": "Sous terre",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 46,
+            "lootChanceMax": 55,
+            "name": "À la surface",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 56,
             "lootChanceMax": 60,
-            "name": "Conditions de fonctionnement",
+            "name": "À moins de 3 m d’un type de créature déterminé aléatoirement",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 61,
-            "lootChanceMax": 75,
-            "name": "Inconvénient",
+            "lootChanceMax": 64,
+            "name": "À moins de 3 m d’une race ou espèce de créature déterminée aléatoirement",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 76,
+            "lootChanceMin": 65,
+            "lootChanceMax": 72,
+            "name": "À moins de 3 m d’un lanceur de sorts profanes",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 73,
+            "lootChanceMax": 80,
+            "name": "À moins de 3 m d’un lanceur de sorts divins",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 81,
+            "lootChanceMax": 85,
+            "name": "Dans les mains d’une créature autre qu’un lanceur de sorts",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 86,
             "lootChanceMax": 90,
-            "name": "Effet radicalement différent",
+            "name": "Dans les mains d’un lanceur de sorts",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 91,
+            "lootChanceMax": 95,
+            "name": "Dans les mains d’une créature d’un alignement donné",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 96,
+            "lootChanceMax": 96,
+            "name": "Dans les mains d’une créature d’un sexe donné",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 97,
+            "lootChanceMax": 99,
+            "name": "Durant les jours saints (ou inversement) ou en cas d’alignement astrologique donné",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 100,
             "lootChanceMax": 100,
-            "name": "Remplacé l’objet par un objet maudit spécifique",
+            "name": "À moins de 100 km d’un site donné.",
             "price": null,
             "currencyType": null
         }

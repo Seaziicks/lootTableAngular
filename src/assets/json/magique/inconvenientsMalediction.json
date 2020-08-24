@@ -1,146 +1,223 @@
 {
     "titles": [
         "1d100",
-        "Condition"
+        "Inconvénient"
     ],
     "Chances": [
         {
             "lootChanceMin": 1,
-            "lootChanceMax": 3,
-            "name": "Température inférieure à 0° C",
+            "lootChanceMax": 4,
+            "name": "Les cheveux du personnage poussent d’une trentaine de centimètres (ne se produit qu’une fois).",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 4,
-            "lootChanceMax": 5,
-            "name": "Température supérieure à 0° C",
+            "lootChanceMin": 5,
+            "lootChanceMax": 9,
+            "name": "Le personnage rapetisse ou grandit d’une quinzaine de centimètres (une chance sur deux ; ne se produit qu’une fois).",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 6,
-            "lootChanceMax": 10,
-            "name": "De jour",
+            "lootChanceMin": 10,
+            "lootChanceMax": 13,
+            "name": "La température est plus froide autour de l’objet (–5° C).",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 11,
-            "lootChanceMax": 15,
-            "name": "De nuit",
+            "lootChanceMin": 14,
+            "lootChanceMax": 17,
+            "name": "La température est plus chaude autour de l’objet (+5° C).",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 16,
-            "lootChanceMax": 20,
-            "name": "À la lumière (directe) du soleil",
+            "lootChanceMin": 18,
+            "lootChanceMax": 21,
+            "name": "Les cheveux du personnage changent de couleur.",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 21,
+            "lootChanceMin": 22,
             "lootChanceMax": 25,
-            "name": "Loin de la lumière du soleil",
+            "name": "La peau du personnage change de couleur.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 26,
+            "lootChanceMax": 29,
+            "name": "Le personnage acquiert une marque distinctive (tatouage, aura lumineuse, etc.).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 30,
+            "lootChanceMax": 32,
+            "name": "Le personnage change de sexe.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 33,
             "lootChanceMax": 34,
-            "name": "Sous l’eau",
+            "name": "Le personnage change de race ou d’espèce.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 35,
-            "lootChanceMax": 37,
-            "name": "Hors de l’eau",
+            "lootChanceMax": 35,
+            "name": "Le personnage contracte une maladie (déterminée aléatoirement) que rien ni personne ne peut soigner.",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 38,
+            "lootChanceMin": 36,
+            "lootChanceMax": 39,
+            "name": "L’objet émet continuellement un bruit gênant (gémissements, pleurs, cris, jurons, insultes, etc.).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 40,
+            "lootChanceMax": 40,
+            "name": "L’objet a l’air ridicule (couleur outrancière, forme risible, aura rose bonbon, etc.).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 41,
             "lootChanceMax": 45,
-            "name": "Sous terre",
+            "name": "Le personnage devient extrêmement possessif pour ce qui est de l’objet.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 46,
-            "lootChanceMax": 55,
-            "name": "À la surface",
+            "lootChanceMax": 49,
+            "name": "Le personnage a une peur panique de perdre l’objet ou qu’il lui arrive quelque chose.",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 56,
+            "lootChanceMin": 50,
+            "lootChanceMax": 51,
+            "name": "Le personnage change d’alignement.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 52,
+            "lootChanceMax": 54,
+            "name": "Le personnage attaque la créature la plus proche (5% de chances chaque jour, à un moment aléatoire de la journée).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 55,
+            "lootChanceMax": 57,
+            "name": "Le personnage est étourdi pendant 1d4 rounds dès que l’objet cesse de fonctionner (ou aléatoirement, 1 fois/jour).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 58,
             "lootChanceMax": 60,
-            "name": "À moins de 3 m d’un type de créature déterminé aléatoirement",
+            "name": "Le personnage voit trouble en permanence (–2 aux jets d’attaque, de sauvegarde et de compétences nécessitant de voir).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 61,
             "lootChanceMax": 64,
-            "name": "À moins de 3 m d’une race ou espèce de créature déterminée aléatoirement",
+            "name": "Le personnage acquiert un niveau négatif.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 65,
-            "lootChanceMax": 72,
-            "name": "À moins de 3 m d’un lanceur de sorts profanes",
+            "lootChanceMax": 65,
+            "name": "Le personnage acquiert deux niveaux négatifs.",
             "price": null,
             "currencyType": null
         },
         {
-            "lootChanceMin": 73,
+            "lootChanceMin": 66,
+            "lootChanceMax": 70,
+            "name": "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point d’Intelligence (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 71,
+            "lootChanceMax": 75,
+            "name": "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Sagesse (tous les jours).",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 76,
             "lootChanceMax": 80,
-            "name": "À moins de 3 m d’un lanceur de sorts divins",
+            "name": "Le personnage doit réussir un jet de Volonté sous peine de subir un affaiblissement temporaire de 1 point de Charisme (tous les jours).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 81,
             "lootChanceMax": 85,
-            "name": "Dans les mains d’une créature autre qu’un lanceur de sorts",
+            "name": "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Constitution (tous les jours).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 86,
             "lootChanceMax": 90,
-            "name": "Dans les mains d’un lanceur de sorts",
+            "name": "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Force (tous les jours).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 91,
             "lootChanceMax": 95,
-            "name": "Dans les mains d’une créature d’un alignement donné",
+            "name": "Le personnage doit réussir un jet de Vigueur sous peine de subir un affaiblissement temporaire de 1 point de Dextérité (tous les jours).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 96,
             "lootChanceMax": 96,
-            "name": "Dans les mains d’une créature d’un sexe donné",
+            "name": "Le personnage se métamorphose en une créature donnée (5% de chances par jour, toujours la même).",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 97,
+            "lootChanceMax": 97,
+            "name": "Le personnage ne peut plus lancer de sorts profanes.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 98,
+            "lootChanceMax": 98,
+            "name": "Le personnage ne peut plus lancer de sorts divins.",
+            "price": null,
+            "currencyType": null
+        },
+        {
+            "lootChanceMin": 99,
             "lootChanceMax": 99,
-            "name": "Durant les jours saints (ou inversement) ou en cas d’alignement astrologique donné",
+            "name": "Le personnage ne peut plus lancer le moindre sort.",
             "price": null,
             "currencyType": null
         },
         {
             "lootChanceMin": 100,
             "lootChanceMax": 100,
-            "name": "À moins de 100 km d’un site donné.",
+            "name": "Au choix : choisissez un inconvénient qui vous paraisse convenir à la nature de l’objet ou créez-en un autre.",
             "price": null,
             "currencyType": null
         }
