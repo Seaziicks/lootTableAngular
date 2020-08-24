@@ -1,1015 +1,1137 @@
-[
-    {
-        "title": "Absorption",
-        "description": [
-            "Le sceptre d’absorption agit comme un aimant, si ce n’est que ce sont les sorts et les pouvoirs magiques qu’il attire à lui. L’effet absorbé doit être un effet à cible unique ou un rayon prenant pour cible le possesseur du sceptre ou son équipement. Dans ce cas, le sceptre annule l’attaque et stocke son potentiel magique, jusqu’à ce que le personnage décide de la libérer sous la forme de sorts qu’il est capable de lancer. L’absorption ne nécessite aucune action pour peu que l’aventurier ait le sceptre en main. Ce dernier indique instantanément à son possesseur le niveau des sorts qu’il absorbe.",
-            "Il est souhaitable de comptabiliser les niveaux de sort absorbés et dépensés. Le personnage peut se servir de l’énergie absorbée pour jeter les sorts qu’il a préparés, sans que ceux-ci disparaissent de sa mémoire (il pourra donc les lancer normalement par la suite). Les seules restrictions à cette règle sont que les sorts jetés de la sorte ne doivent pas dépasser la quantité d’énergie contenue dans le sceptre, que l’aventurier doit tenir le sceptre en main au moment de l’incantation et qu’il doit posséder les composantes matérielles exigées par le sort. Dans le cas d’un barde ou d’un ensorceleur, qui n’a pas besoin de préparer ses sorts à l’avance, le personnage peut se servir du sceptre pour lancer n’importe quel sort qu’il connaît.",
-            "Le sceptre d’absorption ne peut absorber qu’un maximum de 50 niveaux de sort, et c’est l’énergie accumulée de la sorte qui détermine les sorts qu’il permet de libérer (cette limite est donc la même que la précédente, à savoir 50 niveaux de sort). Il ne peut pas être rechargé. Le personnage sait à tout moment combien le sceptre peut absorber de niveaux de sort et quelle énergie magique il a emmagasiné.",
-            "Pour déterminer la puissance d’un sceptre découvert au hasard d’une aventure, jetez 1d100 et divisez le résultat par deux, en arrondissant à l’entier inférieur, afin d’obtenir le nombre de niveaux de sort qu’il peut encore absorber. Cela fait, jouez de nouveau 1d100. Sur un résultat de 71–100, la moitié des niveaux de sort absorbés sont encore présents à l’intérieur du sceptre ; sinon, ils ont été utilisés par un propriétaire précédent. Par exemple, si le premier jet de dé indique que le sceptre peut encore absorber 34 niveaux de sort, cela signifie qu’il en a déjà absorbé 16. Il y a donc 30% de chances pour que 8 niveaux de sort soient toujours utilisables. Sur un résultat de 01–30, toute l’énergie stockée a été dépensée."
-        ],
-        "infos": {
-            "data": [
-                "Abjuration",
-                "puissante ;",
-                "NLS",
-                "15 ;",
-                "Création de sceptres magiques",
-                "renvoi des sorts",
-                "Prix",
-                "50 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Aggravation des blessures",
-        "description": [
-            "Chaque centimètre de ce sceptre en ivoire est décoré de symbole abstrait, formant un ensemble complexe.",
-            "Au prix d'une action simple, le porteur de ce sceptre peut l'activer pour infliger 1d8 dégâts à toute créature adjacente ayant moins de points de vie que son maximum. Ce pouvoir peut être activé 5 fois par jour."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "8 ;",
-                "Création de sceptres magiques",
-                "blessure légère",
-                "Prix",
-                "2 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Anciens",
-        "description": [
-            "Ce sceptre est généralement taillé dans le bois afin de représenter un symbole de jeunesse et de virilité. Il est généralement utilisé comme symbole de puissance par des chefs tribaux.",
-            "Lorsque ce sceptre est tenu, il annule les malus (mais pas les bonus) aux caractéristiques dus à l'âge. Les malus reprennent dès que le sceptre n'est plus tenu."
-        ],
-        "infos": {
-            "data": [
-                "Transmutation",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "endurance de l’ours",
-                "force de taureau",
-                "grâce féline",
-                "Prix",
-                "40 500 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Annulation",
-        "description": [
-            "Ce sceptre annule les pouvoirs magiques des autres objets. Son possesseur n’a qu’à le pointer vers l’objet de son choix pour qu’un rayon perlé jaillisse du sceptre d’annulation. Si l’objet pris pour cible est touché (ce qui nécessite une attaque de contact à distance), tous ses pouvoirs actifs sont immédiatement dissipés et le fonctionnement de tous ses autres sorts et pouvoirs magiques a 75% de chances d’être interrompu pendant 2d4 rounds, quelle que soit leur puissance. Pour pouvoir annuler un effet instantané, le possesseur du sceptre doit se tenir prêt à l’intercepter. L’objet visé n’a droit à aucun jet de sauvegarde, mais le sceptre d’annulation ne peut affecter les artefacts (pas même ceux qui sont “ seulement ” rares). Il fonctionne un maximum de 3 fois par jour."
-        ],
-        "infos": {
-            "data": [
-                "École modérée ;",
-                "NLS",
-                "16 ;",
-                "Création de sceptres magiques",
-                "dissipation de la magie",
-                ", souhait limité ou miracle ;",
-                "Prix",
-                "37 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Annulation de faerzress",
-        "description": [
-            "La faerzress pose des problèmes à de nombreux voyageurs de l'Outreterre. Ce sceptre constitue un moyen coûteux mais utile de contrer les effets de la faerzress. A volonté, le porteur peut annuler les effets de la faerzress dans un rayon de 3 mètres jusqu'à 1 heure pas jour (cette durée peut être 'décomposée en plusieurs fois). La faerzress reste annulée dans la zone jusqu'à ce que le porteur décide de mettre un terme à l'effet ou jusqu'à ce que la durée arrive à expiration."
-        ],
-        "infos": {
-            "data": [
-                "Abjuration",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                ", zone» d’antimagie ;",
-                "Prix",
-                "70 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Canne de nuit",
-        "description": [
-            "Ce sceptre noir taillé dans un bois sombre est recouvert de symboles religieux de divers dieux. Son possesseur dispose de quatre tentatives de renvoi ou d’intimidation des morts-vivants quotidiennes supplémentaires (encore faut-il qu’il ait ce pouvoir)."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                ", Emprise sur les morts-vivants, aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
-                "Prix",
-                "7 500 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Cherche-portails",
-        "description": [
-            "Ce sceptre vibre dans la main de son porteur et désigne le portail le plus proche dans un rayon de 18 mètres. Le porteur connaît également la destination du portail et sait s'il est possible de l'activer."
-        ],
-        "infos": {
-            "data": [
-                "Divination",
-                "modérée ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "analyse de portail",
-                "localisation d’objet",
-                "Prix",
-                "73 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Défi",
-        "description": [
-            "Ce sceptre blanc en forme de gourdin est utilisable comme une masse d’armes lourde +2. Tous les morts-vivants situés dans un rayon de 9 mètres du porteur du sceptre sont victimes d’un malus de -4 en résistance au renvoi des morts-vivants."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                ", aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
-                "Prix",
-                "13 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Détection de l’hostilité",
-        "description": [
-            "Ce sceptre vibre dans la main de son possesseur et indique dans quelle direction se trouvent les créatures hostiles au personnage (en commençant par les plus proches). Ces créatures sont détectées qu’elles soient visibles, déguisées, cachées, invisibles ou éthérées. Le sceptre a une portée de 18 mètres. Si le porteur du sceptre se concentre pendant un round entier, l’objet lui indique la position exacte de l’ennemi le plus proche et le nombre d’ennemis se trouvant à portée. Il peut être utilisé 3 fois par jour, chaque utilisation durant 10 minutes. Une action simple est nécessaire pour l’activer."
-        ],
-        "infos": {
-            "data": [
-                "Divination",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "vision lucide",
-                "Prix",
-                "23 500 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Détection des métaux et des minéraux",
-        "description": [
-            "Ce sceptre vibre dans la main de son possesseur et lui indique la plus importante masse métallique comprise dans un rayon de 9 mètres. S’il le souhaite, le personnage peut se concentrer sur un métal ou un minéral spécifique (or, platine, quartz, béryl, diamant, corindon, etc.). Si le métal ou le minéral recherché est présent à moins de 9 mètres de distance, le sceptre révèle tous les endroits où il se trouve, en commençant par les plus importantes concentrations. À chaque fois, le personnage a conscience de la quantité de minerai contenue dans le gisement. Le sceptre a besoin d’une action complexe pour détecter chaque veine ; plusieurs rounds seront donc nécessaires s’il y a divers filons du métal ou du minéral recherché à portée."
-        ],
-        "infos": {
-            "data": [
-                "Divination",
-                "modérée ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "localisation d’objet",
-                "Prix",
-                "10 500 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Divergence",
-        "description": [
-            "Chacun de ces sceptres est ciselé de runes protectrices et surmonté d'une gemme. Le type de cette gemme dépend de la forme d'énergie destructive contre laquelle le sceptre a été conçu (une émeraude pour l'acide, une topaze pour l'électricité, un rubis pour le feu, un saphir pour le froid et un diamant pour le son). Quand un effet relevant du type d'énergie adéquat vise le porteur du tout point situé dans un rayon de 3 mètres de celui-ci, il a le droit de sacrifier 3 charges pour rediriger l'attaque en un point de son choix situé dans un rayon de 18 mètres (action libre). Un sort de zone doit être centré dans un rayon de 3 mètres du porteur pour que celui-ci puisse le rediriger. (En d'autres termes, une boule de feu jetée à 4,50 mètres ne saurait être redirigée, même si une partie de l'effet entre bel et bien dans un périmètre de 3 mètres du porteur.) De plus, le sceptre de divergence peut reproduire les effets d'un sort de lueur féerique. Ce pouvoir ne coûte aucune charge. Le sceptre de divergence a 50 charges au moment de sa création."
-        ],
-        "infos": {
-            "data": [
-                "Abjuration",
-                "puissante ;",
-                "NLS",
-                "13 ;",
-                "Création de sceptres magiques",
-                "lueur féerique",
-                "renvoi des sorts",
-                "Prix",
-                "117 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Enfers",
-        "description": [
-            "La longueur de ce simple bâton d’acier est parcourue de glyphes offrant un certain pouvoir sur les morts-vivants. Quand il a recours à son pouvoir de renvoi ou d’intimidation des morts-vivants, le porteur bénéficie d’un bonus de +3 à son niveau de prêtre."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                ", aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
-                "Prix",
-                "9 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Éternelle vigilance",
-        "description": [
-            "Un sceptre d’éternelle vigilance ressemble à s’y méprendre à une masse d’armes légère +1 dotée de huit ailettes. Il transmet un bonus d’intuition de +1 sur les tests d’initiative de son porteur. Si le personnage le tient fermement, le sceptre lui confère les pouvoirs suivants : détection de l’invisibilité, détection de la Loi, détection de la magie, détection du Bien, détection du Chaos, détection du Mal, détection du mensonge et lumière. Chaque pouvoir peut être utilisé sur simple concentration, au prix d’une action simple.",
-            "Si la tête du sceptre est plantée dans le sol et si son possesseur lui demande de se mettre en mode de veille (ce qui nécessite une action simple), l’objet détecte aussitôt les intentions hostiles à 36 mètres de distance. Dans le même temps, le sceptre jette prière sur son propriétaire et tous ses alliés compris dans un rayon de 6 mètres, puis prévient par télépathie tout le monde si des créatures hostiles se trouvent à l’intérieur de la zone sondée. Cet effet dure 10 minutes. Le possesseur du sceptre peut y faire appel une fois par jour.",
-            "Enfin, le sceptre peut être utilisé pour lancer l’équivalent du sort animation d’objets sur un maximum de onze objets disposés en cercle, à 1,50 mètre autour de lui environ. Les objets restent animés pendant 11 rounds. Le sceptre doit être planté dans le sol pour exécuter cette fonction. Son possesseur peut y faire appel une fois par jour."
-        ],
-        "infos": {
-            "data": [
-                "Multiples modérées ;",
-                "NLS",
-                "11 ;",
-                "Création de sceptres magiques",
-                "alarme",
-                "animation d’objets",
-                "détection de la magie",
-                "détection de l’invisibilité",
-                "détection de la Loi",
-                "détection du Bien",
-                "détection du Chaos",
-                "détection du Mal",
-                "détection du mensonge",
-                "lumière",
-                "prière",
-                "Prix",
-                "85 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Extinction des feux",
-        "description": [
-            "D’un seul contact (une action simple), ce sceptre éteint les feux non magiques de taille M ou moins. Pour que le sceptre d’extinction des feux fonctionne face à des feux plus importants ou magiques, il faut dépenser une ou plusieurs charges.",
-            "Il faut dépenser 1 charge pour éteindre un brasier de taille G ou plus, ou un feu magique de taille M ou moins (tel que celui créé par une arme de feu ou le sort mains brûlantes). Les flammes, brûlant en permanence comme celles qui entourent une arme de feu ou un élémentaire de cet élément, sont réprimées pendant 6 rounds avant de se rallumer. Pour pouvoir éteindre un sort instantané, le sceptre doit se trouver à l’intérieur de la zone d’effet et son possesseur doit se tenir prêt (comme s’il cherchait à lancer un contresort). Si le feu magique est de taille G ou plus (boule de feu, colonne de feu, mur de feu, etc.), il faut dépenser 2 charges pour l’éteindre.",
-            "Si le sceptre est utilisé contre une créature constituée de feu (en réussissant une attaque de contact au corps à corps), chaque attaque inflige 6d6 points de dégâts à cette dernière, mais le sceptre perd 3 charges à chaque fois.",
-            "Un sceptre nouvellement créé possède un total de 10 charges. Ces charges se renouvellent tous les jours, ce qui permet au porteur de dépenser jusqu’à 10 charges chaque jour."
-        ],
-        "infos": {
-            "data": [
-                "Transmutation",
-                "puissante ;",
-                "NLS",
-                "12 ;",
-                "Création de sceptres magiques",
-                "pyrotechnie",
-                "Prix",
-                "15 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Fléau du céleste",
-        "description": [
-            "Ce sceptre métallique, de couleur rouge sang profond et mesurant 60 centimètres de long, est surmonté d'une pointe courbée. Tous les célestes situés dans un rayon de 18 mètres du sceptre subissent un malus de malfaisance de -4 aux jets d'attaque, de dégâts, de sauvegarde et de compétence. Aucun jet de sauvegarde ou résistance à la magie n'est accordé pour passer outre ces effets."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "13 ;",
-                "Création de sceptres magiques",
-                "malédiction",
-                "souhait limité",
-                ", le créateur doit être un Extérieur d’alignement mauvais ;",
-                "Prix",
-                "56 000 po ;",
-                "Poids",
-                "1,5 kg."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Flétrissement",
-        "description": [
-            "Le sceptre de flétrissement s’utilise au combat comme une masse d’armes légère +1, si ce n’est qu’il n’inflige pas le moindre point de dégât. Au lieu de cela, toute créature touchée (par une attaque de contact au corps à corps) subit un affaiblissement temporaire de 1d4 points de Force et 1d4 points de Constitution. En cas de coup critique, l’effet est le même, si ce n’est que l’affaiblissement temporaire devient une diminution permanente. Dans les deux cas, la victime a droit à un jet de Vigueur (DD 17). Si elle le réussit, l’attaque est sans effet."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "puissante ;",
-                "NLS",
-                "13 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "contagion",
-                "Prix",
-                "25 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Frappe débilitante",
-        "description": [
-            "Sculpté dans du bois exposé à un marasme (une zone mineure où l'énergie négative est minoritaire) du plan de l'énergie négative lui-même, un sceptre de frappe débilitante fonctionne comme une masse d'armes lourde +1. De plus, toute créature qu'il frappe au corps à corps est victime d'un sort de blessure légère. Si le sceptre obtient un coup critique, la créature subit un sort de blessure grave à la place. Quand on l'utilise dans un plan où l'énergie négative est minoritaire, les effets magiques du sceptre sont étendus (comme par le don Extension d'effet). Quand on l'utilise dans un plan où l'énergie négative est dominante, ces effets sont soumis à la quintessence (comme le don Quintessence des sorts)."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "puissante ;",
-                "NLS",
-                "15 ;",
-                "Création de sceptres magiques",
-                "blessure grave",
-                "Prix",
-                "47 312 po ;",
-                "Coût",
-                "23 812 po + 1 880 PX."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Fureur",
-        "description": [
-            "Un tel sceptre est généralement terminé en forme de tête de divinité courroucée. En plus de conférer un bonus de parade à la CA de son porteur (+1 à +5 selon le type), le sceptre de fureur permet au lanceur de sorts d’augmenter l’efficacité de l’un de ses sorts de 6e niveau ou moins, 1 fois par jour, comme s’il jouissait du don Extension d’effet. On active ce pouvoir au prix d’une action libre. Le niveau réel du sort et le temps d’incantation de celui-ci ne sont pas affectés (même pour les ensorceleurs et autres lanceurs de sorts spontanés)."
-        ],
-        "infos": {
-            "data": [
-                "Abjuration",
-                "puissante ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", École renforcée, Extension d’effet, protection contre le Bien/le Chaos/la Loi/le Mal, le niveau de lanceur de sorts du créateur doit être supérieur ou égal à trois fois le bonus placé dans le sceptre ;",
-                "Prix",
-                "26 800 po (+1), 38 800 po (+2), 58 800 po (+3), 77 600 po (+4), 95 600 po (+5)."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Gel",
-        "description": [
-            "Ce sceptre en acier bleu de 60 centimètres de long est translucide, comme s'il était fait de glace.",
-            "Trois fois par jour, en prononçant le mot de commande (une action simple) son porteur peut créer une ligne de glace de 9 mètres à partir du sceptre. la ligne inflige 2d6 dégâts de froid aux créatures (Réflèxes, DD 14, demi). Les feux non-magiques dans la zones sont automatiquement éteints et l'eau libre est gelé jusqu'à une profondeur de 30 centimètres, assez pour permettre à une créature de taille G de passer sans la briser. L'eau fond normalement par la suite."
-        ],
-        "infos": {
-            "data": [
-                "Évocation",
-                "modérée ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "rayon de givre",
-                "Prix",
-                "1 400 po ;",
-                "Poids",
-                "500 g."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Grand fléau",
-        "description": [
-            "Sur ordre de son possesseur, ce sceptre d’apparence anodine se transforme en fléau double +3. Comme son nom l’indique, ce fléau est une arme double, ce qui signifie que, chaque round, ses deux têtes peuvent être utilisées au corps à corps. Le personnage gagne une attaque supplémentaire au cours du round (avec la seconde tête), à condition d’accepter un malus de –2 à toutes ses attaques (comme s’il possédait le don Combat à deux armes).",
-            "Une fois par jour, le possesseur du sceptre du grand fléau peut bénéficier d’un bonus de parade de +4 à la CA et d’un bonus de résistance (également de +4) à tous les jets de sauvegarde. Ce pouvoir dure 10 minutes, et le sceptre n’a pas besoin d’être transformé en arme pour le conférer. La transformation du sceptre en fléau double (et inversement) correspond à une action de mouvement."
-        ],
-        "infos": {
-            "data": [
-                "Enchantement",
-                "modéré ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "bénédiction",
-                "Prix",
-                "50 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Inamovible",
-        "description": [
-            "Un sceptre inamovible est une simple barre en fer plate dotée d’un petit bouton à l’une de ses extrémités. Il suffit d’appuyer sur ce bouton pour que le sceptre reste totalement immobile, même si la position qu’il occupe défie les lois de la pesanteur. On peut donc le “ fixer ” n’importe où, même dans le vide. Il s’avère extrêmement utile pour attacher une corde, barrer une porte, etc. Nombre d’aventuriers aiment avoir plusieurs sceptres inamovibles, pour s’en servir par exemple d’échelle (il suffit d’en posséder deux pour les utiliser de la sorte, en les immobilisant puis en les libérant l’un après l’autre). Un sceptre inamovible peut supporter un total de 4 tonnes avant de tomber au sol. Si une créature tente de le pousser après qu’il a été arrimé, elle doit réussir un test de Force (DD 30) pour le déplacer de 3 mètres (ce qui lui prend 1 round)."
-        ],
-        "infos": {
-            "data": [
-                "Transmutation",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "lévitation",
-                "Prix",
-                "7 500 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Liberté",
-        "description": [
-            "Arme des plus puissantes contre les monstres qui charment ou asservissent d'autres créatures, le sceptre de liberté équivaut à une masse d'armes lourde en argent +3. Il a en outre trois pouvoirs spéciaux.",
-            "Premièrement, son utilisateur peut choisir d'infliger des dégâts non-létaux sans malus aux jets d'attaque (mais il doit toutefois prendre sa décision avant d'effectuer son jet).Deuxièmement, chaque fois qu'il utilise le sceptre pour frapper une créature affectée par un charme ou une coercition, il effectue un test de niveau de lanceur de sorts spécial (ld20+9) pour dissiper l'effet (DD 11 + niveau de lanceur de sorts de l'effet).",
-            "Enfin, tant qu'il a le sceptre de liberté en main, l'utilisateur bénéficie d'un bonus de moral de +4 aux jets de sauvegarde contre les charmes et la coercition."
-        ],
-        "infos": {
-            "data": [
-                "Évocation",
-                "modérée ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "annulation d’enchantement",
-                "Prix",
-                "53 000 po ;",
-                "Poids",
-                "3 kilos."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Maîtrise des morts-vivants",
-        "description": [
-            "Ce sceptre en métal est ciselé de manière à ressembler à une pile de petits crânes. Son porteur peut contrôler deux fois plus de morts-vivants que la normale. Par exemple, un personnage ne peut habituellement pas contrôler plus de quatre fois son niveau de lanceur de sorts en dés de vie de morts-vivants. Quand il porte le sceptre, il peut repousser cette limite à huit fois son niveau de lanceur de sorts."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "profanation",
-                "Prix",
-                "10 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Merveilleux",
-        "description": [
-            "Le sceptre merveilleux est un objet aussi étrange qu’imprévisible, dont l’effet est déterminé aléatoirement à chaque utilisation. Il faut une action simple pour l’activer. Les effets les plus courants sont regroupés sur la table suivante, mais vous pouvez les modifier à l’envi en fonction de votre campagne."
-        ],
-        "infos": {
-            "data": [
-                "Enchantement",
-                "modéré ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "confusion",
-                ", alignement chaotique ;",
-                "Prix",
-                "12 000 po."
-            ]
-        },
-        "ul": null,
-        "table": [
-            [
-                0.0,
-                "<table border=\"1\"><tbody><tr><th>1d100</th><th>Effet produit par le sceptre</th></tr><tr><td>01&#8211;05</td><td>Lenteur sur la cr&#233;ature d&#233;sign&#233;e pendant 10 rounds (jet de Volont&#233; DD 15 pour annuler).</td></tr><tr><td>06&#8211;10</td><td>Lueur f&#233;erique autour de la cible.</td></tr><tr><td>11&#8211;15</td><td>Le porteur croit pendant 1 round que le sceptre produit un effet d&#233;termin&#233; par un second jet de d&#233; (pas de jet de sauvegarde).</td></tr><tr><td>16&#8211;20</td><td>Bourrasque, mais avec la violence correspondant &#224; une temp&#234;te (jet de Vigueur DD 14 pour annuler).</td></tr><tr><td>21&#8211;25</td><td>Le porteur conna&#238;t les pens&#233;es superficielles de la cible (comme &#224; l&#8217;aide de d&#233;tection de pens&#233;es) pendant 1d4 rounds (pas de jet de sauvegarde).</td></tr><tr><td>26&#8211;30</td><td>Nuage naus&#233;abond &#224; 9 m&#232;tres de distance (jet de Vigueur DD 15 pour annuler).</td></tr><tr><td>31&#8211;33</td><td>Une forte pluie s&#8217;abat pendant 1 round dans un rayon de 18 m&#232;tres autour du porteur.</td></tr><tr><td>34&#8211;36</td><td>Convocation d&#8217;un animal, soit un rhinoc&#233;ros (01&#8211;25 sur 1d100), soit un &#233;l&#233;phant (26&#8211;50) soit une souris (51&#8211;100).</td></tr><tr><td>37&#8211;46</td><td>&#201;clair (21 m&#232;tres de long, 1,50 m&#232;tre de large), 6d6 points de d&#233;g&#226;ts (jet de R&#233;flexes DD 14 pour annuler).</td></tr><tr><td>47&#8211;49</td><td>600 gros papillons jaillissent du sceptre et volettent alentour pendant 2 rounds avant de dispara&#238;tre. Leur pr&#233;sence aveugle toutes les cr&#233;atures comprises dans un rayon de 7,50 m&#232;tres, y compris le porteur (jet de R&#233;flexes DD 14 pour annuler).</td></tr><tr><td>50&#8211;53</td><td>Agrandissement sur la cible (18 m&#232;tres de port&#233;e, accroissement de taille de 50%, jet de Vigueur DD 11 pour annuler).</td></tr><tr><td>54&#8211;58</td><td>T&#233;n&#232;bres, h&#233;misph&#232;re de 4,50 m&#232;tres de rayon, centr&#233; &#224; 9 m&#232;tres du sceptre.</td></tr><tr><td>59&#8211;62</td><td>L&#8217;herbe se met &#224; pousser sur 15 m2 devant le sceptre. S&#8217;il y en avait d&#233;j&#224; &#224; cet endroit, elle atteint dix fois sa hauteur normale.</td></tr><tr><td>63&#8211;65</td><td>Un objet non vivant ne faisant pas plus de 1 m3 pour 500 kg devient &#233;th&#233;r&#233;.</td></tr><tr><td>66&#8211;69</td><td>Le porteur est r&#233;duit &#224; 1/12e de sa taille habituelle (pas de jet de sauvegarde).</td></tr><tr><td>70&#8211;79</td><td>Boule de feu sur la cible ou droit devant, jusqu&#8217;&#224; une port&#233;e de 30 m&#232;tres, 6d6 points de d&#233;g&#226;ts (jet de R&#233;flexes DD 15 pour demi-d&#233;g&#226;ts).</td></tr><tr><td>80&#8211;84</td><td>Invisibilit&#233; sur le personnage.</td></tr><tr><td>85&#8211;87</td><td>Des feuilles poussent sur la cible si celle-ci se trouve &#224; 18 m&#232;tres ou moins du sceptre. Elles tombent au bout de 24 heures.</td></tr><tr><td>88&#8211;90</td><td>10&#8211;40 &#233;clats de pierres fines, d&#8217;une valeur unitaire de 1 po, jaillissent du sceptre et atteignent une port&#233;e de 9 m&#232;tres. Chaque &#233;clat inflige 1 point de d&#233;g&#226;ts s&#8217;il touche quelqu&#8217;un. Jetez 5d4 pour d&#233;terminer le nombre d&#8217;impacts et r&#233;partissez &#233;quitablement le total entre les cibles potentielles.</td></tr><tr><td>91&#8211;95</td><td>Des lueurs dansantes apparaissent dans un rectangle de 12,50 m&#232;tres x 9 m&#232;tres devant le sceptre. Toutes les cr&#233;atures prises dans cette zone sont aveugl&#233;es pendant 1d6 rounds (jet de Vigueur DD 15 pour annuler).</td></tr><tr><td>96&#8211;97</td><td>L&#8217;&#233;piderme du porteur ou de la cible (une chance sur deux) devient bleu, vert ou violet, et ce de fa&#231;on permanente (pas de jet de sauvegarde).</td></tr><tr><td>98&#8211;100</td><td>P&#233;trification sur la cible (ou transmutation de la pierre en chair si la cible est d&#233;j&#224; en pierre) si elle se trouve &#224; 18 m&#232;tres ou moins du sceptre (jet de Vigueur DD 19 pour annuler).</td></tr></tbody></table>"
-            ]
-        ]
-    },
-    {
-        "title": "Métamagie",
-        "description": [
-            "Les sceptres de métamagie contiennent l’essence d’un don de métamagie qu’ils peuvent appliquer à un sort sans en modifier le niveau de l’emplacement de sort nécessaire. Tous les sceptres de ce type sont des objets à usage (mais lancer un sort dans une zone de contrôle provoque tout de même une attaque d’opportunité). Un personnage ne peut utiliser qu’un sceptre de métamagie sur un sort donné, mais il est possible de combiner l’utilisation de l’un d’entre eux avec les dons de métamagie effectivement possédés par le personnage. Dans ce cas, seuls ces derniers modifient le niveau de l’emplacement de sort nécessaire.",
-            "Un personnage possédant un sceptre de métamagie n’est pas considéré comme ayant le don en question (par exemple, pour remplir des pré requis pour un autre don ou une classe de prestige). Il ne peut utiliser le sceptre qu’un certain nombre de fois par jour pour modifier un sort. Un ensorceleur ou un barde utilisant un sceptre de métamagie doit passer plus de temps à l’incantation, de la même façon que s’il utilisait un don qu’il possédait.",
-            "Les sceptres de métamagie mineure ne peuvent être utilisés que sur des sorts du 3e niveau ou moins. Les sceptres de métamagie modérée ne peuvent être utilisés que sur des sorts du 6e niveau ou moins. Enfin, les sceptres de métamagie majeure peuvent être utilisés sur tous les sorts jusqu’au 9e niveau.",
-            "<strong><a name=\"1447\"></a>Extension de durée</strong>. Trois fois par jour, le porteur de ce sceptre peut lancer un sort à durée étendue comme s’il utilisait le don Extension de durée.",
-            "<strong><a name=\"1448\"></a>Extension de portée</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à portée étendue comme s’il utilisait le don Extension de portée.",
-            "<strong><a name=\"1446\"></a>Extension d’effet</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à effet étendu comme s’il utilisait le don Extension d’effet.",
-            "<strong><a name=\"1449\"></a>Incantation rapide</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à incantation rapide comme s’il utilisait le don Incantation rapide.",
-            "<strong><a name=\"1450\"></a>Incantation silencieuse</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à incantation silencieuse comme s’il utilisait le don Incantation silencieuse.",
-            "<strong><a name=\"1451\"></a>Quintessence</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer la quintessence d’un sort comme s’il utilisait le don Quintessence de sort.",
-            "<strong><a name=\"1452\"></a>Substitution non-létale</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à durée étendue comme s’il utilisait le don Substitution non-létale."
-        ],
-        "infos": {
-            "data": [
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Extension de durée ;",
-                "Prix",
-                "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Extension de portée ;",
-                "Prix",
-                "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Extension d’effet ;",
-                "Prix",
-                "9 000 po (mineur), 32 500 po (modérée), 73 000 po (majeure).",
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Incantation rapide ;",
-                "Prix",
-                "35 000 po (mineur), 75 500 po (modérée), 170 000 po (majeure).",
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Incantation silencieuse ;",
-                "Prix",
-                "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Quintessence de sort ;",
-                "Prix",
-                "14 000 po (mineur), 54 000 po (modérée), 121 500 po (majeure).",
-                "Aura puissante (pas d’école) ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", Substitution non-létale ;",
-                "Prix",
-                "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure)."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Morts",
-        "description": [
-            "Le fait de toucher un cadavre avec le sceptre des morts anime celui-ci, comme si on venait de lui jeter un sort Animation des morts. De plus, le sceptre permet à son possesseur d'intimider ou de contrôler les morts-vivants comme s'il avait quatre niveaux de plus, du moins s'il est déjà capable d'exercer ce pouvoir contre ce type de créatures. Le sceptre peut animer jusqu'à 20 DV de morts-vivants par jour."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "animation des morts",
-                ", le créateur doit être un prêtre ;",
-                "Prix",
-                "75 000 po,."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Obéissance",
-        "description": [
-            "Ce sceptre confère à celui qui le tient un bonus d'aptitude de +5 aux tests de Charisme et de compétences liées au Charisme."
-        ],
-        "infos": {
-            "data": [
-                "Enchantement",
-                "faible ;",
-                "NLS",
-                "5 ;",
-                "Création de sceptres magiques",
-                "charme-personne",
-                "Prix",
-                "12 500 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Oblitération",
-        "description": [
-            "Ce sceptre redouté par la plupart des aventuriers est le pire ennemi des objets magiques, qu’il peut vider de toute énergie. L’objet touché a droit à un jet de Volonté de DD 23 pour résister aux effets. Si quelqu’un le tient en main ou le porte au moment de l’attaque, l’objet peut utiliser le bonus de base de son possesseur aux jets de Volonté à la place du sien propre (c’est le bonus le plus avantageux qui est systématiquement pris en compte). Le personnage peut toucher l’objet qu’il vise à l’aide du sceptre en réussissant une attaque de contact au corps à corps. Si l’objet rate son jet de sauvegarde, il perd toute magie, tandis que le sceptre devient cassant et ne peut plus être réutilisé. Un objet vidé de son énergie magique par un sceptre d’oblitération ne peut retrouver ses propriétés que grâce à un souhait ou un miracle. Si un sceptre d’oblitération et une sphère d’annihilation s’entre-détruisent, rien ne permet de les récupérer, ni l’un, ni l’autre."
-        ],
-        "infos": {
-            "data": [
-                "Abjuration",
-                "puissante ;",
-                "NLS",
-                "17 ;",
-                "Création de sceptres magiques",
-                ", disjonction ;",
-                "Prix",
-                "11 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Orage",
-        "description": [
-            "Ce sceptre de fer orné de rivets en argent se comporte en tout point comme une masse d’armes légère +2. Il possède également les pouvoirs suivants :"
-        ],
-        "infos": {
-            "data": [
-                "Évocation",
-                "modérée ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "éclair",
-                "cri",
-                "Prix",
-                "33 000 po."
-            ]
-        },
-        "ul": [
-            [
-                0.0,
-                "<ul><li>Tonnerre. Une fois par jour, le sceptre peut frapper comme une masse d&#8217;armes l&#233;g&#232;re +3. En cas de coup au but, la cible est &#233;tourdie par la d&#233;flagration qui se produit au moment de l&#8217;impact (jet de Vigueur DD 13 pour annuler). L&#8217;activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, lequel doit &#234;tre touch&#233; au cours du round.</li><li>&#201;lectricit&#233; statique. Une fois par jour, une violente &#233;tincelle jaillit du sceptre pour frapper la cr&#233;ature touch&#233;e lors d&#8217;une attaque de corps &#224; corps. La cible subit alors les d&#233;g&#226;ts normaux pour une masse d&#8217;armes l&#233;g&#232;re +2 (1d6+2 points), auxquels viennent s&#8217;ajouter les d&#233;g&#226;ts dus &#224; la d&#233;charge &#233;lectrique (+2d6 points d&#8217;&#233;lectricit&#233;). M&#234;me si l&#8217;attaque ne suffit pas pour toucher, la cible encaisse la d&#233;charge &#233;lectrique (2d6) si le r&#233;sultat obtenu est suffisant pour valider une attaque de contact au corps &#224; corps. L&#8217;activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, qui doit &#234;tre touch&#233; au cours du round.</li><li>Coup de tonnerre. Une fois par jour, au prix d&#8217;une action simple, le sceptre peut produire un bruit assourdissant dont les effets sont identiques &#224; ceux du sort cri (jet de Vigueur DD 16 pour effet partiel, attaque sonique infligeant 2d6 points de d&#233;g&#226;ts, cible assourdie pendant 2d6 rounds).</li><li>Foudre. Une fois par jour, au prix d&#8217;une action simple, le porteur peut invoquer un &#233;clair de 1,50 m&#232;tre de large (jet de R&#233;flexes DD 16 pour demi-d&#233;g&#226;ts, 9d6 points de d&#233;g&#226;ts d&#8217;&#233;lectricit&#233;) jaillissant de l&#8217;extr&#233;mit&#233; du sceptre (port&#233;e 60 m&#232;tres).</li><li>Fureur de l&#8217;orage. Une fois par semaine, au prix d&#8217;une action simple, le sceptre a la possibilit&#233; de combiner les deux pouvoirs pr&#233;c&#233;dents (coup de tonnerre et foudre). Le coup de tonnerre affecte toutes les cr&#233;atures se trouvant &#224; moins de 3 m&#232;tres de la trajectoire de l&#8217;&#233;clair, tandis que la puissance de ce dernier est augment&#233;e (il inflige toujours 9d6 points de d&#233;g&#226;ts, mais tous les 1 et les 2 sont consid&#233;r&#233;s comme des 3, pour un total de d&#233;g&#226;ts compris entre 27 et 54 points, plus 2d6 dus au coup de tonnerre). Les cibles ont droit &#224; un jet de R&#233;flexes unique (DD 16) pour se pr&#233;munir contre les deux effets. En cas de succ&#232;s, elles ne sont pas assourdies et les d&#233;g&#226;ts sont r&#233;duits de moiti&#233;.</li></ul>"
-            ]
-        ],
-        "table": null
-    },
-    {
-        "title": "Prestance",
-        "description": [
-            "Le possesseur de ce sceptre jouit d’un bonus d’altération de +4 à sa valeur de Charisme tant qu’il le tient ou le porte sur lui. Une fois par jour, le sceptre peut également le vêtir des plus belles soieries et le parer de fourrures et de bijoux.",
-            "Les vêtements créés par le sceptre ont une durée d’existence de 12 heures, sauf si le personnage cherche à les vendre, à les donner ou à les utiliser comme composantes matérielles pour sort (auquel cas ils disparaissent immédiatement). Cela s’applique également si les habits sont arrachés de force au personnage.",
-            "La valeur totale de ces atours varie entre 7 000 et 10 000 po (1d4+6 x 1 000) : 1 000 po de soieries, 5 000 po de fourrures, le reste étant constitué de pierres fines (20 au maximum, d’une valeur unitaire de 200 po).",
-            "Le sceptre possède un second pouvoir, utilisable une fois par semaine. Sur ordre de son possesseur, il peut créer une tente gigantesque, un pavillon de soie de forme carrée et de près de 18 mètres de côté. Les meubles (chaises, grande table, etc.) et la nourriture apparaissant avec sont suffisants pour accueillir et sustenter une centaine de convives. La tente et son contenu n’ont qu’une journée d’existence, après quoi ils disparaissent sans laisser de trace (de même que tout ce qui aurait pu être pris dans le pavillon)."
-        ],
-        "infos": {
-            "data": [
-                "Invocation",
-                "Transmutation",
-                "puissantes ;",
-                "NLS",
-                "12 ;",
-                "Création de sceptres magiques",
-                "création majeure",
-                "fabrication",
-                "splendeur de l’aigle",
-                "Prix",
-                "25 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Puissance céleste",
-        "description": [
-            "Sculpté dans un morceau unique de frêne droit et mince muni d'embouts enor et de bandes en argent, ce sceptre est conçu pour être porté au combat par ceux qui cherchent à conquérir les plans inférieurs.",
-            "Un sceptre de puissance céleste fonctionne comme un bâton +2/+2. S'il frappe un Extérieur d'alignement mauvais, son porteur peut déclencher un effet de châtiment sacré centré sur la créature touchée. Il s'agit d'une action libre que le porteur peut utiliser trois fois par jour.",
-            "Une fois par jour, si le porteur se trouve à 18 mètres ou moins d'un Extérieur d'alignement mauvais, il peut convoquer un guar-dinal avoral au prix d'une action simple (comme avec convocation de monstres VII)."
-        ],
-        "infos": {
-            "data": [
-                "Diverses puissantes ;",
-                "NLS",
-                "13 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "châtiment sacré",
-                ", convocation de monstres VII ;",
-                "Prix",
-                "110 600 po ;",
-                "Coût",
-                "55 600 po + 4 400 PX."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Python",
-        "description": [
-            "Ce sceptre est plus long que la moyenne, puisqu’il fait environ 1,20 mètre, pour un poids de 5 kg. On peut l’utiliser au corps à corps comme un bâton +1/+1. Si son possesseur le jette par terre (ce qui demande une action simple), le sceptre enfle démesurément pour devenir, au terme du round, un serpent constricteur géant. Le python ainsi créé obéit fidèlement aux ordres du possesseur du sceptre (sous forme animale, il bénéficie toujours du bonus d’altération de +1 à l’attaque et aux dégâts). Le serpent se retransforme en sceptre (ce qui prend une action complexe) quand le personnage le souhaite, ou dès que 30 mètres le séparent de ce dernier. Si le python est tué, il redevient un sceptre, et il est alors impossible de le rappeler pendant 3 jours. Cet objet ne fonctionne qu’entre les mains d’un personnage d’alignement bon."
-        ],
-        "infos": {
-            "data": [
-                "Transmutation",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "métamorphose funeste",
-                ", alignement bon ;",
-                "Prix",
-                "13 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Rupture de Toile",
-        "description": [
-            "Ce long sceptre est noir, avec une extrémité pointue. L'autre extrémité est un motif de fils mollement entrelacés, avec au milieu de l'énergie magique pure qui irradie une lumière vert pâle et qui ressemble à une flamme de gaz naturel. Le sceptre de rupture de Toile fonctionne de la même façon qu'un sceptre d'absorption : il absorbe automatiquement tout sort à cible unique ou rayon (ou pouvoir magique dupliquant ces effets), qui affecte le possesseur du sceptre ou son équipement. Toutefois, plutôt que de stocker l'énergie magique ainsi absorbée, le sceptre envoie immédiatement en retour un contrecoup d'énergie négative qui inflige 1d6 points de dégâts par niveau de sort absorbé (un jet de Volonté réussi réduit les dégâts de moitié). Une protection contre l’énergie négative annule ces dégâts, et les lanceurs de sorts morts-vivants sont en fait soignés par cet effet."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "puissante ;",
-                "NLS",
-                "18 ;",
-                "Création de sceptres magiques",
-                "renvoi des sorts",
-                "absorption d’énergie",
-                "Prix",
-                "60 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Sceptre de maîtrise des dragons",
-        "description": [
-            "Ce sceptre fonctionne un peu sur le même principe qu'un sceptre de suzeraineté, mais il n'affecte que les dragons. Son porteur gagne l'obéissance et la loyauté des dragons situés dans un rayon de 150 mètres dès qu'il l'active (action simple). Un total de 300 DV de dragons peut être dirigé, mais ceux qui ont une valeur d'Intelligence de 16 ou plus ont droit à un jet de Volonté (DD 22) pour annuler l'effet. Les dragons affectés obéissent au porteur comme si celui-ci était leur monarque. Toutefois, si l'intéressé donne un ordre contraire à leur nature, l'enchantement cesse de faire effet. Le sceptre de maîtrise des dragons peut être utilisé pendant un total de 500 minutes avant de tomber en poussière. Cette durée n'est pas nécessairement continue.",
-            "Il existe deux versions de ce puissant objet magique. Le sceptre pourpre de maîtrise des dragons n'affecte que les dragons d'alignement mauvais ou neutre, alors que le sceptre doré de maîtrise des dragons n'affecte que les dragons d'alignement bon ou neutre."
-        ],
-        "infos": {
-            "data": [
-                "Enchantement",
-                "puissant ;",
-                "NLS",
-                "20 ;",
-                "Création de sceptres magiques",
-                "charme-monstre de groupe",
-                "Prix",
-                "120 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Sceptre de puissance fantastique",
-        "description": [
-            "Bien que les sceptres de puissance fantastique puissent varier en apparence, tous sont fait en fer noir. La majorité ressemble à une colonne vertébrale avec au bout une tête de créature sculptée, généralement un démon ou une fée, clairement trop petite par rapport à la colonne vertébrale.",
-            "Chaque sceptre de puissance fantastique renferme une invocation, soit une invocation façonnée, soit une invocation fantastique. Un sorcier peut appliquer à sa décharge fantastique l'invocation que contient le sceptre au prix d'une action immédiate. La décharge fantastique sort alors des yeux de la créature plutôt que de la main du sorcier.",
-            "Le pouvoir du sceptre de puissance fantastique est utilisable 5 fois par jour.",
-            "Le prix"
-        ],
-        "infos": {
-            "data": [
-                "Universel faible (inférieure), modérée (mineure ou majeure) ou puissante (suprême) ;",
-                "NLS",
-                "1 (mineure), 6 (mineure), 11 (majeure) ou 16 (suprême) ; Création de sceptres, le créateur doit connaître l’invocation en question ;",
-                "Prix",
-                "4 000 po (inférieure), 16 000 po (mineure), 36 000 po (majeure), 64 000 po (suprême) ;",
-                "Poids",
-                "1,5 kg."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Sécurité",
-        "description": [
-            "Cet objet a le pouvoir de créer un espace non dimensionnel qui est en quelque sorte un paradis de poche. À l’intérieur, le possesseur du sceptre et jusqu’à 199 créatures peuvent vivre en totale sécurité pour une période maximale dépendant de leur nombre (200 jours, divisés par le nombre de créatures). Seul, le possesseur du sceptre pourra rester un maximum de 200 jours dans son paradis de poche, tandis que ce total sera réduit à 50 jours pour 4 créatures, et à 3 jours pour 60 créatures. On arrondit systématiquement à l’entier intérieur, ce qui signifie qu’un groupe comprenant de 101 à 200 individus ne pourra être protégé que durant une seule journée.",
-            "À l’intérieur de l’espace créé, les créatures cessent de vieillir et la guérison naturelle s’effectue deux fois plus rapidement. On trouve de l’eau potable en abondance, ainsi que de la nourriture (fruits et légumes seulement). Le climat est agréable pour tous.",
-            "Quand le sceptre de sécurité est activé (ce qui demande une action simple), son possesseur et tous ceux qui touchent le sceptre sont instantanément transportés dans le paradis de poche. Si le groupe est trop important, ses membres peuvent se tenir par la main pour être eux aussi affectés. Les créatures refusant de partir ont droit à un jet de Volonté (DD 17) pour rester sur place. À noter que, même si quelqu’un réussit son jet de sauvegarde, les autres individus se trouvant au-delà dans la chaîne sont tout de même transportés normalement.",
-            "Quand l’effet du sceptre expire ou est dissipé, toutes les créatures affectées réapparaissent instantanément à leur point de départ. Si un solide occupe désormais l’espace où un des voyageurs devrait revenir, celui-ci effectue une translation spatiale suffisante pour réapparaître dans le plus proche endroit dégagé. Le possesseur du sceptre peut mettre un terme à l’effet quand il le souhaite, mais le sceptre de sécurité ne peut être utilisé qu’une seule fois par semaine."
-        ],
-        "infos": {
-            "data": [
-                "Invocation",
-                "puissante ;",
-                "NLS",
-                "20 ;",
-                "Création de sceptres magiques",
-                "portail",
-                "Prix",
-                "61 000 po."
-            ]
-        },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Seigneurs de la guerre",
-        "description": [
-            "Ce sceptre possède des pouvoirs magiques et peut se transformer en plusieurs armes et outils. Plus épais que les autres objets de ce type, le sceptre des seigneurs de la guerre est en métal. Son extrémité s’orne d’une tête à ailettes et il arbore six boutons ressemblant à de gros clous à tête plate (appuyer sur l’un d’eux revient à dégainer une arme). Il pèse 5 kg.",
-            "Chacun des pouvoirs magiques suivants peut être utilisé 1 fois par jour.",
-            "Les fonctions martiales suivantes peuvent être invoquées à volonté, sans limite d’utilisation.",
-            "Enfin, le possesseur du sceptre peut également faire appel aussi souvent qu’il le souhaite aux fonctions suivantes."
-        ],
-        "infos": {
-            "data": [
-                "Multiples puissantes ;",
-                "NLS",
-                "19 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "blessure légère",
-                "force de taureau",
-                "immobilisation de personne",
-                "lame de feu",
-                "terreur",
-                "Prix",
-                "70 000 po."
-            ]
-        },
-        "ul": [
-            [
-                1.0,
-                "<ul><li>Immobilisation de personne au contact (jet de Volont&#233; DD 14 pour annuler). Le possesseur du sceptre doit d&#233;cider d&#8217;utiliser le pouvoir, puis r&#233;ussir une attaque de contact au corps &#224; corps pour l&#8217;activer. Si l&#8217;attaque rate, l&#8217;effet est perdu pour la journ&#233;e.</li><li>Terreur affectant tous les adversaires voyant le sceptre, dans une port&#233;e maximale de 3 m&#232;tres (jet de Volont&#233; DD 16 pour effet partiel). Il faut une action simple pour invoquer ce pouvoir.</li><li>Sur une attaque de contact au corps &#224; corps r&#233;ussie, le sceptre inflige 2d4 points de d&#233;g&#226;ts &#224; la cible (jet de Volont&#233; DD 17 pour demi-d&#233;g&#226;ts) et le porteur r&#233;cup&#232;re la m&#234;me quantit&#233; de points de vie. Le personnage doit annoncer son intention avant de porter son coup, comme pour immobilisation de personne.</li></ul>"
+{
+    "weakAndSmall": [
+        {
+            "title": "Obéissance",
+            "description": [
+                "Ce sceptre confère à celui qui le tient un bonus d'aptitude de +5 aux tests de Charisme et de compétences liées au Charisme."
             ],
-            [
-                2.0,
-                "<ul><li>Sous sa forme habituelle, le sceptre fonctionne comme une masse d&#8217;armes l&#233;g&#232;re +2.</li><li>Pour peu qu&#8217;on appuie sur le bouton 1, il se transforme en &#233;p&#233;e longue +1 de feu. Le fer jaillit de la t&#234;te de masse, laquelle devient la garde de l&#8217;&#233;p&#233;e nouvellement cr&#233;&#233;e. La longueur totale du sceptre est alors de 1,20 m&#232;tre.</li><li>Si l&#8217;on presse le bouton 2, le sceptre devient une hache d&#8217;armes +4. Le fer jaillit de la t&#234;te de masse et le manche s&#8217;allonge pour donner &#224; l&#8217;ensemble une longueur totale de 1,20 m&#232;tre.</li><li>En appuyant sur le bouton 3, on transforme le sceptre en &#233;pieu +3 ou pique +3, au choix. La lame jaillit de la t&#234;te de masse et le manche s&#8217;allonge jusqu&#8217;&#224; une longueur d&#233;termin&#233;e par le possesseur mais ne pouvant d&#233;passer 3,60 m&#232;tres. L&#8217;arme mesure alors entre 1,80 m&#232;tre et 4,50 m&#232;tres de long. En choisissant la longue maximale, on peut m&#234;me s&#8217;en servir comme d&#8217;une lance d&#8217;ar&#231;on.</li></ul>"
+            "infos": {
+                "data": [
+                    "Enchantement",
+                    "faible ;",
+                    "NLS",
+                    "5 ;",
+                    "Création de sceptres magiques",
+                    "charme-personne",
+                    "Prix",
+                    "12 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Sceptre de puissance fantastique",
+            "description": [
+                "Bien que les sceptres de puissance fantastique puissent varier en apparence, tous sont fait en fer noir. La majorité ressemble à une colonne vertébrale avec au bout une tête de créature sculptée, généralement un démon ou une fée, clairement trop petite par rapport à la colonne vertébrale.",
+                "Chaque sceptre de puissance fantastique renferme une invocation, soit une invocation façonnée, soit une invocation fantastique. Un sorcier peut appliquer à sa décharge fantastique l'invocation que contient le sceptre au prix d'une action immédiate. La décharge fantastique sort alors des yeux de la créature plutôt que de la main du sorcier.",
+                "Le pouvoir du sceptre de puissance fantastique est utilisable 5 fois par jour.",
+                "Le prix"
             ],
-            [
-                3.0,
-                "<ul><li>Perche/&#233;chelle. Quand on presse le bouton 4, une pointe capable de se planter dans le granit jaillit de la t&#234;te de masse, tandis que trois crochets pointus apparaissent en bas du manche. En 1 round, le manche s&#8217;allonge pour atteindre une longueur totale allant de 1,50 m&#232;tre &#224; 15 m&#232;tres (il s&#8217;arr&#234;te quand on appuie une seconde fois sur le bouton 4). Une fois le sceptre arrim&#233; par les crochets et la pointe, des barreaux d&#8217;&#233;chelle se d&#233;ploient sur toute sa longueur, &#224; 30 centim&#232;tres d&#8217;intervalle (un &#224; gauche, puis &#224; droite, etc.). Le sceptre peut soutenir un poids total de 2 tonnes. Il se r&#233;tracte automatiquement quand on appuie sur le bouton 5.</li><li>L&#8217;&#233;chelle peut &#233;galement &#234;tre d&#233;ploy&#233;e de mani&#232;re &#224; enfoncer les portes. Le personnage plante le sceptre dans le sol &#224; moins de 9 m&#232;tres de l&#8217;obstacle et l&#8217;incline dans la direction de ce dernier avant de presser le bouton 4. La force exerc&#233;e par le sceptre correspond &#224; modificateur de Force de +12.</li><li>Quand on appuie sur le bouton 6, le sceptre indique o&#249; se trouve le nord magn&#233;tique et r&#233;v&#232;le la profondeur ou l&#8217;altitude &#224; laquelle se trouve son possesseur (par rapport &#224; la surface, pas au niveau de la mer).</li></ul>"
-            ]
-        ],
-        "table": null
-    },
-    {
-        "title": "Sourcier",
-        "description": [
-            "Ce sceptre en bouleau blanc est toujours froid et humide au toucher. Il désigne la source d'eau potable la plus proche dans un rayon de 175 mètres."
-        ],
-        "infos": {
-            "data": [
-                "Divination",
-                "faible ;",
-                "NLS",
-                "3 ;",
-                "Création de sceptres magiques",
-                "localisation d’objet",
-                "Prix",
-                "12 000 po ;",
-                "Poids",
-                "700 g."
+            "infos": {
+                "data": [
+                    "Universel faible (inférieure), modérée (mineure ou majeure) ou puissante (suprême) ;",
+                    "NLS",
+                    "1 (mineure), 6 (mineure), 11 (majeure) ou 16 (suprême) ; Création de sceptres, le créateur doit connaître l’invocation en question ;",
+                    "Prix",
+                    "4 000 po (inférieure), 16 000 po (mineure), 36 000 po (majeure), 64 000 po (suprême) ;",
+                    "Poids",
+                    "1,5 kg."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Sourcier",
+            "description": [
+                "Ce sceptre en bouleau blanc est toujours froid et humide au toucher. Il désigne la source d'eau potable la plus proche dans un rayon de 175 mètres."
+            ],
+            "infos": {
+                "data": [
+                    "Divination",
+                    "faible ;",
+                    "NLS",
+                    "3 ;",
+                    "Création de sceptres magiques",
+                    "localisation d’objet",
+                    "Prix",
+                    "12 000 po ;",
+                    "Poids",
+                    "700 g."
+                ]
+            },
+            "ul": null,
+            "table": null
+        }
+    ],
+    "moderate": [
+        {
+            "title": "Aggravation des blessures",
+            "description": [
+                "Chaque centimètre de ce sceptre en ivoire est décoré de symbole abstrait, formant un ensemble complexe.",
+                "Au prix d'une action simple, le porteur de ce sceptre peut l'activer pour infliger 1d8 dégâts à toute créature adjacente ayant moins de points de vie que son maximum. Ce pouvoir peut être activé 5 fois par jour."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "8 ;",
+                    "Création de sceptres magiques",
+                    "blessure légère",
+                    "Prix",
+                    "2 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Anciens",
+            "description": [
+                "Ce sceptre est généralement taillé dans le bois afin de représenter un symbole de jeunesse et de virilité. Il est généralement utilisé comme symbole de puissance par des chefs tribaux.",
+                "Lorsque ce sceptre est tenu, il annule les malus (mais pas les bonus) aux caractéristiques dus à l'âge. Les malus reprennent dès que le sceptre n'est plus tenu."
+            ],
+            "infos": {
+                "data": [
+                    "Transmutation",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "endurance de l’ours",
+                    "force de taureau",
+                    "grâce féline",
+                    "Prix",
+                    "40 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Annulation",
+            "description": [
+                "Ce sceptre annule les pouvoirs magiques des autres objets. Son possesseur n’a qu’à le pointer vers l’objet de son choix pour qu’un rayon perlé jaillisse du sceptre d’annulation. Si l’objet pris pour cible est touché (ce qui nécessite une attaque de contact à distance), tous ses pouvoirs actifs sont immédiatement dissipés et le fonctionnement de tous ses autres sorts et pouvoirs magiques a 75% de chances d’être interrompu pendant 2d4 rounds, quelle que soit leur puissance. Pour pouvoir annuler un effet instantané, le possesseur du sceptre doit se tenir prêt à l’intercepter. L’objet visé n’a droit à aucun jet de sauvegarde, mais le sceptre d’annulation ne peut affecter les artefacts (pas même ceux qui sont “ seulement ” rares). Il fonctionne un maximum de 3 fois par jour."
+            ],
+            "infos": {
+                "data": [
+                    "École modérée ;",
+                    "NLS",
+                    "16 ;",
+                    "Création de sceptres magiques",
+                    "dissipation de la magie",
+                    ", souhait limité ou miracle ;",
+                    "Prix",
+                    "37 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Annulation de faerzress",
+            "description": [
+                "La faerzress pose des problèmes à de nombreux voyageurs de l'Outreterre. Ce sceptre constitue un moyen coûteux mais utile de contrer les effets de la faerzress. A volonté, le porteur peut annuler les effets de la faerzress dans un rayon de 3 mètres jusqu'à 1 heure pas jour (cette durée peut être 'décomposée en plusieurs fois). La faerzress reste annulée dans la zone jusqu'à ce que le porteur décide de mettre un terme à l'effet ou jusqu'à ce que la durée arrive à expiration."
+            ],
+            "infos": {
+                "data": [
+                    "Abjuration",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    ", zone» d’antimagie ;",
+                    "Prix",
+                    "70 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Canne de nuit",
+            "description": [
+                "Ce sceptre noir taillé dans un bois sombre est recouvert de symboles religieux de divers dieux. Son possesseur dispose de quatre tentatives de renvoi ou d’intimidation des morts-vivants quotidiennes supplémentaires (encore faut-il qu’il ait ce pouvoir)."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    ", Emprise sur les morts-vivants, aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
+                    "Prix",
+                    "7 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Cherche-portails",
+            "description": [
+                "Ce sceptre vibre dans la main de son porteur et désigne le portail le plus proche dans un rayon de 18 mètres. Le porteur connaît également la destination du portail et sait s'il est possible de l'activer."
+            ],
+            "infos": {
+                "data": [
+                    "Divination",
+                    "modérée ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "analyse de portail",
+                    "localisation d’objet",
+                    "Prix",
+                    "73 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Défi",
+            "description": [
+                "Ce sceptre blanc en forme de gourdin est utilisable comme une masse d’armes lourde +2. Tous les morts-vivants situés dans un rayon de 9 mètres du porteur du sceptre sont victimes d’un malus de -4 en résistance au renvoi des morts-vivants."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    ", aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
+                    "Prix",
+                    "13 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Détection de l’hostilité",
+            "description": [
+                "Ce sceptre vibre dans la main de son possesseur et indique dans quelle direction se trouvent les créatures hostiles au personnage (en commençant par les plus proches). Ces créatures sont détectées qu’elles soient visibles, déguisées, cachées, invisibles ou éthérées. Le sceptre a une portée de 18 mètres. Si le porteur du sceptre se concentre pendant un round entier, l’objet lui indique la position exacte de l’ennemi le plus proche et le nombre d’ennemis se trouvant à portée. Il peut être utilisé 3 fois par jour, chaque utilisation durant 10 minutes. Une action simple est nécessaire pour l’activer."
+            ],
+            "infos": {
+                "data": [
+                    "Divination",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "vision lucide",
+                    "Prix",
+                    "23 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Détection des métaux et des minéraux",
+            "description": [
+                "Ce sceptre vibre dans la main de son possesseur et lui indique la plus importante masse métallique comprise dans un rayon de 9 mètres. S’il le souhaite, le personnage peut se concentrer sur un métal ou un minéral spécifique (or, platine, quartz, béryl, diamant, corindon, etc.). Si le métal ou le minéral recherché est présent à moins de 9 mètres de distance, le sceptre révèle tous les endroits où il se trouve, en commençant par les plus importantes concentrations. À chaque fois, le personnage a conscience de la quantité de minerai contenue dans le gisement. Le sceptre a besoin d’une action complexe pour détecter chaque veine ; plusieurs rounds seront donc nécessaires s’il y a divers filons du métal ou du minéral recherché à portée."
+            ],
+            "infos": {
+                "data": [
+                    "Divination",
+                    "modérée ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "localisation d’objet",
+                    "Prix",
+                    "10 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Enfers",
+            "description": [
+                "La longueur de ce simple bâton d’acier est parcourue de glyphes offrant un certain pouvoir sur les morts-vivants. Quand il a recours à son pouvoir de renvoi ou d’intimidation des morts-vivants, le porteur bénéficie d’un bonus de +3 à son niveau de prêtre."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    ", aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
+                    "Prix",
+                    "9 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Éternelle vigilance",
+            "description": [
+                "Un sceptre d’éternelle vigilance ressemble à s’y méprendre à une masse d’armes légère +1 dotée de huit ailettes. Il transmet un bonus d’intuition de +1 sur les tests d’initiative de son porteur. Si le personnage le tient fermement, le sceptre lui confère les pouvoirs suivants : détection de l’invisibilité, détection de la Loi, détection de la magie, détection du Bien, détection du Chaos, détection du Mal, détection du mensonge et lumière. Chaque pouvoir peut être utilisé sur simple concentration, au prix d’une action simple.",
+                "Si la tête du sceptre est plantée dans le sol et si son possesseur lui demande de se mettre en mode de veille (ce qui nécessite une action simple), l’objet détecte aussitôt les intentions hostiles à 36 mètres de distance. Dans le même temps, le sceptre jette prière sur son propriétaire et tous ses alliés compris dans un rayon de 6 mètres, puis prévient par télépathie tout le monde si des créatures hostiles se trouvent à l’intérieur de la zone sondée. Cet effet dure 10 minutes. Le possesseur du sceptre peut y faire appel une fois par jour.",
+                "Enfin, le sceptre peut être utilisé pour lancer l’équivalent du sort animation d’objets sur un maximum de onze objets disposés en cercle, à 1,50 mètre autour de lui environ. Les objets restent animés pendant 11 rounds. Le sceptre doit être planté dans le sol pour exécuter cette fonction. Son possesseur peut y faire appel une fois par jour."
+            ],
+            "infos": {
+                "data": [
+                    "Multiples modérées ;",
+                    "NLS",
+                    "11 ;",
+                    "Création de sceptres magiques",
+                    "alarme",
+                    "animation d’objets",
+                    "détection de la magie",
+                    "détection de l’invisibilité",
+                    "détection de la Loi",
+                    "détection du Bien",
+                    "détection du Chaos",
+                    "détection du Mal",
+                    "détection du mensonge",
+                    "lumière",
+                    "prière",
+                    "Prix",
+                    "85 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Fléau du céleste",
+            "description": [
+                "Ce sceptre métallique, de couleur rouge sang profond et mesurant 60 centimètres de long, est surmonté d'une pointe courbée. Tous les célestes situés dans un rayon de 18 mètres du sceptre subissent un malus de malfaisance de -4 aux jets d'attaque, de dégâts, de sauvegarde et de compétence. Aucun jet de sauvegarde ou résistance à la magie n'est accordé pour passer outre ces effets."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "13 ;",
+                    "Création de sceptres magiques",
+                    "malédiction",
+                    "souhait limité",
+                    ", le créateur doit être un Extérieur d’alignement mauvais ;",
+                    "Prix",
+                    "56 000 po ;",
+                    "Poids",
+                    "1,5 kg."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Gel",
+            "description": [
+                "Ce sceptre en acier bleu de 60 centimètres de long est translucide, comme s'il était fait de glace.",
+                "Trois fois par jour, en prononçant le mot de commande (une action simple) son porteur peut créer une ligne de glace de 9 mètres à partir du sceptre. la ligne inflige 2d6 dégâts de froid aux créatures (Réflèxes, DD 14, demi). Les feux non-magiques dans la zones sont automatiquement éteints et l'eau libre est gelé jusqu'à une profondeur de 30 centimètres, assez pour permettre à une créature de taille G de passer sans la briser. L'eau fond normalement par la suite."
+            ],
+            "infos": {
+                "data": [
+                    "Évocation",
+                    "modérée ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "rayon de givre",
+                    "Prix",
+                    "1 400 po ;",
+                    "Poids",
+                    "500 g."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Grand fléau",
+            "description": [
+                "Sur ordre de son possesseur, ce sceptre d’apparence anodine se transforme en fléau double +3. Comme son nom l’indique, ce fléau est une arme double, ce qui signifie que, chaque round, ses deux têtes peuvent être utilisées au corps à corps. Le personnage gagne une attaque supplémentaire au cours du round (avec la seconde tête), à condition d’accepter un malus de –2 à toutes ses attaques (comme s’il possédait le don Combat à deux armes).",
+                "Une fois par jour, le possesseur du sceptre du grand fléau peut bénéficier d’un bonus de parade de +4 à la CA et d’un bonus de résistance (également de +4) à tous les jets de sauvegarde. Ce pouvoir dure 10 minutes, et le sceptre n’a pas besoin d’être transformé en arme pour le conférer. La transformation du sceptre en fléau double (et inversement) correspond à une action de mouvement."
+            ],
+            "infos": {
+                "data": [
+                    "Enchantement",
+                    "modéré ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "bénédiction",
+                    "Prix",
+                    "50 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Inamovible",
+            "description": [
+                "Un sceptre inamovible est une simple barre en fer plate dotée d’un petit bouton à l’une de ses extrémités. Il suffit d’appuyer sur ce bouton pour que le sceptre reste totalement immobile, même si la position qu’il occupe défie les lois de la pesanteur. On peut donc le “ fixer ” n’importe où, même dans le vide. Il s’avère extrêmement utile pour attacher une corde, barrer une porte, etc. Nombre d’aventuriers aiment avoir plusieurs sceptres inamovibles, pour s’en servir par exemple d’échelle (il suffit d’en posséder deux pour les utiliser de la sorte, en les immobilisant puis en les libérant l’un après l’autre). Un sceptre inamovible peut supporter un total de 4 tonnes avant de tomber au sol. Si une créature tente de le pousser après qu’il a été arrimé, elle doit réussir un test de Force (DD 30) pour le déplacer de 3 mètres (ce qui lui prend 1 round)."
+            ],
+            "infos": {
+                "data": [
+                    "Transmutation",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "lévitation",
+                    "Prix",
+                    "7 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Liberté",
+            "description": [
+                "Arme des plus puissantes contre les monstres qui charment ou asservissent d'autres créatures, le sceptre de liberté équivaut à une masse d'armes lourde en argent +3. Il a en outre trois pouvoirs spéciaux.",
+                "Premièrement, son utilisateur peut choisir d'infliger des dégâts non-létaux sans malus aux jets d'attaque (mais il doit toutefois prendre sa décision avant d'effectuer son jet).Deuxièmement, chaque fois qu'il utilise le sceptre pour frapper une créature affectée par un charme ou une coercition, il effectue un test de niveau de lanceur de sorts spécial (ld20+9) pour dissiper l'effet (DD 11 + niveau de lanceur de sorts de l'effet).",
+                "Enfin, tant qu'il a le sceptre de liberté en main, l'utilisateur bénéficie d'un bonus de moral de +4 aux jets de sauvegarde contre les charmes et la coercition."
+            ],
+            "infos": {
+                "data": [
+                    "Évocation",
+                    "modérée ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "annulation d’enchantement",
+                    "Prix",
+                    "53 000 po ;",
+                    "Poids",
+                    "3 kilos."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Maîtrise des morts-vivants",
+            "description": [
+                "Ce sceptre en métal est ciselé de manière à ressembler à une pile de petits crânes. Son porteur peut contrôler deux fois plus de morts-vivants que la normale. Par exemple, un personnage ne peut habituellement pas contrôler plus de quatre fois son niveau de lanceur de sorts en dés de vie de morts-vivants. Quand il porte le sceptre, il peut repousser cette limite à huit fois son niveau de lanceur de sorts."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "profanation",
+                    "Prix",
+                    "10 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Merveilleux",
+            "description": [
+                "Le sceptre merveilleux est un objet aussi étrange qu’imprévisible, dont l’effet est déterminé aléatoirement à chaque utilisation. Il faut une action simple pour l’activer. Les effets les plus courants sont regroupés sur la table suivante, mais vous pouvez les modifier à l’envi en fonction de votre campagne."
+            ],
+            "infos": {
+                "data": [
+                    "Enchantement",
+                    "modéré ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "confusion",
+                    ", alignement chaotique ;",
+                    "Prix",
+                    "12 000 po."
+                ]
+            },
+            "ul": null,
+            "table": [
+                {
+                    "position": 1.0,
+                    "title": [
+                        [
+                            "1d100",
+                            "Effet produit par le sceptre"
+                        ]
+                    ],
+                    "tr": [
+                        [],
+                        [
+                            "01–05",
+                            "Lenteur sur la créature désignée pendant 10 rounds (jet de Volonté DD 15 pour annuler)."
+                        ],
+                        [
+                            "06–10",
+                            "Lueur féerique autour de la cible."
+                        ],
+                        [
+                            "11–15",
+                            "Le porteur croit pendant 1 round que le sceptre produit un effet déterminé par un second jet de dé (pas de jet de sauvegarde)."
+                        ],
+                        [
+                            "16–20",
+                            "Bourrasque, mais avec la violence correspondant à une tempête (jet de Vigueur DD 14 pour annuler)."
+                        ],
+                        [
+                            "21–25",
+                            "Le porteur connaît les pensées superficielles de la cible (comme à l’aide de détection de pensées) pendant 1d4 rounds (pas de jet de sauvegarde)."
+                        ],
+                        [
+                            "26–30",
+                            "Nuage nauséabond à 9 mètres de distance (jet de Vigueur DD 15 pour annuler)."
+                        ],
+                        [
+                            "31–33",
+                            "Une forte pluie s’abat pendant 1 round dans un rayon de 18 mètres autour du porteur."
+                        ],
+                        [
+                            "34–36",
+                            "Convocation d’un animal, soit un rhinocéros (01–25 sur 1d100), soit un éléphant (26–50) soit une souris (51–100)."
+                        ],
+                        [
+                            "37–46",
+                            "Éclair (21 mètres de long, 1,50 mètre de large), 6d6 points de dégâts (jet de Réflexes DD 14 pour annuler)."
+                        ],
+                        [
+                            "47–49",
+                            "600 gros papillons jaillissent du sceptre et volettent alentour pendant 2 rounds avant de disparaître. Leur présence aveugle toutes les créatures comprises dans un rayon de 7,50 mètres, y compris le porteur (jet de Réflexes DD 14 pour annuler)."
+                        ],
+                        [
+                            "50–53",
+                            "Agrandissement sur la cible (18 mètres de portée, accroissement de taille de 50%, jet de Vigueur DD 11 pour annuler)."
+                        ],
+                        [
+                            "54–58",
+                            "Ténèbres, hémisphère de 4,50 mètres de rayon, centré à 9 mètres du sceptre."
+                        ],
+                        [
+                            "59–62",
+                            "L’herbe se met à pousser sur 15 m2 devant le sceptre. S’il y en avait déjà à cet endroit, elle atteint dix fois sa hauteur normale."
+                        ],
+                        [
+                            "63–65",
+                            "Un objet non vivant ne faisant pas plus de 1 m3 pour 500 kg devient éthéré."
+                        ],
+                        [
+                            "66–69",
+                            "Le porteur est réduit à 1/12e de sa taille habituelle (pas de jet de sauvegarde)."
+                        ],
+                        [
+                            "70–79",
+                            "Boule de feu sur la cible ou droit devant, jusqu’à une portée de 30 mètres, 6d6 points de dégâts (jet de Réflexes DD 15 pour demi-dégâts)."
+                        ],
+                        [
+                            "80–84",
+                            "Invisibilité sur le personnage."
+                        ],
+                        [
+                            "85–87",
+                            "Des feuilles poussent sur la cible si celle-ci se trouve à 18 mètres ou moins du sceptre. Elles tombent au bout de 24 heures."
+                        ],
+                        [
+                            "88–90",
+                            "10–40 éclats de pierres fines, d’une valeur unitaire de 1 po, jaillissent du sceptre et atteignent une portée de 9 mètres. Chaque éclat inflige 1 point de dégâts s’il touche quelqu’un. Jetez 5d4 pour déterminer le nombre d’impacts et répartissez équitablement le total entre les cibles potentielles."
+                        ],
+                        [
+                            "91–95",
+                            "Des lueurs dansantes apparaissent dans un rectangle de 12,50 mètres x 9 mètres devant le sceptre. Toutes les créatures prises dans cette zone sont aveuglées pendant 1d6 rounds (jet de Vigueur DD 15 pour annuler)."
+                        ],
+                        [
+                            "96–97",
+                            "L’épiderme du porteur ou de la cible (une chance sur deux) devient bleu, vert ou violet, et ce de façon permanente (pas de jet de sauvegarde)."
+                        ],
+                        [
+                            "98–100",
+                            "Pétrification sur la cible (ou transmutation de la pierre en chair si la cible est déjà en pierre) si elle se trouve à 18 mètres ou moins du sceptre (jet de Vigueur DD 19 pour annuler)."
+                        ]
+                    ]
+                }
             ]
         },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Sphères",
-        "description": [
-            "Elminster aurait conçu le premier de ces rares et étranges sceptres, mais des magiciens de tout Toril en ont depuis créé de nouveaux exemplaires. L'unique fonction du sceptre des sphères est de créer de grosses bulles transparentes de 90 centimètres de diamètre dégageant autant de lumière qu'une bougie. Les bulles flottent dans les airs à la vitesse de 6 mètres par round dans la direction choisie par le porteur. Chacune peut renfermer jusqu'à 70 kilos de créatures ou d'objets. Tout objet situé dans une telle sphère est protégé des éléments (pluie, vent, neige, etc., mais pas de bonus ou de résistance contre les attaques d'énergie destructive) et jouit d'un effet as feuille morte si elle tombe de plus de 3 mètres. Les bulles ont une durée de vie de 8 heures (sauf si on les brise avant).",
-            "Une bulle n'est pas une prison. Tout être intelligent peut en sortir facilement en la brisant. Le sceptre des sphères a 50 charges au moment de sa création et la formation de chaque bulle coûte 1 charge."
-        ],
-        "infos": {
-            "data": [
-                "Évocation",
-                "[force] modérée ;",
-                "NLS",
-                "9 ;",
-                "Création de sceptres magiques",
-                "disque flottant de Tenser",
-                "feuille morte",
-                "Prix",
-                "25 000 po."
-            ]
+        {
+            "title": "Morts",
+            "description": [
+                "Le fait de toucher un cadavre avec le sceptre des morts anime celui-ci, comme si on venait de lui jeter un sort Animation des morts. De plus, le sceptre permet à son possesseur d'intimider ou de contrôler les morts-vivants comme s'il avait quatre niveaux de plus, du moins s'il est déjà capable d'exercer ce pouvoir contre ce type de créatures. Le sceptre peut animer jusqu'à 20 DV de morts-vivants par jour."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "animation des morts",
+                    ", le créateur doit être un prêtre ;",
+                    "Prix",
+                    "75 000 po,."
+                ]
+            },
+            "ul": null,
+            "table": null
         },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Suzeraineté",
-        "description": [
-            "Cet objet a l’air d’un sceptre royal d’une valeur apparente de 5 000 po minimum. Son possesseur peut gagner l’obéissance et la loyauté de toutes les créatures distantes de moins de 36 mètres dès qu’il l’active (ce qui nécessite une action simple). Un total de 300 DV de créatures peut être dirigé, mais celles qui ont 12 ou plus en Intelligence ont droit à un jet de Volonté (DD 16) pour conserver leur libre arbitre. Les créatures affectées obéissent au personnage comme si ce dernier était leur roi de droit divin. L’enchantement cesse toutefois de faire effet si le possesseur du sceptre donne un ordre contraire à la nature des créatures soumises. Le sceptre de suzeraineté peut être utilisé pendant un total de 500 minutes avant de tomber en poussière. Cette durée n’a pas besoin d’être continue."
-        ],
-        "infos": {
-            "data": [
-                "Enchantement",
-                "puissant ;",
-                "NLS",
-                "20 ;",
-                "Création de sceptres magiques",
-                "charme-monstre de groupe",
-                "Prix",
-                "60 000 po ;",
-                "Coût",
-                "27 500 po + 2 200 PX."
-            ]
+        {
+            "title": "Orage",
+            "description": [
+                "Ce sceptre de fer orné de rivets en argent se comporte en tout point comme une masse d’armes légère +2. Il possède également les pouvoirs suivants :"
+            ],
+            "infos": {
+                "data": [
+                    "Évocation",
+                    "modérée ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "éclair",
+                    "cri",
+                    "Prix",
+                    "33 000 po."
+                ]
+            },
+            "ul": [
+                {
+                    "position": 1.0,
+                    "ul": [
+                        "Tonnerre. Une fois par jour, le sceptre peut frapper comme une masse d’armes légère +3. En cas de coup au but, la cible est étourdie par la déflagration qui se produit au moment de l’impact (jet de Vigueur DD 13 pour annuler). L’activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, lequel doit être touché au cours du round.",
+                        "Électricité statique. Une fois par jour, une violente étincelle jaillit du sceptre pour frapper la créature touchée lors d’une attaque de corps à corps. La cible subit alors les dégâts normaux pour une masse d’armes légère +2 (1d6+2 points), auxquels viennent s’ajouter les dégâts dus à la décharge électrique (+2d6 points d’électricité). Même si l’attaque ne suffit pas pour toucher, la cible encaisse la décharge électrique (2d6) si le résultat obtenu est suffisant pour valider une attaque de contact au corps à corps. L’activation de ce pouvoir prend une action libre. Il ne fonctionne que contre un seul adversaire, qui doit être touché au cours du round.",
+                        "Coup de tonnerre. Une fois par jour, au prix d’une action simple, le sceptre peut produire un bruit assourdissant dont les effets sont identiques à ceux du sort cri (jet de Vigueur DD 16 pour effet partiel, attaque sonique infligeant 2d6 points de dégâts, cible assourdie pendant 2d6 rounds).",
+                        "Foudre. Une fois par jour, au prix d’une action simple, le porteur peut invoquer un éclair de 1,50 mètre de large (jet de Réflexes DD 16 pour demi-dégâts, 9d6 points de dégâts d’électricité) jaillissant de l’extrémité du sceptre (portée 60 mètres).",
+                        "Fureur de l’orage. Une fois par semaine, au prix d’une action simple, le sceptre a la possibilité de combiner les deux pouvoirs précédents (coup de tonnerre et foudre). Le coup de tonnerre affecte toutes les créatures se trouvant à moins de 3 mètres de la trajectoire de l’éclair, tandis que la puissance de ce dernier est augmentée (il inflige toujours 9d6 points de dégâts, mais tous les 1 et les 2 sont considérés comme des 3, pour un total de dégâts compris entre 27 et 54 points, plus 2d6 dus au coup de tonnerre). Les cibles ont droit à un jet de Réflexes unique (DD 16) pour se prémunir contre les deux effets. En cas de succès, elles ne sont pas assourdies et les dégâts sont réduits de moitié."
+                    ]
+                }
+            ],
+            "table": null
         },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Tissage",
-        "description": [
-            "Ce bâton est orné de motifs d'araignées et de toiles. Le porteur est continuellement protégé par un effet de peau d'araignée qui lui confère un bonus d'altération de +2 au- bonus d'armure naturelle, un bonus racial de +2 aux sauvegardes contre le poison et un bonus racial de +2 aux tests de Discrétion. De plus, le porteur peut prononcer un mot de commande pour activer un sort de toile d'araignée, 3 fois par jour. Enfin, il peut se déplacer et attaquer au sein de toiles naturelles et magiques comme s'il jouissait d'un effet de liberté de mouvement (si ce n'est qu'il ne s'applique qu'aux toiles)."
-        ],
-        "infos": {
-            "data": [
-                "Abjuration",
-                "Transmutation",
-                "modérées ;",
-                "NLS",
-                "7 ;",
-                "Création de sceptres magiques",
-                "liberté de mouvement",
-                "peau d’araignée",
-                "toile d’araignée",
-                "Prix",
-                "90 000 po."
-            ]
+        {
+            "title": "Python",
+            "description": [
+                "Ce sceptre est plus long que la moyenne, puisqu’il fait environ 1,20 mètre, pour un poids de 5 kg. On peut l’utiliser au corps à corps comme un bâton +1/+1. Si son possesseur le jette par terre (ce qui demande une action simple), le sceptre enfle démesurément pour devenir, au terme du round, un serpent constricteur géant. Le python ainsi créé obéit fidèlement aux ordres du possesseur du sceptre (sous forme animale, il bénéficie toujours du bonus d’altération de +1 à l’attaque et aux dégâts). Le serpent se retransforme en sceptre (ce qui prend une action complexe) quand le personnage le souhaite, ou dès que 30 mètres le séparent de ce dernier. Si le python est tué, il redevient un sceptre, et il est alors impossible de le rappeler pendant 3 jours. Cet objet ne fonctionne qu’entre les mains d’un personnage d’alignement bon."
+            ],
+            "infos": {
+                "data": [
+                    "Transmutation",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "métamorphose funeste",
+                    ", alignement bon ;",
+                    "Prix",
+                    "13 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
         },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Tueur de dragons",
-        "description": [
-            "Fait d'adamantium et décoré de pierre précieuse, ce sceptre permet à son porteur de pénétrer les défenses magiques des dragons. Il confère un bonus de +4 aux tests de niveau de lanceur de sort pour pénétrer la résistance à la magie des dragons."
-        ],
-        "infos": {
-            "data": [
-                "Universelle modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                ", Efficacité des sorts supérieure ;",
-                "Prix",
-                "5 500 po."
-            ]
+        {
+            "title": "Sphères",
+            "description": [
+                "Elminster aurait conçu le premier de ces rares et étranges sceptres, mais des magiciens de tout Toril en ont depuis créé de nouveaux exemplaires. L'unique fonction du sceptre des sphères est de créer de grosses bulles transparentes de 90 centimètres de diamètre dégageant autant de lumière qu'une bougie. Les bulles flottent dans les airs à la vitesse de 6 mètres par round dans la direction choisie par le porteur. Chacune peut renfermer jusqu'à 70 kilos de créatures ou d'objets. Tout objet situé dans une telle sphère est protégé des éléments (pluie, vent, neige, etc., mais pas de bonus ou de résistance contre les attaques d'énergie destructive) et jouit d'un effet as feuille morte si elle tombe de plus de 3 mètres. Les bulles ont une durée de vie de 8 heures (sauf si on les brise avant).",
+                "Une bulle n'est pas une prison. Tout être intelligent peut en sortir facilement en la brisant. Le sceptre des sphères a 50 charges au moment de sa création et la formation de chaque bulle coûte 1 charge."
+            ],
+            "infos": {
+                "data": [
+                    "Évocation",
+                    "[force] modérée ;",
+                    "NLS",
+                    "9 ;",
+                    "Création de sceptres magiques",
+                    "disque flottant de Tenser",
+                    "feuille morte",
+                    "Prix",
+                    "25 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
         },
-        "ul": null,
-        "table": null
-    },
-    {
-        "title": "Vipère",
-        "description": [
-            "Au corps à corps, ce sceptre se comporte comme une masse d’armes lourde +2. Une fois par jour, sur ordre de son possesseur (ce qui ne demande qu’une action libre), la tête de l’arme se transforme en tête de serpent vivant pendant 10 minutes. Durant ce temps, tout coup porté à l’aide du sceptre inflige les dégâts normaux et empoisonne la créature touchée. Le venin provoque immédiatement un affaiblissement temporaire de 1d10 points de Constitution (jet de Vigueur DD 14 pour annuler), auxquels il faut ajouter 1d10 nouveaux points d’affaiblissement temporaire de Constitution, une minute plus tard (jet de Vigueur DD 14 pour annuler). Le sceptre de la vipère ne fonctionne qu’entre les mains d’un individu maléfique."
-        ],
-        "infos": {
-            "data": [
-                "Nécromancie",
-                "modérée ;",
-                "NLS",
-                "10 ;",
-                "Création de sceptres magiques",
-                "Création d’armes et armures magiques",
-                "empoisonnement",
-                ", alignement mauvais ;",
-                "Prix",
-                "19 000 po."
-            ]
+        {
+            "title": "Tissage",
+            "description": [
+                "Ce bâton est orné de motifs d'araignées et de toiles. Le porteur est continuellement protégé par un effet de peau d'araignée qui lui confère un bonus d'altération de +2 au- bonus d'armure naturelle, un bonus racial de +2 aux sauvegardes contre le poison et un bonus racial de +2 aux tests de Discrétion. De plus, le porteur peut prononcer un mot de commande pour activer un sort de toile d'araignée, 3 fois par jour. Enfin, il peut se déplacer et attaquer au sein de toiles naturelles et magiques comme s'il jouissait d'un effet de liberté de mouvement (si ce n'est qu'il ne s'applique qu'aux toiles)."
+            ],
+            "infos": {
+                "data": [
+                    "Abjuration",
+                    "Transmutation",
+                    "modérées ;",
+                    "NLS",
+                    "7 ;",
+                    "Création de sceptres magiques",
+                    "liberté de mouvement",
+                    "peau d’araignée",
+                    "toile d’araignée",
+                    "Prix",
+                    "90 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
         },
-        "ul": null,
-        "table": null
-    }
-]
+        {
+            "title": "Tueur de dragons",
+            "description": [
+                "Fait d'adamantium et décoré de pierre précieuse, ce sceptre permet à son porteur de pénétrer les défenses magiques des dragons. Il confère un bonus de +4 aux tests de niveau de lanceur de sort pour pénétrer la résistance à la magie des dragons."
+            ],
+            "infos": {
+                "data": [
+                    "Universelle modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    ", Efficacité des sorts supérieure ;",
+                    "Prix",
+                    "5 500 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Vipère",
+            "description": [
+                "Au corps à corps, ce sceptre se comporte comme une masse d’armes lourde +2. Une fois par jour, sur ordre de son possesseur (ce qui ne demande qu’une action libre), la tête de l’arme se transforme en tête de serpent vivant pendant 10 minutes. Durant ce temps, tout coup porté à l’aide du sceptre inflige les dégâts normaux et empoisonne la créature touchée. Le venin provoque immédiatement un affaiblissement temporaire de 1d10 points de Constitution (jet de Vigueur DD 14 pour annuler), auxquels il faut ajouter 1d10 nouveaux points d’affaiblissement temporaire de Constitution, une minute plus tard (jet de Vigueur DD 14 pour annuler). Le sceptre de la vipère ne fonctionne qu’entre les mains d’un individu maléfique."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "modérée ;",
+                    "NLS",
+                    "10 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "empoisonnement",
+                    ", alignement mauvais ;",
+                    "Prix",
+                    "19 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        }
+    ],
+    "strongAnfPowerful": [
+        {
+            "title": "Absorption",
+            "description": [
+                "Le sceptre d’absorption agit comme un aimant, si ce n’est que ce sont les sorts et les pouvoirs magiques qu’il attire à lui. L’effet absorbé doit être un effet à cible unique ou un rayon prenant pour cible le possesseur du sceptre ou son équipement. Dans ce cas, le sceptre annule l’attaque et stocke son potentiel magique, jusqu’à ce que le personnage décide de la libérer sous la forme de sorts qu’il est capable de lancer. L’absorption ne nécessite aucune action pour peu que l’aventurier ait le sceptre en main. Ce dernier indique instantanément à son possesseur le niveau des sorts qu’il absorbe.",
+                "Il est souhaitable de comptabiliser les niveaux de sort absorbés et dépensés. Le personnage peut se servir de l’énergie absorbée pour jeter les sorts qu’il a préparés, sans que ceux-ci disparaissent de sa mémoire (il pourra donc les lancer normalement par la suite). Les seules restrictions à cette règle sont que les sorts jetés de la sorte ne doivent pas dépasser la quantité d’énergie contenue dans le sceptre, que l’aventurier doit tenir le sceptre en main au moment de l’incantation et qu’il doit posséder les composantes matérielles exigées par le sort. Dans le cas d’un barde ou d’un ensorceleur, qui n’a pas besoin de préparer ses sorts à l’avance, le personnage peut se servir du sceptre pour lancer n’importe quel sort qu’il connaît.",
+                "Le sceptre d’absorption ne peut absorber qu’un maximum de 50 niveaux de sort, et c’est l’énergie accumulée de la sorte qui détermine les sorts qu’il permet de libérer (cette limite est donc la même que la précédente, à savoir 50 niveaux de sort). Il ne peut pas être rechargé. Le personnage sait à tout moment combien le sceptre peut absorber de niveaux de sort et quelle énergie magique il a emmagasiné.",
+                "Pour déterminer la puissance d’un sceptre découvert au hasard d’une aventure, jetez 1d100 et divisez le résultat par deux, en arrondissant à l’entier inférieur, afin d’obtenir le nombre de niveaux de sort qu’il peut encore absorber. Cela fait, jouez de nouveau 1d100. Sur un résultat de 71–100, la moitié des niveaux de sort absorbés sont encore présents à l’intérieur du sceptre ; sinon, ils ont été utilisés par un propriétaire précédent. Par exemple, si le premier jet de dé indique que le sceptre peut encore absorber 34 niveaux de sort, cela signifie qu’il en a déjà absorbé 16. Il y a donc 30% de chances pour que 8 niveaux de sort soient toujours utilisables. Sur un résultat de 01–30, toute l’énergie stockée a été dépensée."
+            ],
+            "infos": {
+                "data": [
+                    "Abjuration",
+                    "puissante ;",
+                    "NLS",
+                    "15 ;",
+                    "Création de sceptres magiques",
+                    "renvoi des sorts",
+                    "Prix",
+                    "50 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Divergence",
+            "description": [
+                "Chacun de ces sceptres est ciselé de runes protectrices et surmonté d'une gemme. Le type de cette gemme dépend de la forme d'énergie destructive contre laquelle le sceptre a été conçu (une émeraude pour l'acide, une topaze pour l'électricité, un rubis pour le feu, un saphir pour le froid et un diamant pour le son). Quand un effet relevant du type d'énergie adéquat vise le porteur du tout point situé dans un rayon de 3 mètres de celui-ci, il a le droit de sacrifier 3 charges pour rediriger l'attaque en un point de son choix situé dans un rayon de 18 mètres (action libre). Un sort de zone doit être centré dans un rayon de 3 mètres du porteur pour que celui-ci puisse le rediriger. (En d'autres termes, une boule de feu jetée à 4,50 mètres ne saurait être redirigée, même si une partie de l'effet entre bel et bien dans un périmètre de 3 mètres du porteur.) De plus, le sceptre de divergence peut reproduire les effets d'un sort de lueur féerique. Ce pouvoir ne coûte aucune charge. Le sceptre de divergence a 50 charges au moment de sa création."
+            ],
+            "infos": {
+                "data": [
+                    "Abjuration",
+                    "puissante ;",
+                    "NLS",
+                    "13 ;",
+                    "Création de sceptres magiques",
+                    "lueur féerique",
+                    "renvoi des sorts",
+                    "Prix",
+                    "117 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Extinction des feux",
+            "description": [
+                "D’un seul contact (une action simple), ce sceptre éteint les feux non magiques de taille M ou moins. Pour que le sceptre d’extinction des feux fonctionne face à des feux plus importants ou magiques, il faut dépenser une ou plusieurs charges.",
+                "Il faut dépenser 1 charge pour éteindre un brasier de taille G ou plus, ou un feu magique de taille M ou moins (tel que celui créé par une arme de feu ou le sort mains brûlantes). Les flammes, brûlant en permanence comme celles qui entourent une arme de feu ou un élémentaire de cet élément, sont réprimées pendant 6 rounds avant de se rallumer. Pour pouvoir éteindre un sort instantané, le sceptre doit se trouver à l’intérieur de la zone d’effet et son possesseur doit se tenir prêt (comme s’il cherchait à lancer un contresort). Si le feu magique est de taille G ou plus (boule de feu, colonne de feu, mur de feu, etc.), il faut dépenser 2 charges pour l’éteindre.",
+                "Si le sceptre est utilisé contre une créature constituée de feu (en réussissant une attaque de contact au corps à corps), chaque attaque inflige 6d6 points de dégâts à cette dernière, mais le sceptre perd 3 charges à chaque fois.",
+                "Un sceptre nouvellement créé possède un total de 10 charges. Ces charges se renouvellent tous les jours, ce qui permet au porteur de dépenser jusqu’à 10 charges chaque jour."
+            ],
+            "infos": {
+                "data": [
+                    "Transmutation",
+                    "puissante ;",
+                    "NLS",
+                    "12 ;",
+                    "Création de sceptres magiques",
+                    "pyrotechnie",
+                    "Prix",
+                    "15 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Flétrissement",
+            "description": [
+                "Le sceptre de flétrissement s’utilise au combat comme une masse d’armes légère +1, si ce n’est qu’il n’inflige pas le moindre point de dégât. Au lieu de cela, toute créature touchée (par une attaque de contact au corps à corps) subit un affaiblissement temporaire de 1d4 points de Force et 1d4 points de Constitution. En cas de coup critique, l’effet est le même, si ce n’est que l’affaiblissement temporaire devient une diminution permanente. Dans les deux cas, la victime a droit à un jet de Vigueur (DD 17). Si elle le réussit, l’attaque est sans effet."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "puissante ;",
+                    "NLS",
+                    "13 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "contagion",
+                    "Prix",
+                    "25 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Frappe débilitante",
+            "description": [
+                "Sculpté dans du bois exposé à un marasme (une zone mineure où l'énergie négative est minoritaire) du plan de l'énergie négative lui-même, un sceptre de frappe débilitante fonctionne comme une masse d'armes lourde +1. De plus, toute créature qu'il frappe au corps à corps est victime d'un sort de blessure légère. Si le sceptre obtient un coup critique, la créature subit un sort de blessure grave à la place. Quand on l'utilise dans un plan où l'énergie négative est minoritaire, les effets magiques du sceptre sont étendus (comme par le don Extension d'effet). Quand on l'utilise dans un plan où l'énergie négative est dominante, ces effets sont soumis à la quintessence (comme le don Quintessence des sorts)."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "puissante ;",
+                    "NLS",
+                    "15 ;",
+                    "Création de sceptres magiques",
+                    "blessure grave",
+                    "Prix",
+                    "47 312 po ;",
+                    "Coût",
+                    "23 812 po + 1 880 PX."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Fureur",
+            "description": [
+                "Un tel sceptre est généralement terminé en forme de tête de divinité courroucée. En plus de conférer un bonus de parade à la CA de son porteur (+1 à +5 selon le type), le sceptre de fureur permet au lanceur de sorts d’augmenter l’efficacité de l’un de ses sorts de 6e niveau ou moins, 1 fois par jour, comme s’il jouissait du don Extension d’effet. On active ce pouvoir au prix d’une action libre. Le niveau réel du sort et le temps d’incantation de celui-ci ne sont pas affectés (même pour les ensorceleurs et autres lanceurs de sorts spontanés)."
+            ],
+            "infos": {
+                "data": [
+                    "Abjuration",
+                    "puissante ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", École renforcée, Extension d’effet, protection contre le Bien/le Chaos/la Loi/le Mal, le niveau de lanceur de sorts du créateur doit être supérieur ou égal à trois fois le bonus placé dans le sceptre ;",
+                    "Prix",
+                    "26 800 po (+1), 38 800 po (+2), 58 800 po (+3), 77 600 po (+4), 95 600 po (+5)."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Métamagie",
+            "description": [
+                "Les sceptres de métamagie contiennent l’essence d’un don de métamagie qu’ils peuvent appliquer à un sort sans en modifier le niveau de l’emplacement de sort nécessaire. Tous les sceptres de ce type sont des objets à usage (mais lancer un sort dans une zone de contrôle provoque tout de même une attaque d’opportunité). Un personnage ne peut utiliser qu’un sceptre de métamagie sur un sort donné, mais il est possible de combiner l’utilisation de l’un d’entre eux avec les dons de métamagie effectivement possédés par le personnage. Dans ce cas, seuls ces derniers modifient le niveau de l’emplacement de sort nécessaire.",
+                "Un personnage possédant un sceptre de métamagie n’est pas considéré comme ayant le don en question (par exemple, pour remplir des pré requis pour un autre don ou une classe de prestige). Il ne peut utiliser le sceptre qu’un certain nombre de fois par jour pour modifier un sort. Un ensorceleur ou un barde utilisant un sceptre de métamagie doit passer plus de temps à l’incantation, de la même façon que s’il utilisait un don qu’il possédait.",
+                "Les sceptres de métamagie mineure ne peuvent être utilisés que sur des sorts du 3e niveau ou moins. Les sceptres de métamagie modérée ne peuvent être utilisés que sur des sorts du 6e niveau ou moins. Enfin, les sceptres de métamagie majeure peuvent être utilisés sur tous les sorts jusqu’au 9e niveau.",
+                "<strong><a name=\"1447\"></a>Extension de durée</strong>. Trois fois par jour, le porteur de ce sceptre peut lancer un sort à durée étendue comme s’il utilisait le don Extension de durée.",
+                "<strong><a name=\"1448\"></a>Extension de portée</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à portée étendue comme s’il utilisait le don Extension de portée.",
+                "<strong><a name=\"1446\"></a>Extension d’effet</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à effet étendu comme s’il utilisait le don Extension d’effet.",
+                "<strong><a name=\"1449\"></a>Incantation rapide</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à incantation rapide comme s’il utilisait le don Incantation rapide.",
+                "<strong><a name=\"1450\"></a>Incantation silencieuse</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à incantation silencieuse comme s’il utilisait le don Incantation silencieuse.",
+                "<strong><a name=\"1451\"></a>Quintessence</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer la quintessence d’un sort comme s’il utilisait le don Quintessence de sort.",
+                "<strong><a name=\"1452\"></a>Substitution non-létale</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à durée étendue comme s’il utilisait le don Substitution non-létale."
+            ],
+            "infos": {
+                "data": [
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Extension de durée ;",
+                    "Prix",
+                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Extension de portée ;",
+                    "Prix",
+                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Extension d’effet ;",
+                    "Prix",
+                    "9 000 po (mineur), 32 500 po (modérée), 73 000 po (majeure).",
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Incantation rapide ;",
+                    "Prix",
+                    "35 000 po (mineur), 75 500 po (modérée), 170 000 po (majeure).",
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Incantation silencieuse ;",
+                    "Prix",
+                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Quintessence de sort ;",
+                    "Prix",
+                    "14 000 po (mineur), 54 000 po (modérée), 121 500 po (majeure).",
+                    "Aura puissante (pas d’école) ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", Substitution non-létale ;",
+                    "Prix",
+                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure)."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Oblitération",
+            "description": [
+                "Ce sceptre redouté par la plupart des aventuriers est le pire ennemi des objets magiques, qu’il peut vider de toute énergie. L’objet touché a droit à un jet de Volonté de DD 23 pour résister aux effets. Si quelqu’un le tient en main ou le porte au moment de l’attaque, l’objet peut utiliser le bonus de base de son possesseur aux jets de Volonté à la place du sien propre (c’est le bonus le plus avantageux qui est systématiquement pris en compte). Le personnage peut toucher l’objet qu’il vise à l’aide du sceptre en réussissant une attaque de contact au corps à corps. Si l’objet rate son jet de sauvegarde, il perd toute magie, tandis que le sceptre devient cassant et ne peut plus être réutilisé. Un objet vidé de son énergie magique par un sceptre d’oblitération ne peut retrouver ses propriétés que grâce à un souhait ou un miracle. Si un sceptre d’oblitération et une sphère d’annihilation s’entre-détruisent, rien ne permet de les récupérer, ni l’un, ni l’autre."
+            ],
+            "infos": {
+                "data": [
+                    "Abjuration",
+                    "puissante ;",
+                    "NLS",
+                    "17 ;",
+                    "Création de sceptres magiques",
+                    ", disjonction ;",
+                    "Prix",
+                    "11 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Prestance",
+            "description": [
+                "Le possesseur de ce sceptre jouit d’un bonus d’altération de +4 à sa valeur de Charisme tant qu’il le tient ou le porte sur lui. Une fois par jour, le sceptre peut également le vêtir des plus belles soieries et le parer de fourrures et de bijoux.",
+                "Les vêtements créés par le sceptre ont une durée d’existence de 12 heures, sauf si le personnage cherche à les vendre, à les donner ou à les utiliser comme composantes matérielles pour sort (auquel cas ils disparaissent immédiatement). Cela s’applique également si les habits sont arrachés de force au personnage.",
+                "La valeur totale de ces atours varie entre 7 000 et 10 000 po (1d4+6 x 1 000) : 1 000 po de soieries, 5 000 po de fourrures, le reste étant constitué de pierres fines (20 au maximum, d’une valeur unitaire de 200 po).",
+                "Le sceptre possède un second pouvoir, utilisable une fois par semaine. Sur ordre de son possesseur, il peut créer une tente gigantesque, un pavillon de soie de forme carrée et de près de 18 mètres de côté. Les meubles (chaises, grande table, etc.) et la nourriture apparaissant avec sont suffisants pour accueillir et sustenter une centaine de convives. La tente et son contenu n’ont qu’une journée d’existence, après quoi ils disparaissent sans laisser de trace (de même que tout ce qui aurait pu être pris dans le pavillon)."
+            ],
+            "infos": {
+                "data": [
+                    "Invocation",
+                    "Transmutation",
+                    "puissantes ;",
+                    "NLS",
+                    "12 ;",
+                    "Création de sceptres magiques",
+                    "création majeure",
+                    "fabrication",
+                    "splendeur de l’aigle",
+                    "Prix",
+                    "25 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Puissance céleste",
+            "description": [
+                "Sculpté dans un morceau unique de frêne droit et mince muni d'embouts enor et de bandes en argent, ce sceptre est conçu pour être porté au combat par ceux qui cherchent à conquérir les plans inférieurs.",
+                "Un sceptre de puissance céleste fonctionne comme un bâton +2/+2. S'il frappe un Extérieur d'alignement mauvais, son porteur peut déclencher un effet de châtiment sacré centré sur la créature touchée. Il s'agit d'une action libre que le porteur peut utiliser trois fois par jour.",
+                "Une fois par jour, si le porteur se trouve à 18 mètres ou moins d'un Extérieur d'alignement mauvais, il peut convoquer un guar-dinal avoral au prix d'une action simple (comme avec convocation de monstres VII)."
+            ],
+            "infos": {
+                "data": [
+                    "Diverses puissantes ;",
+                    "NLS",
+                    "13 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "châtiment sacré",
+                    ", convocation de monstres VII ;",
+                    "Prix",
+                    "110 600 po ;",
+                    "Coût",
+                    "55 600 po + 4 400 PX."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Rupture de Toile",
+            "description": [
+                "Ce long sceptre est noir, avec une extrémité pointue. L'autre extrémité est un motif de fils mollement entrelacés, avec au milieu de l'énergie magique pure qui irradie une lumière vert pâle et qui ressemble à une flamme de gaz naturel. Le sceptre de rupture de Toile fonctionne de la même façon qu'un sceptre d'absorption : il absorbe automatiquement tout sort à cible unique ou rayon (ou pouvoir magique dupliquant ces effets), qui affecte le possesseur du sceptre ou son équipement. Toutefois, plutôt que de stocker l'énergie magique ainsi absorbée, le sceptre envoie immédiatement en retour un contrecoup d'énergie négative qui inflige 1d6 points de dégâts par niveau de sort absorbé (un jet de Volonté réussi réduit les dégâts de moitié). Une protection contre l’énergie négative annule ces dégâts, et les lanceurs de sorts morts-vivants sont en fait soignés par cet effet."
+            ],
+            "infos": {
+                "data": [
+                    "Nécromancie",
+                    "puissante ;",
+                    "NLS",
+                    "18 ;",
+                    "Création de sceptres magiques",
+                    "renvoi des sorts",
+                    "absorption d’énergie",
+                    "Prix",
+                    "60 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Sceptre de maîtrise des dragons",
+            "description": [
+                "Ce sceptre fonctionne un peu sur le même principe qu'un sceptre de suzeraineté, mais il n'affecte que les dragons. Son porteur gagne l'obéissance et la loyauté des dragons situés dans un rayon de 150 mètres dès qu'il l'active (action simple). Un total de 300 DV de dragons peut être dirigé, mais ceux qui ont une valeur d'Intelligence de 16 ou plus ont droit à un jet de Volonté (DD 22) pour annuler l'effet. Les dragons affectés obéissent au porteur comme si celui-ci était leur monarque. Toutefois, si l'intéressé donne un ordre contraire à leur nature, l'enchantement cesse de faire effet. Le sceptre de maîtrise des dragons peut être utilisé pendant un total de 500 minutes avant de tomber en poussière. Cette durée n'est pas nécessairement continue.",
+                "Il existe deux versions de ce puissant objet magique. Le sceptre pourpre de maîtrise des dragons n'affecte que les dragons d'alignement mauvais ou neutre, alors que le sceptre doré de maîtrise des dragons n'affecte que les dragons d'alignement bon ou neutre."
+            ],
+            "infos": {
+                "data": [
+                    "Enchantement",
+                    "puissant ;",
+                    "NLS",
+                    "20 ;",
+                    "Création de sceptres magiques",
+                    "charme-monstre de groupe",
+                    "Prix",
+                    "120 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Sécurité",
+            "description": [
+                "Cet objet a le pouvoir de créer un espace non dimensionnel qui est en quelque sorte un paradis de poche. À l’intérieur, le possesseur du sceptre et jusqu’à 199 créatures peuvent vivre en totale sécurité pour une période maximale dépendant de leur nombre (200 jours, divisés par le nombre de créatures). Seul, le possesseur du sceptre pourra rester un maximum de 200 jours dans son paradis de poche, tandis que ce total sera réduit à 50 jours pour 4 créatures, et à 3 jours pour 60 créatures. On arrondit systématiquement à l’entier intérieur, ce qui signifie qu’un groupe comprenant de 101 à 200 individus ne pourra être protégé que durant une seule journée.",
+                "À l’intérieur de l’espace créé, les créatures cessent de vieillir et la guérison naturelle s’effectue deux fois plus rapidement. On trouve de l’eau potable en abondance, ainsi que de la nourriture (fruits et légumes seulement). Le climat est agréable pour tous.",
+                "Quand le sceptre de sécurité est activé (ce qui demande une action simple), son possesseur et tous ceux qui touchent le sceptre sont instantanément transportés dans le paradis de poche. Si le groupe est trop important, ses membres peuvent se tenir par la main pour être eux aussi affectés. Les créatures refusant de partir ont droit à un jet de Volonté (DD 17) pour rester sur place. À noter que, même si quelqu’un réussit son jet de sauvegarde, les autres individus se trouvant au-delà dans la chaîne sont tout de même transportés normalement.",
+                "Quand l’effet du sceptre expire ou est dissipé, toutes les créatures affectées réapparaissent instantanément à leur point de départ. Si un solide occupe désormais l’espace où un des voyageurs devrait revenir, celui-ci effectue une translation spatiale suffisante pour réapparaître dans le plus proche endroit dégagé. Le possesseur du sceptre peut mettre un terme à l’effet quand il le souhaite, mais le sceptre de sécurité ne peut être utilisé qu’une seule fois par semaine."
+            ],
+            "infos": {
+                "data": [
+                    "Invocation",
+                    "puissante ;",
+                    "NLS",
+                    "20 ;",
+                    "Création de sceptres magiques",
+                    "portail",
+                    "Prix",
+                    "61 000 po."
+                ]
+            },
+            "ul": null,
+            "table": null
+        },
+        {
+            "title": "Seigneurs de la guerre",
+            "description": [
+                "Ce sceptre possède des pouvoirs magiques et peut se transformer en plusieurs armes et outils. Plus épais que les autres objets de ce type, le sceptre des seigneurs de la guerre est en métal. Son extrémité s’orne d’une tête à ailettes et il arbore six boutons ressemblant à de gros clous à tête plate (appuyer sur l’un d’eux revient à dégainer une arme). Il pèse 5 kg.",
+                "Chacun des pouvoirs magiques suivants peut être utilisé 1 fois par jour.",
+                "Les fonctions martiales suivantes peuvent être invoquées à volonté, sans limite d’utilisation.",
+                "Enfin, le possesseur du sceptre peut également faire appel aussi souvent qu’il le souhaite aux fonctions suivantes."
+            ],
+            "infos": {
+                "data": [
+                    "Multiples puissantes ;",
+                    "NLS",
+                    "19 ;",
+                    "Création de sceptres magiques",
+                    "Création d’armes et armures magiques",
+                    "blessure légère",
+                    "force de taureau",
+                    "immobilisation de personne",
+                    "lame de feu",
+                    "terreur",
+                    "Prix",
+                    "70 000 po."
+                ]
+            },
+            "ul": [
+                {
+                    "position": 2.0,
+                    "ul": [
+                        "Immobilisation de personne au contact (jet de Volonté DD 14 pour annuler). Le possesseur du sceptre doit décider d’utiliser le pouvoir, puis réussir une attaque de contact au corps à corps pour l’activer. Si l’attaque rate, l’effet est perdu pour la journée.",
+                        "Terreur affectant tous les adversaires voyant le sceptre, dans une portée maximale de 3 mètres (jet de Volonté DD 16 pour effet partiel). Il faut une action simple pour invoquer ce pouvoir.",
+                        "Sur une attaque de contact au corps à corps réussie, le sceptre inflige 2d4 points de dégâts à la cible (jet de Volonté DD 17 pour demi-dégâts) et le porteur récupère la même quantité de points de vie. Le personnage doit annoncer son intention avant de porter son coup, comme pour immobilisation de personne."
+                    ]
+                },
+                {
+                    "position": 3.0,
+                    "ul": [
+                        "Sous sa forme habituelle, le sceptre fonctionne comme une masse d’armes légère +2.",
+                        "Pour peu qu’on appuie sur le bouton 1, il se transforme en épée longue +1 de feu. Le fer jaillit de la tête de masse, laquelle devient la garde de l’épée nouvellement créée. La longueur totale du sceptre est alors de 1,20 mètre.",
+                        "Si l’on presse le bouton 2, le sceptre devient une hache d’armes +4. Le fer jaillit de la tête de masse et le manche s’allonge pour donner à l’ensemble une longueur totale de 1,20 mètre.",
+                        "En appuyant sur le bouton 3, on transforme le sceptre en épieu +3 ou pique +3, au choix. La lame jaillit de la tête de masse et le manche s’allonge jusqu’à une longueur déterminée par le possesseur mais ne pouvant dépasser 3,60 mètres. L’arme mesure alors entre 1,80 mètre et 4,50 mètres de long. En choisissant la longue maximale, on peut même s’en servir comme d’une lance d’arçon."
+                    ]
+                },
+                {
+                    "position": 4.0,
+                    "ul": [
+                        "Perche/échelle. Quand on presse le bouton 4, une pointe capable de se planter dans le granit jaillit de la tête de masse, tandis que trois crochets pointus apparaissent en bas du manche. En 1 round, le manche s’allonge pour atteindre une longueur totale allant de 1,50 mètre à 15 mètres (il s’arrête quand on appuie une seconde fois sur le bouton 4). Une fois le sceptre arrimé par les crochets et la pointe, des barreaux d’échelle se déploient sur toute sa longueur, à 30 centimètres d’intervalle (un à gauche, puis à droite, etc.). Le sceptre peut soutenir un poids total de 2 tonnes. Il se rétracte automatiquement quand on appuie sur le bouton 5.",
+                        "L’échelle peut également être déployée de manière à enfoncer les portes. Le personnage plante le sceptre dans le sol à moins de 9 mètres de l’obstacle et l’incline dans la direction de ce dernier avant de presser le bouton 4. La force exercée par le sceptre correspond à modificateur de Force de +12.",
+                        "Quand on appuie sur le bouton 6, le sceptre indique où se trouve le nord magnétique et révèle la profondeur ou l’altitude à laquelle se trouve son possesseur (par rapport à la surface, pas au niveau de la mer)."
+                    ]
+                }
+            ],
+            "table": null
+        },
+        {
+            "title": "Suzeraineté",
+            "description": [
+                "Cet objet a l’air d’un sceptre royal d’une valeur apparente de 5 000 po minimum. Son possesseur peut gagner l’obéissance et la loyauté de toutes les créatures distantes de moins de 36 mètres dès qu’il l’active (ce qui nécessite une action simple). Un total de 300 DV de créatures peut être dirigé, mais celles qui ont 12 ou plus en Intelligence ont droit à un jet de Volonté (DD 16) pour conserver leur libre arbitre. Les créatures affectées obéissent au personnage comme si ce dernier était leur roi de droit divin. L’enchantement cesse toutefois de faire effet si le possesseur du sceptre donne un ordre contraire à la nature des créatures soumises. Le sceptre de suzeraineté peut être utilisé pendant un total de 500 minutes avant de tomber en poussière. Cette durée n’a pas besoin d’être continue."
+            ],
+            "infos": {
+                "data": [
+                    "Enchantement",
+                    "puissant ;",
+                    "NLS",
+                    "20 ;",
+                    "Création de sceptres magiques",
+                    "charme-monstre de groupe",
+                    "Prix",
+                    "60 000 po ;",
+                    "Coût",
+                    "27 500 po + 2 200 PX."
+                ]
+            },
+            "ul": null,
+            "table": null
+        }
+    ],
+    "unknown": []
+}

@@ -58,12 +58,17 @@ export interface MagicalProperty {
 
 export interface TableMagicalProperty {
     position: number;
-    data: string;
+    title: TR[];
+    tr: TR[];
+}
+
+export interface TR {
+    td: string[];
 }
 
 export interface UlMagicalProperty {
     position: number;
-    data: string;
+    ul: string[];
 }
 
 export interface Informations {
@@ -82,4 +87,6 @@ export interface Chances {
     price: number;
     currencyType: string;
 }
+
+
 
