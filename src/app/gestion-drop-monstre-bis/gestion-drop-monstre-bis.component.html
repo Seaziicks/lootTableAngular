@@ -13,9 +13,9 @@
     <div style="width: 100%">
       <form class="needs-validation" id="competenceEffectForm">
         <div class="form-row" *ngFor="let lootChance of monstreSelectionneLootChance; let index = index;">
-          <div style="display: flex; align-items: center; justify-content: left; width : 150px;" [ngClass]="{'missingValue': this.missingAtLeastOneValue(index)}">
-            {{this.monstreSelectionneLootChance[index].roll}} : </div>
-          <div class="form-group col-md-2">
+          <label class="labelFormGroup" [ngClass]="{'missingValue': this.missingAtLeastOneValue(index)}" [for]="'fromgroup'+this.monstreSelectionneLootChance[index].roll">
+            {{this.monstreSelectionneLootChance[index].roll}} : </label>
+          <div class="form-group col-md-2" [id]="'fromgroup'+this.monstreSelectionneLootChance[index].roll">
             <label for="inputFamilleMonstre">Loot</label>
             <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.monstreSelectionneLootChance[index].idLoot"
                     [name]="'Loot'+index">

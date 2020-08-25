@@ -9,6 +9,7 @@
                        name="dePuissanceArme"
                        placeholder="Puissance de l'arme"
                        [(ngModel)]="this.dePuissance"
+                       (ngModelChange)="this.setBonusArme()"
                        required>
             </div>
 
@@ -22,13 +23,14 @@
                        (ngModelChange)="this.setBonusArme()"
                        required>
             </div>
-
+        </div>
             <div *ngIf="this.isSpeciale" style="width: 100%">
                 <h3>Cette arme sera spéciale</h3>
                 <div class="col-md-2 mb-3">
-                    <label for="ArmeSpec">Dé d'arme Spéciale
+                    <label for="ArmeSpec">Dé d'arme Spéciale 1D{{this.getNbProprietesMagiques(this.allArmesSpeciales)}}
                     </label>
-                    <input min="1" [max]="this.getNbArmesSpeciales()" type="number" class="form-control" id="ArmeSpec"
+                    <input min="1" [max]="this.getNbProprietesMagiques(this.allArmesSpeciales)"
+                           type="number" class="form-control" id="ArmeSpec"
                            name="ArmeSpec"
                            placeholder="Arme Spéciale"
                            [(ngModel)]="this.deArmeSpeciale"
@@ -38,7 +40,7 @@
             </div>
 
             <div *ngIf="!this.isSpeciale && this.dePuissance" style="width: 100%">
-                <h3>Type de l'arme</h3>
+                <div class="form-row">
                 <div class="col-md-2 mb-3">
                     <label for="TypeArme">Dé typeArme
                     </label>
@@ -50,9 +52,8 @@
                            required>
                 </div>
 
-                <div *ngIf="this.isCaC">
-                    <h3>Arme corps à corps</h3>
-                    <div class="col-md-2 mb-3">
+
+                    <div *ngIf="this.isCaC" class="col-md-2 mb-3">
                         <label for="ArmeCaC">Dé arme càc
                         </label>
                         <input min="1" max="100" type="number" class="form-control" id="ArmeCaC"
@@ -62,11 +63,10 @@
                                (ngModelChange)="this.getTypeArme()"
                                required>
                     </div>
-                </div>
 
-                <div *ngIf="this.isDistance">
-                    <h3>Arme à distance</h3>
-                    <div class="col-md-2 mb-3">
+
+
+                    <div *ngIf="this.isDistance" class="col-md-2 mb-3">
                         <label for="ArmeDistance">Dé Arme distance
                         </label>
                         <input min="1" max="100" type="number" class="form-control" id="ArmeDistance"
@@ -76,11 +76,10 @@
                                (ngModelChange)="this.getTypeArme()"
                                required>
                     </div>
-                </div>
 
-                <div *ngIf="this.isInhabituelle">
-                    <h3>Arme inhabituelle</h3>
-                    <div class="col-md-2 mb-3">
+
+
+                    <div *ngIf="this.isInhabituelle" class="col-md-2 mb-3">
                         <label for="ArmeInhabituelle">Dé Arme inhabituelle
                         </label>
                         <input min="1" max="100" type="number" class="form-control" id="ArmeInhabituelle"
@@ -90,13 +89,12 @@
                                (ngModelChange)="this.getTypeArme()"
                                required>
                     </div>
-                </div>
+
 
 
             </div>
 
             <div *ngIf="this.isMunitions" style="width: 100%">
-                <h3>Ce seront des munitions</h3>
                 <div class="col-md-2 mb-3">
                     <label for="munitions">Dé de munitions
                     </label>
@@ -109,13 +107,13 @@
                            required>
                 </div>
             </div>
-
+        </div>
             <div *ngIf="this.isMagique" style="width: 100%">
                 <h3>Cette arme sera magique</h3>
                 <div class="col-md-2 mb-3">
-                    <label for="PropMag">Dé de propriété magique
+                    <label for="PropMag">Dé de propriété magique : 1D{{this.getNbProprietesMagiques(this.allProprietesMagiques)}}
                     </label>
-                    <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                    <input min="1" [max]="this.getNbProprietesMagiques(this.allProprietesMagiques)" type="number" class="form-control"
                            id="PropMag"
                            name="PropMag"
                            placeholder="Propriété Magique"
@@ -125,7 +123,6 @@
                 </div>
             </div>
 
-        </div>
 
     </form>
     <div style="width: 100%" *ngIf="this.nom">

@@ -5,16 +5,7 @@
         "Les conditions de fonctionnement déterminent l’intérêt de l’objet, aussi est-il conseillé de les choisir avec soin plutôt que de laisser faire le hasard. Si l’objet est également intelligent, il impose ses conditions en fonction de sa personnalité. Si les conditions ne sont pas remplies, il cesse de fonctionner. Dans le cas contraire, il fonctionne le temps spécifié (le plus souvent, une journée), après quoi le personnage doit de nouveau satisfaire aux conditions indiquées."
     ],
     "infos": {
-        "data": [
-            "Invocation",
-            "puissante ;",
-            "NLS",
-            "15 ;",
-            "Création d’anneaux magiques",
-            ", convocation de monstres VI, ainsi que tous les autres sorts que l’anneau met à la disposition de son porteur ;",
-            "Prix",
-            "200 000 po."
-        ]
+        "data": null
     },
     "ul": [
         {

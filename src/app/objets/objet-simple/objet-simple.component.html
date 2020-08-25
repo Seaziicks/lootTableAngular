@@ -1,83 +1,40 @@
+<app-maledictions *ngIf="this.maudit" #maledictionsComponent (maledictionEventEmitter)="selectionMalediction($event)"></app-maledictions>
+
 <div style="width: 100%">
     <h1>{{this.parametres[0]}}</h1>
     <form class="needs-validation" id="competenceEffectForm">
         <div class="form-row">
-            <div style="width: 100%">
-                <div class="col-md-2 mb-3">
-                    <label for="PuissMag">Puissance
-                    </label>
-                    <input min="1" max="3" type="number" class="form-control"
-                           id="PuissMag"
-                           name="PuissMag"
-                           placeholder="Puissance Magique"
-                           [(ngModel)]="this.dePuissance"
-                           (ngModelChange)="this.getProprieteMagique()"
-                           required>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <label for="PropMag">{{this.parametres[1]}}
-                    </label>
-                    <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
-                           id="PropMag"
-                           name="PropMag"
-                           placeholder="Propriété Magique"
-                           [(ngModel)]="this.deProprieteObjet"
-                           (ngModelChange)="this.getProprieteMagique()"
-                           required>
-                </div>
-
-                <div class="col-md-2 mb-3">
-                    <label for="Malediction">Dé Malédiction
-                    </label>
-                    <input min="1" max="100" type="number" class="form-control"
-                           id="Malediction"
-                           name="Malediction"
-                           placeholder="Malediction"
-                           [(ngModel)]="this.deMalediction"
-                           (ngModelChange)="this.resetMalediction(); this.getMalediction()"
-                           required>
-                </div>
-
-                <div class="col-md-2 mb-3" *ngIf="this.isObjetMauditSpecial()">
-                    <label for="PuissanceMalediction">Puissance Malédiction
-                    </label>
-                    <input min="1" max="3" type="number" class="form-control"
-                           id="PuissanceMalediction"
-                           name="PuissanceMalediction"
-                           placeholder="PuissanceMalediction"
-                           [(ngModel)]="this.dePuissanceMalediction"
-                           (ngModelChange)="this.resetMalediction(); this.getMalediction()"
-                           required>
-                </div>
-
-                <div class="col-md-2 mb-3" *ngIf="this.isConditionExterieure() || this.isInconveniant()">
-                    <label for="deMalediction2">Dé condition ou inconveniant
-                    </label>
-                    <input min="1" max="100" type="number" class="form-control"
-                           id="deMalediction2"
-                           name="deMalediction2"
-                           placeholder="deMalediction2"
-                           [(ngModel)]="this.deMalediction2"
-                           (ngModelChange)="this.getMalediction()"
-                           required>
-                </div>
-                <div class="col-md-2 mb-3" *ngIf="this.isObjetMauditSpecial()">
-                    <label for="deMalediction2Bis">Objet maudit spécial
-                    </label>
-                    <input min="1" [max]="this.getNbObjetsMaudits()" type="number" class="form-control"
-                           id="deMalediction2Bis"
-                           name="deMalediction2Bis"
-                           placeholder="deMalediction2Bis"
-                           [(ngModel)]="this.deMalediction2"
-                           (ngModelChange)="this.getMalediction()"
-                           required>
+            <div style="width: 100%" *ngIf="this.loadComplete()">
+                <div class="form-row">
+                    <div class="col-md-2 mb-3">
+                        <label for="PuissMag">Puissance
+                        </label>
+                        <input min="1" max="3" type="number" class="form-control"
+                               id="PuissMag"
+                               name="PuissMag"
+                               placeholder="Puissance Magique"
+                               [(ngModel)]="this.dePuissance"
+                               (ngModelChange)="this.getProprieteMagique()"
+                               required>
+                    </div>
+                    <div class="col-md-2 mb-3" *ngIf="this.dePuissance">
+                        <label for="PropMag">{{this.parametres[1]}} (1D{{this.getNbProprietesMagiques()}})
+                        </label>
+                        <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                               id="PropMag"
+                               name="PropMag"
+                               placeholder="Propriété Magique"
+                               [(ngModel)]="this.deProprieteObjet"
+                               (ngModelChange)="this.getProprieteMagique()"
+                               required>
+                    </div>
                 </div>
             </div>
         </div>
 
 
     </form>
-    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0 && !this.modificationEnCours">
+    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0 && !this.modificationEnCoursPM">
         <h1>Résultat</h1>
         <div>
             <h3>{{this.parametres[2]}} : {{this.nom}} <span
@@ -88,16 +45,16 @@
                 <span *ngFor="let description of proprieteObjet.description; let index = index;">
                     <span [innerHTML]="description"></span><br/>
                     <ng-container *ngFor="let table of proprieteObjet.table;">
-                        <span *ngIf="table.position === index">
+                        <span *ngIf="table.position === index + 1">
                             <table cellspacing="1" border="1">
                                 <tbody>
                                 <tr *ngFor="let th of table.title; let thIndex = index">
                                     <ng-container *ngFor="let title of th; let titleIndex = index">
                                         <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
                                             [colSpan]="table.title[1][thIndex].length / table.title[0][thIndex].length">{{title}}</th>
-                                        <ng-template  #elseBlock>
+                                        <ng-template #elseBlock>
                                             <th>{{title}}</th>
-                                        </ng-template >
+                                        </ng-template>
                                     </ng-container>
                                 </tr>
                                 <tr *ngFor="let td of table.tr; let tdIndex = index">
@@ -111,9 +68,9 @@
                     </ng-container>
 
                     <ng-container *ngFor="let ul of proprieteObjet.ul;">
-                        <span *ngIf="+ul.position === index">
+                        <span *ngIf="+ul.position === index + 1">
                             <ul>
-                                <li *ngFor="let li of ul.li;">{{li}}</li>
+                                <li *ngFor="let li of ul.li;" [innerHTML]="li"></li>
                             </ul>
                         </span>
                     </ng-container>
@@ -123,80 +80,51 @@
                 {{proprieteObjet.infos.data}}<br/><br/>
             </ng-container>
         </div>
-        <div *ngIf="this.malediction">
-            <h3>Malediction</h3>
-            <h4>{{this.malediction.title}}</h4>
-            <span *ngFor="let description of this.malediction.description; let index = index;">
-                    <span [innerHTML]="description"></span><br/>
-                    <ng-container *ngFor="let table of this.malediction.table;">
-                        <span *ngIf="table.position === index">
-                            <table cellspacing="1" border="1">
-                                <tbody>
-                                <tr *ngFor="let th of table.title; let thIndex = index">
-                                    <ng-container *ngFor="let title of th; let titleIndex = index">
-                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
-                                            [colSpan]="table.title[1][thIndex].length / table.title[0][thIndex].length">{{title}}</th>
-                                        <ng-template  #elseBlock>
-                                            <th>{{title}}</th>
-                                        </ng-template >
-                                    </ng-container>
-                                </tr>
-                                <tr *ngFor="let td of table.tr; let tdIndex = index">
-                                    <ng-container *ngFor="let content of td">
-                                        <td>{{content}}</td>
-                                    </ng-container>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </span>
-                    </ng-container>
-
-                    <ng-container *ngFor="let ul of this.malediction.ul;">
-                        <span *ngIf="+ul.position === index">
-                            <ul>
-                                <li *ngFor="let li of ul.li;">{{li}}</li>
-                            </ul>
-                        </span>
-                    </ng-container>
-                </span>
-
-        </div>
-
-        <button (click)="this.modifierContenu()">Modifier</button>
+        <button (click)="this.modifierContenu()">Modifier propriété magique</button>
     </div>
 
-    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0 && this.modificationEnCours">
+
+    <div style="width: 100%" *ngIf="this.proprietesObjet.length > 0 && this.modificationEnCoursPM">
         <h1>Résultat</h1>
         <div>
             <h3>{{this.parametres[2]}} : {{this.nom}} <span
                 *ngIf="this.proprietesObjet.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
 
-            <ng-container *ngFor="let proprieteObjet of this.proprietesObjet; let indexPropriete = index; trackBy: trackByFn">
+            <ng-container
+                *ngFor="let proprieteObjet of this.proprietesObjet; let indexPropriete = index; trackBy: trackByFn">
                 <h4><textarea [(ngModel)]="this.proprietesObjet[indexPropriete].title"></textarea></h4>
-                <span *ngFor="let description of this.proprietesObjet[indexPropriete].description; let indexDescription = index; trackBy: trackByFn">
-                    <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].description[indexDescription]" ></textarea><br/>
+                <span
+                    *ngFor="let description of this.proprietesObjet[indexPropriete].description; let indexDescription = index; trackBy: trackByFn">
+                    <textarea
+                        [(ngModel)]="this.proprietesObjet[indexPropriete].description[indexDescription]"></textarea><br/>
 
-                    <ng-container *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index">
-                        <span *ngIf="+table.position === indexDescription">
+                    <ng-container
+                        *ngFor="let table of this.proprietesObjet[indexPropriete].table; let indexTable = index">
+                        <span *ngIf="+table.position === indexDescription + 1">
                             <table>
                                 <tbody>
                                 <tr *ngFor="let th of this.proprietesObjet[indexPropriete].table[indexTable].title; let thIndex = index">
-                                    <ng-container *ngFor="let title of this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
+                                    <ng-container
+                                        *ngFor="let title of this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
                                         <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0][tdIndex].length < table.title[1][tdIndex].length; else elseBlock"
                                             [colSpan]="table.title[1][tdIndex].length / table.title[0][tdIndex].length">
-                                            <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                            <textarea
+                                                [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
                                         </th>
-                                        <ng-template  #elseBlock>
+                                        <ng-template #elseBlock>
                                             <th>
-                                                <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                                <textarea
+                                                    [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
                                             </th>
                                         </ng-template>
                                     </ng-container>
                                 </tr>
                                 <tr *ngFor="let td of this.proprietesObjet[indexPropriete].table[indexTable].tr; let trIndex = index">
-                                    <ng-container *ngFor="let content of this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index; trackBy: trackByFn">
+                                    <ng-container
+                                        *ngFor="let content of this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index; trackBy: trackByFn">
                                         <td>
-                                            <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex][tdIndex]"></textarea>
+                                            <textarea
+                                                [(ngModel)]="this.proprietesObjet[indexPropriete].table[indexTable].tr[trIndex][tdIndex]"></textarea>
                                         </td>
                                     </ng-container>
                                 </tr>
@@ -206,7 +134,7 @@
                     </ng-container>
 
                     <ng-container *ngFor="let shit of this.proprietesObjet[indexPropriete].ul; let indexUl = index;">
-                        <span *ngIf="this.proprietesObjet[indexPropriete].ul[indexUl].position === indexDescription">
+                        <span *ngIf="this.proprietesObjet[indexPropriete].ul[indexUl].position === indexDescription + 1">
                             <ul>
                                 <li *ngFor="let shitBis of this.proprietesObjet[indexPropriete].ul[indexUl].li; let indexLi = index; trackBy: trackByFn">
                                     <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].ul[indexUl].li[indexLi]"
@@ -218,27 +146,14 @@
                 </span>
                 <br/>
                 <br/>
-                <ng-container *ngFor="let shit of this.proprietesObjet[indexPropriete].infos.data; let indexData = index; trackBy: trackByFn">
+                <ng-container
+                    *ngFor="let shit of this.proprietesObjet[indexPropriete].infos.data; let indexData = index; trackBy: trackByFn">
                     <textarea [(ngModel)]="this.proprietesObjet[indexPropriete].infos.data[indexData]"></textarea>
-                </ng-container >
+                </ng-container>
             </ng-container>
-            <span>
-                <h3>Malediction</h3>
-                <h4><textarea [(ngModel)]="this.malediction.title"></textarea></h4>
-                <span *ngFor="let description of this.malediction.description; let indexMalediction = index;">
-                    <span><textarea [(ngModel)]="malediction.description[indexMalediction]"></textarea></span><br/>
-
-                    <ng-container *ngFor="let ul of this.malediction.ul;">
-                                <span>
-                                    <ul>
-                                        <li *ngFor="let li of ul.li;">{{li}}</li>
-                                    </ul>
-                                </span>
-                    </ng-container>
-                </span>
-            </span>
         </div>
-        <button (click)="this.modifierContenu()">Valider</button>
-        <button (click)="this.resetContenu()">Reset</button>
+        <button (click)="this.modifierContenu()">Valider propriété magique</button>
+        <button (click)="this.resetContenu()">Reset propriété magique</button>
     </div>
+
 </div>

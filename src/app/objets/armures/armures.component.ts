@@ -215,8 +215,17 @@ export class ArmuresComponent implements OnInit {
                 this.bonus = 0;
                 this.proprietesMagiques.push(special);
                 this.nom = special.title;
+                this.getPrixAndCurrency(special.infos.data);
             }
         }
+    }
+
+    getPrixAndCurrency(data: string[]) {
+        const indexPrix = data.indexOf(data.filter(f => f === 'Prix')[0]) + 1;
+        const match = data[indexPrix].match(/([0-9]+ )+/)[0];
+        this.prix = +match.replace(' ', '');
+        this.currencyType = data[indexPrix].replace(match, '')
+            .replace(' ', '').replace('.', '');
     }
 
     getNbProprietesMagiques(): number {

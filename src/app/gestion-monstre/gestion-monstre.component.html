@@ -3,7 +3,7 @@
     <div id="caracterSelection" class="caracterSelection">
       <h3>Selectionnez un monstre</h3>
       <app-autocomplete-groupe #autocompleteGroupeMonstre (monstreEventEmitter)="selectionMonstre($event)"
-                               [monsterGroupes]="monstresGroupes">
+                               [monsterGroupes]="this.monstresGroupes">
         loading
       </app-autocomplete-groupe>
       <div style="width: 100%">

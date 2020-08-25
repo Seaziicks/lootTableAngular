@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {JSonLoadService} from '../../services/json-load.service';
-import {MagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
+import {MagicalProperty, SortedMagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
 
 @Component({
     selector: 'app-armes',
@@ -34,8 +34,8 @@ export class ArmesComponent implements OnInit {
     isInhabituelle = false;
     isMunitions = false;
 
-    allProprietesMagiques: MagicalProperty[] = [];
-    allArmesSpeciales: MagicalProperty[] = [];
+    allProprietesMagiques: SortedMagicalProperty;
+    allArmesSpeciales: SortedMagicalProperty;
 
     constructor(private  http: HttpClient, private jsonService: JSonLoadService) {
     }
@@ -43,10 +43,10 @@ export class ArmesComponent implements OnInit {
     ngOnInit(): void {
         this.jsonService.getJSON('magique', 'effetsMagiquesArmes').then(
             (effetsMagiquesArmes: any) => {
-                this.allProprietesMagiques = JSON.parse(effetsMagiquesArmes) as MagicalProperty[];
+                this.allProprietesMagiques = JSON.parse(effetsMagiquesArmes) as SortedMagicalProperty;
                 this.jsonService.getJSON('magique', 'armesSpeciales').then(
                     (armesSpeciales: any) => {
-                        this.allArmesSpeciales = JSON.parse(armesSpeciales) as MagicalProperty[];
+                        this.allArmesSpeciales = JSON.parse(armesSpeciales) as SortedMagicalProperty;
                     }
                 );
             }
@@ -123,20 +123,41 @@ export class ArmesComponent implements OnInit {
         this.deMunitions = undefined;
         if (this.deTypeArme <= 70) {
             this.isCaC = true;
-            this.type = 'Armes de corp à corp';
+            this.type = 'Arme de corp à corp';
         } else if (this.deTypeArme > 70 && this.deTypeArme <= 90) {
             this.isDistance = true;
-            this.type = 'Armes à distance';
+            this.type = 'Arme a distance';
         } else if (this.deTypeArme > 90 && this.deTypeArme <= 100) {
             this.isInhabituelle = true;
-            this.type = 'Armes inhabituelle';
+            this.type = 'Arme inhabituelle';
         }
+    }
+
+    getPropretesMagiques(proprietesMagiques: SortedMagicalProperty) {
+        return this.dePuissance === 1 ? proprietesMagiques.weakAndSmall.concat(proprietesMagiques.unknown)
+            : this.dePuissance === 2 ? proprietesMagiques.moderate.concat(proprietesMagiques.unknown)
+                : this.dePuissance === 3 ? proprietesMagiques.strongAnfPowerful.concat(proprietesMagiques.unknown) :
+                    null;
     }
 
     getProprieteMagique() {
         this.proprietesMagiques = [];
-        if (this.deProprieteMagique && this.deProprieteMagique <= this.allProprietesMagiques.length) {
-            this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
+        this.bonus = 0;
+        if (this.deProprieteMagique && this.deProprieteMagique <= this.getNbProprietesMagiques(this.allProprietesMagiques)) {
+            this.proprietesMagiques.push(
+                JSON.parse(JSON.stringify(
+                    this.getPropretesMagiques(this.allProprietesMagiques)[this.deProprieteMagique - 1])) as MagicalProperty);
+            this.setBonus(this.proprietesMagiques[0].infos.data);
+            console.log(this.bonus);
+        }
+    }
+
+    setBonus(data: string[]) {
+        const indexPrix = data.indexOf(data.filter(f => f === 'Prix')[0]) + 1;
+        console.log(data.indexOf(data.filter(f => f === 'Prix')[0]));
+        console.log(data[indexPrix]);
+        if (!isNaN(+data[indexPrix].replace('bonus de +', '').replace('.', ''))) {
+            this.bonus += +data[indexPrix].replace('bonus de +', '').replace('.', '');
         }
     }
 
@@ -148,21 +169,27 @@ export class ArmesComponent implements OnInit {
         this.deArmeInhabituelle = undefined;
         this.deMunitions = undefined;
         this.resetArme();
-        if (this.deArmeSpeciale && this.deArmeSpeciale <= this.allArmesSpeciales.length) {
-            const armeSpecial: MagicalProperty = this.allArmesSpeciales[this.deArmeSpeciale - 1];
-            this.type = 'Speciale';
+        if (this.deArmeSpeciale && this.deArmeSpeciale <= this.getNbProprietesMagiques(this.allArmesSpeciales)) {
+            const armeSpecial: MagicalProperty = JSON.parse(JSON.stringify(
+                this.getPropretesMagiques(this.allArmesSpeciales)[this.deArmeSpeciale - 1])) as MagicalProperty;
+            this.type = 'Arme speciale';
             this.bonus = 0;
             this.proprietesMagiques.push(armeSpecial);
             this.nom = armeSpecial.title;
+            this.getPrixAndCurrency(armeSpecial.infos.data);
         }
     }
 
-    getNbProprietesMagiques(): number {
-        return this.allProprietesMagiques.length;
+    getPrixAndCurrency(data: string[]) {
+        const indexPrix = data.indexOf(data.filter(f => f === 'Prix')[0]) + 1;
+        const match = data[indexPrix].match(/([0-9]+ )+/)[0];
+        this.prix = +match.replace(' ', '');
+        this.currencyType = data[indexPrix].replace(match, '')
+            .replace(' ', '').replace('.', '');
     }
 
-    getNbArmesSpeciales(): number {
-        return this.allArmesSpeciales.length;
+    getNbProprietesMagiques(proprietesMagiques: SortedMagicalProperty): number {
+        return this.getPropretesMagiques(proprietesMagiques).length;
     }
 
     resetArme() {
@@ -242,7 +269,28 @@ export class ArmesComponent implements OnInit {
     }
 
     getNomsProprieteMagique(): string {
-        return this.proprietesMagiques.length < 2 ? this.proprietesMagiques[0].title :
-            this.proprietesMagiques[0].title + ' et ' + this.proprietesMagiques[1].title;
+        return this.isSpeciale ? ''
+            : this.proprietesMagiques.length < 2 ? this.proprietesMagiques[0].title
+                : this.proprietesMagiques[0].title + ' et ' + this.proprietesMagiques[1].title;
+    }
+
+    getPrixFromBonus() {
+        switch (this.bonus) {
+            case 1:
+                this.prix = 2000;
+                break;
+            case 2:
+                this.prix = 8000;
+                break;
+            case 3:
+                this.prix = 18000;
+                break;
+            case 4:
+                this.prix = 32000;
+                break;
+            case 5:
+                this.prix = 50000;
+                break;
+        }
     }
 }
