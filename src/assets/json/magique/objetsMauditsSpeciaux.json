@@ -3,8 +3,7 @@
         {
             "title": "Bottes ailées noires",
             "description": [
-                "Ces bottes fonctionnent en tout point comme des",
-                ", si ce n'est que les ailes qui en sortent sont noirs.",
+                "Ces bottes fonctionnent en tout point comme des <a href=\"http://www.gemmaline.com/objetmagique-bottes-ailees.htm\">bottes ailées</a>, si ce n'est que les ailes qui en sortent sont noirs.",
                 "De plus, lorsqu'elles sont utilisées, il y a 1% de chance cumulatif chaque round qu'elles cessent de fonctionner, laissant chuter leur porteur.",
                 "Une fois qu'elles ont ainsi cesser de fonctionner, les bottes ailées noires sont inertes pendant 24 heures, après quoi elles peuvent de nouveau être utilisées et les chances d'arrêt sont réinitialisées."
             ],
@@ -28,7 +27,7 @@
         {
             "title": "Bottes de charge ratée",
             "description": [
-                "Ces bottes ressemblent à et fonctionnent comme des",
+                "Ces bottes ressemblent à et fonctionnent comme des <a href=\"http://www.gemmaline.com/objetmagique-bottes-de-sept-lieues.htm\">Bottes de sept lieues</a>.",
                 "Mais lorsque leur porteur essaie de courir, leur porteur doit réussir un test d'Acrobaties (DD 20 ) ou tomber au sol au milieu du placement."
             ],
             "infos": {
