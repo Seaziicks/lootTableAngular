@@ -98,13 +98,24 @@ export interface Chances {
 export interface Arme {
     nom: string;
     prix: string;
-    dgtP: string;
-    dgtM: string;
-    crt: string;
-    factPort: string;
+    degatsPetit: string;
+    degatsMoyen: string;
+    critique: string;
+    facteurPortee: string;
     poids: string;
     type: string;
     source: string;
+    degatsParTaille: DegatsParTaille[];
+    objetsMagiques: ObjetMagique[];
+    autresMateriaux: Materiau[];
+}
+
+export interface DegatsParTaille {
+    taille: string;
+    prix: string;
+    degats: string;
+    poids: string;
+    resistance: string;
 }
 
 export interface CategorieArmes {
@@ -127,6 +138,32 @@ export interface Armure {
     vitess1: string;
     vitess2: string;
     poids: string;
+    source: string;
+    prixParTaille: PrixParTaille[];
+    objetsMagiques: ObjetMagique[];
+    autresMateriaux: Materiau[];
+}
+
+export interface PrixParTaille {
+    taille: string;
+    prixHumanoide: string;
+    prixNonHumanoide: string;
+    poids: string;
+    resistance: string;
+}
+
+export interface Materiau {
+    nom: string;
+    prix: string;
+    solidite: string;
+    pointsDeResistance: string;
+    effet: string;
+    source: string;
+}
+
+export interface ObjetMagique {
+    nom: string;
+    prix: string;
     source: string;
 }
 

@@ -3,8 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {JSonLoadService} from '../../services/json-load.service';
 import {
     Arme,
-    CategoriesArmes,
-    MagicalProperty,
+    CategoriesArmes, DegatsParTaille,
+    MagicalProperty, Materiau,
     SortedMagicalProperty,
     TablesChances
 } from '../../interface/MonstreGroupe';
@@ -46,6 +46,10 @@ export class ArmesComponent implements OnInit {
 
     categorieArme: string;
     arme: Arme;
+    taille: DegatsParTaille;
+    nomTaille: string;
+    materiau: Materiau;
+    nomMateriau: string;
 
     deArme: number;
     Categories: number;
@@ -328,6 +332,10 @@ export class ArmesComponent implements OnInit {
     }
 
     setArme() {
+        this.nomMateriau = null;
+        this.nomTaille = null;
+        this.materiau = null;
+        this.taille = null;
         this.arme = this.allCategoriesCourante.Categories.find(f => f.title === this.categorieArme).armes[this.deArme - 1];
     }
 
@@ -349,5 +357,38 @@ export class ArmesComponent implements OnInit {
 
     allCategoriesLoaded() {
         return !!(this.allArmeCourantes && this.allArmesExotiques && this.allArmesGuerre);
+    }
+
+    setTaille() {
+        this.taille = this.arme.degatsParTaille.find(f => f.taille === this.nomTaille);
+    }
+
+    getNomsTailles() {
+        return this.arme.degatsParTaille.map(f => f.taille);
+    }
+
+    getTailles() {
+        return this.arme.degatsParTaille;
+    }
+
+    getNbTailleArme() {
+        // console.log(this.arme);
+        return this.arme.degatsParTaille.length;
+    }
+
+    setMateriau() {
+        this.materiau = this.arme.autresMateriaux.find(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1') === this.nomMateriau);
+    }
+
+    getNomsMateriaux() {
+        return this.arme.autresMateriaux.map(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1'));
+    }
+
+    getMateriaux() {
+        return this.arme.autresMateriaux;
+    }
+
+    getNbMateriaux() {
+        return this.arme.autresMateriaux.length;
     }
 }

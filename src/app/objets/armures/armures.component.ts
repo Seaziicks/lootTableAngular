@@ -3,8 +3,8 @@ import {
     Arme,
     Armure,
     CategoriesArmes,
-    CategoriesArmures,
-    MagicalProperty,
+    CategoriesArmures, DegatsParTaille,
+    MagicalProperty, Materiau, PrixParTaille, SortedMagicalProperty,
     TablesChances
 } from '../../interface/MonstreGroupe';
 import {HttpClient} from '@angular/common/http';
@@ -34,12 +34,16 @@ export class ArmuresComponent implements OnInit {
     isMagique = false;
     bouclier = false;
 
-    allProprietesMagiques: MagicalProperty[] = [];
-    allArmuresSpeciales: MagicalProperty[] = [];
-    allBoucliersSpeciaux: MagicalProperty[] = [];
+    allProprietesMagiques: SortedMagicalProperty;
+    allArmuresSpeciales: SortedMagicalProperty;
+    allBoucliersSpeciaux: SortedMagicalProperty;
 
     categorieArmure: string;
     armure: Armure;
+    taille: PrixParTaille;
+    nomTaille: string;
+    materiau: Materiau;
+    nomMateriau: string;
 
     deArmure: number;
     Categories: number;
@@ -52,13 +56,13 @@ export class ArmuresComponent implements OnInit {
     ngOnInit(): void {
         this.jsonService.getJSON('magique', 'effetsArmuresMagiques').then(
             (effetsArmuresMagiques: any) => {
-                this.allProprietesMagiques = JSON.parse(effetsArmuresMagiques) as MagicalProperty[];
+                this.allProprietesMagiques = JSON.parse(effetsArmuresMagiques) as SortedMagicalProperty;
                 this.jsonService.getJSON('magique', 'armuresMagiquesSpeciales').then(
                     (armuresMagiquesSpeciales: any) => {
-                        this.allArmuresSpeciales = JSON.parse(armuresMagiquesSpeciales) as MagicalProperty[];
+                        this.allArmuresSpeciales = JSON.parse(armuresMagiquesSpeciales) as SortedMagicalProperty;
                         this.jsonService.getJSON('magique', 'boucliersSpeciaux').then(
                             (boucliersSpeciaux: any) => {
-                                this.allBoucliersSpeciaux = JSON.parse(boucliersSpeciaux) as MagicalProperty[];
+                                this.allBoucliersSpeciaux = JSON.parse(boucliersSpeciaux) as SortedMagicalProperty;
                             }
                         );
                     }
@@ -197,9 +201,9 @@ export class ArmuresComponent implements OnInit {
     getArmureOrBouclier(file: string) {
         this.jsonService.getJSON('objets', file).then(
             (data: any) => {
-                console.log(data);
+                // console.log(data);
                 const armuresOrBoucliers: TablesChances = JSON.parse(data) as TablesChances;
-                console.log(armuresOrBoucliers);
+                // console.log(armuresOrBoucliers);
                 this.getFromChance(armuresOrBoucliers, this.deType, file);
             }
         );
@@ -208,15 +212,40 @@ export class ArmuresComponent implements OnInit {
     getFromChance(armuresOrBoucliers: TablesChances, dice: number, type: string) {
         const armureOrBouclier = armuresOrBoucliers.Chances
             .filter(chance => (chance.lootChanceMin <= dice && chance.lootChanceMax >= dice))[0];
-        this.nom = armureOrBouclier.name;
+        // this.nom = armureOrBouclier.name;
         this.prix += +(armureOrBouclier.price);
-        this.type = type.charAt(0).toUpperCase()  + type.slice(1, type.length - 1).toLowerCase();
+        // this.type = type.charAt(0).toUpperCase()  + type.slice(1, type.length - 1).toLowerCase();
+    }
+
+    getPropretesMagiques(proprietesMagiques: SortedMagicalProperty) {
+        return this.dePuissance === 1 ? proprietesMagiques.weakAndSmall.concat(proprietesMagiques.unknown)
+            : this.dePuissance === 2 ? proprietesMagiques.moderate.concat(proprietesMagiques.unknown)
+                : this.dePuissance === 3 ? proprietesMagiques.strongAnfPowerful.concat(proprietesMagiques.unknown) :
+                    null;
     }
 
     getProprieteMagique() {
         this.proprietesMagiques = [];
-        if (this.deProprieteMagique && this.deProprieteMagique <= this.allProprietesMagiques.length) {
-            this.proprietesMagiques.push(this.allProprietesMagiques[this.deProprieteMagique - 1]);
+        this.bonus = 0;
+        if (this.deProprieteMagique && this.deProprieteMagique <= this.getNbProprietesMagiques(this.allProprietesMagiques)) {
+            this.proprietesMagiques.push(
+                JSON.parse(JSON.stringify(
+                    this.getPropretesMagiques(this.allProprietesMagiques)[this.deProprieteMagique - 1])) as MagicalProperty);
+            this.setBonus(this.proprietesMagiques[0].infos.data);
+            console.log(this.bonus);
+        }
+    }
+
+    getNbProprietesMagiques(proprietesMagiques: SortedMagicalProperty): number {
+        return this.getPropretesMagiques(proprietesMagiques).length;
+    }
+
+    setBonus(data: string[]) {
+        const indexPrix = data.indexOf(data.filter(f => f === 'Prix')[0]) + 1;
+        console.log(data.indexOf(data.filter(f => f === 'Prix')[0]));
+        console.log(data[indexPrix]);
+        if (!isNaN(+data[indexPrix].replace('bonus de +', '').replace('.', ''))) {
+            this.bonus += +data[indexPrix].replace('bonus de +', '').replace('.', '');
         }
     }
 
@@ -226,9 +255,9 @@ export class ArmuresComponent implements OnInit {
         this.reset();
         if (this.deSpecial) {
             let special: MagicalProperty = null;
-            if (this.bouclier && this.deSpecial <= this.allBoucliersSpeciaux.length) {
+            if (this.bouclier && this.deSpecial <= this.getNbProprietesMagiques(this.allBoucliersSpeciaux)) {
                 special = this.allBoucliersSpeciaux[this.deSpecial - 1];
-            } else if (!this.bouclier && this.deSpecial <= this.allArmuresSpeciales.length) {
+            } else if (!this.bouclier && this.deSpecial <= this.getNbProprietesMagiques(this.allArmuresSpeciales)) {
                 special = this.allArmuresSpeciales[this.deSpecial - 1];
             }
             if (special) {
@@ -248,19 +277,16 @@ export class ArmuresComponent implements OnInit {
             .replace(' ', '').replace('.', '');
     }
 
-    getNbProprietesMagiques(): number {
-        return this.allProprietesMagiques.length;
-    }
-
     getNbSpecials(): number {
-        return this.bouclier ? this.allBoucliersSpeciaux.length : this.allArmuresSpeciales.length;
+        return this.bouclier ? this.getNbProprietesMagiques(this.allBoucliersSpeciaux)
+            : this.getNbProprietesMagiques(this.allArmuresSpeciales);
     }
 
     reset() {
         this.proprietesMagiques = [];
         // this.type = undefined;
         this.bonus = undefined;
-        this.nom = undefined;
+        // this.nom = undefined;
         this.prix = 0;
     }
 
@@ -271,10 +297,64 @@ export class ArmuresComponent implements OnInit {
     }
 
     setArmure() {
+        this.nomMateriau = null;
+        this.nomTaille = null;
+        this.materiau = null;
+        this.taille = null;
         this.armure = this.allArmures.Categories.find(f => f.title === this.categorieArmure).armures[this.deArmure - 1];
+        this.setNom();
     }
 
     getNbArmure() {
+        this.type = this.categorieArmure;
         return this.allArmures.Categories.find(f => f.title === this.categorieArmure).armures.length;
+    }
+
+    setTaille() {
+        this.taille = this.armure.prixParTaille.find(f => f.taille === this.nomTaille);
+        this.setNom();
+    }
+
+    getNomsTailles() {
+        return this.armure.prixParTaille.map(f => f.taille);
+    }
+
+    getTailles() {
+        return this.armure.prixParTaille;
+    }
+
+    getNbTailleArme() {
+        // console.log(this.arme);
+        return this.armure.prixParTaille.length;
+    }
+
+    setMateriau() {
+        this.materiau = this.armure.autresMateriaux.find(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1') === this.nomMateriau);
+        this.setNom();
+    }
+
+    getNomsMateriaux() {
+        return this.armure.autresMateriaux.map(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1'));
+    }
+
+    getMateriaux() {
+        return this.armure.autresMateriaux;
+    }
+
+    getNbMateriaux() {
+        return this.armure.autresMateriaux.length;
+    }
+
+    setNom() {
+        if (this.armure) {
+            this.nom = this.armure.nom;
+        }
+        if (this.taille) {
+            this.nom += ' ' + this.taille.taille;
+        }
+        if (this.materiau) {
+            this.nom += ' en ' + this.materiau.nom;
+        }
+        console.log(this.nom);
     }
 }

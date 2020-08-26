@@ -22,9 +22,31 @@
                        (ngModelChange)="this.setArmure()"
                        required>
             </div>
+            <div class="form-group col-md-2" *ngIf="this.armure && this.armure.prixParTaille">
+                <label for="tailleArme">Taille Arme (1D{{this.getNbTailleArme()}})</label>
+                <select id="tailleArme" class="form-control" [(ngModel)]="this.nomTaille"
+                        (ngModelChange)="this.setTaille()"
+                        [name]="'tailleArme'">
+                    <option *ngFor="let taille of this.getNomsTailles()" [value]="taille">
+                        {{taille}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2" *ngIf="this.armure && this.armure.autresMateriaux">
+                <label for="typeMateriau">Materiau Arme (1D{{this.getNbMateriaux()}})</label>
+                <select id="typeMateriau" class="form-control" [(ngModel)]="this.nomMateriau"
+                        (ngModelChange)="this.setMateriau()"
+                        [name]="'materiauArme'">
+                    <option *ngFor="let materiau of this.getNomsMateriaux()" [value]="materiau">
+                        {{materiau}}
+                    </option>
+                </select>
+            </div>
         </div>
         <div *ngIf="this.armure">
-            <div [innerHTML]="this.armure.nom"></div>
+            <div><span [innerHTML]="this.armure.nom"></span> <span *ngIf="this.taille"> {{this.taille.taille}} <span *ngIf="this.materiau"> en <span [innerHTML]="this.materiau.nom"></span></span> : {{this.taille.prixHumanoide}}</span></div>
+            <div *ngIf="this.materiau"><span [innerHTML]="this.materiau.nom"></span> : <span>{{materiau.effet}}</span></div>
         </div>
         <div class="form-row">
             <div class="col-md-2 mb-3">
@@ -80,7 +102,7 @@
                     <div class="col-md-2 mb-3">
                         <label for="PropMag">Dé de propriété magique
                         </label>
-                        <input min="1" [max]="this.getNbProprietesMagiques()" type="number" class="form-control"
+                        <input min="1" [max]="this.getNbProprietesMagiques(this.allProprietesMagiques)" type="number" class="form-control"
                                id="PropMag"
                                name="PropMag"
                                placeholder="Propriété Magique"
@@ -95,8 +117,7 @@
     </form>
     <div style="width: 100%" *ngIf="this.nom">
         <h1>Résultat</h1>
-        <h3>{{this.type}} : {{this.nom}} <span
-            *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+        <h3>{{this.type}} : <span [innerHTML]="this.nom"></span> <span *ngIf="this.proprietesMagiques.length > 0"> {{this.getNomsProprieteMagique()}}</span></h3>
         <p>{{this.type}} - Bonus +{{this.bonus}}</p>
 
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
