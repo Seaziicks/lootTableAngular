@@ -1,7 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {JSonLoadService} from '../../services/json-load.service';
-import {MagicalProperty, SortedMagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
+import {
+    Arme,
+    CategoriesArmes,
+    MagicalProperty,
+    SortedMagicalProperty,
+    TablesChances
+} from '../../interface/MonstreGroupe';
 
 @Component({
     selector: 'app-armes',
@@ -37,7 +43,19 @@ export class ArmesComponent implements OnInit {
     allProprietesMagiques: SortedMagicalProperty;
     allArmesSpeciales: SortedMagicalProperty;
 
-    constructor(private  http: HttpClient, private jsonService: JSonLoadService) {
+
+    categorieArme: string;
+    arme: Arme;
+
+    deArme: number;
+    Categories: number;
+
+    allArmeCourantes: CategoriesArmes;
+    allArmesGuerre: CategoriesArmes;
+    allArmesExotiques: CategoriesArmes;
+    allCategoriesCourante: CategoriesArmes;
+
+    constructor(private http: HttpClient, private jsonService: JSonLoadService) {
     }
 
     ngOnInit(): void {
@@ -49,6 +67,21 @@ export class ArmesComponent implements OnInit {
                         this.allArmesSpeciales = JSON.parse(armesSpeciales) as SortedMagicalProperty;
                     }
                 );
+            }
+        );
+        this.jsonService.getJSON('objets/classique', 'armesCourantes').then(
+            (armesCourantes: any) => {
+                this.allArmeCourantes = JSON.parse(armesCourantes) as CategoriesArmes;
+            }
+        );
+        this.jsonService.getJSON('objets/classique', 'armesGuerre').then(
+            (armesCourantes: any) => {
+                this.allArmesGuerre = JSON.parse(armesCourantes) as CategoriesArmes;
+            }
+        );
+        this.jsonService.getJSON('objets/classique', 'armesExotiques').then(
+            (armesCourantes: any) => {
+                this.allArmesExotiques = JSON.parse(armesCourantes) as CategoriesArmes;
             }
         );
     }
@@ -292,5 +325,29 @@ export class ArmesComponent implements OnInit {
                 this.prix = 50000;
                 break;
         }
+    }
+
+    setArme() {
+        this.arme = this.allCategoriesCourante.Categories.find(f => f.title === this.categorieArme).armes[this.deArme - 1];
+    }
+
+    getNbArme() {
+        return this.allCategoriesCourante.Categories.find(f => f.title === this.categorieArme).armes.length;
+    }
+
+    setAllArmesCourantes() {
+        this.deArme = null;
+        this.allCategoriesCourante = null;
+        if (+this.Categories === 1) {
+            this.allCategoriesCourante = this.allArmeCourantes;
+        } else if (+this.Categories === 2) {
+            this.allCategoriesCourante = this.allArmesGuerre;
+        } else if (+this.Categories === 3) {
+            this.allCategoriesCourante = this.allArmesExotiques;
+        }
+    }
+
+    allCategoriesLoaded() {
+        return !!(this.allArmeCourantes && this.allArmesExotiques && this.allArmesGuerre);
     }
 }

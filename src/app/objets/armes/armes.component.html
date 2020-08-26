@@ -2,6 +2,41 @@
     <h1>Ceci est une arme</h1>
     <form class="needs-validation" id="competenceEffectForm">
         <div class="form-row">
+            <div class="form-group col-md-2" *ngIf="this.allCategoriesLoaded()">
+                <label for="selectCategories">Reclassement</label>
+                <select id="selectCategories" class="form-control" [(ngModel)]="this.Categories"
+                        (ngModelChange)="this.setAllArmesCourantes()"
+                        name="'Categories Armes'">
+                    <option value="1">Armes courantes</option>
+                    <option value="2">Armes de guerre</option>
+                    <option value="3">Armes exotiques</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2" *ngIf="this.allCategoriesCourante">
+                <label for="inputFamilleMonstre">Categorie (1D{{this.allCategoriesCourante.Categories.length}})</label>
+                <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.categorieArme"
+                        (ngModelChange)="this.setArme()"
+                        [name]="'categorieArme'">
+                    <option *ngFor="let armeCourante of this.allCategoriesCourante.Categories" [value]="armeCourante.title">
+                        {{armeCourante.title}}
+                    </option>
+                </select>
+            </div>
+            <div class="col-md-2 mb-3" *ngIf="this.categorieArme">
+                <label for="categorieArme">Dé de l'arme (1D{{this.getNbArme()}})
+                </label>
+                <input min="1" [max]="this.getNbArme()" type="number" class="form-control" id="categorieArme"
+                       name="categorieArme"
+                       placeholder="Categorie de l'arme"
+                       [(ngModel)]="this.deArme"
+                       (ngModelChange)="this.setArme()"
+                       required>
+            </div>
+        </div>
+        <div *ngIf="this.arme">
+            <div [innerHTML]="this.arme.nom"></div>
+        </div>
+        <div class="form-row">
             <div class="col-md-2 mb-3">
                 <label for="dePuissanceArme">Dé de puissance de l'arme
                 </label>

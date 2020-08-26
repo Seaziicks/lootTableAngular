@@ -95,5 +95,25 @@ export interface Chances {
     currencyType: string;
 }
 
+export interface Arme {
+    nom: string;
+    prix: string;
+    dgtP: string;
+    dgtM: string;
+    crt: string;
+    factPort: string;
+    poids: string;
+    type: string;
+    source: string;
+}
 
+export interface CategorieArmes {
+    title: string;
+    armes: Arme[];
+}
+
+export interface CategoriesArmes {
+    titles: string[];
+    Categories: CategorieArmes[];
+}
 
