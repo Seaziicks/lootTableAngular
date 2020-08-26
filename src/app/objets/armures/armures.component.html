@@ -2,6 +2,31 @@
     <h1>Ceci est une armure ou un bouclier</h1>
     <form class="needs-validation" id="competenceEffectForm">
         <div class="form-row">
+            <div class="form-group col-md-2" *ngIf="this.allArmures">
+                <label for="inputFamilleMonstre">Categorie (1D{{this.allArmures.Categories.length}})</label>
+                <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.categorieArmure"
+                        (ngModelChange)="this.setArmure()"
+                        [name]="'categorieArme'">
+                    <option *ngFor="let armeCourante of this.allArmures.Categories" [value]="armeCourante.title">
+                        {{armeCourante.title}}
+                    </option>
+                </select>
+            </div>
+            <div class="col-md-2 mb-3" *ngIf="this.categorieArmure">
+                <label for="categorieArme">Dé de l'arme (1D{{this.getNbArmure()}})
+                </label>
+                <input min="1" [max]="this.getNbArmure()" type="number" class="form-control" id="categorieArme"
+                       name="categorieArme"
+                       placeholder="Categorie de l'arme"
+                       [(ngModel)]="this.deArmure"
+                       (ngModelChange)="this.setArmure()"
+                       required>
+            </div>
+        </div>
+        <div *ngIf="this.armure">
+            <div [innerHTML]="this.armure.nom"></div>
+        </div>
+        <div class="form-row">
             <div class="col-md-2 mb-3">
                 <label for="dePuissanceArme">Dé de puissance
                 </label>

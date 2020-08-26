@@ -1,0 +1,721 @@
+{
+    "titles": [
+        "Armes de guerre",
+        "Prix",
+        "Dgts (P)",
+        "Dgts (M)",
+        "Critique",
+        "Facteur de portée",
+        "Poids",
+        "Type",
+        "Source"
+    ],
+    "Categories": [
+        {
+            "title": "Combat à mains nues",
+            "armes": [
+                {
+                    "nom": "<a href=\"#desc116\">Crochet</a>",
+                    "prix": "8 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x4",
+                    "factPort": "—",
+                    "poids": "500 g",
+                    "type": "Perforant",
+                    "source": "<span class=\"source\">Dragon Magazine #318</span>"
+                }
+            ]
+        },
+        {
+            "title": "Armes de corps à corps légères",
+            "armes": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-armure-a-pointes.htm\">Armure à pointes</a>",
+                    "prix": "—",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "—",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-casque-a-cornes.htm\">Casque à cornes</a>",
+                    "prix": "25 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "2 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-casque-a-pointe.htm\">Casque à pointe</a>",
+                    "prix": "10 po",
+                    "dgtP": "1d2",
+                    "dgtM": "1d3",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-coutelas.htm\">Coutelas</a>",
+                    "prix": "15 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "19–20/x2",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-STORM.htm\"><span class=\"source\">Stormwrack</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-epee-courte.htm\">Épée courte</a>",
+                    "prix": "10 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "19-20/x2",
+                    "factPort": "—",
+                    "poids": "1 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-hachette.htm\">Hachette</a>",
+                    "prix": "6 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-jambiya.htm\">Jambiya</a>",
+                    "prix": "4 po",
+                    "dgtP": "1d2",
+                    "dgtM": "1d3",
+                    "crit": "18–20/x2",
+                    "factPort": "—",
+                    "poids": "1 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-kukri.htm\">Kukri</a>",
+                    "prix": "8 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "18-20/x2",
+                    "factPort": "—",
+                    "poids": "1 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-lancette-gehennienne.htm\">Lancette géhennienne</a>",
+                    "prix": "7 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "18-20/x2",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PLH.htm\"><span class=\"source\">Le Guide du Voyageur Planaire</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-marteau-leger.htm\">Marteau léger</a>",
+                    "prix": "1 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x2",
+                    "factPort": "6 m",
+                    "poids": "1 kg",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-matraque.htm\">Matraque</a><sup>3</sup>",
+                    "prix": "1 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "1 kg",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-pic-de-guerre-leger.htm\">Pic de guerre léger</a>",
+                    "prix": "4 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x4",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-piolet.htm\">Piolet</a>",
+                    "prix": "25 po",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x4",
+                    "factPort": "—",
+                    "poids": "2,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-pourfendeuse.htm\">Pourfendeuse</a>",
+                    "prix": "5 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "500 g",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PLH.htm\"><span class=\"source\">Le Guide du Voyageur Planaire</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-rectelame.htm\">Rectelame</a>",
+                    "prix": "7 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "19-20/x2",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PLH.htm\"><span class=\"source\">Le Guide du Voyageur Planaire</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-rondache.htm\">Rondache</a>",
+                    "prix": "—",
+                    "dgtP": "1d2",
+                    "dgtM": "1d3",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "—",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-rondache-a-pointes.htm\">Rondache à pointes</a>",
+                    "prix": "—",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "—",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armes de corps à corps à une main",
+            "armes": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-casse-tete.htm\">Casse-tête</a><sup>3</sup>",
+                    "prix": "2 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "6 kg",
+                    "type": "Contondant",
+                    "source": ""
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-cimeterre.htm\">Cimeterre</a>",
+                    "prix": "15 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "18-20/x2",
+                    "factPort": "—",
+                    "poids": "2 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-durelame-chondathienne.htm\">Durelame chondathienne</a>",
+                    "prix": "315 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "19–20/x2",
+                    "factPort": "—",
+                    "poids": "2,5 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-ecu.htm\">Écu</a>",
+                    "prix": "—",
+                    "dgtP": "1d3",
+                    "dgtM": "1d4",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "—",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-ecu-a-pointes.htm\">Écu à pointes</a>",
+                    "prix": "—",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "—",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-epee-longue.htm\">Épée longue</a>",
+                    "prix": "15 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "19-20/x2",
+                    "factPort": "—",
+                    "poids": "2 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleau-d-arme-leger.htm\">Fléau d’arme léger</a>",
+                    "prix": "8 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-hache-d-arme.htm\">Hache d’arme</a>",
+                    "prix": "10 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "3 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-marteau-de-guerre.htm\">Marteau de guerre</a>",
+                    "prix": "12 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "2,5 kg",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-pic-de-guerre-lourd.htm\">Pic de guerre lourd</a>",
+                    "prix": "6 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x4",
+                    "factPort": "—",
+                    "poids": "3 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-pilum.htm\">Pilum</a><sup>4</sup>",
+                    "prix": "5 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "6 m",
+                    "poids": "3 kg",
+                    "type": "Perforant",
+                    "source": "<span class=\"source\">Dragon Magazine #335</span>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-rapiere.htm\">Rapière</a>",
+                    "prix": "20 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "18-20/x2",
+                    "factPort": "—",
+                    "poids": "1 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-sabre.htm\">Sabre</a>",
+                    "prix": "20 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "19–20/x2",
+                    "factPort": "—",
+                    "poids": "2 kg",
+                    "type": "Tranchant ou Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RO.htm\"><span class=\"source\">Royaumes Oubliés</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-trident.htm\">Trident</a>",
+                    "prix": "15 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x2",
+                    "factPort": "3 m",
+                    "poids": "2 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armes de corps à corps à deux mains",
+            "armes": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-cimeterre-a-deux-mains.htm\">Cimeterre à deux mains</a>",
+                    "prix": "75 po",
+                    "dgtP": "1d6",
+                    "dgtM": "2d4",
+                    "crit": "18-20/x2",
+                    "factPort": "—",
+                    "poids": "4 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-corseque.htm\">Corsèque</a><sup>4</sup>",
+                    "prix": "10 po",
+                    "dgtP": "1d6",
+                    "dgtM": "2d4",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "6 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-coutille.htm\">Coutille</a><sup>4</sup>",
+                    "prix": "5 po",
+                    "dgtP": "1d8",
+                    "dgtM": "1d10",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "5 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-epee-a-deux-mains.htm\">Épée à deux mains</a>",
+                    "prix": "50 po",
+                    "dgtP": "1d10",
+                    "dgtM": "2d6",
+                    "crit": "19–20/x2",
+                    "factPort": "—",
+                    "poids": "4 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-etripeur.htm\">Etripeur</a>",
+                    "prix": "55 po",
+                    "dgtP": "1d10",
+                    "dgtM": "2d6",
+                    "crit": "19-20/x2",
+                    "factPort": "—",
+                    "poids": "4,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PLH.htm\"><span class=\"source\">Le Guide du Voyageur Planaire</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-faux.htm\">Faux</a>",
+                    "prix": "18 po",
+                    "dgtP": "1d6",
+                    "dgtM": "2d4",
+                    "crit": "x4",
+                    "factPort": "—",
+                    "poids": "5 kg",
+                    "type": "Perforant ou tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleau-d-arme-lourd.htm\">Fléau d’arme lourd</a>",
+                    "prix": "15 po",
+                    "dgtP": "1d8",
+                    "dgtM": "1d10",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "5 kg",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-grande-hache.htm\">Grande hache</a>",
+                    "prix": "20 po",
+                    "dgtP": "1d10",
+                    "dgtM": "1d12",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "6 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-guisarme.htm\">Guisarme</a><sup>4</sup>",
+                    "prix": "9 po",
+                    "dgtP": "1d6",
+                    "dgtM": "2d4",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "6 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-hallebarde.htm\">Hallebarde</a>",
+                    "prix": "10 po",
+                    "dgtP": "1d8",
+                    "dgtM": "1d10",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "6 kg",
+                    "type": "Perforant ou tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-lance-d-arcon.htm\">Lance d’arçon</a><sup>4</sup>",
+                    "prix": "10 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "—",
+                    "poids": "5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-lance-planante.htm\">Lance planante</a>",
+                    "prix": "6 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "19–20/x2",
+                    "factPort": "9 m",
+                    "poids": "2,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-massue.htm\">Massue</a>",
+                    "prix": "5 po",
+                    "dgtP": "1d8",
+                    "dgtM": "1d10",
+                    "crit": "x2",
+                    "factPort": "—",
+                    "poids": "4 kg",
+                    "type": "Contondant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armes à distance",
+            "armes": [
+                {
+                    "nom": "<a href=\"#desc60\">Arc court</a>",
+                    "prix": "30 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x3",
+                    "factPort": "18 m",
+                    "poids": "1 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc61\">Arc court composite</a>",
+                    "prix": "75 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x3",
+                    "factPort": "21 m",
+                    "poids": "1 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc62\">Arc court en os de dragon</a>",
+                    "prix": "375 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x3",
+                    "factPort": "27 m",
+                    "poids": "1 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-DRACO.htm\"><span class=\"source\">Draconomicon</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc63\">Arc long</a>",
+                    "prix": "75 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "30 m",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc64\">Arc long aquatique</a>",
+                    "prix": "400 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "18 m",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc65\">Arc long aquatique composite</a>",
+                    "prix": "400 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "21 m",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc66\">Arc long composite</a>",
+                    "prix": "100 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "33 m",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"#desc67\">Arc long en os de dragon</a>",
+                    "prix": "400 po",
+                    "dgtP": "1d6",
+                    "dgtM": "1d8",
+                    "crit": "x3",
+                    "factPort": "39 m",
+                    "poids": "1,5 kg",
+                    "type": "Perforant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-DRACO.htm\"><span class=\"source\">Draconomicon</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Munitions",
+            "armes": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleche-balise.htm\">Flèche balise</a>",
+                    "prix": "5 pa",
+                    "dgtP": "—",
+                    "dgtM": "—",
+                    "crit": "—",
+                    "factPort": "—",
+                    "poids": "100 g",
+                    "type": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleche-marine.htm\">Flèche marine</a>",
+                    "prix": "7 po",
+                    "dgtP": "—",
+                    "dgtM": "—",
+                    "crit": "—",
+                    "factPort": "spécial",
+                    "poids": "100 g",
+                    "type": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleche-planante.htm\">Flèche planante</a>",
+                    "prix": "8 po",
+                    "dgtP": "—",
+                    "dgtM": "—",
+                    "crit": "—",
+                    "factPort": "spécial",
+                    "poids": "100 g",
+                    "type": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleches.htm\">Flèches</a> (20)",
+                    "prix": "1 po",
+                    "dgtP": "—",
+                    "dgtM": "—",
+                    "crit": "—",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleches-emousses.htm\">Flèches émoussés</a> (20)<sup>3</sup>",
+                    "prix": "1 po",
+                    "dgtP": "—",
+                    "dgtM": "—",
+                    "crit": "—",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RW.htm\"><span class=\"source\">Races of the Wild</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-fleches-souffle-de-dragon.htm\">Flèches souffle de dragon</a> (20)",
+                    "prix": "50 po",
+                    "dgtP": "—",
+                    "dgtM": "—",
+                    "crit": "—",
+                    "factPort": "—",
+                    "poids": "1,5 kg",
+                    "type": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RW.htm\"><span class=\"source\">Races of the Wild</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armes de jet",
+            "armes": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-hache-de-lancer.htm\">Hache de lancer</a>",
+                    "prix": "8 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x2",
+                    "factPort": "3 m",
+                    "poids": "2 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/arme-lame-de-lancer.htm\">Lame de lancer</a>",
+                    "prix": "9 po",
+                    "dgtP": "1d4",
+                    "dgtM": "1d6",
+                    "crit": "x3",
+                    "factPort": "3 m",
+                    "poids": "2,5 kg",
+                    "type": "Tranchant",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-NAF.htm\"><span class=\"source\">Nyambe - African Adventures</span></a>"
+                }
+            ]
+        }
+    ]
+}

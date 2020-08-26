@@ -117,3 +117,25 @@ export interface CategoriesArmes {
     Categories: CategorieArmes[];
 }
 
+export interface Armure {
+    nom: string;
+    prix: string;
+    bonArm: string;
+    bonDext: string;
+    malArm: string;
+    RisqEch: string;
+    vitess1: string;
+    vitess2: string;
+    poids: string;
+    source: string;
+}
+
+export interface CategorieArmures {
+    title: string;
+    armures: Armure[];
+}
+
+export interface CategoriesArmures {
+    titles: string[];
+    Categories: CategorieArmures[];
+}

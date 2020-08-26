@@ -1,0 +1,768 @@
+{
+    "titles": [
+        "Armure",
+        "Prix",
+        "Bonus d’armure",
+        "Bonus de Dex maximal",
+        "Malus d’armure aux tests",
+        "Risque d’échec des sorts profanes",
+        "Vitesse",
+        "Poids",
+        "Source"
+    ],
+    "Categories": [
+        {
+            "title": "Vêtements",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-robe-lourde.htm\">Robe lourde</a>",
+                    "prix": "200 po",
+                    "bonArm": "+1",
+                    "bonDext": "+10",
+                    "malArm": "0",
+                    "RisqEch": "0 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-GEMM.htm\"><span class=\"source\">Manuel du Joueur de Gemmaline</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armures légères",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-matelassee.htm\">Armure matelassée</a>",
+                    "prix": "5 po",
+                    "bonArm": "+1",
+                    "bonDext": "+8",
+                    "malArm": "0",
+                    "RisqEch": "5 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-retiaire.htm\">Armure de rétiaire</a>",
+                    "prix": "10 po",
+                    "bonArm": "+1",
+                    "bonDext": "+6",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "2.5 kg",
+                    "source": "<span class=\"source\">Dragon Magazine #303</span>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-samnite.htm\">Armure de samnite</a>",
+                    "prix": "10 po",
+                    "bonArm": "+1",
+                    "bonDext": "+8",
+                    "malArm": "-1",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "9 m",
+                    "poids": "5 kg",
+                    "source": "<span class=\"source\">Dragon Magazine #303</span>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-cuir.htm\">Armure de cuir</a>",
+                    "prix": "10 po",
+                    "bonArm": "+2",
+                    "bonDext": "+6",
+                    "malArm": "0",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "7.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-corde.htm\">Armure de corde</a>",
+                    "prix": "15 po",
+                    "bonArm": "+2",
+                    "bonDext": "+5",
+                    "malArm": "-1",
+                    "RisqEch": "15 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "7.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-STORM.htm\"><span class=\"source\">Stormwrack</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-vetements-renforces.htm\">Vêtements renforcés</a>",
+                    "prix": "20 po",
+                    "bonArm": "+2",
+                    "bonDext": "+6",
+                    "malArm": "-1",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "6 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-DOU.htm\"><span class=\"source\">Drow of the Underdark</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-cuir-de-cameleon.htm\">Cuir de caméléon</a>",
+                    "prix": "360 po",
+                    "bonArm": "+2",
+                    "bonDext": "+6",
+                    "malArm": "0",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "7.5 kg",
+                    "source": ""
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-manteau-de-plumes.htm\">Manteau de plumes</a>",
+                    "prix": "1 000 po",
+                    "bonArm": "+2",
+                    "bonDext": "+6",
+                    "malArm": "0",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "1.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-SDS.htm\"><span class=\"source\">Sandstorm</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-bois.htm\">Armure de bois</a>",
+                    "prix": "15 po",
+                    "bonArm": "+3",
+                    "bonDext": "+4",
+                    "malArm": "-3",
+                    "RisqEch": "15 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "7.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-AE.htm\"><span class=\"source\">Arms and Equipment</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-d-os.htm\">Armure d’os</a>",
+                    "prix": "20 po",
+                    "bonArm": "+3",
+                    "bonDext": "+4",
+                    "malArm": "-3",
+                    "RisqEch": "15 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "10 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-OA.htm\"><span class=\"source\">Legend of Five Rings - Guide de l'orient</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-cuir-cloutee.htm\">Armure de cuir cloutée</a>",
+                    "prix": "25 po",
+                    "bonArm": "+3",
+                    "bonDext": "+5",
+                    "malArm": "-1",
+                    "RisqEch": "15 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "10 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-d-ashigaru.htm\">Armure d’ashigaru</a>",
+                    "prix": "25 po",
+                    "bonArm": "+3",
+                    "bonDext": "+5",
+                    "malArm": "-1",
+                    "RisqEch": "15 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "10 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-OA.htm\"><span class=\"source\">Legend of Five Rings - Guide de l'orient</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-crochue.htm\">Armure crochue</a>",
+                    "prix": "65 po",
+                    "bonArm": "+3",
+                    "bonDext": "+4",
+                    "malArm": "-2",
+                    "RisqEch": "15 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "10 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PLH.htm\"><span class=\"source\">Le Guide du Voyageur Planaire</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-en-peau-de-requin.htm\">Armure en peau de requin</a>",
+                    "prix": "85 po",
+                    "bonArm": "+3",
+                    "bonDext": "+6",
+                    "malArm": "-1",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "7.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-chemise-de-mailles.htm\">Chemise de mailles</a>",
+                    "prix": "100 po",
+                    "bonArm": "+4",
+                    "bonDext": "+4",
+                    "malArm": "-2",
+                    "RisqEch": "20 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "12.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-resine-kaorti.htm\">Armure de résine kaorti</a>",
+                    "prix": "250 po",
+                    "bonArm": "+4",
+                    "bonDext": "+3",
+                    "malArm": "-4",
+                    "RisqEch": "25 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "10 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-FF.htm\"><span class=\"source\">Fiend Folio</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-cuir-de-gargouille.htm\">Armure de cuir de gargouille</a>",
+                    "prix": "1 400 po",
+                    "bonArm": "+4",
+                    "bonDext": "+5",
+                    "malArm": "-1",
+                    "RisqEch": "15 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "15 kg",
+                    "source": ""
+                }
+            ]
+        },
+        {
+            "title": "Armures intermédiaires",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-peau.htm\">Armure de peau</a>",
+                    "prix": "15 po",
+                    "bonArm": "+3",
+                    "bonDext": "+4",
+                    "malArm": "-3",
+                    "RisqEch": "20 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "12.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-brigandine.htm\">Brigandine</a>",
+                    "prix": "30 po",
+                    "bonArm": "+4",
+                    "bonDext": "+2",
+                    "malArm": "-5",
+                    "RisqEch": "30 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "20 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-AE.htm\"><span class=\"source\">Arms and Equipment</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-d-ecailles.htm\">Armure d’écailles</a>",
+                    "prix": "50 po",
+                    "bonArm": "+4",
+                    "bonDext": "+3",
+                    "malArm": "-4",
+                    "RisqEch": "25 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "15 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-plates-de-bois.htm\">Plates de bois</a>",
+                    "prix": "50 po",
+                    "bonArm": "+4",
+                    "bonDext": "+3",
+                    "malArm": "-4",
+                    "RisqEch": "25 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "12.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-NAF.htm\"><span class=\"source\">Nyambe - African Adventures</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-chitine.htm\">Armure de chitine</a>",
+                    "prix": "75 po",
+                    "bonArm": "+4",
+                    "bonDext": "+4",
+                    "malArm": "-3",
+                    "RisqEch": "30 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "10 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-cotte-de-mailles.htm\">Cotte de mailles</a>",
+                    "prix": "150 po",
+                    "bonArm": "+5",
+                    "bonDext": "+2",
+                    "malArm": "-5",
+                    "RisqEch": "30 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "20 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-lamellaire.htm\">Armure lamellaire</a>",
+                    "prix": "150 po",
+                    "bonArm": "+5",
+                    "bonDext": "+3",
+                    "malArm": "-4",
+                    "RisqEch": "30 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "17.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-AE.htm\"><span class=\"source\">Arms and Equipment</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-cuirasse.htm\">Cuirasse</a>",
+                    "prix": "200 po",
+                    "bonArm": "+5",
+                    "bonDext": "+3",
+                    "malArm": "-4",
+                    "RisqEch": "25 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "15 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armures lourdes",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-clibanion.htm\">Clibanion</a>",
+                    "prix": "200 po",
+                    "bonArm": "+6",
+                    "bonDext": "+0",
+                    "malArm": "-7",
+                    "RisqEch": "40 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "22.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-crevice.htm\">Crevice</a>",
+                    "prix": "250 po",
+                    "bonArm": "+6",
+                    "bonDext": "+1",
+                    "malArm": "-6",
+                    "RisqEch": "35 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "17.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-corail-vivant.htm\">Corail vivant</a>",
+                    "prix": "16 000 po",
+                    "bonArm": "+6",
+                    "bonDext": "+3",
+                    "malArm": "-4",
+                    "RisqEch": "20 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "15 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-STORM.htm\"><span class=\"source\">Stormwrack</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-a-plaques.htm\">Armure à plaques</a>",
+                    "prix": "600 po",
+                    "bonArm": "+7",
+                    "bonDext": "+0",
+                    "malArm": "-7",
+                    "RisqEch": "40 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "25 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-armure-de-samurai.htm\">Armure de samurai</a>",
+                    "prix": "1 000 po",
+                    "bonArm": "+7",
+                    "bonDext": "+2",
+                    "malArm": "-5",
+                    "RisqEch": "40 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "22.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-OA.htm\"><span class=\"source\">Legend of Five Rings - Guide de l'orient</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-harnois.htm\">Harnois</a>",
+                    "prix": "1 500 po",
+                    "bonArm": "+8",
+                    "bonDext": "+1",
+                    "malArm": "-6",
+                    "RisqEch": "35 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "25 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-harnois-lourd.htm\">Harnois lourd</a>",
+                    "prix": "2 000 po",
+                    "bonArm": "+9",
+                    "bonDext": "+0",
+                    "malArm": "-8",
+                    "RisqEch": "40 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "50 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-cristal-deodritique.htm\">Cristal deodritique</a>",
+                    "prix": "2 000 po",
+                    "bonArm": "+9",
+                    "bonDext": "+0",
+                    "malArm": "-8",
+                    "RisqEch": "40 %",
+                    "vitess1": "6 m<sup>2</sup>",
+                    "vitess2": "4.5 m<sup>2</sup>",
+                    "poids": "30 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-combinaison-de-mechanus.htm\">Combinaison de Méchanus</a>",
+                    "prix": "1 750 po",
+                    "bonArm": "+10",
+                    "bonDext": "+0",
+                    "malArm": "-10",
+                    "RisqEch": "50 %",
+                    "vitess1": "4.5 m<sup>2</sup>",
+                    "vitess2": "3 m<sup>2</sup>",
+                    "poids": "37.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PLH.htm\"><span class=\"source\">Le Guide du Voyageur Planaire</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Boucliers",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-rondache-en-cuir.htm\">Rondache en cuir</a>",
+                    "prix": "2 po",
+                    "bonArm": "+1",
+                    "bonDext": "—",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "1.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-NAF.htm\"><span class=\"source\">Nyambe - African Adventures</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-rondache-en-bois.htm\">Rondache en bois</a>",
+                    "prix": "3 po",
+                    "bonArm": "+1",
+                    "bonDext": "—",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-rondache-en-acier.htm\">Rondache en acier</a>",
+                    "prix": "9 po",
+                    "bonArm": "+1",
+                    "bonDext": "—",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "3 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-targe.htm\">Targe</a>",
+                    "prix": "15 po",
+                    "bonArm": "+1",
+                    "bonDext": "—",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-dastana.htm\">Dastana</a>",
+                    "prix": "25 po",
+                    "bonArm": "+1",
+                    "bonDext": "—",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-AE.htm\"><span class=\"source\">Arms and Equipment</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-bouclier-avaleur.htm\">Bouclier avaleur</a>",
+                    "prix": "50 po",
+                    "bonArm": "+1",
+                    "bonDext": "—",
+                    "malArm": "-1",
+                    "RisqEch": "5 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "5.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RDF.htm\"><span class=\"source\">Races de Faerun</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-ecu-en-bois.htm\">Écu en bois</a>",
+                    "prix": "7 po",
+                    "bonArm": "+2",
+                    "bonDext": "—",
+                    "malArm": "-2",
+                    "RisqEch": "15 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-ecu-en-acier.htm\">Écu en acier</a>",
+                    "prix": "20 po",
+                    "bonArm": "+2",
+                    "bonDext": "—",
+                    "malArm": "-2",
+                    "RisqEch": "15 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "7.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/bouclier-pavois.htm\">Pavois</a>",
+                    "prix": "30 po",
+                    "bonArm": "+4",
+                    "bonDext": "+2",
+                    "malArm": "-10",
+                    "RisqEch": "50 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "22.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armures légères exotiques",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-ecailles-sable.htm\">Ecailles sable</a>",
+                    "prix": "1 000 po",
+                    "bonArm": "+2",
+                    "bonDext": "+10",
+                    "malArm": "0",
+                    "RisqEch": "5 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "1.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-soie-arachnide.htm\">Soie arachnide</a>",
+                    "prix": "450 po",
+                    "bonArm": "+3",
+                    "bonDext": "+8",
+                    "malArm": "-1",
+                    "RisqEch": "10 %",
+                    "vitess1": "9 m",
+                    "vitess2": "6 m",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armures intermédiaires exotiqu",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-tentacules.htm\">Tentacules</a>",
+                    "prix": "315 po",
+                    "bonArm": "+3",
+                    "bonDext": "+5",
+                    "malArm": "-3",
+                    "RisqEch": "20 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "15 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                }
+            ]
+        },
+        {
+            "title": "Armures lourdes exotiques",
+            "armures": [
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-maille-de-pierre.htm\">Maille de pierre</a>",
+                    "prix": "180 po",
+                    "bonArm": "+5",
+                    "bonDext": "+2",
+                    "malArm": "-5",
+                    "RisqEch": "30 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "17.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-harnois-sondeur.htm\">Harnois sondeur</a>",
+                    "prix": "2 000 po",
+                    "bonArm": "+8",
+                    "bonDext": "+1",
+                    "malArm": "-6",
+                    "RisqEch": "35 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "32.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                },
+                {
+                    "nom": "<a href=\"http://www.gemmaline.com/armure-barde-fermee.htm\">Barde fermée</a>",
+                    "prix": "4 000 po",
+                    "bonArm": "+10",
+                    "bonDext": "+0",
+                    "malArm": "—",
+                    "RisqEch": "50 %",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "25 kg",
+                    "source": ""
+                }
+            ]
+        },
+        {
+            "title": "Suppléments",
+            "armures": [
+                {
+                    "nom": "Gantelet d’armes",
+                    "prix": "+8 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "Pointes pour bouclier",
+                    "prix": "+10 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "Flottaison",
+                    "prix": "+50 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "2.5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                },
+                {
+                    "nom": "Pointes pour armure",
+                    "prix": "+50 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-PHB.htm\"><span class=\"source\">Manuel du Joueur</span></a>"
+                },
+                {
+                    "nom": "Enlevage rapide",
+                    "prix": "+50 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "—",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-STORM.htm\"><span class=\"source\">Stormwrack</span></a>"
+                },
+                {
+                    "nom": "Articulation",
+                    "prix": "+60 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "—",
+                    "source": ""
+                },
+                {
+                    "nom": "Lestée",
+                    "prix": "+160 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "10 %",
+                    "vitess1": "6 m",
+                    "vitess2": "4.5 m",
+                    "poids": "15 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                },
+                {
+                    "nom": "Coupe-filet",
+                    "prix": "+200 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "5 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-RW.htm\"><span class=\"source\">Races of the Wild</span></a>"
+                },
+                {
+                    "nom": "Silencieuse",
+                    "prix": "+300 po",
+                    "bonArm": "—",
+                    "bonDext": "—",
+                    "malArm": "—",
+                    "RisqEch": "—",
+                    "vitess1": "—",
+                    "vitess2": "—",
+                    "poids": "1 kg",
+                    "source": "<a href=\"http://www.gemmaline.com/LivreDD3/element-UNDER.htm\"><span class=\"source\">Outre-Terre</span></a>"
+                }
+            ]
+        }
+    ]
+}

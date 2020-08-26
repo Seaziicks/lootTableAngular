@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {MagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
+import {
+    Arme,
+    Armure,
+    CategoriesArmes,
+    CategoriesArmures,
+    MagicalProperty,
+    TablesChances
+} from '../../interface/MonstreGroupe';
 import {HttpClient} from '@angular/common/http';
 import {JSonLoadService} from '../../services/json-load.service';
 
@@ -31,6 +38,14 @@ export class ArmuresComponent implements OnInit {
     allArmuresSpeciales: MagicalProperty[] = [];
     allBoucliersSpeciaux: MagicalProperty[] = [];
 
+    categorieArmure: string;
+    armure: Armure;
+
+    deArmure: number;
+    Categories: number;
+
+    allArmures: CategoriesArmures;
+
     constructor(private  http: HttpClient, private jsonService: JSonLoadService) {
     }
 
@@ -48,6 +63,11 @@ export class ArmuresComponent implements OnInit {
                         );
                     }
                 );
+            }
+        );
+        this.jsonService.getJSON('objets/classique', 'armures').then(
+            (armuresCourantes: any) => {
+                this.allArmures = JSON.parse(armuresCourantes) as CategoriesArmures;
             }
         );
     }
@@ -248,5 +268,13 @@ export class ArmuresComponent implements OnInit {
     getNomsProprieteMagique(): string {
         return this.proprietesMagiques.length < 2 ? this.proprietesMagiques[0].title :
             this.proprietesMagiques[0].title + ' et ' + this.proprietesMagiques[1].title;
+    }
+
+    setArmure() {
+        this.armure = this.allArmures.Categories.find(f => f.title === this.categorieArmure).armures[this.deArmure - 1];
+    }
+
+    getNbArmure() {
+        return this.allArmures.Categories.find(f => f.title === this.categorieArmure).armures.length;
     }
 }
