@@ -44,10 +44,7 @@
                 </select>
             </div>
         </div>
-        <div *ngIf="this.armure">
-            <div><span [innerHTML]="this.armure.nom"></span> <span *ngIf="this.taille"> {{this.taille.taille}} <span *ngIf="this.materiau"> en <span [innerHTML]="this.materiau.nom"></span></span> : {{this.taille.prixHumanoide}}</span></div>
-            <div *ngIf="this.materiau"><span [innerHTML]="this.materiau.nom"></span> : <span>{{materiau.effet}}</span></div>
-        </div>
+
         <div class="form-row">
             <div class="col-md-2 mb-3">
                 <label for="dePuissanceArmure">Dé de puissance (1D3)
@@ -105,7 +102,7 @@
         <h1>Résultat</h1>
         <h3><span [innerHTML]="this.nom"></span> <span
             *ngIf="this.proprietesMagiques.length > 0"> {{this.getNomsProprieteMagique()}}</span></h3>
-        <p>{{this.type}} <span *ngIf="this.armure">- {{this.armure.bonArm}} armure - Bonus +{{this.bonus}}</span></p>
+        <p>{{this.type}}<span *ngIf="this.armure"> - {{this.armure.bonArm}} armure <span *ngIf="this.proprietesMagiques.length > 0">- Bonus +{{this.bonus}}</span></span> <span *ngIf="this.prix"> - Prix : {{this.prix.toLocaleString("fr")}} po</span></p>
 
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
             <h4>{{proprieteMagique.title}}</h4>

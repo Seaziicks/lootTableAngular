@@ -180,6 +180,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
 
     setTaille() {
         this.taille = this.armure.prixParTaille.find(f => f.taille === this.nomTaille);
+        this.prix = +this.taille.prixHumanoide.match(/([0-9]+ )+/)[0].replace(' ', '');
         this.setNom();
     }
 
@@ -198,6 +199,12 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
 
     setMateriau() {
         this.materiau = this.armure.autresMateriaux.find(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1') === this.nomMateriau);
+        this.prix = +this.taille.prixHumanoide.match(/([0-9]+ )+/)[0].replace(' ', '');
+        const prixDuMateriau: number = +this.materiau.prix.match(/([0-9]+ )+/)[0]
+            .replace(' ', '').replace(' ', '');
+        const prixDeBase: number = +this.armure.prixParTaille.find(f => f.taille === 'Moyenne')
+            .prixHumanoide.match(/([0-9]+ )+/)[0].replace(' ', '');
+        this.prix = this.prix * (prixDuMateriau / prixDeBase);
         this.setNom();
     }
 
@@ -223,7 +230,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
         if (this.materiau) {
             this.nom += ' en ' + this.materiau.nom;
         }
-        console.log(this.nom);
+        // console.log(this.nom);
     }
 
     resetHard() {
