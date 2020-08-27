@@ -1,3 +1,7 @@
+/* =====================================================*
+||              Partie autocomplete                    ||
+*===================================================== */
+
 declare interface MonstreGroupe {
   Famille: string;
   Membres: Monstre[];
@@ -43,10 +47,13 @@ declare interface Loot {
 
 
 
-/* ---------------------------------------------------*
-|                  Partie JSon                        |
-*-----------------------------------------------------*/
+/* ====================================================*
+||                 Partie JSon                        ||
+*===================================================== */
 
+/*
+    Partie propriété magique
+*/
 export interface SortedMagicalProperty {
     weakAndSmall: MagicalProperty[];
     moderate: MagicalProperty[];
@@ -82,6 +89,9 @@ export interface Informations {
     data: string[];
 }
 
+/*
+    Partie table de drop
+*/
 export interface TablesChances {
     titles: string[];
     Chances: Chances[];
@@ -95,21 +105,61 @@ export interface Chances {
     currencyType: string;
 }
 
-export interface Arme {
+/*
+  ==================
+  || Partie Objet ||
+  ==================
+*/
+
+/*
+    Partie commune
+*/
+export interface Objet {
     nom: string;
     prix: string;
-    degatsPetit: string;
-    degatsMoyen: string;
-    critique: string;
-    facteurPortee: string;
     poids: string;
-    type: string;
     source: string;
-    degatsParTaille: DegatsParTaille[];
     objetsMagiques: ObjetMagique[];
     autresMateriaux: Materiau[];
 }
 
+export interface Arme extends Objet {
+    degatsPetit: string;
+    degatsMoyen: string;
+    critique: string;
+    facteurPortee: string;
+    type: string;
+    degatsParTaille: DegatsParTaille[];
+}
+
+export interface Armure extends Objet{
+    bonArm: string;
+    bonDext: string;
+    malArm: string;
+    RisqEch: string;
+    vitess1: string;
+    vitess2: string;
+    prixParTaille: PrixParTaille[];
+}
+export interface Materiau {
+    nom: string;
+    prix: string;
+    solidite: string;
+    pointsDeResistance: string;
+    effet: string;
+    source: string;
+}
+
+export interface ObjetMagique {
+    nom: string;
+    prix: string;
+    source: string;
+}
+
+
+/*
+    Partie Arme
+ */
 export interface DegatsParTaille {
     taille: string;
     prix: string;
@@ -128,43 +178,15 @@ export interface CategoriesArmes {
     Categories: CategorieArmes[];
 }
 
-export interface Armure {
-    nom: string;
-    prix: string;
-    bonArm: string;
-    bonDext: string;
-    malArm: string;
-    RisqEch: string;
-    vitess1: string;
-    vitess2: string;
-    poids: string;
-    source: string;
-    prixParTaille: PrixParTaille[];
-    objetsMagiques: ObjetMagique[];
-    autresMateriaux: Materiau[];
-}
-
+/*
+    Partie Armure
+ */
 export interface PrixParTaille {
     taille: string;
     prixHumanoide: string;
     prixNonHumanoide: string;
     poids: string;
     resistance: string;
-}
-
-export interface Materiau {
-    nom: string;
-    prix: string;
-    solidite: string;
-    pointsDeResistance: string;
-    effet: string;
-    source: string;
-}
-
-export interface ObjetMagique {
-    nom: string;
-    prix: string;
-    source: string;
 }
 
 export interface CategorieArmures {

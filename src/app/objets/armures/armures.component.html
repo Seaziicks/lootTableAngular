@@ -1,32 +1,32 @@
 <div style="width: 100%">
     <h1>Ceci est une armure ou un bouclier</h1>
     <form class="needs-validation" id="competenceEffectForm">
-        <div class="form-row">
+        <div class="form-row" *ngIf="!this.isSpecial">
             <div class="form-group col-md-2" *ngIf="this.allArmures">
                 <label for="inputFamilleMonstre">Categorie (1D{{this.allArmures.Categories.length}})</label>
-                <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.categorieArmure"
+                <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.categorieObjet"
                         (ngModelChange)="this.setArmure()"
-                        [name]="'categorieArme'">
-                    <option *ngFor="let armeCourante of this.allArmures.Categories" [value]="armeCourante.title">
-                        {{armeCourante.title}}
+                        [name]="'categorieArmure'">
+                    <option *ngFor="let armureCourante of this.allArmures.Categories" [value]="armureCourante.title">
+                        {{armureCourante.title}}
                     </option>
                 </select>
             </div>
-            <div class="col-md-2 mb-3" *ngIf="this.categorieArmure">
-                <label for="categorieArme">Dé de l'arme (1D{{this.getNbArmure()}})
+            <div class="col-md-2 mb-3" *ngIf="this.categorieObjet">
+                <label for="categorieArmure">Dé de l'armure (1D{{this.getNbArmure()}})
                 </label>
-                <input min="1" [max]="this.getNbArmure()" type="number" class="form-control" id="categorieArme"
-                       name="categorieArme"
-                       placeholder="Categorie de l'arme"
-                       [(ngModel)]="this.deArmure"
+                <input min="1" [max]="this.getNbArmure()" type="number" class="form-control" id="categorieArmure"
+                       name="categorieArmure"
+                       placeholder="Categorie de l'armure"
+                       [(ngModel)]="this.deObjet"
                        (ngModelChange)="this.setArmure()"
                        required>
             </div>
             <div class="form-group col-md-2" *ngIf="this.armure && this.armure.prixParTaille">
-                <label for="tailleArme">Taille Arme (1D{{this.getNbTailleArme()}})</label>
-                <select id="tailleArme" class="form-control" [(ngModel)]="this.nomTaille"
+                <label for="tailleArmure">Taille Armure (1D{{this.getNbTailleArmure()}})</label>
+                <select id="tailleArmure" class="form-control" [(ngModel)]="this.nomTaille"
                         (ngModelChange)="this.setTaille()"
-                        [name]="'tailleArme'">
+                        [name]="'tailleArmure'">
                     <option *ngFor="let taille of this.getNomsTailles()" [value]="taille">
                         {{taille}}
                     </option>
@@ -34,10 +34,10 @@
             </div>
 
             <div class="form-group col-md-2" *ngIf="this.armure && this.armure.autresMateriaux">
-                <label for="typeMateriau">Materiau Arme (1D{{this.getNbMateriaux()}})</label>
+                <label for="typeMateriau">Materiau Armure (1D{{this.getNbMateriaux()}})</label>
                 <select id="typeMateriau" class="form-control" [(ngModel)]="this.nomMateriau"
                         (ngModelChange)="this.setMateriau()"
-                        [name]="'materiauArme'">
+                        [name]="'materiauArmure'">
                     <option *ngFor="let materiau of this.getNomsMateriaux()" [value]="materiau">
                         {{materiau}}
                     </option>
@@ -50,57 +50,43 @@
         </div>
         <div class="form-row">
             <div class="col-md-2 mb-3">
-                <label for="dePuissanceArme">Dé de puissance
+                <label for="dePuissanceArmure">Dé de puissance (1D3)
                 </label>
-                <input min="1" max="3" type="number" class="form-control" id="dePuissanceArme"
-                       name="dePuissanceArme"
-                       placeholder="Puissance de l'arme"
+                <input min="1" max="3" type="number" class="form-control" id="dePuissanceArmure"
+                       name="dePuissanceArmure"
+                       placeholder="Puissance de l'armure"
                        [(ngModel)]="this.dePuissance"
                        required>
             </div>
 
             <div class="col-md-2 mb-3">
-                <label for="DeBonusArme">Dé de bonus
+                <label for="DeBonusArmure">Dé de bonus (1D100)
                 </label>
-                <input min="1" max="100" type="number" class="form-control" id="DeBonusArme"
-                       name="DeBonusArme"
-                       placeholder="Bonus Arme"
+                <input min="1" max="100" type="number" class="form-control" id="DeBonusArmure"
+                       name="DeBonusArmure"
+                       placeholder="Bonus Armure"
                        [(ngModel)]="this.deBonus"
                        (ngModelChange)="this.isBouclier()"
                        required>
             </div>
-                <div *ngIf="this.isSpeciale && this.dePuissance && this.deBonus" style="width: 100%">
+                <div *ngIf="this.isSpecial && this.dePuissance && this.deBonus" style="width: 100%">
                     <h3>{{this.type}}</h3>
                     <div class="col-md-2 mb-3">
-                        <label for="ArmeSpec">Dé spécial
+                        <label for="Spec">Dé spécial (1D{{this.getNbSpecials()}})
                         </label>
-                        <input min="1" [max]="this.getNbSpecials()" type="number" class="form-control" id="ArmeSpec"
-                               name="ArmeSpec"
-                               placeholder="Arme Spéciale"
+                        <input min="1" [max]="this.getNbSpecials()" type="number" class="form-control" id="Spec"
+                               name="Spec"
+                               placeholder="Spéciale"
                                [(ngModel)]="this.deSpecial"
                                (ngModelChange)="this.getSpecial()"
                                required>
                     </div>
                 </div>
 
-                <div *ngIf="!this.isSpeciale && this.dePuissance && this.deBonus" style="width: 100%">
-                    <h3>Type</h3>
-                    <div class="col-md-2 mb-3">
-                        <label for="TypeArme">Dé type
-                        </label>
-                        <input min="1" max="100" type="number" class="form-control" id="TypeArme"
-                               name="TypeArme"
-                               placeholder="Type arme"
-                               [(ngModel)]="this.deType"
-                               (ngModelChange)="this.setType()"
-                               required>
-                    </div>
-                </div>
-
                 <div *ngIf="this.isMagique" style="width: 100%">
-                    <h3>Cette arme sera magique</h3>
+                    <h3>Cette armure sera magique</h3>
                     <div class="col-md-2 mb-3">
-                        <label for="PropMag">Dé de propriété magique
+                        <label for="PropMag">Dé de propriété magique (1D{{this.getNbProprietesMagiques(this.allProprietesMagiques)}})
                         </label>
                         <input min="1" [max]="this.getNbProprietesMagiques(this.allProprietesMagiques)" type="number" class="form-control"
                                id="PropMag"
@@ -117,8 +103,9 @@
     </form>
     <div style="width: 100%" *ngIf="this.nom">
         <h1>Résultat</h1>
-        <h3>{{this.type}} : <span [innerHTML]="this.nom"></span> <span *ngIf="this.proprietesMagiques.length > 0"> {{this.getNomsProprieteMagique()}}</span></h3>
-        <p>{{this.type}} - Bonus +{{this.bonus}}</p>
+        <h3><span [innerHTML]="this.nom"></span> <span
+            *ngIf="this.proprietesMagiques.length > 0"> {{this.getNomsProprieteMagique()}}</span></h3>
+        <p>{{this.type}} <span *ngIf="this.armure">- {{this.armure.bonArm}} armure - Bonus +{{this.bonus}}</span></p>
 
         <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
             <h4>{{proprieteMagique.title}}</h4>
@@ -137,7 +124,8 @@
             </span>
             <br/>
             <br/>
-            {{proprieteMagique.infos.data}}<br/><br/>
+            <span [innerHTML]="proprieteMagique.infos.data"></span><br/><br/>
         </ng-container>
+        <div *ngIf="this.materiau"><span [innerHTML]="this.materiau.nom"></span> : <span>{{materiau.effet}}</span></div>
     </div>
 </div>
