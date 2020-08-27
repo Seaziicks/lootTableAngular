@@ -7,14 +7,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", rayon d’affaiblissement ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, rayon d’affaiblissement ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -27,14 +23,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", capacité esquive instinctive ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, capacité esquive instinctive ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -52,18 +44,10 @@
             ],
             "infos": {
                 "data": [
-                    "Bras",
-                    "Mains",
-                    "Yeux",
-                    "Transmutation",
-                    "modérée (mineure) ou puissante (majeure) ;",
-                    "NLS",
-                    "6 (mineure) ou 18 (majeure) ;",
-                    "Création d’armes et armures magiques",
-                    "arme magique",
-                    ", doit avoir une réserve d’essentia de 2 (mineure) ou 4 (majeure) ;",
-                    "Prix",
-                    "bonus de +1 (mineure) ou +3 (majeure)."
+                    "<span class=\"transmu\">Transmutation</span> modérée (mineure) ou puissante (majeure) ",
+                    " <span class=\"compobj\">NLS</span> 6 (mineure) ou 18 (majeure) ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-magique.htm\">arme magique</a>, doit avoir une réserve d’essentia de 2 (mineure) ou 4 (majeure) ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1 (mineure) ou +3 (majeure)."
                 ]
             },
             "ul": null,
@@ -76,14 +60,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "légère ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "bouclier entropique",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> légère ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-entropique.htm\">bouclier entropique</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -96,14 +76,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "bénédiction d’arme",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction-d-arme.htm\">bénédiction d’arme</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -116,14 +92,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", Efficacité des sorts accrue ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, Efficacité des sorts accrue ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -136,14 +108,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "Immobilisation de monstre",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">Immobilisation de monstre</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -156,14 +124,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "idiotie",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-idiotie.htm\">idiotie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -176,13 +140,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre du Coeur d’acier ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre du Coeur d’acier ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -196,15 +157,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’armes et armures magiques",
-                    ", Attaque en puissance,",
-                    "arme magique",
-                    "Prix",
-                    "+850 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, Attaque en puissance,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-magique.htm\">arme magique</a> ",
+                    " <span class=\"compobj\">Prix</span> +850 po."
                 ]
             },
             "ul": null,
@@ -217,14 +173,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "contagion",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">contagion</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -237,13 +189,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre du Corbeau blanc ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre du Corbeau blanc ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -257,14 +206,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "réduction d’objet",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-reduction-d-objet.htm\">réduction d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -277,14 +222,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "force de taureau",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -297,14 +238,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "Morsure magique suprême",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-morsure-magique-supreme.htm\">Morsure magique suprême</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -317,14 +254,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "malédiction",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -337,14 +270,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "dissipation de la magie",
-                    "Prix",
-                    "6 000 po."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a> ",
+                    " <span class=\"compobj\">Prix</span> 6 000 po."
                 ]
             },
             "ul": null,
@@ -357,13 +286,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre du Dragon de pierre ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre du Dragon de pierre ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -377,14 +303,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’armes et armures magiques",
-                    "arme magique",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-magique.htm\">arme magique</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -397,14 +319,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "rayon d’épuisement",
-                    "Prix",
-                    "bonus +1."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-d-epuisement.htm\">rayon d’épuisement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +1."
                 ]
             },
             "ul": null,
@@ -417,13 +335,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre de l’Esprit de diamant ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre de l’Esprit de diamant ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -436,13 +351,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre de l’Esprit dévoué ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre de l’Esprit dévoué ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -455,14 +367,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’armes et armures magiques",
-                    ", essoufflement ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, essoufflement ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -475,14 +383,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "rage",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rage.htm\">rage</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -495,14 +399,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "rage",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rage.htm\">rage</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -515,13 +415,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre de la Griffe du tigre ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre de la Griffe du tigre ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -535,14 +432,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "son imaginaire",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"illu\">Illusion</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-son-imaginaire.htm\">son imaginaire</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -555,14 +448,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "baiser du vampire",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-baiser-du-vampire.htm\">baiser du vampire</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -575,13 +464,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "5 ; Création d’armes et d’armures magiques,",
-                    "regain d’assurance",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " Création d’armes et d’armures magiques,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-regain-d-assurance.htm\">regain d’assurance</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -594,14 +480,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "pierre magique",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-pierre-magique.htm\">pierre magique</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -615,15 +497,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "explosion rayonnante d’Ayailla",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-rayonnante-d-ayailla.htm\">explosion rayonnante d’Ayailla</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -637,14 +514,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "[lumière] faible ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "lumière du jour",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> [lumière] faible ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">lumière du jour</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -657,13 +530,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre de la Main d’ombre ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre de la Main d’ombre ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -676,14 +546,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "soins légers",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-legers.htm\">soins légers</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -696,14 +562,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", arme acérée ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, arme acérée ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -716,14 +578,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "clignotement",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">clignotement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -736,14 +594,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "coup au but",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-coup-au-but.htm\">coup au but</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -756,14 +610,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être un orque ou sang orque ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être un orque ou sang orque ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -776,13 +626,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre du Soleil couchant ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre du Soleil couchant ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -795,14 +642,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "cécité/surdité",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cecite-surdite.htm\">cécité/surdité</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -815,13 +658,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -834,13 +674,10 @@
             ],
             "infos": {
                 "data": [
-                    "Evocation faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit connaître au moins une manoeuvre du Vent du désert ;",
-                    "Prix",
-                    "bonus de +1."
+                    "Evocation faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit connaître au moins une manoeuvre du Vent du désert ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -855,14 +692,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -875,15 +708,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "agrandissement",
-                    "rapetissement",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement.htm\">agrandissement</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">rapetissement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -896,14 +724,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être du sous-type Air ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être du sous-type Air ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -917,14 +741,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "rayon affaiblissant",
-                    "Prix",
-                    "bonus +3."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-affaiblissant.htm\">rayon affaiblissant</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +3."
                 ]
             },
             "ul": null,
@@ -937,15 +757,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "(Chaos) modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "marteau du Chaos",
-                    ", alignement chaotique ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> (Chaos) modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-marteau-du-chaos.htm\">marteau du Chaos</a>, alignement chaotique ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -958,14 +773,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être du sous-type Eau ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être du sous-type Eau ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -978,14 +789,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "invisibilité",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"illu\">Illusion</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -998,14 +805,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "rage",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rage.htm\">rage</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1018,14 +821,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "soif de sang",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-soif-de-sang.htm\">soif de sang</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1038,14 +837,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "grâce féline",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1058,15 +853,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "(Loi) modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "courroux de l’ordre",
-                    ", alignement loyal ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> (Loi) modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-courroux-de-l-ordre.htm\">courroux de l’ordre</a>, alignement loyal ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1079,15 +869,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit puissance divine, soit rage ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> ou <span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit puissance divine, soit rage ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1101,14 +886,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "télékinésie",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1124,14 +905,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "fabrication",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fabrication.htm\">fabrication</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1145,15 +922,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "cécité/surdité",
-                    "lumière brûlante",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cecite-surdite.htm\">cécité/surdité</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-brulante.htm\">lumière brûlante</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1166,14 +938,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "esquilles",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-esquilles.htm\">esquilles</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -1186,14 +954,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Asservissement d’élémentaire",
-                    "contrat",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-asservissement-d-elementaire-1120.htm#1120\">Asservissement d’élémentaire</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contrat.htm\">contrat</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1206,14 +970,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée [Bien] ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être un paladin ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée [Bien] ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être un paladin ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1226,13 +986,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "Prix",
-                    "1 000po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 000po."
                 ]
             },
             "ul": null,
@@ -1246,17 +1003,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "brume acide",
-                    "flèche acide de Melf",
-                    ", tempête acide ou tempête vengeresse ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> ou <span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-acide.htm\">brume acide</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleche-acide-de-melf.htm\">flèche acide de Melf</a>, tempête acide ou tempête vengeresse ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1269,17 +1019,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "brume acide",
-                    "flèche acide de Melf",
-                    ", tempête acide ou tempête vengeresse ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> ou <span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-acide.htm\">brume acide</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleche-acide-de-melf.htm\">flèche acide de Melf</a>, tempête acide ou tempête vengeresse ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1293,14 +1036,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "annulation d’enchantement",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-annulation-d-enchantement.htm\">annulation d’enchantement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1313,14 +1052,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1333,14 +1068,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -1353,14 +1084,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "(coercition) modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "confusion",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"enchen\">Enchantement</span> (coercition) modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-confusion.htm\">confusion</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1373,14 +1100,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "liberté de mouvement",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1393,14 +1116,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "télékinésie",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1413,14 +1132,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "dessiccation",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dessiccation.htm\">dessiccation</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1433,14 +1148,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "fracassement",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">fracassement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1453,14 +1164,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "dissipation suprême",
-                    "Prix",
-                    "79 200 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-supreme.htm\">dissipation suprême</a> ",
+                    " <span class=\"compobj\">Prix</span> 79 200 po."
                 ]
             },
             "ul": null,
@@ -1473,14 +1180,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "terreur",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-terreur.htm\">terreur</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1493,14 +1196,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "puissance divine",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-puissance-divine.htm\">puissance divine</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1513,14 +1212,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "fracassement",
-                    "Prix",
-                    "bonus de +2 pour les armes de corps à corps, +3 pour les armes à distance."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">fracassement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2 pour les armes de corps à corps, +3 pour les armes à distance."
                 ]
             },
             "ul": null,
@@ -1535,15 +1230,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "annihilation de mort-vivant",
-                    "arme spectrale",
-                    "Prix",
-                    "bonus +2."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-annihilation-de-mort-vivant.htm\">annihilation de mort-vivant</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-spectrale.htm\">arme spectrale</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +2."
                 ]
             },
             "ul": null,
@@ -1556,14 +1246,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit lame de feu, soit boule de feu, soit colonne de feu ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit lame de feu, soit boule de feu, soit colonne de feu ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1576,14 +1262,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", moine de niveau 1 ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, moine de niveau 1 ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1596,15 +1278,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "main spectrale",
-                    "Prix",
-                    "bonus +3."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-main-spectrale.htm\">main spectrale</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +3."
                 ]
             },
             "ul": null,
@@ -1617,14 +1294,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit appel de la foudre, soit éclair ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit appel de la foudre, soit éclair ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1637,14 +1310,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit appel de la foudre, soit éclair ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit appel de la foudre, soit éclair ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1657,14 +1326,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "coup au but",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-coup-au-but.htm\">coup au but</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1677,14 +1342,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "répulsif",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-repulsif.htm\">répulsif</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1697,14 +1358,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "résistance",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance.htm\">résistance</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1717,14 +1374,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit métal gelé, soit tempête de grêle ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit métal gelé, soit tempête de grêle ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1737,14 +1390,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit métal gelé, soit tempête de grêle ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit métal gelé, soit tempête de grêle ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1759,14 +1408,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "télékinésie",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1779,14 +1424,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit bouclier, soit bouclier de la foi ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit bouclier, soit bouclier de la foi ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1800,14 +1441,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "régénération",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-regeneration.htm\">régénération</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -1820,14 +1457,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit cri, soit cacophonie ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit cri, soit cacophonie ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1840,14 +1473,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être du sous-type Feu ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être du sous-type Feu ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1860,15 +1489,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "Création d’armes et armures psioniques",
-                    ", créature psionique ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ou   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-psioniques-489.htm#489\">Création d’armes et armures psioniques</a>, créature psionique ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1881,14 +1505,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", arme d’impact- ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, arme d’impact- ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1901,15 +1521,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "(Mal) modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "ténèbres maudites",
-                    ", alignement mauvais ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> (Mal) modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a>, alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1922,14 +1537,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "zone d’antimagie",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-zone-d-antimagie.htm\">zone d’antimagie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -1942,14 +1553,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "clairaudience/clairvoyance",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-clairaudience-clairvoyance.htm\">clairaudience/clairvoyance</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -1963,14 +1570,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "transformation de Tenser",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-transformation-de-tenser.htm\">transformation de Tenser</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -1983,14 +1586,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "lance maléfique",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lance-malefique.htm\">lance maléfique</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2003,14 +1602,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "blessure légère",
-                    "Prix",
-                    "bonus +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-legere.htm\">blessure légère</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +1."
                 ]
             },
             "ul": null,
@@ -2024,14 +1619,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Asservissement d’élémentaire",
-                    "contrat",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-asservissement-d-elementaire-1120.htm#1120\">Asservissement d’élémentaire</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contrat.htm\">contrat</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2044,14 +1635,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "métamorphose universelle",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-universelle.htm\">métamorphose universelle</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2064,14 +1651,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "métamorphose universelle",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-universelle.htm\">métamorphose universelle</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2084,14 +1667,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "immobilisation de monstre",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">immobilisation de monstre</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2106,14 +1685,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    ", missile de force ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, missile de force ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2126,14 +1701,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2146,13 +1717,10 @@
             ],
             "infos": {
                 "data": [
-                    "transmutation modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", Quintessence des sorts ;",
-                    "Prix",
-                    "bonus de +1."
+                    "transmutation modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, Quintessence des sorts ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2165,14 +1733,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "rapidité",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapidite.htm\">rapidité</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2185,14 +1749,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "animation d’objets",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2205,15 +1765,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "coffre secret de Léomund",
-                    "réduction d’objet",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-coffre-secret-de-leomund.htm\">coffre secret de Léomund</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-reduction-d-objet.htm\">réduction d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2226,14 +1781,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    ", main impérieuse de Bigby ;",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, main impérieuse de Bigby ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2246,14 +1797,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "renvoi",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">renvoi</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2266,14 +1813,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "champ de force",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">champ de force</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2286,15 +1829,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "immobilisation de monstre",
-                    "projectile magique",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">immobilisation de monstre</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">projectile magique</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2307,14 +1845,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "rouille",
-                    "Prix",
-                    "bonus +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rouille.htm\">rouille</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +1."
                 ]
             },
             "ul": null,
@@ -2327,14 +1861,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "soins légers",
-                    "Prix",
-                    "bonus +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-legers.htm\">soins légers</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +1."
                 ]
             },
             "ul": null,
@@ -2347,15 +1877,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "(Bien) modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "châtiment divin",
-                    ", alignement bon ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> (Bien) modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-divin.htm\">châtiment divin</a>, alignement bon ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2368,14 +1893,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "épée de Mordenkainen",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-epee-de-mordenkainen.htm\">épée de Mordenkainen</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2388,14 +1909,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    ", œil du mage ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, œil du mage ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2409,14 +1926,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "héroïsme",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-heroisme.htm\">héroïsme</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2429,14 +1942,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "changement de plan",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-changement-de-plan.htm\">changement de plan</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2449,14 +1958,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée (plus l’aura du sort stocké) ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    ", niveau 12 de lanceur de sorts ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> modérée (plus l’aura du sort stocké) ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, niveau 12 de lanceur de sorts ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2470,13 +1975,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2489,14 +1991,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Asservissement d’élémentaire",
-                    "contrat",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-asservissement-d-elementaire-1120.htm#1120\">Asservissement d’élémentaire</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contrat.htm\">contrat</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2510,14 +2008,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "animation d’objets",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2530,14 +2024,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Asservissement d’élémentaire",
-                    "contrat",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-asservissement-d-elementaire-1120.htm#1120\">Asservissement d’élémentaire</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contrat.htm\">contrat</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2550,14 +2040,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être du sous-type Terre ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être du sous-type Terre ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2570,14 +2056,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "flèche acide de Melf",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleche-acide-de-melf.htm\">flèche acide de Melf</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -2590,14 +2072,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "télékinésie",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2610,14 +2088,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "divination",
-                    "Prix",
-                    "+4 800 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-divination.htm\">divination</a> ",
+                    " <span class=\"compobj\">Prix</span> +4 800 po."
                 ]
             },
             "ul": null,
@@ -2630,14 +2104,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I ;",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2787,14 +2257,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "dissipation de la magie",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2807,14 +2273,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "force du colosse",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-du-colosse.htm\">force du colosse</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2827,17 +2289,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "Évocation",
-                    "modérées ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "châtiment sacré",
-                    "détection du Mal",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "bonus de +4."
+                    "<span class=\"divi\">Divination</span> et <span class=\"evoca\">Évocation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-sacre.htm\">châtiment sacré</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-mal.htm\">détection du Mal</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4."
                 ]
             },
             "ul": null,
@@ -2850,14 +2305,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2870,14 +2321,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "empoisonnement",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-empoisonnement.htm\">empoisonnement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2890,14 +2337,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "détection de l’invisibilité",
-                    "Prix",
-                    "+30 000 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-l-invisibilite.htm\">détection de l’invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> +30 000 po."
                 ]
             },
             "ul": null,
@@ -2910,14 +2353,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "toile d’araignée",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-toile-d-araignee.htm\">toile d’araignée</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2930,14 +2369,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "renvoi des sorts",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -2952,14 +2387,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "bonus +3."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +3."
                 ]
             },
             "ul": null,
@@ -2972,17 +2403,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiple puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "cécité/surdité",
-                    "éclair",
-                    "flèche acide de Melf",
-                    "lame de feu",
-                    "métal gelé",
-                    "Prix",
-                    "bonus de +3."
+                    "Multiple puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cecite-surdite.htm\">cécité/surdité</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">éclair</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleche-acide-de-melf.htm\">flèche acide de Melf</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lame-de-feu.htm\">lame de feu</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metal-gele.htm\">métal gelé</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -2995,14 +2419,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "bannissement",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-bannissement.htm\">bannissement</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -3015,14 +2435,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "animation d’objets",
-                    "Prix",
-                    "bonus de +4."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4."
                 ]
             },
             "ul": null,
@@ -3035,13 +2451,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ; Création d’armes et d’armures magiques,",
-                    "dégradation vitale suprême",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " Création d’armes et d’armures magiques,   <a href=\"http://www.gemmaline.com/mysteres/mystere-degradation-vitale-supreme.htm\">dégradation vitale suprême</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -3055,14 +2468,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "forte ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "dessiccation",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"necro\">Nécromancie</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dessiccation.htm\">dessiccation</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -3075,16 +2484,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "souhait limité",
-                    "Prix",
-                    "38 500 po ;",
-                    "Coût",
-                    "14 000 po + 3 220 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-souhait-limite.htm\">souhait limité</a> ",
+                    " <span class=\"compobj\">Prix</span> 38 500 po ",
+                    " <span class=\"compobj\">Coût</span> 14 000 po + 3 220 PX."
                 ]
             },
             "ul": null,
@@ -3097,14 +2501,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "14 ;",
-                    "Création d’armes et armures magiques",
-                    "guérison suprême",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 14 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme.htm\">guérison suprême</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -3118,15 +2518,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "désintégration",
-                    "prévoyance",
-                    "Prix",
-                    "bonus de +1."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-prevoyance.htm\">prévoyance</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +1."
                 ]
             },
             "ul": null,
@@ -3139,13 +2534,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ; Création d’armes et d’armures magiques,",
-                    "cercle de téléportation",
-                    "Prix",
-                    "bonus de +4."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " Création d’armes et d’armures magiques,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-teleportation.htm\">cercle de téléportation</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4."
                 ]
             },
             "ul": null,
@@ -3158,14 +2550,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit lame de feu, soit boule de feu, soit colonne de feu ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit lame de feu, soit boule de feu, soit colonne de feu ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -3179,14 +2567,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "(guérison) forte ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "guérison suprême",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"invo\">Invocation</span> (guérison) forte ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme.htm\">guérison suprême</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -3200,14 +2584,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "héroïsme",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-heroisme.htm\">héroïsme</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -3220,15 +2600,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’armes et armures magiques",
-                    "état gazeux",
-                    "flamme éternelle",
-                    "Prix",
-                    "bonus de +4."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-gazeux.htm\">état gazeux</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-flamme-eternelle.htm\">flamme éternelle</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4."
                 ]
             },
             "ul": null,
@@ -3241,14 +2616,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "blessure critique",
-                    "Prix",
-                    "bonus +2."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-critique.htm\">blessure critique</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +2."
                 ]
             },
             "ul": null,
@@ -3262,15 +2633,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "rugissement de léonal",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "bonus de +2."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rugissement-de-leonal.htm\">rugissement de léonal</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> bonus de +2."
                 ]
             },
             "ul": null,
@@ -3283,14 +2649,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "soins intensifs",
-                    "Prix",
-                    "bonus +2."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-intensifs.htm\">soins intensifs</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus +2."
                 ]
             },
             "ul": null,
@@ -3303,14 +2665,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "épée de Mordenkainen",
-                    "Prix",
-                    "bonus de +4."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-epee-de-mordenkainen.htm\">épée de Mordenkainen</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4."
                 ]
             },
             "ul": null,
@@ -3323,14 +2681,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "pétrification",
-                    "Prix",
-                    "bonus de +3."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-petrification.htm\">pétrification</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +3."
                 ]
             },
             "ul": null,
@@ -3343,15 +2697,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "Création d’armes et armures psioniques",
-                    ", flagelleur mental ;",
-                    "Prix",
-                    "bonus de +4 (bonus de +3 si ajouté à une arme illithid)."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ou   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-psioniques-489.htm#489\">Création d’armes et armures psioniques</a>, flagelleur mental ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4 (bonus de +3 si ajouté à une arme illithid)."
                 ]
             },
             "ul": null,
@@ -3364,14 +2713,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’armes et armures magiques",
-                    "absorption d’énergie",
-                    "Prix",
-                    "bonus de +4."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-absorption-d-energie.htm\">absorption d’énergie</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +4."
                 ]
             },
             "ul": null,
@@ -3385,16 +2730,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "Transmutation",
-                    "puissantes ;",
-                    "NLS",
-                    "18 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "cercle de mort",
-                    "Prix",
-                    "bonus de +5."
+                    "<span class=\"necro\">Nécromancie</span> et <span class=\"transmu\">Transmutation</span> puissantes ",
+                    " <span class=\"compobj\">NLS</span> 18 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-mort.htm\">cercle de mort</a> ",
+                    " <span class=\"compobj\">Prix</span> bonus de +5."
                 ]
             },
             "ul": null,

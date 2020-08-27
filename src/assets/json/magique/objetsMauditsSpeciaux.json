@@ -3,22 +3,18 @@
         {
             "title": "Bottes ailées noires",
             "description": [
-                "Ces bottes fonctionnent en tout point comme des <a href=\"http://www.gemmaline.com/objetmagique-bottes-ailees.htm\">bottes ailées</a>, si ce n'est que les ailes qui en sortent sont noirs.",
+                "Ces bottes fonctionnent en tout point comme des",
+                ", si ce n'est que les ailes qui en sortent sont noirs.",
                 "De plus, lorsqu'elles sont utilisées, il y a 1% de chance cumulatif chaque round qu'elles cessent de fonctionner, laissant chuter leur porteur.",
                 "Une fois qu'elles ont ainsi cesser de fonctionner, les bottes ailées noires sont inertes pendant 24 heures, après quoi elles peuvent de nouveau être utilisées et les chances d'arrêt sont réinitialisées."
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’objets merveilleux",
-                    "vol",
-                    "Prix",
-                    "12 000 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vol.htm\">vol</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -27,21 +23,16 @@
         {
             "title": "Bottes de charge ratée",
             "description": [
-                "Ces bottes ressemblent à et fonctionnent comme des <a href=\"http://www.gemmaline.com/objetmagique-bottes-de-sept-lieues.htm\">Bottes de sept lieues</a>.",
+                "Ces bottes ressemblent à et fonctionnent comme des",
                 "Mais lorsque leur porteur essaie de courir, leur porteur doit réussir un test d'Acrobaties (DD 20 ) ou tomber au sol au milieu du placement."
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’objets merveilleux",
-                    "grand pas",
-                    "Prix",
-                    "2 000 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-grand-pas.htm\">grand pas</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 000 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -56,16 +47,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’objets merveilleux",
-                    "Convocation de monstres 2",
-                    "Prix",
-                    "3 300 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-monstres-2.htm\">Convocation de monstres 2</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 300 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -78,18 +64,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’objets merveilleux",
-                    "armure de mage",
-                    "malédiction",
-                    "résistance",
-                    "Prix",
-                    "4 000 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-armure-de-mage.htm\">armure de mage</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance.htm\">résistance</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 000 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -102,14 +81,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "légère ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’objets merveilleux",
-                    "contagion",
-                    "Prix",
-                    "17 000 po."
+                    "<span class=\"abju\">Abjuration</span> légère ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">contagion</a> ",
+                    " <span class=\"compobj\">Prix</span> 17 000 po."
                 ]
             },
             "ul": null,
@@ -122,14 +97,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’objets merveilleux",
-                    "anathème",
-                    "Prix",
-                    "3 000 po."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-anatheme.htm\">anathème</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 000 po."
                 ]
             },
             "ul": null,
@@ -142,16 +113,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "mains brûlantes",
-                    ", aura magique de Nystul ;",
-                    "Prix",
-                    "100 po ;",
-                    "Poids"
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mains-brulantes.htm\">mains brûlantes</a>, aura magique de Nystul ",
+                    " <span class=\"compobj\">Prix</span> 100 po ",
+                    " <span class=\"compobj\">Poids</span> -."
                 ]
             },
             "ul": null,
@@ -164,14 +130,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’objets merveilleux",
-                    "lenteur",
-                    "Prix",
-                    "1 000 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lenteur.htm\">lenteur</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 000 po."
                 ]
             },
             "ul": null,
@@ -184,14 +146,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’objets merveilleux",
-                    "empoisonnement",
-                    "Prix",
-                    "2 400 po."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-empoisonnement.htm\">empoisonnement</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 400 po."
                 ]
             },
             "ul": null,
@@ -206,15 +164,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’objets merveilleux",
-                    "endurance de l’ours",
-                    "malédiction",
-                    "Prix",
-                    "1 300 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-endurance-de-l-ours.htm\">endurance de l’ours</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 300 po."
                 ]
             },
             "ul": null,
@@ -227,14 +180,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "Prix",
-                    "1 000 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 000 po."
                 ]
             },
             "ul": null,
@@ -249,16 +198,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "liberté de mouvement",
-                    "respiration aquatique",
-                    "Prix",
-                    "6 000 po ;",
-                    "Poids"
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-respiration-aquatique.htm\">respiration aquatique</a> ",
+                    " <span class=\"compobj\">Prix</span> 6 000 po ",
+                    " <span class=\"compobj\">Poids</span> -."
                 ]
             },
             "ul": null,
@@ -273,17 +217,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’objets merveilleux",
-                    "vol",
-                    "animation d’objets",
-                    "Prix",
-                    "5 200 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vol.htm\">vol</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a> ",
+                    " <span class=\"compobj\">Prix</span> 5 200 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -297,12 +235,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "17 ; cet objet est considéré comme un artefact rare et ne peut pas être créé ;",
-                    "Poids",
-                    "3,5 kg."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " cet objet est considéré comme un artefact rare et ne peut pas être créé ",
+                    " <span class=\"compobj\">Poids</span> 3,5 kg."
                 ]
             },
             "ul": null,
@@ -315,17 +251,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’objets merveilleux",
-                    "armure de mage",
-                    "malédiction",
-                    "Prix",
-                    "1 200 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-armure-de-mage.htm\">armure de mage</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 200 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -338,14 +268,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’objets merveilleux",
-                    "charme-monstre",
-                    "Prix",
-                    "8 000 po."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre.htm\">charme-monstre</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 000 po."
                 ]
             },
             "ul": null,
@@ -358,16 +284,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "Prix",
-                    "200 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 200 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -380,17 +301,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "rage",
-                    "malédiction",
-                    "Prix",
-                    "17 500 po ;",
-                    "Poids",
-                    "4 kg."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rage.htm\">rage</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 17 500 po ",
+                    " <span class=\"compobj\">Poids</span> 4 kg."
                 ]
             },
             "ul": null,
@@ -403,16 +318,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "liberté de mouvement",
-                    "Prix",
-                    "10 000 po ;",
-                    "Poids",
-                    "5 kg."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po ",
+                    " <span class=\"compobj\">Poids</span> 5 kg."
                 ]
             },
             "ul": null,
@@ -425,16 +335,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "Prix",
-                    "2 100 po ;",
-                    "Poids",
-                    "1 kg."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 100 po ",
+                    " <span class=\"compobj\">Poids</span> 1 kg."
                 ]
             },
             "ul": null,
@@ -447,16 +352,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "Prix",
-                    "1 300 po ;",
-                    "Poids",
-                    "négligeable pour les souples, 1 kg chacun pour les rigides."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 300 po ",
+                    " <span class=\"compobj\">Poids</span> négligeable pour les souples, 1 kg chacun pour les rigides."
                 ]
             },
             "ul": null,
@@ -469,16 +369,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "malédiction",
-                    "Prix",
-                    "7 500 po ;",
-                    "Poids",
-                    "3 kg."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 7 500 po ",
+                    " <span class=\"compobj\">Poids</span> 3 kg."
                 ]
             },
             "ul": null,
@@ -491,16 +386,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’objets merveilleux",
-                    "bouclier de feu",
-                    "Prix",
-                    "28 000 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-feu.htm\">bouclier de feu</a> ",
+                    " <span class=\"compobj\">Prix</span> 28 000 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -513,16 +403,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", niveau 9 de lanceur de sorts, alignement chaotique mauvais ;",
-                    "Prix",
-                    "16 000 po ;",
-                    "Poids",
-                    "4 kg."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, niveau 9 de lanceur de sorts, alignement chaotique mauvais ",
+                    " <span class=\"compobj\">Prix</span> 16 000 po ",
+                    " <span class=\"compobj\">Poids</span> 4 kg."
                 ]
             },
             "ul": null,
@@ -535,15 +420,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’objets merveilleux",
-                    "détection de pensées",
-                    ", son illusoire ;",
-                    "Prix",
-                    "1 800 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-pensees.htm\">détection de pensées</a>, son illusoire ",
+                    " <span class=\"compobj\">Prix</span> 1 800 po."
                 ]
             },
             "ul": null,
@@ -556,14 +436,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’objets merveilleux",
-                    "empoisonnement",
-                    "Prix",
-                    "5 000 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-empoisonnement.htm\">empoisonnement</a> ",
+                    " <span class=\"compobj\">Prix</span> 5 000 po."
                 ]
             },
             "ul": null,
@@ -577,17 +453,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’objets merveilleux",
-                    "nuée grouillante",
-                    ", niveau 8 de lanceur de sorts ;",
-                    "Prix",
-                    "16 500 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">nuée grouillante</a>, niveau 8 de lanceur de sorts ",
+                    " <span class=\"compobj\">Prix</span> 16 500 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -600,17 +470,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "permanence",
-                    "Prix",
-                    "5 500 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-permanence.htm\">permanence</a> ",
+                    " <span class=\"compobj\">Prix</span> 5 500 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -625,10 +489,9 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "17 ; cet objet est considéré comme une créature et ne peut pas être créé."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " cet objet est considéré comme une créature et ne peut pas être créé."
                 ]
             },
             "ul": null,
@@ -642,14 +505,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’objets merveilleux",
-                    "croissance d’épines",
-                    "Prix",
-                    "10 800 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-croissance-d-epines.htm\">croissance d’épines</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 800 po."
                 ]
             },
             "ul": null,
@@ -663,16 +522,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création de sceptres magiques",
-                    "animation des morts",
-                    "Prix",
-                    "24 000 po ;",
-                    "Poids",
-                    "1 kg."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">animation des morts</a> ",
+                    " <span class=\"compobj\">Prix</span> 24 000 po ",
+                    " <span class=\"compobj\">Poids</span> 1 kg."
                 ]
             },
             "ul": null,
@@ -687,15 +541,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "feuille morte",
-                    "malédiction",
-                    "Prix",
-                    "500 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 500 po."
                 ]
             },
             "ul": null,
@@ -708,16 +557,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’armes et armures magiques",
-                    "malédiction",
-                    "Prix",
-                    "1 600 po ;",
-                    "Poids",
-                    "25 kg."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 600 po ",
+                    " <span class=\"compobj\">Poids</span> 25 kg."
                 ]
             },
             "ul": null,
@@ -730,16 +574,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’armes et armures magiques",
-                    "malédiction",
-                    "Prix",
-                    "9 000 po ;",
-                    "Poids",
-                    "25 kg."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 9 000 po ",
+                    " <span class=\"compobj\">Poids</span> 25 kg."
                 ]
             },
             "ul": null,
@@ -752,15 +591,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’objets merveilleux",
-                    "charme-monstre",
-                    "ruse du renard",
-                    "Prix",
-                    "13 000 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre.htm\">charme-monstre</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-ruse-du-renard.htm\">ruse du renard</a> ",
+                    " <span class=\"compobj\">Prix</span> 13 000 po."
                 ]
             },
             "ul": null,
@@ -774,15 +608,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "permanence",
-                    "Prix",
-                    "5 500 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-permanence.htm\">permanence</a> ",
+                    " <span class=\"compobj\">Prix</span> 5 500 po."
                 ]
             },
             "ul": null,
@@ -795,16 +624,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’objets merveilleux",
-                    "danse irrésistible d’Otto",
-                    "Prix",
-                    "30 000 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-danse-irresistible-d-otto.htm\">danse irrésistible d’Otto</a> ",
+                    " <span class=\"compobj\">Prix</span> 30 000 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -817,14 +641,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "19 ;",
-                    "Création d’objets merveilleux",
-                    "exécution",
-                    "Prix",
-                    "80 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 19 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-execution.htm\">exécution</a> ",
+                    " <span class=\"compobj\">Prix</span> 80 000 po."
                 ]
             },
             "ul": null,
@@ -838,17 +658,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’objets merveilleux",
-                    "empoisonnement",
-                    ", soit souhait limité, soit miracle ;",
-                    "Prix",
-                    "62 000 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-empoisonnement.htm\">empoisonnement</a>, soit souhait limité, soit miracle ",
+                    " <span class=\"compobj\">Prix</span> 62 000 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -862,16 +676,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’objets merveilleux",
-                    ", niveau 12 de lanceur de sorts ;",
-                    "Prix",
-                    "4 000 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, niveau 12 de lanceur de sorts ",
+                    " <span class=\"compobj\">Prix</span> 4 000 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -884,17 +693,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’objets merveilleux",
-                    ", force du taureau,",
-                    "malédiction",
-                    "Prix",
-                    "1 300 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, force du taureau, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 300 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -907,14 +710,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "18 ;",
-                    "Création d’objets merveilleux",
-                    "exécution",
-                    "Prix",
-                    "60 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 18 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-execution.htm\">exécution</a> ",
+                    " <span class=\"compobj\">Prix</span> 60 000 po."
                 ]
             },
             "ul": null,
@@ -928,17 +727,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "malédiction",
-                    ", soit souhait, soit miracle ;",
-                    "Prix",
-                    "1 500 po ;",
-                    "Poids",
-                    "2 kg."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a>, soit souhait, soit miracle ",
+                    " <span class=\"compobj\">Prix</span> 1 500 po ",
+                    " <span class=\"compobj\">Poids</span> 2 kg."
                 ]
             },
             "ul": null,
@@ -951,16 +744,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "20 ;",
-                    "Création d’objets merveilleux",
-                    "débilité",
-                    "Prix",
-                    "6 000 po ;",
-                    "Poids",
-                    "2,5 kg."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 20 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-debilite.htm\">débilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 6 000 po ",
+                    " <span class=\"compobj\">Poids</span> 2,5 kg."
                 ]
             },
             "ul": null,
@@ -973,15 +761,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’objets merveilleux",
-                    "malédiction",
-                    "vision dans le noir",
-                    "Prix",
-                    "1000 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-dans-le-noir.htm\">vision dans le noir</a> ",
+                    " <span class=\"compobj\">Prix</span> 1000 po."
                 ]
             },
             "ul": null,
@@ -996,15 +779,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "forte ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’objets merveilleux",
-                    "Énergie négative",
-                    "Prix",
-                    "20 000 po ;",
-                    "Poids"
+                    "<span class=\"transmu\">Transmutation</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">Énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> 20 000 po ",
+                    " <span class=\"compobj\">Poids</span> —."
                 ]
             },
             "ul": null,

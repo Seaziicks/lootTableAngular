@@ -8,17 +8,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "flèche crépusculaire",
-                    "vue perçante",
-                    "Prix",
-                    "4 875 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/mysteres/mystere-fleche-crepusculaire.htm\">flèche crépusculaire</a>,   <a href=\"http://www.gemmaline.com/mysteres/mystere-vue-percante.htm\">vue perçante</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 875 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -31,14 +25,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’armes et armures magiques",
-                    "Cacophonie",
-                    "Prix",
-                    "196 po."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cacophonie.htm\">Cacophonie</a> ",
+                    " <span class=\"compobj\">Prix</span> 196 po."
                 ]
             },
             "ul": null,
@@ -51,14 +41,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "décharge électrique",
-                    "Prix",
-                    "10 408 po."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-decharge-electrique.htm\">décharge électrique</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 408 po."
                 ]
             },
             "ul": null,
@@ -71,14 +57,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "endurance de l’ours",
-                    "Prix",
-                    "26 305 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-endurance-de-l-ours.htm\">endurance de l’ours</a> ",
+                    " <span class=\"compobj\">Prix</span> 26 305 po."
                 ]
             },
             "ul": null,
@@ -91,16 +73,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "anathème",
-                    "Prix",
-                    "267 po ;",
-                    "Coût",
-                    "128 po et 5 pa + 10 PX."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-anatheme.htm\">anathème</a> ",
+                    " <span class=\"compobj\">Prix</span> 267 po ",
+                    " <span class=\"compobj\">Coût</span> 128 po et 5 pa + 10 PX."
                 ]
             },
             "ul": null,
@@ -113,16 +90,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "mur de chaînes",
-                    "Prix",
-                    "29 325 po ;",
-                    "Poids",
-                    "7,5 kg."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-chaines.htm\">mur de chaînes</a> ",
+                    " <span class=\"compobj\">Prix</span> 29 325 po ",
+                    " <span class=\"compobj\">Poids</span> 7,5 kg."
                 ]
             },
             "ul": null,
@@ -135,14 +107,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "frayeur",
-                    "Prix",
-                    "3000 po."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">frayeur</a> ",
+                    " <span class=\"compobj\">Prix</span> 3000 po."
                 ]
             },
             "ul": null,
@@ -155,16 +123,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "bénédiction",
-                    "Prix",
-                    "3 305 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction.htm\">bénédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 305 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -177,18 +140,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’armes et armures magiques",
-                    "flèche acide de Melf",
-                    "graisse",
-                    "toile d’araignée",
-                    "Prix",
-                    "11 182 po ;",
-                    "Coût",
-                    "6042 po + 459 PX."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleche-acide-de-melf.htm\">flèche acide de Melf</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-graisse.htm\">graisse</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-toile-d-araignee.htm\">toile d’araignée</a> ",
+                    " <span class=\"compobj\">Prix</span> 11 182 po ",
+                    " <span class=\"compobj\">Coût</span> 6042 po + 459 PX."
                 ]
             },
             "ul": null,
@@ -201,17 +157,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "regain d’assurance",
-                    "résistance",
-                    "Prix",
-                    "12 302 po ;",
-                    "Coût",
-                    "6302 po + 480 PX."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-regain-d-assurance.htm\">regain d’assurance</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance.htm\">résistance</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 302 po ",
+                    " <span class=\"compobj\">Coût</span> 6302 po + 480 PX."
                 ]
             },
             "ul": null,
@@ -225,14 +175,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "contact glacial",
-                    "Prix",
-                    "20 000 po."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contact-glacial.htm\">contact glacial</a> ",
+                    " <span class=\"compobj\">Prix</span> 20 000 po."
                 ]
             },
             "ul": null,
@@ -245,16 +191,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "empoisonnement",
-                    "Prix",
-                    "8 302 po ;",
-                    "Coût",
-                    "4 302 po + 320 PX."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-empoisonnement.htm\">empoisonnement</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 302 po ",
+                    " <span class=\"compobj\">Coût</span> 4 302 po + 320 PX."
                 ]
             },
             "ul": null,
@@ -267,18 +208,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "Création d’objets merveilleux",
-                    "convocation d’alliés naturels 2",
-                    ", le créateur doit être de niveau 6 ou plus ;",
-                    "Prix",
-                    "10 462 po ;",
-                    "Coût",
-                    "5382 po + 406 PX."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>.   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-allies-naturels-2.htm\">convocation d’alliés naturels 2</a>, le créateur doit être de niveau 6 ou plus ",
+                    " <span class=\"compobj\">Prix</span> 10 462 po ",
+                    " <span class=\"compobj\">Coût</span> 5382 po + 406 PX."
                 ]
             },
             "ul": null,
@@ -291,15 +225,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "force de taureau",
-                    ", le créateur doit être un géant ;",
-                    "Prix",
-                    "26 305 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a>, le créateur doit être un géant ",
+                    " <span class=\"compobj\">Prix</span> 26 305 po."
                 ]
             },
             "ul": null,
@@ -312,19 +241,12 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "pierre magique",
-                    "protection contre les énergies destructives",
-                    "Prix",
-                    "12 850 po ;",
-                    "Coût",
-                    "6 565 po + 500 PX ;",
-                    "Poids",
-                    "7,50 kg."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-pierre-magique.htm\">pierre magique</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-les-energies-destructives.htm\">protection contre les énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 850 po ",
+                    " <span class=\"compobj\">Coût</span> 6 565 po + 500 PX ",
+                    " <span class=\"compobj\">Poids</span> 7,50 kg."
                 ]
             },
             "ul": null,
@@ -337,19 +259,12 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "bourrasque",
-                    "protection contre les énergies destructives",
-                    "Prix",
-                    "12 315 po ;",
-                    "Coût",
-                    "6 315 po + 480 PX ;",
-                    "Poids",
-                    "2 kg."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-bourrasque.htm\">bourrasque</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-les-energies-destructives.htm\">protection contre les énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 315 po ",
+                    " <span class=\"compobj\">Coût</span> 6 315 po + 480 PX ",
+                    " <span class=\"compobj\">Poids</span> 2 kg."
                 ]
             },
             "ul": null,
@@ -362,19 +277,12 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "tempête de neige",
-                    "protection contre les énergies destructives",
-                    "Prix",
-                    "12 850 po ;",
-                    "Coût",
-                    "6 565 po + 500 PX ;",
-                    "Poids",
-                    "2 kg."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-neige.htm\">tempête de neige</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-les-energies-destructives.htm\">protection contre les énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 850 po ",
+                    " <span class=\"compobj\">Coût</span> 6 565 po + 500 PX ",
+                    " <span class=\"compobj\">Poids</span> 2 kg."
                 ]
             },
             "ul": null,
@@ -387,19 +295,12 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "boule de feu",
-                    "protection contre les énergies destructives",
-                    "Prix",
-                    "13 310 po ;",
-                    "Coût",
-                    "6 810 po + 520 PX ;",
-                    "Poids",
-                    "1,50 kg."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-les-energies-destructives.htm\">protection contre les énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 13 310 po ",
+                    " <span class=\"compobj\">Coût</span> 6 810 po + 520 PX ",
+                    " <span class=\"compobj\">Poids</span> 1,50 kg."
                 ]
             },
             "ul": null,
@@ -412,14 +313,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "blessure légère",
-                    "Prix",
-                    "3 302 po."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-legere.htm\">blessure légère</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 302 po."
                 ]
             },
             "ul": null,
@@ -433,15 +330,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "lenteur",
-                    ", métal gelé ou tempête de grêle ;",
-                    "Prix",
-                    "26 316 po."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lenteur.htm\">lenteur</a>, métal gelé ou tempête de grêle ",
+                    " <span class=\"compobj\">Prix</span> 26 316 po."
                 ]
             },
             "ul": null,
@@ -455,14 +347,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ou modérée ;",
-                    "NLS",
-                    "1 (légers), 3 (modérés), 5 (importants), 7 (intensifs) ;",
-                    "Création d’armes et armures magiques",
-                    ", soins légers (légers), soins modérés (modérés), soins importants (importants), soins intensifs (intensifs) ;",
-                    "Prix",
-                    "107 po (légers), 607 po (modérés), 1 507 po (importants), 2 807 po (intensifs)."
+                    "<span class=\"invo\">Invocation</span> faible ou modérée ",
+                    " <span class=\"compobj\">NLS</span> 1 (légers), 3 (modérés), 5 (importants), 7 (intensifs) ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soins légers (légers), soins modérés (modérés), soins importants (importants), soins intensifs (intensifs) ",
+                    " <span class=\"compobj\">Prix</span> 107 po (légers), 607 po (modérés), 1 507 po (importants), 2 807 po (intensifs)."
                 ]
             },
             "ul": null,
@@ -475,16 +363,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "sommeil",
-                    "Prix",
-                    "132 po ;",
-                    "Coût",
-                    "69 po et 5 pa + 5 PX."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil.htm\">sommeil</a> ",
+                    " <span class=\"compobj\">Prix</span> 132 po ",
+                    " <span class=\"compobj\">Coût</span> 69 po et 5 pa + 5 PX."
                 ]
             },
             "ul": null,
@@ -497,16 +380,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "légère ;",
-                    "NLS",
-                    "4 ;",
-                    "Création d’armes et armures magiques",
-                    "blessure légère",
-                    "Prix",
-                    "167 po ;",
-                    "Coût",
-                    "87 po + 6 PX."
+                    "<span class=\"necro\">Nécromancie</span> légère ",
+                    " <span class=\"compobj\">NLS</span> 4 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-legere.htm\">blessure légère</a> ",
+                    " <span class=\"compobj\">Prix</span> 167 po ",
+                    " <span class=\"compobj\">Coût</span> 87 po + 6 PX."
                 ]
             },
             "ul": null,
@@ -519,14 +397,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "cécité/surdité",
-                    "Prix",
-                    "24 805 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cecite-surdite.htm\">cécité/surdité</a> ",
+                    " <span class=\"compobj\">Prix</span> 24 805 po."
                 ]
             },
             "ul": null,
@@ -541,18 +415,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "force de taureau",
-                    "fracassement",
-                    "Prix",
-                    "6 610 po ;",
-                    "Poids",
-                    "1 kg."
+                    "<span class=\"transmu\">Transmutation</span> et <span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">fracassement</a> ",
+                    " <span class=\"compobj\">Prix</span> 6 610 po ",
+                    " <span class=\"compobj\">Poids</span> 1 kg."
                 ]
             },
             "ul": null,
@@ -565,16 +432,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "éclair",
-                    "Prix",
-                    "1 500 po ;",
-                    "Coût",
-                    "750 po + 30 PX."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">éclair</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 500 po ",
+                    " <span class=\"compobj\">Coût</span> 750 po + 30 PX."
                 ]
             },
             "ul": null,
@@ -587,16 +449,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "8 702 po ;",
-                    "Coût",
-                    "45 02 po + 336 PX."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 702 po ",
+                    " <span class=\"compobj\">Coût</span> 45 02 po + 336 PX."
                 ]
             },
             "ul": null,
@@ -609,15 +466,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "animation d’objets",
-                    "vol",
-                    "Prix",
-                    "97 510 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-vol.htm\">vol</a> ",
+                    " <span class=\"compobj\">Prix</span> 97 510 po."
                 ]
             },
             "ul": null,
@@ -630,17 +482,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "feuille morte",
-                    ", soit appel de la foudre, soit éclair ;",
-                    "Prix",
-                    "21 510 po ;",
-                    "Coût",
-                    "10 910 po + 848 PX."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a>, soit appel de la foudre, soit éclair ",
+                    " <span class=\"compobj\">Prix</span> 21 510 po ",
+                    " <span class=\"compobj\">Coût</span> 10 910 po + 848 PX."
                 ]
             },
             "ul": null,
@@ -653,14 +499,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "projectile magique",
-                    "Prix",
-                    "14 334 po."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">projectile magique</a> ",
+                    " <span class=\"compobj\">Prix</span> 14 334 po."
                 ]
             },
             "ul": null,
@@ -673,16 +515,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "légère ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "force de taureau",
-                    "Prix",
-                    "8 306 po ;",
-                    "Coût",
-                    "4 306 po + 320 PX."
+                    "<span class=\"transmu\">Transmutation</span> légère ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 306 po ",
+                    " <span class=\"compobj\">Coût</span> 4 306 po + 320 PX."
                 ]
             },
             "ul": null,
@@ -697,16 +534,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "1 ;",
-                    "Création d’armes et armures magiques",
-                    "feuille morte",
-                    "Prix",
-                    "2 711 po ;",
-                    "Poids",
-                    "250 g."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 1 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 711 po ",
+                    " <span class=\"compobj\">Poids</span> 250 g."
                 ]
             },
             "ul": null,
@@ -719,16 +551,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "ténèbres maudites",
-                    "Prix",
-                    "15 320 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a> ",
+                    " <span class=\"compobj\">Prix</span> 15 320 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -741,15 +568,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "endurance de l’ours",
-                    "grâce féline",
-                    "Prix",
-                    "17 375 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-endurance-de-l-ours.htm\">endurance de l’ours</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a> ",
+                    " <span class=\"compobj\">Prix</span> 17 375 po."
                 ]
             },
             "ul": null,
@@ -762,15 +584,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "endurance de l’ours",
-                    "façonnage de la pierre",
-                    "Prix",
-                    "32 305 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-endurance-de-l-ours.htm\">endurance de l’ours</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-faconnage-de-la-pierre.htm\">façonnage de la pierre</a> ",
+                    " <span class=\"compobj\">Prix</span> 32 305 po."
                 ]
             },
             "ul": null,
@@ -784,14 +601,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "pied marin",
-                    "Prix",
-                    "4 520 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-pied-marin.htm\">pied marin</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 520 po."
                 ]
             },
             "ul": null,
@@ -804,14 +617,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", protection contre les énergies destructive^ le créateur doit être un géant du feu ;",
-                    "Prix",
-                    "18 350 po."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, protection contre les énergies destructive^ le créateur doit être un géant du feu ",
+                    " <span class=\"compobj\">Prix</span> 18 350 po."
                 ]
             },
             "ul": null,
@@ -824,14 +633,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "1 ;",
-                    "Création d’armes et armures magiques",
-                    "détection du Mal",
-                    "Prix",
-                    "60 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 1 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-mal.htm\">détection du Mal</a> ",
+                    " <span class=\"compobj\">Prix</span> 60 po."
                 ]
             },
             "ul": null,
@@ -844,14 +649,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "grâce féline",
-                    "Prix",
-                    "18 315 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 315 po."
                 ]
             },
             "ul": null,
@@ -864,16 +665,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I ;",
-                    "Prix",
-                    "18 315 po ;",
-                    "Coût",
-                    "9315 po + 720 PX."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I ",
+                    " <span class=\"compobj\">Prix</span> 18 315 po ",
+                    " <span class=\"compobj\">Coût</span> 9315 po + 720 PX."
                 ]
             },
             "ul": null,
@@ -886,16 +682,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "désespoir foudroyant",
-                    "Prix",
-                    "5 315 po ;",
-                    "Coût",
-                    "1815 po + 200 PX."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desespoir-foudroyant.htm\">désespoir foudroyant</a> ",
+                    " <span class=\"compobj\">Prix</span> 5 315 po ",
+                    " <span class=\"compobj\">Coût</span> 1815 po + 200 PX."
                 ]
             },
             "ul": null,
@@ -908,14 +699,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    ", protection contre Us énergies destructives, le créateur doit être un géant du givre ;",
-                    "Prix",
-                    "18 320 po."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, protection contre Us énergies destructives, le créateur doit être un géant du givre ",
+                    " <span class=\"compobj\">Prix</span> 18 320 po."
                 ]
             },
             "ul": null,
@@ -930,20 +717,12 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "9 ; Artisan draconique,",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "rayon affaiblissant",
-                    "Prix",
-                    "36 900 po ;",
-                    "Coût",
-                    "18 900 po + 1 440 PX ;",
-                    "Poids",
-                    "1,5 kilo."
+                    "<span class=\"necro\">Nécromancie</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " Artisan draconique,   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-affaiblissant.htm\">rayon affaiblissant</a> ",
+                    " <span class=\"compobj\">Prix</span> 36 900 po ",
+                    " <span class=\"compobj\">Coût</span> 18 900 po + 1 440 PX ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kilo."
                 ]
             },
             "ul": null,
@@ -958,17 +737,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "frayeur",
-                    "vision lucide",
-                    "Prix",
-                    "14 700 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">frayeur</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">vision lucide</a> ",
+                    " <span class=\"compobj\">Prix</span> 14 700 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -981,17 +754,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "manipulation des sons",
-                    ", le créateur doit être un elfe, le créateur doit disposer de l’aptitude musique de barde ;",
-                    "Prix",
-                    "32 330 po ;",
-                    "Coût",
-                    "16 330 po + 1 280 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-manipulation-des-sons.htm\">manipulation des sons</a>, le créateur doit être un elfe, le créateur doit disposer de l’aptitude musique de barde ",
+                    " <span class=\"compobj\">Prix</span> 32 330 po ",
+                    " <span class=\"compobj\">Coût</span> 16 330 po + 1 280 PX."
                 ]
             },
             "ul": null,
@@ -1004,18 +771,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "mise à mort",
-                    "ténèbres maudites",
-                    ", le créateur doit être d’alignement mauvais ;",
-                    "Prix",
-                    "105 550 po ;",
-                    "Coût",
-                    "52 950 po + 4 208 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mise-a-mort.htm\">mise à mort</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a>, le créateur doit être d’alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 105 550 po ",
+                    " <span class=\"compobj\">Coût</span> 52 950 po + 4 208 PX."
                 ]
             },
             "ul": null,
@@ -1031,16 +791,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;  ;",
-                    "Création d’armes et armures magiques",
-                    "champ de force",
-                    ", poing de Bigby,",
-                    "protection contre les projectiles",
-                    "Prix",
-                    "162 600 po ;",
-                    "Coût",
-                    "81 600 po + 6 480 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    "  ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">champ de force</a>, poing de Bigby,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-les-projectiles.htm\">protection contre les projectiles</a> ",
+                    " <span class=\"compobj\">Prix</span> 162 600 po ",
+                    " <span class=\"compobj\">Coût</span> 81 600 po + 6 480 PX."
                 ]
             },
             "ul": null,
@@ -1054,17 +809,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "soins modérés",
-                    ", le créateur doit être un moine ;",
-                    "Prix",
-                    "3 600 po ;",
-                    "Poids",
-                    "1 kg."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-moderes.htm\">soins modérés</a>, le créateur doit être un moine ",
+                    " <span class=\"compobj\">Prix</span> 3 600 po ",
+                    " <span class=\"compobj\">Poids</span> 1 kg."
                 ]
             },
             "ul": null,
@@ -1077,15 +826,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "confusion",
-                    "débilité",
-                    "Prix",
-                    "3250."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-confusion.htm\">confusion</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-debilite.htm\">débilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 3250."
                 ]
             },
             "ul": null,
@@ -1098,15 +842,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "Prix",
-                    "47 315 po ;",
-                    "Coût",
-                    "23 657 po + 1 893 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ",
+                    " <span class=\"compobj\">Prix</span> 47 315 po ",
+                    " <span class=\"compobj\">Coût</span> 23 657 po + 1 893 PX."
                 ]
             },
             "ul": null,
@@ -1119,18 +859,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "rapidité",
-                    ", le créateur doit être calishite ;",
-                    "Prix",
-                    "9 530 po ;",
-                    "Coût",
-                    "4 922 po + 367 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapidite.htm\">rapidité</a>, le créateur doit être calishite ",
+                    " <span class=\"compobj\">Prix</span> 9 530 po ",
+                    " <span class=\"compobj\">Coût</span> 4 922 po + 367 PX."
                 ]
             },
             "ul": null,
@@ -1143,17 +876,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "dessiccation",
-                    "hydratation",
-                    "Prix",
-                    "42 302 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dessiccation.htm\">dessiccation</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-hydratation.htm\">hydratation</a> ",
+                    " <span class=\"compobj\">Prix</span> 42 302 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -1167,18 +894,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "agrandissement",
-                    "invisibilité",
-                    ", le créateur doit être un duergar ;",
-                    "Prix",
-                    "13 170 po ;",
-                    "Coût",
-                    "6 740 po + 514 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement.htm\">agrandissement</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a>, le créateur doit être un duergar ",
+                    " <span class=\"compobj\">Prix</span> 13 170 po ",
+                    " <span class=\"compobj\">Coût</span> 6 740 po + 514 PX."
                 ]
             },
             "ul": null,
@@ -1191,17 +911,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "arme en argent",
-                    "Prix",
-                    "4 007 po par trait ;",
-                    "Coût",
-                    "2 007 po + 40 PX par trait."
+                    "<span class=\"evoca\">Évocation</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-en-argent.htm\">arme en argent</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 007 po par trait ",
+                    " <span class=\"compobj\">Coût</span> 2 007 po + 40 PX par trait."
                 ]
             },
             "ul": null,
@@ -1214,16 +928,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "bouclier",
-                    "Prix",
-                    "58 302 po ;",
-                    "Coût",
-                    "29 302 po + 2 320 PX."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">bouclier</a> ",
+                    " <span class=\"compobj\">Prix</span> 58 302 po ",
+                    " <span class=\"compobj\">Coût</span> 29 302 po + 2 320 PX."
                 ]
             },
             "ul": null,
@@ -1236,16 +945,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "exécution",
-                    "Prix",
-                    "18 302 po ;",
-                    "Coût",
-                    "9 302 po + 720 PX."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-execution.htm\">exécution</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 302 po ",
+                    " <span class=\"compobj\">Coût</span> 9 302 po + 720 PX."
                 ]
             },
             "ul": null,
@@ -1260,17 +964,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "ancre dimensionnelle",
-                    "renvoi",
-                    "Prix",
-                    "32 380 po ;",
-                    "Coût",
-                    "16 540 po + 1267 PX."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-ancre-dimensionnelle.htm\">ancre dimensionnelle</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">renvoi</a> ",
+                    " <span class=\"compobj\">Prix</span> 32 380 po ",
+                    " <span class=\"compobj\">Coût</span> 16 540 po + 1267 PX."
                 ]
             },
             "ul": null,
@@ -1283,17 +981,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "rayon ardent",
-                    ", et soit lame de feu, soit boule de feu, soit colonne de feu ;",
-                    "Prix",
-                    "20 715 po ;",
-                    "Coût",
-                    "10 515 po + 816 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-ardent.htm\">rayon ardent</a>, et soit lame de feu, soit boule de feu, soit colonne de feu ",
+                    " <span class=\"compobj\">Prix</span> 20 715 po ",
+                    " <span class=\"compobj\">Coût</span> 10 515 po + 816 PX."
                 ]
             },
             "ul": null,
@@ -1306,17 +998,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "bénédiction",
-                    ", émotion, le créateur doit disposer d’un degré de maîtrise de 3 en Représentation (chant) ;",
-                    "Prix",
-                    "24 450 po ;",
-                    "Coût",
-                    "12 450 po + 960 PX."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction.htm\">bénédiction</a>, émotion, le créateur doit disposer d’un degré de maîtrise de 3 en Représentation (chant) ",
+                    " <span class=\"compobj\">Prix</span> 24 450 po ",
+                    " <span class=\"compobj\">Coût</span> 12 450 po + 960 PX."
                 ]
             },
             "ul": null,
@@ -1329,16 +1015,11 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "flou",
-                    "Prix",
-                    "22 310 po ;",
-                    "Coût",
-                    "11 155 po + 892 PX."
+                    "<span class=\"illu\">Illusion</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-flou.htm\">flou</a> ",
+                    " <span class=\"compobj\">Prix</span> 22 310 po ",
+                    " <span class=\"compobj\">Coût</span> 11 155 po + 892 PX."
                 ]
             },
             "ul": null,
@@ -1352,16 +1033,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "baiser du vampire",
-                    "Prix",
-                    "20 315 po ;",
-                    "Poids",
-                    "2 kg."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-baiser-du-vampire.htm\">baiser du vampire</a> ",
+                    " <span class=\"compobj\">Prix</span> 20 315 po ",
+                    " <span class=\"compobj\">Poids</span> 2 kg."
                 ]
             },
             "ul": null,
@@ -1374,16 +1050,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "mise à mort",
-                    "Prix",
-                    "18 310 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mise-a-mort.htm\">mise à mort</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 310 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -1396,17 +1067,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "[Loi] modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "courroux de l’ordre",
-                    ", le créateur doit être d’alignement loyal ;",
-                    "Prix",
-                    "18 315 po ;",
-                    "Coût",
-                    "9315 po + 720 PX."
+                    "<span class=\"evoca\">Évocation</span> [Loi] modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-courroux-de-l-ordre.htm\">courroux de l’ordre</a>, le créateur doit être d’alignement loyal ",
+                    " <span class=\"compobj\">Prix</span> 18 315 po ",
+                    " <span class=\"compobj\">Coût</span> 9315 po + 720 PX."
                 ]
             },
             "ul": null,
@@ -1419,17 +1084,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "contagion",
-                    "manteau du Chaos",
-                    "Prix",
-                    "78 350 po ;",
-                    "Poids",
-                    "5 kg."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">contagion</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-manteau-du-chaos.htm\">manteau du Chaos</a> ",
+                    " <span class=\"compobj\">Prix</span> 78 350 po ",
+                    " <span class=\"compobj\">Poids</span> 5 kg."
                 ]
             },
             "ul": null,
@@ -1444,17 +1103,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "lumière du jour",
-                    ", alignement bon ;",
-                    "Prix",
-                    "50 335 po ;",
-                    "Coût",
-                    "25 335 po + 2 000 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">lumière du jour</a>, alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 50 335 po ",
+                    " <span class=\"compobj\">Coût</span> 25 335 po + 2 000 PX."
                 ]
             },
             "ul": null,
@@ -1467,16 +1120,11 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "invisibilité",
-                    "Prix",
-                    "32 301 po ;",
-                    "Coût",
-                    "16 302 po + 1 280 PX."
+                    "<span class=\"illu\">Illusion</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 32 301 po ",
+                    " <span class=\"compobj\">Coût</span> 16 302 po + 1 280 PX."
                 ]
             },
             "ul": null,
@@ -1489,17 +1137,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "extinction des feux",
-                    ", convocation de monstres I, le créateur doit être de sous-type Eau ;",
-                    "Prix",
-                    "40 312 po ;",
-                    "Coût",
-                    "20 312 po + 1 600 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-extinction-des-feux.htm\">extinction des feux</a>, convocation de monstres I, le créateur doit être de sous-type Eau ",
+                    " <span class=\"compobj\">Prix</span> 40 312 po ",
+                    " <span class=\"compobj\">Coût</span> 20 312 po + 1 600 PX."
                 ]
             },
             "ul": null,
@@ -1512,14 +1154,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ; Création d’armes et’ armures magiques, incinérateur d’Aganazzar et soit boule de feu, soit colonne de feu, soit lame de feu ;",
-                    "Prix",
-                    "39 910 po ;",
-                    "Coût",
-                    "20 110 po +1 584 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " Création d’armes et’ armures magiques, incinérateur d’Aganazzar et soit boule de feu, soit colonne de feu, soit lame de feu ",
+                    " <span class=\"compobj\">Prix</span> 39 910 po ",
+                    " <span class=\"compobj\">Coût</span> 20 110 po +1 584 PX."
                 ]
             },
             "ul": null,
@@ -1532,16 +1171,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée’ ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I ;",
-                    "Prix",
-                    "18 325 po ;",
-                    "Coût",
-                    "9 325 po + 720 PX."
+                    "<span class=\"invo\">Invocation</span> modérée’ ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I ",
+                    " <span class=\"compobj\">Prix</span> 18 325 po ",
+                    " <span class=\"compobj\">Coût</span> 9 325 po + 720 PX."
                 ]
             },
             "ul": null,
@@ -1554,14 +1188,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "symbole de douleur",
-                    "Prix",
-                    "26 320 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-symbole-de-douleur.htm\">symbole de douleur</a> ",
+                    " <span class=\"compobj\">Prix</span> 26 320 po."
                 ]
             },
             "ul": null,
@@ -1574,16 +1204,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "modification de mémoire",
-                    "Prix",
-                    "22 301 po ;",
-                    "Coût",
-                    "11 301 po + 880 PX."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-modification-de-memoire.htm\">modification de mémoire</a> ",
+                    " <span class=\"compobj\">Prix</span> 22 301 po ",
+                    " <span class=\"compobj\">Coût</span> 11 301 po + 880 PX."
                 ]
             },
             "ul": null,
@@ -1596,16 +1221,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit lame de feu, soit colonne de feu, soit boule de feu ;",
-                    "Prix",
-                    "8 310 po ;",
-                    "Coût",
-                    "4 320 po + 320 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit lame de feu, soit colonne de feu, soit boule de feu ",
+                    " <span class=\"compobj\">Prix</span> 8 310 po ",
+                    " <span class=\"compobj\">Coût</span> 4 320 po + 320 PX."
                 ]
             },
             "ul": null,
@@ -1624,17 +1244,10 @@
             ],
             "infos": {
                 "data": [
-                    "Décharge électrique",
-                    "Eclair",
-                    "Boules de foudre",
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    ", décharge électrique ou éclair ;",
-                    "Prix",
-                    "52 360 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, décharge électrique ou éclair ",
+                    " <span class=\"compobj\">Prix</span> 52 360 po."
                 ]
             },
             "ul": null,
@@ -1651,16 +1264,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "fabrication",
-                    "Prix",
-                    "17 500 po ;",
-                    "Poids",
-                    "20 kg."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fabrication.htm\">fabrication</a> ",
+                    " <span class=\"compobj\">Prix</span> 17 500 po ",
+                    " <span class=\"compobj\">Poids</span> 20 kg."
                 ]
             },
             "ul": null,
@@ -1675,14 +1283,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    ", degré de maîtrise de 8 en Artisanat (fabrication d’armes), prêtre de niveau 12 ;",
-                    "Prix",
-                    "23 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, degré de maîtrise de 8 en Artisanat (fabrication d’armes), prêtre de niveau 12 ",
+                    " <span class=\"compobj\">Prix</span> 23 000 po."
                 ]
             },
             "ul": null,
@@ -1696,14 +1300,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    ", métamorphose ou pouvoir de forme animale ;",
-                    "Prix",
-                    "9 610 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, métamorphose ou pouvoir de forme animale ",
+                    " <span class=\"compobj\">Prix</span> 9 610 po."
                 ]
             },
             "ul": null,
@@ -1716,16 +1316,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "Épée de Mordenkainen",
-                    "Prix",
-                    "18 330 po ;",
-                    "Poids",
-                    "1kg."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-epee-de-mordenkainen.htm\">Épée de Mordenkainen</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 330 po ",
+                    " <span class=\"compobj\">Poids</span> 1kg."
                 ]
             },
             "ul": null,
@@ -1738,17 +1333,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "grâce féline",
-                    ", le créateur doit avoir un degré de maîtrise de 5 en Escalade ;",
-                    "Prix",
-                    "38 305 po ;",
-                    "Coût",
-                    "19 305 po + 1 520 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a>, le créateur doit avoir un degré de maîtrise de 5 en Escalade ",
+                    " <span class=\"compobj\">Prix</span> 38 305 po ",
+                    " <span class=\"compobj\">Coût</span> 19 305 po + 1 520 PX."
                 ]
             },
             "ul": null,
@@ -1761,18 +1350,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "lévitation",
-                    "terreur",
-                    "Prix",
-                    "13 920 po ;",
-                    "Coût",
-                    "7 120 po + 544 PX."
+                    "<span class=\"necro\">Nécromancie</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-levitation.htm\">lévitation</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-terreur.htm\">terreur</a> ",
+                    " <span class=\"compobj\">Prix</span> 13 920 po ",
+                    " <span class=\"compobj\">Coût</span> 7 120 po + 544 PX."
                 ]
             },
             "ul": null,
@@ -1785,17 +1367,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    ", le créateur doit être un nain d’écu ;",
-                    "Prix",
-                    "7 480 po ;",
-                    "Coût",
-                    "3 895 po +’287 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>, le créateur doit être un nain d’écu ",
+                    " <span class=\"compobj\">Prix</span> 7 480 po ",
+                    " <span class=\"compobj\">Coût</span> 3 895 po +’287 PX."
                 ]
             },
             "ul": null,
@@ -1808,17 +1384,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "boule de feu",
-                    ", le créateur doit être de sous-type Feu ;",
-                    "Prix",
-                    "60 305 po ;",
-                    "Coût",
-                    "30 305 po + 2 400 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>, le créateur doit être de sous-type Feu ",
+                    " <span class=\"compobj\">Prix</span> 60 305 po ",
+                    " <span class=\"compobj\">Coût</span> 30 305 po + 2 400 PX."
                 ]
             },
             "ul": null,
@@ -1831,15 +1401,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    ", clairaiidience/clairvoyance,",
-                    "têlékinésie",
-                    "Prix",
-                    "26 301 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, clairaiidience/clairvoyance,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">têlékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> 26 301 po."
                 ]
             },
             "ul": null,
@@ -1852,15 +1417,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "Prix",
-                    "18 335 po ;",
-                    "Coût",
-                    "9 335 po + 720 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 335 po ",
+                    " <span class=\"compobj\">Coût</span> 9 335 po + 720 PX."
                 ]
             },
             "ul": null,
@@ -1873,17 +1434,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "manipulation des sons",
-                    ", le créateur doit disposer de l’aptitude de classe musique de barde ;",
-                    "Prix",
-                    "6 400 po ;",
-                    "Coût",
-                    "3 360 po + 243 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-manipulation-des-sons.htm\">manipulation des sons</a>, le créateur doit disposer de l’aptitude de classe musique de barde ",
+                    " <span class=\"compobj\">Prix</span> 6 400 po ",
+                    " <span class=\"compobj\">Coût</span> 3 360 po + 243 PX."
                 ]
             },
             "ul": null,
@@ -1896,16 +1451,11 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "flou",
-                    "Prix",
-                    "19 820 po ;",
-                    "Coût",
-                    "10 070 po + 780 PX."
+                    "<span class=\"illu\">Illusion</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-flou.htm\">flou</a> ",
+                    " <span class=\"compobj\">Prix</span> 19 820 po ",
+                    " <span class=\"compobj\">Coût</span> 10 070 po + 780 PX."
                 ]
             },
             "ul": null,
@@ -1918,18 +1468,12 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "coup féroce",
-                    "Prix",
-                    "34 350 po ;",
-                    "Coût",
-                    "17 305 po + 1 360 PX ;",
-                    "Poids",
-                    "7,5 kilos."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-coup-feroce.htm\">coup féroce</a> ",
+                    " <span class=\"compobj\">Prix</span> 34 350 po ",
+                    " <span class=\"compobj\">Coût</span> 17 305 po + 1 360 PX ",
+                    " <span class=\"compobj\">Poids</span> 7,5 kilos."
                 ]
             },
             "ul": null,
@@ -1942,17 +1486,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "ténèbres maudites",
-                    ", le créateur doit être d’alignement mauvais ;",
-                    "Prix",
-                    "9 515 po ;",
-                    "Poids",
-                    "2 kg."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a>, le créateur doit être d’alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 9 515 po ",
+                    " <span class=\"compobj\">Poids</span> 2 kg."
                 ]
             },
             "ul": null,
@@ -1965,14 +1503,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "clignotement",
-                    "Prix",
-                    "44 320 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">clignotement</a> ",
+                    " <span class=\"compobj\">Prix</span> 44 320 po."
                 ]
             },
             "ul": null,
@@ -1985,16 +1519,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "Prix",
-                    "8315 po ;",
-                    "Coût",
-                    "4315 po + 320 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a> ",
+                    " <span class=\"compobj\">Prix</span> 8315 po ",
+                    " <span class=\"compobj\">Coût</span> 4315 po + 320 PX."
                 ]
             },
             "ul": null,
@@ -2007,17 +1536,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "[Bien] modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "étoiles d’Arvandor",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "44 315 po ;",
-                    "Coût",
-                    "22 315 po + 1 760 PX."
+                    "<span class=\"evoca\">Évocation</span> [Bien] modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-etoiles-d-arvandor.htm\">étoiles d’Arvandor</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 44 315 po ",
+                    " <span class=\"compobj\">Coût</span> 22 315 po + 1 760 PX."
                 ]
             },
             "ul": null,
@@ -2032,18 +1555,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "Nécromancie",
-                    "(Mal) modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "animation des morts",
-                    "regain d’assurance",
-                    "ténèbres maudites",
-                    ", alignement mauvais ;",
-                    "Prix",
-                    "65 850 po."
+                    "<span class=\"evoca\">Évocation</span> et <span class=\"necro\">Nécromancie</span> (Mal) modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">animation des morts</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-regain-d-assurance.htm\">regain d’assurance</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a>, alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 65 850 po."
                 ]
             },
             "ul": null,
@@ -2056,14 +1571,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "affutage",
-                    "Prix",
-                    "18 301 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affutage</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 301 po."
                 ]
             },
             "ul": null,
@@ -2077,18 +1588,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "châtiment divin",
-                    "convocation de monstres 1",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "98 310 po ;",
-                    "Coût",
-                    "49 310 po + 3920 PX."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-divin.htm\">châtiment divin</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-monstres-1.htm\">convocation de monstres 1</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 98 310 po ",
+                    " <span class=\"compobj\">Coût</span> 49 310 po + 3920 PX."
                 ]
             },
             "ul": null,
@@ -2101,14 +1605,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’armes et armures magiques",
-                    "mains brûlantes",
-                    "Prix",
-                    "14 334 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mains-brulantes.htm\">mains brûlantes</a> ",
+                    " <span class=\"compobj\">Prix</span> 14 334 po."
                 ]
             },
             "ul": null,
@@ -2121,16 +1621,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "lueur féerique",
-                    "Prix",
-                    "18 302 po ;",
-                    "Coût",
-                    "9 302 po + 720 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-lueur-feerique.htm\">lueur féerique</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 302 po ",
+                    " <span class=\"compobj\">Coût</span> 9 302 po + 720 PX."
                 ]
             },
             "ul": null,
@@ -2143,14 +1638,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "mise à mal",
-                    "Prix",
-                    "18 312 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mise-a-mal.htm\">mise à mal</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 312 po."
                 ]
             },
             "ul": null,
@@ -2163,16 +1654,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être un nain, niveau global 10 ;",
-                    "Prix",
-                    "60 312 po ;",
-                    "Coût",
-                    "30 312 po + 2 400 PX."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être un nain, niveau global 10 ",
+                    " <span class=\"compobj\">Prix</span> 60 312 po ",
+                    " <span class=\"compobj\">Coût</span> 30 312 po + 2 400 PX."
                 ]
             },
             "ul": null,
@@ -2186,16 +1672,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ; Création d’armes et d’armures magiques,",
-                    "Inscription de runes",
-                    ", métal brûlant ou mains brûlantes ou métamorphose provoquée, le créateur doit être de niveau 12+ ;",
-                    "Prix",
-                    "11 912 po (Alhalbrin), 11 712 po (Faerindyl), 17 912 po (Thundaril) ;",
-                    "Coût",
-                    "6912 po + 400 PX (Alhalbrin), 6812 po + 392 PX (Faerindyl), 9912 po + 640 PX (Thundaril)."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " Création d’armes et d’armures magiques,   <a href=\"http://www.gemmaline.com/dons/dons-inscription-de-runes-205.htm#205\">Inscription de runes</a>, métal brûlant ou mains brûlantes ou métamorphose provoquée, le créateur doit être de niveau 12+ ",
+                    " <span class=\"compobj\">Prix</span> 11 912 po (Alhalbrin), 11 712 po (Faerindyl), 17 912 po (Thundaril) ",
+                    " <span class=\"compobj\">Coût</span> 6912 po + 400 PX (Alhalbrin), 6812 po + 392 PX (Faerindyl), 9912 po + 640 PX (Thundaril)."
                 ]
             },
             "ul": [
@@ -2217,16 +1698,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "ténèbres maudites",
-                    "puissance divine",
-                    ", le créateur doit être d’alignement mauvais ;",
-                    "Prix",
-                    "45 812 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-puissance-divine.htm\">puissance divine</a>, le créateur doit être d’alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 45 812 po."
                 ]
             },
             "ul": null,
@@ -2239,16 +1714,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "désintégration",
-                    "Prix",
-                    "75 312 po ;",
-                    "Coût",
-                    "39 312 po + 2 880 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a> ",
+                    " <span class=\"compobj\">Prix</span> 75 312 po ",
+                    " <span class=\"compobj\">Coût</span> 39 312 po + 2 880 PX."
                 ]
             },
             "ul": null,
@@ -2261,15 +1731,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "9 ; Création d’armes et d’armures magiques,",
-                    "animation des morts",
-                    "Prix",
-                    "17 000 po ;",
-                    "Coût",
-                    "13 000 po + 320 PX."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " Création d’armes et d’armures magiques,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">animation des morts</a> ",
+                    " <span class=\"compobj\">Prix</span> 17 000 po ",
+                    " <span class=\"compobj\">Coût</span> 13 000 po + 320 PX."
                 ]
             },
             "ul": null,
@@ -2282,18 +1748,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "marche sur l’onde",
-                    "silence",
-                    "Prix",
-                    "30 315 po ;",
-                    "Coût",
-                    "15 315 po + 1200 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-sur-l-onde.htm\">marche sur l’onde</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-silence.htm\">silence</a> ",
+                    " <span class=\"compobj\">Prix</span> 30 315 po ",
+                    " <span class=\"compobj\">Coût</span> 15 315 po + 1200 PX."
                 ]
             },
             "ul": null,
@@ -2306,14 +1765,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "liberté de mouvement",
-                    "Prix",
-                    "64 315 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a> ",
+                    " <span class=\"compobj\">Prix</span> 64 315 po."
                 ]
             },
             "ul": null,
@@ -2326,14 +1781,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "liberté de mouvement",
-                    "Prix",
-                    "56 315 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a> ",
+                    " <span class=\"compobj\">Prix</span> 56 315 po."
                 ]
             },
             "ul": null,
@@ -2346,14 +1797,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’armes et armures magiques",
-                    "désintégration",
-                    "Prix",
-                    "13 508 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a> ",
+                    " <span class=\"compobj\">Prix</span> 13 508 po."
                 ]
             },
             "ul": null,
@@ -2366,18 +1813,12 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "faille",
-                    "Prix",
-                    "28 305 po ;",
-                    "Coût",
-                    "14 305 po + 1 120 PX ;",
-                    "Poids",
-                    "4,5 kilos."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-faille.htm\">faille</a> ",
+                    " <span class=\"compobj\">Prix</span> 28 305 po ",
+                    " <span class=\"compobj\">Coût</span> 14 305 po + 1 120 PX ",
+                    " <span class=\"compobj\">Poids</span> 4,5 kilos."
                 ]
             },
             "ul": null,
@@ -2391,14 +1832,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’armes et armures magiques",
-                    "et lame de feu, colonne de feu ou boule de feu ;",
-                    "Prix",
-                    "26 308 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> et lame de feu, colonne de feu ou boule de feu ",
+                    " <span class=\"compobj\">Prix</span> 26 308 po."
                 ]
             },
             "ul": null,
@@ -2411,16 +1848,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    "regain d’assurance",
-                    "Prix",
-                    "14 350 po ;",
-                    "Coût",
-                    "7350 po + 560 PX."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-regain-d-assurance.htm\">regain d’assurance</a> ",
+                    " <span class=\"compobj\">Prix</span> 14 350 po ",
+                    " <span class=\"compobj\">Coût</span> 7350 po + 560 PX."
                 ]
             },
             "ul": null,
@@ -2433,16 +1865,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "et abjuration modérées ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "antidétection",
-                    "Prix",
-                    "26 325 po ;",
-                    "Coût",
-                    "13 325 po + 1040 PX."
+                    "<span class=\"transmu\">Transmutation</span> et abjuration modérées ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-antidetection.htm\">antidétection</a> ",
+                    " <span class=\"compobj\">Prix</span> 26 325 po ",
+                    " <span class=\"compobj\">Coût</span> 13 325 po + 1040 PX."
                 ]
             },
             "ul": null,
@@ -2455,18 +1882,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I,",
-                    "invisibilité pour les morts-vivants",
-                    "Prix",
-                    "28 035 po ;",
-                    "Coût",
-                    "14 175 po + 1109 PX."
+                    "<span class=\"invo\">Invocation</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite-pour-les-morts-vivants.htm\">invisibilité pour les morts-vivants</a> ",
+                    " <span class=\"compobj\">Prix</span> 28 035 po ",
+                    " <span class=\"compobj\">Coût</span> 14 175 po + 1109 PX."
                 ]
             },
             "ul": null,
@@ -2479,15 +1899,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "cri",
-                    "télékinésie",
-                    "Prix",
-                    "9 830 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cri.htm\">cri</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> 9 830 po."
                 ]
             },
             "ul": null,
@@ -2500,16 +1915,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I, le créateur doit être un nain ;",
-                    "Prix",
-                    "50 320 po ;",
-                    "Coût",
-                    "25 320 po + 2 000 PX."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I, le créateur doit être un nain ",
+                    " <span class=\"compobj\">Prix</span> 50 320 po ",
+                    " <span class=\"compobj\">Coût</span> 25 320 po + 2 000 PX."
                 ]
             },
             "ul": null,
@@ -2522,14 +1932,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’armes et armures magiques",
-                    "Éclair multiple",
-                    "Prix",
-                    "29 500 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair-multiple.htm\">Éclair multiple</a> ",
+                    " <span class=\"compobj\">Prix</span> 29 500 po."
                 ]
             },
             "ul": null,
@@ -2542,18 +1948,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "antidétection",
-                    "feuille morte",
-                    ", pouvoir divin, résistance aux énergies destructrices ;",
-                    "Prix",
-                    "86 335 po ;",
-                    "Coût",
-                    "43 335 po + 3440 PX."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-antidetection.htm\">antidétection</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a>, pouvoir divin, résistance aux énergies destructrices ",
+                    " <span class=\"compobj\">Prix</span> 86 335 po ",
+                    " <span class=\"compobj\">Coût</span> 43 335 po + 3440 PX."
                 ]
             },
             "ul": null,
@@ -2567,14 +1966,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I ;",
-                    "Prix",
-                    "14 030 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I ",
+                    " <span class=\"compobj\">Prix</span> 14 030 po."
                 ]
             },
             "ul": null,
@@ -2587,16 +1982,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "communication avec les animaux",
-                    "Prix",
-                    "18 650 po ;",
-                    "Coût",
-                    "9 325 po + 746 PX."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-communication-avec-les-animaux.htm\">communication avec les animaux</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 650 po ",
+                    " <span class=\"compobj\">Coût</span> 9 325 po + 746 PX."
                 ]
             },
             "ul": null,
@@ -2609,16 +1999,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’armes et armures magiques",
-                    "télékinésie",
-                    "Prix",
-                    "36 815 po ;",
-                    "Coût",
-                    "17 815 po + 1 280 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> 36 815 po ",
+                    " <span class=\"compobj\">Coût</span> 17 815 po + 1 280 PX."
                 ]
             },
             "ul": null,
@@ -2631,16 +2016,11 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’armes et armures magiques",
-                    "localisation de créature",
-                    "Prix",
-                    "10 115 po ;",
-                    "Coût",
-                    "5 057 po et 5 pa + 405 PX."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-de-creature.htm\">localisation de créature</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 115 po ",
+                    " <span class=\"compobj\">Coût</span> 5 057 po et 5 pa + 405 PX."
                 ]
             },
             "ul": null,
@@ -2656,23 +2036,12 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "Création d’objets merveilleux",
-                    "antidétection",
-                    "clairaudience/clairvoyance",
-                    "état gazeux",
-                    "flamme éternelle",
-                    ", le créateur doit être bon ;",
-                    "Prix",
-                    "102 900 po ;",
-                    "Coût",
-                    "51 900 po + 4 080 PX ;",
-                    "Poids",
-                    "1,5 kilo."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-antidetection.htm\">antidétection</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-clairaudience-clairvoyance.htm\">clairaudience/clairvoyance</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-gazeux.htm\">état gazeux</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-flamme-eternelle.htm\">flamme éternelle</a>, le créateur doit être bon ",
+                    " <span class=\"compobj\">Prix</span> 102 900 po ",
+                    " <span class=\"compobj\">Coût</span> 51 900 po + 4 080 PX ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kilo."
                 ]
             },
             "ul": null,
@@ -2685,16 +2054,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "doigt de mort",
-                    "Prix",
-                    "100 100 po ;",
-                    "Coût",
-                    "50 500 po + 3 968 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-doigt-de-mort.htm\">doigt de mort</a> ",
+                    " <span class=\"compobj\">Prix</span> 100 100 po ",
+                    " <span class=\"compobj\">Coût</span> 50 500 po + 3 968 PX."
                 ]
             },
             "ul": null,
@@ -2708,16 +2072,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    ", le créateur doit être elfe ;",
-                    "Prix",
-                    "25 600 po ;",
-                    "Coût",
-                    "13 100 po + 1 000 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, le créateur doit être elfe ",
+                    " <span class=\"compobj\">Prix</span> 25 600 po ",
+                    " <span class=\"compobj\">Coût</span> 13 100 po + 1 000 PX."
                 ]
             },
             "ul": null,
@@ -2730,16 +2089,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "métamorphose universelle",
-                    "Prix",
-                    "10 975 po ;",
-                    "Coût",
-                    "5 975 po + 400 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-universelle.htm\">métamorphose universelle</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 975 po ",
+                    " <span class=\"compobj\">Coût</span> 5 975 po + 400 PX."
                 ]
             },
             "ul": null,
@@ -2752,15 +2106,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "forte ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’armes et armures magiques",
-                    "télékinésie",
-                    "zone d’antimagie",
-                    "Prix",
-                    "46 000 po."
+                    "<span class=\"transmu\">Transmutation</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-zone-d-antimagie.htm\">zone d’antimagie</a> ",
+                    " <span class=\"compobj\">Prix</span> 46 000 po."
                 ]
             },
             "ul": null,
@@ -2773,17 +2122,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    ", Science de la destruction,",
-                    "fracassement",
-                    "Prix",
-                    "4 315 po ;",
-                    "Coût",
-                    "2 315 po + 160 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, Science de la destruction,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">fracassement</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 315 po ",
+                    " <span class=\"compobj\">Coût</span> 2 315 po + 160 PX."
                 ]
             },
             "ul": null,
@@ -2797,20 +2140,12 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "18 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "cercle de mort",
-                    "malédiction",
-                    "Prix",
-                    "314 320 po ;",
-                    "Coût",
-                    "157 320 po +12 560 PX ;",
-                    "Poids",
-                    "6 kilos."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 18 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-mort.htm\">cercle de mort</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 314 320 po ",
+                    " <span class=\"compobj\">Coût</span> 157 320 po +12 560 PX ",
+                    " <span class=\"compobj\">Poids</span> 6 kilos."
                 ]
             },
             "ul": null,
@@ -2823,14 +2158,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "symbole d’étourdissement",
-                    "Prix",
-                    "(50 carreaux) 9 630 po."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-symbole-d-etourdissement.htm\">symbole d’étourdissement</a> ",
+                    " <span class=\"compobj\">Prix</span> (50 carreaux) 9 630 po."
                 ]
             },
             "ul": null,
@@ -2843,16 +2174,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    ", convocation de monstres I ;",
-                    "Prix",
-                    "50 300 po ;",
-                    "Coût",
-                    "25 000 po + 2 000 PX."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, convocation de monstres I ",
+                    " <span class=\"compobj\">Prix</span> 50 300 po ",
+                    " <span class=\"compobj\">Coût</span> 25 000 po + 2 000 PX."
                 ]
             },
             "ul": null,
@@ -2866,16 +2192,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    ", métamorphose provoquée ;",
-                    "Prix",
-                    "106 302 po ;",
-                    "Coût",
-                    "53 000 po + 4240 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, métamorphose provoquée ",
+                    " <span class=\"compobj\">Prix</span> 106 302 po ",
+                    " <span class=\"compobj\">Coût</span> 53 000 po + 4240 PX."
                 ]
             },
             "ul": null,
@@ -2890,16 +2211,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "[Bien, feu] puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "feu du phénix",
-                    "Prix",
-                    "99 400 po ;",
-                    "Coût",
-                    "49 900 po + 3 960 PX."
+                    "<span class=\"necro\">Nécromancie</span> [Bien, feu] puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-feu-du-phenix.htm\">feu du phénix</a> ",
+                    " <span class=\"compobj\">Prix</span> 99 400 po ",
+                    " <span class=\"compobj\">Coût</span> 49 900 po + 3 960 PX."
                 ]
             },
             "ul": null,
@@ -2912,16 +2228,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’armes et armures magiques",
-                    ", soit miracle, soit souhait ;",
-                    "Prix",
-                    "22 060 po (0 souhait), 62 360 po (1 souhait), 102 660 po (2 souhaits), 142 960 po (3 souhaits) ;",
-                    "Coût",
-                    "11 030 po + 882 PX (0 souhait), 31 180 po + 2 494 PX (1 souhait), 51 330 po + 4 106 PX (2 souhaits), 71 480 po + 5 718 PX (3 souhaits)."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, soit miracle, soit souhait ",
+                    " <span class=\"compobj\">Prix</span> 22 060 po (0 souhait), 62 360 po (1 souhait), 102 660 po (2 souhaits), 142 960 po (3 souhaits) ",
+                    " <span class=\"compobj\">Coût</span> 11 030 po + 882 PX (0 souhait), 31 180 po + 2 494 PX (1 souhait), 51 330 po + 4 106 PX (2 souhaits), 71 480 po + 5 718 PX (3 souhaits)."
                 ]
             },
             "ul": null,
@@ -2935,18 +2246,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "14 ;",
-                    "Création d’armes et armures magiques",
-                    "dissipation de la magie",
-                    "protection contre les énergies destructives",
-                    "tempête de grêle",
-                    "Prix",
-                    "54 475 po ;",
-                    "Coût",
-                    "27 375 po et 5 pa + 2 179 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 14 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-les-energies-destructives.htm\">protection contre les énergies destructives</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">tempête de grêle</a> ",
+                    " <span class=\"compobj\">Prix</span> 54 475 po ",
+                    " <span class=\"compobj\">Coût</span> 27 375 po et 5 pa + 2 179 PX."
                 ]
             },
             "ul": null,
@@ -2960,17 +2264,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "18 ;",
-                    "Création d’armes et armures magiques",
-                    "aura sacrée",
-                    ", alignement bon ;",
-                    "Prix",
-                    "120 630 po ;",
-                    "Coût",
-                    "60 630 po + 4 800 PX."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 18 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-aura-sacree.htm\">aura sacrée</a>, alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 120 630 po ",
+                    " <span class=\"compobj\">Coût</span> 60 630 po + 4 800 PX."
                 ]
             },
             "ul": null,
@@ -2983,16 +2281,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "(Mal) puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "doigt de mort",
-                    "Prix",
-                    "23 057 po ;",
-                    "Coût",
-                    "11 528 po + 922 PX."
+                    "<span class=\"necro\">Nécromancie</span> (Mal) puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-doigt-de-mort.htm\">doigt de mort</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 057 po ",
+                    " <span class=\"compobj\">Coût</span> 11 528 po + 922 PX."
                 ]
             },
             "ul": null,
@@ -3005,16 +2298,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "changement de plan",
-                    "Prix",
-                    "22 315 po ;",
-                    "Coût",
-                    "11 157 po et 5 pa + 893 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-changement-de-plan.htm\">changement de plan</a> ",
+                    " <span class=\"compobj\">Prix</span> 22 315 po ",
+                    " <span class=\"compobj\">Coût</span> 11 157 po et 5 pa + 893 PX."
                 ]
             },
             "ul": null,
@@ -3027,16 +2315,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "25 715 po ;",
-                    "Coût",
-                    "12 857 po + 1 029 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 715 po ",
+                    " <span class=\"compobj\">Coût</span> 12 857 po + 1 029 PX."
                 ]
             },
             "ul": null,
@@ -3049,19 +2332,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    ", drow,",
-                    "désintégration",
-                    "prévoyance",
-                    "toile d’araignée",
-                    "Prix",
-                    "90 400 po ;",
-                    "Coût",
-                    "45 400 po + 3 600 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, drow,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-prevoyance.htm\">prévoyance</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-toile-d-araignee.htm\">toile d’araignée</a> ",
+                    " <span class=\"compobj\">Prix</span> 90 400 po ",
+                    " <span class=\"compobj\">Coût</span> 45 400 po + 3 600 PX."
                 ]
             },
             "ul": null,
@@ -3074,19 +2349,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    ", drow,",
-                    "blessure critique",
-                    "désintégration",
-                    "prévoyance",
-                    "Prix",
-                    "47 520 po ;",
-                    "Coût",
-                    "23 920 po + 1 888 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, drow,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-critique.htm\">blessure critique</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-prevoyance.htm\">prévoyance</a> ",
+                    " <span class=\"compobj\">Prix</span> 47 520 po ",
+                    " <span class=\"compobj\">Coût</span> 23 920 po + 1 888 PX."
                 ]
             },
             "ul": null,
@@ -3099,17 +2366,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’armes et armures magiques",
-                    "absorption d’énergie",
-                    "état gazeux",
-                    "invisibilité",
-                    "Prix",
-                    "2 560 po."
+                    "<span class=\"necro\">Nécromancie</span> et <span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-absorption-d-energie.htm\">absorption d’énergie</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-gazeux.htm\">état gazeux</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 560 po."
                 ]
             },
             "ul": null,
@@ -3122,17 +2382,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "métal gelé",
-                    ", le créateur doit avoir accès à des cavernes de nains polaires ;",
-                    "Prix",
-                    "350 po ;",
-                    "Coût",
-                    "172 po + 14 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metal-gele.htm\">métal gelé</a>, le créateur doit avoir accès à des cavernes de nains polaires ",
+                    " <span class=\"compobj\">Prix</span> 350 po ",
+                    " <span class=\"compobj\">Coût</span> 172 po + 14 PX."
                 ]
             },
             "ul": null,
@@ -3146,16 +2400,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    ", doigt de mort (flèche mortelle) ou doigt de mort à intensité augmentée (flèche mortelle supérieure) ;",
-                    "Prix",
-                    "2 282 po (flèche mortelle) ou 4 057 po (flèche mortelle supérieure) ;",
-                    "Coût",
-                    "1 144 po et 5 pa + 91 PX (flèche mortelle) ou 2 032 po + 162 PX (flèche mortelle supérieure)."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, doigt de mort (flèche mortelle) ou doigt de mort à intensité augmentée (flèche mortelle supérieure) ",
+                    " <span class=\"compobj\">Prix</span> 2 282 po (flèche mortelle) ou 4 057 po (flèche mortelle supérieure) ",
+                    " <span class=\"compobj\">Coût</span> 1 144 po et 5 pa + 91 PX (flèche mortelle) ou 2 032 po + 162 PX (flèche mortelle supérieure)."
                 ]
             },
             "ul": null,
@@ -3168,15 +2417,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "affûtage",
-                    "cercle de mort",
-                    "Prix",
-                    "72 330 po."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-affutage.htm\">affûtage</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-mort.htm\">cercle de mort</a> ",
+                    " <span class=\"compobj\">Prix</span> 72 330 po."
                 ]
             },
             "ul": null,
@@ -3190,15 +2434,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’armes et armures magiques",
-                    "corde animée",
-                    ", main broyeuse de Bigby ;",
-                    "Prix",
-                    "97 381 po."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-corde-animee.htm\">corde animée</a>, main broyeuse de Bigby ",
+                    " <span class=\"compobj\">Prix</span> 97 381 po."
                 ]
             },
             "ul": null,
@@ -3212,16 +2451,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "énergie négative",
-                    "Prix",
-                    "40 320 po ;",
-                    "Coût",
-                    "20 320 po + 1 600 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> 40 320 po ",
+                    " <span class=\"compobj\">Coût</span> 20 320 po + 1 600 PX."
                 ]
             },
             "ul": null,
@@ -3234,18 +2468,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "agrandissement",
-                    "métamorphose universelle",
-                    "rapetissement",
-                    "Prix",
-                    "50 315 po ;",
-                    "Coût",
-                    "25 315 po + 2 000 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement.htm\">agrandissement</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-universelle.htm\">métamorphose universelle</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">rapetissement</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 315 po ",
+                    " <span class=\"compobj\">Coût</span> 25 315 po + 2 000 PX."
                 ]
             },
             "ul": null,
@@ -3259,19 +2486,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    ", force du taureau,",
-                    "grâce féline",
-                    "endurance de l’ours",
-                    "splendeur de l’aigle",
-                    "sagesse du hibou",
-                    "ruse du renard",
-                    "Prix",
-                    "194 315 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, force du taureau,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-endurance-de-l-ours.htm\">endurance de l’ours</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-splendeur-de-l-aigle.htm\">splendeur de l’aigle</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-sagesse-du-hibou.htm\">sagesse du hibou</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-ruse-du-renard.htm\">ruse du renard</a> ",
+                    " <span class=\"compobj\">Prix</span> 194 315 po."
                 ]
             },
             "ul": null,
@@ -3284,19 +2502,11 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples puissantes ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    ", drow,",
-                    "désintégration",
-                    "divination",
-                    "prévoyance",
-                    "vision aveugle",
-                    "Prix",
-                    "15 270 po ;",
-                    "Coût",
-                    "7 790 + 598 PX."
+                    "Multiples puissantes ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, drow,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-divination.htm\">divination</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-prevoyance.htm\">prévoyance</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-aveugle.htm\">vision aveugle</a> ",
+                    " <span class=\"compobj\">Prix</span> 15 270 po ",
+                    " <span class=\"compobj\">Coût</span> 7 790 + 598 PX."
                 ]
             },
             "ul": null,
@@ -3309,16 +2519,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’armes et armures magiques",
-                    "puissance divine",
-                    "Prix",
-                    "32 301 po ;",
-                    "Coût",
-                    "16 301 po + 640 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-puissance-divine.htm\">puissance divine</a> ",
+                    " <span class=\"compobj\">Prix</span> 32 301 po ",
+                    " <span class=\"compobj\">Coût</span> 16 301 po + 640 PX."
                 ]
             },
             "ul": null,
@@ -3331,16 +2536,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    ", poing de Bigby, résistance aux énergies destructrices ;",
-                    "Prix",
-                    "23 305 po ;",
-                    "Coût",
-                    "13 305 po + 800 PX."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, poing de Bigby, résistance aux énergies destructrices ",
+                    " <span class=\"compobj\">Prix</span> 23 305 po ",
+                    " <span class=\"compobj\">Coût</span> 13 305 po + 800 PX."
                 ]
             },
             "ul": null,
@@ -3353,16 +2553,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "14 ;",
-                    "Création d’armes et armures magiques",
-                    "arme destructrice",
-                    "Prix",
-                    "50 312 po ;",
-                    "Coût",
-                    "25 312 po + 2 000 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 14 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-destructrice.htm\">arme destructrice</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 312 po ",
+                    " <span class=\"compobj\">Coût</span> 25 312 po + 2 000 PX."
                 ]
             },
             "ul": null,
@@ -3375,16 +2570,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "terreur",
-                    "Prix",
-                    "38 552 po ;",
-                    "Coût",
-                    "19 276 po + 1 542 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-terreur.htm\">terreur</a> ",
+                    " <span class=\"compobj\">Prix</span> 38 552 po ",
+                    " <span class=\"compobj\">Coût</span> 19 276 po + 1 542 PX."
                 ]
             },
             "ul": null,
@@ -3398,18 +2588,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’armes et armures magiques",
-                    "châtiment divin",
-                    ", convocation de monstres I, le créateur doit être un elfe d’alignement bon ;",
-                    "Prix",
-                    "100 315 po ;",
-                    "Coût",
-                    "51 315 po + 1960 PX."
+                    "<span class=\"abju\">Abjuration</span> et <span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-divin.htm\">châtiment divin</a>, convocation de monstres I, le créateur doit être un elfe d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 100 315 po ",
+                    " <span class=\"compobj\">Coût</span> 51 315 po + 1960 PX."
                 ]
             },
             "ul": null,
@@ -3422,18 +2605,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "1S ;",
-                    "Création d’armes et armures magiques",
-                    "châtiment sacré",
-                    "mot de pouvoir aveuglant",
-                    ", le créateur doit être bon ;",
-                    "Prix",
-                    "51 512 po ;",
-                    "Coût",
-                    "25 912 po + 2 048 PX."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 1S ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-sacre.htm\">châtiment sacré</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mot-de-pouvoir-aveuglant.htm\">mot de pouvoir aveuglant</a>, le créateur doit être bon ",
+                    " <span class=\"compobj\">Prix</span> 51 512 po ",
+                    " <span class=\"compobj\">Coût</span> 25 912 po + 2 048 PX."
                 ]
             },
             "ul": null,
@@ -3446,14 +2622,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "Etincelle de vie",
-                    "Prix",
-                    "28 500 po."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-etincelle-de-vie.htm\">Etincelle de vie</a> ",
+                    " <span class=\"compobj\">Prix</span> 28 500 po."
                 ]
             },
             "ul": null,
@@ -3466,18 +2638,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "Création d’armes et armures psioniques",
-                    ", flagelleur mental,",
-                    "mise à mort",
-                    "Prix",
-                    "177 350 po ;",
-                    "Coût",
-                    "88 850 po + 7-080 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a> ou   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-psioniques-489.htm#489\">Création d’armes et armures psioniques</a>, flagelleur mental,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mise-a-mort.htm\">mise à mort</a> ",
+                    " <span class=\"compobj\">Prix</span> 177 350 po ",
+                    " <span class=\"compobj\">Coût</span> 88 850 po + 7-080 PX."
                 ]
             },
             "ul": null,
@@ -3490,16 +2655,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "mise à mal",
-                    "Prix",
-                    "50 320 po ;",
-                    "Coût",
-                    "25 320 po + 2 000 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-mise-a-mal.htm\">mise à mal</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 320 po ",
+                    " <span class=\"compobj\">Coût</span> 25 320 po + 2 000 PX."
                 ]
             },
             "ul": null,
@@ -3512,16 +2672,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "métamorphose funeste",
-                    "Prix",
-                    "12 780 po ;",
-                    "Coût",
-                    "6 780 po + 480 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-funeste.htm\">métamorphose funeste</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 780 po ",
+                    " <span class=\"compobj\">Coût</span> 6 780 po + 480 PX."
                 ]
             },
             "ul": null,
@@ -3535,15 +2690,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "forte ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "animation d’objets",
-                    "télékinésie",
-                    "Prix",
-                    "72 300 po."
+                    "<span class=\"transmu\">Transmutation</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> 72 300 po."
                 ]
             },
             "ul": null,
@@ -3557,16 +2707,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’armes et armures magiques",
-                    "confusion",
-                    "Prix",
-                    "299 320 po ;",
-                    "Poids",
-                    "6 kg."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-confusion.htm\">confusion</a> ",
+                    " <span class=\"compobj\">Prix</span> 299 320 po ",
+                    " <span class=\"compobj\">Poids</span> 6 kg."
                 ]
             },
             "ul": null,
@@ -3580,20 +2725,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiple puissante ;",
-                    "NLS",
-                    "16 ;",
-                    "Création d’armes et armures magiques",
-                    "Répulsif",
-                    "Étincelle de vie",
-                    "Terreur",
-                    "Renvoi",
-                    "Dessiccation",
-                    "Fléau du golem",
-                    "Zone d’antimagie",
-                    "Écailles ramollies",
-                    "Prix",
-                    "48 300 po."
+                    "Multiple puissante ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-repulsif.htm\">Répulsif</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-etincelle-de-vie.htm\">Étincelle de vie</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-terreur.htm\">Terreur</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">Renvoi</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-dessiccation.htm\">Dessiccation</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-du-golem.htm\">Fléau du golem</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-zone-d-antimagie.htm\">Zone d’antimagie</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-ecailles-ramollies.htm\">Écailles ramollies</a> ",
+                    " <span class=\"compobj\">Prix</span> 48 300 po."
                 ]
             },
             "ul": null,
@@ -3667,17 +2802,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’armes et armures magiques",
-                    "ténèbres maudites",
-                    ", le créateur doit être d’alignement mauvais ;",
-                    "Prix",
-                    "110 350 po ;",
-                    "Poids",
-                    "7,5 kg."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    "   <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>,   <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-maudites.htm\">ténèbres maudites</a>, le créateur doit être d’alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 110 350 po ",
+                    " <span class=\"compobj\">Poids</span> 7,5 kg."
                 ]
             },
             "ul": null,

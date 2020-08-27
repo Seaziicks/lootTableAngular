@@ -9,15 +9,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "message",
-                    "rapport",
-                    "Prix",
-                    "7 600 po (la paire)."
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-message.htm\">message</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapport.htm\">rapport</a> ",
+                    " <span class=\"compobj\">Prix</span> 7 600 po (la paire)."
                 ]
             },
             "ul": null,
@@ -30,14 +25,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "manipulation à distance",
-                    "Prix",
-                    "2 500 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-manipulation-a-distance.htm\">manipulation à distance</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 500 po."
                 ]
             },
             "ul": null,
@@ -50,14 +41,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "charme-animal",
-                    "Prix",
-                    "10 800 po."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-animal.htm\">charme-animal</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 800 po."
                 ]
             },
             "ul": null,
@@ -71,14 +58,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "4 ;",
-                    "Création d’anneaux magiques",
-                    ", Attaque en rotation ;",
-                    "Prix",
-                    "8 000 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 4 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, Attaque en rotation ",
+                    " <span class=\"compobj\">Prix</span> 8 000 po."
                 ]
             },
             "ul": null,
@@ -91,14 +74,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "antidétection",
-                    "Prix",
-                    "8 000 po."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-antidetection.htm\">antidétection</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 000 po."
                 ]
             },
             "ul": null,
@@ -114,14 +93,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "[Bien] faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    ", le créateur doit être bon ;",
-                    "Prix",
-                    "4 000 po."
+                    "<span class=\"abju\">Abjuration</span> [Bien] faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, le créateur doit être bon ",
+                    " <span class=\"compobj\">Prix</span> 4 000 po."
                 ]
             },
             "ul": null,
@@ -134,15 +109,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "déguisement",
-                    "invisibilité",
-                    "Prix",
-                    "12 700 po."
+                    "<span class=\"illu\">Illusion</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-deguisement.htm\">déguisement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 700 po."
                 ]
             },
             "ul": null,
@@ -155,12 +125,9 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "[Mal] faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "lance maléfique"
+                    "<span class=\"evoca\">Évocation</span> [Mal] faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lance-malefique.htm\">lance maléfique</a>."
                 ]
             },
             "ul": null,
@@ -173,14 +140,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "déblocage",
-                    "Prix",
-                    "4 500 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-deblocage.htm\">déblocage</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 500 po."
                 ]
             },
             "ul": null,
@@ -193,14 +156,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "détection de pensées",
-                    "Prix",
-                    "10 800 po."
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-pensees.htm\">détection de pensées</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 800 po."
                 ]
             },
             "ul": null,
@@ -213,14 +172,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "armure mortelle",
-                    "Prix",
-                    "8 000 po."
+                    "<span class=\"necro\">Nécromancie</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-armure-mortelle.htm\">armure mortelle</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 000 po."
                 ]
             },
             "ul": null,
@@ -235,15 +190,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "1 ;",
-                    "Création d’anneaux magiques",
-                    "détection du poison",
-                    "lumière",
-                    "Prix",
-                    "2 125 po."
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 1 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-poison.htm\">détection du poison</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere.htm\">lumière</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 125 po."
                 ]
             },
             "ul": null,
@@ -256,14 +206,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "faible ;",
-                    "NLS",
-                    "S ;",
-                    "Création d’anneaux magiques",
-                    "éclair",
-                    "Prix",
-                    "11 250 po."
+                    "<span class=\"evoca\">Évocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> S ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">éclair</a> ",
+                    " <span class=\"compobj\">Prix</span> 11 250 po."
                 ]
             },
             "ul": null,
@@ -276,14 +222,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    ", degré de maîtrise de 5 en Escalade ;",
-                    "Prix",
-                    "2 500 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, degré de maîtrise de 5 en Escalade ",
+                    " <span class=\"compobj\">Prix</span> 2 500 po."
                 ]
             },
             "ul": null,
@@ -296,14 +238,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "1 ;",
-                    "Création d’anneaux magiques",
-                    "feuille morte",
-                    "Prix",
-                    "2 200 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 1 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 200 po."
                 ]
             },
             "ul": null,
@@ -318,16 +256,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faibles ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "Splendeur de l’aigle",
-                    "Rapetissement",
-                    ", le créateur doit parler le gobelin ;",
-                    "Prix",
-                    "3 000 po."
+                    "<span class=\"transmu\">Transmutation</span> faibles ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-splendeur-de-l-aigle.htm\">Splendeur de l’aigle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">Rapetissement</a>, le créateur doit parler le gobelin ",
+                    " <span class=\"compobj\">Prix</span> 3 000 po."
                 ]
             },
             "ul": null,
@@ -340,14 +272,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "invisibilité",
-                    "Prix",
-                    "20 000 po."
+                    "<span class=\"illu\">Illusion</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 20 000 po."
                 ]
             },
             "ul": null,
@@ -360,14 +288,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "chagrin",
-                    "Prix",
-                    "3 000 po."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-chagrin.htm\">chagrin</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 000 po."
                 ]
             },
             "ul": null,
@@ -380,14 +304,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "[Mal] faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "lance maléfique",
-                    "Prix",
-                    "15 000 po."
+                    "<span class=\"evoca\">Évocation</span> [Mal] faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lance-malefique.htm\">lance maléfique</a> ",
+                    " <span class=\"compobj\">Prix</span> 15 000 po."
                 ]
             },
             "ul": null,
@@ -400,14 +320,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    ", Écumeur du désert ou capacité de émulant ce don ;",
-                    "Prix",
-                    "5 000 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, Écumeur du désert ou capacité de émulant ce don ",
+                    " <span class=\"compobj\">Prix</span> 5 000 po."
                 ]
             },
             "ul": null,
@@ -420,14 +336,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "don des langues",
-                    "Prix",
-                    "23 508 po."
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-don-des-langues.htm\">don des langues</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 508 po."
                 ]
             },
             "ul": null,
@@ -440,14 +352,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "2 ;",
-                    "Création d’anneaux magiques",
-                    ", degré de maîtrise de 5 en Natation ;",
-                    "Prix",
-                    "2 500 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 2 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, degré de maîtrise de 5 en Natation ",
+                    " <span class=\"compobj\">Prix</span> 2 500 po."
                 ]
             },
             "ul": null,
@@ -460,14 +368,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "1 ;",
-                    "Création d’anneaux magiques",
-                    "armure de mage",
-                    "Prix",
-                    "1 000 po."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 1 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-armure-de-mage.htm\">armure de mage</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 000 po."
                 ]
             },
             "ul": null,
@@ -480,15 +384,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "1 ;",
-                    "Création d’anneaux magiques",
-                    "arme magique",
-                    ", le créateur doit être un prêtre de Tyr ;",
-                    "Prix",
-                    "4000 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 1 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-arme-magique.htm\">arme magique</a>, le créateur doit être un prêtre de Tyr ",
+                    " <span class=\"compobj\">Prix</span> 4000 po."
                 ]
             },
             "ul": null,
@@ -501,15 +400,11 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "mythes et légendes",
-                    "Prix",
-                    "2 500 po ;",
-                    "Poids"
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mythes-et-legendes.htm\">mythes et légendes</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 500 po ",
+                    " <span class=\"compobj\">Poids</span> —."
                 ]
             },
             "ul": null,
@@ -523,14 +418,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible (anneaux mineur et majeur) ou modérée (anneau suprême) ;",
-                    "NLS",
-                    "3 (mineur), 7 (majeur), 11 (suprême) ;",
-                    "Création d’anneaux magiques",
-                    "résistance aux énergies destructives",
-                    "Prix",
-                    "12 000 po (mineur), 28 000 po (majeur), 44 000 po (suprême)."
+                    "<span class=\"abju\">Abjuration</span> faible (anneaux mineur et majeur) ou modérée (anneau suprême) ",
+                    " <span class=\"compobj\">NLS</span> 3 (mineur), 7 (majeur), 11 (suprême) ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-aux-energies-destructives.htm\">résistance aux énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po (mineur), 28 000 po (majeur), 44 000 po (suprême)."
                 ]
             },
             "ul": null,
@@ -543,14 +434,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "respiration aquatique",
-                    "Prix",
-                    "12 000 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-respiration-aquatique.htm\">respiration aquatique</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po."
                 ]
             },
             "ul": null,
@@ -563,14 +450,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "faible ;",
-                    "NLS",
-                    "2 ;",
-                    "Création d’anneaux magiques",
-                    ", degré de maîtrise de 5 en Saut ;",
-                    "Prix",
-                    "2 500 po."
+                    "<span class=\"transmu\">Transmutation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 2 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, degré de maîtrise de 5 en Saut ",
+                    " <span class=\"compobj\">Prix</span> 2 500 po."
                 ]
             },
             "ul": null,
@@ -583,14 +466,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "création de nourriture et d’eau",
-                    "Prix",
-                    "2 500 po."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-nourriture-et-d-eau.htm\">création de nourriture et d’eau</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 500 po."
                 ]
             },
             "ul": null,
@@ -604,14 +483,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "incantation véritable",
-                    "Prix",
-                    "12 000 po."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-incantation-veritable.htm\">incantation véritable</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po."
                 ]
             },
             "ul": null,
@@ -624,14 +499,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création d’anneaux magiques",
-                    "invisibilité",
-                    "Prix",
-                    "6 700 po."
+                    "<span class=\"illu\">Illusion</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-invisibilite.htm\">invisibilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 6 700 po."
                 ]
             },
             "ul": null,
@@ -644,14 +515,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "immobilisation de morts-vivants",
-                    "Prix",
-                    "33 500 po."
+                    "<span class=\"abju\">Abjuration</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-morts-vivants.htm\">immobilisation de morts-vivants</a> ",
+                    " <span class=\"compobj\">Prix</span> 33 500 po."
                 ]
             },
             "ul": null,
@@ -666,14 +533,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "métamorphose",
-                    "Prix",
-                    "23 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">métamorphose</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 000 po."
                 ]
             },
             "ul": null,
@@ -688,18 +551,10 @@
             ],
             "infos": {
                 "data": [
-                    "Anneau maître",
-                    "Anneau servant",
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’anneaux magiques",
-                    "détection de pensées",
-                    "domination",
-                    "malédiction",
-                    "Prix",
-                    "120 000 po (anneau maître et cinq anneaux servants)."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-pensees.htm\">détection de pensées</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-domination.htm\">domination</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 120 000 po (anneau maître et cinq anneaux servants)."
                 ]
             },
             "ul": null,
@@ -712,18 +567,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "[Feu] modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’anneaux magiques",
-                    "boule de feu",
-                    "mains brûlantes",
-                    "mur de feu",
-                    "pyrotechnie",
-                    "résistance aux énergies destructives",
-                    "Prix",
-                    "92 340 po."
+                    "<span class=\"evoca\">Évocation</span> [Feu] modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mains-brulantes.htm\">mains brûlantes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-feu.htm\">mur de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-pyrotechnie.htm\">pyrotechnie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-aux-energies-destructives.htm\">résistance aux énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 92 340 po."
                 ]
             },
             "ul": [
@@ -746,14 +593,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "neutralisation du poison",
-                    "Prix",
-                    "60 000 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-neutralisation-du-poison.htm\">neutralisation du poison</a> ",
+                    " <span class=\"compobj\">Prix</span> 60 000 po."
                 ]
             },
             "ul": null,
@@ -766,14 +609,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "neutralisation du poison",
-                    "Prix",
-                    "10 000 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-neutralisation-du-poison.htm\">neutralisation du poison</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po."
                 ]
             },
             "ul": null,
@@ -786,15 +625,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "grâce féline",
-                    "sagesse du hibou",
-                    "Prix",
-                    "6 000 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-sagesse-du-hibou.htm\">sagesse du hibou</a> ",
+                    " <span class=\"compobj\">Prix</span> 6 000 po."
                 ]
             },
             "ul": null,
@@ -807,13 +641,10 @@
             ],
             "infos": {
                 "data": [
-                    "Modérée (premiers arcanes) ou puissante (deuxièmes, troisièmes et quatrièmes arcanes), pas d’école ;",
-                    "NLS",
-                    "11 (premiers arcanes), 14 (deuxièmes arcanes), 17 (troisièmes arcanes) ou 20 (quatrièmes arcanes) ;",
-                    "Création d’anneaux magiques",
-                    "souhait limité",
-                    "Prix",
-                    "20 000 po (premiers arcanes), 40 000 po (deuxièmes arcanes), 70 000 po (troisièmes arcanes) ou 100 000 po (quatrièmes arcanes)."
+                    "Modérée (premiers arcanes) ou puissante (deuxièmes, troisièmes et quatrièmes arcanes), pas d’école ",
+                    " <span class=\"compobj\">NLS</span> 11 (premiers arcanes), 14 (deuxièmes arcanes), 17 (troisièmes arcanes) ou 20 (quatrièmes arcanes) ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-souhait-limite.htm\">souhait limité</a> ",
+                    " <span class=\"compobj\">Prix</span> 20 000 po (premiers arcanes), 40 000 po (deuxièmes arcanes), 70 000 po (troisièmes arcanes) ou 100 000 po (quatrièmes arcanes)."
                 ]
             },
             "ul": null,
@@ -830,15 +661,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "force de taureau",
-                    "télékinésie",
-                    "Prix",
-                    "8 600 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 600 po."
                 ]
             },
             "ul": null,
@@ -855,16 +681,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’anneaux magiques",
-                    ", Augmentation d’intensité,",
-                    "Convocation d’alliés naturels 1",
-                    ", aptitude de classe de forme animale ;",
-                    "Prix",
-                    "8 000 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, Augmentation d’intensité, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-allies-naturels-1.htm\">Convocation d’alliés naturels 1</a>, aptitude de classe de forme animale ",
+                    " <span class=\"compobj\">Prix</span> 8 000 po."
                 ]
             },
             "ul": null,
@@ -877,14 +697,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "mur de force",
-                    "Prix",
-                    "8 500 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">mur de force</a> ",
+                    " <span class=\"compobj\">Prix</span> 8 500 po."
                 ]
             },
             "ul": null,
@@ -897,14 +713,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "clignotement",
-                    "Prix",
-                    "27 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">clignotement</a> ",
+                    " <span class=\"compobj\">Prix</span> 27 000 po."
                 ]
             },
             "ul": null,
@@ -920,18 +732,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "déblocage",
-                    "feuille morte",
-                    "localisation d’objet",
-                    "lumière du jour",
-                    "mur de force",
-                    "Prix",
-                    "120 000 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-deblocage.htm\">déblocage</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">localisation d’objet</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">lumière du jour</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">mur de force</a> ",
+                    " <span class=\"compobj\">Prix</span> 120 000 po."
                 ]
             },
             "ul": null,
@@ -944,14 +748,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création d’anneaux magiques",
-                    "transfert de sorts",
-                    "Prix",
-                    "4 000 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-transfert-de-sorts.htm\">transfert de sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 4 000 po."
                 ]
             },
             "ul": null,
@@ -964,15 +764,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modéré ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "création majeure",
-                    "création mineure",
-                    "Prix",
-                    "33 000 po."
+                    "<span class=\"invo\">Invocation</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">création majeure</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-mineure.htm\">création mineure</a> ",
+                    " <span class=\"compobj\">Prix</span> 33 000 po."
                 ]
             },
             "ul": null,
@@ -987,14 +782,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "croissance animale",
-                    "Prix",
-                    "18 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-croissance-animale.htm\">croissance animale</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 000 po."
                 ]
             },
             "ul": null,
@@ -1007,17 +798,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "lueur féérique",
-                    "lumières dansantes",
-                    "ténèbres",
-                    ", le créateur doit être un drow ;",
-                    "Prix",
-                    "4 800 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lueur-feerique.htm\">lueur féérique</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">lumières dansantes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres.htm\">ténèbres</a>, le créateur doit être un drow ",
+                    " <span class=\"compobj\">Prix</span> 4 800 po."
                 ]
             },
             "ul": null,
@@ -1030,14 +814,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    ", degré de maîtrise de 10 en Escalade ;",
-                    "Prix",
-                    "10 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, degré de maîtrise de 10 en Escalade ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po."
                 ]
             },
             "ul": null,
@@ -1050,14 +830,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "saut",
-                    "Prix",
-                    "25 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-saut.htm\">saut</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 000 po."
                 ]
             },
             "ul": null,
@@ -1070,15 +846,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "guérison des maladies",
-                    "soins superficiels",
-                    "Prix",
-                    "8000 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-des-maladies.htm\">guérison des maladies</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-superficiels.htm\">soins superficiels</a> ",
+                    " <span class=\"compobj\">Prix</span> 8000 po."
                 ]
             },
             "ul": null,
@@ -1091,18 +862,11 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "détection des pièges",
-                    "mythes et légendes",
-                    "pierres commères",
-                    "Prix",
-                    "23 250 po ;",
-                    "Coût",
-                    "14 750 po + 680 PX."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-des-pieges.htm\">détection des pièges</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mythes-et-legendes.htm\">mythes et légendes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-pierres-commeres.htm\">pierres commères</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 250 po ",
+                    " <span class=\"compobj\">Coût</span> 14 750 po + 680 PX."
                 ]
             },
             "ul": null,
@@ -1115,14 +879,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "liberté de mouvement",
-                    "Prix",
-                    "40 000 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a> ",
+                    " <span class=\"compobj\">Prix</span> 40 000 po."
                 ]
             },
             "ul": null,
@@ -1136,14 +896,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    ", animation des morts ou profanation ;",
-                    "Prix",
-                    "4000 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, animation des morts ou profanation ",
+                    " <span class=\"compobj\">Prix</span> 4000 po."
                 ]
             },
             "ul": null,
@@ -1156,14 +912,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "marche sur l’onde",
-                    "Prix",
-                    "15 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-sur-l-onde.htm\">marche sur l’onde</a> ",
+                    " <span class=\"compobj\">Prix</span> 15 000 po."
                 ]
             },
             "ul": null,
@@ -1178,15 +930,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    "liberté de mouvement",
-                    ", le créateur doit avoir un degré de maîtrise de 2 en Survie ;",
-                    "Prix",
-                    "28 000 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a>, le créateur doit avoir un degré de maîtrise de 2 en Survie ",
+                    " <span class=\"compobj\">Prix</span> 28 000 po."
                 ]
             },
             "ul": null,
@@ -1199,14 +946,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    ", degré de maîtrise de 10 en Natation ;",
-                    "Prix",
-                    "10 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, degré de maîtrise de 10 en Natation ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po."
                 ]
             },
             "ul": null,
@@ -1219,17 +962,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’anneaux magiques",
-                    "guérison suprême",
-                    "souhait limité",
-                    "Prix",
-                    "70 000 po ;",
-                    "Coût",
-                    "41 750 po + 4960 PX."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme.htm\">guérison suprême</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-souhait-limite.htm\">souhait limité</a> ",
+                    " <span class=\"compobj\">Prix</span> 70 000 po ",
+                    " <span class=\"compobj\">Coût</span> 41 750 po + 4960 PX."
                 ]
             },
             "ul": null,
@@ -1242,14 +979,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "protection contre l’énergie négative",
-                    "Prix",
-                    "36 000 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-l-energie-negative.htm\">protection contre l’énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> 36 000 po."
                 ]
             },
             "ul": null,
@@ -1262,15 +995,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "bouclier de la foi",
-                    ", niveau de lanceur de sorts égal à trois fois le bonus de l’anneau (ou plus) ;",
-                    "Prix",
-                    "2 000 po (anneau +1), 8 000 po (anneau +2), 18 000 po (anneau +3), 32 000 po (anneau +4) ou 50 000 po (anneau +5)."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-foi.htm\">bouclier de la foi</a>, niveau de lanceur de sorts égal à trois fois le bonus de l’anneau (ou plus) ",
+                    " <span class=\"compobj\">Prix</span> 2 000 po (anneau +1), 8 000 po (anneau +2), 18 000 po (anneau +3), 32 000 po (anneau +4) ou 50 000 po (anneau +5)."
                 ]
             },
             "ul": null,
@@ -1284,15 +1012,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’anneaux magiques",
-                    "bouclier de la foi",
-                    ", doit avoir une réserve dessentia de 2 (mineur) ou 4 (majeur) ;",
-                    "Prix",
-                    "10 000 po (mineur), 26 000 po (majeur)."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-foi.htm\">bouclier de la foi</a>, doit avoir une réserve dessentia de 2 (mineur) ou 4 (majeur) ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po (mineur), 26 000 po (majeur)."
                 ]
             },
             "ul": null,
@@ -1305,14 +1028,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création d’anneaux magiques",
-                    "protection d’autrui",
-                    "Prix",
-                    "50 000 po (les deux)."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">protection d’autrui</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 000 po (les deux)."
                 ]
             },
             "ul": null,
@@ -1326,14 +1045,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "6 ;",
-                    "Création d’anneaux magiques",
-                    "vision lucide",
-                    "Prix",
-                    "25 000 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 6 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">vision lucide</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 000 po."
                 ]
             },
             "ul": null,
@@ -1346,14 +1061,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création d’anneaux magiques",
-                    ", degré de maîtrise de 10 en Saut ;",
-                    "Prix",
-                    "10 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, degré de maîtrise de 10 en Saut ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po."
                 ]
             },
             "ul": null,
@@ -1370,17 +1081,10 @@
             ],
             "infos": {
                 "data": [
-                    "1 charge",
-                    "2 charge",
-                    "3 charge",
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "Soins intensifs",
-                    "Prix",
-                    "3 500 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-intensifs.htm\">Soins intensifs</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 500 po."
                 ]
             },
             "ul": null,
@@ -1393,14 +1097,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "transfert de sorts",
-                    "Prix",
-                    "50 000 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-transfert-de-sorts.htm\">transfert de sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 000 po."
                 ]
             },
             "ul": null,
@@ -1417,14 +1117,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "5 ;",
-                    "Création d’anneaux magiques",
-                    "transfert de sorts",
-                    "Prix",
-                    "18 000 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-transfert-de-sorts.htm\">transfert de sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 000 po."
                 ]
             },
             "ul": null,
@@ -1437,14 +1133,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création d’anneaux magiques",
-                    "télékinésie",
-                    "Prix",
-                    "75 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-telekinesie.htm\">télékinésie</a> ",
+                    " <span class=\"compobj\">Prix</span> 75 000 po."
                 ]
             },
             "ul": null,
@@ -1460,13 +1152,10 @@
             ],
             "infos": {
                 "data": [
-                    "Universelle modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    ", mémorisation de Rary ;",
-                    "Prix",
-                    "20 000 po."
+                    "Universelle modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, mémorisation de Rary ",
+                    " <span class=\"compobj\">Prix</span> 20 000 po."
                 ]
             },
             "ul": null,
@@ -1484,14 +1173,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "résistance aux effets planaires",
-                    "Prix",
-                    "24 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-aux-effets-planaires.htm\">résistance aux effets planaires</a> ",
+                    " <span class=\"compobj\">Prix</span> 24 000 po."
                 ]
             },
             "ul": null,
@@ -1504,17 +1189,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "[Bien] puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "affection",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "72 000 po ;",
-                    "Coût",
-                    "36 000 po + 2 880 PX."
+                    "<span class=\"necro\">Nécromancie</span> [Bien] puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-affection.htm\">affection</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 72 000 po ",
+                    " <span class=\"compobj\">Coût</span> 36 000 po + 2 880 PX."
                 ]
             },
             "ul": null,
@@ -1527,17 +1206,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "feuille morte",
-                    "métamorphose",
-                    "Prix",
-                    "118 000 po ;",
-                    "Coût",
-                    "59 000 po + 4 720 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">métamorphose</a> ",
+                    " <span class=\"compobj\">Prix</span> 118 000 po ",
+                    " <span class=\"compobj\">Coût</span> 59 000 po + 4 720 PX."
                 ]
             },
             "ul": null,
@@ -1552,15 +1225,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "17 ; Augmentation d’intensité,",
-                    "Création d’anneaux magiques",
-                    "domination universelle",
-                    "suggestion",
-                    "Prix",
-                    "28 750 po."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " Augmentation d’intensité, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-domination-universelle.htm\">domination universelle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-suggestion.htm\">suggestion</a> ",
+                    " <span class=\"compobj\">Prix</span> 28 750 po."
                 ]
             },
             "ul": null,
@@ -1573,14 +1241,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "résistance à la magie",
-                    "Prix",
-                    "50 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-a-la-magie.htm\">résistance à la magie</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 000 po."
                 ]
             },
             "ul": null,
@@ -1593,16 +1257,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’anneaux magiques",
-                    "bouclier de la foi",
-                    ", miracle ou souhait, le niveau de lanceur de sorts du créateur doit être trois fois plus élevé que le bonus de parade de l’anneau ;",
-                    "Prix",
-                    "8 000 po (légère), 32 000 po (intermédiaire), 72 000 po (lourde) ;",
-                    "Poids"
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-foi.htm\">bouclier de la foi</a>, miracle ou souhait, le niveau de lanceur de sorts du créateur doit être trois fois plus élevé que le bonus de parade de l’anneau ",
+                    " <span class=\"compobj\">Prix</span> 8 000 po (légère), 32 000 po (intermédiaire), 72 000 po (lourde) ",
+                    " <span class=\"compobj\">Poids</span> —."
                 ]
             },
             "ul": null,
@@ -1615,14 +1274,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’anneaux magiques",
-                    "portail",
-                    "Prix",
-                    "125 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-portail.htm\">portail</a> ",
+                    " <span class=\"compobj\">Prix</span> 125 000 po."
                 ]
             },
             "ul": null,
@@ -1635,17 +1290,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "puissante ;",
-                    "NLS",
-                    "14 ;",
-                    "Création d’anneaux magiques",
-                    ", défection de la magie,",
-                    "dissipation de la magie",
-                    "renvoi des sorts",
-                    ", le créateur doit posséder un degré de maîtrise de 10 en Art de la magie ;",
-                    "Prix",
-                    "67 600 po."
+                    "<span class=\"divi\">Divination</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 14 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, défection de la magie, <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a>, le créateur doit posséder un degré de maîtrise de 10 en Art de la magie ",
+                    " <span class=\"compobj\">Prix</span> 67 600 po."
                 ]
             },
             "ul": null,
@@ -1658,16 +1306,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "contact d’adamantium",
-                    "Prix",
-                    "120 000 po ;",
-                    "Coût",
-                    "60 000 po + 4 800 PX."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-contact-d-adamantium.htm\">contact d’adamantium</a> ",
+                    " <span class=\"compobj\">Prix</span> 120 000 po ",
+                    " <span class=\"compobj\">Coût</span> 60 000 po + 4 800 PX."
                 ]
             },
             "ul": null,
@@ -1693,14 +1336,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    ", convocation de monstres VI, ainsi que tous les autres sorts que l’anneau met à la disposition de son porteur ;",
-                    "Prix",
-                    "200 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, convocation de monstres VI, ainsi que tous les autres sorts que l’anneau met à la disposition de son porteur ",
+                    " <span class=\"compobj\">Prix</span> 200 000 po."
                 ]
             },
             "ul": [
@@ -1787,14 +1426,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "création majeure",
-                    "Prix",
-                    "120 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">création majeure</a> ",
+                    " <span class=\"compobj\">Prix</span> 120 000 po."
                 ]
             },
             "ul": null,
@@ -1807,18 +1442,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "communication à distance",
-                    ", détection des pensées,",
-                    "don des langues",
-                    "image silencieuse",
-                    "lien têlépathique de Rary",
-                    "Prix",
-                    "25 000 po."
+                    "<span class=\"divi\">Divination</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-communication-a-distance.htm\">communication à distance</a>, détection des pensées, <a href=\"http://www.gemmaline.com/sorts/sort-nom-don-des-langues.htm\">don des langues</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-image-silencieuse.htm\">image silencieuse</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lien-telepathique-de-rary.htm\">lien têlépathique de Rary</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 000 po."
                 ]
             },
             "ul": [
@@ -1841,14 +1468,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "mise à mal",
-                    "Prix",
-                    "86 000 po."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mise-a-mal.htm\">mise à mal</a> ",
+                    " <span class=\"compobj\">Prix</span> 86 000 po."
                 ]
             },
             "ul": null,
@@ -1868,16 +1491,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "boule de feu",
-                    "éclair",
-                    ", lueur féerique et lumière ;",
-                    "Prix",
-                    "50 000 po."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">éclair</a>, lueur féerique et lumière ",
+                    " <span class=\"compobj\">Prix</span> 50 000 po."
                 ]
             },
             "ul": [
@@ -1937,15 +1554,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "forte ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "métamorphose",
-                    "contrôle de l’eau",
-                    "Prix",
-                    "44 000 po."
+                    "<span class=\"transmu\">Transmutation</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">métamorphose</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-de-l-eau.htm\">contrôle de l’eau</a> ",
+                    " <span class=\"compobj\">Prix</span> 44 000 po."
                 ]
             },
             "ul": null,
@@ -1959,17 +1571,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "forte ;",
-                    "NLS",
-                    "14 ;",
-                    "Création d’anneaux magiques",
-                    "détection de la magie",
-                    "dissipation de la magie",
-                    "renvoi des sorts",
-                    ", degré de maîtrise de 10 en Art de la magie ;",
-                    "Prix",
-                    "12 000 po."
+                    "<span class=\"abju\">Abjuration</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 14 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-la-magie.htm\">détection de la magie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a>, degré de maîtrise de 10 en Art de la magie ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po."
                 ]
             },
             "ul": null,
@@ -1983,14 +1588,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "transfert de sorts",
-                    "Prix",
-                    "45 000 po."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-transfert-de-sorts.htm\">transfert de sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 45 000 po."
                 ]
             },
             "ul": null,
@@ -2004,13 +1605,10 @@
             ],
             "infos": {
                 "data": [
-                    "Universelle puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’anneaux magiques",
-                    "souhait limité",
-                    "Prix",
-                    "3 750 po."
+                    "Universelle puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-souhait-limite.htm\">souhait limité</a> ",
+                    " <span class=\"compobj\">Prix</span> 3 750 po."
                 ]
             },
             "ul": null,
@@ -2026,17 +1624,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "forte ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’objets merveilleux",
-                    "déguisement",
-                    "rapetissement",
-                    ", le créateur doit être gnome ;",
-                    "Prix",
-                    "20 000 po ;",
-                    "Poids"
+                    "<span class=\"transmu\">Transmutation</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-objets-merveilleux-23.htm#23\">Création d’objets merveilleux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-deguisement.htm\">déguisement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">rapetissement</a>, le créateur doit être gnome ",
+                    " <span class=\"compobj\">Prix</span> 20 000 po ",
+                    " <span class=\"compobj\">Poids</span> -."
                 ]
             },
             "ul": null,
@@ -2049,14 +1641,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "protection contre l’énergie négative",
-                    "Prix",
-                    "72 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-l-energie-negative.htm\">protection contre l’énergie négative</a> ",
+                    " <span class=\"compobj\">Prix</span> 72 000 po."
                 ]
             },
             "ul": null,
@@ -2069,14 +1657,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "protection contre l’énergie positive",
-                    "Prix",
-                    "72 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-l-energie-positive.htm\">protection contre l’énergie positive</a> ",
+                    " <span class=\"compobj\">Prix</span> 72 000 po."
                 ]
             },
             "ul": null,
@@ -2089,16 +1673,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "détection des pièges",
-                    "mythes et légendes",
-                    "pierres commères",
-                    "Prix",
-                    "23 250 po."
+                    "<span class=\"divi\">Divination</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-des-pieges.htm\">détection des pièges</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mythes-et-legendes.htm\">mythes et légendes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-pierres-commeres.htm\">pierres commères</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 250 po."
                 ]
             },
             "ul": null,
@@ -2111,14 +1689,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "régénération",
-                    "Prix",
-                    "90 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-regeneration.htm\">régénération</a> ",
+                    " <span class=\"compobj\">Prix</span> 90 000 po."
                 ]
             },
             "ul": null,
@@ -2131,14 +1705,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’anneaux magiques",
-                    "renvoi des sorts",
-                    "Prix",
-                    "98 280 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 98 280 po."
                 ]
             },
             "ul": null,
@@ -2151,16 +1721,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création d’anneaux magiques",
-                    "détection des pièges",
-                    "mythes et légendes",
-                    "pierres commères",
-                    "Prix",
-                    "23 250 po."
+                    "<span class=\"divi\">Divination</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-des-pieges.htm\">détection des pièges</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mythes-et-legendes.htm\">mythes et légendes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-pierres-commeres.htm\">pierres commères</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 250 po."
                 ]
             },
             "ul": null,
@@ -2173,14 +1737,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "Manteau de l’esprit embrasé",
-                    "Prix",
-                    "135 000 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-manteau-de-l-esprit-embrase.htm\">Manteau de l’esprit embrasé</a> ",
+                    " <span class=\"compobj\">Prix</span> 135 000 po."
                 ]
             },
             "ul": null,
@@ -2193,14 +1753,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création d’anneaux magiques",
-                    "transfert de sorts",
-                    "Prix",
-                    "200 000 po."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-transfert-de-sorts.htm\">transfert de sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 200 000 po."
                 ]
             },
             "ul": null,
@@ -2213,16 +1769,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante (si miracle est utilisé) ;",
-                    "NLS",
-                    "20 ;",
-                    "Création d’anneaux magiques",
-                    ", soit souhait, soit miracle ;",
-                    "Prix",
-                    "97 950 po ;",
-                    "Coût",
-                    "11 475 po + 15 918 PX."
+                    "<span class=\"evoca\">Évocation</span> puissante (si miracle est utilisé) ",
+                    " <span class=\"compobj\">NLS</span> 20 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, soit souhait, soit miracle ",
+                    " <span class=\"compobj\">Prix</span> 97 950 po ",
+                    " <span class=\"compobj\">Coût</span> 11 475 po + 15 918 PX."
                 ]
             },
             "ul": null,
@@ -2235,14 +1786,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante\" ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’anneaux magiques",
-                    "communication à distance",
-                    "Prix",
-                    "2 000 po j Poids —."
+                    "<span class=\"evoca\">Évocation</span> puissante\" ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-communication-a-distance.htm\">communication à distance</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 000 po j Poids —."
                 ]
             },
             "ul": null,
@@ -2255,17 +1802,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "[Bien] puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création d’anneaux magiques",
-                    "halo vengeur",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "4 500 po ;",
-                    "Coût",
-                    "2 250 po + 180 PX."
+                    "<span class=\"abju\">Abjuration</span> [Bien] puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-halo-vengeur.htm\">halo vengeur</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 4 500 po ",
+                    " <span class=\"compobj\">Coût</span> 2 250 po + 180 PX."
                 ]
             },
             "ul": null,
@@ -2278,14 +1819,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création d’anneaux magiques",
-                    "forme éthérée",
-                    "Prix",
-                    "182 000 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-d-anneaux-magiques-21.htm#21\">Création d’anneaux magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">forme éthérée</a> ",
+                    " <span class=\"compobj\">Prix</span> 182 000 po."
                 ]
             },
             "ul": null,

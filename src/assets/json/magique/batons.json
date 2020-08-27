@@ -7,18 +7,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "faible ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "agrandissement",
-                    "agrandissement de groupe",
-                    "rapetissement",
-                    "rapetissement de groupe",
-                    "réduction d’objet",
-                    "Prix",
-                    "29 000 po."
+                    "<span class=\"invo\">Invocation</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement.htm\">agrandissement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-agrandissement-de-groupe.htm\">agrandissement de groupe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement.htm\">rapetissement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rapetissement-de-groupe.htm\">rapetissement de groupe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-reduction-d-objet.htm\">réduction d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> 29 000 po."
                 ]
             },
             "ul": [
@@ -45,18 +37,11 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de bâtons magiques",
-                    "Création d’armes et armures magiques",
-                    "clignotement",
-                    "forme éthérée",
-                    "Prix",
-                    "57 300 po ;",
-                    "Coût",
-                    "28 800 po + 2280 PX."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">clignotement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">forme éthérée</a> ",
+                    " <span class=\"compobj\">Prix</span> 57 300 po ",
+                    " <span class=\"compobj\">Coût</span> 28 800 po + 2280 PX."
                 ]
             },
             "ul": [
@@ -77,17 +62,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "nuée grouillante",
-                    "pattes d’araignée",
-                    "peau d’araignée",
-                    "Prix",
-                    "33 000 po."
+                    "<span class=\"invo\">Invocation</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">nuée grouillante</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-pattes-d-araignee.htm\">pattes d’araignée</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-araignee.htm\">peau d’araignée</a> ",
+                    " <span class=\"compobj\">Prix</span> 33 000 po."
                 ]
             },
             "ul": [
@@ -109,17 +87,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de bâtons magiques",
-                    "châtiment sacré",
-                    "marteau du Chaos",
-                    "rejet de la Loi",
-                    "rejet du Mal",
-                    "Prix",
-                    "28 266 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-sacre.htm\">châtiment sacré</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-marteau-du-chaos.htm\">marteau du Chaos</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rejet-de-la-loi.htm\">rejet de la Loi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rejet-du-mal.htm\">rejet du Mal</a> ",
+                    " <span class=\"compobj\">Prix</span> 28 266 po."
                 ]
             },
             "ul": [
@@ -142,16 +113,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "animation d’objets",
-                    "création majeure",
-                    "mur de pierre",
-                    "Prix",
-                    "38 156 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">création majeure</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-pierre.htm\">mur de pierre</a> ",
+                    " <span class=\"compobj\">Prix</span> 38 156 po."
                 ]
             },
             "ul": [
@@ -173,18 +138,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "création de nourriture et d’eau",
-                    "festin des héros",
-                    "purification de nourriture et d’eau",
-                    "Prix",
-                    "16 688 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-nourriture-et-d-eau.htm\">création de nourriture et d’eau</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-festin-des-heros.htm\">festin des héros</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-purification-de-nourriture-et-d-eau.htm\">purification de nourriture et d’eau</a> ",
+                    " <span class=\"compobj\">Prix</span> 16 688 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": [
@@ -206,15 +164,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création de bâtons magiques",
-                    "contrôle de l’eau",
-                    "marche sur l’onde",
-                    "Prix",
-                    "11 200 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-de-l-eau.htm\">contrôle de l’eau</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-sur-l-onde.htm\">marche sur l’onde</a> ",
+                    " <span class=\"compobj\">Prix</span> 11 200 po."
                 ]
             },
             "ul": [
@@ -235,18 +188,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "analyse d’enchantement",
-                    "identification",
-                    "localisation de créature",
-                    "localisation d’objet",
-                    "vision mystique",
-                    "Prix",
-                    "137 375 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-d-enchantement.htm\">analyse d’enchantement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-identification.htm\">identification</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-de-creature.htm\">localisation de créature</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">localisation d’objet</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-mystique.htm\">vision mystique</a> ",
+                    " <span class=\"compobj\">Prix</span> 137 375 po."
                 ]
             },
             "ul": [
@@ -270,15 +215,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de bâtons magiques",
-                    "contrôle des vents",
-                    "marche dans les airs",
-                    "Prix",
-                    "27 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-des-vents.htm\">contrôle des vents</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-marche-dans-les-airs.htm\">marche dans les airs</a> ",
+                    " <span class=\"compobj\">Prix</span> 27 000 po."
                 ]
             },
             "ul": [
@@ -299,15 +239,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "charme-monstre",
-                    "charme-personne",
-                    "Prix",
-                    "16 500 po."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre.htm\">charme-monstre</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-personne.htm\">charme-personne</a> ",
+                    " <span class=\"compobj\">Prix</span> 16 500 po."
                 ]
             },
             "ul": [
@@ -328,18 +263,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "contagion",
-                    "fléau d’insectes",
-                    "syphilis",
-                    "Prix",
-                    "70 000 o ;",
-                    "Poids",
-                    "2,5 kg."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">contagion</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-d-insectes.htm\">fléau d’insectes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-syphilis.htm\">syphilis</a> ",
+                    " <span class=\"compobj\">Prix</span> 70 000 o ",
+                    " <span class=\"compobj\">Poids</span> 2,5 kg."
                 ]
             },
             "ul": [
@@ -361,16 +289,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "boule de feu",
-                    "mains brûlantes",
-                    "mur de feu",
-                    "Prix",
-                    "17 750 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mains-brulantes.htm\">mains brûlantes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-feu.htm\">mur de feu</a> ",
+                    " <span class=\"compobj\">Prix</span> 17 750 po."
                 ]
             },
             "ul": [
@@ -392,19 +314,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "convocation d’arme",
-                    "convocation de composante",
-                    "convocation d’instrument",
-                    "serviteur invisible",
-                    "Prix",
-                    "13 500 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-arme.htm\">convocation d’arme</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-composante.htm\">convocation de composante</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-instrument.htm\">convocation d’instrument</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">serviteur invisible</a> ",
+                    " <span class=\"compobj\">Prix</span> 13 500 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": [
@@ -428,20 +342,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples modérées ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "Création d’armes et armures magiques",
-                    "animation des plantes",
-                    "charme-animal",
-                    "communication avec les animaux",
-                    ", convocation d’alliés naturels VI,",
-                    "mur d’épines",
-                    "passage sans trace",
-                    "peau d’écorce",
-                    "Prix",
-                    "101 250 po."
+                    "Multiples modérées ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-plantes.htm\">animation des plantes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-animal.htm\">charme-animal</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-communication-avec-les-animaux.htm\">communication avec les animaux</a>, convocation d’alliés naturels VI, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-d-epines.htm\">mur d’épines</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-passage-sans-trace.htm\">passage sans trace</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-ecorce.htm\">peau d’écorce</a> ",
+                    " <span class=\"compobj\">Prix</span> 101 250 po."
                 ]
             },
             "ul": [
@@ -465,16 +369,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de bâtons magiques",
-                    "cône de froid",
-                    "mur de glace",
-                    "tempête de grêle",
-                    "Prix",
-                    "56 250 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cone-de-froid.htm\">cône de froid</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-glace.htm\">mur de glace</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">tempête de grêle</a> ",
+                    " <span class=\"compobj\">Prix</span> 56 250 po."
                 ]
             },
             "ul": [
@@ -496,15 +394,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "brume acide",
-                    "nuée grouillante",
-                    "Prix",
-                    "58 200 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-acide.htm\">brume acide</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">nuée grouillante</a> ",
+                    " <span class=\"compobj\">Prix</span> 58 200 po."
                 ]
             },
             "ul": [
@@ -525,15 +418,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de bâtons magiques",
-                    "fléau d’insectes",
-                    "nuée grouillante",
-                    "Prix",
-                    "24 750 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-fleau-d-insectes.htm\">fléau d’insectes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">nuée grouillante</a> ",
+                    " <span class=\"compobj\">Prix</span> 24 750 po."
                 ]
             },
             "ul": [
@@ -554,17 +442,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "guérison de la cécité/surdité",
-                    "guérison des maladies",
-                    "restauration partielle",
-                    "soins importants",
-                    "Prix",
-                    "27 750 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-de-la-cecite-surdite.htm\">guérison de la cécité/surdité</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-des-maladies.htm\">guérison des maladies</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-restauration-partielle.htm\">restauration partielle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-importants.htm\">soins importants</a> ",
+                    " <span class=\"compobj\">Prix</span> 27 750 po."
                 ]
             },
             "ul": [
@@ -587,15 +468,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "animation des morts",
-                    "création de mort-vivant",
-                    "Prix",
-                    "27 375 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">animation des morts</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-de-mort-vivant.htm\">création de mort-vivant</a> ",
+                    " <span class=\"compobj\">Prix</span> 27 375 po."
                 ]
             },
             "ul": [
@@ -616,16 +492,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "ancre dimensionnelle",
-                    "barrière de lames",
-                    "immobilisation de monstre",
-                    "Prix",
-                    "51 563 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-ancre-dimensionnelle.htm\">ancre dimensionnelle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-barriere-de-lames.htm\">barrière de lames</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">immobilisation de monstre</a> ",
+                    " <span class=\"compobj\">Prix</span> 51 563 po."
                 ]
             },
             "ul": [
@@ -647,16 +517,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "convocation d’ombres",
-                    ", magie des ombres,",
-                    "traversée des ombres",
-                    "Prix",
-                    "48 500 po."
+                    "<span class=\"illu\">Illusion</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-ombres.htm\">convocation d’ombres</a>, magie des ombres, <a href=\"http://www.gemmaline.com/sorts/sort-nom-traversee-des-ombres.htm\">traversée des ombres</a> ",
+                    " <span class=\"compobj\">Prix</span> 48 500 po."
                 ]
             },
             "ul": [
@@ -678,17 +542,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "état informe",
-                    "orientation",
-                    "passe-muraille",
-                    "Prix",
-                    "48 500 po."
+                    "<span class=\"invo\">Invocation</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-informe.htm\">état informe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-orientation.htm\">orientation</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">passe-muraille</a> ",
+                    " <span class=\"compobj\">Prix</span> 48 500 po."
                 ]
             },
             "ul": [
@@ -710,16 +567,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "communion avec la nature",
-                    "dissimulation forestière",
-                    "orientation",
-                    "Prix",
-                    "48 469 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-communion-avec-la-nature.htm\">communion avec la nature</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissimulation-forestiere.htm\">dissimulation forestière</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-orientation.htm\">orientation</a> ",
+                    " <span class=\"compobj\">Prix</span> 48 469 po."
                 ]
             },
             "ul": [
@@ -741,15 +592,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "glissement de terrain",
-                    "passe-muraille",
-                    "Prix",
-                    "80 500 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-glissement-de-terrain.htm\">glissement de terrain</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">passe-muraille</a> ",
+                    " <span class=\"compobj\">Prix</span> 80 500 po."
                 ]
             },
             "ul": [
@@ -770,20 +616,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "Illusion",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "cauchemar",
-                    "sommeil profond",
-                    "sommeil sans fin",
-                    "songe",
-                    "Prix",
-                    "54 000 po ;",
-                    "Poids",
-                    "2,5 kg."
+                    "<span class=\"enchen\">Enchantement</span> et <span class=\"illu\">Illusion</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cauchemar.htm\">cauchemar</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil-profond.htm\">sommeil profond</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil-sans-fin.htm\">sommeil sans fin</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-songe.htm\">songe</a> ",
+                    " <span class=\"compobj\">Prix</span> 54 000 po ",
+                    " <span class=\"compobj\">Poids</span> 2,5 kg."
                 ]
             },
             "ul": [
@@ -806,19 +643,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "7 ;",
-                    "Création de bâtons magiques",
-                    "sombre trait",
-                    "ténèbres",
-                    "ténèbres des damnés",
-                    "ténèbres profondes",
-                    "Prix",
-                    "24 000 po ;",
-                    "Poids",
-                    "2,5 kg."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-sombre-trait.htm\">sombre trait</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres.htm\">ténèbres</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-des-damnes.htm\">ténèbres des damnés</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-tenebres-profondes.htm\">ténèbres profondes</a> ",
+                    " <span class=\"compobj\">Prix</span> 24 000 po ",
+                    " <span class=\"compobj\">Poids</span> 2,5 kg."
                 ]
             },
             "ul": [
@@ -841,19 +670,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de bâtons magiques",
-                    "convocation d’arme",
-                    "convocation d’instrument",
-                    "convocation de composante",
-                    "serviteur invisible",
-                    "Prix",
-                    "13 500 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-arme.htm\">convocation d’arme</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-d-instrument.htm\">convocation d’instrument</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-convocation-de-composante.htm\">convocation de composante</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">serviteur invisible</a> ",
+                    " <span class=\"compobj\">Prix</span> 13 500 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": [
@@ -876,18 +697,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "Transmutation",
-                    "modérés ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de bâtons magiques",
-                    "écailles ramollies",
-                    "résistance à la magie réduite",
-                    "souffle réprimé",
-                    "vulnérabilité",
-                    "Prix",
-                    "54 000 po."
+                    "<span class=\"enchen\">Enchantement</span> et <span class=\"transmu\">Transmutation</span> modérés ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-ecailles-ramollies.htm\">écailles ramollies</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-a-la-magie-reduite.htm\">résistance à la magie réduite</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-souffle-reprime.htm\">souffle réprimé</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vulnerabilite.htm\">vulnérabilité</a> ",
+                    " <span class=\"compobj\">Prix</span> 54 000 po."
                 ]
             },
             "ul": [
@@ -910,15 +723,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "modérée ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "guérison suprême",
-                    "rappel à la vie",
-                    "Prix",
-                    "155 750 po."
+                    "<span class=\"invo\">Invocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme.htm\">guérison suprême</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rappel-a-la-vie.htm\">rappel à la vie</a> ",
+                    " <span class=\"compobj\">Prix</span> 155 750 po."
                 ]
             },
             "ul": [
@@ -939,17 +747,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "12 ;",
-                    "Création de bâtons magiques",
-                    "détection de l’invisibilité",
-                    "vision dans le noir",
-                    "vision lucide",
-                    "guérison de la cécité/surdité",
-                    "Prix",
-                    "24 000 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-l-invisibilite.htm\">détection de l’invisibilité</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-dans-le-noir.htm\">vision dans le noir</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">vision lucide</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-de-la-cecite-surdite.htm\">guérison de la cécité/surdité</a> ",
+                    " <span class=\"compobj\">Prix</span> 24 000 po."
                 ]
             },
             "ul": [
@@ -974,19 +775,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "bouclier",
-                    "champ de force",
-                    "dissipation de la magie",
-                    "globe d’invulnérabilité partielle",
-                    "renvoi",
-                    "résistance aux énergies destructives",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">bouclier</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">champ de force</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-globe-d-invulnerabilite-partielle.htm\">globe d’invulnérabilité partielle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">renvoi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-resistance-aux-energies-destructives.htm\">résistance aux énergies destructives</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1011,19 +803,11 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "bannissement",
-                    "champ de force",
-                    "lenteur",
-                    "renvoi",
-                    "Prix",
-                    "47 532 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bannissement.htm\">bannissement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-champ-de-force.htm\">champ de force</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lenteur.htm\">lenteur</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi.htm\">renvoi</a> ",
+                    " <span class=\"compobj\">Prix</span> 47 532 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": [
@@ -1046,17 +830,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création de bâtons magiques",
-                    "aura sacrée",
-                    "manteau du Chaos",
-                    "parole du Chaos",
-                    "parole sacrée",
-                    "Prix",
-                    "78 750 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-aura-sacree.htm\">aura sacrée</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-manteau-du-chaos.htm\">manteau du Chaos</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-du-chaos.htm\">parole du Chaos</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-sacree.htm\">parole sacrée</a> ",
+                    " <span class=\"compobj\">Prix</span> 78 750 po."
                 ]
             },
             "ul": [
@@ -1079,22 +856,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "Illusion",
-                    "puissantes ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de bâtons magiques",
-                    "Frayeur",
-                    "effroi",
-                    "Cauchemar",
-                    "assassin imaginaire",
-                    "symbole de terreur",
-                    "Ennemi subconscient",
-                    "Prix",
-                    "51 000 po ;",
-                    "Poids",
-                    "2,5 kg."
+                    "<span class=\"necro\">Nécromancie</span> et <span class=\"illu\">Illusion</span> puissantes ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">Frayeur</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-effroi.htm\">effroi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cauchemar.htm\">Cauchemar</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-assassin-imaginaire.htm\">assassin imaginaire</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-symbole-de-terreur.htm\">symbole de terreur</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-ennemi-subconscient.htm\">Ennemi subconscient</a> ",
+                    " <span class=\"compobj\">Prix</span> 51 000 po ",
+                    " <span class=\"compobj\">Poids</span> 2,5 kg."
                 ]
             },
             "ul": [
@@ -1119,17 +885,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "explosion de lumière",
-                    "illumination",
-                    "lumière du jour",
-                    "lumières dansantes",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-de-lumiere.htm\">explosion de lumière</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-illumination.htm\">illumination</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">lumière du jour</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">lumières dansantes</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1152,16 +911,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de bâtons magiques",
-                    "cyclone",
-                    "cyclone suprême",
-                    "vent divin",
-                    "Prix",
-                    "89 250 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cyclone.htm\">cyclone</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cyclone-supreme.htm\">cyclone suprême</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vent-divin.htm\">vent divin</a> ",
+                    " <span class=\"compobj\">Prix</span> 89 250 po."
                 ]
             },
             "ul": [
@@ -1183,17 +936,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création de bâtons magiques",
-                    "bouclier",
-                    "bouclier de la foi",
-                    "bouclier de la Loi",
-                    "protection d’autrui",
-                    "Prix",
-                    "58 250 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier.htm\">bouclier</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-foi.htm\">bouclier de la foi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-bouclier-de-la-loi.htm\">bouclier de la Loi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">protection d’autrui</a> ",
+                    " <span class=\"compobj\">Prix</span> 58 250 po."
                 ]
             },
             "ul": [
@@ -1216,18 +962,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "détection des passages secrets",
-                    "don des langues",
-                    "localisation d’objet",
-                    ", localisation de créatures, œil indiscret,",
-                    "vision lucide",
-                    "Prix",
-                    "73 500 po."
+                    "<span class=\"divi\">Divination</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-des-passages-secrets.htm\">détection des passages secrets</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-don-des-langues.htm\">don des langues</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">localisation d’objet</a>, localisation de créatures, œil indiscret, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">vision lucide</a> ",
+                    " <span class=\"compobj\">Prix</span> 73 500 po."
                 ]
             },
             "ul": [
@@ -1252,18 +990,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "brume mentale",
-                    ", désespoir, fou rire,",
-                    "sommeil",
-                    "suggestion",
-                    ", suggestion de masse ;",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-mentale.htm\">brume mentale</a>, désespoir, fou rire, <a href=\"http://www.gemmaline.com/sorts/sort-nom-sommeil.htm\">sommeil</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-suggestion.htm\">suggestion</a>, suggestion de masse ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1288,19 +1018,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "boule de feu",
-                    "éclair multiple",
-                    "fracassement",
-                    "mur de force",
-                    "projectile magique",
-                    "tempête de grêle",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"evoca\">Évocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair-multiple.htm\">éclair multiple</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-fracassement.htm\">fracassement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">mur de force</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">projectile magique</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-tempete-de-grele.htm\">tempête de grêle</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1327,20 +1048,11 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples puissantes ;",
-                    "NLS",
-                    "12 ;",
-                    "Création de bâtons magiques",
-                    "divination",
-                    "épée de conscience",
-                    "exaltation",
-                    "pénitence",
-                    "vision des cieux",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "73 800 po ;",
-                    "Coût",
-                    "37 050 po + 2 940 PX."
+                    "Multiples puissantes ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-divination.htm\">divination</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-epee-de-conscience.htm\">épée de conscience</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-exaltation.htm\">exaltation</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-penitence.htm\">pénitence</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-des-cieux.htm\">vision des cieux</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 73 800 po ",
+                    " <span class=\"compobj\">Coût</span> 37 050 po + 2 940 PX."
                 ]
             },
             "ul": [
@@ -1363,19 +1075,10 @@
             ],
             "infos": {
                 "data": [
-                    "Diverses puissantes ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "blasphème",
-                    "cercle magique contre le Bien",
-                    "cercle magique contre la Loi",
-                    "protection contre le Bien",
-                    "protection contre la Loi",
-                    "mur de fer",
-                    "parole du Chaos",
-                    "Prix",
-                    "39 350 po."
+                    "Diverses puissantes ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-blaspheme.htm\">blasphème</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-le-bien.htm\">cercle magique contre le Bien</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-la-loi.htm\">cercle magique contre la Loi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-le-bien.htm\">protection contre le Bien</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-contre-la-loi.htm\">protection contre la Loi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-fer.htm\">mur de fer</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-parole-du-chaos.htm\">parole du Chaos</a> ",
+                    " <span class=\"compobj\">Prix</span> 39 350 po."
                 ]
             },
             "ul": [
@@ -1401,17 +1104,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "explosion de lumière",
-                    "illumination",
-                    "lumières dansantes",
-                    "lumière du jour",
-                    "Prix",
-                    "51 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-explosion-de-lumiere.htm\">explosion de lumière</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-illumination.htm\">illumination</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumieres-dansantes.htm\">lumières dansantes</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-du-jour.htm\">lumière du jour</a> ",
+                    " <span class=\"compobj\">Prix</span> 51 000 po."
                 ]
             },
             "ul": [
@@ -1434,19 +1130,10 @@
             ],
             "infos": {
                 "data": [
-                    "Illusion",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "déguisement",
-                    "double illusoire",
-                    "image accomplie",
-                    "image miroir",
-                    "image prédéterminée",
-                    "lueur d’arc-en-ciel",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"illu\">Illusion</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-deguisement.htm\">déguisement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-double-illusoire.htm\">double illusoire</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-image-accomplie.htm\">image accomplie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-image-miroir.htm\">image miroir</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-image-predeterminee.htm\">image prédéterminée</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lueur-d-arc-en-ciel.htm\">lueur d’arc-en-ciel</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1471,19 +1158,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "brume mortelle",
-                    ", convocation de monstres VI,",
-                    "création mineure",
-                    "nuage nauséabond",
-                    "nuée grouillante",
-                    "serviteur invisible",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-mortelle.htm\">brume mortelle</a>, convocation de monstres VI, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-mineure.htm\">création mineure</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-nuage-nauseabond.htm\">nuage nauséabond</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-nuee-grouillante.htm\">nuée grouillante</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-serviteur-invisible.htm\">serviteur invisible</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1508,16 +1186,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmuation puissante ;",
-                    "NLS",
-                    "17 ; Création de batons magiques,",
-                    "Forme draconique mineure",
-                    "Forme du troll",
-                    "Forme de la bête aux trois visages",
-                    "Forme terrifiante de l’oeil tyran",
-                    "Métamorphose",
-                    "Prix",
-                    "95 625 po."
+                    "Transmuation puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " Création de batons magiques, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-draconique-mineure.htm\">Forme draconique mineure</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-du-troll.htm\">Forme du troll</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-de-la-bete-aux-trois-visages.htm\">Forme de la bête aux trois visages</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-terrifiante-de-l-oeil-tyran.htm\">Forme terrifiante de l’oeil tyran</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">Métamorphose</a> ",
+                    " <span class=\"compobj\">Prix</span> 95 625 po."
                 ]
             },
             "ul": [
@@ -1541,17 +1213,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "Brume de dissimulation",
-                    "Contrôle des vents",
-                    "Contrôle du climat",
-                    "Rafale de pluie",
-                    "Prix",
-                    "33 516 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-de-dissimulation.htm\">Brume de dissimulation</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-des-vents.htm\">Contrôle des vents</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-du-climat.htm\">Contrôle du climat</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rafale-de-pluie.htm\">Rafale de pluie</a> ",
+                    " <span class=\"compobj\">Prix</span> 33 516 po."
                 ]
             },
             "ul": [
@@ -1574,19 +1239,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "baiser de la goule",
-                    "cercle de mort",
-                    "énergie négative",
-                    "frayeur",
-                    ", immobilisation de monstres,",
-                    "vagues de fatigue",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-baiser-de-la-goule.htm\">baiser de la goule</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-de-mort.htm\">cercle de mort</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-energie-negative.htm\">énergie négative</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-frayeur.htm\">frayeur</a>, immobilisation de monstres, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vagues-de-fatigue.htm\">vagues de fatigue</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1611,15 +1267,10 @@
             ],
             "infos": {
                 "data": [
-                    "Diverses puissantes ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de bâtons magiques",
-                    "forme éthérée",
-                    "passage dans l’éther",
-                    "téléportation d’objet",
-                    "Prix",
-                    "43 300 po."
+                    "Diverses puissantes ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-forme-etheree.htm\">forme éthérée</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-passage-dans-l-ether.htm\">passage dans l’éther</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-d-objet.htm\">téléportation d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> 43 300 po."
                 ]
             },
             "ul": [
@@ -1641,15 +1292,10 @@
             ],
             "infos": {
                 "data": [
-                    "Diverses puissantes ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de bâtons magiques",
-                    "analyse de portail",
-                    ", convocation de monstres VI,",
-                    "portail",
-                    "Prix",
-                    "43 100 po."
+                    "Diverses puissantes ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-de-portail.htm\">analyse de portail</a>, convocation de monstres VI, <a href=\"http://www.gemmaline.com/sorts/sort-nom-portail.htm\">portail</a> ",
+                    " <span class=\"compobj\">Prix</span> 43 100 po."
                 ]
             },
             "ul": [
@@ -1672,16 +1318,11 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de bâtons magiques",
-                    "téléportation funeste de Trobriand",
-                    "Prix",
-                    "12 375 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-teleportation-funeste-de-trobriand.htm\">téléportation funeste de Trobriand</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 375 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": [
@@ -1701,18 +1342,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de bâtons magiques",
-                    "soins légers de groupe",
-                    "soins modérés de groupe",
-                    "soins importants de groupe",
-                    "soins intensifs de groupe",
-                    "guérison suprême de groupe",
-                    "Prix",
-                    "54 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-legers-de-groupe.htm\">soins légers de groupe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-moderes-de-groupe.htm\">soins modérés de groupe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-importants-de-groupe.htm\">soins importants de groupe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-soins-intensifs-de-groupe.htm\">soins intensifs de groupe</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-guerison-supreme-de-groupe.htm\">guérison suprême de groupe</a> ",
+                    " <span class=\"compobj\">Prix</span> 54 000 po."
                 ]
             },
             "ul": [
@@ -1738,23 +1371,11 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples puissantes ;",
-                    "NLS",
-                    "16 ;",
-                    "Création de bâtons magiques",
-                    "bénédiction",
-                    "cercle magique contre le Mal",
-                    "couronne de flamme",
-                    "état gazeux",
-                    "flamme éternelle",
-                    "lumière brûlante",
-                    "prière",
-                    "protection d’autrui",
-                    ", le créateur doit être d’alignement bon ;",
-                    "Prix",
-                    "173 300 po ;",
-                    "Coût",
-                    "86 800 po + 6 920 PX."
+                    "Multiples puissantes ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction.htm\">bénédiction</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cercle-magique-contre-le-mal.htm\">cercle magique contre le Mal</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-couronne-de-flamme.htm\">couronne de flamme</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-etat-gazeux.htm\">état gazeux</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-flamme-eternelle.htm\">flamme éternelle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere-brulante.htm\">lumière brûlante</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-priere.htm\">prière</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-protection-d-autrui.htm\">protection d’autrui</a>, le créateur doit être d’alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 173 300 po ",
+                    " <span class=\"compobj\">Coût</span> 86 800 po + 6 920 PX."
                 ]
             },
             "ul": [
@@ -1780,24 +1401,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples puissantes ;",
-                    "NLS",
-                    "15 ;",
-                    "Création de bâtons magiques",
-                    "Création d’armes et armures magiques",
-                    ", Augmentation d’intensité,",
-                    "boule de feu",
-                    "cône de froid",
-                    "éclair",
-                    "flamme éternelle",
-                    "globe d’invulnérabilité renforcée",
-                    "immobilisation de monstre",
-                    "lévitation",
-                    "mur de force",
-                    "projectile magique",
-                    "rayon affaiblissant",
-                    "Prix",
-                    "211 000 po."
+                    "Multiples puissantes ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, Augmentation d’intensité, <a href=\"http://www.gemmaline.com/sorts/sort-nom-boule-de-feu.htm\">boule de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cone-de-froid.htm\">cône de froid</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">éclair</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-flamme-eternelle.htm\">flamme éternelle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-globe-d-invulnerabilite-renforcee.htm\">globe d’invulnérabilité renforcée</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-monstre.htm\">immobilisation de monstre</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-levitation.htm\">lévitation</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-mur-de-force.htm\">mur de force</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-projectile-magique.htm\">projectile magique</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-affaiblissant.htm\">rayon affaiblissant</a> ",
+                    " <span class=\"compobj\">Prix</span> 211 000 po."
                 ]
             },
             "ul": [
@@ -1826,16 +1433,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "forte ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "brume de dissimulation",
-                    "appel de la foudre",
-                    "contrôle du climat",
-                    "Prix",
-                    "18 890 po."
+                    "<span class=\"transmu\">Transmutation</span> forte ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-brume-de-dissimulation.htm\">brume de dissimulation</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-appel-de-la-foudre.htm\">appel de la foudre</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-controle-du-climat.htm\">contrôle du climat</a> ",
+                    " <span class=\"compobj\">Prix</span> 18 890 po."
                 ]
             },
             "ul": [
@@ -1857,19 +1458,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de bâtons magiques",
-                    "clignotement",
-                    "désintégration",
-                    "métamorphose",
-                    "métamorphose funeste",
-                    "modification d’apparence",
-                    "repli expéditif",
-                    "Prix",
-                    "65 000 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-clignotement.htm\">clignotement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-desintegration.htm\">désintégration</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose.htm\">métamorphose</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-funeste.htm\">métamorphose funeste</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-modification-d-apparence.htm\">modification d’apparence</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-repli-expeditif.htm\">repli expéditif</a> ",
+                    " <span class=\"compobj\">Prix</span> 65 000 po."
                 ]
             },
             "ul": [
@@ -1894,17 +1486,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples puissantes ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de bâtons magiques",
-                    "passe-muraille",
-                    "porte de phase",
-                    "porte dimensionnelle",
-                    "projection astrale",
-                    ", téléportation sans erreur ;",
-                    "Prix",
-                    "170 500 po."
+                    "Multiples puissantes ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-batons-magiques-25.htm#25\">Création de bâtons magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-passe-muraille.htm\">passe-muraille</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-porte-de-phase.htm\">porte de phase</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-porte-dimensionnelle.htm\">porte dimensionnelle</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-projection-astrale.htm\">projection astrale</a>, téléportation sans erreur ",
+                    " <span class=\"compobj\">Prix</span> 170 500 po."
                 ]
             },
             "ul": [
@@ -1928,15 +1513,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "17 ; Création de bâtons magiques,",
-                    "visage divin",
-                    "visage divin mineur",
-                    "visage divin suprême",
-                    "Prix",
-                    "60 563 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " Création de bâtons magiques, <a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin.htm\">visage divin</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin-mineur.htm\">visage divin mineur</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-visage-divin-supreme.htm\">visage divin suprême</a> ",
+                    " <span class=\"compobj\">Prix</span> 60 563 po."
                 ]
             },
             "ul": [

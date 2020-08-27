@@ -7,14 +7,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "faible ;",
-                    "NLS",
-                    "5 ;",
-                    "Création de sceptres magiques",
-                    "charme-personne",
-                    "Prix",
-                    "12 500 po."
+                    "<span class=\"enchen\">Enchantement</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 5 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-personne.htm\">charme-personne</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 500 po."
                 ]
             },
             "ul": null,
@@ -30,13 +26,11 @@
             ],
             "infos": {
                 "data": [
-                    "Universel faible (inférieure), modérée (mineure ou majeure) ou puissante (suprême) ;",
-                    "NLS",
-                    "1 (mineure), 6 (mineure), 11 (majeure) ou 16 (suprême) ; Création de sceptres, le créateur doit connaître l’invocation en question ;",
-                    "Prix",
-                    "4 000 po (inférieure), 16 000 po (mineure), 36 000 po (majeure), 64 000 po (suprême) ;",
-                    "Poids",
-                    "1,5 kg."
+                    "Universel faible (inférieure), modérée (mineure ou majeure) ou puissante (suprême) ",
+                    " <span class=\"compobj\">NLS</span> 1 (mineure), 6 (mineure), 11 (majeure) ou 16 (suprême) ",
+                    " Création de sceptres, le créateur doit connaître l’invocation en question ",
+                    " <span class=\"compobj\">Prix</span> 4 000 po (inférieure), 16 000 po (mineure), 36 000 po (majeure), 64 000 po (suprême) ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -49,16 +43,11 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "faible ;",
-                    "NLS",
-                    "3 ;",
-                    "Création de sceptres magiques",
-                    "localisation d’objet",
-                    "Prix",
-                    "12 000 po ;",
-                    "Poids",
-                    "700 g."
+                    "<span class=\"divi\">Divination</span> faible ",
+                    " <span class=\"compobj\">NLS</span> 3 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">localisation d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po ",
+                    " <span class=\"compobj\">Poids</span> 700 g."
                 ]
             },
             "ul": null,
@@ -74,14 +63,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "8 ;",
-                    "Création de sceptres magiques",
-                    "blessure légère",
-                    "Prix",
-                    "2 000 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 8 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-legere.htm\">blessure légère</a> ",
+                    " <span class=\"compobj\">Prix</span> 2 000 po."
                 ]
             },
             "ul": null,
@@ -95,16 +80,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "endurance de l’ours",
-                    "force de taureau",
-                    "grâce féline",
-                    "Prix",
-                    "40 500 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-endurance-de-l-ours.htm\">endurance de l’ours</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-grace-feline.htm\">grâce féline</a> ",
+                    " <span class=\"compobj\">Prix</span> 40 500 po."
                 ]
             },
             "ul": null,
@@ -117,14 +96,10 @@
             ],
             "infos": {
                 "data": [
-                    "École modérée ;",
-                    "NLS",
-                    "16 ;",
-                    "Création de sceptres magiques",
-                    "dissipation de la magie",
-                    ", souhait limité ou miracle ;",
-                    "Prix",
-                    "37 000 po."
+                    "École modérée ",
+                    " <span class=\"compobj\">NLS</span> 16 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-dissipation-de-la-magie.htm\">dissipation de la magie</a>, souhait limité ou miracle ",
+                    " <span class=\"compobj\">Prix</span> 37 000 po."
                 ]
             },
             "ul": null,
@@ -137,14 +112,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    ", zone» d’antimagie ;",
-                    "Prix",
-                    "70 000 po."
+                    "<span class=\"abju\">Abjuration</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, zone» d’antimagie ",
+                    " <span class=\"compobj\">Prix</span> 70 000 po."
                 ]
             },
             "ul": null,
@@ -157,14 +128,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    ", Emprise sur les morts-vivants, aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
-                    "Prix",
-                    "7 500 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, Emprise sur les morts-vivants, aptitude de classe de renvoi ou d’intimidation des morts-vivants ",
+                    " <span class=\"compobj\">Prix</span> 7 500 po."
                 ]
             },
             "ul": null,
@@ -177,15 +144,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "analyse de portail",
-                    "localisation d’objet",
-                    "Prix",
-                    "73 000 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-analyse-de-portail.htm\">analyse de portail</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">localisation d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> 73 000 po."
                 ]
             },
             "ul": null,
@@ -198,14 +160,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    ", aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
-                    "Prix",
-                    "13 000 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, aptitude de classe de renvoi ou d’intimidation des morts-vivants ",
+                    " <span class=\"compobj\">Prix</span> 13 000 po."
                 ]
             },
             "ul": null,
@@ -218,14 +176,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "vision lucide",
-                    "Prix",
-                    "23 500 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-vision-lucide.htm\">vision lucide</a> ",
+                    " <span class=\"compobj\">Prix</span> 23 500 po."
                 ]
             },
             "ul": null,
@@ -238,14 +192,10 @@
             ],
             "infos": {
                 "data": [
-                    "Divination",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "localisation d’objet",
-                    "Prix",
-                    "10 500 po."
+                    "<span class=\"divi\">Divination</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-localisation-d-objet.htm\">localisation d’objet</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 500 po."
                 ]
             },
             "ul": null,
@@ -258,14 +208,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    ", aptitude de classe de renvoi ou d’intimidation des morts-vivants ;",
-                    "Prix",
-                    "9 000 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, aptitude de classe de renvoi ou d’intimidation des morts-vivants ",
+                    " <span class=\"compobj\">Prix</span> 9 000 po."
                 ]
             },
             "ul": null,
@@ -280,23 +226,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples modérées ;",
-                    "NLS",
-                    "11 ;",
-                    "Création de sceptres magiques",
-                    "alarme",
-                    "animation d’objets",
-                    "détection de la magie",
-                    "détection de l’invisibilité",
-                    "détection de la Loi",
-                    "détection du Bien",
-                    "détection du Chaos",
-                    "détection du Mal",
-                    "détection du mensonge",
-                    "lumière",
-                    "prière",
-                    "Prix",
-                    "85 000 po."
+                    "Multiples modérées ",
+                    " <span class=\"compobj\">NLS</span> 11 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-alarme.htm\">alarme</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-d-objets.htm\">animation d’objets</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-la-magie.htm\">détection de la magie</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-l-invisibilite.htm\">détection de l’invisibilité</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-de-la-loi.htm\">détection de la Loi</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-bien.htm\">détection du Bien</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-chaos.htm\">détection du Chaos</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-mal.htm\">détection du Mal</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-detection-du-mensonge.htm\">détection du mensonge</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lumiere.htm\">lumière</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-priere.htm\">prière</a> ",
+                    " <span class=\"compobj\">Prix</span> 85 000 po."
                 ]
             },
             "ul": null,
@@ -309,18 +242,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de sceptres magiques",
-                    "malédiction",
-                    "souhait limité",
-                    ", le créateur doit être un Extérieur d’alignement mauvais ;",
-                    "Prix",
-                    "56 000 po ;",
-                    "Poids",
-                    "1,5 kg."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-malediction.htm\">malédiction</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-souhait-limite.htm\">souhait limité</a>, le créateur doit être un Extérieur d’alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 56 000 po ",
+                    " <span class=\"compobj\">Poids</span> 1,5 kg."
                 ]
             },
             "ul": null,
@@ -334,16 +260,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "rayon de givre",
-                    "Prix",
-                    "1 400 po ;",
-                    "Poids",
-                    "500 g."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-rayon-de-givre.htm\">rayon de givre</a> ",
+                    " <span class=\"compobj\">Prix</span> 1 400 po ",
+                    " <span class=\"compobj\">Poids</span> 500 g."
                 ]
             },
             "ul": null,
@@ -357,15 +278,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "bénédiction",
-                    "Prix",
-                    "50 000 po."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-benediction.htm\">bénédiction</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 000 po."
                 ]
             },
             "ul": null,
@@ -378,14 +294,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "lévitation",
-                    "Prix",
-                    "7 500 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-levitation.htm\">lévitation</a> ",
+                    " <span class=\"compobj\">Prix</span> 7 500 po."
                 ]
             },
             "ul": null,
@@ -400,16 +312,11 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "annulation d’enchantement",
-                    "Prix",
-                    "53 000 po ;",
-                    "Poids",
-                    "3 kilos."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-annulation-d-enchantement.htm\">annulation d’enchantement</a> ",
+                    " <span class=\"compobj\">Prix</span> 53 000 po ",
+                    " <span class=\"compobj\">Poids</span> 3 kilos."
                 ]
             },
             "ul": null,
@@ -422,14 +329,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "profanation",
-                    "Prix",
-                    "10 000 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-profanation.htm\">profanation</a> ",
+                    " <span class=\"compobj\">Prix</span> 10 000 po."
                 ]
             },
             "ul": null,
@@ -442,15 +345,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "modéré ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "confusion",
-                    ", alignement chaotique ;",
-                    "Prix",
-                    "12 000 po."
+                    "<span class=\"enchen\">Enchantement</span> modéré ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-confusion.htm\">confusion</a>, alignement chaotique ",
+                    " <span class=\"compobj\">Prix</span> 12 000 po."
                 ]
             },
             "ul": null,
@@ -564,15 +462,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "animation des morts",
-                    ", le créateur doit être un prêtre ;",
-                    "Prix",
-                    "75 000 po,."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-animation-des-morts.htm\">animation des morts</a>, le créateur doit être un prêtre ",
+                    " <span class=\"compobj\">Prix</span> 75 000 po,."
                 ]
             },
             "ul": null,
@@ -585,16 +478,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "éclair",
-                    "cri",
-                    "Prix",
-                    "33 000 po."
+                    "<span class=\"evoca\">Évocation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-eclair.htm\">éclair</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-cri.htm\">cri</a> ",
+                    " <span class=\"compobj\">Prix</span> 33 000 po."
                 ]
             },
             "ul": [
@@ -618,16 +505,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "métamorphose funeste",
-                    ", alignement bon ;",
-                    "Prix",
-                    "13 000 po."
+                    "<span class=\"transmu\">Transmutation</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-metamorphose-funeste.htm\">métamorphose funeste</a>, alignement bon ",
+                    " <span class=\"compobj\">Prix</span> 13 000 po."
                 ]
             },
             "ul": null,
@@ -641,15 +522,10 @@
             ],
             "infos": {
                 "data": [
-                    "Évocation",
-                    "[force] modérée ;",
-                    "NLS",
-                    "9 ;",
-                    "Création de sceptres magiques",
-                    "disque flottant de Tenser",
-                    "feuille morte",
-                    "Prix",
-                    "25 000 po."
+                    "<span class=\"evoca\">Évocation</span> [force] modérée ",
+                    " <span class=\"compobj\">NLS</span> 9 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-disque-flottant-de-tenser.htm\">disque flottant de Tenser</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-feuille-morte.htm\">feuille morte</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 000 po."
                 ]
             },
             "ul": null,
@@ -662,17 +538,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "Transmutation",
-                    "modérées ;",
-                    "NLS",
-                    "7 ;",
-                    "Création de sceptres magiques",
-                    "liberté de mouvement",
-                    "peau d’araignée",
-                    "toile d’araignée",
-                    "Prix",
-                    "90 000 po."
+                    "<span class=\"abju\">Abjuration</span> et <span class=\"transmu\">Transmutation</span> modérées ",
+                    " <span class=\"compobj\">NLS</span> 7 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-liberte-de-mouvement.htm\">liberté de mouvement</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-peau-d-araignee.htm\">peau d’araignée</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-toile-d-araignee.htm\">toile d’araignée</a> ",
+                    " <span class=\"compobj\">Prix</span> 90 000 po."
                 ]
             },
             "ul": null,
@@ -685,13 +554,10 @@
             ],
             "infos": {
                 "data": [
-                    "Universelle modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    ", Efficacité des sorts supérieure ;",
-                    "Prix",
-                    "5 500 po."
+                    "Universelle modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, Efficacité des sorts supérieure ",
+                    " <span class=\"compobj\">Prix</span> 5 500 po."
                 ]
             },
             "ul": null,
@@ -704,16 +570,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "modérée ;",
-                    "NLS",
-                    "10 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "empoisonnement",
-                    ", alignement mauvais ;",
-                    "Prix",
-                    "19 000 po."
+                    "<span class=\"necro\">Nécromancie</span> modérée ",
+                    " <span class=\"compobj\">NLS</span> 10 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-empoisonnement.htm\">empoisonnement</a>, alignement mauvais ",
+                    " <span class=\"compobj\">Prix</span> 19 000 po."
                 ]
             },
             "ul": null,
@@ -731,14 +591,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création de sceptres magiques",
-                    "renvoi des sorts",
-                    "Prix",
-                    "50 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 50 000 po."
                 ]
             },
             "ul": null,
@@ -751,15 +607,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de sceptres magiques",
-                    "lueur féerique",
-                    "renvoi des sorts",
-                    "Prix",
-                    "117 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lueur-feerique.htm\">lueur féerique</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a> ",
+                    " <span class=\"compobj\">Prix</span> 117 000 po."
                 ]
             },
             "ul": null,
@@ -775,14 +626,10 @@
             ],
             "infos": {
                 "data": [
-                    "Transmutation",
-                    "puissante ;",
-                    "NLS",
-                    "12 ;",
-                    "Création de sceptres magiques",
-                    "pyrotechnie",
-                    "Prix",
-                    "15 000 po."
+                    "<span class=\"transmu\">Transmutation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-pyrotechnie.htm\">pyrotechnie</a> ",
+                    " <span class=\"compobj\">Prix</span> 15 000 po."
                 ]
             },
             "ul": null,
@@ -795,15 +642,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "contagion",
-                    "Prix",
-                    "25 000 po."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-contagion.htm\">contagion</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 000 po."
                 ]
             },
             "ul": null,
@@ -816,16 +658,11 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "15 ;",
-                    "Création de sceptres magiques",
-                    "blessure grave",
-                    "Prix",
-                    "47 312 po ;",
-                    "Coût",
-                    "23 812 po + 1 880 PX."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 15 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-grave.htm\">blessure grave</a> ",
+                    " <span class=\"compobj\">Prix</span> 47 312 po ",
+                    " <span class=\"compobj\">Coût</span> 23 812 po + 1 880 PX."
                 ]
             },
             "ul": null,
@@ -838,14 +675,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", École renforcée, Extension d’effet, protection contre le Bien/le Chaos/la Loi/le Mal, le niveau de lanceur de sorts du créateur doit être supérieur ou égal à trois fois le bonus placé dans le sceptre ;",
-                    "Prix",
-                    "26 800 po (+1), 38 800 po (+2), 58 800 po (+3), 77 600 po (+4), 95 600 po (+5)."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, École renforcée, Extension d’effet, protection contre le Bien/le Chaos/la Loi/le Mal, le niveau de lanceur de sorts du créateur doit être supérieur ou égal à trois fois le bonus placé dans le sceptre ",
+                    " <span class=\"compobj\">Prix</span> 26 800 po (+1), 38 800 po (+2), 58 800 po (+3), 77 600 po (+4), 95 600 po (+5)."
                 ]
             },
             "ul": null,
@@ -866,57 +699,7 @@
                 "<strong><a name=\"1452\"></a>Substitution non-létale</strong>.Trois fois par jour, le porteur de ce sceptre peut lancer un sort à durée étendue comme s’il utilisait le don Substitution non-létale."
             ],
             "infos": {
-                "data": [
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Extension de durée ;",
-                    "Prix",
-                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Extension de portée ;",
-                    "Prix",
-                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Extension d’effet ;",
-                    "Prix",
-                    "9 000 po (mineur), 32 500 po (modérée), 73 000 po (majeure).",
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Incantation rapide ;",
-                    "Prix",
-                    "35 000 po (mineur), 75 500 po (modérée), 170 000 po (majeure).",
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Incantation silencieuse ;",
-                    "Prix",
-                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure).",
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Quintessence de sort ;",
-                    "Prix",
-                    "14 000 po (mineur), 54 000 po (modérée), 121 500 po (majeure).",
-                    "Aura puissante (pas d’école) ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", Substitution non-létale ;",
-                    "Prix",
-                    "3 000 po (mineur), 11 000 po (modérée), 24 500 po (majeure)."
-                ]
+                "data": []
             },
             "ul": null,
             "table": null
@@ -928,14 +711,10 @@
             ],
             "infos": {
                 "data": [
-                    "Abjuration",
-                    "puissante ;",
-                    "NLS",
-                    "17 ;",
-                    "Création de sceptres magiques",
-                    ", disjonction ;",
-                    "Prix",
-                    "11 000 po."
+                    "<span class=\"abju\">Abjuration</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 17 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, disjonction ",
+                    " <span class=\"compobj\">Prix</span> 11 000 po."
                 ]
             },
             "ul": null,
@@ -951,17 +730,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "Transmutation",
-                    "puissantes ;",
-                    "NLS",
-                    "12 ;",
-                    "Création de sceptres magiques",
-                    "création majeure",
-                    "fabrication",
-                    "splendeur de l’aigle",
-                    "Prix",
-                    "25 000 po."
+                    "<span class=\"invo\">Invocation</span> et <span class=\"transmu\">Transmutation</span> puissantes ",
+                    " <span class=\"compobj\">NLS</span> 12 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-creation-majeure.htm\">création majeure</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-fabrication.htm\">fabrication</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-splendeur-de-l-aigle.htm\">splendeur de l’aigle</a> ",
+                    " <span class=\"compobj\">Prix</span> 25 000 po."
                 ]
             },
             "ul": null,
@@ -976,17 +748,11 @@
             ],
             "infos": {
                 "data": [
-                    "Diverses puissantes ;",
-                    "NLS",
-                    "13 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "châtiment sacré",
-                    ", convocation de monstres VII ;",
-                    "Prix",
-                    "110 600 po ;",
-                    "Coût",
-                    "55 600 po + 4 400 PX."
+                    "Diverses puissantes ",
+                    " <span class=\"compobj\">NLS</span> 13 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-chatiment-sacre.htm\">châtiment sacré</a>, convocation de monstres VII ",
+                    " <span class=\"compobj\">Prix</span> 110 600 po ",
+                    " <span class=\"compobj\">Coût</span> 55 600 po + 4 400 PX."
                 ]
             },
             "ul": null,
@@ -999,15 +765,10 @@
             ],
             "infos": {
                 "data": [
-                    "Nécromancie",
-                    "puissante ;",
-                    "NLS",
-                    "18 ;",
-                    "Création de sceptres magiques",
-                    "renvoi des sorts",
-                    "absorption d’énergie",
-                    "Prix",
-                    "60 000 po."
+                    "<span class=\"necro\">Nécromancie</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 18 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-renvoi-des-sorts.htm\">renvoi des sorts</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-absorption-d-energie.htm\">absorption d’énergie</a> ",
+                    " <span class=\"compobj\">Prix</span> 60 000 po."
                 ]
             },
             "ul": null,
@@ -1021,14 +782,10 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "20 ;",
-                    "Création de sceptres magiques",
-                    "charme-monstre de groupe",
-                    "Prix",
-                    "120 000 po."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 20 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre-de-groupe.htm\">charme-monstre de groupe</a> ",
+                    " <span class=\"compobj\">Prix</span> 120 000 po."
                 ]
             },
             "ul": null,
@@ -1044,14 +801,10 @@
             ],
             "infos": {
                 "data": [
-                    "Invocation",
-                    "puissante ;",
-                    "NLS",
-                    "20 ;",
-                    "Création de sceptres magiques",
-                    "portail",
-                    "Prix",
-                    "61 000 po."
+                    "<span class=\"invo\">Invocation</span> puissante ",
+                    " <span class=\"compobj\">NLS</span> 20 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-portail.htm\">portail</a> ",
+                    " <span class=\"compobj\">Prix</span> 61 000 po."
                 ]
             },
             "ul": null,
@@ -1067,18 +820,10 @@
             ],
             "infos": {
                 "data": [
-                    "Multiples puissantes ;",
-                    "NLS",
-                    "19 ;",
-                    "Création de sceptres magiques",
-                    "Création d’armes et armures magiques",
-                    "blessure légère",
-                    "force de taureau",
-                    "immobilisation de personne",
-                    "lame de feu",
-                    "terreur",
-                    "Prix",
-                    "70 000 po."
+                    "Multiples puissantes ",
+                    " <span class=\"compobj\">NLS</span> 19 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/dons/dons-creation-d-armes-et-armures-magiques-22.htm#22\">Création d’armes et armures magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-blessure-legere.htm\">blessure légère</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-force-de-taureau.htm\">force de taureau</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-immobilisation-de-personne.htm\">immobilisation de personne</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-lame-de-feu.htm\">lame de feu</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-terreur.htm\">terreur</a> ",
+                    " <span class=\"compobj\">Prix</span> 70 000 po."
                 ]
             },
             "ul": [
@@ -1117,16 +862,11 @@
             ],
             "infos": {
                 "data": [
-                    "Enchantement",
-                    "puissant ;",
-                    "NLS",
-                    "20 ;",
-                    "Création de sceptres magiques",
-                    "charme-monstre de groupe",
-                    "Prix",
-                    "60 000 po ;",
-                    "Coût",
-                    "27 500 po + 2 200 PX."
+                    "<span class=\"enchen\">Enchantement</span> puissant ",
+                    " <span class=\"compobj\">NLS</span> 20 ",
+                    " <a href=\"http://www.gemmaline.com/dons/dons-creation-de-sceptres-magiques-26.htm#26\">Création de sceptres magiques</a>, <a href=\"http://www.gemmaline.com/sorts/sort-nom-charme-monstre-de-groupe.htm\">charme-monstre de groupe</a> ",
+                    " <span class=\"compobj\">Prix</span> 60 000 po ",
+                    " <span class=\"compobj\">Coût</span> 27 500 po + 2 200 PX."
                 ]
             },
             "ul": null,
