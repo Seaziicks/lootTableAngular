@@ -1,12 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {JSonLoadService} from '../../services/json-load.service';
 import {
-    Arme,
-    CategoriesArmes, DegatsParTaille,
-    MagicalProperty,
-    SortedMagicalProperty,
+    Arme, CategoriesArmes, MagicalProperty, DegatsParTaille, SortedMagicalProperty, Materiau
 } from '../../interface/MonstreGroupe';
 import {ObjetCombat} from '../objet-combat';
+import {MaledictionsComponent} from '../maledictions/maledictions.component';
 
 @Component({
     selector: 'app-armes',
@@ -15,11 +13,15 @@ import {ObjetCombat} from '../objet-combat';
 })
 export class ArmesComponent extends ObjetCombat implements OnInit {
 
-    allProprietesMagiques: SortedMagicalProperty;
+    @Output() objetSimpleEventEmitter = new EventEmitter<ArmesComponent>();
+    @ViewChild('maledictionsComponent') maledictionComponent: MaledictionsComponent;
+    @Input() maudit: boolean = true;
+
     allArmesSpeciales: SortedMagicalProperty;
 
     arme: Arme;
     taille: DegatsParTaille;
+    degats: string;
 
     allArmeCourantes: CategoriesArmes;
     allArmesGuerre: CategoriesArmes;
@@ -114,7 +116,8 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
                 break;
         }
         if (!this.isSpecial && this.Categories) {
-            this.arme = this.allCategoriesCourante.Categories.find(f => f.title === this.categorieObjet).armes[this.deObjet - 1];
+            this.arme = JSON.parse(JSON.stringify(
+                this.allCategoriesCourante.Categories.find(f => f.title === this.categorieObjet).armes[this.deObjet - 1])) as Arme;
             this.setNom();
         } else {
             this.type = null;
@@ -129,12 +132,12 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
         this.reset();
         if (this.deSpecial && this.deSpecial <= this.getNbProprietesMagiques(this.allArmesSpeciales)) {
             const armeSpecial: MagicalProperty = JSON.parse(JSON.stringify(
-                this.getPropretesMagiques(this.allArmesSpeciales)[this.deSpecial - 1])) as MagicalProperty;
-            this.type = 'Arme speciale';
+                this.getProprietesMagiques(this.allArmesSpeciales)[this.deSpecial - 1])) as MagicalProperty;
+            this.setType();
             this.bonus = 0;
             this.proprietesMagiques.push(armeSpecial);
             this.nom = armeSpecial.title;
-            this.getPrixAndCurrency(armeSpecial.infos.data);
+            this.getPrixAndCurrency();
         }
     }
 
@@ -161,9 +164,12 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     setArme() {
         this.resetHard();
         if (!this.isSpecial) {
-            this.arme = this.allCategoriesCourante.Categories.find(f => f.title === this.categorieObjet).armes[this.deObjet - 1];
-            this.type = this.categorieObjet;
-            this.setNom();
+            if (this.deObjet) {
+                this.arme = JSON.parse(JSON.stringify(
+                    this.allCategoriesCourante.Categories.find(f => f.title === this.categorieObjet).armes[this.deObjet - 1])) as Arme;
+                this.setType();
+                this.setNom();
+            }
         } else {
             this.type = null;
             this.nom = null;
@@ -191,7 +197,8 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     }
 
     setTaille() {
-        this.taille = this.arme.degatsParTaille.find(f => f.taille === this.nomTaille);
+        this.taille = JSON.parse(JSON.stringify(this.arme.degatsParTaille.find(f => f.taille === this.nomTaille))) as DegatsParTaille;
+        this.getDegats();
         this.setNom();
     }
 
@@ -204,7 +211,7 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     }
 
     getDegats() {
-        return this.taille.degats === '-' ? '1d0'
+        this.degats = this.taille.degats === '-' ? '1d0'
             : this.taille.degats === '1' ? '1d1'
                 : this.taille.degats;
     }
@@ -215,7 +222,8 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     }
 
     setMateriau() {
-        this.materiau = this.arme.autresMateriaux.find(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1') === this.nomMateriau);
+        this.materiau = JSON.parse(JSON.stringify(
+            this.arme.autresMateriaux.find(f => f.nom.replace(/<a.*>(.*)<\/a>/, '$1') === this.nomMateriau))) as Materiau;
         this.setNom();
     }
 
@@ -241,11 +249,34 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
         if (this.materiau) {
             this.nom += ' en ' + this.materiau.nom;
         }
+        this.nom += ' ' + this.getNomsProprieteMagique();
         // console.log(this.nom);
+    }
+
+    setType() {
+        this.type = this.isSpecial ? 'Arme spéciale' : this.categorieObjet;
     }
 
     resetHard() {
         super.resetHard();
         this.taille = undefined;
+    }
+
+    resetContenu() {
+        super.resetContenu();
+        this.getDegats();
+        this.setMateriau();
+        this.setTaille();
+        this.setType();
+    }
+
+    selection() {
+        this.valide = true;
+        this.objetSimpleEventEmitter.emit(this);
+    }
+
+    deselection() {
+        this.valide = false;
+        this.objetSimpleEventEmitter.emit(null);
     }
 }

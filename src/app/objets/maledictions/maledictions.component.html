@@ -1,6 +1,6 @@
 <div class="form-row">
     <div class="col-md-2 mb-3">
-        <label for="Malediction">Dé Malédiction
+        <label for="Malediction">Dé Malédiction (1D100)
         </label>
         <input min="1" max="100" type="number" class="form-control"
                id="Malediction"
@@ -12,7 +12,7 @@
     </div>
 
     <div class="col-md-2 mb-3" *ngIf="this.isObjetMauditSpecial()">
-        <label for="PuissanceMalediction">Puissance Malédiction
+        <label for="PuissanceMalediction">Puissance Malédiction (1D3)
         </label>
         <input min="1" max="3" type="number" class="form-control"
                id="PuissanceMalediction"
@@ -24,7 +24,7 @@
     </div>
 
     <div class="col-md-2 mb-3" *ngIf="this.isConditionExterieure() || this.isInconveniant()">
-        <label for="deMalediction2">Dé condition ou inconveniant
+        <label for="deMalediction2">Dé condition ou inconveniant (1D100)
         </label>
         <input min="1" max="100" type="number" class="form-control"
                id="deMalediction2"
@@ -84,7 +84,7 @@
                     </span>
                 </ng-container>
             </span>
-    <span *ngIf="malediction.infos">{{malediction.infos.data}}</span><br/><br/>
+    <span *ngIf="malediction.infos" [innerHTML]="malediction.infos.data"></span><br/><br/>
     <button (click)="this.modifierMalediction()" [disabled]="this.validee">Modifier malediction</button>
     <button *ngIf="!this.validee else maledictionValidee" (click)="this.selection()">Valider malediction</button>
     <ng-template #maledictionValidee>
