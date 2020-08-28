@@ -13,7 +13,7 @@ import {MaledictionsComponent} from '../maledictions/maledictions.component';
 })
 export class ArmesComponent extends ObjetCombat implements OnInit {
 
-    @Output() objetSimpleEventEmitter = new EventEmitter<ArmesComponent>();
+    @Output() armeEventEmitter = new EventEmitter<ArmesComponent>();
     @ViewChild('maledictionsComponent') maledictionComponent: MaledictionsComponent;
     @Input() maudit: boolean;
 
@@ -272,11 +272,11 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
 
     selection() {
         this.valide = true;
-        this.objetSimpleEventEmitter.emit(this);
+        this.armeEventEmitter.emit(this);
     }
 
     deselection() {
         this.valide = false;
-        this.objetSimpleEventEmitter.emit(null);
+        this.armeEventEmitter.emit(null);
     }
 }

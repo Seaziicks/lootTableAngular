@@ -3,6 +3,9 @@ import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
 import {Loot, Monstre, MonstreGroupe, MonstreLootChanceBis} from '../interface/MonstreGroupe';
+import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.component';
+import {ArmesComponent} from '../objets/armes/armes.component';
+import {ArmuresComponent} from '../objets/armures/armures.component';
 
 export interface SpecialResponse {
     status: number;
@@ -26,6 +29,10 @@ export class LootTableComponent implements OnInit {
     input1: number = null;
     deDeDrop: number;
     parametres: string[];
+
+    armure: ArmuresComponent;
+    arme: ArmesComponent;
+    objetSimple: ObjetSimpleComponent;
 
 
     ngOnInit(): void {
@@ -180,5 +187,23 @@ export class LootTableComponent implements OnInit {
             return true;
         }
         return false;
+    }
+
+    getObjetSimple($event: ObjetSimpleComponent) {
+        this.armure = null;
+        this.arme = null;
+        this.objetSimple = $event;
+    }
+
+    getArme($event: ArmesComponent) {
+        this.armure = null;
+        this.arme = $event;
+        this.objetSimple = null;
+    }
+
+    getArmure($event: ArmuresComponent) {
+        this.armure = $event;
+        this.arme = null;
+        this.objetSimple = null;
     }
 }

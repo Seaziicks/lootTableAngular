@@ -42,9 +42,9 @@
             <p>{{this.getRecompense()}}</p>
         </div>
         <div *ngIf="deDeDrop && this.isObjet() && this.input1" style="width: 100%">
-            <app-armes *ngIf="isMe('armes')" [maudit]="this.isObjetMaudit()"></app-armes>
-            <app-armures *ngIf="isMe('armures')" [maudit]="this.isObjetMaudit()"></app-armures>
-            <app-objet-simple *ngIf="isMe('simple')" [parametres]="this.parametres" [maudit]="this.isObjetMaudit()"></app-objet-simple>
+            <app-armes *ngIf="isMe('armes')" [maudit]="this.isObjetMaudit()" (armeEventEmitter)="this.getArme($event)"></app-armes>
+            <app-armures *ngIf="isMe('armures')" [maudit]="this.isObjetMaudit()" (armureEventEmitter)="this.getArmure($event)"></app-armures>
+            <app-objet-simple *ngIf="isMe('simple')" [parametres]="this.parametres" [maudit]="this.isObjetMaudit()" (objetSimpleEventEmitter)="this.getObjetSimple($event)"></app-objet-simple>
         </div>
         <div *ngIf="this.isObjet() && this.isDoubleObjet()">
 
