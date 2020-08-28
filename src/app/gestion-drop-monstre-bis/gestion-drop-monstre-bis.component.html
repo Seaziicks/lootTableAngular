@@ -11,7 +11,7 @@
       <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
     </div>
     <div style="width: 100%">
-      <form class="needs-validation" id="competenceEffectForm">
+      <form class="needs-validation" id="gestionDropMonstreBisForm">
         <div class="form-row" *ngFor="let lootChance of monstreSelectionneLootChance; let index = index;">
           <label class="labelFormGroup" [ngClass]="{'missingValue': this.missingAtLeastOneValue(index)}" [for]="'fromgroup'+this.monstreSelectionneLootChance[index].roll">
             {{this.monstreSelectionneLootChance[index].roll}} : </label>

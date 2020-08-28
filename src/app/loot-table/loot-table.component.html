@@ -1,77 +1,56 @@
 <div id="fakebody">
-  <div class="principal">
-    <div id="caracterSelection" class="caracterSelection">
-      <h3>Selectionnez un monstre</h3>
-        <app-autocomplete-groupe (monstreEventEmitter)="selectionMonstre($event)"
-                                             [monsterGroupes]="monstresGroupes">
-          loading
-        </app-autocomplete-groupe>
-    </div>
-    <div style="width: 100%">
-      <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
-      <form class="needs-validation" id="competenceEffectForm">
-        <div class="form-row">
-          <div class="col-md-2 mb-3" *ngIf="monstreCourrant">
-            <label for="DedeDrop">Dé de drop
-            </label>
-            <input min="1" max="20" type="number" class="form-control" id="DedeDrop"
-                   name="DedeDrop"
-                   placeholder="Dé de drop"
-                   [(ngModel)]="this.deDeDrop"
-                   (keyup)="selectionLoot($event)"
-                   required>
-          </div>
+    <div class="principal">
+        <div id="caracterSelection" class="caracterSelection">
+            <h3>Selectionnez un monstre</h3>
+            <app-autocomplete-groupe (monstreEventEmitter)="selectionMonstre($event)"
+                                     [monsterGroupes]="monstresGroupes">
+                loading
+            </app-autocomplete-groupe>
+        </div>
+        <div style="width: 100%">
+            <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
+            <form class="needs-validation" id="looTableForm">
+                <div class="form-row">
+                    <div class="col-md-2 mb-3" *ngIf="monstreCourrant">
+                        <label for="DedeDrop">Dé de drop
+                        </label>
+                        <input min="1" max="20" type="number" class="form-control" id="DedeDrop"
+                               name="DedeDrop"
+                               placeholder="Dé de drop"
+                               [(ngModel)]="this.deDeDrop"
+                               (keyup)="selectionLoot($event)"
+                               required>
+                    </div>
 
-          <div class="col-md-2 mb-3"
-               *ngIf="deDeDrop && this.lootSelectionne">
-            <label for="validationInput1"> {{this.lootSelectionneNom()}} : {{this.lootSelectionne.diceNumber}}D{{this.lootSelectionne.dicePower}} </label>
-            <input min="1" max="{{this.lootSelectionne.dicePower}}" type="number" class="form-control" id="validationInput1"
-                   name="validationInput1"
-                   placeholder="{{this.lootSelectionneNom()}}"
-                   [(ngModel)]="this.input1" required>
-          </div>
-          <div class="col-md-2 mb-3"
-               *ngIf="deDeDrop && this.isObjet()">
-            <label for="validationEffetMagique"> EffetMagique : 1D100 </label>
-            <input min="1" max="100" type="number" class="form-control" id="validationEffetMagique"
-                   name="validationEffetMagique"
-                   placeholder="Effet Magique"
-                   [(ngModel)]="this.effetMagique"
-                   required>
-          </div>
-          <div class="col-md-2 mb-3"
-               *ngIf="deDeDrop && this.isObjet()">
-            <label for="validationMalediction"> Malediction : 1D100 </label>
-            <input min="1" max="100" type="number" class="form-control" id="validationMalediction"
-                   name="validationMalediction"
-                   placeholder="Malediction"
-                   [disabled]="!this.isObjetMaudit()"
-                   [(ngModel)]="this.malediction"
-                   required>
-          </div>
+                    <div class="col-md-2 mb-3"
+                         *ngIf="deDeDrop && this.lootSelectionne">
+                        <label for="validationInput1"> {{this.lootSelectionneNom()}}
+                            : {{this.lootSelectionne.diceNumber}}D{{this.lootSelectionne.dicePower}} </label>
+                        <input min="1" max="{{this.lootSelectionne.dicePower}}" type="number" class="form-control"
+                               id="validationInput1"
+                               name="validationInput1"
+                               placeholder="{{this.lootSelectionneNom()}}"
+                               [(ngModel)]="this.input1" required>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <hr style="width: 75%; background-color: lightgrey; margin-left: 0; height : 1px" *ngIf="isRecompenseValide()">
+        <div style="width: 100%" *ngIf="isRecompenseValide()">
+            <h3>Récompense</h3>
+            <p>{{this.getRecompense()}}</p>
+        </div>
+        <div *ngIf="deDeDrop && this.isObjet() && this.input1" style="width: 100%">
+            <app-armes *ngIf="isMe('armes')" [maudit]="this.isObjetMaudit()"></app-armes>
+            <app-armures *ngIf="isMe('armures')" [maudit]="this.isObjetMaudit()"></app-armures>
+            <app-objet-simple *ngIf="isMe('simple')" [parametres]="this.parametres" [maudit]="this.isObjetMaudit()"></app-objet-simple>
+        </div>
+        <div *ngIf="this.isObjet() && this.isDoubleObjet()">
 
         </div>
-        <div class="form-row" *ngIf="this.isObjet() && this.isDoubleObjet()">
-          <h3 style="width: 100%;">Double objet</h3>
-          <div class="col-md-2 mb-3"
-               *ngIf="deDeDrop && this.isObjet() && !this.isObjetMaudit()">
-            <label for="validationEffetMagique2"> Effet Magique deuxième item : 1D100 </label>
-            <input min="1" max="100" type="number" class="form-control" id="validationEffetMagique2"
-                   name="validationEffetMagique2"
-                   placeholder="Effet Magique deuxième item"
-                   [(ngModel)]="this.effetMagique2"
-                   required>
-          </div>
-        </div>
-      </form>
-    </div>
-    <hr style="width: 75%; background-color: lightgrey; margin-left: 0; height : 1px" *ngIf="isRecompenseValide()">
-    <div style="width: 100%" *ngIf="isRecompenseValide()">
-      <h3>Récompense</h3>
-      <p>{{this.getRecompense()}}</p>
-    </div>
 
-  </div>
+    </div>
 </div>
 
 

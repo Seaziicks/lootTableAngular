@@ -13,17 +13,12 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
 
     @Output() objetSimpleEventEmitter = new EventEmitter<ObjetSimpleComponent>();
     @ViewChild('maledictionsComponent') maledictionComponent: MaledictionsComponent;
-    @Input() maudit: boolean = true;
+    @Input() maudit: boolean;
 
-    parametres: string[];
+    @Input() parametres: string[];
 
     constructor(private jsonService: JSonLoadService) {
         super(jsonService);
-        this.parametres = ['Ceci est un sceptre', 'Dé septentrional', 'Sceptre', 'magique', 'sceptres'];
-        this.parametres = ['Ceci est un bâton', 'Débat thon', 'Bâton', 'magique', 'batons'];
-        this.parametres = ['Ceci est un objet merveilleux', 'Demer veille eux', 'Objet merveileux', 'magique', 'objetsMerveilleux'];
-        this.parametres = ['Ceci sera un anneau', 'Dead Anno', 'Anneau', 'magique', 'anneauxMagiques'];
-        this.type = this.parametres[2];
     }
 
     ngOnInit(): void {
@@ -35,6 +30,7 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
                 // console.log(this.allObjets.strongAnfPowerful[9]);
             }
         );
+        this.type = this.parametres[2];
     }
 
     loadComplete(): boolean {

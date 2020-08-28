@@ -3,48 +3,47 @@
 *===================================================== */
 
 declare interface MonstreGroupe {
-  Famille: string;
-  Membres: Monstre[];
+    Famille: string;
+    Membres: Monstre[];
 }
 
 declare interface Monstre {
-  idMonstre: number;
-  idFamilleMonstre: number;
-  libelle: string;
+    idMonstre: number;
+    idFamilleMonstre: number;
+    libelle: string;
 }
 
 declare interface Famille {
-  idFamilleMonstre: number;
-  libelle: string;
+    idFamilleMonstre: number;
+    libelle: string;
 }
 
 declare interface MonstreLootChance {
-  idLoot: number;
-  libelle: string;
-  minRoll: number;
-  maxRoll: number;
-  niveauMonstre: number;
-  multiplier: number;
-  dicePower: number;
-  poids: number;
+    idLoot: number;
+    libelle: string;
+    minRoll: number;
+    maxRoll: number;
+    niveauMonstre: number;
+    multiplier: number;
+    dicePower: number;
+    poids: number;
 }
 
 declare interface MonstreLootChanceBis {
-  roll: number;
-  idLoot: number;
-  niveauMonstre: number;
-  multiplier: number;
-  diceNumber: number;
-  dicePower: number;
-  poids: number;
+    roll: number;
+    idLoot: number;
+    libelle: string;
+    niveauMonstre: number;
+    multiplier: number;
+    diceNumber: number;
+    dicePower: number;
+    poids: number;
 }
 
 declare interface Loot {
-  idLoot: number;
-  libelle: string;
+    idLoot: number;
+    libelle: string;
 }
-
-
 
 
 /* ====================================================*
@@ -132,7 +131,7 @@ export interface Arme extends Objet {
     degatsParTaille: DegatsParTaille[];
 }
 
-export interface Armure extends Objet{
+export interface Armure extends Objet {
     bonArm: string;
     bonDext: string;
     malArm: string;
@@ -141,6 +140,7 @@ export interface Armure extends Objet{
     vitess2: string;
     prixParTaille: PrixParTaille[];
 }
+
 export interface Materiau {
     nom: string;
     prix: string;

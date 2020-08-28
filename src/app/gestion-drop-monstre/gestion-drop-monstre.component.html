@@ -11,7 +11,7 @@
       <h3 *ngIf="monstreCourrant"> {{monstreCourrant.libelle}}</h3>
     </div>
     <div style="width: 100%">
-      <form class="needs-validation" id="competenceEffectForm">
+      <form class="needs-validation" id="gestionDropMonstreForm">
         <div class="form-row" *ngFor="let lootChance of monstreSelectionneLootChance; let index = index;">
           <div style="display: flex; align-items: center; justify-content: left; width : 150px;" [ngClass]="{'missingValue': this.missingAtLeastOneValue(index)}">
             {{ monstreSelectionneLootChance[index].libelle }} ({{this.monstreSelectionneLootChance[index].idLoot}}) : </div>

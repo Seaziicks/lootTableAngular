@@ -15,7 +15,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
 
     @Output() objetSimpleEventEmitter = new EventEmitter<ArmuresComponent>();
     @ViewChild('maledictionsComponent') maledictionComponent: MaledictionsComponent;
-    @Input() maudit: boolean = true;
+    @Input() maudit: boolean;
 
     bouclier = false;
 
