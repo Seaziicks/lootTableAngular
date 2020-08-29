@@ -2,10 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
-import {Loot, Monstre, MonstreGroupe, MonstreLootChanceBis} from '../interface/MonstreGroupe';
+import {Loot, Materiau, Monstre, MonstreGroupe, MonstreLootChanceBis} from '../interface/MonstreGroupe';
 import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.component';
 import {ArmesComponent} from '../objets/armes/armes.component';
 import {ArmuresComponent} from '../objets/armures/armures.component';
+import {ObjetService} from "../services/objet.service";
 
 export interface SpecialResponse {
     status: number;
@@ -47,7 +48,8 @@ export class LootTableComponent implements OnInit {
 
     constructor(private http: HttpClient,
                 private familleMonstre: FamilleAndMonstreService,
-                private monstreLootChance: MonstreLootChanceService) {
+                private monstreLootChance: MonstreLootChanceService,
+                private objetService: ObjetService) {
     }
 
     public chargerFamilles(http: HttpClient) {
@@ -199,11 +201,43 @@ export class LootTableComponent implements OnInit {
         this.armure = null;
         this.arme = $event;
         this.objetSimple = null;
+        this.objetService.envoyerMateriau(this.http, 'POST', 0, this.arme.materiau);
     }
 
     getArmure($event: ArmuresComponent) {
         this.armure = $event;
         this.arme = null;
         this.objetSimple = null;
+        this.objetService.envoyerMateriau(this.http, 'POST', 0, this.armure.materiau).then(
+            (data: any) => {
+                console.log(data);
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                const materiau = response.data as unknown as Materiau;
+                console.log(materiau);
+                const malediction = null;
+                const idMateriau = null;
+                const personnage = null;
+                const values = {
+                    idPersonnage: personnage,
+                    nom: this.armure.nom,
+                    bonus: this.armure.bonus,
+                    type: this.armure.type,
+                    prix: this.armure.prix,
+                    prixNonHumanoide: this.armure.prix,
+                    devise: this.armure.currencyType,
+                    idMalediction: malediction,
+                    categorie: this.armure.categorieObjet,
+                    idMateriaux: materiau.idMateriaux,
+                    taille: this.armure.taille,
+                    degats: null,
+                    critique: null,
+                    facteurPortee: null,
+                    amure: this.armure.armure.bonArm,
+                    bonusDexteriteMax: this.armure.armure.bonDext,
+                    malusArmureTests: this.armure.armure.malArm,
+                    risqueEchecSorts: this.armure.armure.RisqEch
+                };
+            }
+        );
     }
 }

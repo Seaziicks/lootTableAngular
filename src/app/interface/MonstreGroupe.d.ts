@@ -75,10 +75,6 @@ export interface TableMagicalProperty {
     tr: string[][];
 }
 
-export interface TR {
-    td: string[];
-}
-
 export interface UlMagicalProperty {
     position: number;
     li: string[];
@@ -142,6 +138,7 @@ export interface Armure extends Objet {
 }
 
 export interface Materiau {
+    idMateriaux: number;
     nom: string;
     prix: string;
     solidite: string;
