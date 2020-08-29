@@ -8,9 +8,11 @@ import {GestionDropMonstreBisComponent} from './gestion-drop-monstre-bis/gestion
 import {ArmesComponent} from './objets/armes/armes.component';
 import {ArmuresComponent} from './objets/armures/armures.component';
 import {ObjetSimpleComponent} from './objets/objet-simple/objet-simple.component';
+import { TestInsertTableComponent } from './test-insert-table/test-insert-table.component';
 
 
 const routes: Routes = [
+    {path: 'testTable', component: TestInsertTableComponent},
     {path: 'testObjet', component: ObjetSimpleComponent},
     {path: 'testArmures', component: ArmuresComponent},
     {path: 'testArmes', component: ArmesComponent},

@@ -2,11 +2,19 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
-import {Loot, Materiau, Monstre, MonstreGroupe, MonstreLootChanceBis} from '../interface/MonstreGroupe';
+import {
+    Loot,
+    MagicalProperty, Malediction,
+    Materiau,
+    Monstre,
+    MonstreGroupe,
+    MonstreLootChanceBis,
+    Objet
+} from '../interface/MonstreGroupe';
 import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.component';
 import {ArmesComponent} from '../objets/armes/armes.component';
 import {ArmuresComponent} from '../objets/armures/armures.component';
-import {ObjetService} from "../services/objet.service";
+import {ObjetService} from '../services/objet.service';
 
 export interface SpecialResponse {
     status: number;
@@ -208,35 +216,67 @@ export class LootTableComponent implements OnInit {
         this.armure = $event;
         this.arme = null;
         this.objetSimple = null;
-        this.objetService.envoyerMateriau(this.http, 'POST', 0, this.armure.materiau).then(
+        const personnage = null;
+        const values = {
+            idObjet: null,
+            idPersonnage: personnage,
+            nom: this.armure.nom,
+            bonus: this.armure.bonus,
+            type: this.armure.type,
+            prix: this.armure.prix,
+            prixNonHumanoide: this.armure.prix,
+            devise: this.armure.currencyType,
+            idMalediction: null,
+            categorie: this.armure.categorieObjet,
+            idMateriaux: null,
+            taille: this.armure.taille,
+            degats: null,
+            critique: null,
+            facteurPortee: null,
+            amure: this.armure.armure.bonArm,
+            bonusDexteriteMax: this.armure.armure.bonDext,
+            malusArmureTests: this.armure.armure.malArm,
+            risqueEchecSorts: this.armure.armure.RisqEch
+        };
+        this.objetService.envoyerObjet(this.http, 'POST', null, values).then(
+            (dataObjet: any) => {
+                console.log(dataObjet);
+                const response = JSON.parse(dataObjet) as SpecialResponse;
+                const objet = dataObjet.data as Objet;
+                const idObjet = objet.idObjet;
+                this.ajouterMateriau(idObjet, this.armure.materiau);
+                this.ajouterMalediction(idObjet, this.armure.malediction);
+            }
+        );
+    }
+    ajouterMateriau(idObjet, materiauToAdd: Materiau) {
+        this.objetService.envoyerMateriau(this.http, 'POST', 0, materiauToAdd).then(
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 const materiau = response.data as unknown as Materiau;
                 console.log(materiau);
-                const malediction = null;
-                const idMateriau = null;
-                const personnage = null;
-                const values = {
-                    idPersonnage: personnage,
-                    nom: this.armure.nom,
-                    bonus: this.armure.bonus,
-                    type: this.armure.type,
-                    prix: this.armure.prix,
-                    prixNonHumanoide: this.armure.prix,
-                    devise: this.armure.currencyType,
-                    idMalediction: malediction,
-                    categorie: this.armure.categorieObjet,
-                    idMateriaux: materiau.idMateriaux,
-                    taille: this.armure.taille,
-                    degats: null,
-                    critique: null,
-                    facteurPortee: null,
-                    amure: this.armure.armure.bonArm,
-                    bonusDexteriteMax: this.armure.armure.bonDext,
-                    malusArmureTests: this.armure.armure.malArm,
-                    risqueEchecSorts: this.armure.armure.RisqEch
-                };
+                this.objetService.updateForObjet(this.http, idObjet, 'idMateriaux', materiau.idMateriaux);
+            }
+        );
+    }
+    ajouterMalediction(idObjet, maledictionToAdd: MagicalProperty) {
+        let descriptionMalediction = '';
+        for (const description of maledictionToAdd.description) {
+            descriptionMalediction += description;
+        }
+        const malediction = {
+            idMalediction: null,
+            nom: maledictionToAdd.title,
+            description: descriptionMalediction,
+        } as Malediction;
+        this.objetService.envoyerMalediction(this.http, 'POST', 0, malediction).then(
+            (data: any) => {
+                console.log(data);
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                const addedMalediction = response.data as unknown as Malediction;
+                console.log(addedMalediction);
+                this.objetService.updateForObjet(this.http, idObjet, 'idMalediction', addedMalediction.idMalediction);
             }
         );
     }

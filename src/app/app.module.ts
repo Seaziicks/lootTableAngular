@@ -26,6 +26,7 @@ import { ArmesComponent } from './objets/armes/armes.component';
 import { ArmuresComponent } from './objets/armures/armures.component';
 import { MaledictionsComponent } from './objets/maledictions/maledictions.component';
 import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.component';
+import { TestInsertTableComponent } from './test-insert-table/test-insert-table.component';
 
 
 
@@ -44,6 +45,7 @@ import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.compone
     ArmuresComponent,
     MaledictionsComponent,
     ObjetSimpleComponent,
+    TestInsertTableComponent,
   ],
   imports: [
     BrowserModule,

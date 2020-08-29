@@ -110,6 +110,7 @@ export interface Chances {
     Partie commune
 */
 export interface Objet {
+    idObjet: number;
     nom: string;
     prix: string;
     poids: string;
@@ -195,3 +196,10 @@ export interface CategoriesArmures {
     titles: string[];
     Categories: CategorieArmures[];
 }
+
+export interface Malediction {
+    idMalediction: number;
+    nom: string;
+    description: string;
+}
+
