@@ -1,0 +1,51 @@
+<div style="width: 100%" *ngIf="this.objet">
+    <div style="width: 100%" *ngIf="this.objet.nom">
+        <h1>Résultat de l'arme</h1>
+        <h3><span [innerHTML]="this.objet.nom"></span></h3>
+        <p>{{this.objet.type}} <span *ngIf="this.objet.taille"> - {{this.objet.degats}}</span><span
+            *ngIf="this.objet.bonus"> - Bonus +{{this.objet.bonus}}</span></p>
+
+        <ng-container *ngFor="let proprieteMagique of this.objet.proprieteMagique;">
+            <h4>{{proprieteMagique.title}}</h4>
+            <span *ngFor="let description of proprieteMagique.description; let index = index;">
+                    <span [innerHTML]="description"></span><br/>
+
+                    <ng-container *ngFor="let table of proprieteMagique.table;">
+                        <span *ngIf="table.position === index + 1">
+                            <table cellspacing="1" border="1">
+                                <tbody>
+                                <tr *ngFor="let th of table.title; let thIndex = index">
+                                    <ng-container *ngFor="let title of th; let titleIndex = index">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
+                                            [colSpan]="table.title[1][thIndex].length / table.title[0][thIndex].length">{{title}}</th>
+                                        <ng-template #elseBlock>
+                                            <th>{{title}}</th>
+                                        </ng-template>
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of table.tr; let tdIndex = index">
+                                    <ng-container *ngFor="let content of td">
+                                        <td>{{content}}</td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </ng-container>
+
+
+                    <ng-container *ngFor="let ul of proprieteMagique.ul;">
+                        <span *ngIf="+ul.position === index + 1">
+                            <ul>
+                                <li *ngFor="let li of ul.li;" [innerHTML]="li"></li>
+                            </ul>
+                        </span>
+                    </ng-container>
+                </span>
+            <br/>
+            <br/>
+            <span *ngIf="proprieteMagique.infos" [innerHTML]="proprieteMagique.infos.data"></span><br/><br/>
+        </ng-container>
+        <div *ngIf="this.objet.materiau"><span [innerHTML]="this.objet.materiau.nom"></span> : <span>{{this.objet.materiau.effet}}</span></div>
+    </div>
+</div>

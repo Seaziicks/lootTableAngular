@@ -197,68 +197,45 @@ export class LootTableComponent implements OnInit {
     }
 
     getObjetSimple($event: ObjetSimpleComponent) {
-        this.armure = null;
-        this.arme = null;
-        this.objetSimple = $event;
+        if ($event) {
+            this.armure = null;
+            this.arme = null;
+            this.objetSimple = $event;
+
+            this.sendObjet(this.objetSimple.castToObjetCommunDB());
+        }
     }
 
     getArme($event: ArmesComponent) {
         this.armure = null;
         this.arme = $event;
         this.objetSimple = null;
-        this.objetService.envoyerMateriau(this.http, 'POST', 0, this.arme.materiau);
+
+        this.sendObjet(this.arme.castToObjetCommunDB());
     }
 
     getArmure($event: ArmuresComponent) {
         this.armure = $event;
         this.arme = null;
         this.objetSimple = null;
-        const personnage = null;
 
-        let descriptionMalediction = '';
-        for (const description of this.armure.malediction.description) {
-            descriptionMalediction += description;
-        }
-        const maledictionToAdd = {
-            idMalediction: null,
-            nom: this.armure.malediction.title,
-            description: descriptionMalediction,
-        } as Malediction;
-        let values: ObjetCommunDB;
-        values = {
-            idObjet: 1,
-            idPersonnage: 1,
-            nom: this.armure.nom,
-            bonus: this.armure.bonus,
-            type: this.armure.type,
-            prix: this.armure.prix,
-            prixNonHumanoide: this.armure.prix,
-            devise: this.armure.currencyType,
-            proprieteMagique: this.armure.proprietesMagiques,
-            malediction: maledictionToAdd,
-            categorie: this.armure.categorieObjet,
-            materiau: this.armure.materiau,
-            taille: this.armure.taille.taille,
-            degats: null,
-            critique: null,
-            facteurPortee: null,
-            armure: +this.armure.armure.bonArm.replace('—', '0').replace('+', ''),
-            bonusDexteriteMax: +this.armure.armure.bonDext.replace('—', '0').replace('+', ''),
-            malusArmureTests: +this.armure.armure.malArm.replace('—', '0'),
-            risqueEchecSorts: this.armure.armure.RisqEch
-        } as ObjetCommunDB;
-        console.log(values.devise);
-        this.objetService.envoyerObjetComplet(this.http, 'POST', null, values).then(
+        this.sendObjet(this.armure.castToObjetCommunDB());
+    }
+
+    sendObjet(objetCommunDB: ObjetCommunDB) {
+        this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDB).then(
             (dataObjet: any) => {
                 console.log(dataObjet);
                 const response = JSON.parse(dataObjet) as SpecialResponse;
-                const objet = dataObjet.data as Objet;
+                const objet: ObjetCommunDB = response.data as unknown as ObjetCommunDB;
                 const idObjet = objet.idObjet;
-                this.ajouterMateriau(idObjet, this.armure.materiau);
-                this.ajouterMalediction(idObjet, this.armure.malediction);
+                console.log(idObjet);
+                // this.ajouterMateriau(idObjet, this.armure.materiau);
+                // this.ajouterMalediction(idObjet, this.armure.malediction);
             }
         );
     }
+
     ajouterMateriau(idObjet, materiauToAdd: Materiau) {
         this.objetService.envoyerMateriau(this.http, 'POST', 0, materiauToAdd).then(
             (data: any) => {
@@ -289,9 +266,5 @@ export class LootTableComponent implements OnInit {
                 this.objetService.updateForObjet(this.http, idObjet, 'idMalediction', addedMalediction.idMalediction);
             }
         );
-    }
-
-    sauvegarderObjet() {
-        this.objetService.envoyerObjetComplet(this.http, 'POST', null, this.armure);
     }
 }

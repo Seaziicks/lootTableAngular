@@ -1,4 +1,4 @@
-import {MagicalProperty, SortedMagicalProperty} from '../interface/MonstreGroupe';
+import {MagicalProperty, Malediction, SortedMagicalProperty} from '../interface/MonstreGroupe';
 import {JSonLoadService} from '../services/json-load.service';
 import {EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {MaledictionsComponent} from './maledictions/maledictions.component';
@@ -13,7 +13,7 @@ export abstract class ObjetCommun {
     bonus: number;
     type: string;
     proprietesMagiques: MagicalProperty[] = [];
-    prix: number;
+    prix = 0;
     currencyType = 'po';
     prixProprieteMagique: number;
     proprieteMagiqueCurrencyType: string;
@@ -89,6 +89,24 @@ export abstract class ObjetCommun {
             }
         }
     }
+
+    getMalediction(): Malediction {
+        let maledictionToAdd = null;
+        if (this.malediction) {
+            let descriptionMalediction = '';
+            for (const description of this.malediction.description) {
+                descriptionMalediction += description;
+            }
+            maledictionToAdd = {
+                idMalediction: null,
+                nom: this.malediction.title,
+                description: descriptionMalediction,
+            } as Malediction;
+        }
+        return maledictionToAdd;
+    }
+
+    abstract castToObjetCommunDB();
 
     abstract setNom();
 }

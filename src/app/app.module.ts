@@ -27,6 +27,8 @@ import { ArmuresComponent } from './objets/armures/armures.component';
 import { MaledictionsComponent } from './objets/maledictions/maledictions.component';
 import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.component';
 import { TestInsertTableComponent } from './test-insert-table/test-insert-table.component';
+import { PersonnageComponent } from './personnage/personnage.component';
+import { PersonnageObjetComponent } from './personnage-objet/personnage-objet.component';
 
 
 
@@ -46,6 +48,8 @@ import { TestInsertTableComponent } from './test-insert-table/test-insert-table.
     MaledictionsComponent,
     ObjetSimpleComponent,
     TestInsertTableComponent,
+    PersonnageComponent,
+    PersonnageObjetComponent,
   ],
   imports: [
     BrowserModule,

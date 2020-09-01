@@ -22,18 +22,6 @@ export class ObjetService {
         return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
     }
 
-    public envoyerObjetComplet(http: HttpClient, httpMethod: string, idObjet: number, objet: any): Promise<string> {
-        const values = {idObjet: undefined, Objet: undefined};
-        values.idObjet = idObjet;
-        values.Objet = objet;
-        console.log(values);
-        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idObjet=' + idObjet + '';
-        console.log(baseUrlBis);
-        const params = new HttpParams().set('Objet', JSON.stringify(values));
-
-        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
-    }
-
     public envoyerMalediction(http: HttpClient, httpMethod: string, idMalediction: number, malediction: Malediction): Promise<string> {
         const values = {idMalediction: undefined, Malediction: undefined};
         values.idMalediction = idMalediction;
@@ -86,5 +74,29 @@ export class ObjetService {
         const params = new HttpParams().set('EffetMagiqueDescriptions', JSON.stringify(values));
 
         return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    public envoyerObjetComplet(http: HttpClient, httpMethod: string, idObjet: number, objet: any): Promise<string> {
+        const values = {idObjet: undefined, Objet: undefined};
+        values.idObjet = idObjet;
+        values.Objet = objet;
+        console.log(values);
+        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET;
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('Objet', JSON.stringify(values));
+
+        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    public getObjetComplet(http: HttpClient, idObjet: number) {
+        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idObjet=' + idObjet + '';
+        console.log(baseUrlBis);
+        return http.request('GET', baseUrlBis).toPromise();
+    }
+
+    public getObjetsIDs(http: HttpClient, idPersonnage: number) {
+        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '';
+        console.log(baseUrlBis);
+        return http.request('GET', baseUrlBis).toPromise();
     }
 }

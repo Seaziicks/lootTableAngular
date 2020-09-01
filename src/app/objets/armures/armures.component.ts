@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {
-    Armure, CategoriesArmures, MagicalProperty, Materiau, PrixParTaille, SortedMagicalProperty
+    Armure, CategoriesArmures, MagicalProperty, Malediction, Materiau, ObjetCommunDB, PrixParTaille, SortedMagicalProperty
 } from '../../interface/MonstreGroupe';
 import {JSonLoadService} from '../../services/json-load.service';
 import {ObjetCombat} from '../objet-combat';
@@ -268,5 +268,34 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
     deselection() {
         this.valide = false;
         this.armureEventEmitter.emit(null);
+    }
+
+    castToObjetCommunDB(): ObjetCommunDB {
+        const maledictionToAdd = this.getMalediction();
+        let values: ObjetCommunDB;
+        values = {
+            idObjet: null,
+            idPersonnage: 1,
+            nom: this.nom,
+            bonus: this.bonus,
+            type: this.type,
+            prix: this.prix + this.prixProprieteMagique,
+            prixNonHumanoide: this.prix,
+            devise: this.currencyType,
+            proprieteMagique: this.proprietesMagiques,
+            malediction: maledictionToAdd,
+            categorie: this.categorieObjet,
+            materiau: this.materiau,
+            taille: this.taille.taille,
+            degats: null,
+            critique: null,
+            facteurPortee: null,
+            armure: +this.armure.bonArm.replace('—', '0').replace('+', ''),
+            bonusDexteriteMax: +this.armure.bonDext.replace('—', '0').replace('+', ''),
+            malusArmureTests: +this.armure.malArm.replace('—', '0'),
+            risqueEchecSorts: this.armure.RisqEch
+        } as ObjetCommunDB;
+
+        return values;
     }
 }

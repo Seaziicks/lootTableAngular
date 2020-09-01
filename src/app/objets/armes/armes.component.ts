@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {JSonLoadService} from '../../services/json-load.service';
 import {
-    Arme, CategoriesArmes, MagicalProperty, DegatsParTaille, SortedMagicalProperty, Materiau
+    Arme, CategoriesArmes, MagicalProperty, DegatsParTaille, SortedMagicalProperty, Materiau, ObjetCommunDB, Malediction
 } from '../../interface/MonstreGroupe';
 import {ObjetCombat} from '../objet-combat';
 import {MaledictionsComponent} from '../maledictions/maledictions.component';
@@ -278,5 +278,34 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     deselection() {
         this.valide = false;
         this.armeEventEmitter.emit(null);
+    }
+
+    castToObjetCommunDB(): ObjetCommunDB {
+        const maledictionToAdd = this.getMalediction();
+        let values: ObjetCommunDB;
+        values = {
+            idObjet: null,
+            idPersonnage: 1,
+            nom: this.nom,
+            bonus: this.bonus,
+            type: this.type,
+            prix: this.prix + this.prixProprieteMagique,
+            prixNonHumanoide: null,
+            devise: this.currencyType,
+            proprieteMagique: this.proprietesMagiques,
+            malediction: maledictionToAdd,
+            categorie: this.categorieObjet,
+            materiau: this.materiau,
+            taille: this.taille.taille,
+            degats: this.degats,
+            critique: this.arme.critique,
+            facteurPortee: this.arme.facteurPortee,
+            armure: null,
+            bonusDexteriteMax: null,
+            malusArmureTests: null,
+            risqueEchecSorts: null
+        } as ObjetCommunDB;
+
+        return values;
     }
 }

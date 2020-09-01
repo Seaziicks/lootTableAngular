@@ -45,7 +45,6 @@
             <app-armes *ngIf="isMe('armes')" [maudit]="this.isObjetMaudit()" (armeEventEmitter)="this.getArme($event)"></app-armes>
             <app-armures *ngIf="isMe('armures')" [maudit]="this.isObjetMaudit()" (armureEventEmitter)="this.getArmure($event)"></app-armures>
             <app-objet-simple *ngIf="isMe('simple')" [parametres]="this.parametres" [maudit]="this.isObjetMaudit()" (objetSimpleEventEmitter)="this.getObjetSimple($event)"></app-objet-simple>
-            <button (click)="this.sauvegarderObjet()">Sauvegarder Objet</button>
         </div>
         <div *ngIf="this.isObjet() && this.isDoubleObjet()">
 

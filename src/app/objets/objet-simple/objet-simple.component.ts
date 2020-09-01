@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {MagicalProperty, SortedMagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
+import {MagicalProperty, Malediction, ObjetCommunDB, SortedMagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
 import {JSonLoadService} from '../../services/json-load.service';
 import {MaledictionsComponent} from '../maledictions/maledictions.component';
 import {ObjetCommun} from '../objet-commun';
@@ -44,7 +44,7 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
     reset() {
         this.proprietesMagiques = [];
         this.nom = undefined;
-        this.prix = 0;
+        // this.prix = 0;
     }
 
     getNomsProprieteMagique(): string {
@@ -72,5 +72,36 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
     deselection() {
         this.valide = false;
         this.objetSimpleEventEmitter.emit(null);
+    }
+
+    castToObjetCommunDB(): ObjetCommunDB {
+        const maledictionToAdd = this.getMalediction();
+        let values: ObjetCommunDB;
+        console.log(this.prix);
+        console.log(this.proprietesMagiques);
+        values = {
+            idObjet: null,
+            idPersonnage: 1,
+            nom: this.nom,
+            bonus: this.bonus,
+            type: this.type,
+            prix: this.prix + this.prixProprieteMagique,
+            prixNonHumanoide: null,
+            devise: this.currencyType,
+            proprieteMagique: this.proprietesMagiques,
+            malediction: maledictionToAdd,
+            categorie: null,
+            materiau: null,
+            taille: null,
+            degats: null,
+            critique: null,
+            facteurPortee: null,
+            armure: null,
+            bonusDexteriteMax: null,
+            malusArmureTests: null,
+            risqueEchecSorts: null
+        } as ObjetCommunDB;
+
+        return values;
     }
 }
