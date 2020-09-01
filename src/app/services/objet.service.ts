@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {MagicalProperty, Malediction, Materiau, MonstreLootChance} from '../interface/MonstreGroupe';
-import {BASE_URL, URL_DROP_CHANCE} from './rest.service';
+import {MagicalProperty, Malediction, Materiau, MonstreLootChance, ObjetCommunDB} from '../interface/MonstreGroupe';
+import {BASE_URL, URL_DROP_CHANCE, URL_OBJET_COMPLET} from './rest.service';
 
 @Injectable({
     providedIn: 'root'
@@ -11,12 +11,23 @@ export class ObjetService {
     constructor() {
     }
 
-    public envoyerObjet(http: HttpClient, httpMethod: string, idObjet: number, objet: any): Promise<string> {
+    public envoyerObjet(http: HttpClient, httpMethod: string, objet: ObjetCommunDB): Promise<string> {
+        const values = {Objet: undefined};
+        values.Objet = objet;
+        console.log(values);
+        const baseUrlBis = BASE_URL + URL_DROP_CHANCE;
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('Objet', JSON.stringify(values));
+
+        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    public envoyerObjetComplet(http: HttpClient, httpMethod: string, idObjet: number, objet: any): Promise<string> {
         const values = {idObjet: undefined, Objet: undefined};
         values.idObjet = idObjet;
         values.Objet = objet;
         console.log(values);
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idObjet=' + idObjet + '';
+        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idObjet=' + idObjet + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('Objet', JSON.stringify(values));
 

@@ -14,7 +14,7 @@ export abstract class ObjetCommun {
     type: string;
     proprietesMagiques: MagicalProperty[] = [];
     prix: number;
-    currencyType: string;
+    currencyType = 'po';
     prixProprieteMagique: number;
     proprieteMagiqueCurrencyType: string;
 

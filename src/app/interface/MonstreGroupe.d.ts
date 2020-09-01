@@ -105,6 +105,28 @@ export interface Chances {
   || Partie Objet ||
   ==================
 */
+export interface ObjetCommunDB {
+    idObjet: number;
+    idPersonnage: number;
+    nom: string;
+    bonus: number;
+    type: string;
+    prix: number;
+    prixNonHumanoide: number;
+    devise: string;
+    proprieteMagique: MagicalProperty[];
+    malediction: Malediction;
+    categorie: string;
+    materiau: Materiau;
+    taille: string;
+    degats: string;
+    critique: string;
+    facteurPortee: string;
+    armure: number;
+    bonusDexteriteMax: number;
+    malusArmureTests: number;
+    risqueEchecSorts: string;
+}
 
 /*
     Partie commune

@@ -129,7 +129,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
                 }
                 break;
         }
-        if (!this.isSpecial && this.Categories) {
+        if (!this.isSpecial && this.categorieObjet) {
             this.armure = JSON.parse(JSON.stringify(
                 this.allArmures.Categories.find(f => f.title === this.categorieObjet).armures[this.deObjet - 1])) as Armure;
             this.setNom();
@@ -168,7 +168,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
 
     setArmure() {
         this.resetHard();
-        if (!this.isSpecial) {
+        if (this.deObjet && !this.isSpecial) {
             this.armure = JSON.parse(JSON.stringify(
                 this.allArmures.Categories.find(f => f.title === this.categorieObjet).armures[this.deObjet - 1])) as Armure;
             this.bouclier = this.categorieObjet === 'Boucliers';

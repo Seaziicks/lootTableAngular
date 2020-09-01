@@ -9,7 +9,7 @@ import {
     Monstre,
     MonstreGroupe,
     MonstreLootChanceBis,
-    Objet
+    Objet, ObjetCommunDB
 } from '../interface/MonstreGroupe';
 import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.component';
 import {ArmesComponent} from '../objets/armes/armes.component';
@@ -89,7 +89,6 @@ export class LootTableComponent implements OnInit {
 
     public isObjet(): boolean {
         this.setParametres();
-        console.log(this.parametres);
         return this.lootSelectionne && (this.lootSelectionne.idLoot === 6 || this.isObjetMaudit());
     }
 
@@ -165,8 +164,6 @@ export class LootTableComponent implements OnInit {
     }
 
     setParametres() {
-        console.log('Je suis ici');
-        console.log(this.input1);
         if (this.input1 && this.input1 <= 20) {
             this.parametres = ['Ceci sera un anneau', 'Dead Anno', 'Anneau', 'magique', 'anneauxMagiques'];
         } else if (this.input1 >= 51 && this.input1 <= 60) {
@@ -217,28 +214,41 @@ export class LootTableComponent implements OnInit {
         this.arme = null;
         this.objetSimple = null;
         const personnage = null;
-        const values = {
-            idObjet: null,
-            idPersonnage: personnage,
+
+        let descriptionMalediction = '';
+        for (const description of this.armure.malediction.description) {
+            descriptionMalediction += description;
+        }
+        const maledictionToAdd = {
+            idMalediction: null,
+            nom: this.armure.malediction.title,
+            description: descriptionMalediction,
+        } as Malediction;
+        let values: ObjetCommunDB;
+        values = {
+            idObjet: 1,
+            idPersonnage: 1,
             nom: this.armure.nom,
             bonus: this.armure.bonus,
             type: this.armure.type,
             prix: this.armure.prix,
             prixNonHumanoide: this.armure.prix,
             devise: this.armure.currencyType,
-            idMalediction: null,
+            proprieteMagique: this.armure.proprietesMagiques,
+            malediction: maledictionToAdd,
             categorie: this.armure.categorieObjet,
-            idMateriaux: null,
-            taille: this.armure.taille,
+            materiau: this.armure.materiau,
+            taille: this.armure.taille.taille,
             degats: null,
             critique: null,
             facteurPortee: null,
-            amure: this.armure.armure.bonArm,
-            bonusDexteriteMax: this.armure.armure.bonDext,
-            malusArmureTests: this.armure.armure.malArm,
+            armure: +this.armure.armure.bonArm.replace('—', '0').replace('+', ''),
+            bonusDexteriteMax: +this.armure.armure.bonDext.replace('—', '0').replace('+', ''),
+            malusArmureTests: +this.armure.armure.malArm.replace('—', '0'),
             risqueEchecSorts: this.armure.armure.RisqEch
-        };
-        this.objetService.envoyerObjet(this.http, 'POST', null, values).then(
+        } as ObjetCommunDB;
+        console.log(values.devise);
+        this.objetService.envoyerObjetComplet(this.http, 'POST', null, values).then(
             (dataObjet: any) => {
                 console.log(dataObjet);
                 const response = JSON.parse(dataObjet) as SpecialResponse;
@@ -279,5 +289,9 @@ export class LootTableComponent implements OnInit {
                 this.objetService.updateForObjet(this.http, idObjet, 'idMalediction', addedMalediction.idMalediction);
             }
         );
+    }
+
+    sauvegarderObjet() {
+        this.objetService.envoyerObjetComplet(this.http, 'POST', null, this.armure);
     }
 }

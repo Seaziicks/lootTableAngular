@@ -54,7 +54,7 @@ export abstract class ObjetCombat extends ObjetCommun {
     reset() {
         this.proprietesMagiques = [];
         this.bonus = 1;
-        this.prix = 0;
+        // this.prix = 0;
     }
 
     resetHard() {

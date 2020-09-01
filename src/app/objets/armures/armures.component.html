@@ -103,7 +103,7 @@
 
 
     </form>
-    <div style="width: 100%" *ngIf="this.proprietesMagiques.length > 0 && !this.modificationEnCours">
+    <div style="width: 100%" *ngIf="this.nom && !this.modificationEnCours">
         <div style="width: 100%" *ngIf="this.nom">
             <h1>Résultat</h1>
             <h3><span [innerHTML]="this.nom"></span></h3>
