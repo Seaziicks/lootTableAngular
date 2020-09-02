@@ -49,6 +49,7 @@ export abstract class ObjetCommun {
 
     modifierContenu() {
         this.modificationEnCours = !this.modificationEnCours;
+        this.checkProprietesMagiquesIntegrity();
     }
 
     getProprietesMagiques(proprietesMagiques: SortedMagicalProperty) {
@@ -104,6 +105,76 @@ export abstract class ObjetCommun {
             } as Malediction;
         }
         return maledictionToAdd;
+    }
+
+    checkProprietesMagiquesIntegrity() {
+        for (let i = 0 ; i < this.proprietesMagiques.length ; i++) {
+            for (let indexDescription = 0 ; indexDescription < this.proprietesMagiques[i].description.length ; indexDescription++) {
+                if (this.proprietesMagiques[i].description[indexDescription].length === 0) {
+                    this.proprietesMagiques[i].description.splice(indexDescription, 1);
+                    indexDescription--;
+                }
+            }
+            if (this.proprietesMagiques[i].table) {
+                for (let indexTable = 0; indexTable < this.proprietesMagiques[i].table.length; indexTable++) {
+                    for (let indexTableTitle = 0; indexTableTitle <
+                    this.proprietesMagiques[i].table[indexTable].title.length; indexTableTitle++) {
+                        for (let indexTableTitleContent = 0; indexTableTitleContent <
+                        this.proprietesMagiques[i].table[indexTable].title[indexTableTitle].length; indexTableTitleContent++) {
+                            if (this.proprietesMagiques[i].table[indexTable].title[indexTableTitle][indexTableTitleContent].length === 0) {
+                                this.proprietesMagiques[i].table[indexTable].title[indexTableTitle].splice(indexTableTitleContent, 1);
+                                indexTableTitleContent--;
+                            }
+                        }
+                        if (this.proprietesMagiques[i].table[indexTable].title[indexTableTitle].length === 0) {
+                            this.proprietesMagiques[i].table[indexTable].title.splice(indexTableTitle, 1);
+                            indexTableTitle--;
+                        }
+                    }
+                    for (let indexTableTr = 0; indexTableTr <
+                    this.proprietesMagiques[i].table[indexTable].tr.length; indexTableTr++) {
+                        for (let indexTableTrContent = 0; indexTableTrContent <
+                        this.proprietesMagiques[i].table[indexTable].tr[indexTableTr].length; indexTableTrContent++) {
+                            if (this.proprietesMagiques[i].table[indexTable].tr[indexTableTr][indexTableTrContent].length === 0) {
+                                this.proprietesMagiques[i].table[indexTable].tr[indexTableTr].splice(indexTableTrContent, 1);
+                                indexTableTrContent--;
+                            }
+                        }
+                        if (this.proprietesMagiques[i].table[indexTable].tr[indexTableTr].length === 0) {
+                            this.proprietesMagiques[i].table[indexTable].tr.splice(indexTableTr, 1);
+                            indexTableTr--;
+                        }
+                    }
+                    if (this.proprietesMagiques[i].table[indexTable].title.length === 0
+                        && this.proprietesMagiques[i].table[indexTable].tr.length === 0) {
+                        this.proprietesMagiques[i].table.splice(indexTable, 1);
+                        indexTable--;
+                    }
+                }
+            }
+            if (this.proprietesMagiques[i].ul) {
+                for (let indexUl = 0; indexUl < this.proprietesMagiques[i].ul.length; indexUl++) {
+                    for (let indexLi = 0; indexLi < this.proprietesMagiques[i].ul[indexUl].li.length; indexLi++) {
+                        if (this.proprietesMagiques[i].ul[indexUl].li[indexLi].length === 0) {
+                            this.proprietesMagiques[i].ul[indexUl].li.splice(indexLi, 1);
+                            indexLi--;
+                        }
+                    }
+                    if (this.proprietesMagiques[i].ul.length === 0) {
+                        this.proprietesMagiques[i].ul.splice(indexUl, 1);
+                        indexUl--;
+                    }
+                }
+            }
+
+            if (this.proprietesMagiques[i].description.length === 0
+                && !this.proprietesMagiques[i].table
+                && !this.proprietesMagiques[i].ul) {
+                console.log('Suppression de la propriete magique :' + this.proprietesMagiques[i].title);
+                this.proprietesMagiques.splice(i, 1);
+                i--;
+            }
+        }
     }
 
     abstract castToObjetCommunDB();
