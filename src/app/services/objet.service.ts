@@ -1,7 +1,14 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {MagicalProperty, Malediction, Materiau, MonstreLootChance, ObjetCommunDB} from '../interface/MonstreGroupe';
-import {BASE_URL, URL_DROP_CHANCE, URL_OBJET_COMPLET} from './rest.service';
+import {
+    MagicalProperty,
+    Malediction,
+    Materiau,
+    ObjetCommunDB,
+    TableMagicalProperty, UlMagicalProperty
+} from '../interface/MonstreGroupe';
+import {BASE_URL, URL_DROP_CHANCE, URL_EFFET_MAGIQUE, URL_OBJET_COMPLET} from './rest.service';
+import {SpecialResponse} from '../loot-table/loot-table.component';
 
 @Injectable({
     providedIn: 'root'
@@ -9,53 +16,6 @@ import {BASE_URL, URL_DROP_CHANCE, URL_OBJET_COMPLET} from './rest.service';
 export class ObjetService {
 
     constructor() {
-    }
-
-    public envoyerObjet(http: HttpClient, httpMethod: string, objet: ObjetCommunDB): Promise<string> {
-        const values = {Objet: undefined};
-        values.Objet = objet;
-        console.log(values);
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE;
-        console.log(baseUrlBis);
-        const params = new HttpParams().set('Objet', JSON.stringify(values));
-
-        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
-    }
-
-    public envoyerMalediction(http: HttpClient, httpMethod: string, idMalediction: number, malediction: Malediction): Promise<string> {
-        const values = {idMalediction: undefined, Malediction: undefined};
-        values.idMalediction = idMalediction;
-        values.Malediction = malediction;
-        console.log(values);
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idMalediction=' + idMalediction + '';
-        console.log(baseUrlBis);
-        const params = new HttpParams().set('Malediction', JSON.stringify(values));
-
-        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
-    }
-
-    public envoyerMateriau(http: HttpClient, httpMethod: string, idMateriaux: number, materiau: Materiau): Promise<string> {
-        const values = {idMateriaux: undefined, Materiau: undefined};
-        values.idMateriaux = idMateriaux;
-        values.Materiau = materiau;
-        console.log(values);
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idMateriaux=' + idMateriaux + '';
-        console.log(baseUrlBis);
-        const params = new HttpParams().set('Materiau', JSON.stringify(values));
-
-        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
-    }
-
-    public envoyerEffetMagique(http: HttpClient, httpMethod: string, idObjet: number, effet: MagicalProperty): Promise<string> {
-        const values = {idEffetMagique: undefined, EffetMagique: undefined};
-        values.idEffetMagique = idObjet;
-        values.EffetMagique = effet;
-        console.log(values);
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idObjet=' + idObjet + '';
-        console.log(baseUrlBis);
-        const params = new HttpParams().set('EffetMagique', JSON.stringify(values));
-
-        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
     }
 
     public updateForObjet(http: HttpClient, idObjet: number, fieldToUpdate: string, value: number) {
@@ -98,5 +58,59 @@ export class ObjetService {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '';
         console.log(baseUrlBis);
         return http.request('GET', baseUrlBis).toPromise();
+    }
+
+    public envoyerEffetMagique(http: HttpClient, httpMethod: string, idObjet: number, effet: MagicalProperty): Promise<string> {
+        const effetModified: MagicalProperty = JSON.parse(JSON.stringify(effet)) as MagicalProperty;
+        effetModified.table = null;
+        effetModified.ul = null;
+        const values = {idObjet: undefined, EffetMagique: undefined};
+        values.idObjet = idObjet;
+        values.EffetMagique = effetModified;
+        console.log(values);
+        const baseUrlBis = BASE_URL + URL_EFFET_MAGIQUE + '?idObjet=' + idObjet + '';
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('EffetMagique', JSON.stringify(values));
+
+        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise().then(
+            (dataEffetMagique: any) => {
+                console.log(dataEffetMagique);
+                const response: SpecialResponse = JSON.parse(dataEffetMagique) as SpecialResponse;
+                const idEffetMagique = response.data.idEffetMagique;
+                console.log(response);
+                console.log(response.data);
+                return this.envoyerEffetMagiqueTable(http, httpMethod, idEffetMagique, effet.table).then(
+                    (dataEffetMagiqeTable: any) => {
+                        return this.envoyerEffetMagiqueUl(http, httpMethod, idEffetMagique, effet.ul);
+                    }
+                );
+            }
+        );
+    }
+
+    private envoyerEffetMagiqueTable(http: HttpClient, httpMethod: string, idEffetMagique: number, effetTable: TableMagicalProperty[])
+        : Promise<string> {
+        const values = {idEffetMagique: undefined, EffetMagiqueTable: undefined};
+        values.idEffetMagique = idEffetMagique;
+        values.EffetMagiqueTable = effetTable;
+        console.log(values);
+        const baseUrlBis = BASE_URL + URL_EFFET_MAGIQUE + '?idEffetMagique=' + idEffetMagique + '';
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('EffetMagiqueTable', JSON.stringify(values));
+
+        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    private envoyerEffetMagiqueUl(http: HttpClient, httpMethod: string, idEffetMagique: number, effetUl: UlMagicalProperty[])
+        : Promise<string> {
+        const values = {idEffetMagique: undefined, EffetMagiqueUl: undefined};
+        values.idEffetMagique = idEffetMagique;
+        values.EffetMagiqueUl = effetUl;
+        console.log(values);
+        const baseUrlBis = BASE_URL + URL_EFFET_MAGIQUE + '?idEffetMagique=' + idEffetMagique + '';
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('EffetMagiqueUl', JSON.stringify(values));
+
+        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
     }
 }

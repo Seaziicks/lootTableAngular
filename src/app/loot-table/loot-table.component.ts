@@ -19,7 +19,7 @@ import {ObjetService} from '../services/objet.service';
 export interface SpecialResponse {
     status: number;
     status_message: string;
-    data: any[];
+    data: any;
 }
 
 
@@ -223,48 +223,29 @@ export class LootTableComponent implements OnInit {
     }
 
     sendObjet(objetCommunDB: ObjetCommunDB) {
-        this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDB).then(
+        const objetCommunDBModified: ObjetCommunDB = JSON.parse(JSON.stringify(objetCommunDB)) as ObjetCommunDB;
+        objetCommunDBModified.proprieteMagique = null;
+        this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDBModified).then(
             (dataObjet: any) => {
                 console.log(dataObjet);
                 const response = JSON.parse(dataObjet) as SpecialResponse;
-                const objet: ObjetCommunDB = response.data as unknown as ObjetCommunDB;
+                const objet: ObjetCommunDB = response.data as ObjetCommunDB;
                 const idObjet = objet.idObjet;
                 console.log(idObjet);
                 // this.ajouterMateriau(idObjet, this.armure.materiau);
                 // this.ajouterMalediction(idObjet, this.armure.malediction);
+                this.ajouterProprietesMagiques(idObjet, objetCommunDB.proprieteMagique);
             }
         );
     }
 
-    ajouterMateriau(idObjet, materiauToAdd: Materiau) {
-        this.objetService.envoyerMateriau(this.http, 'POST', 0, materiauToAdd).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                const materiau = response.data as unknown as Materiau;
-                console.log(materiau);
-                this.objetService.updateForObjet(this.http, idObjet, 'idMateriaux', materiau.idMateriaux);
-            }
-        );
-    }
-    ajouterMalediction(idObjet, maledictionToAdd: MagicalProperty) {
-        let descriptionMalediction = '';
-        for (const description of maledictionToAdd.description) {
-            descriptionMalediction += description;
+    ajouterProprietesMagiques(idObjet: number, proprietesMagiques: MagicalProperty[]) {
+        for (const proprieteMagique of proprietesMagiques) {
+            this.objetService.envoyerEffetMagique(this.http, 'POST', idObjet, proprieteMagique).then(
+                (data: any) => {
+                    console.log(data);
+                }
+            );
         }
-        const malediction = {
-            idMalediction: null,
-            nom: maledictionToAdd.title,
-            description: descriptionMalediction,
-        } as Malediction;
-        this.objetService.envoyerMalediction(this.http, 'POST', 0, malediction).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                const addedMalediction = response.data as unknown as Malediction;
-                console.log(addedMalediction);
-                this.objetService.updateForObjet(this.http, idObjet, 'idMalediction', addedMalediction.idMalediction);
-            }
-        );
     }
 }
