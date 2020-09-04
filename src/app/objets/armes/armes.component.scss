@@ -1,3 +1,11 @@
 textarea {
     width: 100%;
 }
+
+.fauxNom {
+    width: 100%;
+}
+
+::ng-deep .mat-form-field .mat-form-field-wrapper .mat-form-field-flex {
+    background-color: white;
+}

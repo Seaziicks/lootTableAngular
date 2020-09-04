@@ -36,8 +36,12 @@ export class LootTableComponent implements OnInit {
     lootSelectionne: MonstreLootChanceBis;
     lootPossible: Loot[] = [];
     input1: number = null;
+    input2: number;
+    input3: number;
     deDeDrop: number;
     parametres: string[];
+    parametres2: string[];
+    parametres3: string[];
 
     armure: ArmuresComponent;
     arme: ArmesComponent;
@@ -88,7 +92,7 @@ export class LootTableComponent implements OnInit {
     }
 
     public isObjet(): boolean {
-        this.setParametres();
+        // this.setParametres();
         return this.lootSelectionne && (this.lootSelectionne.idLoot === 6 || this.isObjetMaudit());
     }
 
@@ -97,7 +101,7 @@ export class LootTableComponent implements OnInit {
     }
 
     public isDoubleObjet() {
-        return this.input1 >= 80 && this.input1 <= 90;
+        return this.input1 >= 71 && this.input1 <= 80;
     }
 
     public isRecompenseValide(): boolean {
@@ -175,25 +179,38 @@ export class LootTableComponent implements OnInit {
         }
     }
 
-    isMeReduced(objet: string) {
-        if (objet === 'simple' && this.input1 && this.input1 <= 20) {
-            this.parametres = ['Ceci sera un anneau', 'Dead Anno', 'Anneau', 'magique', 'anneauxMagiques'];
-            return true;
-        } else if (objet === 'armes' && this.input1 >= 21 && this.input1 <= 35) {
-            return true;
-        } else if (objet === 'armures' && this.input1 >= 36 && this.input1 <= 50) {
-            return true;
-        } else if (objet === 'simple' && this.input1 >= 51 && this.input1 <= 65) {
-            this.parametres = ['Ceci est un bâton', 'Débat thon', 'Bâton', 'magique', 'batons'];
-            return true;
-        } else if (objet === 'simple' && this.input1 >= 65 && this.input1 <= 80) {
-            this.parametres = ['Ceci est un sceptre', 'Dé septentrional', 'Sceptre', 'magique', 'sceptres'];
-            return true;
-        } else if (objet === 'simple' && this.input1 >= 81 && this.input1 <= 100) {
-            this.parametres = ['Ceci est un objet merveilleux', 'Demer veille eux', 'Objet merveileux', 'magique', 'objetsMerveilleux'];
-            return true;
+    isMeReduced(objet: string, isInput2: boolean) {
+        let input;
+        let parameter = null;
+        let hasToBeTrue = false;
+        if (isInput2) {
+            input = this.input2;
+        } else {
+            input = this.input3;
         }
-        return false;
+        if (objet === 'simple' && input && input <= 20) {
+            parameter = ['Ceci sera un anneau', 'Dead Anno', 'Anneau', 'magique', 'anneauxMagiques'];
+            hasToBeTrue = true;
+        } else if (objet === 'armes' && input >= 21 && input <= 35) {
+            hasToBeTrue = true;
+        } else if (objet === 'armures' && input >= 36 && input <= 50) {
+            hasToBeTrue = true;
+        } else if (objet === 'simple' && input >= 51 && input <= 65) {
+            parameter = ['Ceci est un bâton', 'Débat thon', 'Bâton', 'magique', 'batons'];
+            hasToBeTrue = true;
+        } else if (objet === 'simple' && input >= 65 && input <= 80) {
+            parameter = ['Ceci est un sceptre', 'Dé septentrional', 'Sceptre', 'magique', 'sceptres'];
+            hasToBeTrue = true;
+        } else if (objet === 'simple' && input >= 81 && input <= 100) {
+            parameter = ['Ceci est un objet merveilleux', 'Demer veille eux', 'Objet merveileux', 'magique', 'objetsMerveilleux'];
+            hasToBeTrue = true;
+        }
+        if (isInput2) {
+            this.parametres2 = parameter;
+        } else {
+            this.parametres3 = parameter;
+        }
+        return hasToBeTrue;
     }
 
     getObjetSimple($event: ObjetSimpleComponent) {

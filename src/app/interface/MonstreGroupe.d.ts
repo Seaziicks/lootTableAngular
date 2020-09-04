@@ -109,6 +109,7 @@ export interface ObjetCommunDB {
     idObjet: number;
     idPersonnage: number;
     nom: string;
+    fauxNom: string;
     bonus: number;
     type: string;
     prix: number;
@@ -134,6 +135,7 @@ export interface ObjetCommunDB {
 export interface Objet {
     idObjet: number;
     nom: string;
+    fauxNom: string;
     prix: string;
     poids: string;
     source: string;

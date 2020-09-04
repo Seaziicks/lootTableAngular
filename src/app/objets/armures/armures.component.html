@@ -107,6 +107,7 @@
         <div style="width: 100%" *ngIf="this.nom">
             <h1>Résultat</h1>
             <h3><span [innerHTML]="this.nom"></span></h3>
+            <h4 *ngIf="this.fauxNom"> Faux Nom : {{this.fauxNom}}</h4>
             <p>{{this.type}}<span *ngIf="this.armure"> - {{this.armure.bonArm}} armure
                 <span *ngIf="this.proprietesMagiques.length > 0">- Bonus +{{this.bonus}}</span></span>
                 <span *ngIf="this.prix"> - Prix : {{this.prix.toLocaleString("fr")}} po</span>
@@ -166,6 +167,10 @@
     <div style="width: 100%" *ngIf="this.proprietesMagiques.length > 0 && this.modificationEnCours">
         <h1>Résultat de l'arme</h1>
         <h3><textarea [(ngModel)]="this.nom"></textarea></h3>
+        <mat-form-field appearance="fill" class="fauxNom">
+            <mat-label>Faux nom</mat-label>
+            <textarea [(ngModel)]="this.fauxNom" rows="1" matInput></textarea>
+        </mat-form-field>
         <p><textarea [(ngModel)]="this.type"></textarea><span *ngIf="this.armure"> - <textarea [(ngModel)]="this.armure.bonArm"></textarea> armure
                 <span *ngIf="this.proprietesMagiques.length > 0">- Bonus +<textarea [(ngModel)]="this.bonus"></textarea></span></span>
             <span *ngIf="this.prix"> - Prix : <textarea [(ngModel)]="this.prix"></textarea> po</span>

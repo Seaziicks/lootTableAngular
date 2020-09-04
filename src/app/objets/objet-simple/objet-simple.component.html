@@ -38,6 +38,7 @@
         <h1>Résultat</h1>
         <div>
             <h3>{{this.parametres[2]}} : <span *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+            <h4 *ngIf="this.fauxNom"> Faux Nom : {{this.fauxNom}}</h4>
 
             <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
                 <h4>{{proprieteMagique.title}}</h4>
@@ -95,6 +96,10 @@
             <ng-container
                 *ngFor="let proprieteObjet of this.proprietesMagiques; let indexPropriete = index; trackBy: trackByFn">
                 <h4><textarea [(ngModel)]="this.proprietesMagiques[indexPropriete].title"></textarea></h4>
+                <mat-form-field appearance="fill" class="fauxNom">
+                    <mat-label>Faux nom</mat-label>
+                    <textarea [(ngModel)]="this.fauxNom" rows="1" matInput></textarea>
+                </mat-form-field>
                 <span
                     *ngFor="let description of this.proprietesMagiques[indexPropriete].description; let indexDescription = index; trackBy: trackByFn">
                     <textarea

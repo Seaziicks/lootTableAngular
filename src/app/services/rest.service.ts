@@ -1,4 +1,4 @@
-export let BASE_URL = 'http://localhost/lootTable/lootTablePHP/Rest/';
+export let BASE_URL = 'http://192.168.1.74/lootTable/lootTablePHP/Rest/';
 export let URL_DROP_CHANCE = 'dropChanceRest.php';
 export let URL_DROP_CHANCE_BIS = 'dropChanceBisRest.php';
 export let URL_MONSTRES = 'monstresRest.php';

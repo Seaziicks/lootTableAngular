@@ -41,12 +41,45 @@
             <h3>Récompense</h3>
             <p>{{this.getRecompense()}}</p>
         </div>
-        <div *ngIf="deDeDrop && this.isObjet() && this.input1" style="width: 100%">
+        <div *ngIf="(deDeDrop && this.isObjet() && this.input1) && !this.isDoubleObjet()" style="width: 100%">
             <app-armes *ngIf="isMe('armes')" [maudit]="this.isObjetMaudit()" (armeEventEmitter)="this.getArme($event)"></app-armes>
             <app-armures *ngIf="isMe('armures')" [maudit]="this.isObjetMaudit()" (armureEventEmitter)="this.getArmure($event)"></app-armures>
             <app-objet-simple *ngIf="isMe('simple')" [parametres]="this.parametres" [maudit]="this.isObjetMaudit()" (objetSimpleEventEmitter)="this.getObjetSimple($event)"></app-objet-simple>
         </div>
-        <div *ngIf="this.isObjet() && this.isDoubleObjet()">
+        <div *ngIf="this.isDoubleObjet()" style="width: 100%">
+            <div class="col-md-2 mb-3">
+                <label for="validationInput2"> Objet1
+                    : {{this.lootSelectionne.diceNumber}}D{{this.lootSelectionne.dicePower}} </label>
+                <input min="1" max="{{this.lootSelectionne.dicePower}}" type="number" class="form-control"
+                       id="validationInput2"
+                       name="validationInput2"
+                       placeholder="Objet1"
+                       [(ngModel)]="this.input2" required>
+            </div>
+            <div *ngIf="this.isDoubleObjet() && this.input2" style="width: 100%">
+                <app-armes *ngIf="isMeReduced('armes', true)" [maudit]="false" (armeEventEmitter)="this.getArme($event)"></app-armes>
+                <app-armures *ngIf="isMeReduced('armures', true)" [maudit]="false" (armureEventEmitter)="this.getArmure($event)"></app-armures>
+                <app-objet-simple *ngIf="isMeReduced('simple', true)" [parametres]="this.parametres2" [maudit]="this.isObjetMaudit()" (objetSimpleEventEmitter)="this.getObjetSimple($event)"></app-objet-simple>
+            </div>
+
+            <hr style="width: 50%; background-color: lightgrey; margin-left: 0; height : 1px">
+
+            <div class="col-md-2 mb-3"
+                 *ngIf="deDeDrop && this.lootSelectionne">
+                <label for="validationInput3"> Objet2
+                    : {{this.lootSelectionne.diceNumber}}D{{this.lootSelectionne.dicePower}} </label>
+                <input min="1" max="{{this.lootSelectionne.dicePower}}" type="number" class="form-control"
+                       id="validationInput3"
+                       name="validationInput3"
+                       placeholder="Objet2"
+                       [(ngModel)]="this.input3" required>
+            </div>
+
+            <div *ngIf="this.isDoubleObjet() && this.input3" style="width: 100%">
+                <app-armes *ngIf="isMeReduced('armes', false)" [maudit]="false" (armeEventEmitter)="this.getArme($event)"></app-armes>
+                <app-armures *ngIf="isMeReduced('armures', false)" [maudit]="false" (armureEventEmitter)="this.getArmure($event)"></app-armures>
+                <app-objet-simple *ngIf="isMeReduced('simple', false)" [parametres]="this.parametres3" [maudit]="this.isObjetMaudit()" (objetSimpleEventEmitter)="this.getObjetSimple($event)"></app-objet-simple>
+            </div>
 
         </div>
 

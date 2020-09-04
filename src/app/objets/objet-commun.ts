@@ -10,6 +10,7 @@ export abstract class ObjetCommun {
     maudit: boolean;
 
     nom: string;
+    fauxNom: string;
     bonus: number;
     type: string;
     proprietesMagiques: MagicalProperty[] = [];

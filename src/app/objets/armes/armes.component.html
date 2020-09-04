@@ -120,6 +120,7 @@
         <div style="width: 100%" *ngIf="this.nom">
             <h1>Résultat de l'arme</h1>
             <h3><span [innerHTML]="this.nom"></span></h3>
+            <h4 *ngIf="this.fauxNom"> Faux Nom : {{this.fauxNom}}</h4>
             <p>{{this.type}} <span *ngIf="this.taille"> - {{this.degats}}</span><span
                 *ngIf="this.bonus"> - Bonus +{{this.bonus}}</span></p>
 
@@ -176,6 +177,10 @@
     <div style="width: 100%" *ngIf="this.proprietesMagiques.length > 0 && this.modificationEnCours">
         <h1>Résultat de l'arme</h1>
         <h3><textarea [(ngModel)]="this.nom"></textarea></h3>
+        <mat-form-field appearance="fill" class="fauxNom">
+            <mat-label>Faux nom</mat-label>
+            <textarea [(ngModel)]="this.fauxNom" rows="1" matInput></textarea>
+        </mat-form-field>
         <p><textarea [(ngModel)]="this.type"></textarea>
             <span *ngIf="this.taille"> - <textarea [(ngModel)]="this.degats"></textarea></span>
             <span *ngIf="this.bonus"> - Bonus +<textarea [(ngModel)]="this.bonus"></textarea></span>
