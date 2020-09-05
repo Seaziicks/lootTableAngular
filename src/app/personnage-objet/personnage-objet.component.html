@@ -1,10 +1,20 @@
 <div style="width: 100%" *ngIf="this.objet">
-    <div style="width: 100%" *ngIf="this.objet.nom">
-        <h1>Résultat de l'arme</h1>
-        <h3><span [innerHTML]="this.objet.nom"></span></h3>
-        <p>{{this.objet.type}} <span *ngIf="this.objet.taille"> - {{this.objet.degats}}</span><span
+    <div style="width: 100%" *ngIf="this.objet.nom && !this.modificationEnCours">
+        <h3 [innerHTML]="this.objet.nom">  </h3>
+        <h4 *ngIf="this.objet.fauxNom"> Faux Nom : {{this.objet.fauxNom}}</h4>
+        <div *ngIf="this.objet.proprieteMagique">{{this.objet.type}}</div>
+        <p *ngIf="this.objet.armure"><span *ngIf="this.objet.armure"> Armure: {{this.objet.armure}}
+                <span *ngIf="this.objet.proprieteMagique.length > 0">- Bonus +{{this.objet.bonus}}</span></span>
+            <span *ngIf="this.objet.prix"> - Prix : {{this.objet.prix.toLocaleString("fr")}} po</span>
+        </p>
+        <p *ngIf="this.objet.degats"> <span *ngIf="this.objet.taille"> Dégats : {{this.objet.degats}}</span><span
             *ngIf="this.objet.bonus"> - Bonus +{{this.objet.bonus}}</span></p>
-
+        <div *ngIf="this.objet.malediction">
+            Malediction
+            <br/>
+            <span [innerHTML]="this.objet.malediction.nom"></span> : <span>{{this.objet.malediction.description}}</span>
+        </div>
+        <br/>
         <ng-container *ngFor="let proprieteMagique of this.objet.proprieteMagique;">
             <h4>{{proprieteMagique.title}}</h4>
             <span *ngFor="let description of proprieteMagique.description; let index = index;">
@@ -14,10 +24,10 @@
                         <span *ngIf="table.position === index + 1">
                             <table cellspacing="1" border="1">
                                 <tbody>
-                                <tr *ngFor="let th of table.title; let thIndex = index">
+                                <tr *ngFor="let th of table.title; let thIndex = index" style="text-align: center">
                                     <ng-container *ngFor="let title of th; let titleIndex = index">
                                         <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
-                                            [colSpan]="table.title[1][thIndex].length / table.title[0][thIndex].length">{{title}}</th>
+                                            [colSpan]="(table.title[1].length / table.title[0].length)">{{title}}</th>
                                         <ng-template #elseBlock>
                                             <th>{{title}}</th>
                                         </ng-template>
@@ -46,6 +56,170 @@
             <br/>
             <span *ngIf="proprieteMagique.infos" [innerHTML]="proprieteMagique.infos.data"></span><br/><br/>
         </ng-container>
-        <div *ngIf="this.objet.materiau"><span [innerHTML]="this.objet.materiau.nom"></span> : <span>{{this.objet.materiau.effet}}</span></div>
+        <div *ngIf="this.objet.materiau">
+            Materiau
+            <br/>
+            <span [innerHTML]="this.objet.materiau.nom"></span> : <span>{{this.objet.materiau.effet}}</span>
+        </div>
+        <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
+        <button *ngIf="!this.valide else objetValidee" (click)="this.selection()">Valider objet</button>
+        <ng-template #objetValidee>
+            <button (click)="this.selection()">Dévalider objet</button>
+        </ng-template>
+    </div>
+
+    <div style="width: 100%" *ngIf="this.objet.proprieteMagique.length > 0 && this.modificationEnCours">
+        <h6>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nom de l'bjet</mat-label>
+                <textarea [(ngModel)]="this.objet.nom" matInput></textarea>
+            </mat-form-field>
+         </h6>
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Faux nom</mat-label>
+            <textarea [(ngModel)]="this.objet.fauxNom" rows="1" matInput></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Type de l'objet</mat-label>
+            <textarea [(ngModel)]="this.objet.type" matInput></textarea>
+        </mat-form-field>
+        <!--Si c'est une arme-->
+        <div *ngIf="this.objet.degats" style="width: 100%">
+            <span *ngIf="this.objet.taille">
+                <mat-form-field>
+                <mat-label>Dégâts</mat-label>
+                    <textarea [(ngModel)]="this.objet.degats" matInput></textarea>
+                </mat-form-field>
+            </span>
+            <span *ngIf="this.objet.bonus">
+                <mat-form-field>
+                <mat-label>Bonus dégâts +</mat-label>
+                    <textarea [(ngModel)]="this.objet.bonus" matInput></textarea>
+                </mat-form-field>
+            </span>
+        </div>
+        <!--Si c'est une armure-->
+        <div *ngIf="this.objet.armure" style="width: 100%">
+
+            <span *ngIf="this.objet.armure">
+                <mat-form-field>
+                <mat-label>Armure</mat-label>
+                    <textarea [(ngModel)]="this.objet.armure" matInput></textarea>
+                </mat-form-field>
+            </span>
+
+            <span *ngIf="this.objet.proprieteMagique.length > 0">
+                <mat-form-field>
+                <mat-label>Bonus d'armure +</mat-label>
+                    <textarea [(ngModel)]="this.objet.bonus" matInput></textarea>
+                </mat-form-field>
+            </span>
+
+            <span *ngIf="this.objet.prix">
+                <mat-form-field>
+                <mat-label>Prix (po)</mat-label>
+                    <textarea [(ngModel)]="this.objet.prix" matInput></textarea>
+                </mat-form-field>
+            </span>
+        </div>
+
+        <div *ngIf="this.objet.malediction">
+            <hr  style="width: 66%; background-color: lightgrey; margin-left: 0; height : 1px">
+            <h6>Malediction</h6>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nom malediction</mat-label>
+                <textarea [(ngModel)]="this.objet.malediction.nom" matInput></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" style="width: 100%">
+                <mat-label>Effet malediction</mat-label>
+                <textarea [(ngModel)]="this.objet.malediction.description" matInput></textarea>
+            </mat-form-field>
+        </div>
+
+        <ng-container *ngFor="let proprieteObjet of this.objet.proprieteMagique; let indexPropriete = index; trackBy: trackByFn">
+            <hr  style="width: 66%; background-color: lightgrey; margin-left: 0; height : 1px">
+            <h6>Effet Magique</h6>
+            <h6>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Titre effetMagique</mat-label>
+                    <textarea [(ngModel)]="this.objet.proprieteMagique[indexPropriete].title" matInput></textarea>
+                </mat-form-field>
+            </h6>
+            <span
+                *ngFor="let description of this.objet.proprieteMagique[indexPropriete].description; let indexDescription = index; trackBy: trackByFn">
+                    <textarea
+                        [(ngModel)]="this.objet.proprieteMagique[indexPropriete].description[indexDescription]"></textarea><br/>
+
+                    <ng-container
+                        *ngFor="let table of this.objet.proprieteMagique[indexPropriete].table; let indexTable = index">
+                        <span *ngIf="+table.position === indexDescription + 1">
+                            <table>
+                                <tbody>
+                                <tr *ngFor="let th of this.objet.proprieteMagique[indexPropriete].table[indexTable].title; let thIndex = index">
+                                    <ng-container
+                                        *ngFor="let title of this.objet.proprieteMagique[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
+                                            [colSpan]="table.title[1].length / table.title[0].length">
+                                            <textarea
+                                                [(ngModel)]="this.objet.proprieteMagique[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                        </th>
+                                        <ng-template #elseBlock>
+                                            <th>
+                                                <textarea
+                                                    [(ngModel)]="this.objet.proprieteMagique[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                            </th>
+                                        </ng-template>
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of this.objet.proprieteMagique[indexPropriete].table[indexTable].tr; let trIndex = index">
+                                    <ng-container
+                                        *ngFor="let content of this.objet.proprieteMagique[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index; trackBy: trackByFn">
+                                        <td>
+                                            <textarea
+                                                [(ngModel)]="this.objet.proprieteMagique[indexPropriete].table[indexTable].tr[trIndex][tdIndex]"></textarea>
+                                        </td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </ng-container>
+
+                    <ng-container *ngFor="let shit of this.objet.proprieteMagique[indexPropriete].ul; let indexUl = index;">
+                        <span
+                            *ngIf="this.objet.proprieteMagique[indexPropriete].ul[indexUl].position === indexDescription + 1">
+                            <ul>
+                                <li *ngFor="let shitBis of this.objet.proprieteMagique[indexPropriete].ul[indexUl].li; let indexLi = index; trackBy: trackByFn">
+                                    <textarea
+                                        [(ngModel)]="this.objet.proprieteMagique[indexPropriete].ul[indexUl].li[indexLi]"
+                                        [name]="'positon'+this.objet.proprieteMagique[indexPropriete].ul[indexUl].position+'ul'+indexUl+'li'+indexLi"></textarea>
+                                </li>
+                            </ul>
+                        </span>
+                    </ng-container>
+                </span>
+            <br/>
+            <h6>Infos effet magique</h6>
+            <ng-container
+                *ngFor="let shit of this.objet.proprieteMagique[indexPropriete].infos.data; let indexData = index; trackBy: trackByFn">
+                <textarea [(ngModel)]="this.objet.proprieteMagique[indexPropriete].infos.data[indexData]"></textarea>
+            </ng-container>
+        </ng-container>
+        <div *ngIf="this.objet.materiau">
+            <hr  style="width: 66%; background-color: lightgrey; margin-left: 0; height : 1px">
+            <h6>Materiau</h6>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nom materiau</mat-label>
+                <textarea [(ngModel)]="this.objet.materiau.nom" matInput></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" style="width: 100%">
+                <mat-label>Effet materiau</mat-label>
+                <textarea [(ngModel)]="this.objet.materiau.effet" matInput></textarea>
+            </mat-form-field>
+        </div>
+        <button (click)="this.modifierContenu()">Valider propriété magique</button>
+        <button (click)="this.resetContenu()">Reset propriété magique</button>
     </div>
 </div>
