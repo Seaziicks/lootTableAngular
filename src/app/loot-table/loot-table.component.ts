@@ -2,15 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
-import {
-    Loot,
-    MagicalProperty, Malediction,
-    Materiau,
-    Monstre,
-    MonstreGroupe,
-    MonstreLootChanceBis,
-    Objet, ObjetCommunDB
-} from '../interface/MonstreGroupe';
 import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.component';
 import {ArmesComponent} from '../objets/armes/armes.component';
 import {ArmuresComponent} from '../objets/armures/armures.component';

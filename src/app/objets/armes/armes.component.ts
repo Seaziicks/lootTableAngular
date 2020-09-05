@@ -1,8 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {JSonLoadService} from '../../services/json-load.service';
-import {
-    Arme, CategoriesArmes, MagicalProperty, DegatsParTaille, SortedMagicalProperty, Materiau, ObjetCommunDB, Malediction
-} from '../../interface/MonstreGroupe';
 import {ObjetCombat} from '../objet-combat';
 import {MaledictionsComponent} from '../maledictions/maledictions.component';
 
@@ -115,10 +112,11 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
                 }
                 break;
         }
-        if (!this.isSpecial && this.Categories) {
+        if (!this.isSpecial && this.categorieObjet) {
             this.arme = JSON.parse(JSON.stringify(
                 this.allCategoriesCourante.Categories.find(f => f.title === this.categorieObjet).armes[this.deObjet - 1])) as Arme;
             this.setNom();
+            this.setType();
         } else {
             this.type = null;
             this.nom = null;

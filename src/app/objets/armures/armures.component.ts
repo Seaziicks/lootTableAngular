@@ -1,7 +1,4 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {
-    Armure, CategoriesArmures, MagicalProperty, Malediction, Materiau, ObjetCommunDB, PrixParTaille, SortedMagicalProperty
-} from '../../interface/MonstreGroupe';
 import {JSonLoadService} from '../../services/json-load.service';
 import {ObjetCombat} from '../objet-combat';
 import {MaledictionsComponent} from '../maledictions/maledictions.component';
@@ -66,6 +63,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
                 if (this.deBonus && this.deBonus <= 80) {
                     this.bonus = 1;
                 } else if (this.deBonus > 80 && this.deBonus <= 87) {
+                    console.log('Je suis bonus +2');
                     this.bonus = 2;
                 } else if (this.deBonus > 87 && this.deBonus <= 89) {
                     this.bonus = 0;
@@ -133,7 +131,9 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
             this.armure = JSON.parse(JSON.stringify(
                 this.allArmures.Categories.find(f => f.title === this.categorieObjet).armures[this.deObjet - 1])) as Armure;
             this.setNom();
+            this.setType();
         } else {
+            this.type = null;
             this.nom = null;
         }
         return this.bouclier;

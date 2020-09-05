@@ -51,7 +51,7 @@
                                 <tr *ngFor="let th of table.title; let thIndex = index">
                                     <ng-container *ngFor="let title of th; let titleIndex = index">
                                         <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
-                                            [colSpan]="table.title[1][thIndex].length / table.title[0][thIndex].length">{{title}}</th>
+                                            [colSpan]="table.title[1].length / table.title[0].length">{{title}}</th>
                                         <ng-template #elseBlock>
                                             <th>{{title}}</th>
                                         </ng-template>
@@ -113,8 +113,8 @@
                                 <tr *ngFor="let th of this.proprietesMagiques[indexPropriete].table[indexTable].title; let thIndex = index">
                                     <ng-container
                                         *ngFor="let title of this.proprietesMagiques[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
-                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0][tdIndex].length < table.title[1][tdIndex].length; else elseBlock"
-                                            [colSpan]="table.title[1][tdIndex].length / table.title[0][tdIndex].length">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
+                                            [colSpan]="table.title[1].length / table.title[0].length">
                                             <textarea
                                                 [(ngModel)]="this.proprietesMagiques[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
                                         </th>

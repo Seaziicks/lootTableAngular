@@ -1,8 +1,5 @@
-import {MagicalProperty, Malediction, SortedMagicalProperty} from '../interface/MonstreGroupe';
 import {JSonLoadService} from '../services/json-load.service';
-import {EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {MaledictionsComponent} from './maledictions/maledictions.component';
-import {ObjetSimpleComponent} from './objet-simple/objet-simple.component';
 
 export abstract class ObjetCommun {
 

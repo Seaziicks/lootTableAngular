@@ -1,5 +1,4 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Chances, MagicalProperty, Monstre, SortedMagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
 import {JSonLoadService} from '../../services/json-load.service';
 
 @Component({

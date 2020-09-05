@@ -1,8 +1,3 @@
-import {
-    MagicalProperty,
-    Materiau,
-    SortedMagicalProperty
-} from '../interface/MonstreGroupe';
 import {JSonLoadService} from '../services/json-load.service';
 import {ObjetCommun} from './objet-commun';
 

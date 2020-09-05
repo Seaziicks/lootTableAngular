@@ -1,12 +1,5 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {
-    MagicalProperty,
-    Malediction,
-    Materiau,
-    ObjetCommunDB,
-    TableMagicalProperty, UlMagicalProperty
-} from '../interface/MonstreGroupe';
 import {BASE_URL, URL_DROP_CHANCE, URL_EFFET_MAGIQUE, URL_OBJET_COMPLET} from './rest.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
@@ -54,8 +47,14 @@ export class ObjetService {
         return http.request('GET', baseUrlBis).toPromise();
     }
 
-    public getObjetsIDs(http: HttpClient, idPersonnage: number) {
+    public getAllObjetsComplets(http: HttpClient, idPersonnage: number) {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '';
+        console.log(baseUrlBis);
+        return http.request('GET', baseUrlBis).toPromise();
+    }
+
+    public getAllObjetsIDs(http: HttpClient, idPersonnage: number) {
+        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '&idsOnly = true';
         console.log(baseUrlBis);
         return http.request('GET', baseUrlBis).toPromise();
     }
@@ -81,6 +80,7 @@ export class ObjetService {
                 console.log(response.data);
                 return this.envoyerEffetMagiqueTable(http, httpMethod, idEffetMagique, effet.table).then(
                     (dataEffetMagiqeTable: any) => {
+                        console.log(dataEffetMagiqeTable);
                         return this.envoyerEffetMagiqueUl(http, httpMethod, idEffetMagique, effet.ul);
                     }
                 );

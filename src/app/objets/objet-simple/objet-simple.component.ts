@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {MagicalProperty, Malediction, ObjetCommunDB, SortedMagicalProperty, TablesChances} from '../../interface/MonstreGroupe';
 import {JSonLoadService} from '../../services/json-load.service';
 import {MaledictionsComponent} from '../maledictions/maledictions.component';
 import {ObjetCommun} from '../objet-commun';

@@ -11,6 +11,7 @@ import {ObjetSimpleComponent} from './objets/objet-simple/objet-simple.component
 import { TestInsertTableComponent } from './test-insert-table/test-insert-table.component';
 import {PersonnageObjetComponent} from './personnage-objet/personnage-objet.component';
 import {PersonnageComponent} from './personnage/personnage.component';
+import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
     {path: 'testArmures', component: ArmuresComponent},
     {path: 'testArmes', component: ArmesComponent},
     {path: 'testBanner', component: FadingInfoComponent},
+    {path: 'GestionObjets', component: GestionObjetComponent},
     {path: 'GestionMonstre', component: GestionMonstreComponent},
     {path: 'GestionDropMonstre', component: GestionDropMonstreComponent},
     {path: 'GestionDropMonstreBis', component: GestionDropMonstreBisComponent},

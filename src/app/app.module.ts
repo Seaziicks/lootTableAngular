@@ -29,6 +29,7 @@ import { ObjetSimpleComponent } from './objets/objet-simple/objet-simple.compone
 import { TestInsertTableComponent } from './test-insert-table/test-insert-table.component';
 import { PersonnageComponent } from './personnage/personnage.component';
 import { PersonnageObjetComponent } from './personnage-objet/personnage-objet.component';
+import { GestionObjetComponent } from './gestion-objet/gestion-objet.component';
 
 
 
@@ -50,6 +51,7 @@ import { PersonnageObjetComponent } from './personnage-objet/personnage-objet.co
     TestInsertTableComponent,
     PersonnageComponent,
     PersonnageObjetComponent,
+    GestionObjetComponent,
   ],
   imports: [
     BrowserModule,

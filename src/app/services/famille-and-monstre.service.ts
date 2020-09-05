@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
 // @ts-ignore
 import {Famille, MonstreGroupe} from '../interface/MonstreGroupe';
-import {BASE_URL, URL_DROP_CHANCE, URL_FAMILLE_MONSTRE, URL_MONSTRE, URL_MONSTRES} from './rest.service';
+import {BASE_URL, URL_FAMILLE_MONSTRE, URL_MONSTRE, URL_MONSTRES} from './rest.service';
 import {Observable, Subscription} from 'rxjs';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 

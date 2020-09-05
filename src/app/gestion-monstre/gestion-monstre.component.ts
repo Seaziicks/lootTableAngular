@@ -7,7 +7,6 @@ import {map, startWith} from 'rxjs/operators';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {AutocompleteGroupeComponent} from '../autocomplete-groupe/autocomplete-groupe.component';
 import {FadingInfoComponent} from '../fading-info/fading-info.component';
-import {Famille, Monstre, MonstreGroupe} from '../interface/MonstreGroupe';
 
 @Component({
   selector: 'app-gestion-monstre',

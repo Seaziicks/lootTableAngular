@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {SpecialResponse} from '../loot-table/loot-table.component';
-import {ObjetCommunDB} from '../interface/MonstreGroupe';
 import {HttpClient} from '@angular/common/http';
 import {ObjetService} from '../services/objet.service';
 
@@ -17,7 +16,7 @@ export class PersonnageComponent implements OnInit {
               private objetService: ObjetService) { }
 
   ngOnInit(): void {
-      this.objetService.getObjetsIDs(this.http, 1).then(
+      this.objetService.getAllObjetsIDs(this.http, 1).then(
           (dataObjet: any) => {
               const response: SpecialResponse = dataObjet as SpecialResponse;
               console.log(response);

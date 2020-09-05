@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {BASE_URL} from '../services/rest.service';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {MagicalProperty, SortedMagicalProperty} from '../interface/MonstreGroupe';
 import {JSonLoadService} from '../services/json-load.service';
 
 @Component({
