@@ -15,6 +15,13 @@
                     <option value="3">Armes exotiques</option>
                 </select>
             </div>
+            <div class="validationAffichage">
+                <div class="validationBox" (click)="this.changeValidation('nom')" [ngClass]="{'validatedBox' : this.afficherNom}">{{this.afficherNom ? 1 : 0}}</div>
+                <div class="validationBox" (click)="this.changeValidation('effetMagique')" [ngClass]="{'validatedBox' : this.afficherEffetMagique}">{{this.afficherEffetMagique ? 1 : 0}}</div>
+                <div class="validationBox" (click)="this.changeValidation('malediction')" [ngClass]="{'validatedBox' : this.afficherMalediction}">{{this.afficherMalediction ? 1 : 0}}</div>
+                <div class="validationBox" (click)="this.changeValidation('materiau')" [ngClass]="{'validatedBox' : this.afficherMateriau}">{{this.afficherMateriau ? 1 : 0}}</div>
+                <div class="validationBox" (click)="this.changeValidation('infos')" [ngClass]="{'validatedBox' : this.afficherInfos}">{{this.afficherInfos ? 1 : 0}}</div>
+            </div>
             <div class="form-group col-md-2" *ngIf="this.allCategoriesCourante">
                 <label for="inputFamilleMonstre">Categorie (1D{{this.allCategoriesCourante.Categories.length}})</label>
                 <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.categorieObjet"

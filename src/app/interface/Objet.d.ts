@@ -25,6 +25,11 @@ declare interface ObjetCommunDB {
     bonusDexteriteMax: number;
     malusArmureTests: number;
     risqueEchecSorts: string;
+    afficherNom: boolean;
+    afficherEffetMagique: boolean;
+    afficherMalediction: boolean;
+    afficherMateriau: boolean;
+    afficherInfos: boolean;
 }
 
 /*

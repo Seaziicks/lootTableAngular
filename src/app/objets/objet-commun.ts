@@ -27,6 +27,12 @@ export abstract class ObjetCommun {
 
     valide = false;
 
+    afficherNom = false;
+    afficherEffetMagique = false;
+    afficherMalediction = false;
+    afficherMateriau = false;
+    afficherInfos = false;
+
     constructor(jsonService: JSonLoadService) {
     }
 
