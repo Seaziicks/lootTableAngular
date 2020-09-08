@@ -1,0 +1,54 @@
+textarea {
+    width: 100%;
+}
+
+.fauxNom {
+    width: 100%;
+}
+
+.validationAffichage {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.validationBox {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    color: black;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, darkgrey 50%, #2098D1 50%);
+    -webkit-transition: background-position 1s, color 1s;
+    -moz-transition: background-position 1s, color 1s;
+    transition: background-position 1s, color 1s;
+    border: solid 1px wheat;
+    border-radius: 16px;
+    /* Essaie d'alignement au centre */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    user-select: none;
+}
+
+.validatedBox {
+    background-position: 0 -100%;
+    color: wheat;
+}
+
+.titleTop {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.titleTop .h1Fake {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 75px;
+    font-size: 35px;
+
+}

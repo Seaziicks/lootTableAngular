@@ -1,5 +1,7 @@
-textarea {
-    width : 100%;
+@import "../cssObjetCommun";
+
+::ng-deep .objetSimple .mat-form-field .mat-form-field-wrapper .mat-form-field-flex {
+    background-color: white;
 }
 
 .form-row {
@@ -10,10 +12,4 @@ table, th, td {
     border: 1px solid black;
 }
 
-.fauxNom {
-    width: 100%;
-}
 
-::ng-deep .mat-form-field .mat-form-field-wrapper .mat-form-field-flex {
-    background-color: white;
-}

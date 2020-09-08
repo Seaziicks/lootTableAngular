@@ -1,8 +1,22 @@
 <app-maledictions *ngIf="this.maudit" #maledictionsComponent
                   (maledictionEventEmitter)="selectionMalediction($event)"></app-maledictions>
 
-<div style="width: 100%">
-    <h1>Ceci est une armure ou un bouclier</h1>
+<div style="width: 100%" class="objetArmure">
+    <div class="titleTop">
+        <div class="h1Fake">Ceci est une armure ou un bouclier</div>
+        <div class="validationAffichage">
+            <div class="validationBox" (click)="this.changeValidation('nom')" [ngClass]="{'validatedBox' : this.afficherNom}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher le nom réel de l'objet">{{this.afficherNom ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('effetMagique')" [ngClass]="{'validatedBox' : this.afficherEffetMagique}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher l'effet magique de l'objet">{{this.afficherEffetMagique ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('malediction')" [ngClass]="{'validatedBox' : this.afficherMalediction}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher la malédiction de l'objet">{{this.afficherMalediction ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('materiau')" [ngClass]="{'validatedBox' : this.afficherMateriau}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher le matériau de l'objet">{{this.afficherMateriau ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('infos')" [ngClass]="{'validatedBox' : this.afficherInfos}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher les infos de l'objet">{{this.afficherInfos ? 1 : 0}}</div>
+        </div>
+    </div>
     <form class="needs-validation" id="armureForm">
         <div class="form-row" *ngIf="!this.isSpecial">
             <div class="form-group col-md-2" *ngIf="this.allArmures">

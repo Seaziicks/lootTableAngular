@@ -33,7 +33,7 @@ export abstract class ObjetCommun {
     afficherMateriau = false;
     afficherInfos = false;
 
-    constructor(jsonService: JSonLoadService) {
+    protected constructor(jsonService: JSonLoadService) {
     }
 
     resetContenu() {
@@ -184,5 +184,34 @@ export abstract class ObjetCommun {
     abstract castToObjetCommunDB();
 
     abstract setNom();
+
+    changeValidation(name: string) {
+        console.log(name);
+        console.log(name.toLowerCase());
+        console.log(name.toLowerCase() === 'effetMagique');
+        switch (name.toLowerCase()) {
+            case 'nom':
+                this.afficherNom = !this.afficherNom;
+                console.log(this.afficherNom);
+                break;
+            case 'effetmagique':
+                this.afficherEffetMagique = !this.afficherEffetMagique;
+                console.log(this.afficherEffetMagique);
+                break;
+            case 'malediction':
+                this.afficherMalediction = !this.afficherMalediction;
+                console.log(this.afficherMalediction);
+                break;
+            case 'materiau':
+                this.afficherMateriau = !this.afficherMateriau;
+                console.log(this.afficherMateriau);
+                break;
+            case 'infos':
+                this.afficherInfos = !this.afficherInfos;
+                console.log(this.afficherInfos);
+                break;
+
+        }
+    }
 }
 
