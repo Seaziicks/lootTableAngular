@@ -54,7 +54,7 @@ export class ObjetService {
     }
 
     public getAllObjetsIDs(http: HttpClient, idPersonnage: number) {
-        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '&idsOnly = true';
+        const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '&idsOnly=true';
         console.log(baseUrlBis);
         return http.request('GET', baseUrlBis).toPromise();
     }

@@ -210,7 +210,7 @@ export class LootTableComponent implements OnInit {
             this.arme = null;
             this.objetSimple = $event;
 
-            this.sendObjet(this.objetSimple.castToObjetCommunDB());
+            this.sendObjet(this.objetSimple.castToObjetCommunForDB());
         }
     }
 
@@ -219,7 +219,7 @@ export class LootTableComponent implements OnInit {
         this.arme = $event;
         this.objetSimple = null;
 
-        this.sendObjet(this.arme.castToObjetCommunDB());
+        this.sendObjet(this.arme.castToObjetCommunForDB());
     }
 
     getArmure($event: ArmuresComponent) {
@@ -227,17 +227,17 @@ export class LootTableComponent implements OnInit {
         this.arme = null;
         this.objetSimple = null;
 
-        this.sendObjet(this.armure.castToObjetCommunDB());
+        this.sendObjet(this.armure.castToObjetCommunForDB());
     }
 
-    sendObjet(objetCommunDB: ObjetCommunDB) {
-        const objetCommunDBModified: ObjetCommunDB = JSON.parse(JSON.stringify(objetCommunDB)) as ObjetCommunDB;
+    sendObjet(objetCommunDB: ObjetCommunForDB) {
+        const objetCommunDBModified: ObjetCommunForDB = JSON.parse(JSON.stringify(objetCommunDB)) as ObjetCommunForDB;
         objetCommunDBModified.proprieteMagique = null;
         this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDBModified).then(
             (dataObjet: any) => {
                 console.log(dataObjet);
                 const response = JSON.parse(dataObjet) as SpecialResponse;
-                const objet: ObjetCommunDB = response.data as ObjetCommunDB;
+                const objet: ObjetCommunForDB = response.data as ObjetCommunForDB;
                 const idObjet = objet.idObjet;
                 console.log(idObjet);
                 // this.ajouterMateriau(idObjet, this.armure.materiau);

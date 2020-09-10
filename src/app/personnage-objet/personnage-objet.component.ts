@@ -12,8 +12,8 @@ export class PersonnageObjetComponent implements OnInit {
 
     @Input() id: number;
 
-    objet: ObjetCommunDB;
-    objetOriginal: ObjetCommunDB;
+    objet: ObjetCommunFromDB;
+    objetOriginal: ObjetCommunFromDB;
 
     modificationEnCours = false;
     valide = false;
@@ -26,8 +26,8 @@ export class PersonnageObjetComponent implements OnInit {
             (dataObjet: any) => {
                 const response: SpecialResponse = dataObjet as SpecialResponse;
                 console.log(response);
-                this.objet = response.data as unknown as ObjetCommunDB;
-                this.objetOriginal = JSON.parse(JSON.stringify(this.objet)) as ObjetCommunDB;
+                this.objet = response.data as ObjetCommunFromDB;
+                this.objetOriginal = JSON.parse(JSON.stringify(this.objet)) as ObjetCommunFromDB;
                 console.log(this.objet);
             }
         );
@@ -43,7 +43,7 @@ export class PersonnageObjetComponent implements OnInit {
     }
 
     resetContenu() {
-        this.objet = JSON.parse(JSON.stringify(this.objetOriginal)) as ObjetCommunDB;
+        this.objet = JSON.parse(JSON.stringify(this.objetOriginal)) as ObjetCommunFromDB;
     }
 
     selection() {

@@ -14,7 +14,7 @@ export class GestionObjetComponent implements OnInit {
     personnages: Personnage[];
     idPersonnageSelectionne: number;
     currentPersonnage: Personnage;
-    objets: ObjetCommunDB[];
+    objetsIDs: number[] = [];
 
   constructor(private http: HttpClient,
               private personnageService: PersonnageService,
@@ -33,15 +33,15 @@ export class GestionObjetComponent implements OnInit {
   selectPersonnage() {
       if (+this.idPersonnageSelectionne !== 0) {
           this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
-          this.objetService.getAllObjetsComplets(this.http, this.currentPersonnage.idPersonnage).then(
-              (data: any) => {
-                  const response = data as SpecialResponse;
-                  this.objets = response.data as ObjetCommunDB[];
+          this.objetService.getAllObjetsIDs(this.http, 1).then(
+              (dataObjet: any) => {
+                  const response: SpecialResponse = dataObjet as SpecialResponse;
+                  this.objetsIDs = response.data as number[];
               }
           );
       } else {
           this.currentPersonnage = null;
-          this.objets = null;
+          this.objetsIDs = null;
           // TODO: Récupérer tous les objets non assignés
       }
   }

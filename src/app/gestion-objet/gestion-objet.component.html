@@ -13,8 +13,8 @@
             <h3 *ngIf="this.currentPersonnage"> {{currentPersonnage.nom}}</h3>
         </div>
         <div style="width: 100%">
-            <ng-container *ngFor="let objet of this.objets">
-                <app-personnage-objet [id]="objet.idObjet"></app-personnage-objet>
+            <ng-container *ngFor="let id of this.objetsIDs">
+                <app-personnage-objet [id]="id"></app-personnage-objet>
             </ng-container>
 
         </div>

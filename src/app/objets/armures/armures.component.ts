@@ -270,9 +270,9 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
         this.armureEventEmitter.emit(null);
     }
 
-    castToObjetCommunDB(): ObjetCommunDB {
+    castToObjetCommunForDB(): ObjetCommunForDB {
         const maledictionToAdd = this.getMalediction();
-        let values: ObjetCommunDB;
+        let values: ObjetCommunForDB;
         values = {
             idObjet: null,
             idPersonnage: 1,
@@ -294,7 +294,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
             bonusDexteriteMax: +this.armure.bonDext.replace('—', '0').replace('+', ''),
             malusArmureTests: +this.armure.malArm.replace('—', '0'),
             risqueEchecSorts: this.armure.RisqEch
-        } as ObjetCommunDB;
+        } as ObjetCommunForDB;
 
         return values;
     }

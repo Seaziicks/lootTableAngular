@@ -13,7 +13,6 @@ declare interface ObjetCommunDB {
     prix: number;
     prixNonHumanoide: number;
     devise: string;
-    proprieteMagique: MagicalProperty[];
     malediction: Malediction;
     categorie: string;
     materiau: Materiau;
@@ -31,6 +30,83 @@ declare interface ObjetCommunDB {
     afficherMateriau: boolean;
     afficherInfos: boolean;
 }
+
+
+declare interface ObjetCommunForDB extends ObjetCommunDB{
+    proprieteMagique: MagicalProperty[];
+}
+
+declare interface ObjetCommunFromDB extends ObjetCommunDB {
+    effetMagique: EffetMagiqueDB[];
+}
+
+declare interface EffetMagiqueDB {
+    idEffetMagique: number;
+    idObjet: number;
+    title: string;
+    effetMagiqueDescription: EffetMagiqueDescription[];
+    effetMagiqueTable: EffetMagiqueTable[];
+    effetMagiqueUl: EffetMagiqueUl[];
+    effetMagiqueDBInfos: EffetMagiqueDBInfos[];
+}
+
+declare interface EffetMagiqueDescription {
+    idEffetMagiqueDescription: number;
+    idEffetMagique: number;
+    contenu: string;
+}
+
+declare interface EffetMagiqueDBInfos {
+    idEffetMagiqueInfos: number;
+    idEffetMagique: number;
+    contenu: string;
+}
+
+declare interface EffetMagiqueTable {
+    idEffetMagiqueTable: number;
+    idEffetMagique: number;
+    position: number;
+    effetMagiqueTableTitle: EffetMagiqueTableTitle[];
+    effetMagiqueTableTr: EffetMagiqueTableTr[];
+}
+
+declare interface EffetMagiqueTableTitle {
+    idEffetMagiqueTableTitle: number;
+    idEffetMagiqueTable: number;
+    effetMagiqueTableTitleContent: EffetMagiqueTableTitleContent[];
+}
+
+declare interface EffetMagiqueTableTitleContent {
+    idEffetMagiqueTableTitleContent: number;
+    idEffetMagiqueTableTitle: number;
+    contenu: string;
+}
+
+declare interface EffetMagiqueTableTr {
+    idEffetMagiqueTableTr: number;
+    idEffetMagiqueTable: number;
+    effetMagiqueTableTrContent: EffetMagiqueTableTrContent[];
+}
+
+declare interface EffetMagiqueTableTrContent {
+    idEffetMagiqueTableTrContent: number;
+    idEffetMagiqueTableTr: number;
+    contenu: string;
+}
+
+declare interface EffetMagiqueUl {
+    idEffetMagiqueUl: number;
+    idEffetMagique: number;
+    position: number;
+    effetMagiqueUlContent: EffetMagiqueUlContent[];
+}
+
+declare interface EffetMagiqueUlContent {
+    idEffetMagiqueUlContent: number;
+    idEffetMagiqueUl: number;
+    contenu: string;
+}
+
 
 /*
     Partie commune
