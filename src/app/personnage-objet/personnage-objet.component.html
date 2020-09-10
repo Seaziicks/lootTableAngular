@@ -18,7 +18,7 @@
         <ng-container *ngFor="let effetMagique of this.objet.effetMagique;">
             <h4>{{effetMagique.title}}</h4>
             <span *ngFor="let description of effetMagique.effetMagiqueDescription; let index = index;">
-                    <span [innerHTML]="description.contenu"></span><span>{{index}}</span><br/>
+                    <span [innerHTML]="description.contenu"></span><br/>
 
                     <ng-container *ngFor="let table of effetMagique.effetMagiqueTable;">
                         <span *ngIf="table.position === index + 1">
