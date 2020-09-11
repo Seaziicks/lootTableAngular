@@ -155,4 +155,92 @@ export class PersonnageObjetComponent implements OnInit {
         }
     }
 
+    // Ne gère que l'update. La suppression sera à gérer dans la fonction checkProprietesMagiquesIntegrity.
+    // Ça sera plus simple.
+    // Ou alors, il ne faut mettre à jour la supression que quand on valide l'objet.
+    // Et ne plus utiliser checkProprietesMagiquesIntegrity, ce qui serait plus simple.
+    // Sinon, on ne sait pas quelle ligne supprimer.
+    updateObjet() {
+        for (let indexEffet = 0 ; indexEffet < this.objet.effetMagique.length ; indexEffet++) {
+            for (let indexTable = 0 ; indexTable < this.objet.effetMagique[indexEffet].effetMagiqueTable.length ; indexTable++) {
+                if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                    !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]) {
+                    // TODO : Modifier la table.
+                }
+                for (let indexTitle = 0 ;
+                     indexTitle < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle.length ;
+                     indexTitle++) {
+                    if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle[indexTitle] !==
+                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle[indexTitle]) {
+                        // TODO : Modifier title
+                    }
+                    for (let indexTitleContent = 0 ;
+                         indexTitleContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                             .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent.length ;
+                         indexTitleContent++) {
+                        if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent] !==
+                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent]) {
+                            // TODO : Modifier title content
+                        }
+                    }
+                }
+                for (let indexTr = 0 ;
+                     indexTr < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr.length ;
+                     indexTr++) {
+                    if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr] !==
+                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]) {
+                        // TODO : Modifier tr
+                    }
+                    for (let indexTrContent = 0 ;
+                         indexTrContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                             .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent.length ;
+                         indexTrContent++) {
+                        if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent] !==
+                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]) {
+                            // TODO : Modifier tr content
+                        }
+                    }
+                }
+            }
+
+            for (let indexUl = 0 ; indexUl < this.objet.effetMagique[indexEffet].effetMagiqueUl.length ; indexUl++) {
+                if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl] !==
+                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]) {
+                    // TODO : Modifier ul
+                }
+                for (let indexUlContent = 0 ;
+                     indexUlContent < this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent.length ;
+                     indexUlContent++) {
+                    if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent[indexUlContent]
+                        !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent[indexUlContent]) {
+                        // TODO : Modifier ul content
+                    }
+                }
+            }
+
+            for (let indexDescription = 0 ; indexDescription < this.objet.effetMagique[indexEffet].effetMagiqueDescription.length ;
+            indexDescription++) {
+                if (this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription].contenu !==
+                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription[indexDescription].contenu) {
+                    // TODO : Modifier description
+                }
+            }
+
+            for (let indexInfos = 0 ; indexInfos < this.objet.effetMagique[indexEffet].effetMagiqueDBInfos.length ;
+                 indexInfos++) {
+                if (this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos].contenu !==
+                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos].contenu) {
+                    // TODO : Modifier infos
+                }
+            }
+
+            if (this.objet.effetMagique[indexEffet].title !== this.objetOriginal.effetMagique[indexEffet].title) {
+                // TODO : Modifier effet
+            }
+        }
+    }
 }
