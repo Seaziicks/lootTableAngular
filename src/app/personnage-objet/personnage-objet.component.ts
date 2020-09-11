@@ -39,7 +39,7 @@ export class PersonnageObjetComponent implements OnInit {
 
     modifierContenu() {
         this.modificationEnCours = !this.modificationEnCours;
-        this.checkProprietesMagiquesIntegrity();
+        // this.checkProprietesMagiquesIntegrity();
     }
 
     resetContenu() {
@@ -49,8 +49,8 @@ export class PersonnageObjetComponent implements OnInit {
     selection() {
         this.valide = !this.valide;
         if (this.valide && JSON.stringify(this.objetOriginal) !== JSON.stringify(this.objet)) {
-            this.objetOriginal = JSON.parse(JSON.stringify(this.objet));
-            // TODO: Envoyer l'objet modifié
+            this.objetOriginal = JSON.parse(JSON.stringify(this.objet)) as ObjetCommunFromDB;
+            this.updateObjet();
         }
     }
 
@@ -162,85 +162,237 @@ export class PersonnageObjetComponent implements OnInit {
     // Sinon, on ne sait pas quelle ligne supprimer.
     updateObjet() {
         for (let indexEffet = 0 ; indexEffet < this.objet.effetMagique.length ; indexEffet++) {
-            for (let indexTable = 0 ; indexTable < this.objet.effetMagique[indexEffet].effetMagiqueTable.length ; indexTable++) {
-                if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                    !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]) {
-                    // TODO : Modifier la table.
-                }
-                for (let indexTitle = 0 ;
-                     indexTitle < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle.length ;
-                     indexTitle++) {
-                    if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle[indexTitle] !==
-                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle[indexTitle]) {
-                        // TODO : Modifier title
-                    }
-                    for (let indexTitleContent = 0 ;
-                         indexTitleContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                             .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent.length ;
-                         indexTitleContent++) {
+            if (this.isEmptyEffetMagique(this.objet.effetMagique[indexEffet])) {
+                // TODO : Supprimer effet
+            } else {
+                for (let indexTable = 0; indexTable < this.objet.effetMagique[indexEffet].effetMagiqueTable.length; indexTable++) {
+                    if (this.isEmptyTable(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
+                        // TODO : Supprimer table
+                    } else {
                         if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent] !==
-                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent]) {
-                            // TODO : Modifier title content
+                            !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]) {
+                            // TODO : Modifier la table.
+                        }
+                        for (let indexTitle = 0;
+                             indexTitle < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle.length;
+                             indexTitle++) {
+                            if (this.isEmptyTableTitle(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                .effetMagiqueTableTitle[indexTitle])) {
+                                // TODO : Supprimer title
+                            } else {
+                                if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTitle[indexTitle] !==
+                                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                        .effetMagiqueTableTitle[indexTitle]) {
+                                    // TODO : Modifier title
+                                }
+                                for (let indexTitleContent = 0;
+                                     indexTitleContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                         .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent.length;
+                                     indexTitleContent++) {
+                                    if (this.isEmptyTableTitleContent(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                        .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent])) {
+                                        // TODO : Supprimer title content
+                                    } else {
+                                        if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent] !==
+                                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent]) {
+                                            // TODO : Modifier title content
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        for (let indexTr = 0;
+                             indexTr < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr.length;
+                             indexTr++) {
+                            if (this.isEmptyTableTr(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                .effetMagiqueTableTr[indexTr])) {
+                                // TODO : Supprimer tr
+                            } else {
+                                if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr] !==
+                                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                        .effetMagiqueTableTr[indexTr]) {
+                                    // TODO : Modifier tr
+                                }
+                                for (let indexTrContent = 0;
+                                     indexTrContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                         .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent.length;
+                                     indexTrContent++) {
+                                    if (this.isEmptyTableTrContent(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                        .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent])) {
+                                        // TODO : Supprimer tr content
+                                    } else {
+                                        if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent] !==
+                                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]) {
+                                            // TODO : Modifier tr content
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-                for (let indexTr = 0 ;
-                     indexTr < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr.length ;
-                     indexTr++) {
-                    if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr] !==
-                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]) {
-                        // TODO : Modifier tr
-                    }
-                    for (let indexTrContent = 0 ;
-                         indexTrContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                             .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent.length ;
-                         indexTrContent++) {
-                        if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent] !==
-                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]) {
-                            // TODO : Modifier tr content
+
+                for (let indexUl = 0; indexUl < this.objet.effetMagique[indexEffet].effetMagiqueUl.length; indexUl++) {
+                    if (this.isEmptyUl(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl])) {
+                        // TODO : Supprimer ul
+                    } else {
+                        if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl] !==
+                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]) {
+                            // TODO : Modifier ul
+                        }
+                        for (let indexUlContent = 0;
+                             indexUlContent < this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent.length;
+                             indexUlContent++) {
+                            if (this.isEmptyUlContent(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                .effetMagiqueUlContent[indexUlContent])) {
+                                // TODO : Supprimer ul contnet
+                            } else {
+                                if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent[indexUlContent]
+                                    !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                        .effetMagiqueUlContent[indexUlContent]) {
+                                    // TODO : Modifier ul content
+                                }
+                            }
                         }
                     }
                 }
-            }
 
-            for (let indexUl = 0 ; indexUl < this.objet.effetMagique[indexEffet].effetMagiqueUl.length ; indexUl++) {
-                if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl] !==
-                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]) {
-                    // TODO : Modifier ul
-                }
-                for (let indexUlContent = 0 ;
-                     indexUlContent < this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent.length ;
-                     indexUlContent++) {
-                    if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent[indexUlContent]
-                        !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent[indexUlContent]) {
-                        // TODO : Modifier ul content
+                if (this.isEmptyDescriptions(this.objet.effetMagique[indexEffet].effetMagiqueDescription)) {
+                    // TODO : Supprimer descriptions
+                } else {
+                    for (let indexDescription = 0; indexDescription < this.objet.effetMagique[indexEffet].effetMagiqueDescription.length;
+                         indexDescription++) {
+                        if (this.isEmptyDescription(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
+                            // TODO : Supprimer desctiption
+                        } else {
+                            if (this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription].contenu !==
+                                this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription[indexDescription].contenu) {
+                                // TODO : Modifier description
+                            }
+                        }
                     }
                 }
-            }
 
-            for (let indexDescription = 0 ; indexDescription < this.objet.effetMagique[indexEffet].effetMagiqueDescription.length ;
-            indexDescription++) {
-                if (this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription].contenu !==
-                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription[indexDescription].contenu) {
-                    // TODO : Modifier description
+                if (this.isEmptyInfos(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos)) {
+                    // TODO : Supprimer infos
                 }
-            }
-
-            for (let indexInfos = 0 ; indexInfos < this.objet.effetMagique[indexEffet].effetMagiqueDBInfos.length ;
-                 indexInfos++) {
-                if (this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos].contenu !==
-                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos].contenu) {
-                    // TODO : Modifier infos
+                for (let indexInfos = 0; indexInfos < this.objet.effetMagique[indexEffet].effetMagiqueDBInfos.length;
+                     indexInfos++) {
+                    if (this.isEmptyInfo(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])) {
+                        // TODO : Supprimer info
+                    } else {
+                        if (this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos].contenu !==
+                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos].contenu) {
+                            // TODO : Modifier infos
+                        }
+                    }
                 }
-            }
 
-            if (this.objet.effetMagique[indexEffet].title !== this.objetOriginal.effetMagique[indexEffet].title) {
-                // TODO : Modifier effet
+                if (this.objet.effetMagique[indexEffet].title !== this.objetOriginal.effetMagique[indexEffet].title) {
+                    // TODO : Modifier effet
+                }
             }
         }
+    }
+
+    isEmptyTable(effetMagiqueTable: EffetMagiqueTable): boolean {
+        for (const title of effetMagiqueTable.effetMagiqueTableTitle) {
+            if (!this.isEmptyTableTitle(title)) {
+                return false;
+            }
+        }
+        for (const tr of effetMagiqueTable.effetMagiqueTableTr) {
+            if (!this.isEmptyTableTr(tr)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    isEmptyTableTitle(effetMagiqueTableTitle: EffetMagiqueTableTitle): boolean {
+        for (const titleContent of effetMagiqueTableTitle.effetMagiqueTableTitleContent) {
+            if (!this.isEmptyTableTitleContent(titleContent)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    isEmptyTableTitleContent(effetMagiqueTableTitleContent: EffetMagiqueTableTitleContent): boolean {
+        return effetMagiqueTableTitleContent.contenu.length === 0 || !(!!effetMagiqueTableTitleContent.contenu);
+    }
+
+    isEmptyTableTr(effetMagiqueTableTr: EffetMagiqueTableTr): boolean {
+        for (const trContent of effetMagiqueTableTr.effetMagiqueTableTrContent) {
+            if (!this.isEmptyTableTrContent(trContent)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    isEmptyTableTrContent(effetMagiqueTableTrContent: EffetMagiqueTableTrContent): boolean {
+        return !(!!effetMagiqueTableTrContent.contenu) || effetMagiqueTableTrContent.contenu.length === 0;
+    }
+
+    isEmptyUl(effetMagiqueUl: EffetMagiqueUl): boolean {
+        for (const ulContent of effetMagiqueUl.effetMagiqueUlContent) {
+            if (!this.isEmptyUlContent(ulContent)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    isEmptyUlContent(effetMagiqueUlContent: EffetMagiqueUlContent): boolean {
+        return !(!!effetMagiqueUlContent.contenu) || effetMagiqueUlContent.contenu.length === 0;
+    }
+
+    isEmptyDescriptions(effetMagiqueDescriptions: EffetMagiqueDescription[]) {
+        for (const description of effetMagiqueDescriptions) {
+            if (!this.isEmptyDescription(description)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    isEmptyDescription(description: EffetMagiqueDescription): boolean {
+        return !(!!description.contenu) || description.contenu.length === 0;
+    }
+
+    isEmptyInfos(effetMagiqueInfos: EffetMagiqueDBInfos[]) {
+        for (const infos of effetMagiqueInfos) {
+            if (!this.isEmptyInfo(infos)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    isEmptyInfo(info: EffetMagiqueDBInfos) {
+        return !(!!info.contenu) || info.contenu.length === 0;
+    }
+
+    isEmptyEffetMagique(effetMagique: EffetMagiqueDB) {
+        for (const table of effetMagique.effetMagiqueTable) {
+            if (!this.isEmptyTable(table)) {
+                return false;
+            }
+        }
+        for (const ul of effetMagique.effetMagiqueUl) {
+            if (!this.isEmptyUl(ul)) {
+                return false;
+            }
+        }
+        if (!this.isEmptyDescriptions(effetMagique.effetMagiqueDescription)) {
+            return false;
+        }
+
+        return true;
     }
 }
