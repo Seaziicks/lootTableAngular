@@ -98,7 +98,12 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
             armure: null,
             bonusDexteriteMax: null,
             malusArmureTests: null,
-            risqueEchecSorts: null
+            risqueEchecSorts: null,
+            afficherNom: this.afficherNom,
+            afficherEffetMagique: this.afficherEffetMagique,
+            afficherMalediction: this.afficherMalediction,
+            afficherMateriau: this.afficherMateriau,
+            afficherInfos: this.afficherInfos,
         } as ObjetCommunForDB;
 
         return values;

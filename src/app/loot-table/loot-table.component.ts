@@ -231,6 +231,9 @@ export class LootTableComponent implements OnInit {
     }
 
     sendObjet(objetCommunDB: ObjetCommunForDB) {
+        // On fait l'ajout de l'objet, puis de la propriété magique, puis des tables, puis des ul.
+        // Car sinon, il y a trop de données, et on a une erreur :
+        // CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
         const objetCommunDBModified: ObjetCommunForDB = JSON.parse(JSON.stringify(objetCommunDB)) as ObjetCommunForDB;
         objetCommunDBModified.proprieteMagique = null;
         this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDBModified).then(
@@ -242,6 +245,7 @@ export class LootTableComponent implements OnInit {
                 console.log(idObjet);
                 // this.ajouterMateriau(idObjet, this.armure.materiau);
                 // this.ajouterMalediction(idObjet, this.armure.malediction);
+                // Obligé de faire comme ça, alors que tout d'un coup marche, sinon erreur ... cf : voir au dessus
                 this.ajouterProprietesMagiques(idObjet, objetCommunDB.proprieteMagique);
             }
         );

@@ -293,7 +293,12 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
             armure: +this.armure.bonArm.replace('—', '0').replace('+', ''),
             bonusDexteriteMax: +this.armure.bonDext.replace('—', '0').replace('+', ''),
             malusArmureTests: +this.armure.malArm.replace('—', '0'),
-            risqueEchecSorts: this.armure.RisqEch
+            risqueEchecSorts: this.armure.RisqEch,
+            afficherNom: this.afficherNom,
+            afficherEffetMagique: this.afficherEffetMagique,
+            afficherMalediction: this.afficherMalediction,
+            afficherMateriau: this.afficherMateriau,
+            afficherInfos: this.afficherInfos,
         } as ObjetCommunForDB;
 
         return values;
