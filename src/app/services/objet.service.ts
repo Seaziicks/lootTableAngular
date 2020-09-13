@@ -113,4 +113,17 @@ export class ObjetService {
 
         return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
     }
+
+    public ulContent(http: HttpClient, httpMethod: string, idEffetMagiqueUl: number, effetUlContent: EffetMagiqueUlContent)
+        : Promise<string> {
+        const values = {idEffetMagiqueUl: undefined, EffetMagiqueUlContent: undefined};
+        values.idEffetMagiqueUl = idEffetMagiqueUl;
+        values.EffetMagiqueUlContent = effetUlContent;
+        console.log(values);
+        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueUlContent.php' + '?idEffetMagiqueUl=' + idEffetMagiqueUl + '';
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('EffetMagiqueUlContent', JSON.stringify(values));
+
+        return http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
 }

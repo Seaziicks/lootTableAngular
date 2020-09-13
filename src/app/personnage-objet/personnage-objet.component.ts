@@ -22,6 +22,10 @@ export class PersonnageObjetComponent implements OnInit {
                 private objetService: ObjetService) { }
 
     ngOnInit(): void {
+        this.loadObjet();
+    }
+
+    loadObjet() {
         this.objetService.getObjetComplet(this.http, this.id).then(
             (dataObjet: any) => {
                 const response: SpecialResponse = dataObjet as SpecialResponse;
@@ -49,8 +53,8 @@ export class PersonnageObjetComponent implements OnInit {
     selection() {
         this.valide = !this.valide;
         if (this.valide && JSON.stringify(this.objetOriginal) !== JSON.stringify(this.objet)) {
-            this.objetOriginal = JSON.parse(JSON.stringify(this.objet)) as ObjetCommunFromDB;
             this.updateObjet();
+            setTimeout( () => { this.loadObjet(); }, 5000 );
         }
     }
 
@@ -194,9 +198,11 @@ export class PersonnageObjetComponent implements OnInit {
                                         // TODO : Supprimer title content
                                     } else {
                                         if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent] !==
+                                                .effetMagiqueTableTitle[indexTitle]
+                                                .effetMagiqueTableTitleContent[indexTitleContent].contenu !==
                                             this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent]) {
+                                                .effetMagiqueTableTitle[indexTitle]
+                                                .effetMagiqueTableTitleContent[indexTitleContent].contenu) {
                                             // TODO : Modifier title content
                                         }
                                     }
@@ -224,9 +230,9 @@ export class PersonnageObjetComponent implements OnInit {
                                         // TODO : Supprimer tr content
                                     } else {
                                         if (this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent] !==
+                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent].contenu !==
                                             this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]) {
+                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent].contenu) {
                                             // TODO : Modifier tr content
                                         }
                                     }
@@ -249,12 +255,32 @@ export class PersonnageObjetComponent implements OnInit {
                              indexUlContent++) {
                             if (this.isEmptyUlContent(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                 .effetMagiqueUlContent[indexUlContent])) {
-                                // TODO : Supprimer ul contnet
+                                // TODO : Supprimer ul content
+                                this.objetService.ulContent(this.http, 'DELETE', 0,
+                                    this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                        .effetMagiqueUlContent[indexUlContent]).then(
+                                    (data: any) => {
+                                        console.log(data);
+                                    }
+                                );
                             } else {
-                                if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent[indexUlContent]
+                                if (this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                        .effetMagiqueUlContent[indexUlContent].contenu
                                     !== this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]
-                                        .effetMagiqueUlContent[indexUlContent]) {
+                                        .effetMagiqueUlContent[indexUlContent].contenu) {
                                     // TODO : Modifier ul content
+                                    console.log('Je modifie une valeur, car :' +
+                                        this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                            .effetMagiqueUlContent[indexUlContent].contenu + ' !== ' +
+                                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                            .effetMagiqueUlContent[indexUlContent].contenu);
+                                    this.objetService.ulContent(this.http, 'PUT', 0,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                            .effetMagiqueUlContent[indexUlContent]).then(
+                                        (data: any) => {
+                                            console.log(data);
+                                        }
+                                    );
                                 }
                             }
                         }
@@ -349,7 +375,7 @@ export class PersonnageObjetComponent implements OnInit {
     }
 
     isEmptyUlContent(effetMagiqueUlContent: EffetMagiqueUlContent): boolean {
-        return !(!!effetMagiqueUlContent.contenu) || effetMagiqueUlContent.contenu.length === 0;
+        return effetMagiqueUlContent.contenu.length === 0;
     }
 
     isEmptyDescriptions(effetMagiqueDescriptions: EffetMagiqueDescription[]) {
