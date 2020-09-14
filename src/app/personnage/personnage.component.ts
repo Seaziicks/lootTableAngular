@@ -10,20 +10,11 @@ import {ObjetService} from '../services/objet.service';
 })
 export class PersonnageComponent implements OnInit {
 
-    objetsIDs: number[] = [];
-
   constructor(private http: HttpClient,
               private objetService: ObjetService) { }
 
   ngOnInit(): void {
-      this.objetService.getAllObjetsIDs(this.http, 1).then(
-          (dataObjet: any) => {
-              const response: SpecialResponse = dataObjet as SpecialResponse;
-              console.log(response);
-              this.objetsIDs = response.data as number[];
-              console.log(this.objetsIDs);
-          }
-      );
+
   }
 
 }

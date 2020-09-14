@@ -1,8 +1,17 @@
+@import "./src/app/objets/cssObjetCommun";
+
 textarea, .example-full-width  {
     width: 100%;
+}
+
+.messageChargement {
+    font-size: 21px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 ::ng-deep .personnageObjet .mat-form-field .mat-form-field-wrapper .mat-form-field-flex {
     background-color: white;
     color: black;
 }
+

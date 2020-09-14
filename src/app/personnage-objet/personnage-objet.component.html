@@ -1,10 +1,25 @@
-<div style="width: 100%" *ngIf="this.objet" class="personnageObjet">
-    <div style="width: 100%" *ngIf="this.objet.nom && !this.modificationEnCours">
+<div style="width: 100%" *ngIf="this.objet && !this.updating" class="personnageObjet">
+    <div class="titleTop">
+        <div class="h1Fake">Ceci est une armure ou un bouclier</div>
+        <div class="validationAffichage">
+            <div class="validationBox" (click)="this.changeValidation('nom')" [ngClass]="{'validatedBox' : this.objet.afficherNom}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher le nom réel de l'objet">{{this.objet.afficherNom ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('effetMagique')" [ngClass]="{'validatedBox' : this.objet.afficherEffetMagique}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher l'effet magique de l'objet">{{this.objet.afficherEffetMagique ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('malediction')" [ngClass]="{'validatedBox' : this.objet.afficherMalediction}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher la malédiction de l'objet">{{this.objet.afficherMalediction ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('materiau')" [ngClass]="{'validatedBox' : this.objet.afficherMateriau}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher le matériau de l'objet">{{this.objet.afficherMateriau ? 1 : 0}}</div>
+            <div class="validationBox" (click)="this.changeValidation('infos')" [ngClass]="{'validatedBox' : this.objet.afficherInfos}"
+                 data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher les infos de l'objet">{{this.objet.afficherInfos ? 1 : 0}}</div>
+        </div>
+    </div>
+    <div style="width: 100%" *ngIf="!this.modificationEnCours">
         <h3 [innerHTML]="this.objet.nom">  </h3>
         <h4 *ngIf="this.objet.fauxNom"> Faux Nom : {{this.objet.fauxNom}}</h4>
         <div *ngIf="this.objet.effetMagique">{{this.objet.type}}</div>
         <p *ngIf="this.objet.armure"><span *ngIf="this.objet.armure"> Armure: {{this.objet.armure}}
-                <span *ngIf="this.objet.effetMagique.length > 0">- Bonus +{{this.objet.bonus}}</span></span>
+                <span *ngIf="this.objet.bonus">- Bonus +{{this.objet.bonus}}</span></span>
             <span *ngIf="this.objet.prix"> - Prix : {{this.objet.prix.toLocaleString("fr")}} po</span>
         </p>
         <p *ngIf="this.objet.degats"> <span *ngIf="this.objet.taille"> Dégats : {{this.objet.degats}}</span><span
@@ -69,7 +84,7 @@
         </ng-template>
     </div>
 
-    <div style="width: 100%" *ngIf="this.objet.effetMagique.length > 0 && this.modificationEnCours">
+    <div style="width: 100%" *ngIf="this.modificationEnCours">
         <h6>
             <mat-form-field class="example-full-width">
                 <mat-label>Nom de l'bjet</mat-label>
@@ -109,7 +124,7 @@
                 </mat-form-field>
             </span>
 
-            <span *ngIf="this.objet.effetMagique.length > 0">
+            <span *ngIf="this.objet.bonus">
                 <mat-form-field>
                 <mat-label>Bonus d'armure +</mat-label>
                     <textarea [(ngModel)]="this.objet.bonus" matInput></textarea>
@@ -223,4 +238,8 @@
         <button (click)="this.modifierContenu()">Valider propriété magique</button>
         <button (click)="this.resetContenu()">Reset propriété magique</button>
     </div>
+</div>
+<div *ngIf="this.objet && this.updating">
+    <div class="messageChargement">Chargement en cours</div>
+    <mat-progress-bar mode="query"></mat-progress-bar>
 </div>

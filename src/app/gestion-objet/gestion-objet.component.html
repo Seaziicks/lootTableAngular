@@ -13,8 +13,21 @@
             <h3 *ngIf="this.currentPersonnage"> {{currentPersonnage.nom}}</h3>
         </div>
         <div style="width: 100%">
-            <ng-container *ngFor="let id of this.objetsIDs">
-                <app-personnage-objet [id]="id"></app-personnage-objet>
+            <div class="noms">
+                <ng-container *ngFor="let objet of this.objetMinimisations">
+                    <div class="nomObjet">
+                        <div class="spinner_overlay" *ngIf="this.updatingObjetName && this.updatingObjetID === objet.idObjet">
+                            <app-spinner></app-spinner>
+                        </div>
+                        <button class="btn btn-danger" (click)="this.selectObjet(objet.idObjet)" [disabled]="this.updatingObjetName && this.updatingObjetID !== objet.idObjet">
+                            <b>{{objet.nom}}</b><ng-container *ngIf="objet.fauxNom"> <br/><i>{{objet.fauxNom}}</i></ng-container>
+                        </button>
+                    </div>
+                </ng-container>
+            </div>
+
+            <ng-container *ngIf="this.objetCourantID">
+                <app-personnage-objet [id]="this.objetCourantID" (changingObjet)="this.reloadObjetsNames($event)"></app-personnage-objet>
             </ng-container>
 
         </div>

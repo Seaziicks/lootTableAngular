@@ -21,3 +21,4 @@ export let URL_OBJET_COMPLET = 'objetCompletRest.php';
 */
 export let URL_PERSONNAGE = 'personnageRest.php';
 export let URL_STATISTIQUE = 'personnageStatistiqueRest.php';
+

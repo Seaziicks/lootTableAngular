@@ -4,6 +4,12 @@ import {PersonnageService} from '../services/personnage.service';
 import {ObjetService} from '../services/objet.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
+interface ObjetMinimisation {
+    nom: string;
+    fauxNom: string;
+    idObjet: number;
+}
+
 @Component({
   selector: 'app-gestion-objet',
   templateUrl: './gestion-objet.component.html',
@@ -14,7 +20,14 @@ export class GestionObjetComponent implements OnInit {
     personnages: Personnage[];
     idPersonnageSelectionne: number;
     currentPersonnage: Personnage;
-    objetsIDs: number[] = [];
+
+    objetMinimisations: ObjetMinimisation[] = [];
+
+    objetCourantID: number;
+
+    updatingObjetName = false;
+
+    updatingObjetID: number;
 
   constructor(private http: HttpClient,
               private personnageService: PersonnageService,
@@ -33,17 +46,43 @@ export class GestionObjetComponent implements OnInit {
   selectPersonnage() {
       if (+this.idPersonnageSelectionne !== 0) {
           this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
-          this.objetService.getAllObjetsIDs(this.http, 1).then(
-              (dataObjet: any) => {
-                  const response: SpecialResponse = dataObjet as SpecialResponse;
-                  this.objetsIDs = response.data as number[];
-              }
-          );
+          this.loadObjetsNames();
       } else {
           this.currentPersonnage = null;
-          this.objetsIDs = null;
+          this.objetMinimisations = null;
           // TODO: Récupérer tous les objets non assignés
       }
   }
+
+    public loadObjetsNames() {
+        this.objetService.getAllObjetsNames(this.http, 1).then(
+            (dataObjet: any) => {
+                const response: SpecialResponse = dataObjet as SpecialResponse;
+                console.log(response);
+                this.objetMinimisations = response.data as ObjetMinimisation[];
+                console.log(this.objetMinimisations);
+            }
+        );
+    }
+
+    reloadObjetsNames(idObjet: number) {
+        this.updatingObjetName = true;
+        this.updatingObjetID = idObjet;
+        setTimeout( () => {
+        this.objetService.getObjetName(this.http, idObjet).then(
+            (dataObjet: any) => {
+                const response: SpecialResponse = dataObjet as SpecialResponse;
+                console.log(response);
+                const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
+                this.objetMinimisations[index] = response.data as ObjetMinimisation;
+                console.log(this.objetMinimisations[index]);
+            }
+        ); }, 1250 );
+        setTimeout( () => { this.updatingObjetName = false; this.updatingObjetID = null; }, 2500 );
+    }
+
+    public selectObjet(idObjet: number) {
+      this.objetCourantID = idObjet;
+    }
 
 }

@@ -35,7 +35,7 @@ export class TestInsertTableComponent implements OnInit {
         values.idEffetMagique = 2;
         values.Table = sacAMalice.table[0];
         console.log(values);
-        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTables.php' + '?idEffetMagique=' + 2 + '';
+        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTable.php' + '?idEffetMagique=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTable', JSON.stringify(values));
         return this.http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise().then(

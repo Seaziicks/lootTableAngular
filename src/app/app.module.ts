@@ -30,6 +30,7 @@ import { TestInsertTableComponent } from './test-insert-table/test-insert-table.
 import { PersonnageComponent } from './personnage/personnage.component';
 import { PersonnageObjetComponent } from './personnage-objet/personnage-objet.component';
 import { GestionObjetComponent } from './gestion-objet/gestion-objet.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 
@@ -52,6 +53,7 @@ import { GestionObjetComponent } from './gestion-objet/gestion-objet.component';
     PersonnageComponent,
     PersonnageObjetComponent,
     GestionObjetComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
