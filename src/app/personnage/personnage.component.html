@@ -89,7 +89,11 @@
             <div class="noms">
                 <ng-container *ngFor="let objet of this.objetMinimisations">
                     <div class="nomObjet">
-                        <button class="btn btn-danger" (click)="this.selectObjet(objet.idObjet)">
+                        <div class="spinner_overlay" *ngIf="this.updatingObjetName && this.updatingObjetID === objet.idObjet">
+                            <app-spinner></app-spinner>
+                        </div>
+                        <button class="btn btn-danger" (click)="this.selectObjet(objet.idObjet)"
+                                [disabled]="this.updatingObjetName && this.updatingObjetID !== objet.idObjet">
                             <span *ngIf="objet.afficherNom; else fauxNom">
                                 <b>{{objet.nom}}</b>
                                 <ng-container *ngIf="objet.fauxNom"> <br/><i>{{objet.fauxNom}}</i></ng-container>
@@ -103,7 +107,8 @@
             </div>
 
             <ng-container *ngIf="this.objetCourantID">
-                <app-personnage-objet-personnage [idObj]="this.objetCourantID" [idPersonnage]="currentPersonnage.idPersonnage"></app-personnage-objet-personnage>
+                <app-personnage-objet-personnage [idObj]="this.objetCourantID" [idPersonnage]="currentPersonnage.idPersonnage"
+                (changingObjetEffetDecouvert)="this.reloadingObjet($event)"></app-personnage-objet-personnage>
             </ng-container>
 
         </div>

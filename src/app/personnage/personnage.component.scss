@@ -76,7 +76,7 @@ body {
 
 }
 
-.nomObjet button {
+.nomObjet button, .spinner_overlay {
     flex:1
 }
 
@@ -128,4 +128,16 @@ mat-checkbox {
             background-color: rgba(255, 255, 255, .26);
         }
     }
+}
+
+.spinner_overlay {
+    position: absolute;
+    background-color: rgba(19, 190, 190, 0.9);
+    // opacity: 0.3;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 7px;
 }

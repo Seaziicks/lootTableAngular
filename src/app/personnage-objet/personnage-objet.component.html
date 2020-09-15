@@ -77,7 +77,11 @@
             <span [innerHTML]="this.objet.materiau.nom"></span> : <span>{{this.objet.materiau.effet}}</span>
         </div>
         <button class="btn btn-light" (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
-        <button class="btn btn-success" *ngIf="!this.valide else objetValidee" (click)="this.selection()" [disabled]="!this.areDifferentObjets(this.objet, this.objetOriginal)">Valider objet</button>
+        <button class="btn btn-success" *ngIf="!this.valide else objetValidee" (click)="this.selection()"
+                [disabled]="!this.areDifferentObjets(this.objet, this.objetOriginal) || (!this.objet.afficherNom && (!this.objet.fauxNom || this.objet.fauxNom.length === 0))"
+                title="Des modifications doivent être faites, et vous ne pouvez valider si le nom ne sera pas afficher, et qu'aucun faux nom n'est défini.">
+            Valider objet
+        </button>
         <ng-template #objetValidee>
             <button class="btn btn-outline-warning" (click)="this.selection()">Dévalider objet</button>
         </ng-template>
@@ -249,7 +253,7 @@
                 <textarea [(ngModel)]="this.objet.materiau.effet" matInput></textarea>
             </mat-form-field>
         </div>
-        <button class="btn btn-outline-light" (click)="this.modifierContenu()" [disabled]="!this.objet.afficherNom && this.objet.fauxNom.length === 0"
+        <button class="btn btn-outline-light" (click)="this.modifierContenu()" [disabled]="!this.objet.afficherNom && (!this.objet.fauxNom || this.objet.fauxNom.length === 0)"
         title="Vous ne pouvez valider si le nom ne sera pas afficher, et qu'aucun faux nom n'est défini.">Valider propriété magique</button>
         <button class="btn btn-outline-warning" (click)="this.resetContenu()">Reset propriété magique</button>
     </div>

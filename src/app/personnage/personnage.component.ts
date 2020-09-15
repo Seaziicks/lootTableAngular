@@ -21,6 +21,9 @@ export class PersonnageComponent implements OnInit {
     objetMinimisations: ObjetMinimisation[];
     objetCourantID: number;
 
+    updatingObjetName = false;
+    updatingObjetID: number;
+
     constructor(private http: HttpClient,
                 private objetService: ObjetService,
                 private personnageService: PersonnageService) {
@@ -76,4 +79,23 @@ export class PersonnageComponent implements OnInit {
         }
     }
 
+    reloadingObjet(idObjet: number) {
+        this.updatingObjetName = true;
+        this.updatingObjetID = idObjet;
+        setTimeout(() => {
+            this.objetService.getObjetName(this.http, idObjet).then(
+                (dataObjet: any) => {
+                    const response: SpecialResponse = dataObjet as SpecialResponse;
+                    console.log(response);
+                    const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
+                    this.objetMinimisations[index] = response.data as ObjetMinimisation;
+                    console.log(this.objetMinimisations[index]);
+                }
+            );
+        }, 1250);
+        setTimeout(() => {
+            this.updatingObjetName = false;
+            this.updatingObjetID = null;
+        }, 2500);
+    }
 }

@@ -208,6 +208,16 @@ export class PersonnageObjetComponent implements OnInit {
     // Et ne plus utiliser checkProprietesMagiquesIntegrity, ce qui serait plus simple.
     // Sinon, on ne sait pas quelle ligne supprimer.
     updateObjet() {
+        this.objet.fauxNom = this.objet.fauxNom.length !== 0 ? this.objet.fauxNom : null;
+        this.objet.nom = this.objet.nom.length !== 0 ? this.objet.nom : null;
+        this.objet.type = this.objet.type.length !== 0 ? this.objet.type : null;
+        this.objet.degats = this.objet.degats.length !== 0 ? this.objet.degats : null;
+        this.objet.categorie = this.objet.categorie.length !== 0 ? this.objet.categorie : null;
+        this.objet.critique = this.objet.critique.length !== 0 ? this.objet.critique : null;
+        this.objet.devise = this.objet.devise.length !== 0 ? this.objet.devise : null;
+        this.objet.facteurPortee = this.objet.facteurPortee.length !== 0 ? this.objet.facteurPortee : null;
+        this.objet.risqueEchecSorts = this.objet.risqueEchecSorts.length !== 0 ? this.objet.risqueEchecSorts : null;
+        this.objet.taille = this.objet.taille.length !== 0 ? this.objet.taille : null;
         if (this.isEmptyObjet()) {
             // TODO : Supprimer objet
             this.objetService.objet(this.http, HttpMethods.DELETE, 0, this.objet)

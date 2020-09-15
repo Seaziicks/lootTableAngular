@@ -12,9 +12,9 @@ import {FadingInfoComponent} from '../fading-info/fading-info.component';
 })
 export class PersonnageObjetPersonnageComponent implements OnInit {
 
-    @Input() set idObj(id: number) { this.idObjet = id; this.valide = false; this.loadObjet(); }
+    @Input() set idObj(id: number) { this.idObjet = id; this.loadObjet(); }
     @Input() idPersonnage: number;
-    @Output() changingObjet = new EventEmitter<any>();
+    @Output() changingObjetEffetDecouvert = new EventEmitter<any>();
     @ViewChild('Banner') banner: FadingInfoComponent;
 
     idObjet: number;
@@ -24,11 +24,10 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     effetsMagiquesDecouvertsOriginal: EffetMagiqueDecouvert[];
     modificationsEnCours: boolean[];
 
-    modificationEnCours = false;
-    valide = false;
-
     ajoutEffetDecouvert = false;
     effetDecouvertAAjouter: string;
+
+    updating= false;
 
     constructor(private http: HttpClient,
                 private objetService: ObjetService) { }
@@ -67,7 +66,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
 
     @HostListener('document:keydown', ['$event'])
     handleKeyboardEvent(event: KeyboardEvent) {
-        if (this.modificationEnCours && event.key === 'Enter' && event.ctrlKey) {
+        if (event.key === 'Enter' && event.ctrlKey) {
             // TODO : Gérer la modification d'un effet magique découvert
         }
     }
@@ -93,10 +92,13 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const respone: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status);
+                setTimeout( () => {
+                    this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status); }, 1250 );
             }
         );
         this.modificationsEnCours[indexEffetDecouvert] = false;
+
+        this.reloadingInterface();
         this.loadEffetsMagiquesDecouverts();
     }
 
@@ -105,11 +107,14 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const respone: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status);
+                setTimeout( () => {
+                    this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status); }, 1250 );
             }
         );
         this.modificationsEnCours[indexEffetDecouvert] = false;
-        this.loadEffetsMagiquesDecouverts();
+
+        this.reloadingInterface();
+        // this.loadEffetsMagiquesDecouverts();
     }
 
     annulerModificationEffetDecouvert(indexEffetDecouvert: number) {
@@ -133,12 +138,24 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const respone: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status);
+                setTimeout( () => {
+                    this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status); }, 1250 );
             }
         );
         this.effetDecouvertAAjouter = null;
         this.ajoutEffetDecouvert = false;
-        this.loadEffetsMagiquesDecouverts();
+
+        this.reloadingInterface();
+        // this.loadEffetsMagiquesDecouverts();
+    }
+
+    reloadingInterface() {
+        this.updating = true;
+        this.changingObjetEffetDecouvert.emit(this.objet.idObjet);
+        setTimeout( () => { this.loadEffetsMagiquesDecouverts(); }, 1250 );
+        setTimeout( () => {
+            this.updating = false;
+        }, 2500 );
     }
 
 }
