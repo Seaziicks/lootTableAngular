@@ -40,6 +40,20 @@ declare interface ObjetCommunFromDB extends ObjetCommunDB {
     effetMagique: EffetMagiqueDB[];
 }
 
+declare interface ObjetMinimisation {
+    nom: string;
+    fauxNom: string;
+    idObjet: number;
+    afficherNom: boolean;
+}
+
+declare interface EffetMagiqueDecouvert {
+    idEffetMagiqueDecouvert: number;
+    idPersonnage: number;
+    idObjet: number;
+    effet: string;
+}
+
 declare interface EffetMagiqueDB {
     idEffetMagique: number;
     idObjet: number;

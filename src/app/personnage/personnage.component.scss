@@ -1,0 +1,131 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.missing input {
+    background-color: rgba(12, 50, 50, 0.9);
+}
+
+.missingValue {
+    color: red;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+.form-control:disabled {
+    background-color: rgba(12, 50, 50, 0.9);
+}
+.basic-container {
+    padding: 30px;
+}
+.version-info {
+    font-size: 8pt;
+    color: wheat;
+    float: right;
+    margin: 8px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#fakebody {
+    background-image: url("../../assets/fond/228090286-black-and-brown-wallpaper.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: white;
+    margin: 0 auto;
+    padding: 1px;
+    // margin: -1px;
+    min-height : 100vh;
+    width: 100%;
+}
+
+.principal {
+    min-width : 80%;
+    min-height : 89%;
+    margin: 2% 6% 2% 6%;
+    background-color: rgba(25, 7, 7, 0.85);
+    border-radius: 15px;
+    padding : 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.noms {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.nomObjet {
+    position: relative;
+    border: solid 1px wheat;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    min-height: 40px;
+    min-width: 120px;
+    display: flex;
+
+}
+
+.nomObjet button {
+    flex:1
+}
+
+.statistiques {
+    font-size: 75%;
+    width: 100%;
+    border: solid 2px wheat;
+}
+
+.statistiquesPrincipales {
+    display: flex;
+    flex-flow: column wrap;
+    border-bottom: 1px solid wheat;
+}
+
+.statistiquesPrincipales div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.statistiquesPrincipales div div{
+    margin: 3px;
+}
+
+.statistiquesSecondaires {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid wheat;
+}
+
+.categorieStatistiquesSecondaires {
+    border: 1px solid wheat;
+    width: 50%;
+}
+
+.categorieStatistiquesSecondaires div {
+    margin: 3px;
+}
+
+mat-checkbox {
+    margin: 7px;
+    ::ng-deep .mat-checkbox-background {
+        background-color: rgb(255,255,255);
+    }
+
+    ::ng-deep &.mat-checkbox-focused{
+        .mat-ink-ripple{
+            background-color: rgba(255, 255, 255, .26);
+        }
+    }
+}

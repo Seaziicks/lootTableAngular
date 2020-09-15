@@ -1,18 +1,22 @@
-import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {ObjetService} from '../services/objet.service';
 import {HttpClient} from '@angular/common/http';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {HttpMethods} from '../interface/http-methods.enum';
+
+import * as equal from 'fast-deep-equal';
 
 @Component({
     selector: 'app-personnage-objet',
     templateUrl: './personnage-objet.component.html',
     styleUrls: ['./personnage-objet.component.scss']
 })
-export class PersonnageObjetComponent implements OnInit, OnChanges {
+export class PersonnageObjetComponent implements OnInit {
 
-    @Input() id: number;
+    @Input() set idObj(id: number) { this.idObjet = id; this.valide = false; this.modificationEnCours = false; this.loadObjet(); }
     @Output() changingObjet = new EventEmitter<any>();
+
+    idObjet: number;
 
     objet: ObjetCommunFromDB;
     objetOriginal: ObjetCommunFromDB;
@@ -26,18 +30,10 @@ export class PersonnageObjetComponent implements OnInit, OnChanges {
                 private objetService: ObjetService) { }
 
     ngOnInit(): void {
-        this.loadObjet();
-    }
-
-    ngOnChanges(changes: SimpleChanges): void {
-        console.log(changes);
-        this.valide = false;
-        this.modificationEnCours = false;
-        this.loadObjet();
     }
 
     loadObjet() {
-        this.objetService.getObjetComplet(this.http, this.id).then(
+        this.objetService.getObjetComplet(this.http, this.idObjet).then(
             (dataObjet: any) => {
                 const response: SpecialResponse = dataObjet as SpecialResponse;
                 console.log(response);
@@ -46,6 +42,13 @@ export class PersonnageObjetComponent implements OnInit, OnChanges {
                 console.log(this.objet);
             }
         );
+    }
+
+    @HostListener('document:keydown', ['$event'])
+    handleKeyboardEvent(event: KeyboardEvent) {
+        if (this.modificationEnCours && event.key === 'Enter' && event.ctrlKey) {
+            this.modifierContenu();
+        }
     }
 
     trackByFn(index, item) {
@@ -196,6 +199,7 @@ export class PersonnageObjetComponent implements OnInit, OnChanges {
                 break;
 
         }
+        this.areDifferentObjets(this.objet, this.objetOriginal);
     }
 
     // Ne gère que l'update. La suppression sera à gérer dans la fonction checkProprietesMagiquesIntegrity.
@@ -667,9 +671,11 @@ export class PersonnageObjetComponent implements OnInit, OnChanges {
         objetTemp2.materiau = null;
         objetTemp2.malediction = null;
 
-        console.log(objetTemp1);
-        console.log(objetTemp2);
-        console.log(JSON.stringify(objetTemp1) !== JSON.stringify(objetTemp2));
-        return JSON.stringify(objetTemp1) !== JSON.stringify(objetTemp2);
+        // console.log(objetTemp1);
+        // console.log(objetTemp2);
+        // console.log(JSON.stringify(objetTemp1) !== JSON.stringify(objetTemp2));
+        // console.log(!equal(objetTemp1, objetTemp2)); // true
+        // return JSON.stringify(objetTemp1) !== JSON.stringify(objetTemp2);
+        return !equal(objetTemp1, objetTemp2);
     }
 }

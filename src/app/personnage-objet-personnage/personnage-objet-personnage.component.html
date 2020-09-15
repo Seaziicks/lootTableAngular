@@ -1,0 +1,111 @@
+<div style="width: 100%" *ngIf="this.objet" class="personnageObjet">
+    <div style="width: 100%">
+        <div class="titleTop">
+            <div *ngIf="this.objet.afficherNom; else fauxNom" class="h1Fake" [innerHTML]="this.objet.nom"></div>
+            <ng-template #fauxNom>
+                <div class="h1Fake" [innerHTML]="this.objet.fauxNom"></div>
+            </ng-template>
+        </div>
+        <div *ngIf="this.objet.afficherEffetMagique && this.objet.effetMagique">{{this.objet.type}}</div>
+        <p *ngIf="this.objet.afficherInfos && this.objet.armure">
+            <span *ngIf="this.objet.armure"> Armure: {{this.objet.armure}}
+                <span *ngIf="this.objet.bonus">- Bonus +{{this.objet.bonus}}</span>
+            </span>
+            <span *ngIf="this.objet.prix"> - Prix : {{this.objet.prix.toLocaleString("fr")}} po</span>
+        </p>
+        <p *ngIf="this.objet.afficherInfos && this.objet.degats">
+            <span *ngIf="this.objet.taille"> Dégats : {{this.objet.degats}}</span>
+            <span *ngIf="this.objet.bonus"> - Bonus +{{this.objet.bonus}}</span></p>
+        <div *ngIf="this.objet.afficherMalediction && this.objet.malediction">
+            Malediction
+            <br/>
+            <span [innerHTML]="this.objet.malediction.nom"></span> : <span>{{this.objet.malediction.description}}</span>
+        </div>
+        <br/>
+        <ng-container *ngIf="this.objet.afficherEffetMagique">
+            <ng-container *ngFor="let effetMagique of this.objet.effetMagique;">
+                <h4>{{effetMagique.title}}</h4>
+                <span *ngFor="let description of effetMagique.effetMagiqueDescription; let index = index;">
+                    <span [innerHTML]="description.contenu"></span><br/>
+
+                    <ng-container *ngFor="let table of effetMagique.effetMagiqueTable;">
+                        <span *ngIf="table.position === index + 1">
+                            <table cellspacing="1" border="1">
+                                <tbody>
+                                <tr *ngFor="let th of table.effetMagiqueTableTitle; let thIndex = index"
+                                    style="text-align: center">
+                                    <ng-container
+                                        *ngFor="let title of th.effetMagiqueTableTitleContent; let titleIndex = index">
+                                        <th *ngIf="thIndex === 0 && table.effetMagiqueTableTitle.length > 1
+                                        && table.effetMagiqueTableTitle[0].effetMagiqueTableTitleContent.length < table.effetMagiqueTableTitle[1].effetMagiqueTableTitleContent.length; else elseBlock"
+                                            [colSpan]="(table.effetMagiqueTableTitle[1].effetMagiqueTableTitleContent.length / table.effetMagiqueTableTitle[0].effetMagiqueTableTitleContent.length)">{{title.contenu}}</th>
+                                        <ng-template #elseBlock>
+                                            <th>{{title.contenu}}</th>
+                                        </ng-template>
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of table.effetMagiqueTableTr; let tdIndex = index">
+                                    <ng-container *ngFor="let content of td.effetMagiqueTableTrContent">
+                                        <td>{{content.contenu}}</td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </ng-container>
+
+
+                    <ng-container *ngFor="let ul of effetMagique.effetMagiqueUl;">
+                        <span *ngIf="+ul.position === index + 1">
+                            <ul>
+                                <li *ngFor="let li of ul.effetMagiqueUlContent;" [innerHTML]="li.contenu"></li>
+                            </ul>
+                        </span>
+                    </ng-container>
+                </span>
+                <br/>
+                <br/>
+                <span *ngIf="this.objet.afficherInfos && effetMagique.effetMagiqueDBInfos"> <span
+                    *ngFor="let info of effetMagique.effetMagiqueDBInfos"
+                    [innerHTML]="info.contenu"></span></span><br/><br/>
+            </ng-container>
+        </ng-container>
+        <div *ngIf="this.objet.afficherMateriau && this.objet.materiau">
+            Materiau
+            <br/>
+            <span [innerHTML]="this.objet.materiau.nom"></span> : <span>{{this.objet.materiau.effet}}</span>
+        </div>
+    </div>
+    <div class="effetsMagiquesDecouverts">
+        <div class="effetMagiqueDecouvert" *ngFor="let effetMagique of this.effetsMagiquesDecouverts; let indexEffetMagiqueDecouvert = index">
+            <div *ngIf="this.modificationsEnCours[indexEffetMagiqueDecouvert] === false; else modification">
+                <p>{{effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet}}</p>
+                <button class="btn btn-primary" (click)="this.modificationsEnCours[indexEffetMagiqueDecouvert] = true">Modifier</button>
+            </div>
+            <ng-template #modification>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Effet découvert n°{{indexEffetMagiqueDecouvert}}</mat-label>
+                        <textarea [(ngModel)]="effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet" matInput></textarea>
+                    </mat-form-field>
+                </div>
+                <button class="btn btn-danger" (click)="this.supprimerEffetDecouvert(this.indexEffetMagiqueDecouvert)">Supprimer</button>
+                <button class="btn btn-warning" (click)="this.modifierEffetDecouvert(this.indexEffetMagiqueDecouvert)">Modifier</button>
+                <button class="btn btn-light" (click)="this.annulerModificationEffetDecouvert(this.indexEffetMagiqueDecouvert)">Annuler</button>
+            </ng-template>
+        </div>
+        <button class="btn btn-outline-primary" (click)="this.ajouterEffetDecouvert()" *ngIf="!this.ajoutEffetDecouvert">Ajouter un effet découvert</button>
+        <div *ngIf="this.ajoutEffetDecouvert">
+            <div>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Effet découvert à ajouter</mat-label>
+                    <textarea [(ngModel)]="this.effetDecouvertAAjouter" matInput></textarea>
+                </mat-form-field>
+            </div>
+            <button class="btn btn-light" (click)="this.annulerAjoutEffetDecouvert()">Annuler</button>
+            <button class="btn btn-primary" (click)="this.validerAjoutEffetDecouvert()">Valider</button>
+        </div>
+    </div>
+</div>
+
+<app-fading-info #Banner></app-fading-info>

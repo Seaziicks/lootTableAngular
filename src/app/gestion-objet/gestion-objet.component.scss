@@ -81,8 +81,8 @@ body {
 
 .spinner_overlay {
     position: absolute;
-    background-color: wheat;
-    opacity: 0.9;
+    background-color: rgba(19, 190, 190, 0.9);
+    // opacity: 0.3;
     z-index: 1000;
     display: flex;
     justify-content: center;

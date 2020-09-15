@@ -15,7 +15,7 @@ export class ObjetService {
     public updateForObjet(http: HttpClient, idObjet: number, fieldToUpdate: string, value: number) {
         const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idObjet=' + idObjet + '&' + fieldToUpdate + '=' + value;
         console.log(baseUrlBis);
-        return http.request('PUT', baseUrlBis).toPromise();
+        return http.request(HttpMethods.PUT.toString(), baseUrlBis).toPromise();
     }
 
     public envoyerDescriptions(http: HttpClient, httpMethod: string, idEffet: number, descriptions: string[]) {
@@ -45,31 +45,48 @@ export class ObjetService {
     public getObjetComplet(http: HttpClient, idObjet: number) {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idObjet=' + idObjet + '';
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
+    }
+
+    public getEffetsMagiquesDecouverts(http: HttpClient, idObjet: number, idPersonnage: number) {
+        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueDecouvert.php' + '?idObjet=' + idObjet + '&idPersonnage=' + idPersonnage;
+        console.log(baseUrlBis);
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
+    }
+
+    public effetsMagiquesDecouverts(http: HttpClient, httpMethod: HttpMethods, effetMagiqueDecouver: EffetMagiqueDecouvert) {
+        const values = {EffetMagiqueDecouvert: undefined};
+        values.EffetMagiqueDecouvert = effetMagiqueDecouver;
+        console.log(values);
+        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueDecouvert.php';
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('EffetMagiqueDecouvert', JSON.stringify(values));
+
+        return http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
     }
 
     public getAllObjetsComplets(http: HttpClient, idPersonnage: number) {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '';
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }
 
     public getAllObjetsIDs(http: HttpClient, idPersonnage: number) {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '&idsOnly=true';
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }
 
     public getAllObjetsNames(http: HttpClient, idPersonnage: number) {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idPersonnage=' + idPersonnage + '&namesOnly=true';
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }
 
     public getObjetName(http: HttpClient, idObjet: number) {
         const baseUrlBis = BASE_URL + URL_OBJET_COMPLET + '?idObjet=' + idObjet + '&nameOnly=true';
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }
 
     public envoyerEffetMagique(http: HttpClient, httpMethod: string, idObjet: number, effet: MagicalProperty): Promise<string> {

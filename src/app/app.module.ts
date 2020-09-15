@@ -31,6 +31,7 @@ import { PersonnageComponent } from './personnage/personnage.component';
 import { PersonnageObjetComponent } from './personnage-objet/personnage-objet.component';
 import { GestionObjetComponent } from './gestion-objet/gestion-objet.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { PersonnageObjetPersonnageComponent } from './personnage-objet-personnage/personnage-objet-personnage.component';
 
 
 
@@ -54,6 +55,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     PersonnageObjetComponent,
     GestionObjetComponent,
     SpinnerComponent,
+    PersonnageObjetPersonnageComponent,
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,7 @@
             </div>
 
             <ng-container *ngIf="this.objetCourantID">
-                <app-personnage-objet [id]="this.objetCourantID" (changingObjet)="this.reloadObjetsNames($event)"></app-personnage-objet>
+                <app-personnage-objet [idObj]="this.objetCourantID" (changingObjet)="this.reloadObjetsNames($event)"></app-personnage-objet>
             </ng-container>
 
         </div>

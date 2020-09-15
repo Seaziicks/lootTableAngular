@@ -9,10 +9,12 @@ declare interface Personnage {
     constitutuion: number;
     vitalite: number;
     mana: number;
+    statistiquesParNiveau: StatistiquesParNiveau[];
 }
 
 
-declare interface Statistique {
+declare interface StatistiquesParNiveau {
+    niveau: number;
     intelligence: number;
     force: number;
     agilite: number;

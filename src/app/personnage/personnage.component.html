@@ -1,0 +1,113 @@
+<div id="fakebody">
+    <div class="principal">
+        <div id="caracterSelection" class="caracterSelection">
+            <label for="inputPersonnageChoix">Selectionnez un personnage pour visionner ses objets</label>
+            <select id="inputPersonnageChoix" class="form-control" (change)="selectPersonnage()"
+                    [(ngModel)]="this.idPersonnageSelectionne">
+                <option value="0"> Aucun personnage</option>
+                <option *ngFor="let personnage of this.personnages" [value]="personnage.idPersonnage">
+                    {{personnage.idPersonnage}} - {{personnage.nom}}
+                </option>
+            </select>
+        </div>
+        <div *ngIf="this.currentPersonnage" style="width: 100%;">
+            <div style="width: 100%">
+                <h3 *ngIf="this.currentPersonnage"> {{currentPersonnage.nom}}</h3>
+            </div>
+            <div class="statistiques">
+                <div class="statistiquesPrincipales">
+                    <div>
+                        <div>Intelligence : {{this.currentPersonnage.intelligence}}</div>
+                        <div>Force : {{this.currentPersonnage.force}}</div>
+                        <div>Agilité : {{this.currentPersonnage.agilite}}</div>
+                    </div>
+                    <div>
+                        <div>Sagesse : {{this.currentPersonnage.sagesse}}</div>
+                        <div>Constitution : {{this.currentPersonnage.constitutuion}}</div>
+                        <div>Vitalité : {{this.currentPersonnage.vitalite}}</div>
+                        <div>Mana : {{this.currentPersonnage.mana}}</div>
+                    </div>
+                </div>
+                <mat-checkbox [(ngModel)]="this.afficherStatistiquesSecondaires"
+                              color="primary">
+                    Afficher statistiques secondaires
+                </mat-checkbox>
+                <div class="statistiquesSecondaires" *ngIf="this.afficherStatistiquesSecondaires">
+                    <div class="categorieStatistiquesSecondaires">
+                        <div class="titre">Lié à la Intelligence</div>
+                        <div>Art de la magie : {{this.basedOn('intelligence')}}</div>
+                        <div>Artisanat (Autre) : {{this.basedOn('intelligence')}}</div>
+                        <div>Art martial : {{this.basedOn('intelligence')}}</div>
+                        <div>Art psi : {{this.basedOn('intelligence')}}</div>
+                        <div>Connaissances : {{this.basedOn('intelligence')}}</div>
+                        <div>Contrefaçon : {{this.basedOn('intelligence')}}</div>
+                        <div>Décryptage : {{this.basedOn('intelligence')}}</div>
+                        <div>Désamorçage/sabotage : {{this.basedOn('intelligence')}}</div>
+                        <div>Estimation : {{this.basedOn('intelligence')}}</div>
+                        <div>Fouille : {{this.basedOn('intelligence')}}</div>
+                        <div>Prime idiome : {{this.basedOn('intelligence')}}</div>
+                    </div>
+                    <div class="categorieStatistiquesSecondaires">
+                        <div class="titre">Lié à la Dextérité</div>
+                        <div>Acrobaties : {{this.basedOn('agilite')}}</div>
+                        <div>Crochetage : {{this.basedOn('agilite')}}</div>
+                        <div>Déplacement silencieux : {{this.basedOn('agilite')}}</div>
+                        <div>Vision nocturne : {{this.basedOn('agilite')}}</div>
+                        <div>Discrétion : {{this.basedOn('agilite')}}</div>
+                        <div>Équilibre : {{this.basedOn('agilite')}}</div>
+                        <div>Équitation : {{this.basedOn('agilite')}}</div>
+                        <div>Escamotage : {{this.basedOn('agilite')}}</div>
+                        <div>Évasion : {{this.basedOn('agilite')}}</div>
+                        <div>Maîtrise des cordes : {{this.basedOn('agilite')}}</div>
+                    </div>
+                    <div class="categorieStatistiquesSecondaires">
+                        <div class="titre">Lié à la Sagesse</div>
+                        <div>Autohypnose : {{this.basedOn('sagesse')}}</div>
+                        <div>Contrôle de forme : {{this.basedOn('sagesse')}}</div>
+                        <div>Détection : {{this.basedOn('sagesse')}}</div>
+                        <div>Perception auditive : {{this.basedOn('sagesse')}}</div>
+                        <div>Premiers secours : {{this.basedOn('sagesse')}}</div>
+                        <div>Profession (Autre) : {{this.basedOn('sagesse')}}</div>
+                        <div>Psychologie : {{this.basedOn('sagesse')}}</div>
+                        <div>Survie : {{this.basedOn('sagesse')}}</div>
+                    </div>
+                    <div class="categorieStatistiquesSecondaires">
+                        <div class="titre">Lié à la force</div>
+                        <div>Escalade : {{this.basedOn('force')}}</div>
+                        <div>Natation : {{this.basedOn('force')}}</div>
+                        <div>Saut : {{this.basedOn('force')}}</div>
+                    </div>
+                    <div class="categorieStatistiquesSecondaires">
+                        <div class="titre">Lié à la Constitution</div>
+                        <div>Concentration : {{this.basedOn('constitution')}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div class="noms">
+                <ng-container *ngFor="let objet of this.objetMinimisations">
+                    <div class="nomObjet">
+                        <button class="btn btn-danger" (click)="this.selectObjet(objet.idObjet)">
+                            <span *ngIf="objet.afficherNom; else fauxNom">
+                                <b>{{objet.nom}}</b>
+                                <ng-container *ngIf="objet.fauxNom"> <br/><i>{{objet.fauxNom}}</i></ng-container>
+                            </span>
+                            <ng-template #fauxNom>
+                                <b>{{objet.fauxNom}}</b>
+                            </ng-template>
+                        </button>
+                    </div>
+                </ng-container>
+            </div>
+
+            <ng-container *ngIf="this.objetCourantID">
+                <app-personnage-objet-personnage [idObj]="this.objetCourantID" [idPersonnage]="currentPersonnage.idPersonnage"></app-personnage-objet-personnage>
+            </ng-container>
+
+        </div>
+    </div>
+</div>
+
+
