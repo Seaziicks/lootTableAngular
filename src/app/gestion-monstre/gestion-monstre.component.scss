@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
+
 .caracterSelection, .familleSelection {
   width: 50%;
   min-height: 89vh;
@@ -65,4 +66,17 @@ body {
 
 .familleSelection {
   border-left: 3px solid wheat;
+}
+
+@media (max-width: 1200px) {
+    .principal {
+        flex-flow: column wrap;
+    }
+    .caracterSelection, .familleSelection {
+        width: 100%;
+        min-height: unset   ;
+    }
+    .familleSelection {
+        border-left: unset;
+    }
 }

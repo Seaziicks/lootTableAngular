@@ -12,8 +12,10 @@ textarea {
 }
 
 .validationBox {
-    height: 40px;
-    width: 40px;
+    min-height: 4.4352vh;
+    min-width: 4.4352vh;
+    max-height: 40px;
+    max-width: 40px;
     margin-right: 10px;
     color: black;
     background-size: 100% 200%;
@@ -22,7 +24,7 @@ textarea {
     -moz-transition: background-position 1s, color 1s;
     transition: background-position 1s, color 1s;
     border: solid 1px wheat;
-    border-radius: 16px;
+    border-radius: 1.7741vh;
     /* Essaie d'alignement au centre */
     display: flex;
     justify-content: center;
@@ -48,6 +50,6 @@ textarea {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-right: 75px;
-    font-size: 35px;
+    margin-right: 8.316vh;
+    font-size: 3.8808vh;
 }
