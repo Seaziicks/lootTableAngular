@@ -65,9 +65,10 @@
                 </span>
                 <br/>
                 <br/>
-                <span *ngIf="this.objet.afficherInfos && effetMagique.effetMagiqueDBInfos"> <span
-                    *ngFor="let info of effetMagique.effetMagiqueDBInfos"
-                    [innerHTML]="info.contenu"></span></span><br/><br/>
+                <span *ngIf="this.objet.afficherInfos && effetMagique.effetMagiqueDBInfos">
+                    <span *ngFor="let info of effetMagique.effetMagiqueDBInfos" [innerHTML]="info.contenu"></span>
+                    <br/>
+                </span>
             </ng-container>
         </ng-container>
         <div *ngIf="this.objet.afficherMateriau && this.objet.materiau">
@@ -76,11 +77,12 @@
             <span [innerHTML]="this.objet.materiau.nom"></span> : <span>{{this.objet.materiau.effet}}</span>
         </div>
     </div>
+    <br/>
     <div class="effetsMagiquesDecouverts">
         <div class="effetMagiqueDecouvert" *ngFor="let effetMagique of this.effetsMagiquesDecouverts; let indexEffetMagiqueDecouvert = index">
             <div *ngIf="this.modificationsEnCours[indexEffetMagiqueDecouvert] === false; else modification">
                 <p>{{effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet}}</p>
-                <button class="btn btn-primary" (click)="this.modificationsEnCours[indexEffetMagiqueDecouvert] = true">Modifier</button>
+                <button class="btn btn-primary" (click)="this.lancerModification(indexEffetMagiqueDecouvert)">Modifier</button>
             </div>
             <ng-template #modification>
                 <div>
