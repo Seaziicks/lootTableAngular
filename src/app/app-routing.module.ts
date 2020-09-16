@@ -27,8 +27,8 @@ const routes: Routes = [
     {path: 'GestionDropMonstre', component: GestionDropMonstreComponent},
     {path: 'GestionDropMonstreBis', component: GestionDropMonstreBisComponent},
     {path: 'LootTable', component: LootTableComponent},
-    {path: '', redirectTo: 'LootTable', pathMatch: 'full'},
-    {path: '**', redirectTo: '', pathMatch: 'full'}
+    {path: '', redirectTo: '/LootTable', pathMatch: 'full'},
+    {path: '**', redirectTo: '/LootTable'}
 ];
 
 @NgModule({

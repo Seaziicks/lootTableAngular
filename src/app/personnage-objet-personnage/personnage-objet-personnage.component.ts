@@ -27,7 +27,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     ajoutEffetDecouvert = false;
     effetDecouvertAAjouter: string;
 
-    updating= false;
+    updating = false;
 
     constructor(private http: HttpClient,
                 private objetService: ObjetService) { }
@@ -83,10 +83,6 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         return index;
     }
 
-    ajouterEffetDecouvert() {
-        this.ajoutEffetDecouvert = !this.ajoutEffetDecouvert;
-    }
-
     supprimerEffetDecouvert(indexEffetDecouvert: number) {
         this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.DELETE, this.effetsMagiquesDecouverts[indexEffetDecouvert]).then(
             (data: any) => {
@@ -120,6 +116,11 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     annulerModificationEffetDecouvert(indexEffetDecouvert: number) {
         this.effetsMagiquesDecouverts[indexEffetDecouvert].effet = this.effetsMagiquesDecouvertsOriginal[indexEffetDecouvert].effet;
         this.modificationsEnCours[indexEffetDecouvert] = false;
+    }
+
+    ajouterEffetDecouvert() {
+        this.fermerModificationCourante();
+        this.ajoutEffetDecouvert = !this.ajoutEffetDecouvert;
     }
 
     annulerAjoutEffetDecouvert() {
@@ -156,6 +157,18 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         setTimeout( () => {
             this.updating = false;
         }, 2500 );
+    }
+
+    lancerModification(indexEffetMagiqueDecouvert: number) {
+        this.fermerModificationCourante();
+        this.annulerAjoutEffetDecouvert();
+        this.modificationsEnCours[indexEffetMagiqueDecouvert] = true;
+    }
+
+    fermerModificationCourante() {
+        if (this.aModificationIsOccuring()) {
+            this.annulerModificationEffetDecouvert(this.getModificationIndex());
+        }
     }
 
 }

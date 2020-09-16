@@ -25,6 +25,10 @@ body {
   max-width: 800px!important;
 }
 
+/* Style the table */
+table, th, td {
+    border: 1px solid wheat;
+}
 /* Style the tab */
 .tab {
   overflow: hidden;
