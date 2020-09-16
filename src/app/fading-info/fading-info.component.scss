@@ -2,7 +2,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  width : 350px;
+  width : 32.4074vh;
   right: 0;
   bottom: 0;
 }
@@ -14,22 +14,22 @@
   transition: 2.5s ease-out;
   margin-bottom: 15px;
   margin-right: 2px;
-  width : 350px;
+  width : 32.4074vh;
   overflow-wrap: break-word;
 }
 
 .Mission-Complete {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(40, 167, 69, 0.5);
 }
 
 .Server-Error {
-  background-color: rgba(255, 195, 0, 0.5);
+  background-color: rgba(255, 193, 7, 0.5);
 }
 
 .SQL-Error {
-  background-color: rgba(199, 0, 57, 0.5);
+  background-color: rgba(220, 53, 59, 0.5);
 }
 
 .Unknown-Error {
-  background-color: rgba(255, 87, 51, 0.5);
+  background-color: rgba(248, 249, 250, 0.5);
 }
