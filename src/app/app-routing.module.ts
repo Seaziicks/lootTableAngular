@@ -13,9 +13,11 @@ import {PersonnageObjetComponent} from './personnage-objet/personnage-objet.comp
 import {PersonnageComponent} from './personnage/personnage.component';
 import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
 import {UserLoginComponent} from './user/user-login/user-login.component';
+import {UserCreateComponent} from './user/user-create/user-create.component';
 
 
 const routes: Routes = [
+    {path: 'create', component: UserCreateComponent},
     {path: 'login', component: UserLoginComponent},
     {path: 'testPersonnage', component: PersonnageComponent},
     {path: 'testPersonnageObjet', component: PersonnageObjetComponent},

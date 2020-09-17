@@ -12,6 +12,12 @@ declare interface Personnage {
     statistiquesParNiveau: StatistiquesParNiveau[];
 }
 
+declare interface PersonnageMinimisation {
+    idPersonnage: number;
+    niveau: number;
+    nom: string;
+}
+
 
 declare interface StatistiquesParNiveau {
     niveau: number;

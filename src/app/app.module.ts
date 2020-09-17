@@ -35,6 +35,7 @@ import {SpinnerComponent} from './spinner/spinner.component';
 import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/personnage-objet-personnage.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import {AuthService} from './auth/auth.service';
+import { UserCreateComponent } from './user/user-create/user-create.component';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import {AuthService} from './auth/auth.service';
         SpinnerComponent,
         PersonnageObjetPersonnageComponent,
         UserLoginComponent,
+        UserCreateComponent,
     ],
     imports: [
         BrowserModule,

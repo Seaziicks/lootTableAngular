@@ -8,22 +8,26 @@
         <span>[Titre du menu]</span>
     </a>
     <span class="example-spacer"></span>
-    <div fxShow="true" fxHide.lt-md="true">
-        <a mat-button routerLink="/testPersonnage">Personnages</a>
+    <div fxShow="true" fxHide.lt-md="true" class="menuItems">
+        <a mat-button routerLink="/testPersonnage">Personnage</a>
+        <a mat-button routerLink="/LootTable">Loot</a>
         <a mat-button routerLink="/GestionObjets">Gestion Objets</a>
         <a mat-button routerLink="/GestionMonstre">Gestion Monstre</a>
         <a mat-button routerLink="/GestionDropMonstreBis">Gestion Drop Monstre</a>
         <a mat-button routerLink="/contact">Contact</a>
+        <button class="btn btn-outline-danger" routerLink="/login">Connexion</button>
     </div>
 </mat-toolbar>
 <mat-sidenav-container fxFlexFill class="example-container">
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
-        <div fxLayout="column">
+        <div fxLayout="column" class="menuItemsMobile">
             <a mat-button routerLink="/testPersonnage">Personnages</a>
+            <a mat-button routerLink="/LootTable">Loot</a>
             <a mat-button routerLink="/GestionObjets">Gestion Objets</a>
             <a mat-button routerLink="/GestionMonstre">Gestion Monstre</a>
             <a mat-button routerLink="/GestionDropMonstreBis">Gestion Drop Monstre</a>
             <a mat-button routerLink="/contact">Contact</a>
+            <button class="btn btn-outline-danger" routerLink="/login">Connexion</button>
         </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>

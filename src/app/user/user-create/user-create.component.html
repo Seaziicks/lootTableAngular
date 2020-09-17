@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="loginContainer">
+        <form [formGroup]="createUserForm" autocomplete="off" novalidate (ngSubmit)="createUser(createUserForm.value)">
+            <span class="imageIcon">
+                <i class="logo">
+                    <img src="assets/fond/scroll-quill%20(1).png" class="d-inline-block" alt="">
+                </i>
+            </span>
+            <span class="form-title" (click)="this.afficherErrors()">
+                Sign in
+            </span>
+            <div class="needSpace">
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your username</mat-label>
+                    <input matInput placeholder="Username" id="usernameUser" formControlName="username" (keyup)="this.onUsernameInput()">
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                    <mat-hint align="end" [ngClass]="{'available': usernameUnavailable === false}">19 characters max</mat-hint>
+                    <mat-error *ngIf="hasError('username', 'required')">Username is required</mat-error>
+                    <mat-error *ngIf="hasError('username', 'tooLongPersonnageName')">You have more than 19 characters</mat-error>
+                    <mat-error *ngIf="usernameUnavailable">Username unavailable</mat-error>
+                </mat-form-field>
+                <mat-progress-bar *ngIf="this.lookingForUsernameAvailability" mode="query"></mat-progress-bar>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUser"
+                           formControlName="password" (input)="onPasswordInput()">
+                    <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-hint align="end">9 characters min</mat-hint>
+                    <mat-error *ngIf="hasError('password', 'required')">Password is required</mat-error>
+                    <mat-error *ngIf="hasError('password', 'notLongEnoughPassword')">You have less than 9 characters</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="needSpace">
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your password again</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUserRepeat"
+                           formControlName="passwordRepeat" (input)="onPasswordInput()">
+                    <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="hasError('passwordRepeat', 'passwordMismatch')">Passwords don't match</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="needSpace">
+                <mat-checkbox
+                    formControlName="creationPersonnageChecked"
+                    labelPosition="after"
+                    (input)="creationPersonnageCheckedFunction()"
+                    [checked]="creationPersonnageChecked">
+                    Associer à un personnage
+                </mat-checkbox>
+                <mat-checkbox
+                    *ngIf="this.creationPersonnageChecked"
+                    formControlName="personnageLeftChecked"
+                    labelPosition="after"
+                    (change)="personnageLeftFunction()">
+                    Choisir parmi les personnages existants restants
+                </mat-checkbox>
+            </div>
+            <div *ngIf="this.creationPersonnageChecked && !this.personnageLeft">
+                <div class="needSpace">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Enter your personnage name</mat-label>
+                        <input matInput placeholder="Username" id="personnageName"
+                               formControlName="personnage"
+                               (input)="onPersonnageInput()">
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <mat-hint align="end" [ngClass]="{'available': personnageNameUnavailable === false}">19 characters max</mat-hint>
+                        <mat-error *ngIf="hasError('personnage', 'required')">Personnage name is required</mat-error>
+                        <mat-error *ngIf="hasError('personnage', 'tooLongPersonnageName')">You have more than 19 characters</mat-error>
+                        <mat-error *ngIf="hasError('personnage', 'unavailablePersonnageName')">Personnage name unavailable</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div *ngIf="this.creationPersonnageChecked && this.personnageLeft">
+                <div class="needSpace">
+                    <label for="selectPersonnageRestant">Selection du personnage</label>
+                    <select id="selectPersonnageRestant" class="form-control" (change)="this.selectionPersonnage()"
+                            name="selectPersonnageRestant"
+                            formControlName="personnage">
+                        <option selected value=""> </option>
+                        <option *ngFor="let personnage of this.leftPersonnage" [value]="personnage.nom">
+                            {{personnage.idPersonnage}} - {{personnage.nom}}
+                        </option>
+                    </select>
+                    <mat-error *ngIf="hasError('personnage', 'required')">Personnage selection is required</mat-error>
+                </div>
+            </div>
+
+            <button mat-raised-button class="validationButton" [disabled]="!createUserForm.valid">Sign in</button>
+            <p>{{this.message}}</p>
+        </form>
+    </div>
+</div>

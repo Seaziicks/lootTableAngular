@@ -12,7 +12,7 @@
             <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Enter your username</mat-label>
-                    <input matInput placeholder="Username" id="usernameUser">
+                    <input matInput placeholder="Username" id="usernameUser" (keydown.enter)="this.signIn()">
                     <mat-icon matPrefix>account_circle</mat-icon>
                     <mat-hint>Hint</mat-hint>
                 </mat-form-field>
@@ -20,7 +20,8 @@
             <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Enter your password</mat-label>
-                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUser">
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUser"
+                    (keydown.enter)="this.signIn()">
                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                             [attr.aria-pressed]="hide">
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
