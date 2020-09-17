@@ -12,9 +12,11 @@ import { TestInsertTableComponent } from './test-insert-table/test-insert-table.
 import {PersonnageObjetComponent} from './personnage-objet/personnage-objet.component';
 import {PersonnageComponent} from './personnage/personnage.component';
 import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
+import {UserLoginComponent} from './user/user-login/user-login.component';
 
 
 const routes: Routes = [
+    {path: 'login', component: UserLoginComponent},
     {path: 'testPersonnage', component: PersonnageComponent},
     {path: 'testPersonnageObjet', component: PersonnageObjetComponent},
     {path: 'testTable', component: TestInsertTableComponent},

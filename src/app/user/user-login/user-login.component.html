@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="loginContainer">
+        <form>
+            <span class="imageIcon">
+                <i class="logo">
+                    <img src="assets/fond/scroll-quill%20(1).png" class="d-inline-block" alt="">
+                </i>
+            </span>
+            <span class="form-title">
+                Log in
+            </span>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your username</mat-label>
+                    <input matInput placeholder="Username" id="usernameUser">
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                    <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUser">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+
+            <button class="validationButton" (click)="this.signIn()">Log in</button>
+            <p>{{this.message}}</p>
+        </form>
+    </div>
+</div>

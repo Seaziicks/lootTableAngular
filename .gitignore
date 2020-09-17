@@ -47,3 +47,4 @@ Thumbs.db
 
 
 src/app/services/rest.service.ts
+/src/assets/json/objets/classique/testGetAll.json

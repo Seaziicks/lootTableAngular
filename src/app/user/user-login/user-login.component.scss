@@ -1,0 +1,127 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: wheat!important;
+    // opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: wheat!important;
+}
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+    color: wheat!important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: wheat!important;
+}
+
+::ng-deep .mat-form-field .mat-form-field-wrapper .mat-form-field-flex {
+    color: wheat;
+}
+
+::ng-deep .mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-input-element{
+    caret-color: wheat;
+}
+::ng-deep .mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-label{
+    color: wheat;
+}
+
+.mat-form-field, .mat-label {
+    color : wheat;
+}
+
+.mat-icon {
+    margin-right: 10px;
+}
+
+.loginContainer {
+    width: 500px;
+    height: 650px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px 55px;
+    background: #9152f8;
+    background: -webkit-linear-gradient(to top, #C70039, #581845);
+    background: -o-linear-gradient(to top, #C70039, #581845);
+    background: -moz-linear-gradient(to top, #C70039, #581845);
+    background: linear-gradient(to top, #C70039, #581845);
+    // linear-gradient(to top left, #FFC300 20%, #8547EA, #631FD2)
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.loginContainer form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.loginContainer form div {
+    margin-bottom: 30px;
+}
+
+.form-title {
+    font-family: Poppins-Medium;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/*
+.imageIcon {
+    font-size: 60px;
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+*/
+
+
+.logo {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.validationButton {
+    border-radius: 25px;
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    border: unset;
+}
+

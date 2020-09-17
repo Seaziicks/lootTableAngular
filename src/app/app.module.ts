@@ -33,6 +33,8 @@ import {PersonnageObjetComponent} from './personnage-objet/personnage-objet.comp
 import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
 import {SpinnerComponent} from './spinner/spinner.component';
 import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/personnage-objet-personnage.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import {AuthService} from './auth/auth.service';
 
 
 @NgModule({
@@ -56,6 +58,7 @@ import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/
         GestionObjetComponent,
         SpinnerComponent,
         PersonnageObjetPersonnageComponent,
+        UserLoginComponent,
     ],
     imports: [
         BrowserModule,
@@ -74,6 +77,7 @@ import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/
     bootstrap: [AppComponent],
     providers: [
         {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}},
+        AuthService,
     ]
 })
 export class AppModule {
