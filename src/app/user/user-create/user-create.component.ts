@@ -355,4 +355,8 @@ export class UserCreateComponent implements OnInit {
         console.log(this.username.errors);
         console.log(this.personnage.errors);
     }
+
+    loadLogIn() {
+        this.router.navigate(['/login']);
+    }
 }

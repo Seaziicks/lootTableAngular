@@ -38,8 +38,8 @@
 
             <div class="needSpace">
                 <mat-form-field appearance="outline">
-                    <mat-label>Enter your password again</mat-label>
-                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUserRepeat"
+                    <mat-label>Password check</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password check" id="passwordUserRepeat"
                            formControlName="passwordRepeat" (input)="onPasswordInput()">
                     <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                             [attr.aria-pressed]="hide">
@@ -68,11 +68,11 @@
             <div *ngIf="this.creationPersonnageChecked && !this.personnageLeft">
                 <div class="needSpace">
                     <mat-form-field appearance="outline">
-                        <mat-label>Enter your personnage name</mat-label>
-                        <input matInput placeholder="Username" id="personnageName"
+                        <mat-label>Personnage name</mat-label>
+                        <input matInput placeholder="Personnage name" id="personnageName"
                                formControlName="personnage"
                                (input)="onPersonnageInput()">
-                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <mat-icon matPrefix>blur_on</mat-icon>
                         <mat-hint align="end" [ngClass]="{'available': personnageNameUnavailable === false}">19 characters max</mat-hint>
                         <mat-error *ngIf="hasError('personnage', 'required')">Personnage name is required</mat-error>
                         <mat-error *ngIf="hasError('personnage', 'tooLongPersonnageName')">You have more than 19 characters</mat-error>
@@ -96,8 +96,9 @@
                 </div>
             </div>
 
-            <button mat-raised-button class="validationButton" [disabled]="!createUserForm.valid">Sign in</button>
             <p>{{this.message}}</p>
+            <button mat-raised-button class="validationButton" [disabled]="!createUserForm.valid">Sign in</button>
+            <button type="button" class="btn btn-outline-light" style="margin-top: 15px; margin-bottom: 15px;" (click)="this.loadLogIn()">Log in</button>
         </form>
     </div>
 </div>

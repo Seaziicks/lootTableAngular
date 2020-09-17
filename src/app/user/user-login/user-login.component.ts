@@ -67,4 +67,8 @@ export class UserLoginComponent implements OnInit {
     afficherMessageErreur() {
         this.message = 'Utilisateur ou mot de passe incorrect.';
     }
+
+    loadSignIn() {
+        this.router.navigate(['/signin']);
+    }
 }

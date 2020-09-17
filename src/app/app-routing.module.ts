@@ -17,7 +17,7 @@ import {UserCreateComponent} from './user/user-create/user-create.component';
 
 
 const routes: Routes = [
-    {path: 'create', component: UserCreateComponent},
+    {path: 'signin', component: UserCreateComponent},
     {path: 'login', component: UserLoginComponent},
     {path: 'testPersonnage', component: PersonnageComponent},
     {path: 'testPersonnageObjet', component: PersonnageObjetComponent},
