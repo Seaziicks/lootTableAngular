@@ -36,6 +36,8 @@ import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import {AuthService} from './auth/auth.service';
 import { UserCreateComponent } from './user/user-create/user-create.component';
+import { UserDisconnectComponent } from './user/user-disconnect/user-disconnect.component';
+import { UnauthorizedUserComponent } from './user/unauthorized-user/unauthorized-user.component';
 
 
 @NgModule({
@@ -61,6 +63,8 @@ import { UserCreateComponent } from './user/user-create/user-create.component';
         PersonnageObjetPersonnageComponent,
         UserLoginComponent,
         UserCreateComponent,
+        UserDisconnectComponent,
+        UnauthorizedUserComponent,
     ],
     imports: [
         BrowserModule,

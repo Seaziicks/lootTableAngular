@@ -6,7 +6,7 @@ declare interface Personnage {
     force: number;
     agilite: number;
     sagesse: number;
-    constitutuion: number;
+    constitution: number;
     vitalite: number;
     mana: number;
     statistiquesParNiveau: StatistiquesParNiveau[];

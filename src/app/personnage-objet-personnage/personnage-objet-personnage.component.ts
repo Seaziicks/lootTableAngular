@@ -4,6 +4,7 @@ import {ObjetService} from '../services/objet.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {HttpMethods} from '../interface/http-methods.enum';
 import {FadingInfoComponent} from '../fading-info/fading-info.component';
+import {AuthService} from '../auth/auth.service';
 
 @Component({
   selector: 'app-personnage-objet-personnage',
@@ -30,7 +31,8 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     updating = false;
 
     constructor(private http: HttpClient,
-                private objetService: ObjetService) { }
+                private objetService: ObjetService,
+                private authService: AuthService) { }
 
     ngOnInit(): void {
     }
@@ -169,6 +171,11 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         if (this.aModificationIsOccuring()) {
             this.annulerModificationEffetDecouvert(this.getModificationIndex());
         }
+    }
+
+    effetsMagiquesDecouvertsAffichables(): boolean {
+        return (this.authService.personnage && this.authService.personnage.idPersonnage === this.idPersonnage)
+            || (this.authService.user && this.authService.isAdmin());
     }
 
 }

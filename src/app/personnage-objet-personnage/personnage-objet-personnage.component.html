@@ -78,7 +78,7 @@
         </div>
     </div>
     <br/>
-    <div class="effetsMagiquesDecouverts">
+    <div class="effetsMagiquesDecouverts" *ngIf="this.effetsMagiquesDecouvertsAffichables()">
         <div class="effetMagiqueDecouvert" *ngFor="let effetMagique of this.effetsMagiquesDecouverts; let indexEffetMagiqueDecouvert = index">
             <div *ngIf="this.modificationsEnCours[indexEffetMagiqueDecouvert] === false; else modification">
                 <p>{{effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet}}</p>

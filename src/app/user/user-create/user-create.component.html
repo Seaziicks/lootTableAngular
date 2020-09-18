@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="loginContainer">
+    <div class="signinContainer">
         <form [formGroup]="createUserForm" autocomplete="off" novalidate (ngSubmit)="createUser(createUserForm.value)">
             <span class="imageIcon">
                 <i class="logo">
@@ -12,11 +12,11 @@
             <div class="needSpace">
                 <mat-form-field appearance="outline">
                     <mat-label>Enter your username</mat-label>
-                    <input matInput placeholder="Username" id="usernameUser" formControlName="username" (keyup)="this.onUsernameInput()">
+                    <input matInput placeholder="Username" id="usernameUser" formControlName="username" (input)="this.onUsernameInput()">
                     <mat-icon matPrefix>account_circle</mat-icon>
                     <mat-hint align="end" [ngClass]="{'available': usernameUnavailable === false}">19 characters max</mat-hint>
                     <mat-error *ngIf="hasError('username', 'required')">Username is required</mat-error>
-                    <mat-error *ngIf="hasError('username', 'tooLongPersonnageName')">You have more than 19 characters</mat-error>
+                    <mat-error *ngIf="hasError('username', 'maxLength')">You have more than 19 characters</mat-error>
                     <mat-error *ngIf="usernameUnavailable">Username unavailable</mat-error>
                 </mat-form-field>
                 <mat-progress-bar *ngIf="this.lookingForUsernameAvailability" mode="query"></mat-progress-bar>
@@ -57,6 +57,7 @@
                     [checked]="creationPersonnageChecked">
                     Associer à un personnage
                 </mat-checkbox>
+                <br/>
                 <mat-checkbox
                     *ngIf="this.creationPersonnageChecked"
                     formControlName="personnageLeftChecked"

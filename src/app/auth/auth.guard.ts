@@ -20,13 +20,14 @@ export class AuthGuard implements CanActivate {
     }
 
     checkLogin(url: string): true|UrlTree {
-        if (this.authService.isAuth) { return true; }
+        if (this.authService.isGameMaster()) { return true; }
+        if (!this.authService.isAuth) { return this.router.parseUrl('/login'); }
 
         // Store the attempted URL for redirecting
         this.authService.redirectUrl = url;
 
         // Redirect to the login page
-        return this.router.parseUrl('/login');
+        return this.router.parseUrl('/unauthorized');
     }
 
 }

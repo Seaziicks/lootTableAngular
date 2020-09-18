@@ -14,9 +14,14 @@ import {PersonnageComponent} from './personnage/personnage.component';
 import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
 import {UserLoginComponent} from './user/user-login/user-login.component';
 import {UserCreateComponent} from './user/user-create/user-create.component';
+import {AuthGuard} from './auth/auth.guard';
+import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
+import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 
 
 const routes: Routes = [
+    {path: 'unauthorized', component: UnauthorizedUserComponent},
+    {path: 'deconnexion', component: UserDisconnectComponent},
     {path: 'signin', component: UserCreateComponent},
     {path: 'login', component: UserLoginComponent},
     {path: 'testPersonnage', component: PersonnageComponent},
@@ -26,11 +31,11 @@ const routes: Routes = [
     {path: 'testArmures', component: ArmuresComponent},
     {path: 'testArmes', component: ArmesComponent},
     {path: 'testBanner', component: FadingInfoComponent},
-    {path: 'GestionObjets', component: GestionObjetComponent},
-    {path: 'GestionMonstre', component: GestionMonstreComponent},
-    {path: 'GestionDropMonstre', component: GestionDropMonstreComponent},
-    {path: 'GestionDropMonstreBis', component: GestionDropMonstreBisComponent},
-    {path: 'LootTable', component: LootTableComponent},
+    {path: 'GestionObjets', component: GestionObjetComponent, canActivate: [AuthGuard]},
+    {path: 'GestionMonstre', component: GestionMonstreComponent, canActivate: [AuthGuard]},
+    {path: 'GestionDropMonstre', component: GestionDropMonstreComponent, canActivate: [AuthGuard]},
+    {path: 'GestionDropMonstreBis', component: GestionDropMonstreBisComponent, canActivate: [AuthGuard]},
+    {path: 'LootTable', component: LootTableComponent, canActivate: [AuthGuard]},
     {path: '', redirectTo: '/LootTable', pathMatch: 'full'},
     {path: '**', redirectTo: '/LootTable'}
 ];

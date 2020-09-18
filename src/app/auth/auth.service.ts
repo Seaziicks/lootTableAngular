@@ -6,8 +6,9 @@ import {UserForCreation} from '../user/user-create/user-create.component';
 
 export class User {
     idUser: number;
-    userType: string;
     username: string;
+    isGameMaster: false;
+    isAdmin: false;
 }
 
 export class AuthService {
@@ -38,6 +39,8 @@ export class AuthService {
                         const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                         if (response.status === 200) {
                             this.isAuth = true;
+                            this.user = response.data as User;
+                            this.personnage = response.data.personnage as Personnage;
                             resolve(true);
                         } else {
                             rejects(false);
@@ -49,6 +52,8 @@ export class AuthService {
                         const response: SpecialResponse = data as SpecialResponse;
                         if (response.status === 200) {
                             this.isAuth = true;
+                            this.user = response.data as User;
+                            this.personnage = response.data.personnage as Personnage;
                             resolve(true);
                         } else {
                             rejects(false);
@@ -60,6 +65,8 @@ export class AuthService {
     }
 
     signOut() {
+        this.user = null;
+        this.personnage = null;
         this.isAuth = false;
     }
 
@@ -101,5 +108,17 @@ export class AuthService {
         const baseUrlBis = BASE_URL + 'connexion.php' + '?nomPersonnage=' + personnageNomToCheck + '&checkAvailable=true';
         console.log(baseUrlBis);
         return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
+    }
+
+    isAdmin() {
+        return this.user && this.user.isAdmin;
+    }
+
+    isGameMaster() {
+        return this.user && (this.user.isGameMaster || this.isAdmin());
+    }
+
+    isAuthenticated() {
+        return this.isAuth;
     }
 }

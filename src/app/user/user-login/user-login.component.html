@@ -1,36 +1,43 @@
 <div class="container">
     <div class="loginContainer">
-        <form>
+        <form [formGroup]="loginUserForm" autocomplete="off" novalidate (ngSubmit)="this.signIn()">
             <span class="imageIcon">
                 <i class="logo">
                     <img src="assets/fond/scroll-quill%20(1).png" class="d-inline-block" alt="">
                 </i>
             </span>
-            <span class="form-title">
+            <span class="form-title" (click)="afficherErrors()">
                 Log in
             </span>
             <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Enter your username</mat-label>
-                    <input matInput placeholder="Username" id="usernameUser" (keydown.enter)="this.signIn()">
+                    <input matInput placeholder="Username" id="usernameUser" formControlName="username"
+                           (input)="this.onUsernameInput()" (keydown.enter)="this.signIn()">
                     <mat-icon matPrefix>account_circle</mat-icon>
-                    <mat-hint>Hint</mat-hint>
+                    <mat-hint align="end" [ngClass]="{'available': usernameUnknown === false}">19 characters max</mat-hint>
+                    <mat-error *ngIf="hasError('username', 'required')">Username is required</mat-error>
+                    <mat-error *ngIf="hasError('username', 'maxlength')">You have more than 19 characters</mat-error>
+                    <mat-error *ngIf="hasError('username', 'usernameUnknown')">Unknown username</mat-error>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Enter your password</mat-label>
                     <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUser"
-                    (keydown.enter)="this.signIn()">
+                           formControlName="password" (input)="onPasswordInput()" (keydown.enter)="this.signIn()">
                     <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                             [attr.aria-pressed]="hide">
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                     </button>
+                    <mat-hint align="end">9 characters min</mat-hint>
+                    <mat-error *ngIf="hasError('password', 'required')">Password is required</mat-error>
+                    <mat-error *ngIf="hasError('password', 'minlength')">You have less than 9 characters</mat-error>
                 </mat-form-field>
             </div>
 
             <p>{{this.message}}</p>
-            <button class="validationButton" (click)="this.signIn()">Log in</button>
+            <button class="validationButton" [disabled]="!loginUserForm.valid">Log in</button>
             <button type="button" class="btn btn-outline-light" style="margin-top: 15px; margin-bottom: 15px;" (click)="this.loadSignIn()">Sign in</button>
         </form>
     </div>

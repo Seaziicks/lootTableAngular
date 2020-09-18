@@ -91,7 +91,7 @@ export class UserCreateComponent implements OnInit {
             creationPersonnageChecked: new FormControl(''),
             personnageLeftChecked: new FormControl(''),
             personnage: new FormControl(''),
-        }, [passwordMatchValidator, personnageSelection]);
+        }, [passwordMatchValidator, personnageSelection, usernameValid]);
         if (this.authService.isAuth) {
             this.message = null;
             // Usually you would use the redirect URL from the auth service.
@@ -222,7 +222,7 @@ export class UserCreateComponent implements OnInit {
             force: 0,
             agilite: 0,
             sagesse: 0,
-            constitutuion: 0,
+            constitution: 0,
             vitalite: 0,
             mana: 0,
             statistiquesParNiveau: null,

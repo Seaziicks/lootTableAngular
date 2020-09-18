@@ -3,6 +3,7 @@ import {SpecialResponse} from '../loot-table/loot-table.component';
 import {HttpClient} from '@angular/common/http';
 import {ObjetService} from '../services/objet.service';
 import {PersonnageService} from '../services/personnage.service';
+import {AuthService} from '../auth/auth.service';
 
 @Component({
     selector: 'app-personnage',
@@ -26,12 +27,14 @@ export class PersonnageComponent implements OnInit {
 
     constructor(private http: HttpClient,
                 private objetService: ObjetService,
-                private personnageService: PersonnageService) {
+                private personnageService: PersonnageService,
+                private authService: AuthService) {
     }
 
     ngOnInit(): void {
         this.personnageService.getAllPersonnages(this.http, true).then(
             (data: any) => {
+                console.log(data);
                 const response = data as SpecialResponse;
                 this.personnages = response.data as Personnage[];
             }
@@ -71,7 +74,7 @@ export class PersonnageComponent implements OnInit {
             case 'sagesse':
                 return Math.floor((this.currentPersonnage.sagesse - 10) / 2);
             case 'constitution':
-                return Math.floor((this.currentPersonnage.constitutuion - 10) / 2);
+                return Math.floor((this.currentPersonnage.constitution - 10) / 2);
             case 'vitalite':
                 return Math.floor((this.currentPersonnage.vitalite - 10) / 2);
             case 'mana':

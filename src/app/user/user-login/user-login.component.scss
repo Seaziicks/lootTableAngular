@@ -43,6 +43,9 @@
 .mat-form-field, .mat-label {
     color: wheat;
 }
+::ng-deep .loginContainer .mat-form-field .mat-form-field-flex {
+    background-color: unset !important;
+}
 
 .mat-icon {
     margin-right: 10px;
