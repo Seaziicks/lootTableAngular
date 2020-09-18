@@ -50,7 +50,7 @@ export class GestionObjetComponent implements OnInit {
     }
 
     public loadObjetsNames() {
-        this.objetService.getAllObjetsNames(this.http, 1).then(
+        this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne).then(
             (dataObjet: any) => {
                 const response: SpecialResponse = dataObjet as SpecialResponse;
                 console.log(response);
@@ -85,8 +85,6 @@ export class GestionObjetComponent implements OnInit {
     }
 
     getNomSansBalise(objetNom: string) {
-        console.log(objetNom);
-        console.log(objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2'));
         return objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2');
     }
 
