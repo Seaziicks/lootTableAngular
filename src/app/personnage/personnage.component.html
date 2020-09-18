@@ -95,7 +95,7 @@
                         <button class="btn btn-danger" (click)="this.selectObjet(objet.idObjet)"
                                 [disabled]="this.updatingObjetName && this.updatingObjetID !== objet.idObjet">
                             <span *ngIf="objet.afficherNom; else fauxNom">
-                                <b>{{objet.nom}}</b>
+                                <b>{{getNomSansBalise(objet.nom)}}</b>
                                 <ng-container *ngIf="objet.fauxNom"> <br/><i>{{objet.fauxNom}}</i></ng-container>
                             </span>
                             <ng-template #fauxNom>

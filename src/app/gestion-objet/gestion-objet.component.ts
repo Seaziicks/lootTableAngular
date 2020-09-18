@@ -84,4 +84,10 @@ export class GestionObjetComponent implements OnInit {
         this.objetCourantID = idObjet;
     }
 
+    getNomSansBalise(objetNom: string) {
+        console.log(objetNom);
+        console.log(objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2'));
+        return objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2');
+    }
+
 }

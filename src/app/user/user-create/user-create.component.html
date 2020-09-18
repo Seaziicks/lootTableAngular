@@ -63,7 +63,9 @@
                     formControlName="personnageLeftChecked"
                     labelPosition="after"
                     (change)="personnageLeftFunction()">
-                    Choisir parmi les personnages existants restants
+                    <span style="word-break: break-word; width: 180px;">
+                        Choisir parmi les personnages existants restants
+                    </span>
                 </mat-checkbox>
             </div>
             <div *ngIf="this.creationPersonnageChecked && !this.personnageLeft">

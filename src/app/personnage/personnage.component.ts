@@ -101,4 +101,10 @@ export class PersonnageComponent implements OnInit {
             this.updatingObjetID = null;
         }, 2500);
     }
+
+    getNomSansBalise(objetNom: string) {
+        console.log(objetNom);
+        console.log(objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2'));
+        return objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2');
+    }
 }
