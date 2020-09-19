@@ -1,13 +1,14 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {BASE_URL, URL_PERSONNAGE, URL_STATISTIQUE} from './rest.service';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class PersonnageService {
 
-  constructor() { }
+    constructor() {
+    }
 
     public getAllPersonnages(http: HttpClient, withStatistique: boolean) {
         const baseUrlBis = BASE_URL + URL_PERSONNAGE + '?withStatistique=' + withStatistique;

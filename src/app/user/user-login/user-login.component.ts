@@ -3,8 +3,12 @@ import {AuthService} from '../../auth/auth.service';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {passwordMatchValidator, personnageSelection} from '../user-create/user-create.component';
 import {SpecialResponse} from '../../loot-table/loot-table.component';
+
+export class UserSession {
+    username: string;
+    password: string;
+}
 
 @Component({
     selector: 'app-user-login',
@@ -33,14 +37,17 @@ export class UserLoginComponent implements OnInit {
             username: new FormControl('', [Validators.required, Validators.maxLength(19)]),
             password: new FormControl('', [Validators.required, Validators.minLength(9)]),
         });
+        console.log(this.router.url);
+        this.authService.checkUserInLocalStorage(this.http, this.router);
         if (this.authService.isAuth) {
             this.message = null;
             // Usually you would use the redirect URL from the auth service.
             // However to keep the example simple, we will always redirect to `/admin`.
-            const redirectUrl = '/GestionDropMonstreBis';
+            const redirectUrl = '/testPersonnage';
 
             // Redirect the user
-            this.router.navigate([redirectUrl]);
+            console.log(this.router.url);
+            // this.router.navigate([this.router.url]);
         }
     }
 
@@ -127,10 +134,11 @@ export class UserLoginComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 if (this.authService.isAuth) {
+                    localStorage.setItem('userSession', JSON.stringify({username, password}));
                     this.message = null;
                     // Usually you would use the redirect URL from the auth service.
                     // However to keep the example simple, we will always redirect to `/admin`.
-                    const redirectUrl = '/GestionDropMonstreBis';
+                    const redirectUrl = '/testPersonnage';
 
                     // Redirect the user
                     this.router.navigate([redirectUrl]);

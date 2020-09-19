@@ -96,7 +96,7 @@ export class UserCreateComponent implements OnInit {
             this.message = null;
             // Usually you would use the redirect URL from the auth service.
             // However to keep the example simple, we will always redirect to `/admin`.
-            const redirectUrl = '/GestionDropMonstreBis';
+            const redirectUrl = '/testPersonnage';
 
             // Redirect the user
             this.router.navigate([redirectUrl]);
@@ -178,7 +178,7 @@ export class UserCreateComponent implements OnInit {
                     this.message = null;
                     // Usually you would use the redirect URL from the auth service.
                     // However to keep the example simple, we will always redirect to `/admin`.
-                    const redirectUrl = '/GestionDropMonstreBis';
+                    const redirectUrl = '/testPersonnage';
 
                     // Redirect the user
                     this.router.navigate([redirectUrl]);
@@ -338,7 +338,6 @@ export class UserCreateComponent implements OnInit {
         ).catch(
             (data: any) => {
                 this.lookingForPersonnageNameAvailability = false;
-                console.log(data);
                 const response: SpecialResponse = data as SpecialResponse;
                 if (response.status === 409) {
                     this.personnage.setErrors({unavailablePersonnageName: true});

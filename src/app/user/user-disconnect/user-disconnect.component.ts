@@ -13,8 +13,9 @@ export class UserDisconnectComponent implements OnInit {
               private route: Router) { }
 
   ngOnInit(): void {
+      localStorage.removeItem('userSession');
       this.authService.signOut();
-      this.route.navigate(['/']);
+      this.route.navigate(['/testPersonnage']);
   }
 
 }

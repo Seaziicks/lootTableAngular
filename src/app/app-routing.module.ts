@@ -36,8 +36,8 @@ const routes: Routes = [
     {path: 'GestionDropMonstre', component: GestionDropMonstreComponent, canActivate: [AuthGuard]},
     {path: 'GestionDropMonstreBis', component: GestionDropMonstreBisComponent, canActivate: [AuthGuard]},
     {path: 'LootTable', component: LootTableComponent, canActivate: [AuthGuard]},
-    {path: '', redirectTo: '/LootTable', pathMatch: 'full'},
-    {path: '**', redirectTo: '/LootTable'}
+    {path: '', redirectTo: '/testPersonnage', pathMatch: 'full'},
+    {path: '**', redirectTo: '/testPersonnage'}
 ];
 
 @NgModule({

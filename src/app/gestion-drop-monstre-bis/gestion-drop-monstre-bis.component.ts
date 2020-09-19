@@ -45,7 +45,6 @@ export class GestionDropMonstreBisComponent implements OnInit {
 
   public chargerFamilles(http: HttpClient) {
     this.monstresGroupes = this.familleMonstre.chargerFamillesAvecMonstres(http);
-    console.log(JSON.stringify(this.monstresGroupes));
   }
 
   public chargerMonstreLootChance() {

@@ -3,6 +3,8 @@ import {HttpMethods} from '../interface/http-methods.enum';
 import {BASE_URL, URL_OBJET_COMPLET} from '../services/rest.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {UserForCreation} from '../user/user-create/user-create.component';
+import {UserSession} from '../user/user-login/user-login.component';
+import {Router} from '@angular/router';
 
 export class User {
     idUser: number;
@@ -33,7 +35,7 @@ export class AuthService {
 
                 const params = new HttpParams().set('Connexion', JSON.stringify(values));
 
-                http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'text', params}).toPromise().then(
+                return http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'text', params}).toPromise().then(
                     (data: any) => {
                         console.log(data);
                         const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
@@ -111,14 +113,36 @@ export class AuthService {
     }
 
     isAdmin() {
-        return this.user && this.user.isAdmin;
+        return !!(this.user && this.user.isAdmin);
     }
 
     isGameMaster() {
-        return this.user && (this.user.isGameMaster || this.isAdmin());
+        return !!(this.user && (this.user.isGameMaster || this.isAdmin()));
     }
 
     isAuthenticated() {
         return this.isAuth;
+    }
+
+    checkUserInLocalStorage(http: HttpClient, router: Router, url: string = router.url) {
+        const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
+        if (userSession && ! this.isAuth) {
+            this.signIn(http, userSession.username, userSession.password).then(
+                (data: any) => {
+                    if (this.isAuth) {
+                        // Usually you would use the redirect URL from the auth service.
+                        // However to keep the example simple, we will always redirect to `/admin`.
+
+                        // Redirect the user
+                        router.navigate([url]);
+                    }
+                }
+            );
+        }
+    }
+
+    checkUserInLocalStorageAsPromise(http: HttpClient) {
+        const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
+        return this.signIn(http, userSession.username, userSession.password);
     }
 }

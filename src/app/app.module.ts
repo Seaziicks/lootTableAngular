@@ -38,6 +38,7 @@ import {AuthService} from './auth/auth.service';
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { UserDisconnectComponent } from './user/user-disconnect/user-disconnect.component';
 import { UnauthorizedUserComponent } from './user/unauthorized-user/unauthorized-user.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { UnauthorizedUserComponent } from './user/unauthorized-user/unauthorized
         UserCreateComponent,
         UserDisconnectComponent,
         UnauthorizedUserComponent,
+        ContactComponent,
     ],
     imports: [
         BrowserModule,
