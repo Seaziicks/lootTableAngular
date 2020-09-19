@@ -13,10 +13,14 @@ import * as equal from 'fast-deep-equal';
 })
 export class PersonnageObjetComponent implements OnInit {
 
-    @Input() set idObj(id: number) { this.idObjet = id; this.valide = false; this.modificationEnCours = false; this.loadObjet(); }
+    @Input() personnages: Personnage[];
+    @Input() personnageCourant: Personnage;
+    @Input() set idObj(id: number) { this.idObjet = id; this.valide = false; this.modificationEnCours = false;
+                                     this.loadObjet(); this.idPersonnageSelectionne = this.personnageCourant.idPersonnage; }
     @Output() changingObjet = new EventEmitter<any>();
 
     idObjet: number;
+    idPersonnageSelectionne: number;
 
     objet: ObjetCommunFromDB;
     objetOriginal: ObjetCommunFromDB;
@@ -77,6 +81,17 @@ export class PersonnageObjetComponent implements OnInit {
                 this.modificationEnCours = false;
             }, 2500 );
         }
+    }
+
+    selectPersonnageAChanger() {
+        console.log(this.personnageCourant.idPersonnage);
+        console.log(this.objet.idPersonnage);
+        this.objet.idPersonnage = +this.idPersonnageSelectionne;
+    }
+
+    isProprietaire(idPersonnage: number): boolean {
+        console.log((+this.personnageCourant.idPersonnage === +idPersonnage) + '(' + idPersonnage + ')');
+        return +idPersonnage === +this.personnageCourant.idPersonnage;
     }
 
     checkProprietesMagiquesIntegrity() {

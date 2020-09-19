@@ -262,3 +262,14 @@
     <div class="messageChargement">Chargement en cours</div>
     <mat-progress-bar mode="query"></mat-progress-bar>
 </div>
+
+<div id="caracterSelection">
+    <label for="inputPersonnageChoix">Selectionnez un personnage à qui attribuer le drop</label>
+    <select id="inputPersonnageChoix" class="form-control" (change)="selectPersonnageAChanger()"
+            [(ngModel)]="this.idPersonnageSelectionne">
+        <option value=0> Autre </option>
+        <option *ngFor="let personnage of this.personnages" [ngValue]="+personnage.idPersonnage">
+            {{personnage.idPersonnage}} - {{personnage.nom}}
+        </option>
+    </select>
+</div>

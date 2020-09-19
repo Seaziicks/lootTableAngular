@@ -41,9 +41,10 @@ declare interface ObjetCommunFromDB extends ObjetCommunDB {
 }
 
 declare interface ObjetMinimisation {
+    idObjet: number;
+    idPersonnage: number;
     nom: string;
     fauxNom: string;
-    idObjet: number;
     afficherNom: boolean;
 }
 

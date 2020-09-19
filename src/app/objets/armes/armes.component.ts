@@ -278,12 +278,12 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
         this.armeEventEmitter.emit(null);
     }
 
-    castToObjetCommunForDB(): ObjetCommunForDB {
+    castToObjetCommunForDB(idPersonnageSelectionnee: number = 0): ObjetCommunForDB {
         const maledictionToAdd = this.getMalediction();
         let values: ObjetCommunForDB;
         values = {
             idObjet: null,
-            idPersonnage: 1,
+            idPersonnage: idPersonnageSelectionnee,
             nom: this.nom,
             bonus: this.bonus,
             type: this.type,

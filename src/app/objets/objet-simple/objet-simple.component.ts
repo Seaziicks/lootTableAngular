@@ -73,14 +73,14 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
         this.objetSimpleEventEmitter.emit(null);
     }
 
-    castToObjetCommunForDB(): ObjetCommunForDB {
+    castToObjetCommunForDB(idPersonnageSelectionnee: number = 0): ObjetCommunForDB {
         const maledictionToAdd = this.getMalediction();
         let values: ObjetCommunForDB;
         console.log(this.prix);
         console.log(this.proprietesMagiques);
         values = {
             idObjet: null,
-            idPersonnage: 1,
+            idPersonnage: idPersonnageSelectionnee,
             nom: this.nom,
             bonus: this.bonus,
             type: this.type,

@@ -6,6 +6,7 @@ import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.componen
 import {ArmesComponent} from '../objets/armes/armes.component';
 import {ArmuresComponent} from '../objets/armures/armures.component';
 import {ObjetService} from '../services/objet.service';
+import {PersonnageService} from '../services/personnage.service';
 
 export interface SpecialResponse {
     status: number;
@@ -31,12 +32,18 @@ export class LootTableComponent implements OnInit {
     input3: number;
     deDeDrop: number;
     parametres: string[];
+    /* Paramètres en cas de double objet */
     parametres2: string[];
+    /* Paramètres du deuxième objet en cas de double objet */
     parametres3: string[];
 
     armure: ArmuresComponent;
     arme: ArmesComponent;
     objetSimple: ObjetSimpleComponent;
+
+    personnages: Personnage[];
+    personnageCourant: Personnage;
+    idPersonnageSelectionne;
 
 
     ngOnInit(): void {
@@ -47,12 +54,20 @@ export class LootTableComponent implements OnInit {
                 this.lootPossible = response.data as Loot[];
             }
         );
+        this.personnageService.getAllPersonnages(this.http, false).then(
+            (data: any) => {
+                console.log(data);
+                const response = data as SpecialResponse;
+                this.personnages = response.data as Personnage[];
+            }
+        );
     }
 
     constructor(private http: HttpClient,
                 private familleMonstre: FamilleAndMonstreService,
                 private monstreLootChance: MonstreLootChanceService,
-                private objetService: ObjetService) {
+                private objetService: ObjetService,
+                private personnageService: PersonnageService) {
     }
 
     public chargerFamilles(http: HttpClient) {
@@ -80,6 +95,12 @@ export class LootTableComponent implements OnInit {
         }
         this.deDeDrop = +event.target.value;
         this.lootSelectionne = this.monstreSelectionneLootChance.filter(lc => +lc.roll === this.deDeDrop)[0];
+    }
+
+    selectPersonnage() {
+        if (+this.idPersonnageSelectionne !== 0) {
+            this.personnageCourant = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
+        }
     }
 
     public isObjet(): boolean {
@@ -210,7 +231,7 @@ export class LootTableComponent implements OnInit {
             this.arme = null;
             this.objetSimple = $event;
 
-            this.sendObjet(this.objetSimple.castToObjetCommunForDB());
+            this.sendObjet(this.objetSimple.castToObjetCommunForDB(this.idPersonnageSelectionne));
         }
     }
 
@@ -219,7 +240,7 @@ export class LootTableComponent implements OnInit {
         this.arme = $event;
         this.objetSimple = null;
 
-        this.sendObjet(this.arme.castToObjetCommunForDB());
+        this.sendObjet(this.arme.castToObjetCommunForDB(this.idPersonnageSelectionne));
     }
 
     getArmure($event: ArmuresComponent) {
@@ -227,7 +248,7 @@ export class LootTableComponent implements OnInit {
         this.arme = null;
         this.objetSimple = null;
 
-        this.sendObjet(this.armure.castToObjetCommunForDB());
+        this.sendObjet(this.armure.castToObjetCommunForDB(this.idPersonnageSelectionne));
     }
 
     sendObjet(objetCommunDB: ObjetCommunForDB) {

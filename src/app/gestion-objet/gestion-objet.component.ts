@@ -32,6 +32,7 @@ export class GestionObjetComponent implements OnInit {
     ngOnInit(): void {
         this.personnageService.getAllPersonnages(this.http, true).then(
             (data: any) => {
+                console.log(data);
                 const response = data as SpecialResponse;
                 this.personnages = response.data as Personnage[];
             }
@@ -40,6 +41,7 @@ export class GestionObjetComponent implements OnInit {
 
     selectPersonnage() {
         if (+this.idPersonnageSelectionne !== 0) {
+            this.objetCourantID = null;
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
             this.loadObjetsNames();
         } else {
@@ -71,6 +73,10 @@ export class GestionObjetComponent implements OnInit {
                     const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
                     this.objetMinimisations[index] = response.data as ObjetMinimisation;
                     console.log(this.objetMinimisations[index]);
+                    if (this.currentPersonnage.idPersonnage !== this.objetMinimisations[index].idPersonnage) {
+                        this.objetMinimisations.splice(index, 1);
+                        this.objetCourantID = null;
+                    }
                 }
             );
         }, 1250);

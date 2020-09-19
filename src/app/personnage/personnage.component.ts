@@ -43,6 +43,7 @@ export class PersonnageComponent implements OnInit {
 
     selectPersonnage() {
         if (+this.idPersonnageSelectionne !== 0) {
+            this.objetCourantID = null;
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
             this.loadObjetsNames();
         }

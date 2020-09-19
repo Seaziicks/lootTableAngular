@@ -181,7 +181,7 @@ export abstract class ObjetCommun {
         }
     }
 
-    abstract castToObjetCommunForDB();
+    abstract castToObjetCommunForDB(idPersonnageSelectionnee: number);
 
     abstract setNom();
 
