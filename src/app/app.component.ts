@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        // console.log(localStorage);
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd)
         ).subscribe(event => {

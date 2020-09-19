@@ -37,17 +37,27 @@ export class UserLoginComponent implements OnInit {
             username: new FormControl('', [Validators.required, Validators.maxLength(19)]),
             password: new FormControl('', [Validators.required, Validators.minLength(9)]),
         });
-        console.log(this.router.url);
-        this.authService.checkUserInLocalStorage(this.http, this.router);
-        if (this.authService.isAuth) {
-            this.message = null;
-            // Usually you would use the redirect URL from the auth service.
-            // However to keep the example simple, we will always redirect to `/admin`.
-            const redirectUrl = '/testPersonnage';
+        // console.log(this.router.url);
+        // console.log(localStorage.getItem('userSession'));
+        if (!this.authService.isAuth && localStorage.getItem('userSession')) {
+            this.authService.checkUserInLocalStorageAsPromise(this.http).then(
+                (data: any) => {
+                    if (this.authService.isAuth) {
+                        this.message = null;
+                        // Usually you would use the redirect URL from the auth service.
+                        // However to keep the example simple, we will always redirect to `/admin`.
+                        const redirectUrl = '/testPersonnage';
 
-            // Redirect the user
-            console.log(this.router.url);
-            // this.router.navigate([this.router.url]);
+                        // Redirect the user
+                        console.log(this.router.url);
+                        this.router.navigate([redirectUrl]);
+                    }
+                }
+            );
+        } else if (this.authService.isAuth) {
+            const redirectUrl = '/testPersonnage';
+            // console.log(this.router.url);
+            this.router.navigate([redirectUrl]);
         }
     }
 
