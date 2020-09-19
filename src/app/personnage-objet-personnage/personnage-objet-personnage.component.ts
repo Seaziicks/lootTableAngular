@@ -15,6 +15,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
 
     @Input() set idObj(id: number) { this.idObjet = id; this.loadObjet(); }
     @Input() idPersonnage: number;
+    @Input() personnages: Personnage[];
     @Output() changingObjetEffetDecouvert = new EventEmitter<any>();
     @ViewChild('Banner') banner: FadingInfoComponent;
 
@@ -44,13 +45,15 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
                 console.log(response);
                 this.objet = response.data as ObjetCommunFromDB;
                 console.log(this.objet);
-                this.loadEffetsMagiquesDecouverts();
+                if (this.authService.personnage) {
+                    this.loadEffetsMagiquesDecouverts();
+                }
             }
         );
     }
 
     loadEffetsMagiquesDecouverts() {
-        this.objetService.getEffetsMagiquesDecouverts(this.http, this.idObjet, this.idPersonnage).then(
+        this.objetService.getEffetsMagiquesDecouverts(this.http, this.idObjet, this.authService.personnage.idPersonnage).then(
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = data as SpecialResponse;
@@ -134,7 +137,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         const effetMagiqueDecouvert = {
             idEffetMagiqueDecouvert: null,
             idObjet: this.idObjet,
-            idPersonnage: this.idPersonnage,
+            idPersonnage: this.authService.personnage.idPersonnage,
             effet: this.effetDecouvertAAjouter,
         } as EffetMagiqueDecouvert;
         this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.POST, effetMagiqueDecouvert).then(
@@ -155,7 +158,9 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     reloadingInterface() {
         this.updating = true;
         this.changingObjetEffetDecouvert.emit(this.objet.idObjet);
-        setTimeout( () => { this.loadEffetsMagiquesDecouverts(); }, 1250 );
+        if (this.authService.personnage) {
+            setTimeout(() => { this.loadEffetsMagiquesDecouverts(); }, 1250);
+        }
         setTimeout( () => {
             this.updating = false;
         }, 2500 );
@@ -173,9 +178,23 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         }
     }
 
-    effetsMagiquesDecouvertsAffichables(): boolean {
-        return (this.authService.personnage && this.authService.personnage.idPersonnage === this.idPersonnage)
-            || (this.authService.user && this.authService.isAdmin());
+    effetsMagiquesDecouvertsAffichables(indexEffetMagiqueDecouvert: number): boolean {
+        return (this.authService.personnage
+            && this.authService.personnage.idPersonnage === this.effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].idPersonnage)
+            || this.authService.isGameMaster();
+    }
+
+    effetsMagiquesDecouvertsAjoutable(): boolean {
+        return !!this.authService.personnage || this.authService.isGameMaster();
+    }
+
+    getAutheurEffetMagiqueDecouvert(indexEffetMagiqueDecouvert: number) {
+        return this.personnages
+            .find(f => f.idPersonnage === this.effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].idPersonnage).nom;
+    }
+
+    isGameMaster() {
+        return this.authService.isGameMaster();
     }
 
 }

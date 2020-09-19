@@ -49,7 +49,8 @@ export class ObjetService {
     }
 
     public getEffetsMagiquesDecouverts(http: HttpClient, idObjet: number, idPersonnage: number) {
-        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueDecouvert.php' + '?idObjet=' + idObjet + '&idPersonnage=' + idPersonnage;
+        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueDecouvert.php' + '?idObjet=' + idObjet + '&idPersonnage=' + idPersonnage +
+        '&allDecouverts=true';
         console.log(baseUrlBis);
         return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }

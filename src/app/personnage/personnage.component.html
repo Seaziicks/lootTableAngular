@@ -107,7 +107,8 @@
             </div>
 
             <ng-container *ngIf="this.objetCourantID">
-                <app-personnage-objet-personnage [idObj]="this.objetCourantID" [idPersonnage]="currentPersonnage.idPersonnage"
+                <app-personnage-objet-personnage [personnages]="personnages" [idPersonnage]="currentPersonnage.idPersonnage"
+                                                 [idObj]="this.objetCourantID"
                 (changingObjetEffetDecouvert)="this.reloadingObjet($event)"></app-personnage-objet-personnage>
             </ng-container>
 

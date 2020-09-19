@@ -78,25 +78,28 @@
         </div>
     </div>
     <br/>
-    <div class="effetsMagiquesDecouverts" *ngIf="this.effetsMagiquesDecouvertsAffichables()">
+    <div class="effetsMagiquesDecouverts">
         <div class="effetMagiqueDecouvert" *ngFor="let effetMagique of this.effetsMagiquesDecouverts; let indexEffetMagiqueDecouvert = index">
-            <div *ngIf="this.modificationsEnCours[indexEffetMagiqueDecouvert] === false; else modification">
-                <p>{{effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet}}</p>
-                <button class="btn btn-primary" (click)="this.lancerModification(indexEffetMagiqueDecouvert)">Modifier</button>
-            </div>
-            <ng-template #modification>
-                <div>
-                    <mat-form-field class="example-full-width">
-                        <mat-label>Effet découvert n°{{indexEffetMagiqueDecouvert}}</mat-label>
-                        <textarea [(ngModel)]="effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet" matInput></textarea>
-                    </mat-form-field>
+            <div *ngIf="this.effetsMagiquesDecouvertsAffichables(indexEffetMagiqueDecouvert)">
+                <div *ngIf="this.modificationsEnCours[indexEffetMagiqueDecouvert] === false; else modification">
+                    <p *ngIf="this.isGameMaster()">{{getAutheurEffetMagiqueDecouvert(indexEffetMagiqueDecouvert)}}</p>
+                    <p>{{effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet}}</p>
+                    <button class="btn btn-primary" (click)="this.lancerModification(indexEffetMagiqueDecouvert)">Modifier</button>
                 </div>
-                <button class="btn btn-danger" (click)="this.supprimerEffetDecouvert(this.indexEffetMagiqueDecouvert)">Supprimer</button>
-                <button class="btn btn-warning" (click)="this.modifierEffetDecouvert(this.indexEffetMagiqueDecouvert)">Modifier</button>
-                <button class="btn btn-light" (click)="this.annulerModificationEffetDecouvert(this.indexEffetMagiqueDecouvert)">Annuler</button>
-            </ng-template>
+                <ng-template #modification>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Effet découvert n°{{indexEffetMagiqueDecouvert}}</mat-label>
+                            <textarea [(ngModel)]="effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].effet" matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                    <button class="btn btn-danger" (click)="this.supprimerEffetDecouvert(this.indexEffetMagiqueDecouvert)">Supprimer</button>
+                    <button class="btn btn-warning" (click)="this.modifierEffetDecouvert(this.indexEffetMagiqueDecouvert)">Modifier</button>
+                    <button class="btn btn-light" (click)="this.annulerModificationEffetDecouvert(this.indexEffetMagiqueDecouvert)">Annuler</button>
+                </ng-template>
+            </div>
         </div>
-        <button class="btn btn-outline-primary" (click)="this.ajouterEffetDecouvert()" *ngIf="!this.ajoutEffetDecouvert">Ajouter un effet découvert</button>
+        <button class="btn btn-outline-primary" (click)="this.ajouterEffetDecouvert()" *ngIf="!this.ajoutEffetDecouvert && effetsMagiquesDecouvertsAjoutable()">Ajouter un effet découvert</button>
         <div *ngIf="this.ajoutEffetDecouvert">
             <div>
                 <mat-form-field class="example-full-width">
@@ -105,7 +108,7 @@
                 </mat-form-field>
             </div>
             <button class="btn btn-light" (click)="this.annulerAjoutEffetDecouvert()">Annuler</button>
-            <button class="btn btn-primary" (click)="this.validerAjoutEffetDecouvert()">Valider</button>
+            <button class="btn btn-primary" *ngIf="effetsMagiquesDecouvertsAjoutable()" (click)="this.validerAjoutEffetDecouvert()">Valider</button>
         </div>
     </div>
 </div>
