@@ -33,12 +33,13 @@ import {PersonnageObjetComponent} from './personnage-objet/personnage-objet.comp
 import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
 import {SpinnerComponent} from './spinner/spinner.component';
 import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/personnage-objet-personnage.component';
-import { UserLoginComponent } from './user/user-login/user-login.component';
+import {UserLoginComponent} from './user/user-login/user-login.component';
 import {AuthService} from './auth/auth.service';
-import { UserCreateComponent } from './user/user-create/user-create.component';
-import { UserDisconnectComponent } from './user/user-disconnect/user-disconnect.component';
-import { UnauthorizedUserComponent } from './user/unauthorized-user/unauthorized-user.component';
-import { ContactComponent } from './contact/contact.component';
+import {UserCreateComponent} from './user/user-create/user-create.component';
+import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
+import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
+import {ContactComponent} from './contact/contact.component';
+import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-magique.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { ContactComponent } from './contact/contact.component';
         UserDisconnectComponent,
         UnauthorizedUserComponent,
         ContactComponent,
+        ProprieteMagiqueComponent,
     ],
     imports: [
         BrowserModule,
@@ -90,6 +92,3 @@ import { ContactComponent } from './contact/contact.component';
 })
 export class AppModule {
 }
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-    .catch(err => console.error(err));

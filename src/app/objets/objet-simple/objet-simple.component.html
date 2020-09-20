@@ -16,38 +16,27 @@
                  data-toggle="tooltip" data-placement="bottom" matTooltip="Afficher les infos de l'effet magique">{{this.afficherInfos ? 1 : 0}}</div>
         </div>
     </div>
+<!--
     <form class="needs-validation" id="objetSimpleForm">
-        <div class="form-row">
-            <div style="width: 100%" *ngIf="this.loadComplete()">
-                <div class="form-row">
-                    <div class="col-md-2 mb-3">
-                        <label for="PuissMag">Puissance
-                        </label>
-                        <input min="1" max="3" type="number" class="form-control"
-                               id="PuissMag"
-                               name="PuissMag"
-                               placeholder="Puissance Magique"
-                               [(ngModel)]="this.dePuissance"
-                               (ngModelChange)="this.getProprieteMagique()"
-                               required>
-                    </div>
-                    <div class="col-md-2 mb-3" *ngIf="this.dePuissance">
-                        <label for="PropMag">{{this.parametres[1]}} (1D{{this.getNbProprietesMagiques(this.allProprietesMagiques)}})
-                        </label>
-                        <input min="1" [max]="this.getNbProprietesMagiques(this.allProprietesMagiques)" type="number" class="form-control"
-                               id="PropMag"
-                               name="PropMag"
-                               placeholder="Propriété Magique"
-                               [(ngModel)]="this.deProprieteMagique"
-                               (ngModelChange)="this.getProprieteMagique()"
-                               required>
-                    </div>
+    <div class="form-row">
+        <div style="width: 100%" *ngIf="this.loadComplete()">
+            <div class="form-row">
+                <div class="col-md-2 mb-3">
+                    <label for="NbPropMag">Nombre de propriétés magiques (max : 10)
+                    </label>
+                    <input min="1" max="10" type="number" class="form-control"
+                           id="NbPropMag"
+                           name="NbPropMag"
+                           placeholder="Nombre propriétés magiques"
+                           [(ngModel)]="this.deNombreProprietesMagiques"
+                           (ngModelChange)="this.getArrayPourNbProprieteMagique()"
+                           required>
                 </div>
             </div>
         </div>
-
-
+    </div>
     </form>
+
     <div style="width: 100%" *ngIf="this.proprietesMagiques.length > 0 && !this.modificationEnCours">
         <h1>Résultat</h1>
         <div>
@@ -177,4 +166,44 @@
         <button (click)="this.resetContenu()">Reset propriété magique</button>
     </div>
 
+-->
+
+
+    <div style="width: 100%" *ngIf="!this.modificationEnCours">
+        <h1>Résultat</h1>
+        <div>
+            <h3>{{this.parametres[2]}} : <span *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+            <h4 *ngIf="this.fauxNom"> Faux Nom : {{this.fauxNom}}</h4>
+        </div>
+        <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier objet</button>
+    </div>
+
+
+    <div style="width: 100%" *ngIf="this.modificationEnCours">
+        <h1>Résultat</h1>
+        <div>
+            <h3>{{this.parametres[2]}} : <span *ngIf="this.proprietesMagiques.length > 0">{{this.getNomsProprieteMagique()}}</span></h3>
+            <mat-form-field appearance="fill" class="fauxNom">
+                <mat-label>Faux nom</mat-label>
+                <textarea [(ngModel)]="this.fauxNom" rows="1" matInput></textarea>
+            </mat-form-field>
+        </div>
+        <button (click)="this.modifierContenu()">Valider objet</button>
+    </div>
+
+
+    <div *ngFor="let proprieteMagique of this.proprietesMagiquesFakes; let indexPropriete = index">
+        <app-propriete-magique [allProprietesMagiques]="this.allProprietesMagiques"
+                               [indexProprieteMagique]="indexPropriete"
+                               [nom]="this.parametres[1]"
+                               [type]="this.parametres[2]"
+                               (creationProprieteMagiqueEventEmitter)="this.creationProprieteMagique($event)"
+                               (proprieteMagiqueEventEmitter)="changeProprieteMagique($event)"
+                               (resetProprieteMagiqueEventEmitter)="this.getProprieteMagique()"></app-propriete-magique>
+    </div>
+    <button class="btn btn-primary" *ngIf="!this.valide else objetValidee" (click)="this.selection()" [disabled]="!this.objetValidable()"
+            matTooltip="L'objet doit avoir un faux nom, ou bien afficher son nom réel.">Valider objet</button>
+    <ng-template #objetValidee>
+        <button (click)="this.deselection()">Dévalider objet</button>
+    </ng-template>
 </div>

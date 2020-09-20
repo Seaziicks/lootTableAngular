@@ -1,7 +1,11 @@
 import {JSonLoadService} from '../services/json-load.service';
 import {MaledictionsComponent} from './maledictions/maledictions.component';
+import {Component, Injectable, Input} from '@angular/core';
 
+@Injectable()
 export abstract class ObjetCommun {
+
+    @Input() personnage: Personnage;
 
     maledictionComponent: MaledictionsComponent;
     maudit: boolean;
@@ -11,6 +15,7 @@ export abstract class ObjetCommun {
     bonus: number;
     type: string;
     proprietesMagiques: MagicalProperty[] = [];
+    proprietesMagiquesFakes: MagicalProperty[];
     prix = 0;
     currencyType = 'po';
     prixProprieteMagique: number;
@@ -18,6 +23,7 @@ export abstract class ObjetCommun {
 
     dePuissance: number;
     deProprieteMagique: number;
+    deNombreProprietesMagiques = 1;
 
     allProprietesMagiques: SortedMagicalProperty;
 
@@ -85,7 +91,7 @@ export abstract class ObjetCommun {
         for (const proprieteMagique of this.proprietesMagiques) {
             const data = proprieteMagique.infos.data;
             const indexPrix = data.indexOf(data.filter(f => f.includes('Prix'))[0]);
-            if (!data[indexPrix].includes('bonus')) {
+            if (indexPrix !== -1 && !data[indexPrix].includes('bonus')) {
                 const match = data[indexPrix].match(/([0-9]+ )+/)[0];
                 this.prixProprieteMagique = +match.replace(' ', '').replace(' ', '');
                 const matchCurrency = data[indexPrix].substring(data[indexPrix].indexOf(match)).match(/[a-z]+[ |\.]/)[0];
@@ -204,6 +210,14 @@ export abstract class ObjetCommun {
                 break;
 
         }
+    }
+
+    getArrayPourNbProprieteMagique() {
+        this.proprietesMagiquesFakes = [].constructor(this.deNombreProprietesMagiques);
+    }
+
+    objetValidable() {
+        return this.fauxNom || this.afficherNom;
     }
 }
 

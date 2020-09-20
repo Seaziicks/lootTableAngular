@@ -1,0 +1,152 @@
+<form class="needs-validation" id="objetSimpleForm">
+    <div class="form-row">
+        <div style="width: 100%" *ngIf="this.loadComplete()">
+            <div class="form-row">
+                <div class="col-md-2 mb-3">
+                    <label for="PuissMag">Puissance
+                    </label>
+                    <input min="1" max="3" type="number" class="form-control"
+                           id="PuissMag"
+                           name="PuissMag"
+                           placeholder="Puissance Magique"
+                           [(ngModel)]="this.dePuissance"
+                           (ngModelChange)="this.getProprieteMagique()"
+                           required>
+                </div>
+                <div class="col-md-2 mb-3" *ngIf="this.dePuissance">
+                    <label for="PropMag">{{this.nom}} (1D{{this.getNbProprietesMagiques(this.allProprietesMagiques)}})
+                    </label>
+                    <input min="1" [max]="this.getNbProprietesMagiques(this.allProprietesMagiques)" type="number" class="form-control"
+                           id="PropMag"
+                           name="PropMag"
+                           placeholder="Propriété Magique"
+                           [(ngModel)]="this.deProprieteMagique"
+                           (ngModelChange)="this.getProprieteMagique()"
+                           required>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div style="width: 100%" *ngIf="this.proprieteMagique && !this.modificationEnCours">
+    <div>
+        <!--h3>{{this.type}} : <span *ngIf="this.proprieteMagique">{{this.getNomsProprieteMagique()}}</span></h3-->
+
+        <ng-container *ngIf="this.proprieteMagique">
+            <h4>{{proprieteMagique.title}}</h4>
+            <span *ngFor="let description of proprieteMagique.description; let index = index;">
+                    <span [innerHTML]="description"></span><br/>
+                    <ng-container *ngFor="let table of proprieteMagique.table;">
+                        <span *ngIf="table.position === index + 1">
+                            <table cellspacing="1" border="1">
+                                <tbody>
+                                <tr *ngFor="let th of table.title; let thIndex = index">
+                                    <ng-container *ngFor="let title of th; let titleIndex = index">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
+                                            [colSpan]="table.title[1].length / table.title[0].length">{{title}}</th>
+                                        <ng-template #elseBlock>
+                                            <th>{{title}}</th>
+                                        </ng-template>
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of table.tr; let tdIndex = index">
+                                    <ng-container *ngFor="let content of td">
+                                        <td>{{content}}</td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </ng-container>
+
+                    <ng-container *ngFor="let ul of proprieteMagique.ul;">
+                        <span *ngIf="+ul.position === index + 1">
+                            <ul>
+                                <li *ngFor="let li of ul.li;" [innerHTML]="li"></li>
+                            </ul>
+                        </span>
+                    </ng-container>
+                </span>
+            <br/>
+            <br/>
+            <span *ngIf="this.proprieteMagique.infos" [innerHTML]="this.proprieteMagique.infos.data"></span><br/><br/>
+        </ng-container>
+    </div>
+    <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
+    <button *ngIf="!this.valide else objetValidee" (click)="this.selection()">Confirmer propriété magique</button>
+    <ng-template #objetValidee>
+        <button (click)="this.deselection()">Dévalider objet</button>
+    </ng-template>
+</div>
+
+
+<div style="width: 100%" *ngIf="this.proprieteMagique && this.modificationEnCours">
+    <h1>Résultat</h1>
+    <div>
+        <!--h3>{{this.type}} : <span *ngIf="this.proprieteMagique">{{this.getNomsProprieteMagique()}}</span></h3-->
+
+        <ng-container *ngIf="this.proprieteMagique;">
+            <h4><textarea [(ngModel)]="this.proprieteMagique.title"></textarea></h4>
+            <span
+                *ngFor="let description of this.proprieteMagique.description; let indexDescription = index; trackBy: trackByFn">
+                    <textarea
+                        [(ngModel)]="this.proprieteMagique.description[indexDescription]"></textarea><br/>
+
+                    <ng-container
+                        *ngFor="let table of this.proprieteMagique.table; let indexTable = index">
+                        <span *ngIf="+table.position === indexDescription + 1">
+                            <table>
+                                <tbody>
+                                <tr *ngFor="let th of this.proprieteMagique.table[indexTable].title; let thIndex = index">
+                                    <ng-container
+                                        *ngFor="let title of this.proprieteMagique.table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
+                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
+                                            [colSpan]="table.title[1].length / table.title[0].length">
+                                            <textarea
+                                                [(ngModel)]="this.proprieteMagique.table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                        </th>
+                                        <ng-template #elseBlock>
+                                            <th>
+                                                <textarea
+                                                    [(ngModel)]="this.proprieteMagique.table[indexTable].title[thIndex][tdIndex]"></textarea>
+                                            </th>
+                                        </ng-template>
+                                    </ng-container>
+                                </tr>
+                                <tr *ngFor="let td of this.proprieteMagique.table[indexTable].tr; let trIndex = index">
+                                    <ng-container
+                                        *ngFor="let content of this.proprieteMagique.table[indexTable].tr[trIndex]; let tdIndex = index; trackBy: trackByFn">
+                                        <td>
+                                            <textarea
+                                                [(ngModel)]="this.proprieteMagique.table[indexTable].tr[trIndex][tdIndex]"></textarea>
+                                        </td>
+                                    </ng-container>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </ng-container>
+
+                    <ng-container *ngFor="let shit of this.proprieteMagique.ul; let indexUl = index;">
+                        <span *ngIf="this.proprieteMagique.ul[indexUl].position === indexDescription + 1">
+                            <ul>
+                                <li *ngFor="let shitBis of this.proprieteMagique.ul[indexUl].li; let indexLi = index; trackBy: trackByFn">
+                                    <textarea [(ngModel)]="this.proprieteMagique.ul[indexUl].li[indexLi]"
+                                              [name]="'positon'+this.proprieteMagique.ul[indexUl].position+'ul'+indexUl+'li'+indexLi"></textarea>
+                                </li>
+                            </ul>
+                        </span>
+                    </ng-container>
+                </span>
+            <br/>
+            <br/>
+            <ng-container
+                *ngFor="let shit of this.proprieteMagique.infos.data; let indexData = index; trackBy: trackByFn">
+                <textarea [(ngModel)]="this.proprieteMagique.infos.data[indexData]"></textarea>
+            </ng-container>
+        </ng-container>
+    </div>
+    <button (click)="this.modifierContenu()">Valider propriété magique</button>
+    <button (click)="this.resetContenu()">Reset propriété magique</button>
+</div>

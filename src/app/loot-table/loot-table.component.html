@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <div id="caracterSelection" *ngIf="this.input2 && this.input1">
+        <div id="caracterSelection" *ngIf="this.input1">
             <label for="inputPersonnageChoix">Selectionnez un personnage à qui attribuer le drop</label>
             <select id="inputPersonnageChoix" class="form-control" (change)="selectPersonnage()"
                     [(ngModel)]="this.idPersonnageSelectionne">
