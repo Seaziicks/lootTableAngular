@@ -159,9 +159,11 @@ export class ObjetService {
     }
 
     public ul(http: HttpClient, httpMethod: HttpMethods, idEffetMagique: number, effetMagiqueUl: EffetMagiqueUl): Promise<string> {
-        const values = {idEffetMagique: undefined, EffetMagiqueUl: undefined};
+        const effetMagiqueUlToUSe = {idEffetMagiqueUl: effetMagiqueUl.idEffetMagiqueUl,
+            idEffetMagique: effetMagiqueUl.idEffetMagique,
+            position: effetMagiqueUl.position};
+        const values = {idEffetMagique: undefined, EffetMagiqueUl: effetMagiqueUlToUSe};
         values.idEffetMagique = idEffetMagique;
-        values.EffetMagiqueUl = effetMagiqueUl;
         console.log(values);
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueUl.php' + '?idEffetMagique=' + idEffetMagique + '';
         console.log(baseUrlBis);
@@ -186,9 +188,10 @@ export class ObjetService {
 
     public title(http: HttpClient, httpMethod: HttpMethods, idEffetMagiqueTable: number, effetMagiqueTableTitle: EffetMagiqueTableTitle)
         : Promise<string> {
-        const values = {idEffetMagiqueTable: undefined, EffetMagiqueTableTitle: undefined};
+        const effetMagiqueTableTitleToUSe = {idEffetMagiqueTableTitle: effetMagiqueTableTitle.idEffetMagiqueTableTitle,
+            idEffetMagiqueTable: effetMagiqueTableTitle.idEffetMagiqueTable};
+        const values = {idEffetMagiqueTable: undefined, EffetMagiqueTableTitle: effetMagiqueTableTitleToUSe};
         values.idEffetMagiqueTable = idEffetMagiqueTable;
-        values.EffetMagiqueTableTitle = effetMagiqueTableTitle;
         console.log(values);
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTableTitle.php' + '?idEffetMagiqueTable=' + idEffetMagiqueTable + '';
         console.log(baseUrlBis);
@@ -213,9 +216,10 @@ export class ObjetService {
 
     public tr(http: HttpClient, httpMethod: HttpMethods, idEffetMagiqueTable: number, effetMagiqueTableTr: EffetMagiqueTableTr)
         : Promise<string> {
-        const values = {idEffetMagiqueTable: undefined, EffetMagiqueTableTr: undefined};
+        const effetMagiqueTableTrToUSe = {idEffetMagiqueTableTr: effetMagiqueTableTr.idEffetMagiqueTableTr,
+            idEffetMagiqueTable: effetMagiqueTableTr.idEffetMagiqueTable};
+        const values = {idEffetMagiqueTable: undefined, EffetMagiqueTableTr: effetMagiqueTableTrToUSe};
         values.idEffetMagiqueTable = idEffetMagiqueTable;
-        values.EffetMagiqueTableTr = effetMagiqueTableTr;
         console.log(values);
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTableTr.php' + '?idEffetMagiqueTable=' + idEffetMagiqueTable + '';
         console.log(baseUrlBis);
@@ -225,9 +229,11 @@ export class ObjetService {
     }
 
     public table(http: HttpClient, httpMethod: HttpMethods, idEffetMagique: number, effetMagiqueTable: EffetMagiqueTable): Promise<string> {
-        const values = {idEffetMagique: undefined, EffetMagiqueTable: undefined};
+        const effetMagiqueTableToUSe = {idEffetMagiqueTable: effetMagiqueTable.idEffetMagiqueTable,
+            idEffetMagique: effetMagiqueTable.idEffetMagique,
+            position: effetMagiqueTable.position};
+        const values = {idEffetMagique: undefined, EffetMagiqueTable: effetMagiqueTableToUSe};
         values.idEffetMagique = idEffetMagique;
-        values.EffetMagiqueTable = effetMagiqueTable;
         console.log(values);
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTable.php' + '?idEffetMagique=' + idEffetMagique + '';
         console.log(baseUrlBis);
@@ -237,9 +243,9 @@ export class ObjetService {
     }
 
     public effetMagique(http: HttpClient, httpMethod: HttpMethods, idObjet: number, effetMagique: EffetMagiqueDB): Promise<string> {
-        const values = {idObjet: undefined, EffetMagique: undefined};
+        const effetMagiqueToUSe = {idEffetMagique: effetMagique.idEffetMagique, idObjet: effetMagique.idObjet, title: effetMagique.title};
+        const values = {idObjet: undefined, EffetMagique: effetMagiqueToUSe};
         values.idObjet = idObjet;
-        values.EffetMagique = effetMagique;
         console.log(values);
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagique.php' + '?idObjet=' + idObjet + '';
         console.log(baseUrlBis);
