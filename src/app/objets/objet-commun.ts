@@ -237,7 +237,7 @@ export abstract class ObjetCommun {
     }
 
     getNomsProprieteMagique(): string {
-        console.log(this.proprietesMagiques.length);
+        // console.log(this.proprietesMagiques.length);
         let nomProprietesMagiques = '';
         for (const propriete of this.proprietesMagiques) {
             if (propriete && propriete.title) {

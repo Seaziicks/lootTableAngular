@@ -7,6 +7,8 @@ import {ArmesComponent} from '../objets/armes/armes.component';
 import {ArmuresComponent} from '../objets/armures/armures.component';
 import {ObjetService} from '../services/objet.service';
 import {PersonnageService} from '../services/personnage.service';
+import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import {Observable} from 'rxjs';
 
 export interface SpecialResponse {
     status: number;
@@ -43,7 +45,7 @@ export class LootTableComponent implements OnInit {
 
     personnages: Personnage[];
     personnageCourant: Personnage;
-    idPersonnageSelectionne;
+    idPersonnageSelectionne = 0;
 
 
     ngOnInit(): void {
@@ -67,7 +69,18 @@ export class LootTableComponent implements OnInit {
                 private familleMonstre: FamilleAndMonstreService,
                 private monstreLootChance: MonstreLootChanceService,
                 private objetService: ObjetService,
-                private personnageService: PersonnageService) {
+                private personnageService: PersonnageService,
+                public dialog: MatDialog) {
+    }
+
+    openDialog(): Observable<boolean> {
+        const dialogConfig = new MatDialogConfig();
+        dialogConfig.disableClose = true;
+        dialogConfig.autoFocus = true;
+        dialogConfig.hasBackdrop = true;
+        const dialogRef = this.dialog.open(DialogContentDialogComponent, dialogConfig);
+
+        return dialogRef.afterClosed();
     }
 
     public chargerFamilles(http: HttpClient) {
@@ -231,7 +244,7 @@ export class LootTableComponent implements OnInit {
             this.arme = null;
             this.objetSimple = $event;
 
-            this.sendObjet(this.objetSimple.castToObjetCommunForDB(this.idPersonnageSelectionne));
+            this.checkPersonnageAndSendObjet(this.objetSimple.castToObjetCommunForDB(this.idPersonnageSelectionne));
         }
     }
 
@@ -240,7 +253,7 @@ export class LootTableComponent implements OnInit {
         this.arme = $event;
         this.objetSimple = null;
 
-        this.sendObjet(this.arme.castToObjetCommunForDB(this.idPersonnageSelectionne));
+        this.checkPersonnageAndSendObjet(this.arme.castToObjetCommunForDB(this.idPersonnageSelectionne));
     }
 
     getArmure($event: ArmuresComponent) {
@@ -248,7 +261,21 @@ export class LootTableComponent implements OnInit {
         this.arme = null;
         this.objetSimple = null;
 
-        this.sendObjet(this.armure.castToObjetCommunForDB(this.idPersonnageSelectionne));
+        this.checkPersonnageAndSendObjet(this.armure.castToObjetCommunForDB(this.idPersonnageSelectionne));
+    }
+
+    checkPersonnageAndSendObjet(objetCommunDB: ObjetCommunForDB) {
+        console.log(this.idPersonnageSelectionne);
+        if (this.idPersonnageSelectionne === 0 || !this.idPersonnageSelectionne) {
+            this.openDialog().subscribe(result => {
+                console.log(`Dialog result: ${result}`);
+                if (result) {
+                    this.sendObjet(objetCommunDB);
+                }
+            });
+        } else {
+            this.sendObjet(objetCommunDB);
+        }
     }
 
     sendObjet(objetCommunDB: ObjetCommunForDB) {
@@ -282,3 +309,18 @@ export class LootTableComponent implements OnInit {
         }
     }
 }
+
+@Component({
+    selector: 'app-dialog-content-dialog',
+    template: '<h2 mat-dialog-title>Validation</h2>\n' +
+        '<mat-dialog-content class="mat-typography">\n' +
+        '  <h3>Personnage sélectionné vide</h3>\n' +
+        '  <p>Aucune personnage sélectionné. Êtes-vous sûr de ce choix ?</p>\n' +
+        '</mat-dialog-content>\n' +
+        '<mat-dialog-actions align="end">\n' +
+        '  <button class="btn btn-danger btn-validation-dialog" [mat-dialog-close]="false">Annuler</button>\n' +
+        '  <button class="btn btn-success btn-validation-dialog" [mat-dialog-close]="true" cdkFocusInitial>Valider</button>\n' +
+        '</mat-dialog-actions>',
+    styles: ['.btn-validation-dialog { background: transparent; margin-right: 5px; color: black; }'],
+})
+export class DialogContentDialogComponent {}

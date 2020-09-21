@@ -86,7 +86,8 @@
             <label for="inputPersonnageChoix">Selectionnez un personnage à qui attribuer le drop</label>
             <select id="inputPersonnageChoix" class="form-control" (change)="selectPersonnage()"
                     [(ngModel)]="this.idPersonnageSelectionne">
-                <option *ngFor="let personnage of this.personnages" [value]="+personnage.idPersonnage">
+                <option *ngFor="let personnage of this.personnages" [ngValue]="+personnage.idPersonnage"
+                [selected]="+personnage.idPersonnage === 0">
                     {{personnage.idPersonnage}} - {{personnage.nom}}
                 </option>
             </select>

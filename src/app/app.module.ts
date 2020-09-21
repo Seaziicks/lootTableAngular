@@ -3,7 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {LootTableComponent} from './loot-table/loot-table.component';
+import {DialogContentDialogComponent, LootTableComponent} from './loot-table/loot-table.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
@@ -40,6 +40,7 @@ import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.co
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-magique.component';
+import { ProgressionPersonnageComponent } from './progression-personnage/progression-personnage.component';
 
 
 @NgModule({
@@ -69,6 +70,8 @@ import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-ma
         UnauthorizedUserComponent,
         ContactComponent,
         ProprieteMagiqueComponent,
+        DialogContentDialogComponent,
+        ProgressionPersonnageComponent,
     ],
     imports: [
         BrowserModule,
