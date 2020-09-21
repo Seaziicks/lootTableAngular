@@ -49,6 +49,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
                 this.allArmures = JSON.parse(armuresCourantes) as CategoriesArmures;
             }
         );
+        this.getArrayPourNbProprieteMagique();
     }
 
     isBouclier() {
@@ -158,6 +159,8 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
                 this.nom = special.title;
                 this.getPrixAndCurrency();
             }
+            this.deNombreProprietesMagiques = 1;
+            this.getArrayPourNbProprieteMagique();
         }
     }
 
@@ -261,7 +264,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
     }
 
     selection() {
-        this.valide = true;
+        super.selection();
         this.armureEventEmitter.emit(this);
     }
 
@@ -302,5 +305,12 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
         } as ObjetCommunForDB;
 
         return values;
+    }
+
+    public getAllMagiques() {
+        return this.isSpecial ?
+            this.bouclier ? this.allBoucliersSpeciaux
+                : this.allArmuresSpeciales
+            : this.allProprietesMagiques;
     }
 }

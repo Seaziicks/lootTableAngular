@@ -47,21 +47,6 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
         // this.prix = 0;
     }
 
-    getNomsProprieteMagique(): string {
-        console.log(this.proprietesMagiques.length);
-        let nomProprietesMagiques = '';
-        for (const propriete of this.proprietesMagiques) {
-            if (propriete && propriete.title) {
-                if (nomProprietesMagiques.length > 0) {
-                    nomProprietesMagiques += ' & ' + propriete.title;
-                } else {
-                    nomProprietesMagiques += propriete.title;
-                }
-            }
-        }
-        return nomProprietesMagiques;
-    }
-
     setNom() {
         if (this.proprietesMagiques.length > 0) {
             this.nom = this.parametres[2] + ' ' + this.getNomsProprieteMagique();
@@ -76,9 +61,7 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
     }
 
     selection() {
-        this.valide = true;
-        this.setNom();
-        this.getPrixAndCurrency();
+        super.selection();
         this.objetSimpleEventEmitter.emit(this);
     }
 
@@ -121,21 +104,5 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
         } as ObjetCommunForDB;
 
         return values;
-    }
-
-    creationProprieteMagique(indexProprieteMagique) {
-        if (!(this.proprietesMagiques.length === indexProprieteMagique)) {
-            throw new Error('Incohérence dans les propriétés magiques, dans leurs nombres. Il y aurait du en avoir ' + indexProprieteMagique
-                + ', mais il y en a  ' + this.proprietesMagiques.length  + '.');
-        }
-        this.proprietesMagiques.push(null);
-        console.log('Création d\'une propriété magique, il y en a maintent : ' + this.proprietesMagiques.length);
-    }
-
-    changeProprieteMagique($event) {
-        console.log($event.proprieteMagique);
-        console.log($event.indexProprieteMagique);
-        this.proprietesMagiques[$event.indexProprieteMagique] = $event.proprieteMagique;
-        console.log(this.proprietesMagiques[$event.indexProprieteMagique] = $event.proprieteMagique);
     }
 }

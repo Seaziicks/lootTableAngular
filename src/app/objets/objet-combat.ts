@@ -39,13 +39,6 @@ export abstract class ObjetCombat extends ObjetCommun {
         }
     }
 
-    getNomsProprieteMagique(): string {
-        return this.isSpecial ? ''
-            : this.proprietesMagiques.length < 1 ? ''
-            : this.proprietesMagiques.length < 2 ? this.proprietesMagiques[0].title
-                : this.proprietesMagiques[0].title + ' et ' + this.proprietesMagiques[1].title;
-    }
-
     reset() {
         this.proprietesMagiques = [];
         this.bonus = 1;

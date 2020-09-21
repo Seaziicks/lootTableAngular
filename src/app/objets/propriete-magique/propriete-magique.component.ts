@@ -10,7 +10,7 @@ export class ProprieteMagiqueComponent implements OnInit {
     @Input() allProprietesMagiques: SortedMagicalProperty;
     @Input() indexProprieteMagique: number;
     @Input() nom: string;
-    @Input() type: string;
+    @Input() dePuissanceSpecial: number;
     proprieteMagique: MagicalProperty;
     proprieteMagiqueOriginal: MagicalProperty;
     @Output() creationProprieteMagiqueEventEmitter = new EventEmitter<number>();
@@ -33,6 +33,10 @@ export class ProprieteMagiqueComponent implements OnInit {
     ngOnInit(): void {
         // this.proprieteMagiqueOriginal = JSON.parse(JSON.stringify(this.proprieteMagique)) as MagicalProperty;
         this.creationProprieteMagiqueEventEmitter.emit(this.indexProprieteMagique);
+        console.log(this.dePuissanceSpecial);
+        if (this.dePuissanceSpecial) {
+            this.dePuissance = this.dePuissanceSpecial;
+        }
     }
 
     trackByFn(index, item) {
@@ -164,10 +168,13 @@ export class ProprieteMagiqueComponent implements OnInit {
     }
 
     loadComplete(): boolean {
+        // console.log(this.allProprietesMagiques);
+        // console.log(!!this.allProprietesMagiques);
         return !!this.allProprietesMagiques;
     }
 
     getProprietesMagiques(proprietesMagiques: SortedMagicalProperty) {
+        // console.log(proprietesMagiques);
         return this.dePuissance === 1 ? proprietesMagiques.weakAndSmall.concat(proprietesMagiques.unknown)
             : this.dePuissance === 2 ? proprietesMagiques.moderate.concat(proprietesMagiques.unknown)
                 : this.dePuissance === 3 ? proprietesMagiques.strongAnfPowerful.concat(proprietesMagiques.unknown) :

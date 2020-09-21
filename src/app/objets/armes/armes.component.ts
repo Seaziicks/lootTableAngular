@@ -55,6 +55,7 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
                 this.allArmesExotiques = JSON.parse(armesCourantes) as CategoriesArmes;
             }
         );
+        this.getArrayPourNbProprieteMagique();
     }
 
     setBonusArme() {
@@ -137,6 +138,8 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
             this.nom = armeSpecial.title;
             this.getPrixAndCurrency();
         }
+        this.deNombreProprietesMagiques = 1;
+        this.getArrayPourNbProprieteMagique();
     }
 
     getPrixFromBonus() {
@@ -269,7 +272,7 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     }
 
     selection() {
-        this.valide = true;
+        super.selection();
         this.armeEventEmitter.emit(this);
     }
 
@@ -310,5 +313,9 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
         } as ObjetCommunForDB;
 
         return values;
+    }
+
+    public getAllMagiques() {
+        return this.isSpecial ? this.allArmesSpeciales : this.allProprietesMagiques;
     }
 }

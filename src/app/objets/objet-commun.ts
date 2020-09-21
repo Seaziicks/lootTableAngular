@@ -5,8 +5,6 @@ import {Component, Injectable, Input} from '@angular/core';
 @Injectable()
 export abstract class ObjetCommun {
 
-    @Input() personnage: Personnage;
-
     maledictionComponent: MaledictionsComponent;
     maudit: boolean;
 
@@ -213,11 +211,50 @@ export abstract class ObjetCommun {
     }
 
     getArrayPourNbProprieteMagique() {
+        this.proprietesMagiquesFakes = [];
         this.proprietesMagiquesFakes = [].constructor(this.deNombreProprietesMagiques);
     }
 
     objetValidable() {
         return this.fauxNom || this.afficherNom;
+    }
+
+    creationProprieteMagique(indexProprieteMagique) {
+        if (!(this.proprietesMagiques.length === indexProprieteMagique)) {
+            throw new Error('Incohérence dans les propriétés magiques, dans leurs nombres. Il y aurait du en avoir ' + indexProprieteMagique
+                + ', mais il y en a  ' + this.proprietesMagiques.length  + '.');
+        }
+        this.proprietesMagiques.push(null);
+        console.log('Création d\'une propriété magique, il y en a maintent : ' + this.proprietesMagiques.length);
+    }
+
+    changeProprieteMagique($event) {
+        console.log($event.proprieteMagique);
+        console.log($event.indexProprieteMagique);
+        this.proprietesMagiques[$event.indexProprieteMagique] = $event.proprieteMagique;
+        console.log(this.proprietesMagiques[$event.indexProprieteMagique] = $event.proprieteMagique);
+        this.setNom();
+    }
+
+    getNomsProprieteMagique(): string {
+        console.log(this.proprietesMagiques.length);
+        let nomProprietesMagiques = '';
+        for (const propriete of this.proprietesMagiques) {
+            if (propriete && propriete.title) {
+                if (nomProprietesMagiques.length > 0) {
+                    nomProprietesMagiques += ' & ' + propriete.title;
+                } else {
+                    nomProprietesMagiques += propriete.title;
+                }
+            }
+        }
+        return nomProprietesMagiques;
+    }
+
+    selection() {
+        this.valide = true;
+        this.setNom();
+        this.getPrixAndCurrency();
     }
 }
 

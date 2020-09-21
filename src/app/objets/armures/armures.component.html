@@ -97,7 +97,19 @@
                 </div>
             </div>
 
-            <div *ngIf="this.isMagique" style="width: 100%">
+            <div class="col-md-2 mb-3" *ngIf="!this.isSpecial && this.dePuissance && this.deBonus && this.isMagique">
+                <label for="NbPropMag">Nombre de propriétés magiques (max : 10)
+                </label>
+                <input min="1" max="10" type="number" class="form-control"
+                       id="NbPropMag"
+                       name="NbPropMag"
+                       placeholder="Nombre propriétés magiques"
+                       [(ngModel)]="this.deNombreProprietesMagiques"
+                       (ngModelChange)="this.getArrayPourNbProprieteMagique()"
+                       required>
+            </div>
+
+            <!--div *ngIf="this.isMagique" style="width: 100%">
                 <h3>Cette armure sera magique</h3>
                 <div class="col-md-2 mb-3">
                     <label for="PropMag">Dé de propriété magique
@@ -112,13 +124,14 @@
                            (ngModelChange)="this.getProprieteMagique()"
                            required>
                 </div>
-            </div>
+            </div-->
         </div>
 
 
     </form>
-    <div style="width: 100%" *ngIf="this.nom && !this.modificationEnCours">
-        <div style="width: 100%" *ngIf="this.nom">
+
+    <div style="width: 100%" *ngIf="this.nom">
+        <div style="width: 100%" *ngIf="!this.modificationEnCours">
             <h1>Résultat</h1>
             <h3><span [innerHTML]="this.nom"></span></h3>
             <h4 *ngIf="this.fauxNom"> Faux Nom : {{this.fauxNom}}</h4>
@@ -126,137 +139,45 @@
                 <span *ngIf="this.bonus">- Bonus +{{this.bonus}}</span></span>
                 <span *ngIf="this.prix"> - Prix : {{this.prix.toLocaleString("fr")}} po</span>
             </p>
-
-            <ng-container *ngFor="let proprieteMagique of this.proprietesMagiques;">
-                <h4>{{proprieteMagique.title}}</h4>
-                <span *ngFor="let description of proprieteMagique.description; let index = index;">
-                    <span [innerHTML]="description"></span><br/>
-
-                    <ng-container *ngFor="let table of proprieteMagique.table;">
-                        <span *ngIf="table.position === index + 1">
-                            <table cellspacing="1" border="1">
-                                <tbody>
-                                <tr *ngFor="let th of table.title; let thIndex = index">
-                                    <ng-container *ngFor="let title of th; let titleIndex = index">
-                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
-                                            [colSpan]="table.title[1].length / table.title[0].length">{{title}}</th>
-                                        <ng-template #elseBlock>
-                                            <th>{{title}}</th>
-                                        </ng-template>
-                                    </ng-container>
-                                </tr>
-                                <tr *ngFor="let td of table.tr; let tdIndex = index">
-                                    <ng-container *ngFor="let content of td">
-                                        <td>{{content}}</td>
-                                    </ng-container>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </span>
-                    </ng-container>
-
-
-                    <ng-container *ngFor="let ul of proprieteMagique.ul;">
-                        <span *ngIf="+ul.position === index + 1">
-                            <ul>
-                                <li *ngFor="let li of ul.li;" [innerHTML]="li"></li>
-                            </ul>
-                        </span>
-                    </ng-container>
-                </span>
-                <br/>
-                <br/>
-                <span [innerHTML]="proprieteMagique.infos.data"></span><br/><br/>
-            </ng-container>
-            <div *ngIf="this.materiau"><span [innerHTML]="this.materiau.nom"></span> : <span>{{materiau.effet}}</span>
-            </div>
+            <div *ngIf="this.materiau"><span [innerHTML]="this.materiau.nom"></span> : <span>{{materiau.effet}}</span></div>
+            <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier objet</button>
         </div>
-        <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
-        <button *ngIf="!this.valide else objetValidee" (click)="this.selection()">Valider objet</button>
-        <ng-template #objetValidee>
-            <button (click)="this.deselection()">Dévalider objet</button>
-        </ng-template>
-    </div>
 
-    <div style="width: 100%" *ngIf="this.proprietesMagiques.length > 0 && this.modificationEnCours">
-        <h1>Résultat de l'arme</h1>
-        <h3><textarea [(ngModel)]="this.nom"></textarea></h3>
-        <mat-form-field appearance="fill" class="fauxNom">
-            <mat-label>Faux nom</mat-label>
-            <textarea [(ngModel)]="this.fauxNom" rows="1" matInput></textarea>
-        </mat-form-field>
-        <p><textarea [(ngModel)]="this.type"></textarea><span *ngIf="this.armure"> - <textarea [(ngModel)]="this.armure.bonArm"></textarea> armure
+        <div style="width: 100%" *ngIf="this.modificationEnCours">
+            <h1>Résultat de l'arme</h1>
+            <h3><textarea [(ngModel)]="this.nom"></textarea></h3>
+            <mat-form-field appearance="fill" class="fauxNom">
+                <mat-label>Faux nom</mat-label>
+                <textarea [(ngModel)]="this.fauxNom" rows="1" matInput></textarea>
+            </mat-form-field>
+            <p><textarea [(ngModel)]="this.type"></textarea><span *ngIf="this.armure"> - <textarea [(ngModel)]="this.armure.bonArm"></textarea> armure
                 <span *ngIf="this.proprietesMagiques.length > 0">- Bonus +<textarea [(ngModel)]="this.bonus"></textarea></span></span>
-            <span *ngIf="this.prix"> - Prix : <textarea [(ngModel)]="this.prix"></textarea> po</span>
-        </p>
+                <span *ngIf="this.prix"> - Prix : <textarea [(ngModel)]="this.prix"></textarea> po</span>
+            </p>
 
-        <ng-container
-            *ngFor="let proprieteObjet of this.proprietesMagiques; let indexPropriete = index; trackBy: trackByFn">
-            <h4><textarea [(ngModel)]="this.proprietesMagiques[indexPropriete].title"></textarea></h4>
-            <span
-                *ngFor="let description of this.proprietesMagiques[indexPropriete].description; let indexDescription = index; trackBy: trackByFn">
-                    <textarea
-                        [(ngModel)]="this.proprietesMagiques[indexPropriete].description[indexDescription]"></textarea><br/>
+            <div *ngIf="this.materiau">
+                <textarea [(ngModel)]="this.materiau.nom"></textarea> :
+                <textarea [(ngModel)]="this.materiau.effet"></textarea>
+            </div>
 
-                    <ng-container
-                        *ngFor="let table of this.proprietesMagiques[indexPropriete].table; let indexTable = index">
-                        <span *ngIf="+table.position === indexDescription + 1">
-                            <table>
-                                <tbody>
-                                <tr *ngFor="let th of this.proprietesMagiques[indexPropriete].table[indexTable].title; let thIndex = index">
-                                    <ng-container
-                                        *ngFor="let title of this.proprietesMagiques[indexPropriete].table[indexTable].title[thIndex]; let tdIndex = index; trackBy: trackByFn">
-                                        <th *ngIf="thIndex === 0 && table.title.length > 1 && table.title[0].length < table.title[1].length; else elseBlock"
-                                            [colSpan]="table.title[1].length / table.title[0].length">
-                                            <textarea
-                                                [(ngModel)]="this.proprietesMagiques[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
-                                        </th>
-                                        <ng-template #elseBlock>
-                                            <th>
-                                                <textarea
-                                                    [(ngModel)]="this.proprietesMagiques[indexPropriete].table[indexTable].title[thIndex][tdIndex]"></textarea>
-                                            </th>
-                                        </ng-template>
-                                    </ng-container>
-                                </tr>
-                                <tr *ngFor="let td of this.proprietesMagiques[indexPropriete].table[indexTable].tr; let trIndex = index">
-                                    <ng-container
-                                        *ngFor="let content of this.proprietesMagiques[indexPropriete].table[indexTable].tr[trIndex]; let tdIndex = index; trackBy: trackByFn">
-                                        <td>
-                                            <textarea
-                                                [(ngModel)]="this.proprietesMagiques[indexPropriete].table[indexTable].tr[trIndex][tdIndex]"></textarea>
-                                        </td>
-                                    </ng-container>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </span>
-                    </ng-container>
-
-                    <ng-container *ngFor="let shit of this.proprietesMagiques[indexPropriete].ul; let indexUl = index;">
-                        <span
-                            *ngIf="this.proprietesMagiques[indexPropriete].ul[indexUl].position === indexDescription + 1">
-                            <ul>
-                                <li *ngFor="let shitBis of this.proprietesMagiques[indexPropriete].ul[indexUl].li; let indexLi = index; trackBy: trackByFn">
-                                    <textarea
-                                        [(ngModel)]="this.proprietesMagiques[indexPropriete].ul[indexUl].li[indexLi]"
-                                        [name]="'positon'+this.proprietesMagiques[indexPropriete].ul[indexUl].position+'ul'+indexUl+'li'+indexLi"></textarea>
-                                </li>
-                            </ul>
-                        </span>
-                    </ng-container>
-                </span>
-            <br/>
-            <br/>
-            <ng-container
-                *ngFor="let shit of this.proprietesMagiques[indexPropriete].infos.data; let indexData = index; trackBy: trackByFn">
-                <textarea [(ngModel)]="this.proprietesMagiques[indexPropriete].infos.data[indexData]"></textarea>
-            </ng-container>
-        </ng-container>
-        <div *ngIf="this.materiau"><textarea [(ngModel)]="this.materiau.nom"></textarea> : <textarea
-            [(ngModel)]="this.materiau.effet"></textarea>
+            <button (click)="this.modifierContenu()">Valider objet</button>
         </div>
-        <button (click)="this.modifierContenu()">Valider propriété magique</button>
-        <button (click)="this.resetContenu()">Reset propriété magique</button>
     </div>
+
+    <div *ngFor="let proprieteMagique of this.proprietesMagiquesFakes; let indexPropriete = index">
+        <app-propriete-magique *ngIf="this.isSpecial || this.isMagique"
+                               [allProprietesMagiques]="this.getAllMagiques()"
+                               [indexProprieteMagique]="indexPropriete"
+                               [nom]="'Propriété magique'"
+                               [dePuissanceSpecial]="this.isSpecial ? this.dePuissance : null"
+                               (creationProprieteMagiqueEventEmitter)="this.creationProprieteMagique($event)"
+                               (proprieteMagiqueEventEmitter)="changeProprieteMagique($event)"
+                               (resetProprieteMagiqueEventEmitter)="this.getProprieteMagique()"></app-propriete-magique>
+    </div>
+
+    <button class="btn btn-primary" *ngIf="!this.valide else objetValidee" (click)="this.selection()" [disabled]="!this.objetValidable()"
+            matTooltip="L'objet doit avoir un faux nom, ou bien afficher son nom réel.">Valider objet</button>
+    <ng-template #objetValidee>
+        <button (click)="this.deselection()">Dévalider objet</button>
+    </ng-template>
 </div>
