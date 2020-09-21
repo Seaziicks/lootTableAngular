@@ -280,6 +280,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
             idObjet: null,
             idPersonnage: idPersonnageSelectionnee,
             nom: this.nom,
+            fauxNom: this.fauxNom,
             bonus: this.bonus,
             type: this.type,
             prix: this.prix + this.prixProprieteMagique,

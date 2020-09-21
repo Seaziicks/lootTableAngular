@@ -45,9 +45,9 @@ export class GestionObjetComponent implements OnInit {
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
             this.loadObjetsNames();
         } else {
-            this.currentPersonnage = null;
-            this.objetMinimisations = null;
-            // TODO: Récupérer tous les objets non assignés
+            this.objetCourantID = null;
+            this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
+            this.loadObjetsNames();
         }
     }
 

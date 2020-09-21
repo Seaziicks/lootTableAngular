@@ -3,7 +3,6 @@
         <div id="caracterSelection" class="caracterSelection">
             <label for="inputPersonnageChoix">Selectionnez un personnage pour visionner ses objets</label>
             <select id="inputPersonnageChoix" class="form-control" (change)="selectPersonnage()" [(ngModel)]="this.idPersonnageSelectionne">
-                <option value="0"> Objets non possédés</option>
                 <option *ngFor="let personnage of this.personnages" [value]="personnage.idPersonnage">
                     {{personnage.idPersonnage}} - {{personnage.nom}}
                 </option>

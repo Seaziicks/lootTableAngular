@@ -696,13 +696,13 @@ export class PersonnageObjetComponent implements OnInit {
 
     areDifferentObjets(objet1: ObjetCommunFromDB, objet2: ObjetCommunFromDB): boolean {
         const objetTemp1 = JSON.parse(JSON.stringify(objet1)) as ObjetCommunFromDB;
-        objetTemp1.effetMagique = null;
-        objetTemp1.materiau = null;
-        objetTemp1.malediction = null;
+        // objetTemp1.effetMagique = null;
+        // objetTemp1.materiau = null;
+        // objetTemp1.malediction = null;
         const objetTemp2 = JSON.parse(JSON.stringify(objet2)) as ObjetCommunFromDB;
-        objetTemp2.effetMagique = null;
-        objetTemp2.materiau = null;
-        objetTemp2.malediction = null;
+        // objetTemp2.effetMagique = null;
+        // objetTemp2.materiau = null;
+        // objetTemp2.malediction = null;
 
         // console.log(objetTemp1);
         // console.log(objetTemp2);
