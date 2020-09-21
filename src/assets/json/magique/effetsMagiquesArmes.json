@@ -38,9 +38,9 @@
                 "Une arme d'âme liée est une arme ayant la capacité d'être utilisée comme un réceptacle à essentia.",
                 "Pour chaque point d'essentia investie dans une arme d'âme liée, l'arme augmente son bonus d'altération de 1 (pour un maximum de +5). Une arme d'âme liée à une capacité max dépendant non pas du niveau de son utilisateur mais de sa puissance. Une arme d'âme liée mineure à une capacité de 2, une majeure de 4.",
                 "De plus, une arme d'âme liée peut être lié aux chakras suivants pour obtenir des effets supplémentaires :",
-                ": le porteur gagne un bonus d'intuition de +2 à ses jets pour confirmer un coup critique avec cette arme.",
-                ": le personnage gagne un bonus d'intuition de +2 à ses jets d'initiative s'il a cette arme à main.",
-                ": le personnage peut, une fois par round, relancer toute chance de rater une cible à cause de son camouflage."
+                "<em>Bras</em>: le porteur gagne un bonus d'intuition de +2 à ses jets pour confirmer un coup critique avec cette arme.",
+                "<em>Mains</em>: le personnage gagne un bonus d'intuition de +2 à ses jets d'initiative s'il a cette arme à main.",
+                "<em>Yeux</em>: le personnage peut, une fois par round, relancer toute chance de rater une cible à cause de son camouflage."
             ],
             "infos": {
                 "data": [
