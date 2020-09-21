@@ -1075,9 +1075,9 @@
             "description": [
                 "Un anneau de soin mystique confère une amélioration des pouvoirs de soins de son porteur. Il gagne un bonus de compétence de +1 à son niveau de lanceur de sorts lorsqu'il lace un sort de soin.",
                 "De plus, cet anneau possède 3 charges, qui se renouvellent chaque jour. Dépenser 1 charge ou plus au prix d'une action rapide  permet d'augmenter les soins conférés par le prochain sort de soin lancé par le personnage. Ce sort doit être lancé avant le début de son prochain tour.",
-                ": +2d6 de soins",
-                ": +3d6 de soins",
-                ": +4d6 de soins"
+                "<em>1 charge</em>: +2d6 de soins",
+                "<em>2 charge</em>: +3d6 de soins",
+                "<em>3 charge</em>: +4d6 de soins"
             ],
             "infos": {
                 "data": [

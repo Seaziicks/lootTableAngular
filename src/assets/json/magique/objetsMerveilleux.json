@@ -10626,9 +10626,9 @@
                 "Ce gantelet ressemble généralement à un gantelet classique, mise à part que les doigts ressemblent à des dagues.",
                 "A volonté et au prix d'une action rapide, le personne peut faire apparaitre dans la main portant le gantelet une dague (non-magique) si cette main est libre. La dague disparait au bout de 3 rounds.",
                 "De plus, un gantelet de lames infinies possède 5 charges qui sont renouvelées tous les jours. Le porteur peut lorsqu'il crée une dague, utilisée 1 charge ou plus afin d'avoir une dague plus puissante :",
-                ": dague +3",
-                ": dague +3 de lancer",
-                ": dague +3 de lancer tueuse (le type/sous-type est choisi au moment de l'activation)"
+                "<em>1 charge</em>: dague +3",
+                "<em>3 charges</em>: dague +3 de lancer",
+                "<em>5 charges</em>: dague +3 de lancer tueuse (le type/sous-type est choisi au moment de l'activation)"
             ],
             "infos": {
                 "data": [
