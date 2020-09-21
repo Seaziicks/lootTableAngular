@@ -28,4 +28,10 @@ export class PersonnageService {
         return http.request('GET', baseUrlBis).toPromise();
     }
 
+    getProgressionPersonnage(http: HttpClient) {
+        const baseUrlBis = BASE_URL + 'progressionPersonnage.php';
+        console.log(baseUrlBis);
+        return http.request('GET', baseUrlBis).toPromise();
+    }
+
 }

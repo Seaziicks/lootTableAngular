@@ -29,3 +29,12 @@ declare interface StatistiquesParNiveau {
     vitalite: number;
     mana: number;
 }
+
+declare interface ProgressionPersonnage {
+    idProgressionPersonnage: number;
+    niveau: number;
+    statistiques: boolean;
+    nombreStatistiques: number;
+    pointCompetence: boolean;
+    nombrePointsCompetences: number;
+}

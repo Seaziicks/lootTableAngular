@@ -17,9 +17,11 @@ import {UserCreateComponent} from './user/user-create/user-create.component';
 import {AuthGuard} from './auth/auth.guard';
 import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
+import {ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
 
 
 const routes: Routes = [
+    {path: 'progression', component: ProgressionPersonnageComponent},
     {path: 'unauthorized', component: UnauthorizedUserComponent},
     {path: 'deconnexion', component: UserDisconnectComponent},
     {path: 'signin', component: UserCreateComponent},
