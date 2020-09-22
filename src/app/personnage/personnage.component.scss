@@ -41,7 +41,7 @@ body {
     margin: 0 auto;
     padding: 1px;
     // margin: -1px;
-    min-height : 100vh;
+    min-height: calc(100vh - 64px);
     width: 100%;
 }
 

@@ -40,7 +40,7 @@ import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.co
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-magique.component';
-import { ProgressionPersonnageComponent } from './progression-personnage/progression-personnage.component';
+import {InformationSnackBarComponent, ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
 
 
 @NgModule({
@@ -72,6 +72,7 @@ import { ProgressionPersonnageComponent } from './progression-personnage/progres
         ProprieteMagiqueComponent,
         DialogContentDialogComponent,
         ProgressionPersonnageComponent,
+        InformationSnackBarComponent,
     ],
     imports: [
         BrowserModule,

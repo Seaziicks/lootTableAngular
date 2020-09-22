@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import {BASE_URL, URL_PERSONNAGE, URL_STATISTIQUE} from './rest.service';
+import {HttpMethods} from '../interface/http-methods.enum';
 
 @Injectable({
     providedIn: 'root'
@@ -32,6 +33,19 @@ export class PersonnageService {
         const baseUrlBis = BASE_URL + 'progressionPersonnage.php';
         console.log(baseUrlBis);
         return http.request('GET', baseUrlBis).toPromise();
+    }
+
+    progressionPersonnage(http: HttpClient, httpMethod: HttpMethods, idProgressionPersonnage: number,
+                          progressionPersonnage: ProgressionPersonnage): Promise<string> {
+        const values = {idProgressionPersonnage: undefined, ProgressionPersonnage: undefined};
+        values.idProgressionPersonnage = idProgressionPersonnage;
+        values.ProgressionPersonnage = progressionPersonnage;
+        console.log(values);
+        const baseUrlBis = BASE_URL + 'progressionPersonnage.php' + '?idProgressionPersonnage=' + idProgressionPersonnage + '';
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('ProgressionPersonnage', JSON.stringify(values));
+
+        return http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
     }
 
 }

@@ -92,9 +92,9 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.DELETE, this.effetsMagiquesDecouverts[indexEffetDecouvert]).then(
             (data: any) => {
                 console.log(data);
-                const respone: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 setTimeout( () => {
-                    this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status); }, 1250 );
+                    this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status); }, 1250 );
             }
         );
         this.modificationsEnCours[indexEffetDecouvert] = false;
@@ -107,9 +107,9 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.PUT, this.effetsMagiquesDecouverts[indexEffetDecouvert]).then(
             (data: any) => {
                 console.log(data);
-                const respone: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 setTimeout( () => {
-                    this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status); }, 1250 );
+                    this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status); }, 1250 );
             }
         );
         this.modificationsEnCours[indexEffetDecouvert] = false;
@@ -143,9 +143,9 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.POST, effetMagiqueDecouvert).then(
             (data: any) => {
                 console.log(data);
-                const respone: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 setTimeout( () => {
-                    this.banner.loadComponent(respone.status_message, JSON.stringify(respone.data), '' + respone.status); }, 1250 );
+                    this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status); }, 1250 );
             }
         );
         this.effetDecouvertAAjouter = null;
