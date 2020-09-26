@@ -105,8 +105,13 @@ export class LootTableComponent implements OnInit {
     selectionLoot(event: any) {
         if (+event.target.value > 20) {
             event.target.value = 20;
+        } else if (+event.target.value < 0) {
+            event.target.value = 0;
+        } else if (isNaN(event.target.value)) {
+            event.target.value = null;
+            this.deDeDrop = null;
         }
-        this.deDeDrop = +event.target.value;
+        // this.deDeDrop = +event.target.value;
         this.lootSelectionne = this.monstreSelectionneLootChance.filter(lc => +lc.roll === this.deDeDrop)[0];
     }
 

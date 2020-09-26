@@ -18,9 +18,11 @@ import {AuthGuard} from './auth/auth.guard';
 import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 import {ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
+import {GestionNiveauJoueurComponent} from './gestion-niveau-joueur/gestion-niveau-joueur.component';
 
 
 const routes: Routes = [
+    {path: 'niveau', component: GestionNiveauJoueurComponent},
     {path: 'progression', component: ProgressionPersonnageComponent},
     {path: 'unauthorized', component: UnauthorizedUserComponent},
     {path: 'deconnexion', component: UserDisconnectComponent},

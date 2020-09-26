@@ -2,6 +2,7 @@ declare interface Personnage {
     idPersonnage: number;
     nom: string;
     niveau: number;
+    niveauEnAttente: number;
     intelligence: number;
     force: number;
     agilite: number;
@@ -9,6 +10,8 @@ declare interface Personnage {
     constitution: number;
     vitalite: number;
     mana: number;
+    deVitaliteNaturelle: number;
+    deManaNaturel: number;
     statistiquesParNiveau: StatistiquesParNiveau[];
 }
 
@@ -25,9 +28,13 @@ declare interface StatistiquesParNiveau {
     force: number;
     agilite: number;
     sagesse: number;
-    constitutuion: number;
+    constitution: number;
     vitalite: number;
+    vitaliteNaturelle: number;
+    deVitalite: number;
     mana: number;
+    manaNaturel: number;
+    deMana: number;
 }
 
 declare interface ProgressionPersonnage {

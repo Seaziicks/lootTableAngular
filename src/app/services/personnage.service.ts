@@ -41,9 +41,28 @@ export class PersonnageService {
         values.idProgressionPersonnage = idProgressionPersonnage;
         values.ProgressionPersonnage = progressionPersonnage;
         console.log(values);
-        const baseUrlBis = BASE_URL + 'progressionPersonnage.php' + '?idProgressionPersonnage=' + idProgressionPersonnage + '';
+        const baseUrlBis = BASE_URL + 'progressionPersonnage.php' + '?idProgressionPersonnage=' + idProgressionPersonnage;
         console.log(baseUrlBis);
         const params = new HttpParams().set('ProgressionPersonnage', JSON.stringify(values));
+
+        return http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    getNiveauEnAttente(http: HttpClient, niveau: number): Promise<any> {
+        const baseUrlBis = BASE_URL + 'progressionPersonnage.php?niveau=' + niveau;
+        console.log(baseUrlBis);
+
+        return http.request('GET', baseUrlBis).toPromise();
+    }
+
+    monterNiveau(http: HttpClient, httpMethod: HttpMethods, idPersonnage: number, niveau: StatistiquesParNiveau) {
+        const values = {idPersonnage: undefined, Niveau: undefined};
+        values.idPersonnage = idPersonnage;
+        values.Niveau = niveau;
+        console.log(values);
+        const baseUrlBis = BASE_URL + 'monterNiveau.php' + '?idPersonnage=' + idPersonnage;
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('Niveau', JSON.stringify(values));
 
         return http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
     }

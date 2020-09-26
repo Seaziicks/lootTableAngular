@@ -218,13 +218,16 @@ export class UserCreateComponent implements OnInit {
             idPersonnage: this.idPersonnage ? this.idPersonnage : null,
             nom: this.personnage.value ? this.personnage.value : null,
             niveau: 0,
+            niveauEnAttente: 0,
             intelligence: 0,
             force: 0,
             agilite: 0,
             sagesse: 0,
             constitution: 0,
             vitalite: 0,
+            deVitaliteNaturelle: 0,
             mana: 0,
+            deManaNaturel: 0,
             statistiquesParNiveau: null,
         };
 

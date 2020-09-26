@@ -45,7 +45,8 @@ export class ProgressionPersonnageComponent implements OnInit {
 
 
     ajouterLigne() {
-        const lastProgression = this.progressionPersonnage[this.progressionPersonnage.length - 1];
+        // const lastProgression = this.progressionPersonnage[this.progressionPersonnage.length - 1];
+        const lastProgression = this.progressionPersonnage[0];
         const newProgression = {
             idProgressionPersonnage: null, niveau: lastProgression.niveau + 1, statistiques: false,
             nombreStatistiques: 0, pointCompetence: false, nombrePointsCompetences: 0
@@ -59,7 +60,8 @@ export class ProgressionPersonnageComponent implements OnInit {
                 if (response.status > 199 && response.status < 299) {
                     console.log(response.data as ProgressionPersonnage);
                     newProgression.idProgressionPersonnage = (response.data as ProgressionPersonnage).idProgressionPersonnage;
-                    this.progressionPersonnage.push(newProgression);
+                    // this.progressionPersonnage.push(newProgression);
+                    this.progressionPersonnage.unshift(newProgression);
                     this.table.renderRows();
                 } else if (response.status === 409) {
                     this.openSnackBar('Niveau déjà défini', 'Erreur');
@@ -87,7 +89,8 @@ export class ProgressionPersonnageComponent implements OnInit {
                 const response: SpecialResponse = JSON.parse(data);
                 this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
                 if (response.status > 199 && response.status < 299) {
-                    this.progressionPersonnage.pop();
+                    // this.progressionPersonnage.pop();
+                    this.progressionPersonnage.shift();
                     this.table.renderRows();
                 }
             }

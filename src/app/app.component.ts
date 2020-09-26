@@ -3,6 +3,8 @@ import {AuthService} from './auth/auth.service';
 import {HttpClient} from '@angular/common/http';
 import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
+import {MatIconRegistry} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
@@ -14,7 +16,21 @@ export class AppComponent implements OnInit {
 
     constructor(private authService: AuthService,
                 private http: HttpClient,
-                private router: Router) {
+                private router: Router,
+                private matIconRegistry: MatIconRegistry,
+                private domSanitizer: DomSanitizer) {
+        this.matIconRegistry.addSvgIcon(
+            `statistiqueAugmentation`,
+            this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/fond/health-increase.svg`)
+        );
+        this.matIconRegistry.addSvgIcon(
+            `statistiqueDiminution`,
+            this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/fond/health-decrease.svg`)
+        );
+        this.matIconRegistry.addSvgIcon(
+            `minus`,
+            this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/fond/pounceTest.svg`)
+        );
     }
 
     ngOnInit(): void {

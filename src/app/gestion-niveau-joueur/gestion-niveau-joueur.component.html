@@ -1,0 +1,251 @@
+<div class="globalContainer">
+
+    <div class="nouveauNiveau" *ngIf="this.personnage && this.personnage.niveauEnAttente">
+        <div>Nombre de points à affecter : {{this.pointsDispos}}</div>
+        <div>Nombre de points restants : {{this.nbPointStatistiqueRestant()}}</div>
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Intelligence</mat-label>
+                <input type="number" name="nouveauNiveauIntelligence" matInput min="0" [max]="this.pntStatDispo('intelligence')"
+                       [(ngModel)]="nouveauNiveau.intelligence"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.intelligence < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('intelligence') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('intelligence')"svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('intelligence') || nouveauNiveau.intelligence < 1}"
+                          (click)="this.diminuerStatistique('intelligence')"svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Force</mat-label>
+                <input type="number" name="nouveauNiveauForce" matInput min="0" [max]="this.pntStatDispo('force')"
+                       [(ngModel)]="nouveauNiveau.force"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.force < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('force') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('force')"svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('force') || nouveauNiveau.force < 1}"
+                          (click)="this.diminuerStatistique('force')"svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Agilité</mat-label>
+                <input type="number" name="nouveauNiveauAgilite" matInput min="0" [max]="this.pntStatDispo('agilite')"
+                       [(ngModel)]="nouveauNiveau.agilite"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.agilite < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('agilite') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('agilite')"svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('agilite') || nouveauNiveau.agilite < 1}"
+                          (click)="this.diminuerStatistique('agilite')"svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Sagesse</mat-label>
+                <input type="number" name="nouveauNiveauSagesse" matInput [(ngModel)]="nouveauNiveau.sagesse"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.sagesse < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('sagesse') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('sagesse')"svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('sagesse') || nouveauNiveau.sagesse < 1}"
+                          (click)="this.diminuerStatistique('sagesse')"svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Constitution</mat-label>
+                <input type="number" name="nouveauNiveauConstitution" min="0" [max]="this.pntStatDispo('constitution')"
+                       (change)="this.triggerVitaliteNaturelle()" matInput [(ngModel)]="nouveauNiveau.constitution"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.constitution < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('constitution') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('constitution'); this.triggerVitaliteNaturelle()"
+                          svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('constitution') || nouveauNiveau.constitution < 1}"
+                          (click)="this.diminuerStatistique('constitution'); this.triggerVitaliteNaturelle()"
+                          svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+        </form>
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Vitalité</mat-label>
+                <input type="number" name="nouveauNiveauVitalite" matInput min="0" [max]="this.pntStatDispo('vitalite')"
+                       [(ngModel)]="nouveauNiveau.vitalite"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.vitalite < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('vitalite') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('vitalite')"svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('vitalite') || nouveauNiveau.vitalite < 1}"
+                          (click)="this.diminuerStatistique('vitalite')"svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Dé vitalite (1D{{this.personnage.deVitaliteNaturelle}})</mat-label>
+                <input type="number" min="0" [max]="this.personnage.deVitaliteNaturelle" name="nouveauNiveauDeVitalite" matInput
+                       [(ngModel)]="nouveauNiveau.deVitalite" (keyup)="this.checkDeVitalite($event)">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Mana</mat-label>
+                <input type="number" name="nouveauNiveauMana" matInput min="0" [max]="this.pntStatDispo('mana')"
+                       [(ngModel)]="nouveauNiveau.mana"
+                       [disabled]="!this.pointStatistiqueRestant() && this.nouveauNiveau.mana < 1"
+                       (keydown)="$event.preventDefault()">
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('mana') || !this.pointStatistiqueRestant()}"
+                          (click)="this.augmenterStatistique('mana')"svgIcon="statistiqueAugmentation" class="customMatIcon">
+                </mat-icon>
+                <mat-icon matSuffix [ngClass]="{'hidden': !this.isValide('mana') || nouveauNiveau.mana < 1}"
+                          (click)="this.diminuerStatistique('mana')"svgIcon="minus" class="customMatIcon minusMatIcon">
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Dé mana (1D{{this.personnage.deManaNaturel}})</mat-label>
+                <input type="number" min="0" [max]="this.personnage.deManaNaturel" name="nouveauNiveauDeMana" matInput
+                       [(ngModel)]="nouveauNiveau.deMana" (keyup)="this.checkDeMana($event)">
+            </mat-form-field>
+
+        </form>
+
+        <form class="example-form">
+
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Vitalite naturelle</mat-label>
+                <input type="number" name="nouveauNiveauVitaliteNaturelle" matInput [disabled]="true" [(ngModel)]="nouveauNiveau.vitaliteNaturelle">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Mana naturel</mat-label>
+                <input type="number" name="nouveauNiveauManaNaturel" matInput [disabled]="true" [(ngModel)]="nouveauNiveau.manaNaturel">
+            </mat-form-field>
+
+        </form>
+
+        <button class="btn btn-success" (click)="validerNiveau()" [disabled]="this.pointStatistiqueRestant() || !this.isNiveauValidable()"> Valider niveau </button>
+    </div>
+
+    <div class="tableContainer">
+        <div class="boutonControlleTable">
+            <!--button class="btn btn-light" (click)="ajouterLigne()">Ajouter une ligne à la fin</button-->
+            <!--button class="btn btn-light" (click)="supprimerLigne()">Supprimer la dernière ligne</button-->
+        </div>
+        <table mat-table #table [dataSource]="statistiquesPersonnage" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Niveau Column -->
+            <ng-container matColumnDef="niveau">
+                <th mat-header-cell *matHeaderCellDef> Niveau</th>
+                <td mat-cell *matCellDef="let element"> {{element.niveau}} </td>
+            </ng-container>
+
+            <!-- Statistiques Column -->
+            <ng-container matColumnDef="intelligence">
+                <th mat-header-cell *matHeaderCellDef> Intelligence</th>
+                <td mat-cell *matCellDef="let element ; let index = index">
+                    <div class="tdContent">{{element.intelligence}}</div>
+                </td>
+            </ng-container>
+
+            <!-- NombreStatistiques Column -->
+            <ng-container matColumnDef="force">
+                <th mat-header-cell *matHeaderCellDef> Force</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.force}}</div>
+                </td>
+            </ng-container>
+
+            <!-- PointCompetence Column -->
+            <ng-container matColumnDef="agilité">
+                <th mat-header-cell *matHeaderCellDef> Agilité</th>
+                <td mat-cell *matCellDef="let element; let index = index">
+                    <div class="tdContent">{{element.agilite}}</div>
+                </td>
+            </ng-container>
+
+            <!-- NombrePointsCompetences Column -->
+            <ng-container matColumnDef="sagesse">
+                <th mat-header-cell *matHeaderCellDef> Sagesse</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.sagesse}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="constitution">
+                <th mat-header-cell *matHeaderCellDef> Constitution</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.constitution}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="vitalité">
+                <th mat-header-cell *matHeaderCellDef> Vitalité</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.vitalite}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="vitalité naturelle">
+                <th mat-header-cell *matHeaderCellDef> Vitalité naturelle</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.vitaliteNaturelle}}</div>
+                </td>
+            </ng-container>
+
+
+
+            <ng-container matColumnDef="dé vitalité">
+                <th mat-header-cell *matHeaderCellDef> Dé vitalité</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.deVitalite}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="mana">
+                <th mat-header-cell *matHeaderCellDef> Mana</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.mana}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="mana naturel">
+                <th mat-header-cell *matHeaderCellDef> Mana naturel</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.manaNaturel}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="dé mana">
+                <th mat-header-cell *matHeaderCellDef> Dé mana</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent">{{element.deMana}}</div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <div class="boutonModifierDonneesTables">
+            <!--button class="btn btn-warning" (click)="resetTable()">Reset table</button-->
+            <!--button class="btn btn-success" (click)="validerTable()">Valider table</button-->
+        </div>
+    </div>
+
+    <app-fading-info #Banner></app-fading-info>
+</div>
