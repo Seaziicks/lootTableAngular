@@ -48,8 +48,10 @@ export class GestionNiveauJoueurComponent implements OnInit {
     ngOnInit(): void {
         if (this.authService.personnage) {
             this.idPersonnage = this.authService.personnage.idPersonnage;
-        } else {
+        } else if (this.authService.isGameMaster()) {
             this.idPersonnage = +this.route.snapshot.paramMap.get('id');
+        } else {
+            this.router.navigate(['/']);
         }
         this.nouveauNiveau = {
             niveau: 0,

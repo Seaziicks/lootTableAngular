@@ -1,6 +1,6 @@
 <div id="fakebody">
 
-    <div *ngIf="this.authService.personnage || this.authService.isAdmin()">
+    <div *ngIf="this.authService.personnage || this.authService.isGameMaster()">
         <button (click)="this.allerAPageGestionPersonnage()"> Gestion du personnage</button>
     </div>
 
