@@ -273,7 +273,7 @@ export class GestionMonstreComponent implements OnInit {
             (data: any) => {
                 this.chargerNouvellesDonnees(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
             }
         );
     }
@@ -285,7 +285,7 @@ export class GestionMonstreComponent implements OnInit {
             (data: any) => {
                 this.chargerNouvellesDonnees(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
             }
         );
     }

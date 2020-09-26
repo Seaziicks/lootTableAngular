@@ -41,6 +41,8 @@ import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-u
 import {ContactComponent} from './contact/contact.component';
 import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-magique.component';
 import {InformationSnackBarComponent, ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
+import { GestionNiveauJoueurComponent } from './gestion-niveau-joueur/gestion-niveau-joueur.component';
+import { GestionNiveauxComponent } from './gestion-niveaux/gestion-niveaux.component';
 
 
 @NgModule({
@@ -73,6 +75,8 @@ import {InformationSnackBarComponent, ProgressionPersonnageComponent} from './pr
         DialogContentDialogComponent,
         ProgressionPersonnageComponent,
         InformationSnackBarComponent,
+        GestionNiveauJoueurComponent,
+        GestionNiveauxComponent,
     ],
     imports: [
         BrowserModule,

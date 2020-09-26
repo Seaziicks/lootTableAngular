@@ -10,6 +10,7 @@ import {
     ViewChild,
     ViewContainerRef
 } from '@angular/core';
+import {SpecialResponse} from '../loot-table/loot-table.component';
 
 
 @Directive({
@@ -49,6 +50,10 @@ export class FadingInfoComponent implements OnDestroy {
         this.interval = setTimeout(() => {
             this.adHost.viewContainerRef.remove(this.adHost.viewContainerRef.indexOf(componentRef.hostView));
         }, 4500);
+    }
+
+    loadComponentFromSpecialResponse(response: SpecialResponse) {
+        this.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
     }
 }
 

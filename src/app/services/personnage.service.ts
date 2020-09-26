@@ -64,7 +64,14 @@ export class PersonnageService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Niveau', JSON.stringify(values));
 
-        return http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+        return http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    gererNiveau(http: HttpClient, idPersonnage: number, monte: boolean) {
+        const baseUrlBis = BASE_URL + 'monterNiveau.php' + '?idPersonnage=' + idPersonnage + '&monte=' + monte;
+        console.log(baseUrlBis);
+
+        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }
 
 }

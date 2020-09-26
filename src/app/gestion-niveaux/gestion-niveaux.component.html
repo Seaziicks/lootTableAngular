@@ -1,0 +1,90 @@
+<div class="globalContainer">
+
+    <div class="tableContainer">
+        <div class="boutonControlleTable">
+            <!--button class="btn btn-light" (click)="ajouterLigne()">Ajouter une ligne à la fin</button-->
+            <!--button class="btn btn-light" (click)="supprimerLigne()">Supprimer la dernière ligne</button-->
+        </div>
+        <table mat-table #table [dataSource]="personnages" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Niveau Column -->
+
+            <ng-container matColumnDef="idPersonnage">
+                <th mat-header-cell *matHeaderCellDef> idPersonnage</th>
+                <td mat-cell *matCellDef="let element"> {{element.idPersonnage}} </td>
+            </ng-container>
+
+            <!-- Statistiques Column -->
+            <ng-container matColumnDef="nom">
+                <th mat-header-cell *matHeaderCellDef> Nom</th>
+                <td mat-cell *matCellDef="let element ; let index = index">
+                    <div class="tdContent">{{element.nom}}</div>
+                </td>
+            </ng-container>
+
+            <!-- NombreStatistiques Column -->
+            <ng-container matColumnDef="niveau">
+                <th mat-header-cell *matHeaderCellDef> Niveau</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent" *ngIf="element.idPersonnage !== 0">{{element.niveau}}</div>
+                </td>
+            </ng-container>
+
+            <!-- PointCompetence Column -->
+            <ng-container matColumnDef="niveauEnAttente">
+                <th mat-header-cell *matHeaderCellDef> Niveau en attente</th>
+                <td mat-cell *matCellDef="let element; let index = index">
+                    <div class="tdContent" *ngIf="element.idPersonnage !== 0">{{element.niveauEnAttente}}</div>
+                </td>
+            </ng-container>
+
+            <!-- NombrePointsCompetences Column -->
+            <ng-container matColumnDef="deVitaliteNaturelle">
+                <th mat-header-cell *matHeaderCellDef> Dé vitalité naturelle</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent" *ngIf="element.idPersonnage !== 0">{{element.deVitaliteNaturelle}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="deManaNaturel">
+                <th mat-header-cell *matHeaderCellDef> Dé mana naturel</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="tdContent" *ngIf="element.idPersonnage !== 0">{{element.deManaNaturel}}</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="monterNiveaux">
+                <th mat-header-cell *matHeaderCellDef> Monter niveau</th>
+                <td mat-cell *matCellDef="let element">
+                    <button class="btn btn-success" *ngIf="element.idPersonnage !== 0"
+                    (click)="this.changerNiveau(element.idPersonnage, true)"
+                    [disabled]="this.updatingPersonnageID === element.idPersonnage"> Monter d'un niveau </button>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="baisserNiveaux">
+                <th mat-header-cell *matHeaderCellDef> Baisser niveau</th>
+                <td mat-cell *matCellDef="let element">
+                    <button class="btn btn-outline-warning" *ngIf="element.idPersonnage !== 0"
+                    (click)="this.changerNiveau(element.idPersonnage, false)"
+                    [disabled]="this.updatingPersonnageID === element.idPersonnage"> Baisser d'un niveau </button>
+                </td>
+            </ng-container>
+
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <div class="boutonModifierDonneesTables">
+            <!--button class="btn btn-warning" (click)="resetTable()">Reset table</button-->
+            <!--button class="btn btn-success" (click)="validerTable()">Valider table</button-->
+        </div>
+    </div>
+
+    <app-fading-info #Banner></app-fading-info>
+</div>

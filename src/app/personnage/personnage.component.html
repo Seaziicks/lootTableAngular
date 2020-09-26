@@ -1,4 +1,9 @@
 <div id="fakebody">
+
+    <div *ngIf="this.authService.personnage || this.authService.isAdmin()">
+        <button (click)="this.allerAPageGestionPersonnage()"> Gestion du personnage</button>
+    </div>
+
     <div class="principal">
         <div id="caracterSelection" class="caracterSelection">
             <label for="inputPersonnageChoix">Selectionnez un personnage pour visionner ses objets</label>

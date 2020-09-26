@@ -7,7 +7,8 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {HttpMethods} from '../interface/http-methods.enum';
 import * as equal from 'fast-deep-equal';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
+import {AuthService} from '../auth/auth.service';
 
 @Component({
   selector: 'app-gestion-niveau-joueur',
@@ -30,16 +31,26 @@ export class GestionNiveauJoueurComponent implements OnInit {
 
     personnage: Personnage;
 
+
+    idPersonnage: number;
+
     displayedColumns: string[] = ['niveau', 'intelligence', 'force', 'agilité', 'sagesse', 'constitution', 'vitalité', 'vitalité naturelle',
         'dé vitalité', 'mana', 'mana naturel', 'dé mana'];
 
     constructor(private http: HttpClient,
+                public authService: AuthService,
                 private personnageService: PersonnageService,
                 private _snackBar: MatSnackBar,
-                private router: Router) {
+                private router: Router,
+                private route: ActivatedRoute) {
     }
 
     ngOnInit(): void {
+        if (this.authService.personnage) {
+            this.idPersonnage = this.authService.personnage.idPersonnage;
+        } else {
+            this.idPersonnage = +this.route.snapshot.paramMap.get('id');
+        }
         this.nouveauNiveau = {
             niveau: 0,
             intelligence: 0,
@@ -59,7 +70,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
     }
 
     loadPersonnage() {
-        this.personnageService.getPersonnage(this.http, 1, true).then(
+        this.personnageService.getPersonnage(this.http, this.idPersonnage, true).then(
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = data as SpecialResponse;
@@ -86,7 +97,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
     }
 
     loadProgressionPersonnage() {
-        this.personnageService.getStatistiquesDetaillees(this.http, 1, true).then(
+        this.personnageService.getStatistiquesDetaillees(this.http, this.idPersonnage, true).then(
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = data as SpecialResponse;
@@ -109,7 +120,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (response.status > 199 && response.status < 299) {
                     console.log(response.data as ProgressionPersonnage);
                     newProgression.idProgressionPersonnage = (response.data as ProgressionPersonnage).idProgressionPersonnage;
@@ -124,7 +135,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
                 console.log(data);
                 const httpResponse = data;
                 const response: SpecialResponse = JSON.parse(data.error) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (httpResponse.status === 409) {
                     this.openSnackBar('Niveau déjà défini', 'Erreur');
                 }
@@ -139,7 +150,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data);
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (response.status > 199 && response.status < 299) {
                     this.progressionsPersonnage.pop();
                     this.table.renderRows();
@@ -158,7 +169,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
                         (data: any) => {
                             console.log(data);
                             const response: SpecialResponse = JSON.parse(data);
-                            this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                            this.banner.loadComponentFromSpecialResponse(response);
                         }
                     );
             }
@@ -174,7 +185,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
 
     openSnackBar(message: string, action: string) {
         this._snackBar.open(message, action, {
-            duration: 5000,
+            duration: 9000,
         });
     }
 
@@ -364,7 +375,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
                 console.log(data);
                 const httpResponse = data;
                 const response: SpecialResponse = JSON.parse(data.error) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (httpResponse.status === 403) {
                     this.openSnackBar('Montée de niveau non autorisée.', 'Erreur');
                 } else if (httpResponse.status === 451) {

@@ -19,6 +19,7 @@ import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.co
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 import {ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
 import {GestionNiveauJoueurComponent} from './gestion-niveau-joueur/gestion-niveau-joueur.component';
+import {GestionNiveauxComponent} from './gestion-niveaux/gestion-niveaux.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
     {path: 'testArmures', component: ArmuresComponent},
     {path: 'testArmes', component: ArmesComponent},
     {path: 'testBanner', component: FadingInfoComponent},
+    {path: 'GestionNiveaux', component: GestionNiveauxComponent},
     {path: 'GestionObjets', component: GestionObjetComponent, canActivate: [AuthGuard]},
     {path: 'GestionMonstre', component: GestionMonstreComponent, canActivate: [AuthGuard]},
     {path: 'GestionDropMonstre', component: GestionDropMonstreComponent, canActivate: [AuthGuard]},

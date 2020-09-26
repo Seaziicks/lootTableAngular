@@ -94,7 +94,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 setTimeout( () => {
-                    this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status); }, 1250 );
+                    this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
             }
         );
         this.modificationsEnCours[indexEffetDecouvert] = false;
@@ -109,7 +109,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 setTimeout( () => {
-                    this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status); }, 1250 );
+                    this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
             }
         );
         this.modificationsEnCours[indexEffetDecouvert] = false;
@@ -145,7 +145,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
                 setTimeout( () => {
-                    this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status); }, 1250 );
+                    this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
             }
         );
         this.effetDecouvertAAjouter = null;

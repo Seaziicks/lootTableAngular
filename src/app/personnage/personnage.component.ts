@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {ObjetService} from '../services/objet.service';
 import {PersonnageService} from '../services/personnage.service';
 import {AuthService} from '../auth/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-personnage',
@@ -28,7 +29,8 @@ export class PersonnageComponent implements OnInit {
     constructor(private http: HttpClient,
                 private objetService: ObjetService,
                 private personnageService: PersonnageService,
-                private authService: AuthService) {
+                public authService: AuthService,
+                public router: Router) {
     }
 
     ngOnInit(): void {
@@ -105,5 +107,9 @@ export class PersonnageComponent implements OnInit {
 
     getNomSansBalise(objetNom: string) {
         return objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2');
+    }
+
+    allerAPageGestionPersonnage() {
+        this.router.navigate(['/niveau', {id: this.idPersonnageSelectionne}]);
     }
 }

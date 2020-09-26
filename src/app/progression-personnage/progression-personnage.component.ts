@@ -56,7 +56,7 @@ export class ProgressionPersonnageComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (response.status > 199 && response.status < 299) {
                     console.log(response.data as ProgressionPersonnage);
                     newProgression.idProgressionPersonnage = (response.data as ProgressionPersonnage).idProgressionPersonnage;
@@ -72,7 +72,7 @@ export class ProgressionPersonnageComponent implements OnInit {
                 console.log(data);
                 const httpResponse = data;
                 const response: SpecialResponse = JSON.parse(data.error) as SpecialResponse;
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (httpResponse.status === 409) {
                     this.openSnackBar('Niveau déjà défini', 'Erreur');
                 }
@@ -87,7 +87,7 @@ export class ProgressionPersonnageComponent implements OnInit {
             (data: any) => {
                 console.log(data);
                 const response: SpecialResponse = JSON.parse(data);
-                this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                this.banner.loadComponentFromSpecialResponse(response);
                 if (response.status > 199 && response.status < 299) {
                     // this.progressionPersonnage.pop();
                     this.progressionPersonnage.shift();
@@ -107,7 +107,7 @@ export class ProgressionPersonnageComponent implements OnInit {
                         (data: any) => {
                             console.log(data);
                             const response: SpecialResponse = JSON.parse(data);
-                            this.banner.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+                            this.banner.loadComponentFromSpecialResponse(response);
                         }
                 );
             }

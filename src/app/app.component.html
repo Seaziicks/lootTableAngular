@@ -10,6 +10,7 @@
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true" class="menuItems">
         <a mat-button routerLink="/testPersonnage">Personnage</a>
+        <a mat-button routerLink="/GestionNiveaux" *ngIf="isGameMaster()">Gestion niveaux</a>
         <a mat-button routerLink="/LootTable" *ngIf="isGameMaster()">Loot</a>
         <a mat-button routerLink="/GestionObjets" *ngIf="isGameMaster()">Gestion Objets</a>
         <a mat-button routerLink="/GestionMonstre" *ngIf="isGameMaster()">Gestion Monstre</a>
@@ -23,6 +24,7 @@
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
         <div fxLayout="column" class="menuItemsMobile">
             <a mat-button routerLink="/testPersonnage">Personnages</a>
+            <a mat-button routerLink="/GestionNiveaux" *ngIf="isGameMaster()">Gestion niveaux</a>
             <a mat-button routerLink="/LootTable" *ngIf="isGameMaster()">Loot</a>
             <a mat-button routerLink="/GestionObjets" *ngIf="isGameMaster()">Gestion Objets</a>
             <a mat-button routerLink="/GestionMonstre" *ngIf="isGameMaster()">Gestion Monstre</a>
