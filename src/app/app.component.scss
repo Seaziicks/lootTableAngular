@@ -48,14 +48,18 @@ button{
     border-color: #dc3545;
 }
 
-.menuItems a {
-    transition: all 0.35s ease-in-out;
+.menuItems a, .menuItems button, ::ng-deep .mat-menu-item {
+    transition: all 0.35s ease-in-out !important;
 }
 
-.menuItems a:hover {
-    color: wheat;
-    background-color: rgba(220, 53, 69, 0.5);
-    border-color: #dc3545;
+.menuItems a:hover, .menuItems button:hover, .mat-menu-item:hover {
+    color: wheat !important;
+    background-color: rgba(220, 53, 69, 0.5) !important;
+    border-color: #dc3545 !important;
+}
+
+::ng-deep .mat-menu-panel {
+    background: black !important;
 }
 
 /*

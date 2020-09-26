@@ -9,12 +9,23 @@
     </a>
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true" class="menuItems">
-        <a mat-button routerLink="/testPersonnage">Personnage</a>
-        <a mat-button routerLink="/GestionNiveaux" *ngIf="isGameMaster()">Gestion niveaux</a>
-        <a mat-button routerLink="/LootTable" *ngIf="isGameMaster()">Loot</a>
-        <a mat-button routerLink="/GestionObjets" *ngIf="isGameMaster()">Gestion Objets</a>
+        <button mat-button [matMenuTriggerFor]="personnage">Personnage <mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #personnage="matMenu">
+            <button mat-menu-item > <a mat-button routerLink="/testPersonnage">Personnage</a></button>
+            <button mat-menu-item ><a mat-button routerLink="/progression" *ngIf="isGameMaster()">Gestion niveaux</a></button>
+            <button mat-menu-item ><a mat-button routerLink="/GestionNiveaux" *ngIf="isGameMaster()">Attribution niveaux</a></button>
+        </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="objets">Objets <mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #objets="matMenu">
+            <button mat-menu-item ><a mat-button routerLink="/LootTable" *ngIf="isGameMaster()">Loot</a></button>
+            <button mat-menu-item ><a mat-button routerLink="/GestionObjets" *ngIf="isGameMaster()">Gestion Objets</a></button>
+            <button mat-menu-item ><a mat-button routerLink="/GestionDropMonstreBis" *ngIf="isGameMaster()">Gestion Drop Monstre</a></button>
+        </mat-menu>
+
         <a mat-button routerLink="/GestionMonstre" *ngIf="isGameMaster()">Gestion Monstre</a>
-        <a mat-button routerLink="/GestionDropMonstreBis" *ngIf="isGameMaster()">Gestion Drop Monstre</a>
+
         <a mat-button routerLink="/contact">Contact</a>
         <button class="btn btn-outline-danger" routerLink="/login" *ngIf="!this.isAuth()">Connexion</button>
         <button class="btn btn-outline-danger" routerLink="/deconnexion" *ngIf="this.isAuth()">Déconnexion</button>
@@ -24,7 +35,8 @@
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
         <div fxLayout="column" class="menuItemsMobile">
             <a mat-button routerLink="/testPersonnage">Personnages</a>
-            <a mat-button routerLink="/GestionNiveaux" *ngIf="isGameMaster()">Gestion niveaux</a>
+            <a mat-button routerLink="/progression" *ngIf="isGameMaster()">Gestion niveaux</a>
+            <a mat-button routerLink="/GestionNiveaux" *ngIf="isGameMaster()">Attribution niveaux</a>
             <a mat-button routerLink="/LootTable" *ngIf="isGameMaster()">Loot</a>
             <a mat-button routerLink="/GestionObjets" *ngIf="isGameMaster()">Gestion Objets</a>
             <a mat-button routerLink="/GestionMonstre" *ngIf="isGameMaster()">Gestion Monstre</a>
