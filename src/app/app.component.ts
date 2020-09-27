@@ -5,6 +5,7 @@ import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
+import {environment} from '../environments/environment';
 
 @Component({
     selector: 'app-root',
@@ -21,15 +22,15 @@ export class AppComponent implements OnInit {
                 private domSanitizer: DomSanitizer) {
         this.matIconRegistry.addSvgIcon(
             `statistiqueAugmentation`,
-            this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/fond/health-increase.svg`)
+            this.domSanitizer.bypassSecurityTrustResourceUrl(`${environment.deployUrl}/assets/fond/health-increase.svg`)
         );
         this.matIconRegistry.addSvgIcon(
             `statistiqueDiminution`,
-            this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/fond/health-decrease.svg`)
+            this.domSanitizer.bypassSecurityTrustResourceUrl(`${environment.deployUrl}/assets/fond/health-decrease.svg`)
         );
         this.matIconRegistry.addSvgIcon(
             `minus`,
-            this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/fond/pounceTest.svg`)
+            this.domSanitizer.bypassSecurityTrustResourceUrl(`${environment.deployUrl}/assets/fond/pounceTest.svg`)
         );
     }
 
