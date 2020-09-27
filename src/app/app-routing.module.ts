@@ -20,6 +20,7 @@ import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-u
 import {ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
 import {GestionNiveauJoueurComponent} from './gestion-niveau-joueur/gestion-niveau-joueur.component';
 import {GestionNiveauxComponent} from './gestion-niveaux/gestion-niveaux.component';
+import {SourcesComponent} from './sources/sources.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,7 @@ const routes: Routes = [
     {path: 'GestionDropMonstre', component: GestionDropMonstreComponent, canActivate: [AuthGuard]},
     {path: 'GestionDropMonstreBis', component: GestionDropMonstreBisComponent, canActivate: [AuthGuard]},
     {path: 'LootTable', component: LootTableComponent, canActivate: [AuthGuard]},
+    {path: 'sources', component: SourcesComponent},
     {path: '', redirectTo: '/testPersonnage', pathMatch: 'full'},
     {path: '**', redirectTo: '/testPersonnage'}
 ];

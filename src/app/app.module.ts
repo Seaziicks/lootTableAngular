@@ -38,11 +38,11 @@ import {AuthService} from './auth/auth.service';
 import {UserCreateComponent} from './user/user-create/user-create.component';
 import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
-import {ContactComponent} from './contact/contact.component';
 import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-magique.component';
 import {InformationSnackBarComponent, ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
 import { GestionNiveauJoueurComponent } from './gestion-niveau-joueur/gestion-niveau-joueur.component';
 import { GestionNiveauxComponent } from './gestion-niveaux/gestion-niveaux.component';
+import { SourcesComponent } from './sources/sources.component';
 
 
 @NgModule({
@@ -70,13 +70,13 @@ import { GestionNiveauxComponent } from './gestion-niveaux/gestion-niveaux.compo
         UserCreateComponent,
         UserDisconnectComponent,
         UnauthorizedUserComponent,
-        ContactComponent,
         ProprieteMagiqueComponent,
         DialogContentDialogComponent,
         ProgressionPersonnageComponent,
         InformationSnackBarComponent,
         GestionNiveauJoueurComponent,
         GestionNiveauxComponent,
+        SourcesComponent,
     ],
     imports: [
         BrowserModule,
