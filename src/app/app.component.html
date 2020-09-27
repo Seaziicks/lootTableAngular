@@ -25,8 +25,8 @@
         </mat-menu>
 
         <a mat-button routerLink="/GestionMonstre" *ngIf="isGameMaster()">Gestion Monstre</a>
-
         <a mat-button routerLink="/contact">Contact</a>
+
         <button class="btn btn-outline-danger" routerLink="/login" *ngIf="!this.isAuth()">Connexion</button>
         <button class="btn btn-outline-danger" routerLink="/deconnexion" *ngIf="this.isAuth()">Déconnexion</button>
     </div>
