@@ -135,8 +135,10 @@
 
         </form>
 
-        <button class="btn btn-success" (click)="validerNiveau()" [disabled]="this.pointStatistiqueRestant() || !this.isNiveauValidable()" *ngIf="this.niveauEnAttente.niveau > 1"> Valider niveau </button>
-        <button class="btn btn-success" (click)="validerNiveau()" *ngIf="this.niveauEnAttente.niveau === 1"> Valider niveau </button>
+        <button class="btn btn-success" (click)="validerNiveau()" [disabled]="this.pointStatistiqueRestant() || !this.isNiveauValidable()"
+                *ngIf="this.niveauEnAttente && this.niveauEnAttente.niveau > 1"> Valider niveau </button>
+        <button class="btn btn-success" (click)="validerNiveau()"
+                *ngIf="this.niveauEnAttente && this.niveauEnAttente.niveau === 1"> Valider niveau </button>
     </div>
 
     <div class="tableContainer">

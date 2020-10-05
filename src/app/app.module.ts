@@ -40,10 +40,11 @@ import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.co
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 import {ProprieteMagiqueComponent} from './creationObjets/propriete-magique/propriete-magique.component';
 import {InformationSnackBarComponent, ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
-import { GestionNiveauJoueurComponent } from './gestion-niveau-joueur/gestion-niveau-joueur.component';
+import { GestionNiveauJoueurComponent } from './gestionPersonnage/gestion-niveau-joueur/gestion-niveau-joueur.component';
 import { GestionNiveauxComponent } from './gestion-niveaux/gestion-niveaux.component';
 import { SourcesComponent } from './sources/sources.component';
 import { PersonnageCompetencesComponent } from './gestionPersonnage/personnageCompetences/personnage-competences/personnage-competences.component';
+import {MyComponentWrapperComponent} from './gestionPersonnage/personnageCompetences/MyReactComponentWrapper';
 
 
 @NgModule({
@@ -79,6 +80,7 @@ import { PersonnageCompetencesComponent } from './gestionPersonnage/personnageCo
         GestionNiveauxComponent,
         SourcesComponent,
         PersonnageCompetencesComponent,
+        MyComponentWrapperComponent,
     ],
     imports: [
         BrowserModule,

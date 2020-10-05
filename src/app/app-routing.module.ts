@@ -18,12 +18,14 @@ import {AuthGuard} from './auth/auth.guard';
 import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
 import {ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
-import {GestionNiveauJoueurComponent} from './gestion-niveau-joueur/gestion-niveau-joueur.component';
+import {GestionNiveauJoueurComponent} from './gestionPersonnage/gestion-niveau-joueur/gestion-niveau-joueur.component';
 import {GestionNiveauxComponent} from './gestion-niveaux/gestion-niveaux.component';
 import {SourcesComponent} from './sources/sources.component';
+import {PersonnageCompetencesComponent} from './gestionPersonnage/personnageCompetences/personnage-competences/personnage-competences.component';
 
 
 const routes: Routes = [
+    {path: 'competences', component: PersonnageCompetencesComponent},
     {path: 'niveau', component: GestionNiveauJoueurComponent},
     {path: 'progression', component: ProgressionPersonnageComponent},
     {path: 'unauthorized', component: UnauthorizedUserComponent},

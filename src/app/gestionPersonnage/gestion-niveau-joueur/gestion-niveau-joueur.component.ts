@@ -1,14 +1,14 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatTable} from '@angular/material/table';
-import {FadingInfoComponent} from '../fading-info/fading-info.component';
+import {FadingInfoComponent} from '../../fading-info/fading-info.component';
 import {HttpClient} from '@angular/common/http';
-import {PersonnageService} from '../services/personnage.service';
+import {PersonnageService} from '../../services/personnage.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
-import {SpecialResponse} from '../loot-table/loot-table.component';
-import {HttpMethods} from '../interface/http-methods.enum';
+import {SpecialResponse} from '../../loot-table/loot-table.component';
+import {HttpMethods} from '../../interface/http-methods.enum';
 import * as equal from 'fast-deep-equal';
 import {ActivatedRoute, Router} from '@angular/router';
-import {AuthService} from '../auth/auth.service';
+import {AuthService} from '../../auth/auth.service';
 
 @Component({
   selector: 'app-gestion-niveau-joueur',

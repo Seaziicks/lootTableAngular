@@ -112,4 +112,7 @@ export class PersonnageComponent implements OnInit {
     allerAPageGestionPersonnage() {
         this.router.navigate(['/niveau', {id: this.idPersonnageSelectionne}]);
     }
+    allerAPageCompetences() {
+        this.router.navigate(['/competences', {id: this.idPersonnageSelectionne}]);
+    }
 }

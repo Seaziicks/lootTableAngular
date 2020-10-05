@@ -74,4 +74,12 @@ export class PersonnageService {
         return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
     }
 
+
+
+    getCompetences(http: HttpClient, idPersonnage: number) {
+        const baseUrlBis = BASE_URL + 'competenceRest.php?idPersonnage=' + idPersonnage;
+        // console.log(baseUrlBis);
+        return http.request('GET', baseUrlBis).toPromise();
+    }
+
 }
