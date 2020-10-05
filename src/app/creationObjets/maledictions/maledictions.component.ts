@@ -115,8 +115,8 @@ export class MaledictionsComponent implements OnInit {
             } as MagicalProperty;
         } else if (this.deMalediction > 11 && this.deMalediction <= 23) { // Inversé
             magicalProperty = {
-                description: ['Soit les objets maudits de ce genre ont un effet inverse de celui qui était prévu, soit ils affectent leur possesseur au lieu de ses adversaires. Certains de ces objets peuvent toutefois présenter un intérêt indéniable, même si leur fonction est totalement différente de ce qu’elle devrait être.\n' +
-                'Parmi les objets maudits à effet opposé, on trouve les armes qui s’accompagnent d’un malus aux jets d’attaque et de dégâts. De même que les personnages ne connaissent pas immédiatement la valeur exacte du bonus d’altération conféré par leurs armes utiles, il n’y a aucune raison qu’ils se rendent compte immédiatement que leur nouvelle arme est maudite. Une fois qu’ils le comprennent, ils peuvent s’en séparer librement, à moins que l’arme ne s’accompagne d’un enchantement incitant son possesseur à vouloir la garder et à l’utiliser. Dans ce cas, le sort délivrance des malédictions est nécessaire pour s’en débarrasser.'],
+                description: ['Soit les creationObjets maudits de ce genre ont un effet inverse de celui qui était prévu, soit ils affectent leur possesseur au lieu de ses adversaires. Certains de ces creationObjets peuvent toutefois présenter un intérêt indéniable, même si leur fonction est totalement différente de ce qu’elle devrait être.\n' +
+                'Parmi les creationObjets maudits à effet opposé, on trouve les armes qui s’accompagnent d’un malus aux jets d’attaque et de dégâts. De même que les personnages ne connaissent pas immédiatement la valeur exacte du bonus d’altération conféré par leurs armes utiles, il n’y a aucune raison qu’ils se rendent compte immédiatement que leur nouvelle arme est maudite. Une fois qu’ils le comprennent, ils peuvent s’en séparer librement, à moins que l’arme ne s’accompagne d’un enchantement incitant son possesseur à vouloir la garder et à l’utiliser. Dans ce cas, le sort délivrance des malédictions est nécessaire pour s’en débarrasser.'],
                 infos: null,
                 table: null,
                 title: 'Effet (ou cible) inversé.',
@@ -169,7 +169,7 @@ export class MaledictionsComponent implements OnInit {
             magicalProperty.description[0] = this.inconveniant;
         } else if (this.deMalediction > 80 && this.deMalediction <= 92) { // Effet inventé
             magicalProperty = {
-                description: ['Choisissez un effet préjudiciable, en vous inspirant éventuellement des objets maudits spéciaux, détaillés ci-dessous. ' +
+                description: ['Choisissez un effet préjudiciable, en vous inspirant éventuellement des creationObjets maudits spéciaux, détaillés ci-dessous. ' +
                 'L’objet peut commencer à fonctionner normalement, mais à un moment, ses propriétés changent radicalement.'],
                 infos: null,
                 table: null,

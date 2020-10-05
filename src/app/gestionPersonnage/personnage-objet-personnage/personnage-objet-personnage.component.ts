@@ -1,10 +1,10 @@
 import {Component, EventEmitter, HostListener, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {ObjetService} from '../services/objet.service';
-import {SpecialResponse} from '../loot-table/loot-table.component';
-import {HttpMethods} from '../interface/http-methods.enum';
-import {FadingInfoComponent} from '../fading-info/fading-info.component';
-import {AuthService} from '../auth/auth.service';
+import {ObjetService} from '../../services/objet.service';
+import {SpecialResponse} from '../../loot-table/loot-table.component';
+import {HttpMethods} from '../../interface/http-methods.enum';
+import {FadingInfoComponent} from '../../fading-info/fading-info.component';
+import {AuthService} from '../../auth/auth.service';
 
 @Component({
   selector: 'app-personnage-objet-personnage',

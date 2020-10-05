@@ -1,8 +1,8 @@
 import {Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
-import {ObjetService} from '../services/objet.service';
+import {ObjetService} from '../../services/objet.service';
 import {HttpClient} from '@angular/common/http';
-import {SpecialResponse} from '../loot-table/loot-table.component';
-import {HttpMethods} from '../interface/http-methods.enum';
+import {SpecialResponse} from '../../loot-table/loot-table.component';
+import {HttpMethods} from '../../interface/http-methods.enum';
 
 import * as equal from 'fast-deep-equal';
 

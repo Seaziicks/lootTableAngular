@@ -40,17 +40,17 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
                 );
             }
         );
-        this.jsonService.getJSON('objets/classique', 'armesCourantes').then(
+        this.jsonService.getJSON('creationObjets/classique', 'armesCourantes').then(
             (armesCourantes: any) => {
                 this.allArmeCourantes = JSON.parse(armesCourantes) as CategoriesArmes;
             }
         );
-        this.jsonService.getJSON('objets/classique', 'armesGuerre').then(
+        this.jsonService.getJSON('creationObjets/classique', 'armesGuerre').then(
             (armesCourantes: any) => {
                 this.allArmesGuerre = JSON.parse(armesCourantes) as CategoriesArmes;
             }
         );
-        this.jsonService.getJSON('objets/classique', 'armesExotiques').then(
+        this.jsonService.getJSON('creationObjets/classique', 'armesExotiques').then(
             (armesCourantes: any) => {
                 this.allArmesExotiques = JSON.parse(armesCourantes) as CategoriesArmes;
             }

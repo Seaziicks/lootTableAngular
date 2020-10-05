@@ -23,26 +23,27 @@ import {
     BannerComponent
 } from './fading-info/fading-info.component';
 import {GestionDropMonstreBisComponent} from './gestion-drop-monstre-bis/gestion-drop-monstre-bis.component';
-import {ArmesComponent} from './objets/armes/armes.component';
-import {ArmuresComponent} from './objets/armures/armures.component';
-import {MaledictionsComponent} from './objets/maledictions/maledictions.component';
-import {ObjetSimpleComponent} from './objets/objet-simple/objet-simple.component';
+import {ArmesComponent} from './creationObjets/armes/armes.component';
+import {ArmuresComponent} from './creationObjets/armures/armures.component';
+import {MaledictionsComponent} from './creationObjets/maledictions/maledictions.component';
+import {ObjetSimpleComponent} from './creationObjets/objet-simple/objet-simple.component';
 import {TestInsertTableComponent} from './test-insert-table/test-insert-table.component';
-import {PersonnageComponent} from './personnage/personnage.component';
-import {PersonnageObjetComponent} from './personnage-objet/personnage-objet.component';
-import {GestionObjetComponent} from './gestion-objet/gestion-objet.component';
+import {PersonnageComponent} from './gestionPersonnage/personnage/personnage.component';
+import {PersonnageObjetComponent} from './gestionObjets/personnage-objet/personnage-objet.component';
+import {GestionObjetComponent} from './gestionObjets/gestion-objet/gestion-objet.component';
 import {SpinnerComponent} from './spinner/spinner.component';
-import {PersonnageObjetPersonnageComponent} from './personnage-objet-personnage/personnage-objet-personnage.component';
+import {PersonnageObjetPersonnageComponent} from './gestionPersonnage/personnage-objet-personnage/personnage-objet-personnage.component';
 import {UserLoginComponent} from './user/user-login/user-login.component';
 import {AuthService} from './auth/auth.service';
 import {UserCreateComponent} from './user/user-create/user-create.component';
 import {UserDisconnectComponent} from './user/user-disconnect/user-disconnect.component';
 import {UnauthorizedUserComponent} from './user/unauthorized-user/unauthorized-user.component';
-import {ProprieteMagiqueComponent} from './objets/propriete-magique/propriete-magique.component';
+import {ProprieteMagiqueComponent} from './creationObjets/propriete-magique/propriete-magique.component';
 import {InformationSnackBarComponent, ProgressionPersonnageComponent} from './progression-personnage/progression-personnage.component';
 import { GestionNiveauJoueurComponent } from './gestion-niveau-joueur/gestion-niveau-joueur.component';
 import { GestionNiveauxComponent } from './gestion-niveaux/gestion-niveaux.component';
 import { SourcesComponent } from './sources/sources.component';
+import { PersonnageCompetencesComponent } from './gestionPersonnage/personnageCompetences/personnage-competences/personnage-competences.component';
 
 
 @NgModule({
@@ -77,6 +78,7 @@ import { SourcesComponent } from './sources/sources.component';
         GestionNiveauJoueurComponent,
         GestionNiveauxComponent,
         SourcesComponent,
+        PersonnageCompetencesComponent,
     ],
     imports: [
         BrowserModule,

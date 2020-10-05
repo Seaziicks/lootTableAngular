@@ -1,4 +1,4 @@
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 
 .missing input {
     background-color: rgba(12, 50, 50, 0.9);
@@ -33,7 +33,7 @@ body {
 }
 
 #fakebody {
-    background-image: url("../../assets/fond/228090286-black-and-brown-wallpaper.jpg"); /* The image used */
+    background-image: url("../../../assets/fond/228090286-black-and-brown-wallpaper.jpg"); /* The image used */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */

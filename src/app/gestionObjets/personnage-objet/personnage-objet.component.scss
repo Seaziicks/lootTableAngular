@@ -1,4 +1,4 @@
-@import "./src/app/objets/cssObjetCommun";
+@import "../../creationObjets/cssObjetCommun";
 
 textarea, .example-full-width  {
     width: 100%;
@@ -6,7 +6,8 @@ textarea, .example-full-width  {
 
 .messageChargement {
     font-size: 21px;
-    margin: 50px auto auto;
+    margin: auto;
+    margin-top: 50px;
 }
 
 ::ng-deep .personnageObjet .mat-form-field .mat-form-field-wrapper .mat-form-field-flex {

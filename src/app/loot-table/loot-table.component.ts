@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FamilleAndMonstreService} from '../services/famille-and-monstre.service';
 import {MonstreLootChanceService} from '../services/monstre-loot-chance.service';
-import {ObjetSimpleComponent} from '../objets/objet-simple/objet-simple.component';
-import {ArmesComponent} from '../objets/armes/armes.component';
-import {ArmuresComponent} from '../objets/armures/armures.component';
+import {ObjetSimpleComponent} from '../creationObjets/objet-simple/objet-simple.component';
+import {ArmesComponent} from '../creationObjets/armes/armes.component';
+import {ArmuresComponent} from '../creationObjets/armures/armures.component';
 import {ObjetService} from '../services/objet.service';
 import {PersonnageService} from '../services/personnage.service';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
@@ -188,7 +188,7 @@ export class LootTableComponent implements OnInit {
         } else if (objet === 'simple' && this.input1 >= 61 && this.input1 <= 70) {
             this.parametres = ['Ceci est un sceptre', 'Dé septentrional', 'Sceptre', 'magique', 'sceptres'];
             return true;
-        } else if (objet === 'objets' && this.input1 >= 71 && this.input1 <= 80) {
+        } else if (objet === 'creationObjets' && this.input1 >= 71 && this.input1 <= 80) {
             return true;
         } else if (objet === 'simple' && this.input1 >= 81 && this.input1 <= 100) {
             this.parametres = ['Ceci est un objet merveilleux', 'Demer veille eux', 'Objet merveileux', 'magique', 'objetsMerveilleux'];
