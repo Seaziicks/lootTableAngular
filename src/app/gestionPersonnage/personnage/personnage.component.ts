@@ -115,4 +115,9 @@ export class PersonnageComponent implements OnInit {
     allerAPageCompetences() {
         this.router.navigate(['/competences', {id: this.idPersonnageSelectionne}]);
     }
+
+    getIdPersonnage() {
+        return this.idPersonnageSelectionne ? this.idPersonnageSelectionne
+            : this.authService.personnage ? this.authService.personnage.idPersonnage : undefined;
+    }
 }

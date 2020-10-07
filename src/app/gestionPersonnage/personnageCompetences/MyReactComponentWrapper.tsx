@@ -21,6 +21,7 @@ import {ReactNode} from 'react';
 import {MyReactComponent} from './MyReactComponent';
 import {AuthService} from '../../auth/auth.service';
 import {PersonnageService} from '../../services/personnage.service';
+import {CompetenceService} from '../../services/competence.service';
 
 const containerElementName = 'myReactComponentContainer';
 
@@ -74,7 +75,8 @@ export class MyComponentWrapperComponent implements OnInit, OnChanges, OnDestroy
 
     constructor(private http: HttpClient,
                 private authService: AuthService,
-                private personnageService: PersonnageService) {
+                private personnageService: PersonnageService,
+                private competenceService: CompetenceService) {
         this.handleDivClicked = this.handleDivClicked.bind(this);
         this.disabled = true;
     }

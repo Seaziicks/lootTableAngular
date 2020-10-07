@@ -1,0 +1,14 @@
+<div>
+    <div id="caracterSelection" class="caracterSelection">
+        <label for="inputPersonnageChoix">Selectionnez une competence pour la modifier</label>
+        <select id="inputPersonnageChoix" class="form-control" (change)="selectCompetence()" [(ngModel)]="this.idCompetenceSelectionnee">
+            <option value="0"></option>
+            <option *ngFor="let competence of this.competences" [ngValue]="competence.idCompetence">
+                {{competence.idCompetence}} - {{competence.titre}}
+            </option>
+        </select>
+    </div>
+</div>
+
+
+<app-competence [competence]="this.competenceSelectionnee"></app-competence>

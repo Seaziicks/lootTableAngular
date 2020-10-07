@@ -1,9 +1,9 @@
 <div id="fakebody">
 
-    <div *ngIf="this.authService.personnage || this.authService.isGameMaster()">
+    <div *ngIf="(this.authService.personnage || this.authService.isGameMaster()) && this.getIdPersonnage()">
         <button (click)="this.allerAPageGestionPersonnage()"> Gestion du personnage </button>
     </div>
-    <div *ngIf="this.authService.personnage || this.authService.isGameMaster()">
+    <div *ngIf="(this.authService.personnage || this.authService.isGameMaster()) && this.getIdPersonnage()">
         <button (click)="this.allerAPageCompetences()"> Compétences </button>
     </div>
 

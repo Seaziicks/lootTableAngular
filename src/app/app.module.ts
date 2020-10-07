@@ -45,6 +45,8 @@ import { GestionNiveauxComponent } from './gestion-niveaux/gestion-niveaux.compo
 import { SourcesComponent } from './sources/sources.component';
 import { PersonnageCompetencesComponent } from './gestionPersonnage/personnageCompetences/personnage-competences/personnage-competences.component';
 import {MyComponentWrapperComponent} from './gestionPersonnage/personnageCompetences/MyReactComponentWrapper';
+import {ModifierCompetenceComponent} from './gestionPersonnage/personnageCompetences/modifier-competence/modifier-competence.component';
+import {CompetenceComponent} from './gestionPersonnage/personnageCompetences/competence/competence.component';
 
 
 @NgModule({
@@ -81,6 +83,10 @@ import {MyComponentWrapperComponent} from './gestionPersonnage/personnageCompete
         SourcesComponent,
         PersonnageCompetencesComponent,
         MyComponentWrapperComponent,
+        ModifierCompetenceComponent,
+        ModifierCompetenceComponent,
+        CompetenceComponent,
+        CompetenceComponent,
     ],
     imports: [
         BrowserModule,

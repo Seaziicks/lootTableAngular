@@ -1,0 +1,74 @@
+<div style="width: 100%" *ngIf="this.competence" class="personnageObjet">
+    <div style="width: 100%" *ngIf="!this.modificationEnCours">
+        <div class="titleTop">
+            <div class="h1Fake" [innerHTML]="this.competence.titre"></div>
+        </div>
+        <h4 *ngIf="this.competence.niveau"> Niveau : {{this.competence.niveau}}</h4>
+        <div *ngIf="this.competence.etat">{{this.competence.etat}}</div>
+        <p *ngIf="this.competence.optionnelle">{{this.competence.optionnelle}}</p>
+        <p *ngIf="this.competence.icone">{{this.competence.icone}}</p>
+        <br/>
+        <ng-container *ngFor="let contenu of this.competence.contenu;">
+            <div *ngIf="contenu.niveauCompetenceRequis">Niveau requis : {{contenu.niveauCompetenceRequis}}</div>
+            <div>{{contenu.contenu}}</div>
+        </ng-container>
+        <button class="btn btn-light" (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
+        <button class="btn btn-success" *ngIf="!this.valide else objetValidee" (click)="this.selection()"
+                [disabled]="!this.areDifferentCompetences(this.competence, this.competenceOriginal)"
+                title="Des modifications doivent être faites pour être validées.">
+            Valider objet
+        </button>
+        <ng-template #objetValidee>
+            <button class="btn btn-outline-warning" (click)="this.selection()">Dévalider objet</button>
+        </ng-template>
+    </div>
+
+    <div style="width: 100%" *ngIf="this.modificationEnCours">
+        <div class="titleTop">
+            <div class="h1Fake" [innerHTML]="this.competence.titre"></div>
+        </div>
+        <h6>
+            <mat-form-field class="example-full-width">
+                <mat-label>Titre de la competence</mat-label>
+                <textarea [(ngModel)]="this.competence.titre" matInput></textarea>
+            </mat-form-field>
+        </h6>
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Niveau de la competence</mat-label>
+            <textarea [(ngModel)]="this.competence.niveau" rows="1" matInput></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Etat de la competence</mat-label>
+            <textarea [(ngModel)]="this.competence.etat" matInput></textarea>
+        </mat-form-field>
+        <!--Si c'est une arme-->
+        <mat-label>Optionnelle ?</mat-label>
+        <mat-checkbox [(ngModel)]="this.competence.optionnelle"></mat-checkbox>
+
+        <mat-form-field>
+            <mat-label>Icone de la competence</mat-label>
+            <textarea [(ngModel)]="this.competence.icone" matInput></textarea>
+        </mat-form-field>
+
+        <ng-container *ngFor="let contenu of this.competence.contenu; let indexContenu = index; trackBy: trackByFn">
+            <hr style="width: 66%; background-color: lightgrey; margin-left: 0; height : 1px">
+            <h6>Contenu</h6>
+            <mat-form-field>
+                <mat-label>Niveau de la compétence requis</mat-label>
+                <textarea [(ngModel)]="this.competence.contenu[indexContenu].niveauCompetenceRequis" matInput></textarea>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Icone de la competence</mat-label>
+                <textarea [(ngModel)]="this.competence.contenu[indexContenu].contenu" matInput></textarea>
+            </mat-form-field>
+            <br/>
+        </ng-container>
+        <button class="btn btn-outline-light" (click)="this.modifierContenu()"
+                title="Vous ne pouvez valider si le nom ne sera pas afficher, et qu'aucun faux nom n'est défini.">Valider propriété magique</button>
+        <button class="btn btn-outline-warning" (click)="this.resetCompetence()">Reset propriété magique</button>
+    </div>
+</div>
+<div *ngIf="this.competence && this.modificationEnCours && this.areDifferentCompetences(this.competence, this.competenceOriginal)">
+    <div class="messageChargement">Chargement en cours</div>
+    <mat-progress-bar mode="query"></mat-progress-bar>
+</div>
