@@ -31,26 +31,6 @@ export interface SpecialResponse {
     data: any;
 }
 
-export class Competence {
-    idCompetence: number;
-    idPersonnage: number;
-    idCompetenceParent: number;
-    titre: string;
-    niveau: number;
-    icone: string;
-    contenu: CompetenceContenu[];
-    etat: string;
-    optionnelle: boolean;
-    children: Competence[];
-}
-
-export class CompetenceContenu {
-    idCompetenceContenu: number;
-    idCompetence: number;
-    niveauCompetenceRequis: number;
-    contenu: string;
-}
-
 export class SavedDataTypeCompetence {
     key: string;
     optional: boolean;
