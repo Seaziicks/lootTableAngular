@@ -1,8 +1,9 @@
 import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import {Competence} from '../MyReactComponentWrapper';
 import {AuthService} from '../../../auth/auth.service';
 import {HttpClient} from '@angular/common/http';
 import equal from 'fast-deep-equal';
+import {CompetenceService} from '../../../services/competence.service';
+import {SpecialResponse} from '../../../loot-table/loot-table.component';
 
 @Component({
     selector: 'app-competence',
@@ -13,28 +14,37 @@ export class CompetenceComponent implements OnInit, OnChanges {
 
     modificationEnCours = false;
     valide = false;
+    idCompetenceContenuModifieEnCours: number = null;
 
     @Input() competence: Competence;
     competenceOriginal: Competence;
 
     constructor(private http: HttpClient,
-                private authService: AuthService) {
+                private authService: AuthService,
+                private competenceService: CompetenceService) {
     }
 
     ngOnInit(): void {
-        this.competenceOriginal = this.competence;
+        if (this.competence) {
+            this.competenceOriginal = JSON.parse(JSON.stringify(this.competence)) as Competence;
+        }
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        this.competenceOriginal = this.competence;
+        if (this.competence) {
+            this.competenceOriginal = JSON.parse(JSON.stringify(this.competence)) as Competence;
+        }
     }
 
     trackByFn(index, item) {
         return index;
     }
 
-    modifierContenu() {
+    modifierCompetence() {
         this.modificationEnCours = !this.modificationEnCours;
+        if (!this.modificationEnCours) {
+            this.envoyerModification();
+        }
     }
 
     areDifferentCompetences(competence1: Competence, competence2: Competence): boolean {
@@ -55,18 +65,58 @@ export class CompetenceComponent implements OnInit, OnChanges {
         return !equal(objetTemp1, objetTemp2);
     }
 
-    selection() {
+    envoyerModification() {
         // TODO: envoyer les informations au serveur
+        this.competenceService.updateCompetence(this.http, this.competence).then(
+            (data: any) => {
+                console.log(data);
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                this.competence = response.data as Competence;
+            }
+        );
+
     }
 
     resetCompetence() {
-        this.resetProprieteMagique();
+        const comp: Competence = JSON.parse(JSON.stringify(this.competenceOriginal)) as Competence;
+        this.competence.icone = comp.icone;
+        this.competence.optionnelle = comp.optionnelle;
+        this.competence.etat = comp.etat;
+        this.competence.niveau = comp.niveau;
+        this.competence.titre = comp.titre;
+        console.log(this.competence);
         this.modificationEnCours = false;
     }
 
-    resetProprieteMagique() {
-        this.competence = JSON.parse(JSON.stringify(this.competenceOriginal)) as Competence;
-        console.log(this.competence);
+    modifierCompetenceContenu(idCompetence: number) {
+        this.idCompetenceContenuModifieEnCours = idCompetence;
+    }
+
+    validerModificationCompetenceContenu() {
+        this.competenceService.updateCompetenceContenu(
+            this.http, this.competence.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours)).then(
+            (data: any) => {
+                console.log(data);
+                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
+                console.log(response.data.contenu);
+                console.log(response.data.niveauCompetenceRequis);
+            }
+        ).catch(
+            (data: any) => {
+                this.competence.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu =
+                    this.competenceOriginal.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu;
+            }
+        );
+        this.idCompetenceContenuModifieEnCours = null;
+    }
+
+    resetCompetenceContenu() {
+        this.competence.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu =
+            this.competenceOriginal.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu;
+        console.log(this.idCompetenceContenuModifieEnCours);
+        console.log(this.competence.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu);
+        console.log(this.competenceOriginal.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu);
+        this.idCompetenceContenuModifieEnCours = null;
     }
 
 }

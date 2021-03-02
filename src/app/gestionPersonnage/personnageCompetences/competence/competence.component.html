@@ -8,18 +8,14 @@
         <p *ngIf="this.competence.optionnelle">{{this.competence.optionnelle}}</p>
         <p *ngIf="this.competence.icone">{{this.competence.icone}}</p>
         <br/>
-        <ng-container *ngFor="let contenu of this.competence.contenu;">
-            <div *ngIf="contenu.niveauCompetenceRequis">Niveau requis : {{contenu.niveauCompetenceRequis}}</div>
-            <div>{{contenu.contenu}}</div>
-        </ng-container>
-        <button class="btn btn-light" (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
-        <button class="btn btn-success" *ngIf="!this.valide else objetValidee" (click)="this.selection()"
+        <button class="btn btn-light" (click)="this.modifierCompetence()" [disabled]="this.valide">Modifier competence</button>
+        <button class="btn btn-success" *ngIf="!this.valide else competenceValidee" (click)="this.envoyerModification()"
                 [disabled]="!this.areDifferentCompetences(this.competence, this.competenceOriginal)"
-                title="Des modifications doivent être faites pour être validées.">
-            Valider objet
+                title="Des modifications doivent être faites pour valider un changement.">
+            Valider competence
         </button>
-        <ng-template #objetValidee>
-            <button class="btn btn-outline-warning" (click)="this.selection()">Dévalider objet</button>
+        <ng-template #competenceValidee>
+            <button class="btn btn-outline-warning" (click)="this.envoyerModification()">Dévalider competence</button>
         </ng-template>
     </div>
 
@@ -49,24 +45,34 @@
             <mat-label>Icone de la competence</mat-label>
             <textarea [(ngModel)]="this.competence.icone" matInput></textarea>
         </mat-form-field>
+        <button class="btn btn-outline-light" (click)="this.modifierCompetence()">Valider modification competence</button>
+        <button class="btn btn-outline-warning" (click)="this.resetCompetence()">Reset competence</button>
+    </div>
 
-        <ng-container *ngFor="let contenu of this.competence.contenu; let indexContenu = index; trackBy: trackByFn">
+    <ng-container *ngFor="let contenu of this.competence.contenu; let indexContenu = index; trackBy: trackByFn">
+        <ng-container *ngIf="this.idCompetenceContenuModifieEnCours !== contenu.idCompetenceContenu else modificationCompetenceContenu">
+            <div *ngIf="contenu.niveauCompetenceRequis">Niveau requis : {{contenu.niveauCompetenceRequis}}</div>
+            <div>{{contenu.contenu}}</div>
+            <button class="btn btn-light" (click)="this.modifierCompetenceContenu(contenu.idCompetenceContenu)"
+                    [disabled]="this.idCompetenceContenuModifieEnCours !== null">Modifier contenu</button>
+        </ng-container>
+        <ng-template #modificationCompetenceContenu>
             <hr style="width: 66%; background-color: lightgrey; margin-left: 0; height : 1px">
             <h6>Contenu</h6>
             <mat-form-field>
-                <mat-label>Niveau de la compétence requis</mat-label>
+                <mat-label>Niveau de la competence requis</mat-label>
                 <textarea [(ngModel)]="this.competence.contenu[indexContenu].niveauCompetenceRequis" matInput></textarea>
             </mat-form-field>
             <mat-form-field>
-                <mat-label>Icone de la competence</mat-label>
+                <mat-label>Contenu</mat-label>
                 <textarea [(ngModel)]="this.competence.contenu[indexContenu].contenu" matInput></textarea>
             </mat-form-field>
+            <button class="btn btn-outline-light" (click)="this.validerModificationCompetenceContenu()">Valider modification competence</button>
+            <button class="btn btn-outline-warning" (click)="this.resetCompetenceContenu()">Reset competence</button>
+            <hr style="width: 66%; background-color: lightgrey; margin-left: 0; height : 1px">
             <br/>
-        </ng-container>
-        <button class="btn btn-outline-light" (click)="this.modifierContenu()"
-                title="Vous ne pouvez valider si le nom ne sera pas afficher, et qu'aucun faux nom n'est défini.">Valider propriété magique</button>
-        <button class="btn btn-outline-warning" (click)="this.resetCompetence()">Reset propriété magique</button>
-    </div>
+        </ng-template>
+    </ng-container>
 </div>
 <div *ngIf="this.competence && this.modificationEnCours && this.areDifferentCompetences(this.competence, this.competenceOriginal)">
     <div class="messageChargement">Chargement en cours</div>
