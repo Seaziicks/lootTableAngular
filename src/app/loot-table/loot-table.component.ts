@@ -48,7 +48,7 @@ export class LootTableComponent implements OnInit {
     idPersonnageSelectionne = 0;
 
 
-    ngOnInit(): void {
+    async ngOnInit() {
         this.chargerFamilles(this.http);
         this.monstreLootChance.getLootPossibles(this.http).then(
             (data: any) => {
@@ -56,13 +56,7 @@ export class LootTableComponent implements OnInit {
                 this.lootPossible = response.data as Loot[];
             }
         );
-        this.personnageService.getAllPersonnages(this.http, false).then(
-            (data: any) => {
-                console.log(data);
-                const response = data as SpecialResponse;
-                this.personnages = response.data as Personnage[];
-            }
-        );
+        this.personnages = await this.personnageService.getAllPersonnages(this.http, true);
     }
 
     constructor(private http: HttpClient,

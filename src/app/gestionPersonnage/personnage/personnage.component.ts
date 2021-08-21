@@ -33,14 +33,8 @@ export class PersonnageComponent implements OnInit {
                 public router: Router) {
     }
 
-    ngOnInit(): void {
-        this.personnageService.getAllPersonnages(this.http, true).then(
-            (data: any) => {
-                console.log(data);
-                const response = data as SpecialResponse;
-                this.personnages = response.data as Personnage[];
-            }
-        );
+    async ngOnInit() {
+        this.personnages = await this.personnageService.getAllPersonnages(this.http, true);
     }
 
     selectPersonnage() {

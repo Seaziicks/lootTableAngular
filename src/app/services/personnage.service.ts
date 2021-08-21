@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {BASE_URL, URL_PERSONNAGE, URL_STATISTIQUE} from './rest.service';
 import {HttpMethods} from '../interface/http-methods.enum';
+import {SpecialResponse} from '../loot-table/loot-table.component';
 
 @Injectable({
     providedIn: 'root'
@@ -11,10 +12,11 @@ export class PersonnageService {
     constructor() {
     }
 
-    public getAllPersonnages(http: HttpClient, withStatistique: boolean) {
+    public async getAllPersonnages(http: HttpClient, withStatistique: boolean) {
         const baseUrlBis = BASE_URL + URL_PERSONNAGE + '?withStatistique=' + withStatistique;
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return ((await http.get(baseUrlBis).toPromise() as SpecialResponse)
+            .data as Personnage[]);
     }
 
     public getPersonnage(http: HttpClient, idPersonnage: number, withStatistique: boolean) {
