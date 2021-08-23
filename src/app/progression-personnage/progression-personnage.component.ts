@@ -24,6 +24,7 @@ export class ProgressionPersonnageComponent implements OnInit {
 
     constructor(private http: HttpClient,
                 private personnageService: PersonnageService,
+                // tslint:disable-next-line:variable-name
                 private _snackBar: MatSnackBar) {
     }
 
@@ -31,85 +32,69 @@ export class ProgressionPersonnageComponent implements OnInit {
         this.loadProgressionPersonnage();
     }
 
-    loadProgressionPersonnage() {
-        this.personnageService.getProgressionPersonnage(this.http).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = data as SpecialResponse;
-                this.progressionPersonnage = response.data as ProgressionPersonnage[];
-                this.progressionPersonnageOriginal = JSON.parse(JSON.stringify(this.progressionPersonnage)) as ProgressionPersonnage[];
-                // console.log(this.progressionPersonnage);
-            }
-        );
+    async loadProgressionPersonnage() {
+        this.progressionPersonnage = (await this.personnageService.getProgressionPersonnage(this.http)).data as ProgressionPersonnage[];
+        this.progressionPersonnageOriginal = JSON.parse(JSON.stringify(this.progressionPersonnage)) as ProgressionPersonnage[];
     }
 
 
-    ajouterLigne() {
+    async ajouterLigne() {
         // const lastProgression = this.progressionPersonnage[this.progressionPersonnage.length - 1];
         const lastProgression = this.progressionPersonnage[0];
         const newProgression = {
-            idProgressionPersonnage: null, niveau: lastProgression.niveau + 1, statistiques: false,
+            idProgressionPersonnage: null, niveau: lastProgression ? lastProgression.niveau + 1 : 1, statistiques: false,
             nombreStatistiques: 0, pointCompetence: false, nombrePointsCompetences: 0
         } as ProgressionPersonnage;
-        this.personnageService.progressionPersonnage(this.http, HttpMethods.POST,
-            newProgression.idProgressionPersonnage, newProgression).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponentFromSpecialResponse(response);
-                if (response.status > 199 && response.status < 299) {
-                    console.log(response.data as ProgressionPersonnage);
-                    newProgression.idProgressionPersonnage = (response.data as ProgressionPersonnage).idProgressionPersonnage;
-                    // this.progressionPersonnage.push(newProgression);
-                    this.progressionPersonnage.unshift(newProgression);
-                    this.table.renderRows();
-                } else if (response.status === 409) {
-                    this.openSnackBar('Niveau déjà défini', 'Erreur');
-                }
+        try {
+            const response: SpecialResponse = await this.personnageService.progressionPersonnage(this.http, HttpMethods.POST,
+                newProgression.idProgressionPersonnage, newProgression);
+            console.log('Je ne suis pas en erreur, donc c\'est bon.');
+            console.log(response);
+            this.banner.loadComponentFromSpecialResponse(response);
+            if (response.status > 199 && response.status < 299) {
+                console.log(response.data as ProgressionPersonnage);
+                newProgression.idProgressionPersonnage = (response.data as ProgressionPersonnage).idProgressionPersonnage;
+                // this.progressionPersonnage.push(newProgression);
+                this.progressionPersonnage.unshift(newProgression);
+                this.table.renderRows();
             }
-        ).catch(
-            (data: any) => {
-                console.log(data);
-                const httpResponse = data;
-                const response: SpecialResponse = JSON.parse(data.error) as SpecialResponse;
-                this.banner.loadComponentFromSpecialResponse(response);
-                if (httpResponse.status === 409) {
-                    this.openSnackBar('Niveau déjà défini', 'Erreur');
-                }
+        } catch (error) {
+            console.log(error);
+            const response: SpecialResponse = JSON.parse(error.error) as SpecialResponse;
+            console.log(response);
+            this.banner.loadComponentFromSpecialResponseWithoutTitle(response);
+            if (response.status === 409) {
+                this.openSnackBar('Niveau déjà défini', 'Erreur');
             }
-        );
+        }
         // console.log(this.progressionPersonnage);
     }
 
-    supprimerLigne() {
-        const progression = this.progressionPersonnage[this.progressionPersonnage.length - 1];
-        this.personnageService.progressionPersonnage(this.http, HttpMethods.DELETE, progression.idProgressionPersonnage, progression).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data);
-                this.banner.loadComponentFromSpecialResponse(response);
-                if (response.status > 199 && response.status < 299) {
-                    // this.progressionPersonnage.pop();
-                    this.progressionPersonnage.shift();
-                    this.table.renderRows();
-                }
+    async supprimerLigne() {
+        const progression = this.progressionPersonnage[0];
+        try {
+            const response = await this.personnageService
+                .progressionPersonnage(this.http, HttpMethods.DELETE, progression.idProgressionPersonnage, progression);
+            this.banner.loadComponentFromSpecialResponseWithoutTitle(response);
+            if (response.status > 199 && response.status < 299) {
+                // this.progressionPersonnage.pop();
+                this.progressionPersonnage.shift();
+                this.table.renderRows();
             }
-        );
+        } catch (error) {
+            console.log(error);
+            const response: SpecialResponse = JSON.parse(error.error) as SpecialResponse;
+            this.banner.loadComponentFromSpecialResponseWithoutTitle(response);
+        }
         // console.log(this.progressionPersonnage);
     }
 
-    validerTable() {
+    async validerTable() {
         for (let indexProgression = 0 ; indexProgression < this.progressionPersonnage.length ; indexProgression++) {
             if (!equal(this.progressionPersonnage[indexProgression], this.progressionPersonnageOriginal[indexProgression])) {
-                this.personnageService.progressionPersonnage(this.http, HttpMethods.PUT,
-                    this.progressionPersonnage[indexProgression].idProgressionPersonnage, this.progressionPersonnage[indexProgression])
-                    .then(
-                        (data: any) => {
-                            console.log(data);
-                            const response: SpecialResponse = JSON.parse(data);
-                            this.banner.loadComponentFromSpecialResponse(response);
-                        }
-                );
+                const response: SpecialResponse = await this.personnageService.progressionPersonnage(this.http, HttpMethods.PUT,
+                    this.progressionPersonnage[indexProgression].idProgressionPersonnage, this.progressionPersonnage[indexProgression]);
+                this.banner.loadComponentFromSpecialResponse(response);
             }
         }
         setTimeout(() => {
@@ -146,9 +131,9 @@ export class ProgressionPersonnageComponent implements OnInit {
         '  {{this.message}}' +
         '</span>',
     styles: [`
-    .hotPinkColor {
+    /*.hotPinkColor {
       color: hotpink;
-    }
+    }*/
   `],
 })
 export class InformationSnackBarComponent {

@@ -12,33 +12,32 @@ export class PersonnageService {
     constructor() {
     }
 
-    public async getAllPersonnages(http: HttpClient, withStatistique: boolean) {
+    public async getAllPersonnages(http: HttpClient, withStatistique: boolean): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_PERSONNAGE + '?withStatistique=' + withStatistique;
         console.log(baseUrlBis);
-        return ((await http.get(baseUrlBis).toPromise() as SpecialResponse)
-            .data as Personnage[]);
+        return await http.get(baseUrlBis).toPromise() as SpecialResponse;
     }
 
-    public getPersonnage(http: HttpClient, idPersonnage: number, withStatistique: boolean) {
+    public async getPersonnage(http: HttpClient, idPersonnage: number, withStatistique: boolean): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_PERSONNAGE + '?idPersonnage=' + idPersonnage + '&withStatistique=' + withStatistique;
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return await http.request('GET', baseUrlBis).toPromise() as SpecialResponse;
     }
 
-    getStatistiquesDetaillees(http: HttpClient, idPersonnage: number, details: boolean) {
+    async getStatistiquesDetaillees(http: HttpClient, idPersonnage: number, details: boolean): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_STATISTIQUE + '?idPersonnage=' + idPersonnage + '&details=' + details;
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return await http.request('GET', baseUrlBis).toPromise() as SpecialResponse;
     }
 
-    getProgressionPersonnage(http: HttpClient) {
+    async getProgressionPersonnage(http: HttpClient): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'progressionPersonnage.php';
         console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return await http.request('GET', baseUrlBis).toPromise() as SpecialResponse;
     }
 
-    progressionPersonnage(http: HttpClient, httpMethod: HttpMethods, idProgressionPersonnage: number,
-                          progressionPersonnage: ProgressionPersonnage): Promise<string> {
+    async progressionPersonnage(http: HttpClient, httpMethod: HttpMethods, idProgressionPersonnage: number,
+                                progressionPersonnage: ProgressionPersonnage): Promise<SpecialResponse> {
         const values = {idProgressionPersonnage: undefined, ProgressionPersonnage: undefined};
         values.idProgressionPersonnage = idProgressionPersonnage;
         values.ProgressionPersonnage = progressionPersonnage;
@@ -47,17 +46,19 @@ export class PersonnageService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('ProgressionPersonnage', JSON.stringify(values));
 
-        return http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
+            .toPromise()) as SpecialResponse;
     }
 
-    getNiveauEnAttente(http: HttpClient, niveau: number): Promise<any> {
+    async getNiveauEnAttente(http: HttpClient, niveau: number): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'progressionPersonnage.php?niveau=' + niveau;
         console.log(baseUrlBis);
 
-        return http.request('GET', baseUrlBis).toPromise();
+        return await http.request('GET', baseUrlBis).toPromise() as SpecialResponse;
     }
 
-    monterNiveau(http: HttpClient, httpMethod: HttpMethods, idPersonnage: number, niveau: StatistiquesParNiveau) {
+    async monterNiveau(http: HttpClient, httpMethod: HttpMethods,
+                       idPersonnage: number, niveau: StatistiquesParNiveau): Promise<SpecialResponse> {
         const values = {idPersonnage: undefined, Niveau: undefined};
         values.idPersonnage = idPersonnage;
         values.Niveau = niveau;
@@ -66,22 +67,23 @@ export class PersonnageService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Niveau', JSON.stringify(values));
 
-        return http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+        return JSON.parse(await http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'text', params})
+            .toPromise()) as SpecialResponse;
     }
 
-    gererNiveau(http: HttpClient, idPersonnage: number, monte: boolean) {
+    async gererNiveau(http: HttpClient, idPersonnage: number, monte: boolean): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'monterNiveau.php' + '?idPersonnage=' + idPersonnage + '&monte=' + monte;
         console.log(baseUrlBis);
 
-        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
+        return await http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }
 
 
 
-    getCompetences(http: HttpClient, idPersonnage: number) {
+    async getCompetences(http: HttpClient, idPersonnage: number): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'competenceRest.php?idPersonnage=' + idPersonnage;
         // console.log(baseUrlBis);
-        return http.request('GET', baseUrlBis).toPromise();
+        return await http.request('GET', baseUrlBis).toPromise() as SpecialResponse;
     }
 
 }

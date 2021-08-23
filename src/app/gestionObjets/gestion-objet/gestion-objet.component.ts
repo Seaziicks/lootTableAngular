@@ -30,7 +30,7 @@ export class GestionObjetComponent implements OnInit {
     }
 
     async ngOnInit() {
-        this.personnages = await this.personnageService.getAllPersonnages(this.http, true);
+        this.personnages = (await this.personnageService.getAllPersonnages(this.http, true)).data as Personnage[];
     }
 
     selectPersonnage() {

@@ -14,14 +14,13 @@ import {
 import * as React from 'react';
 
 import * as ReactDOM from 'react-dom';
-import {SavedDataType, SkillThemeType, SkillType} from 'beautiful-skill-tree';
+import {SavedDataType, SkillType} from 'beautiful-skill-tree';
 import {HttpClient} from '@angular/common/http';
 import {NodeState} from 'beautiful-skill-tree/dist/models';
 import {ReactNode} from 'react';
 import {MyReactComponent} from './MyReactComponent';
 import {AuthService} from '../../auth/auth.service';
 import {PersonnageService} from '../../services/personnage.service';
-import {CompetenceService} from '../../services/competence.service';
 
 const containerElementName = 'myReactComponentContainer';
 
@@ -76,23 +75,20 @@ export class MyComponentWrapperComponent implements OnInit, OnChanges, OnDestroy
     constructor(private http: HttpClient,
                 private authService: AuthService,
                 private personnageService: PersonnageService,
-                private competenceService: CompetenceService) {
+                /*private competenceService: CompetenceService*/) {
         this.handleDivClicked = this.handleDivClicked.bind(this);
         this.disabled = true;
     }
 
-    ngOnInit(): void {
-        this.personnageService.getCompetences(this.http, 1).then(
-            (data: any) => {
-                const response: SpecialResponse = data as SpecialResponse;
-                const competences = response.data as Competence[];
-                this.dataToDisplay = this.extractAllCompetences(competences);
-                this.data = this.extractAllSavedDataType(competences);
-                // console.log(this.dataToDisplay);
-                // console.log(this.data);
-                this.render();
-            }
-        );
+    async ngOnInit() {
+        const response: SpecialResponse = await this.personnageService.getCompetences(this.http, 1);
+        console.log(response);
+        const competences = response.data as Competence[];
+        this.dataToDisplay = this.extractAllCompetences(competences);
+        this.data = this.extractAllSavedDataType(competences);
+        // console.log(this.dataToDisplay);
+        // console.log(this.data);
+        this.render();
     }
 
     extractAllCompetences(competencesToExtract: Competence[]): SkillType[] {

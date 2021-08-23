@@ -56,7 +56,7 @@ export class LootTableComponent implements OnInit {
                 this.lootPossible = response.data as Loot[];
             }
         );
-        this.personnages = await this.personnageService.getAllPersonnages(this.http, true);
+        this.personnages = (await this.personnageService.getAllPersonnages(this.http, true)).data as Personnage[];
     }
 
     constructor(private http: HttpClient,
@@ -316,9 +316,9 @@ export class LootTableComponent implements OnInit {
         '  <h3>Personnage sélectionné vide</h3>\n' +
         '  <p>Aucune personnage sélectionné. Êtes-vous sûr de ce choix ?</p>\n' +
         '</mat-dialog-content>\n' +
-        '<mat-dialog-actions align="end">\n' +
+        '<mat-dialog-actions style="text-align: end">\n' +
         '  <button class="btn btn-danger btn-validation-dialog" [mat-dialog-close]="false">Annuler</button>\n' +
-        '  <button class="btn btn-success btn-validation-dialog" [mat-dialog-close]="true" cdkFocusInitial>Valider</button>\n' +
+        '  <button class="btn btn-success btn-validation-dialog" [mat-dialog-close]="true">Valider</button>\n' +
         '</mat-dialog-actions>',
     styles: ['.btn-validation-dialog { background: transparent; margin-right: 5px; color: black; }'],
 })

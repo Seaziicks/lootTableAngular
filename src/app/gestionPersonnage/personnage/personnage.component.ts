@@ -34,7 +34,7 @@ export class PersonnageComponent implements OnInit {
     }
 
     async ngOnInit() {
-        this.personnages = await this.personnageService.getAllPersonnages(this.http, true);
+        this.personnages = (await this.personnageService.getAllPersonnages(this.http, true)).data as Personnage[];
     }
 
     selectPersonnage() {

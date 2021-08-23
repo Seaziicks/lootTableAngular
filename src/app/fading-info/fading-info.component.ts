@@ -14,6 +14,7 @@ import {SpecialResponse} from '../loot-table/loot-table.component';
 
 
 @Directive({
+    // tslint:disable-next-line:directive-selector
     selector: '[adHost]',
 })
 export class AdDirective {
@@ -54,6 +55,9 @@ export class FadingInfoComponent implements OnDestroy {
 
     loadComponentFromSpecialResponse(response: SpecialResponse) {
         this.loadComponent(response.status_message, JSON.stringify(response.data), '' + response.status);
+    }
+    loadComponentFromSpecialResponseWithoutTitle(response: SpecialResponse) {
+        this.loadComponent('', response.status_message, '' + response.status);
     }
 }
 

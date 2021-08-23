@@ -24,16 +24,12 @@ export class ModifierCompetenceComponent implements OnInit {
                 private competenceService: CompetenceService) {
     }
 
-    ngOnInit(): void {
-        this.personnageService.getCompetences(this.http, this.idPersonnage).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = data as SpecialResponse;
-                const competences = response.data as Competence[];
-                this.competences = this.competenceService.extractAllCompetences(competences);
-                console.log(this.competences);
-            }
-        );
+    async ngOnInit() {
+        const response: SpecialResponse = await this.personnageService.getCompetences(this.http, this.idPersonnage);
+        console.log(response);
+        const competences = response.data as Competence[];
+        this.competences = this.competenceService.extractAllCompetences(competences);
+        console.log(this.competences);
     }
 
     selectCompetence() {
