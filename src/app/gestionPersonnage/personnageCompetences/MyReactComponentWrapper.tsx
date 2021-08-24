@@ -11,9 +11,10 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import * as React from 'react';
 
+import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+
 import {SavedDataType, SkillType} from 'beautiful-skill-tree';
 import {HttpClient} from '@angular/common/http';
 import {NodeState} from 'beautiful-skill-tree/dist/models';

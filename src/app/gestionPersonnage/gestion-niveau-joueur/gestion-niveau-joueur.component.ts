@@ -38,7 +38,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
         'dé vitalité', 'mana', 'mana naturel', 'dé mana'];
 
     constructor(private http: HttpClient,
-                public authService: AuthService,
+                private authService: AuthService,
                 private personnageService: PersonnageService,
                 // tslint:disable-next-line:variable-name
                 private _snackBar: MatSnackBar,
@@ -46,12 +46,20 @@ export class GestionNiveauJoueurComponent implements OnInit {
                 private route: ActivatedRoute) {
     }
 
-    ngOnInit(): void {
+    async ngOnInit() {
+        await this.authService.checkUserInLocalStorage(this.http, this.router);
+        console.log('caca');
+        console.log(this.route.snapshot.paramMap.get('idPersonnage'));
+        console.log(this.authService.isGameMaster());
+        console.log(this.authService.user);
         if (this.authService.personnage) {
+            console.log('ici');
             this.idPersonnage = this.authService.personnage.idPersonnage;
         } else if (this.authService.isGameMaster()) {
-            this.idPersonnage = +this.route.snapshot.paramMap.get('id');
+            console.log('là');
+            this.idPersonnage = +this.route.snapshot.paramMap.get('idPersonnage');
         } else {
+            console.log('là bas');
             this.router.navigate(['/']);
         }
         this.nouveauNiveau = {
@@ -68,8 +76,10 @@ export class GestionNiveauJoueurComponent implements OnInit {
             manaNaturel: 0,
             deMana: 0,
         } as StatistiquesParNiveau;
-        this.loadProgressionPersonnage();
-        this.loadPersonnage();
+        if (this.idPersonnage) {
+            this.loadProgressionPersonnage();
+            this.loadPersonnage();
+        }
     }
 
     async loadPersonnage() {

@@ -1,6 +1,6 @@
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {HttpMethods} from '../interface/http-methods.enum';
-import {BASE_URL, URL_OBJET_COMPLET} from '../services/rest.service';
+import {BASE_URL} from '../services/rest.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {UserForCreation} from '../user/user-create/user-create.component';
 import {UserSession} from '../user/user-login/user-login.component';
@@ -124,20 +124,17 @@ export class AuthService {
         return this.isAuth;
     }
 
-    checkUserInLocalStorage(http: HttpClient, router: Router, url: string = router.url) {
+    async checkUserInLocalStorage(http: HttpClient, router: Router, url: string = router.url) {
         const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
         if (userSession && ! this.isAuth) {
-            this.signIn(http, userSession.username, userSession.password).then(
-                (data: any) => {
-                    if (this.isAuth) {
-                        // Usually you would use the redirect URL from the auth service.
-                        // However to keep the example simple, we will always redirect to `/admin`.
+            await this.signIn(http, userSession.username, userSession.password);
+            if (this.isAuth) {
+                // Usually you would use the redirect URL from the auth service.
+                // However to keep the example simple, we will always redirect to `/admin`.
 
-                        // Redirect the user
-                        router.navigate([url]);
-                    }
-                }
-            );
+                // Redirect the user
+                router.navigate([url]);
+            }
         }
     }
 

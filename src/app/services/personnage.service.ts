@@ -82,7 +82,7 @@ export class PersonnageService {
 
     async getCompetences(http: HttpClient, idPersonnage: number): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'competenceRest.php?idPersonnage=' + idPersonnage;
-        // console.log(baseUrlBis);
+        console.log(baseUrlBis);
         return await http.request('GET', baseUrlBis).toPromise() as SpecialResponse;
     }
 

@@ -25,8 +25,8 @@ import {PersonnageCompetencesComponent} from './gestionPersonnage/personnageComp
 
 
 const routes: Routes = [
-    {path: 'competences', component: PersonnageCompetencesComponent},
-    {path: 'niveau', component: GestionNiveauJoueurComponent},
+    {path: 'competences/:idPersonnage', component: PersonnageCompetencesComponent},
+    {path: 'niveau/:idPersonnage', component: GestionNiveauJoueurComponent},
     {path: 'progression', component: ProgressionPersonnageComponent},
     {path: 'unauthorized', component: UnauthorizedUserComponent},
     {path: 'deconnexion', component: UserDisconnectComponent},
