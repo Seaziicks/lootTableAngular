@@ -41,7 +41,7 @@
                       style="transition: 0.5s ; margin-right: 50px"
                       *ngIf="!this.monstreExactMatch()"
                       (click)="this.modifierMonstre()"
-                      [disabled]="this.inputMonstreNameAlreadyExist() || this.emptyMonstre()"
+                      [disabled]="this.emptyMonstre()"
                       [title]="this.inputMonstreNameAlreadyExist() ? 'Le nom choisi existe déjà. Les noms sont uniques.' : ''">
                 Modifier un monstre
               </button>

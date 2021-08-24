@@ -123,6 +123,15 @@ export class GestionMonstreComponent implements OnInit {
         return true;
     }
 
+    inputMonstreNameAlreadyExistInSameFamily(): boolean {
+        if (this.monstresGroupes) {
+            const value: string = (document.getElementById('monstreLibelle') as HTMLInputElement).value;
+            const monstre: Monstre = this.searchExistingMonstreByName(value);
+            return monstre !== undefined && monstre.idFamilleMonstre === this.familleMonstreSelectionne.idFamilleMonstre;
+        }
+        return true;
+    }
+
     monstreExactMatch(): boolean {
         if (this.monstreCourrant) {
             // On cherche si un monstre du même nom existe déja.
