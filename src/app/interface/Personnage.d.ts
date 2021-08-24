@@ -45,3 +45,25 @@ declare interface ProgressionPersonnage {
     pointCompetence: boolean;
     nombrePointsCompetences: number;
 }
+
+
+
+declare class Competence {
+    idCompetence: number;
+    idPersonnage: number;
+    idCompetenceParent: number;
+    titre: string;
+    niveau: number;
+    icone: string;
+    contenu: CompetenceContenu[];
+    etat: string;
+    optionnelle: boolean;
+    children: Competence[];
+}
+
+declare class CompetenceContenu {
+    idCompetenceContenu: number;
+    idCompetence: number;
+    niveauCompetenceRequis: number;
+    contenu: string;
+}

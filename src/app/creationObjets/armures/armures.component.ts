@@ -44,7 +44,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
                 );
             }
         );
-        this.jsonService.getJSON('creationObjets/classique', 'armures').then(
+        this.jsonService.getJSON('objets/classique', 'armures').then(
             (armuresCourantes: any) => {
                 this.allArmures = JSON.parse(armuresCourantes) as CategoriesArmures;
             }

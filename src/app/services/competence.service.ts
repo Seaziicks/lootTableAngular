@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
-import {SkillType} from 'beautiful-skill-tree';
-import {Competence, CompetenceContenu} from '../gestionPersonnage/personnageCompetences/MyReactComponentWrapper';
-import {ReactNode} from 'react';
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {BASE_URL, URL_FAMILLE_MONSTRE} from './rest.service';
+import validate = WebAssembly.validate;
 
 @Injectable({
     providedIn: 'root'
@@ -30,5 +30,31 @@ export class CompetenceService {
             Array.prototype.push.apply(competences, this.extractCompetence(children));
         }
         return competences;
+    }
+
+    updateCompetence(http: HttpClient, competence: Competence) {
+        const values = { idCompetence: undefined, Competence: undefined };
+        values.idCompetence = competence.idCompetence;
+        values.Competence = competence;
+        const baseUrlBis = BASE_URL + 'competenceRest.php' + '?idCompetence=' + competence.idCompetence;
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('Competence', JSON.stringify(values));
+
+        return http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
+    }
+
+    updateCompetenceContenu(http: HttpClient, competenceContenu: CompetenceContenu) {
+        const values = { idCompetenceContenu: undefined, CompetenceContenu: undefined };
+        values.idCompetenceContenu = competenceContenu.idCompetenceContenu;
+        values.CompetenceContenu = competenceContenu;
+        // values.CompetenceContenu.contenu = values.CompetenceContenu.contenu.replace('+', '\u002B');
+        console.log(values.CompetenceContenu.contenu);
+        const baseUrlBis = BASE_URL + 'competenceRest.php' + '?idCompetenceContenu=' + competenceContenu.idCompetenceContenu;
+        console.log(baseUrlBis);
+        const params = new HttpParams().set('CompetenceContenu', JSON.stringify(values));
+
+        console.log(params);
+
+        return http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
     }
 }

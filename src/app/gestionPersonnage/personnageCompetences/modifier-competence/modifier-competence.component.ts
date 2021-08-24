@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {PersonnageService} from '../../../services/personnage.service';
 import {AuthService} from '../../../auth/auth.service';
-import {Competence, SpecialResponse} from '../MyReactComponentWrapper';
+import {SpecialResponse} from '../MyReactComponentWrapper';
 import {CompetenceService} from '../../../services/competence.service';
 
 @Component({

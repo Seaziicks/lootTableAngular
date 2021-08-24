@@ -87,6 +87,7 @@ export abstract class ObjetCommun {
         this.prixProprieteMagique = 0;
         this.proprieteMagiqueCurrencyType = null;
         for (const proprieteMagique of this.proprietesMagiques) {
+            console.log(proprieteMagique);
             const data = proprieteMagique.infos.data;
             const indexPrix = data.indexOf(data.filter(f => f.includes('Prix'))[0]);
             if (indexPrix !== -1 && !data[indexPrix].includes('bonus')) {
