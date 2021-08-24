@@ -38,35 +38,28 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    loadObjet() {
-        this.objetService.getObjetComplet(this.http, this.idObjet).then(
-            (dataObjet: any) => {
-                const response: SpecialResponse = dataObjet as SpecialResponse;
-                console.log(response);
-                this.objet = response.data as ObjetCommunFromDB;
-                console.log(this.objet);
-                if (this.authService.personnage) {
-                    this.loadEffetsMagiquesDecouverts();
-                }
-            }
-        );
+    async loadObjet() {
+        const response: SpecialResponse = await this.objetService.getObjetComplet(this.http, this.idObjet);
+        console.log(response);
+        this.objet = response.data as ObjetCommunFromDB;
+        console.log(this.objet);
+        if (this.authService.personnage) {
+            this.loadEffetsMagiquesDecouverts();
+        }
     }
 
-    loadEffetsMagiquesDecouverts() {
-        this.objetService.getEffetsMagiquesDecouverts(this.http, this.idObjet, this.authService.personnage.idPersonnage).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = data as SpecialResponse;
-                this.effetsMagiquesDecouverts = response.data as EffetMagiqueDecouvert[];
-                this.effetsMagiquesDecouvertsOriginal = JSON.parse(
-                    JSON.stringify(this.effetsMagiquesDecouverts)) as EffetMagiqueDecouvert[];
+    async loadEffetsMagiquesDecouverts() {
+        const response: SpecialResponse = await this.objetService
+            .getEffetsMagiquesDecouverts(this.http, this.idObjet, this.authService.personnage.idPersonnage);
+        console.log(response);
+        this.effetsMagiquesDecouverts = response.data as EffetMagiqueDecouvert[];
+        this.effetsMagiquesDecouvertsOriginal = JSON.parse(
+            JSON.stringify(this.effetsMagiquesDecouverts)) as EffetMagiqueDecouvert[];
 
-                this.modificationsEnCours = [];
-                for (const effetsMagiquesDecouvert of this.effetsMagiquesDecouverts) {
-                    this.modificationsEnCours.push(false);
-                }
-            }
-        );
+        this.modificationsEnCours = [];
+        for (const effetsMagiquesDecouvert of this.effetsMagiquesDecouverts) {
+            this.modificationsEnCours.push(false);
+        }
     }
 
     @HostListener('document:keydown', ['$event'])
@@ -88,30 +81,26 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         return index;
     }
 
-    supprimerEffetDecouvert(indexEffetDecouvert: number) {
-        this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.DELETE, this.effetsMagiquesDecouverts[indexEffetDecouvert]).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                setTimeout( () => {
-                    this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
-            }
-        );
+    async supprimerEffetDecouvert(indexEffetDecouvert: number) {
+        const response: SpecialResponse = await this.objetService
+            .effetsMagiquesDecouverts(this.http, HttpMethods.DELETE, this.effetsMagiquesDecouverts[indexEffetDecouvert]);
+        console.log(response);
+        setTimeout( () => {
+            this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
+
         this.modificationsEnCours[indexEffetDecouvert] = false;
 
         this.reloadingInterface();
         this.loadEffetsMagiquesDecouverts();
     }
 
-    modifierEffetDecouvert(indexEffetDecouvert: number) {
-        this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.PUT, this.effetsMagiquesDecouverts[indexEffetDecouvert]).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                setTimeout( () => {
-                    this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
-            }
-        );
+    async modifierEffetDecouvert(indexEffetDecouvert: number) {
+        const response: SpecialResponse = await this.objetService
+            .effetsMagiquesDecouverts(this.http, HttpMethods.PUT, this.effetsMagiquesDecouverts[indexEffetDecouvert]);
+        console.log(response);
+        setTimeout( () => {
+            this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
+
         this.modificationsEnCours[indexEffetDecouvert] = false;
 
         this.reloadingInterface();
@@ -133,21 +122,19 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         this.ajoutEffetDecouvert = false;
     }
 
-    validerAjoutEffetDecouvert() {
+    async validerAjoutEffetDecouvert() {
         const effetMagiqueDecouvert = {
             idEffetMagiqueDecouvert: null,
             idObjet: this.idObjet,
             idPersonnage: this.authService.personnage.idPersonnage,
             effet: this.effetDecouvertAAjouter,
         } as EffetMagiqueDecouvert;
-        this.objetService.effetsMagiquesDecouverts(this.http, HttpMethods.POST, effetMagiqueDecouvert).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                setTimeout( () => {
-                    this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
-            }
-        );
+        const response: SpecialResponse = await this.objetService
+            .effetsMagiquesDecouverts(this.http, HttpMethods.POST, effetMagiqueDecouvert);
+        console.log(response);
+        setTimeout( () => {
+            this.banner.loadComponentFromSpecialResponse(response); }, 1250 );
+
         this.effetDecouvertAAjouter = null;
         this.ajoutEffetDecouvert = false;
 

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 import {ObjetService} from '../../services/objet.service';
 import {HttpClient} from '@angular/common/http';
 import {SpecialResponse} from '../../loot-table/loot-table.component';
@@ -36,16 +36,12 @@ export class PersonnageObjetComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    loadObjet() {
-        this.objetService.getObjetComplet(this.http, this.idObjet).then(
-            (dataObjet: any) => {
-                const response: SpecialResponse = dataObjet as SpecialResponse;
-                console.log(response);
-                this.objet = response.data as ObjetCommunFromDB;
-                this.objetOriginal = JSON.parse(JSON.stringify(this.objet)) as ObjetCommunFromDB;
-                console.log(this.objet);
-            }
-        );
+    async loadObjet() {
+        const response: SpecialResponse = await this.objetService.getObjetComplet(this.http, this.idObjet);
+        console.log(response);
+        this.objet = response.data as ObjetCommunFromDB;
+        this.objetOriginal = JSON.parse(JSON.stringify(this.objet)) as ObjetCommunFromDB;
+        console.log(this.objet);
     }
 
     @HostListener('document:keydown', ['$event'])
@@ -222,48 +218,33 @@ export class PersonnageObjetComponent implements OnInit {
     // Ou alors, il ne faut mettre à jour la supression que quand on valide l'objet.
     // Et ne plus utiliser checkProprietesMagiquesIntegrity, ce qui serait plus simple.
     // Sinon, on ne sait pas quelle ligne supprimer.
-    updateObjet() {
+    async updateObjet() {
         this.setEmptyToNull();
         if (this.isEmptyObjet()) {
             // TODO : Supprimer objet
-            this.objetService.objet(this.http, HttpMethods.DELETE, 0, this.objet)
-                .then(
-                    (data: any) => {
-                        console.log(data);
-                    }
-                );
+            const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.DELETE, 0, this.objet);
+            console.log(response);
         } else {
             for (let indexEffet = 0; indexEffet < this.objet.effetMagique.length; indexEffet++) {
                 if (this.isEmptyEffetMagique(this.objet.effetMagique[indexEffet])) {
                     // TODO : Supprimer effet
-                    this.objetService.effetMagique(this.http, HttpMethods.DELETE, 0, this.objet.effetMagique[indexEffet])
-                        .then(
-                            (data: any) => {
-                                console.log(data);
-                            }
-                        );
+                    const response: SpecialResponse = await this.objetService
+                        .effetMagique(this.http, HttpMethods.DELETE, 0, this.objet.effetMagique[indexEffet]);
+                    console.log(response);
                 } else {
                     for (let indexTable = 0; indexTable < this.objet.effetMagique[indexEffet].effetMagiqueTable.length; indexTable++) {
                         if (this.isEmptyTable(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
                             // TODO : Supprimer table
-                            this.objetService.table(this.http, HttpMethods.DELETE, 0,
-                                this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable])
-                                .then(
-                                    (data: any) => {
-                                        console.log(data);
-                                    }
-                                );
+                            const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.DELETE, 0,
+                                this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]);
+                            console.log(response);
                         } else {
                             if (this.areDifferentTables(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
                                 // TODO : Modifier la table.
-                                this.objetService.table(this.http, HttpMethods.PUT, 0,
-                                    this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable])
-                                    .then(
-                                        (data: any) => {
-                                            console.log(data);
-                                        }
-                                    );
+                                const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.PUT, 0,
+                                    this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]);
+                                console.log(response);
                             }
                             for (let indexTitle = 0;
                                  indexTitle < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
@@ -272,28 +253,20 @@ export class PersonnageObjetComponent implements OnInit {
                                 if (this.isEmptyTableTitle(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                     .effetMagiqueTableTitle[indexTitle])) {
                                     // TODO : Supprimer title
-                                    this.objetService.title(this.http, HttpMethods.DELETE, 0,
+                                    const response: SpecialResponse = await this.objetService.title(this.http, HttpMethods.DELETE, 0,
                                         this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                            .effetMagiqueTableTitle[indexTitle])
-                                        .then(
-                                            (data: any) => {
-                                                console.log(data);
-                                            }
-                                        );
+                                            .effetMagiqueTableTitle[indexTitle]);
+                                    console.log(response);
                                 } else {
                                     if (this.areDifferentTableTitles(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTitle[indexTitle],
                                         this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTitle[indexTitle])) {
                                         // TODO : Modifier title
-                                        this.objetService.title(this.http, HttpMethods.PUT, 0,
+                                        const response: SpecialResponse = await this.objetService.title(this.http, HttpMethods.PUT, 0,
                                             this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                .effetMagiqueTableTitle[indexTitle])
-                                            .then(
-                                                (data: any) => {
-                                                    console.log(data);
-                                                }
-                                            );
+                                                .effetMagiqueTableTitle[indexTitle]);
+                                        console.log(response);
                                     }
                                     for (let indexTitleContent = 0;
                                          indexTitleContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
@@ -302,14 +275,12 @@ export class PersonnageObjetComponent implements OnInit {
                                         if (this.isEmptyTableTitleContent(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent])) {
                                             // TODO : Supprimer title content
-                                            this.objetService.titleContent(this.http, HttpMethods.DELETE, 0,
+                                            const response: SpecialResponse = await this.objetService
+                                                .titleContent(this.http, HttpMethods.DELETE, 0,
                                                 this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                     .effetMagiqueTableTitle[indexTitle]
-                                                    .effetMagiqueTableTitleContent[indexTitleContent]).then(
-                                                (data: any) => {
-                                                    console.log(data);
-                                                }
-                                            );
+                                                    .effetMagiqueTableTitleContent[indexTitleContent]);
+                                            console.log(response);
                                         } else {
                                             if (this.areDifferentTableTitleContents(this.objet.effetMagique[indexEffet]
                                                     .effetMagiqueTable[indexTable].effetMagiqueTableTitle[indexTitle]
@@ -318,14 +289,12 @@ export class PersonnageObjetComponent implements OnInit {
                                                     .effetMagiqueTableTitle[indexTitle]
                                                     .effetMagiqueTableTitleContent[indexTitleContent])) {
                                                 // TODO : Modifier title content
-                                                this.objetService.titleContent(this.http, HttpMethods.PUT, 0,
+                                                const response: SpecialResponse = await this.objetService
+                                                    .titleContent(this.http, HttpMethods.PUT, 0,
                                                     this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                         .effetMagiqueTableTitle[indexTitle]
-                                                        .effetMagiqueTableTitleContent[indexTitleContent]).then(
-                                                    (data: any) => {
-                                                        console.log(data);
-                                                    }
-                                                );
+                                                        .effetMagiqueTableTitleContent[indexTitleContent]);
+                                                console.log(response);
                                             }
                                         }
                                     }
@@ -337,26 +306,18 @@ export class PersonnageObjetComponent implements OnInit {
                                 if (this.isEmptyTableTr(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                     .effetMagiqueTableTr[indexTr])) {
                                     // TODO : Supprimer tr
-                                    this.objetService.tr(this.http, HttpMethods.DELETE, 0,
-                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr])
-                                        .then(
-                                            (data: any) => {
-                                                console.log(data);
-                                            }
-                                        );
+                                    const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.DELETE, 0,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]);
+                                    console.log(response);
                                 } else {
                                     if (this.areDifferentTableTrs(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTr[indexTr],
                                         this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTr[indexTr])) {
                                         // TODO : Modifier tr
-                                        this.objetService.tr(this.http, HttpMethods.PUT, 0,
-                                            this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr])
-                                            .then(
-                                                (data: any) => {
-                                                    console.log(data);
-                                                }
-                                            );
+                                        const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.PUT, 0,
+                                            this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]);
+                                        console.log(response);
                                     }
                                     for (let indexTrContent = 0;
                                          indexTrContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
@@ -365,13 +326,11 @@ export class PersonnageObjetComponent implements OnInit {
                                         if (this.isEmptyTableTrContent(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent])) {
                                             // TODO : Supprimer tr content
-                                            this.objetService.trContent(this.http, HttpMethods.DELETE, 0,
+                                            const response: SpecialResponse = await this.objetService
+                                                .trContent(this.http, HttpMethods.DELETE, 0,
                                                 this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                    .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]).then(
-                                                (data: any) => {
-                                                    console.log(data);
-                                                }
-                                            );
+                                                    .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]);
+                                            console.log(response);
                                         } else {
                                             if (this.areDifferentTableTrContents(this.objet.effetMagique[indexEffet]
                                                     .effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]
@@ -379,13 +338,11 @@ export class PersonnageObjetComponent implements OnInit {
                                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                     .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent])) {
                                                 // TODO : Modifier tr content
-                                                this.objetService.trContent(this.http, HttpMethods.PUT, 0,
+                                                const response: SpecialResponse = await this.objetService
+                                                    .trContent(this.http, HttpMethods.PUT, 0,
                                                     this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                        .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]).then(
-                                                    (data: any) => {
-                                                        console.log(data);
-                                                    }
-                                                );
+                                                        .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]);
+                                                console.log(response);
                                             }
                                         }
                                     }
@@ -397,22 +354,16 @@ export class PersonnageObjetComponent implements OnInit {
                     for (let indexUl = 0; indexUl < this.objet.effetMagique[indexEffet].effetMagiqueUl.length; indexUl++) {
                         if (this.isEmptyUl(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl])) {
                             // TODO : Supprimer ul
-                            this.objetService.ul(this.http, HttpMethods.DELETE, 0,
-                                this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]).then(
-                                (data: any) => {
-                                    console.log(data);
-                                }
-                            );
+                            const response: SpecialResponse = await this.objetService.ul(this.http, HttpMethods.DELETE, 0,
+                                this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]);
+                            console.log(response);
                         } else {
                             if (this.areDifferentUls(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl])) {
                                 // TODO : Modifier ul
-                                this.objetService.ul(this.http, HttpMethods.PUT, 0,
-                                    this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]).then(
-                                    (data: any) => {
-                                        console.log(data);
-                                    }
-                                );
+                                const response: SpecialResponse = await this.objetService.ul(this.http, HttpMethods.PUT, 0,
+                                    this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]);
+                                console.log(response);
                             }
                             for (let indexUlContent = 0;
                                  indexUlContent < this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent.length;
@@ -420,13 +371,10 @@ export class PersonnageObjetComponent implements OnInit {
                                 if (this.isEmptyUlContent(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                     .effetMagiqueUlContent[indexUlContent])) {
                                     // TODO : Supprimer ul content
-                                    this.objetService.ulContent(this.http, HttpMethods.DELETE, 0,
+                                    const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.DELETE, 0,
                                         this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
-                                            .effetMagiqueUlContent[indexUlContent]).then(
-                                        (data: any) => {
-                                            console.log(data);
-                                        }
-                                    );
+                                            .effetMagiqueUlContent[indexUlContent]);
+                                    console.log(response);
                                 } else {
                                     if (this.areDifferentUlContents(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                             .effetMagiqueUlContent[indexUlContent],
@@ -438,13 +386,10 @@ export class PersonnageObjetComponent implements OnInit {
                                                 .effetMagiqueUlContent[indexUlContent].contenu + ' !== ' +
                                             this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                                 .effetMagiqueUlContent[indexUlContent].contenu);
-                                        this.objetService.ulContent(this.http, HttpMethods.PUT, 0,
+                                        const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.PUT, 0,
                                             this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
-                                                .effetMagiqueUlContent[indexUlContent]).then(
-                                            (data: any) => {
-                                                console.log(data);
-                                            }
-                                        );
+                                                .effetMagiqueUlContent[indexUlContent]);
+                                        console.log(response);
                                     }
                                 }
                             }
@@ -456,24 +401,16 @@ export class PersonnageObjetComponent implements OnInit {
                          indexDescription++) {
                         if (this.isEmptyDescription(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
                             // TODO : Supprimer description
-                            this.objetService.description(this.http, HttpMethods.DELETE, 0,
-                                this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])
-                                .then(
-                                    (data: any) => {
-                                        console.log(data);
-                                    }
-                                );
+                            const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.DELETE, 0,
+                                this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
+                            console.log(response);
                         } else {
                             if (this.areDifferentDescriptions(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
                                 // TODO : Modifier description
-                                this.objetService.description(this.http, HttpMethods.PUT, 0,
-                                    this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])
-                                    .then(
-                                        (data: any) => {
-                                            console.log(data);
-                                        }
-                                    );
+                                const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.PUT, 0,
+                                    this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
+                                console.log(response);
                             }
                         }
                     }
@@ -483,45 +420,31 @@ export class PersonnageObjetComponent implements OnInit {
                          indexInfos++) {
                         if (this.isEmptyInfo(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])) {
                             // TODO : Supprimer infos
-                            this.objetService.infos(this.http, HttpMethods.DELETE, 0,
-                                this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])
-                                .then(
-                                    (data: any) => {
-                                        console.log(data);
-                                    }
-                                );
+                            const response: SpecialResponse = await this.objetService.infos(this.http, HttpMethods.DELETE, 0,
+                                this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos]);
+                            console.log(response);
                         } else {
                             if (this.areDifferentInfos(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])) {
                                 // TODO : Modifier infos
-                                this.objetService.infos(this.http, HttpMethods.PUT, 0,
-                                    this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])
-                                    .then(
-                                        (data: any) => {
-                                            console.log(data);
-                                        }
-                                    );
+                                const response: SpecialResponse = await this.objetService.infos(this.http, HttpMethods.PUT, 0,
+                                    this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos]);
+                                console.log(response);
                             }
                         }
                     }
 
                     if (this.areDifferentEffetsMagiques(this.objet.effetMagique[indexEffet], this.objetOriginal.effetMagique[indexEffet])) {
                         // TODO : Modifier effet
-                        this.objetService.effetMagique(this.http, HttpMethods.PUT, 0, this.objet.effetMagique[indexEffet])
-                            .then(
-                                (data: any) => {
-                                    console.log(data);
-                                }
-                            );
+                        const response: SpecialResponse = await this.objetService
+                            .effetMagique(this.http, HttpMethods.PUT, 0, this.objet.effetMagique[indexEffet]);
+                        console.log(response);
                     }
                 }
             }
             if (this.areDifferentObjets(this.objet, this.objetOriginal)) {
-                this.objetService.objet(this.http, HttpMethods.PUT, 0, this.objet).then(
-                    (data: any) => {
-                        console.log(data);
-                    }
-                );
+                const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.PUT, 0, this.objet);
+                console.log(response);
             }
         }
     }
@@ -633,11 +556,7 @@ export class PersonnageObjetComponent implements OnInit {
                 return false;
             }
         }
-        if (!this.isEmptyDescriptions(effetMagique.effetMagiqueDescription)) {
-            return false;
-        }
-
-        return true;
+        return this.isEmptyDescriptions(effetMagique.effetMagiqueDescription);
     }
 
     isEmptyObjet(): boolean {

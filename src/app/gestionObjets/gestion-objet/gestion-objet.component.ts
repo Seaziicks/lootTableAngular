@@ -45,34 +45,26 @@ export class GestionObjetComponent implements OnInit {
         }
     }
 
-    public loadObjetsNames() {
-        this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne).then(
-            (dataObjet: any) => {
-                const response: SpecialResponse = dataObjet as SpecialResponse;
-                console.log(response);
-                this.objetMinimisations = response.data as ObjetMinimisation[];
-                console.log(this.objetMinimisations);
-            }
-        );
+    public async loadObjetsNames() {
+        const response: SpecialResponse = await this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne);
+        console.log(response);
+        this.objetMinimisations = response.data as ObjetMinimisation[];
+        console.log(this.objetMinimisations);
     }
 
-    reloadObjetsNames(idObjet: number) {
+    async reloadObjetsNames(idObjet: number) {
         this.updatingObjetName = true;
         this.updatingObjetID = idObjet;
-        setTimeout(() => {
-            this.objetService.getObjetName(this.http, idObjet).then(
-                (dataObjet: any) => {
-                    const response: SpecialResponse = dataObjet as SpecialResponse;
-                    console.log(response);
-                    const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
-                    this.objetMinimisations[index] = response.data as ObjetMinimisation;
-                    console.log(this.objetMinimisations[index]);
-                    if (this.currentPersonnage.idPersonnage !== this.objetMinimisations[index].idPersonnage) {
-                        this.objetMinimisations.splice(index, 1);
-                        this.objetCourantID = null;
-                    }
-                }
-            );
+        setTimeout(async () => {
+            const response: SpecialResponse = await this.objetService.getObjetName(this.http, idObjet);
+            console.log(response);
+            const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
+            this.objetMinimisations[index] = response.data as ObjetMinimisation;
+            console.log(this.objetMinimisations[index]);
+            if (this.currentPersonnage.idPersonnage !== this.objetMinimisations[index].idPersonnage) {
+                this.objetMinimisations.splice(index, 1);
+                this.objetCourantID = null;
+            }
         }, 1250);
         setTimeout(() => {
             this.updatingObjetName = false;

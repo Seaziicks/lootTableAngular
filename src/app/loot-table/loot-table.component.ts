@@ -277,34 +277,28 @@ export class LootTableComponent implements OnInit {
         }
     }
 
-    sendObjet(objetCommunDB: ObjetCommunForDB) {
+    async sendObjet(objetCommunDB: ObjetCommunForDB) {
         // On fait l'ajout de l'objet, puis de la propriété magique, puis des tables, puis des ul.
         // Car sinon, il y a trop de données, et on a une erreur :
         // CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
         const objetCommunDBModified: ObjetCommunForDB = JSON.parse(JSON.stringify(objetCommunDB)) as ObjetCommunForDB;
         objetCommunDBModified.proprieteMagique = null;
-        this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDBModified).then(
-            (dataObjet: any) => {
-                console.log(dataObjet);
-                const response = JSON.parse(dataObjet) as SpecialResponse;
-                const objet: ObjetCommunForDB = response.data as ObjetCommunForDB;
-                const idObjet = objet.idObjet;
-                console.log(idObjet);
-                // this.ajouterMateriau(idObjet, this.armure.materiau);
-                // this.ajouterMalediction(idObjet, this.armure.malediction);
-                // Obligé de faire comme ça, alors que tout d'un coup marche, sinon erreur ... cf : voir au dessus
-                this.ajouterProprietesMagiques(idObjet, objetCommunDB.proprieteMagique);
-            }
-        );
+        const response: SpecialResponse = await this.objetService.envoyerObjetComplet(this.http, 'POST', null, objetCommunDBModified);
+        console.log(response);
+        const objet: ObjetCommunForDB = response.data as ObjetCommunForDB;
+        const idObjet = objet.idObjet;
+        console.log(idObjet);
+        // this.ajouterMateriau(idObjet, this.armure.materiau);
+        // this.ajouterMalediction(idObjet, this.armure.malediction);
+        // Obligé de faire comme ça, alors que tout d'un coup marche, sinon erreur ... cf : voir au dessus
+        await this.ajouterProprietesMagiques(idObjet, objetCommunDB.proprieteMagique);
     }
 
-    ajouterProprietesMagiques(idObjet: number, proprietesMagiques: MagicalProperty[]) {
+    async ajouterProprietesMagiques(idObjet: number, proprietesMagiques: MagicalProperty[]) {
         for (const proprieteMagique of proprietesMagiques) {
-            this.objetService.envoyerEffetMagique(this.http, 'POST', idObjet, proprieteMagique).then(
-                (data: any) => {
-                    console.log(data);
-                }
-            );
+            const response: SpecialResponse = await this.objetService
+                .envoyerEffetMagique(this.http, 'POST', idObjet, proprieteMagique);
+            console.log(response);
         }
     }
 }

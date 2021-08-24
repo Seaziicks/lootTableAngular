@@ -45,15 +45,11 @@ export class PersonnageComponent implements OnInit {
         }
     }
 
-    public loadObjetsNames() {
-        this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne).then(
-            (dataObjet: any) => {
-                const response: SpecialResponse = dataObjet as SpecialResponse;
-                console.log(response);
-                this.objetMinimisations = response.data as ObjetMinimisation[];
-                console.log(this.objetMinimisations);
-            }
-        );
+    public async loadObjetsNames() {
+        const response: SpecialResponse = await this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne);
+        console.log(response);
+        this.objetMinimisations = response.data as ObjetMinimisation[];
+        console.log(this.objetMinimisations);
     }
 
     public selectObjet(idObjet: number) {
@@ -82,16 +78,12 @@ export class PersonnageComponent implements OnInit {
     reloadingObjet(idObjet: number) {
         this.updatingObjetName = true;
         this.updatingObjetID = idObjet;
-        setTimeout(() => {
-            this.objetService.getObjetName(this.http, idObjet).then(
-                (dataObjet: any) => {
-                    const response: SpecialResponse = dataObjet as SpecialResponse;
-                    console.log(response);
-                    const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
-                    this.objetMinimisations[index] = response.data as ObjetMinimisation;
-                    console.log(this.objetMinimisations[index]);
-                }
-            );
+        setTimeout(async () => {
+            const response: SpecialResponse = await this.objetService.getObjetName(this.http, idObjet);
+            console.log(response);
+            const index = this.objetMinimisations.indexOf(this.objetMinimisations.find(f => +f.idObjet === +idObjet));
+            this.objetMinimisations[index] = response.data as ObjetMinimisation;
+            console.log(this.objetMinimisations[index]);
         }, 1250);
         setTimeout(() => {
             this.updatingObjetName = false;
