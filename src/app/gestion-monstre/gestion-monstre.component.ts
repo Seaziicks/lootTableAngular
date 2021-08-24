@@ -36,39 +36,27 @@ export class GestionMonstreComponent implements OnInit {
     ) {
     }
 
-    ngOnInit(): void {
+    async ngOnInit() {
         // this.familles = this.familleAndMonstreService.chargerAllFamilles(this.http);
-        this.chargerFamille();
+        await this.chargerFamille();
         // this.monstresGroupes = this.familleAndMonstreService.chargerFamillesAvecMonstres(this.http);
-        this.chargerFamilleEtMonstre();
+        await this.chargerFamilleEtMonstre();
         this.filteredFamilles = this.myControl.valueChanges.pipe(
             startWith(''),
             map(value => this.filter(value))
         );
     }
 
-    private chargerFamille() {
-        this.familleAndMonstreService.getAllFamilles(this.http).then(
-            (data: any) => {
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.familles = response.data as Famille[];
-                this.filteredFamilles = this.myControl.valueChanges.pipe(
-                    startWith(''),
-                    map(value => this.filter(value))
-                );
-                this.updateFamilleCourante();
-                this.chargerFamilleEtMonstre();
-            }
-        );
+    private async chargerFamille() {
+        await this.chargerAllFamilles();
+        this.updateFamilleCourante();
+        await this.chargerFamilleEtMonstre();
     }
 
-    private chargerFamilleEtMonstre() {
-        this.familleAndMonstreService.getFamillesAvecMonstres(this.http).then(
-            (data: any) => {
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.monstresGroupes = response.data as MonstreGroupe[];
-            }
-        );
+    private async chargerFamilleEtMonstre() {
+        const response: SpecialResponse = await this.familleAndMonstreService.getFamillesAvecMonstres(this.http);
+        console.log(response);
+        this.monstresGroupes = response.data as MonstreGroupe[];
         if (this.monstresGroupes) {
             this.updateMonstreCourant();
         }
@@ -99,7 +87,8 @@ export class GestionMonstreComponent implements OnInit {
 
             // Selection de la famille et affichage en JS vanilla, car je n'arrive pas à le faire sans JS Vanilla.
             this.familleMonstreSelectionne = this.familles.filter(f => +f.idFamilleMonstre === +$event.idFamilleMonstre)[0];
-            const familleToSelect: number = this.familleMonstreSelectionne !== undefined ? this.familleMonstreSelectionne.idFamilleMonstre : 0;
+            const familleToSelect: number =
+                this.familleMonstreSelectionne !== undefined ? this.familleMonstreSelectionne.idFamilleMonstre : 0;
 
             // Oblige de mettre un Timeout, sinon ça ne passe pas du tout ... Sinon ça reste à la première valeur.
             setTimeout(() => {
@@ -165,55 +154,48 @@ export class GestionMonstreComponent implements OnInit {
         return monstre[0];
     }
 
-    modifierMonstre() {
+    async modifierMonstre() {
         const libelle: string = (document.getElementById('monstreLibelle') as HTMLInputElement).value;
         console.log('Modification monstre');
 
         const select = (document.getElementById('inputFamilleMonstre') as HTMLSelectElement);
         const idFamille = select.options[select.selectedIndex].value;
-        this.familleAndMonstreService.modifierMonstre(this.http, this.monstreCourrant.idMonstre,
-            +idFamille, libelle).then(
-            (data: any) => {
-                console.log(data);
-                this.familleAndMonstreService.getFamillesAvecMonstres(this.http).then(
-                    (reload: any) => {
-                        const response: SpecialResponse = JSON.parse(reload) as SpecialResponse;
-                        this.monstresGroupes = response.data as MonstreGroupe[];
-                        this.updateMonstreCourant();
-                    }
-                );
-                const responseModification: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(responseModification.status_message, JSON.stringify(responseModification.data),
-                    '' + responseModification.status);
-            }
-        );
+        const responseModification: SpecialResponse = await this.familleAndMonstreService
+            .modifierMonstre(this.http, this.monstreCourrant.idMonstre, +idFamille, libelle);
+        console.log(responseModification);
+
+        const response: SpecialResponse = await this.familleAndMonstreService.getFamillesAvecMonstres(this.http);
+        console.log(response);
+        this.monstresGroupes = response.data as MonstreGroupe[];
+
+        this.updateMonstreCourant();
+        this.banner.loadComponent(responseModification.status_message, JSON.stringify(responseModification.data),
+            '' + responseModification.status);
     }
 
-    creerMonstre() {
+    async creerMonstre() {
         const libelle: string = (document.getElementById('monstreLibelle') as HTMLInputElement).value;
         console.log('Ajout monstre');
-        this.familleAndMonstreService.creerMonstre(this.http, this.familleMonstreSelectionne.idFamilleMonstre, libelle).then(
-            (data: any) => {
-                console.log(data);
-                this.familleAndMonstreService.getFamillesAvecMonstres(this.http).then(
-                    (reload: any) => {
-                        const response: SpecialResponse = JSON.parse(reload) as SpecialResponse;
-                        this.monstresGroupes = response.data as MonstreGroupe[];
-                        this.updateMonstreCourant();
-                    }
-                );
-                const responseCreation: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponent(responseCreation.status_message, JSON.stringify(responseCreation.data),
-                    '' + responseCreation.status);
-            }
-        );
+        const responseCreation: SpecialResponse = await this.familleAndMonstreService
+            .creerMonstre(this.http, this.familleMonstreSelectionne.idFamilleMonstre, libelle);
+        console.log(responseCreation);
+
+        const response: SpecialResponse = await this.familleAndMonstreService.getFamillesAvecMonstres(this.http);
+        this.monstresGroupes = response.data as MonstreGroupe[];
+        this.updateMonstreCourant();
+
+        this.banner.loadComponent(responseCreation.status_message, JSON.stringify(responseCreation.data),
+            '' + responseCreation.status);
         this.monstresGroupes = this.familleAndMonstreService.chargerFamillesAvecMonstres(this.http);
     }
 
     updateFamilleMonstreSelectionnee() {
         const select = (document.getElementById('inputFamilleMonstre') as HTMLSelectElement);
         const idFamille = select.options[select.selectedIndex].value;
-        this.familleMonstreSelectionne = this.familles.filter(f => f.idFamilleMonstre === +idFamille)[0];
+        console.log(idFamille);
+        console.log(this.familles.find(f => +f.idFamilleMonstre === +idFamille));
+        console.log(this.familles);
+        this.familleMonstreSelectionne = this.familles.find(f => +f.idFamilleMonstre === +idFamille);
     }
 
     emptyMonstre() {
@@ -266,42 +248,38 @@ export class GestionMonstreComponent implements OnInit {
             && (document.getElementById('familleLibelle') as HTMLInputElement).value.length === 0;
     }
 
-    modifierFamille() {
+    async modifierFamille() {
         const libelle: string = (document.getElementById('familleLibelle') as HTMLInputElement).value;
         console.log('Modification famille');
-        this.familleAndMonstreService.modifierFamille(this.http, this.familleCourante.idFamilleMonstre, libelle).then(
-            (data: any) => {
-                this.chargerNouvellesDonnees(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponentFromSpecialResponse(response);
-            }
-        );
+        const response: SpecialResponse = await this.familleAndMonstreService
+            .modifierFamille(this.http, this.familleCourante.idFamilleMonstre, libelle);
+        console.log(response);
+        await this.chargerNouvellesDonnees(response);
+        this.banner.loadComponentFromSpecialResponse(response);
     }
 
-    creerFamille() {
+    async creerFamille() {
         const libelle: string = (document.getElementById('familleLibelle') as HTMLInputElement).value;
         console.log('Ajout famille');
-        this.familleAndMonstreService.creerFamille(this.http, libelle).then(
-            (data: any) => {
-                this.chargerNouvellesDonnees(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.banner.loadComponentFromSpecialResponse(response);
-            }
-        );
+        const response: SpecialResponse = await this.familleAndMonstreService.creerFamille(this.http, libelle);
+        console.log(response);
+        await this.chargerNouvellesDonnees(response);
+        this.banner.loadComponentFromSpecialResponse(response);
     }
 
-    private chargerNouvellesDonnees(data: any) {
+    private async chargerNouvellesDonnees(data: any) {
         console.log(data);
-        this.familleAndMonstreService.getAllFamilles(this.http).then(
-            (reload: any) => {
-                const response: SpecialResponse = JSON.parse(reload) as SpecialResponse;
-                this.familles = response.data as Famille[];
-                this.filteredFamilles = this.myControl.valueChanges.pipe(
-                    startWith(''),
-                    map(value => this.filter(value))
-                );
-                this.chargerFamille();
-            }
+        await this.chargerAllFamilles();
+        await this.chargerFamille();
+    }
+
+    private async chargerAllFamilles() {
+        const response: SpecialResponse = await this.familleAndMonstreService.getAllFamilles(this.http);
+        console.log(response);
+        this.familles = response.data as Famille[];
+        this.filteredFamilles = this.myControl.valueChanges.pipe(
+            startWith(''),
+            map(value => this.filter(value))
         );
     }
 

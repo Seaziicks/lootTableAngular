@@ -24,7 +24,8 @@
               </div>
               <div class="form-group col-md-4">
                 <label for="inputFamilleMonstre">Famille</label>
-                <select id="inputFamilleMonstre" class="form-control" (change)="updateFamilleMonstreSelectionnee()">
+                <select id="inputFamilleMonstre" class="form-control"
+                        (change)="updateFamilleMonstreSelectionnee()">
                   <option selected value=0> </option>
                   <option *ngFor="let famille of familles" [value]="famille.idFamilleMonstre">
                     {{famille.idFamilleMonstre}} - {{famille.libelle}}
