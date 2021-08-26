@@ -65,15 +65,11 @@ export class CompetenceComponent implements OnInit, OnChanges {
         return !equal(objetTemp1, objetTemp2);
     }
 
-    envoyerModification() {
+    async envoyerModification() {
         // TODO: envoyer les informations au serveur
-        this.competenceService.updateCompetence(this.http, this.competence).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.competence = response.data as Competence;
-            }
-        );
+        const response: SpecialResponse = await this.competenceService.updateCompetence(this.http, this.competence);
+        console.log(response);
+        this.competence = response.data as Competence;
 
     }
 
@@ -92,21 +88,18 @@ export class CompetenceComponent implements OnInit, OnChanges {
         this.idCompetenceContenuModifieEnCours = idCompetence;
     }
 
-    validerModificationCompetenceContenu() {
-        this.competenceService.updateCompetenceContenu(
-            this.http, this.competence.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours)).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                console.log(response.data.contenu);
-                console.log(response.data.niveauCompetenceRequis);
-            }
-        ).catch(
-            (data: any) => {
-                this.competence.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu =
-                    this.competenceOriginal.contenu.find(f => f .idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu;
-            }
-        );
+    async validerModificationCompetenceContenu() {
+        try {
+            const response: SpecialResponse = await this.competenceService.updateCompetenceContenu(
+            this.http, this.competence.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours));
+            console.log(response);
+            console.log(response.data.contenu);
+            console.log(response.data.niveauCompetenceRequis);
+        } catch (error) {
+        this.competence.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu =
+            this.competenceOriginal.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu;
+
+        }
         this.idCompetenceContenuModifieEnCours = null;
     }
 

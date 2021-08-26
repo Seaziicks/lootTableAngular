@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {BASE_URL, URL_FAMILLE_MONSTRE} from './rest.service';
-import validate = WebAssembly.validate;
+import {BASE_URL} from './rest.service';
+import {SpecialResponse} from '../loot-table/loot-table.component';
 
 @Injectable({
     providedIn: 'root'
@@ -32,7 +32,7 @@ export class CompetenceService {
         return competences;
     }
 
-    updateCompetence(http: HttpClient, competence: Competence) {
+    async updateCompetence(http: HttpClient, competence: Competence): Promise<SpecialResponse> {
         const values = { idCompetence: undefined, Competence: undefined };
         values.idCompetence = competence.idCompetence;
         values.Competence = competence;
@@ -40,10 +40,10 @@ export class CompetenceService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Competence', JSON.stringify(values));
 
-        return http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
+        return JSON.parse(await http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
     }
 
-    updateCompetenceContenu(http: HttpClient, competenceContenu: CompetenceContenu) {
+    async updateCompetenceContenu(http: HttpClient, competenceContenu: CompetenceContenu): Promise<SpecialResponse> {
         const values = { idCompetenceContenu: undefined, CompetenceContenu: undefined };
         values.idCompetenceContenu = competenceContenu.idCompetenceContenu;
         values.CompetenceContenu = competenceContenu;
@@ -55,6 +55,6 @@ export class CompetenceService {
 
         console.log(params);
 
-        return http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
+        return JSON.parse(await http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
     }
 }
