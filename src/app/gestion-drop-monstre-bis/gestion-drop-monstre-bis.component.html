@@ -15,17 +15,17 @@
         <div class="form-row" *ngFor="let lootChance of monstreSelectionneLootChance; let index = index;">
           <label class="labelFormGroup" [ngClass]="{'missingValue': this.missingAtLeastOneValue(index)}" [for]="'fromgroup'+this.monstreSelectionneLootChance[index].roll">
             {{this.monstreSelectionneLootChance[index].roll}} : </label>
-          <div class="form-group col-md-2" [id]="'fromgroup'+this.monstreSelectionneLootChance[index].roll">
+          <div class="form-group col-md-3" [id]="'fromgroup'+this.monstreSelectionneLootChance[index].roll">
             <label for="inputFamilleMonstre">Loot</label>
             <select id="inputFamilleMonstre" class="form-control" [(ngModel)]="this.monstreSelectionneLootChance[index].idLoot"
                     [name]="'Loot'+index">
-              <option selected value=0> </option>
+              <option selected [value]="0"> </option>
               <option *ngFor="let loot of this.lootPossible" [value]="loot.idLoot">
                 {{loot.idLoot}} - {{loot.libelle}}
               </option>
             </select>
           </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].diceNumber, 'missingValue': this.missingMyValue(index, 'diceNumber')}">
+          <div class="col-md-2 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].diceNumber, 'missingValue': this.missingMyValue(index, 'diceNumber')}">
             <label [for]="'diceNumber'+index"> diceNumber
             </label>
             <input min="1" max="1000" type="number" class="form-control" [id]="'diceNumber'+index"
@@ -34,7 +34,7 @@
                    [(ngModel)]="this.monstreSelectionneLootChance[index].diceNumber"
                    required>
           </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].dicePower, 'missingValue': this.missingMyValue(index, 'dicePower')}">
+          <div class="col-md-2 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].dicePower, 'missingValue': this.missingMyValue(index, 'dicePower')}">
             <label [for]="'dicePower'+index"> dicePower
             </label>
             <input min="1" max="1000" type="number" class="form-control" [id]="'dicePower'+index"
@@ -43,7 +43,7 @@
                    [(ngModel)]="this.monstreSelectionneLootChance[index].dicePower"
                    required>
           </div>
-          <div class="col-md-1 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].multiplier, 'missingValue': this.missingMyValue(index, 'multiplier')}">
+          <div class="col-md-2 mb-5" [ngClass]="{'missing': !this.monstreSelectionneLootChance[index].multiplier, 'missingValue': this.missingMyValue(index, 'multiplier')}">
             <label [for]="'multiplier'+index"> Multiplier
             </label>
             <input min="1" max="1000" type="number" class="form-control" [id]="'multiplier'+index"
