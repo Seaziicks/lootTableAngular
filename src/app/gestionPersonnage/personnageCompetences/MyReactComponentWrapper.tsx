@@ -59,6 +59,7 @@ export class MyComponentWrapperComponent implements OnInit, OnChanges, OnDestroy
                 /*private competenceService: CompetenceService*/) {
         this.handleDivClicked = this.handleDivClicked.bind(this);
         this.disabled = true;
+        window.React = React;
     }
 
     async ngOnInit() {
