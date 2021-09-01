@@ -60,7 +60,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
             this.idPersonnage = +this.route.snapshot.paramMap.get('idPersonnage');
         } else {
             console.log('là bas');
-            this.router.navigate(['/']);
+            await this.router.navigate(['/']);
         }
         this.nouveauNiveau = {
             niveau: 0,
@@ -77,8 +77,8 @@ export class GestionNiveauJoueurComponent implements OnInit {
             deMana: 0,
         } as StatistiquesParNiveau;
         if (this.idPersonnage) {
-            this.loadProgressionPersonnage();
-            this.loadPersonnage();
+            await this.loadProgressionPersonnage();
+            await this.loadPersonnage();
         }
     }
 
@@ -323,11 +323,10 @@ export class GestionNiveauJoueurComponent implements OnInit {
 
     async validerNiveau() {
         try {
-            /*
             const response: SpecialResponse = await this.personnageService
                 .monterNiveau(this.http, HttpMethods.POST, this.personnage.idPersonnage, this.nouveauNiveau);
-            const niveau: StatistiquesParNiveau = response.data as StatistiquesParNiveau;
-            */
+            // const niveau: StatistiquesParNiveau = response.data as StatistiquesParNiveau;
+            this.banner.loadComponentFromSpecialResponseWithoutTitle(response);
             /*
             this.router.navigateByUrl('/RefreshComponent', { skipLocationChange: true }).then(() => {
                 this.router.navigate(['Your actualComponent']);
@@ -347,8 +346,8 @@ export class GestionNiveauJoueurComponent implements OnInit {
                 manaNaturel: 0,
                 deMana: 0,
             } as StatistiquesParNiveau;
-            this.loadPersonnage();
-            this.loadProgressionPersonnage();
+            await this.loadPersonnage();
+            await this.loadProgressionPersonnage();
         } catch (error) {
                 console.log(error);
                 const httpResponse = error.error;
