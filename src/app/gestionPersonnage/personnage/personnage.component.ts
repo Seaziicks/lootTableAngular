@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {ObjetService} from '../../services/objet.service';
 import {PersonnageService} from '../../services/personnage.service';
 import {AuthService} from '../../auth/auth.service';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
     selector: 'app-personnage',
@@ -30,18 +30,27 @@ export class PersonnageComponent implements OnInit {
                 private objetService: ObjetService,
                 private personnageService: PersonnageService,
                 public authService: AuthService,
-                public router: Router) {
+                public router: Router,
+                private route: ActivatedRoute) {
     }
 
     async ngOnInit() {
         this.personnages = (await this.personnageService.getAllPersonnages(this.http, true)).data as Personnage[];
+        if (+this.route.snapshot.paramMap.get('idPersonnage')) { // Permet de selectionner un personnage, si j'arrive à le faire passer en param un jour.
+            this.idPersonnageSelectionne = +this.route.snapshot.paramMap.get('idPersonnage');
+            await this.selectPersonnage();
+        } else if (this.authService.personnage) { // Permet de charger le personnage courant qui a été enregistré en dernier.
+            this.idPersonnageSelectionne = this.authService.personnage.idPersonnage;
+            await this.selectPersonnage();
+        }
     }
 
-    selectPersonnage() {
+    async selectPersonnage() {
         if (+this.idPersonnageSelectionne !== 0) {
             this.objetCourantID = null;
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
-            this.loadObjetsNames();
+            this.authService.personnage = this.currentPersonnage; // Permet de sauvegarder le personnage courant.
+            await this.loadObjetsNames();
         }
     }
 
@@ -95,11 +104,12 @@ export class PersonnageComponent implements OnInit {
         return objetNom.replace(/<a href="http:\/\/([a-z]*.*?)">(.*?)<\/a>/g, '$2');
     }
 
-    allerAPageGestionPersonnage() {
-        this.router.navigate(['/niveau/' + this.idPersonnageSelectionne + '']);
+    async allerAPageGestionPersonnage() {
+        // await this.router.navigate(['/niveau/' + this.idPersonnageSelectionne + '']);
+        await this.router.navigate(['/niveau',  this.idPersonnageSelectionne]);
     }
-    allerAPageCompetences() {
-        this.router.navigate(['/competences/' + this.idPersonnageSelectionne + '']);
+    async allerAPageCompetences() {
+        await this.router.navigate(['/competences', this.idPersonnageSelectionne]);
     }
 
     getIdPersonnage() {

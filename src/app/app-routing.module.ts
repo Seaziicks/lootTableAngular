@@ -32,6 +32,7 @@ const routes: Routes = [
     {path: 'deconnexion', component: UserDisconnectComponent},
     {path: 'signin', component: UserCreateComponent},
     {path: 'login', component: UserLoginComponent},
+    {path: 'testPersonnage/:idPersonnage', component: PersonnageComponent},
     {path: 'testPersonnage', component: PersonnageComponent},
     {path: 'testPersonnageObjet', component: PersonnageObjetComponent},
     {path: 'testTable', component: TestInsertTableComponent},
