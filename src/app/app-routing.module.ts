@@ -30,7 +30,7 @@ const routes: Routes = [
     {path: 'progression', component: ProgressionPersonnageComponent},
     {path: 'unauthorized', component: UnauthorizedUserComponent},
     {path: 'deconnexion', component: UserDisconnectComponent},
-    {path: 'signin', component: UserCreateComponent},
+    {path: 'signup', component: UserCreateComponent},
     {path: 'login', component: UserLoginComponent},
     {path: 'testPersonnage/:idPersonnage', component: PersonnageComponent},
     {path: 'testPersonnage', component: PersonnageComponent},

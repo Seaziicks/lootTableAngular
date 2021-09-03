@@ -7,7 +7,7 @@
                 </i>
             </span>
             <span class="form-title" (click)="this.afficherErrors()">
-                Sign in
+                Sign up
             </span>
             <div class="needSpace">
                 <mat-form-field appearance="outline">
@@ -100,7 +100,7 @@
             </div>
 
             <p>{{this.message}}</p>
-            <button mat-raised-button class="validationButton" [disabled]="!createUserForm.valid">Sign in</button>
+            <button type="button" mat-raised-button class="validationButton" [disabled]="!createUserForm.valid">Sign up</button>
             <button type="button" class="btn btn-outline-light" style="margin-top: 15px; margin-bottom: 15px;" (click)="this.loadLogIn()">Log in</button>
         </form>
     </div>
