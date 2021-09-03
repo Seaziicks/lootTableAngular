@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-#fakebody {
+#fakeBody {
     background-image: url("../../../assets/fond/228090286-black-and-brown-wallpaper.jpg"); /* The image used */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -141,4 +141,49 @@ mat-checkbox {
     height: 100%;
     border: solid 1px wheat;
     border-radius: 5px;
+}
+
+.gestion-personnage-boutons {
+    min-width : 80%;
+    min-height : 89%;
+    margin: 2% 6% 2% 6%;
+    border-radius: 15px;
+    padding : 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.button-icon {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: normal;
+    min-width: 375px;
+    min-height: 110px;
+    width: 100%;
+}
+.button-icon > .btn{
+    padding: 0;
+    display: flex !important;
+    margin-bottom: 1rem !important;
+    --color : #6c5ce7;
+    background: var(--color);
+    border-color: var(--color);
+    color: #fff;
+
+}
+.button-icon .icon {
+    width: 60px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+.button-icon .text {
+    width: calc(100% - 60px);
+    text-align: right !important;
+    margin: 10px;
+}
+.button-icon .custom-mat-icon {
+    width: 75%;
+    height: 75%;
 }

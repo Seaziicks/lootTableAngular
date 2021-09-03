@@ -1,10 +1,33 @@
-<div id="fakebody">
+<div id="fakeBody">
 
-    <div *ngIf="(this.authService.personnage || this.authService.isGameMaster()) && this.getIdPersonnage()">
-        <button (click)="this.allerAPageGestionPersonnage()"> Gestion du personnage </button>
-    </div>
-    <div *ngIf="(this.authService.personnage || this.authService.isGameMaster()) && this.getIdPersonnage()">
-        <button (click)="this.allerAPageCompetences()"> Compétences </button>
+    <div *ngIf="(this.authService.personnage || this.authService.isGameMaster()) && this.getIdPersonnage()" class="gestion-personnage-boutons">
+        <div (click)="this.allerAPageGestionPersonnage()"
+             class="col-md-3 mb-3 button-icon">
+            <div class="btn btn-primary w-100 align-items-stretch d-flex">
+                <div class="icon icon-left d-flex align-items-center justify-content-center">
+                    <mat-icon matSuffix svgIcon="upgrade" class="custom-mat-icon minusMatIcon">
+                    </mat-icon>
+                </div>
+                <div class="text text-right py-2 pr-3">
+                    <h4>Gestion du personnage</h4>
+                    <span> {{ this.currentPersonnage.nom }} </span>
+                </div>
+            </div>
+        </div>
+
+        <div (click)="this.allerAPageCompetences()"
+             class="col-md-3 mb-3 button-icon">
+            <div class="btn btn-primary w-100 align-items-stretch d-flex">
+                <div class="icon icon-left d-flex align-items-center justify-content-center">
+                    <mat-icon matSuffix svgIcon="skills" class="custom-mat-icon minusMatIcon">
+                    </mat-icon>
+                </div>
+                <div class="text text-right py-2 pr-3">
+                    <h4>Compétences</h4>
+                    <span> {{ this.currentPersonnage.nom }} </span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="principal">

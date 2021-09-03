@@ -51,6 +51,10 @@ export class PersonnageComponent implements OnInit {
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
             this.authService.personnage = this.currentPersonnage; // Permet de sauvegarder le personnage courant.
             await this.loadObjetsNames();
+        } else if (+this.idPersonnageSelectionne === 0) {
+            this.idPersonnageSelectionne = undefined;
+            this.currentPersonnage = null;
+            this.authService.personnage = null;
         }
     }
 
