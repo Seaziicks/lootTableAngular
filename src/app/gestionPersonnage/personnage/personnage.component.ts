@@ -36,6 +36,7 @@ export class PersonnageComponent implements OnInit {
 
     async ngOnInit() {
         this.personnages = (await this.personnageService.getAllPersonnages(this.http, true)).data as Personnage[];
+        console.log(this.personnages);
         if (+this.route.snapshot.paramMap.get('idPersonnage')) { // Permet de selectionner un personnage, si j'arrive à le faire passer en param un jour.
             this.idPersonnageSelectionne = +this.route.snapshot.paramMap.get('idPersonnage');
             await this.selectPersonnage();
@@ -46,12 +47,12 @@ export class PersonnageComponent implements OnInit {
     }
 
     async selectPersonnage() {
-        if (+this.idPersonnageSelectionne !== 0) {
+        if (+this.idPersonnageSelectionne !== 0 && +this.idPersonnageSelectionne !== -1) {
             this.objetCourantID = null;
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
             this.authService.personnage = this.currentPersonnage; // Permet de sauvegarder le personnage courant.
             await this.loadObjetsNames();
-        } else if (+this.idPersonnageSelectionne === 0) {
+        } else if (+this.idPersonnageSelectionne === 0 || +this.idPersonnageSelectionne === -1) {
             this.idPersonnageSelectionne = undefined;
             this.currentPersonnage = null;
             this.authService.personnage = null;
