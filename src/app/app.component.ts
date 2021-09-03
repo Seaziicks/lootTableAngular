@@ -6,6 +6,7 @@ import {filter} from 'rxjs/operators';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 import {environment} from '../environments/environment';
+import {CustomIcons} from "./interface/custom-icons";
 
 @Component({
     selector: 'app-root',
@@ -20,27 +21,28 @@ export class AppComponent implements OnInit {
                 private router: Router,
                 private matIconRegistry: MatIconRegistry,
                 private domSanitizer: DomSanitizer) {
-        this.matIconRegistry.addSvgIcon(
-            `statistiqueAugmentation`,
-            this.domSanitizer.bypassSecurityTrustResourceUrl(`${environment.deployUrl}/assets/fond/health-increase.svg`)
-        );
-        this.matIconRegistry.addSvgIcon(
-            `statistiqueDiminution`,
-            this.domSanitizer.bypassSecurityTrustResourceUrl(`${environment.deployUrl}/assets/fond/health-decrease.svg`)
-        );
-        this.matIconRegistry.addSvgIcon(
-            `minus`,
-            this.domSanitizer.bypassSecurityTrustResourceUrl(`${environment.deployUrl}/assets/fond/pounceTest.svg`)
-        );
+        const icons: CustomIcons [] = [
+            { name: 'statistiqueAugmentation', localisation: '/assets/fond/health-increase.svg' },
+            { name: 'statistiqueDiminution', localisation: '/assets/fond/health-decrease.svg' },
+            { name: 'minus', localisation: '/assets/fond/pounceTest.svg' },
+            { name: 'upgrade', localisation: '/assets/fond/upgrade.svg' },
+            { name: 'skills', localisation: '/assets/fond/skills.svg' }
+        ]
+        for (const icon of icons) {
+            this.matIconRegistry.addSvgIcon(
+                icon.name,
+                this.domSanitizer.bypassSecurityTrustResourceUrl(environment.deployUrl + icon.localisation)
+            );
+        }
     }
 
     ngOnInit(): void {
         // console.log(localStorage);
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd)
-        ).subscribe(event => {
+        ).subscribe(async event => {
             const url = JSON.parse(JSON.stringify(event)).url;
-            this.authService.checkUserInLocalStorage(this.http, this.router, url);
+            await this.authService.checkUserInLocalStorage(this.http, this.router, url);
         });
     }
 
