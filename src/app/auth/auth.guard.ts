@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router} from '@angular/router';
-import {Observable} from 'rxjs';
 import {AuthService} from './auth.service';
 import {HttpClient} from '@angular/common/http';
 
@@ -14,19 +13,13 @@ export class AuthGuard implements CanActivate {
                 private router: Router) {
     }
 
-    canActivate(
+    async canActivate(
         next: ActivatedRouteSnapshot,
-        state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+        state: RouterStateSnapshot): Promise<boolean | UrlTree> {
         const url: string = state.url;
-        if (!this.authService.isAuth && localStorage.getItem('userSession')) {
-            return this.authService.checkUserInLocalStorageAsPromise(this.http).then(
-                (data: any) => {
-                    return this.checkLogin(url);
-                }
-            );
-        } else {
-            return this.checkLogin(url);
-        }
+        if (!this.authService.isAuth && localStorage.getItem('userSession'))
+            await this.authService.checkUserInLocalStorageAsPromise(this.http);
+        return this.checkLogin(url);
     }
 
     checkLogin(url: string): true | UrlTree {

@@ -32,7 +32,7 @@ export class UserLoginComponent implements OnInit {
                 private router: Router) {
     }
 
-    ngOnInit(): void {
+    async ngOnInit() {
         this.loginUserForm = new FormGroup({
             username: new FormControl('', [Validators.required, Validators.maxLength(19)]),
             password: new FormControl('', [Validators.required, Validators.minLength(9)]),
@@ -40,24 +40,21 @@ export class UserLoginComponent implements OnInit {
         // console.log(this.router.url);
         // console.log(localStorage.getItem('userSession'));
         if (!this.authService.isAuth && localStorage.getItem('userSession')) {
-            this.authService.checkUserInLocalStorageAsPromise(this.http).then(
-                (data: any) => {
-                    if (this.authService.isAuth) {
-                        this.message = null;
-                        // Usually you would use the redirect URL from the auth service.
-                        // However to keep the example simple, we will always redirect to `/admin`.
-                        const redirectUrl = '/testPersonnage';
+            await this.authService.checkUserInLocalStorageAsPromise(this.http);
+            if (this.authService.isAuth) {
+                this.message = null;
+                // Usually you would use the redirect URL from the auth service.
+                // However to keep the example simple, we will always redirect to `/admin`.
+                const redirectUrl = '/testPersonnage';
 
-                        // Redirect the user
-                        console.log(this.router.url);
-                        this.router.navigate([redirectUrl]);
-                    }
-                }
-            );
+                // Redirect the user
+                console.log(this.router.url);
+                await this.router.navigate([redirectUrl]);
+            }
         } else if (this.authService.isAuth) {
             const redirectUrl = '/testPersonnage';
             // console.log(this.router.url);
-            this.router.navigate([redirectUrl]);
+            await this.router.navigate([redirectUrl]);
         }
     }
 
@@ -151,7 +148,7 @@ export class UserLoginComponent implements OnInit {
                 const redirectUrl = '/testPersonnage';
 
                 // Redirect the user
-                this.router.navigate([redirectUrl]);
+                await this.router.navigate([redirectUrl]);
             }
         } catch (error) {
             if (!this.authService.isAuth) {
@@ -165,8 +162,8 @@ export class UserLoginComponent implements OnInit {
         this.message = message;
     }
 
-    loadSignIn() {
-        this.router.navigate(['/signin']);
+    async loadSignIn() {
+        await this.router.navigate(['/signin']);
     }
 
     afficherErrors() {
