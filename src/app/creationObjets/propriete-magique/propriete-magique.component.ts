@@ -106,8 +106,7 @@ export class ProprieteMagiqueComponent implements OnInit {
         }
         if (this.proprieteMagique.table) {
             for (let indexTable = 0; indexTable < this.proprieteMagique.table.length; indexTable++) {
-                for (let indexTableTitle = 0; indexTableTitle <
-                this.proprieteMagique.table[indexTable].title.length; indexTableTitle++) {
+                for (let indexTableTitle = 0; indexTableTitle < this.proprieteMagique.table[indexTable].title.length; indexTableTitle++) {
                     for (let indexTableTitleContent = 0; indexTableTitleContent <
                     this.proprieteMagique.table[indexTable].title[indexTableTitle].length; indexTableTitleContent++) {
                         if (this.proprieteMagique.table[indexTable].title[indexTableTitle][indexTableTitleContent].length === 0) {
@@ -120,8 +119,7 @@ export class ProprieteMagiqueComponent implements OnInit {
                         indexTableTitle--;
                     }
                 }
-                for (let indexTableTr = 0; indexTableTr <
-                this.proprieteMagique.table[indexTable].tr.length; indexTableTr++) {
+                for (let indexTableTr = 0; indexTableTr < this.proprieteMagique.table[indexTable].tr.length; indexTableTr++) {
                     for (let indexTableTrContent = 0; indexTableTrContent <
                     this.proprieteMagique.table[indexTable].tr[indexTableTr].length; indexTableTrContent++) {
                         if (this.proprieteMagique.table[indexTable].tr[indexTableTr][indexTableTrContent].length === 0) {
