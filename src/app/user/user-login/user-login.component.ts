@@ -106,30 +106,29 @@ export class UserLoginComponent implements OnInit {
         }
     }
 
-    searchUsername() {
+    async searchUsername() {
         console.log(this.authService);
-        this.authService.checkUsernameAvailable(this.http, this.username.value).then(
-            (data: any) => {
-                this.lookingForUsernameAvailability = false;
-                console.log(data);
-                if (this.username.hasError('maxlength')) {
-                    this.username.setErrors({usernameUnknown: true, maxlength: true});
-                } else {
-                    this.username.setErrors({usernameUnknown: true});
-                }
-                setTimeout( () => { this.usernameUnknown = true; }, 10);
+        try {
+            const response: SpecialResponse = await this.authService.checkUsernameAvailable(this.http, this.username.value);
+            console.log(response);
+            this.lookingForUsernameAvailability = false;
+            if (this.username.hasError('maxlength')) {
+                this.username.setErrors({usernameUnknown: true, maxlength: true});
+            } else {
+                this.username.setErrors({usernameUnknown: true});
             }
-        ).catch(
-            (data: any) => {
-                this.lookingForUsernameAvailability = false;
-                console.log(data);
-                const response: SpecialResponse = data as SpecialResponse;
-                if (response.status === 409) {
-                    this.username.setErrors(null);
-                    this.usernameUnknown = false;
-                }
+            setTimeout(() => {
+                this.usernameUnknown = true;
+            }, 10);
+        } catch (error) {
+            console.log(error);
+            this.lookingForUsernameAvailability = false;
+            const response: SpecialResponse = error.error as SpecialResponse;
+            if (response.status === 409) {
+                this.username.setErrors(null);
+                this.usernameUnknown = false;
             }
-        );
+        }
     }
 
     async signIn() {
@@ -163,7 +162,7 @@ export class UserLoginComponent implements OnInit {
     }
 
     async loadSignIn() {
-        await this.router.navigate(['/signin']);
+        await this.router.navigate(['/signup']);
     }
 
     afficherErrors() {

@@ -83,7 +83,7 @@ export class UserCreateComponent implements OnInit {
     ) {
     }
 
-    ngOnInit(): void {
+    async ngOnInit() {
         this.createUserForm = new FormGroup({
             username: new FormControl('', [Validators.required, Validators.maxLength(19)]),
             password: new FormControl('', [Validators.required, Validators.minLength(9)]),
@@ -99,17 +99,17 @@ export class UserCreateComponent implements OnInit {
             const redirectUrl = '/testPersonnage';
 
             // Redirect the user
-            this.router.navigate([redirectUrl]);
+            await this.router.navigate([redirectUrl]);
         }
-        this.authService.getAllLeftPersonnage(this.http).then(
-            (data: any) => {
-                console.log(data);
-                const response: SpecialResponse = data as SpecialResponse;
-                this.leftPersonnage = response.data as PersonnageMinimisation[];
-                console.log(response.data as PersonnageMinimisation[]);
-                console.log(this.leftPersonnage[0]);
-            }
-        );
+        try {
+            const response: SpecialResponse = await this.authService.getAllLeftPersonnage(this.http);
+            console.log(response);
+            this.leftPersonnage = response.data as PersonnageMinimisation[];
+            console.log(response.data as PersonnageMinimisation[]);
+            console.log(this.leftPersonnage[0]);
+        } catch(error) {
+            console.log(error);
+        }
     }
 
     get username() {
@@ -191,9 +191,9 @@ export class UserCreateComponent implements OnInit {
         }
     }
 
-    createUser = (userFormValue) => {
+    createUser = async (userFormValue) => {
         if (this.createUserForm.valid) {
-            this.executeUserCreation(userFormValue);
+            await this.executeUserCreation(userFormValue);
         }
     }
 
@@ -226,7 +226,7 @@ export class UserCreateComponent implements OnInit {
             const response: SpecialResponse = await this.authService.createUser(this.http, user, personnageToAdd);
             console.log(response);
             const userCreated: UserForCreation = response.data as UserForCreation;
-            this.signIn(userCreated.username, userCreated.password);
+            await this.signIn(userCreated.username, userCreated.password);
         } catch (error) {
             console.log(error);
             const response: SpecialResponse = JSON.parse(error.error) as SpecialResponse;
@@ -282,34 +282,30 @@ export class UserCreateComponent implements OnInit {
         }
 
         // trigger the search action after 400 millis
-        this.timerUsername = setTimeout(() => {
+        this.timerUsername = setTimeout(async () => {
             this.lookingForUsernameAvailability = true;
-            this.searchUsername();
+            await this.searchUsername();
         }, 1500);
     }
 
-    searchUsername() {
+    async searchUsername() {
         console.log(this.authService);
-        this.authService.checkUsernameAvailable(this.http, this.username.value).then(
-            (data: any) => {
-                this.lookingForUsernameAvailability = false;
-                console.log(data);
-                this.username.setErrors(null);
-                this.usernameUnavailable = false;
+        try {
+            const response: SpecialResponse = await this.authService.checkUsernameAvailable(this.http, this.username.value);
+            console.log(response);
+            this.lookingForUsernameAvailability = false;
+            this.username.setErrors(null);
+            this.usernameUnavailable = false;
+        } catch(error) {
+            console.log(error);
+            const response: SpecialResponse = error.error as SpecialResponse;
+            if (response.status === 409) {
+                this.username.setErrors({unavailableUsername: true});
+                setTimeout(() => {
+                    this.usernameUnavailable = true;
+                }, 10);
             }
-        ).catch(
-            (data: any) => {
-                this.lookingForUsernameAvailability = false;
-                console.log(data);
-                const response: SpecialResponse = data as SpecialResponse;
-                if (response.status === 409) {
-                    this.username.setErrors({unavailableUsername: true});
-                    setTimeout(() => {
-                        this.usernameUnavailable = true;
-                    }, 10);
-                }
-            }
-        );
+        }
     }
 
     checkPersonnageNameAvailability() {
@@ -318,33 +314,31 @@ export class UserCreateComponent implements OnInit {
         }
 
         // trigger the search action after 400 millis
-        this.timerPersonnageName = setTimeout(() => {
+        this.timerPersonnageName = setTimeout(async () => {
             this.lookingForPersonnageNameAvailability = true;
-            this.searchPersonnageName();
+            await this.searchPersonnageName();
         }, 1500);
     }
 
-    searchPersonnageName() {
+    async searchPersonnageName() {
         console.log(this.authService);
-        this.authService.checkPersonnageNomAvailable(this.http, this.personnage.value).then(
-            (data: any) => {
-                this.lookingForPersonnageNameAvailability = false;
-                console.log(data);
-                this.personnage.setErrors(null);
-                this.personnageNameUnavailable = false;
+        try {
+            const response: SpecialResponse = await this.authService.checkPersonnageNomAvailable(this.http, this.personnage.value);
+            console.log(response);
+            this.lookingForPersonnageNameAvailability = false;
+            this.personnage.setErrors(null);
+            this.personnageNameUnavailable = false;
+        } catch (error) {
+            console.log(error);
+            const response: SpecialResponse = error.error as SpecialResponse;
+            this.lookingForPersonnageNameAvailability = false;
+            if (response.status === 409) {
+                this.personnage.setErrors({unavailablePersonnageName: true});
+                setTimeout(() => {
+                    this.personnageNameUnavailable = true;
+                }, 10);
             }
-        ).catch(
-            (data: any) => {
-                this.lookingForPersonnageNameAvailability = false;
-                const response: SpecialResponse = data as SpecialResponse;
-                if (response.status === 409) {
-                    this.personnage.setErrors({unavailablePersonnageName: true});
-                    setTimeout(() => {
-                        this.personnageNameUnavailable = true;
-                    }, 10);
-                }
-            }
-        );
+        }
     }
 
     afficherErrors() {
@@ -355,7 +349,7 @@ export class UserCreateComponent implements OnInit {
         console.log(this.personnage.errors);
     }
 
-    loadLogIn() {
-        this.router.navigate(['/login']);
+    async loadLogIn() {
+        await this.router.navigate(['/login']);
     }
 }

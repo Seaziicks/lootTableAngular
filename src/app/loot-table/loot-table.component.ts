@@ -50,12 +50,9 @@ export class LootTableComponent implements OnInit {
 
     async ngOnInit() {
         this.chargerFamilles(this.http);
-        this.monstreLootChance.getLootPossibles(this.http).then(
-            (data: any) => {
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.lootPossible = response.data as Loot[];
-            }
-        );
+        const response: SpecialResponse = await this.monstreLootChance.getLootPossibles(this.http);
+        console.log(response);
+        this.lootPossible = response.data as Loot[];
         this.personnages = (await this.personnageService.getAllPersonnages(this.http, true)).data as Personnage[];
     }
 
@@ -81,13 +78,11 @@ export class LootTableComponent implements OnInit {
         this.monstresGroupes = this.familleMonstre.chargerFamillesAvecMonstres(http);
     }
 
-    public chargerMonstreLootChance() {
+    public async chargerMonstreLootChance() {
         this.monstreSelectionneLootChance = [];
-        this.monstreLootChance.getMonstreLootChanceBis(this.http, this.monstreCourrant.idMonstre).then(
-            (data: any) => {
-                const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                this.monstreSelectionneLootChance = response.data as MonstreLootChanceBis[];
-            });
+        const response: SpecialResponse = await this.monstreLootChance.getMonstreLootChanceBis(this.http, this.monstreCourrant.idMonstre);
+        console.log(response);
+        this.monstreSelectionneLootChance = response.data as MonstreLootChanceBis[];
     }
 
     selectionMonstre($event: Monstre) {
