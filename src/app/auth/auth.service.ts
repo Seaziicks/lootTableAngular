@@ -23,47 +23,29 @@ export class AuthService {
 
     redirectUrl: string;
 
-    signIn(http: HttpClient, username: string, password: string) {
-        return new Promise(
-            (resolve, rejects) => {
-                const values = {username: undefined, password: undefined};
-                values.username = username;
-                values.password = password;
-                console.log(values);
-                const baseUrlBis = BASE_URL + 'connexion.php';
-                console.log(baseUrlBis);
+    async signIn(http: HttpClient, username: string, password: string): Promise<SpecialResponse> {
+        const values = {username: undefined, password: undefined};
+        values.username = username;
+        values.password = password;
+        console.log(values);
+        const baseUrlBis = BASE_URL + 'connexion.php';
+        console.log(baseUrlBis);
 
-                const params = new HttpParams().set('Connexion', JSON.stringify(values));
+        const params = new HttpParams().set('Connexion', JSON.stringify(values));
 
-                return http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'text', params}).toPromise().then(
-                    (data: any) => {
-                        console.log(data);
-                        const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                        if (response.status === 200) {
-                            this.isAuth = true;
-                            this.user = response.data as User;
-                            this.personnage = response.data.personnage as Personnage;
-                            resolve(true);
-                        } else {
-                            rejects(false);
-                        }
-                    }
-                ).catch(
-                    (data: any) => {
-                        console.log(data);
-                        const response: SpecialResponse = data as SpecialResponse;
-                        if (response.status === 200) {
-                            this.isAuth = true;
-                            this.user = response.data as User;
-                            this.personnage = response.data.personnage as Personnage;
-                            resolve(true);
-                        } else {
-                            rejects(false);
-                        }
-                    }
-                );
-            }
-        );
+        const response: SpecialResponse = await http.request(HttpMethods.GET.toString(), baseUrlBis, {
+            responseType: 'json',
+            params
+        }).toPromise() as SpecialResponse;
+        console.log(response);
+        if (response.status === 200) {
+            this.isAuth = true;
+            this.user = response.data as User;
+            this.personnage = response.data.personnage as Personnage;
+        } else {
+            throw new Error('Utilisateur ou mot de passe incorrect.');
+        }
+        return response;
     }
 
     signOut() {
@@ -72,7 +54,7 @@ export class AuthService {
         this.isAuth = false;
     }
 
-    createUser(http: HttpClient, user: UserForCreation, personnage: Personnage): Promise<any> {
+    async createUser(http: HttpClient, user: UserForCreation, personnage: Personnage): Promise<SpecialResponse> {
         const values = {User: undefined, Personnage: undefined};
         values.User = user;
         values.Personnage = personnage;
@@ -82,16 +64,16 @@ export class AuthService {
 
         const params = new HttpParams().set('Creation', JSON.stringify(values));
 
-        return http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+        return await http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
-    getAllLeftPersonnage(http: HttpClient) {
+    async getAllLeftPersonnage(http: HttpClient): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'connexion.php' + '?leftPersonnage=true';
         console.log(baseUrlBis);
-        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
+        return await http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }
 
-    checkUsernameAvailable(http: HttpClient, usernameToCheck: string) {
+    async checkUsernameAvailable(http: HttpClient, usernameToCheck: string): Promise<SpecialResponse> {
         const fakeUser: UserForCreation = {
             username: usernameToCheck,
             password: null,
@@ -103,13 +85,13 @@ export class AuthService {
         const params = new HttpParams().set('User', JSON.stringify(values));
         const baseUrlBis = BASE_URL + 'connexion.php' + '?checkAvailable=true';
         console.log(baseUrlBis);
-        return http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'text', params}).toPromise();
+        return await http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
-    checkPersonnageNomAvailable(http: HttpClient, personnageNomToCheck: string) {
+    async checkPersonnageNomAvailable(http: HttpClient, personnageNomToCheck: string): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'connexion.php' + '?nomPersonnage=' + personnageNomToCheck + '&checkAvailable=true';
         console.log(baseUrlBis);
-        return http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise();
+        return await http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }
 
     isAdmin() {
@@ -133,13 +115,13 @@ export class AuthService {
                 // However to keep the example simple, we will always redirect to `/admin`.
 
                 // Redirect the user
-                router.navigate([url]);
+                await router.navigate([url]);
             }
         }
     }
 
-    checkUserInLocalStorageAsPromise(http: HttpClient) {
+    async checkUserInLocalStorageAsPromise(http: HttpClient) {
         const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
-        return this.signIn(http, userSession.username, userSession.password);
+        return await this.signIn(http, userSession.username, userSession.password);
     }
 }

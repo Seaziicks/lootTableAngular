@@ -135,38 +135,30 @@ export class UserLoginComponent implements OnInit {
         );
     }
 
-    signIn() {
+    async signIn() {
         const username = (document.getElementById('usernameUser') as HTMLInputElement).value;
         const password = (document.getElementById('passwordUser') as HTMLInputElement).value;
         console.log(username);
         console.log(password);
-        this.authService.signIn(this.http, username, password).then(
-            (data: any) => {
-                console.log(data);
-                if (this.authService.isAuth) {
-                    localStorage.setItem('userSession', JSON.stringify({username, password}));
-                    this.message = null;
-                    // Usually you would use the redirect URL from the auth service.
-                    // However to keep the example simple, we will always redirect to `/admin`.
-                    const redirectUrl = '/testPersonnage';
+        try {
+            const response: SpecialResponse = await this.authService.signIn(this.http, username, password);
+            console.log(response);
+            if (this.authService.isAuth) {
+                localStorage.setItem('userSession', JSON.stringify({username, password}));
+                this.message = null;
+                // Usually you would use the redirect URL from the auth service.
+                // However to keep the example simple, we will always redirect to `/admin`.
+                const redirectUrl = '/testPersonnage';
 
-                    // Redirect the user
-                    this.router.navigate([redirectUrl]);
-                }
-            }, (data: any) => {
-                console.log(data);
-                if (!this.authService.isAuth) {
-                    this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
-                }
+                // Redirect the user
+                this.router.navigate([redirectUrl]);
             }
-        ).catch(
-            (data: any) => {
-                console.log(data);
-                if (!this.authService.isAuth) {
-                    this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
-                }
+        } catch (error) {
+            if (!this.authService.isAuth) {
+                this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
             }
-        );
+
+        }
     }
 
     afficherMessageErreur(message: string) {

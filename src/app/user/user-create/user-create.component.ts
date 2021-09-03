@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AuthService} from '../../auth/auth.service';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
-import {FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators} from '@angular/forms';
+import {FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators} from '@angular/forms';
 import {SpecialResponse} from '../../loot-table/loot-table.component';
 
 export interface UserForCreation {
@@ -37,7 +37,7 @@ export const passwordMatchValidator: ValidatorFn = (formGroup: FormGroup): Valid
 
 export const personnageSelection: ValidatorFn = (formGroup: FormGroup): ValidationErrors | null => {
     if (((document.getElementById('personnageName') as HTMLInputElement)
-        && (document.getElementById('personnageName') as HTMLInputElement).value.length === 0)
+            && (document.getElementById('personnageName') as HTMLInputElement).value.length === 0)
         || ((document.getElementById('selectPersonnageRestant') as HTMLSelectElement)
             && (document.getElementById('selectPersonnageRestant') as HTMLSelectElement).value.length === 0)) {
         return {missingPersonnage: true};
@@ -164,40 +164,31 @@ export class UserCreateComponent implements OnInit {
         return this.createUserForm.controls[controlName].hasError(errorName);
     }
 
-    signIn(usernameGiven: string, passwordGiven: string) {
+    async signIn(usernameGiven: string, passwordGiven: string) {
         const username = usernameGiven ? usernameGiven : (document.getElementById('usernameUser') as HTMLInputElement).value;
         const password = passwordGiven ? passwordGiven : (document.getElementById('passwordUser') as HTMLInputElement).value;
         // const passwordRepeat = (document.getElementById('passwordUserRepeat') as HTMLInputElement).value;
 
         console.log(username);
         console.log(password);
-        this.authService.signIn(this.http, username, password).then(
-            (data: any) => {
-                console.log(data);
-                if (this.authService.isAuth) {
-                    this.message = null;
-                    // Usually you would use the redirect URL from the auth service.
-                    // However to keep the example simple, we will always redirect to `/admin`.
-                    const redirectUrl = '/testPersonnage';
+        try {
+            const response: SpecialResponse = await this.authService.signIn(this.http, username, password);
+            console.log(response);
+            if (this.authService.isAuth) {
+                this.message = null;
+                // Usually you would use the redirect URL from the auth service.
+                // However to keep the example simple, we will always redirect to `/admin`.
+                const redirectUrl = '/testPersonnage';
 
-                    // Redirect the user
-                    this.router.navigate([redirectUrl]);
-                }
-            }, (data: any) => {
-                console.log(data);
-                if (!this.authService.isAuth) {
-                    this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
-                }
+                // Redirect the user
+                await this.router.navigate([redirectUrl]);
             }
-        ).catch(
-            (data: any) => {
-                console.log(data);
-                if (!this.authService.isAuth) {
-                    this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
-                }
+        } catch (error) {
+            console.log(error);
+            if (!this.authService.isAuth) {
+                this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
             }
-        );
-
+        }
     }
 
     createUser = (userFormValue) => {
@@ -206,7 +197,7 @@ export class UserCreateComponent implements OnInit {
         }
     }
 
-    private executeUserCreation = (userFormValue) => {
+    private executeUserCreation = async (userFormValue) => {
         const user: UserForCreation = {
             username: userFormValue.username,
             password: userFormValue.password,
@@ -231,23 +222,19 @@ export class UserCreateComponent implements OnInit {
             statistiquesParNiveau: null,
         };
 
-        this.authService.createUser(this.http, user, personnageToAdd)
-            .then(
-                (data: any) => {
-                    console.log(data);
-                    const response: SpecialResponse = JSON.parse(data) as SpecialResponse;
-                    const userCreated: UserForCreation = response.data as UserForCreation;
-                    this.signIn(userCreated.username, userCreated.password);
-                }
-            ).catch(
-                (data: any) => {
-                    console.log(data);
-                    const response: SpecialResponse = data as SpecialResponse;
-                    if (response.status === 409) {
-                    this.afficherMessageErreur('Cet username n\'est plus displonible.');
-                }
+        try {
+            const response: SpecialResponse = await this.authService.createUser(this.http, user, personnageToAdd);
+            console.log(response);
+            const userCreated: UserForCreation = response.data as UserForCreation;
+            this.signIn(userCreated.username, userCreated.password);
+        } catch (error) {
+            console.log(error);
+            const response: SpecialResponse = JSON.parse(error.error) as SpecialResponse;
+            console.log(response);
+            if (response.status === 409) {
+                this.afficherMessageErreur('Cet username n\'est plus displonible.');
             }
-        );
+        }
     }
 
     afficherMessageErreur(message: string) {
@@ -263,7 +250,9 @@ export class UserCreateComponent implements OnInit {
             this.personnage.clearValidators();
             this.personnage.updateValueAndValidity();
             this.createUserForm.updateValueAndValidity();
-            setTimeout(() => {this.passwordRepeat.patchValue(this.passwordRepeat.value); } , 10);
+            setTimeout(() => {
+                this.passwordRepeat.patchValue(this.passwordRepeat.value);
+            }, 10);
         } else {
             this.personnage.setValidators([Validators.required]);
             this.personnage.updateValueAndValidity();
@@ -288,12 +277,15 @@ export class UserCreateComponent implements OnInit {
     }
 
     checkUsernameAvailability() {
-        if (this.timerUsername){
+        if (this.timerUsername) {
             clearTimeout(this.timerUsername);
         }
 
         // trigger the search action after 400 millis
-        this.timerUsername = setTimeout(() => {this.lookingForUsernameAvailability = true; this.searchUsername(); }, 1500);
+        this.timerUsername = setTimeout(() => {
+            this.lookingForUsernameAvailability = true;
+            this.searchUsername();
+        }, 1500);
     }
 
     searchUsername() {
@@ -312,21 +304,24 @@ export class UserCreateComponent implements OnInit {
                 const response: SpecialResponse = data as SpecialResponse;
                 if (response.status === 409) {
                     this.username.setErrors({unavailableUsername: true});
-                    setTimeout( () => { this.usernameUnavailable = true; }, 10);
+                    setTimeout(() => {
+                        this.usernameUnavailable = true;
+                    }, 10);
                 }
             }
         );
     }
 
     checkPersonnageNameAvailability() {
-        if (this.timerPersonnageName){
+        if (this.timerPersonnageName) {
             clearTimeout(this.timerPersonnageName);
         }
 
         // trigger the search action after 400 millis
         this.timerPersonnageName = setTimeout(() => {
-            this.lookingForPersonnageNameAvailability = true; this.searchPersonnageName();
-            }, 1500);
+            this.lookingForPersonnageNameAvailability = true;
+            this.searchPersonnageName();
+        }, 1500);
     }
 
     searchPersonnageName() {
@@ -344,7 +339,9 @@ export class UserCreateComponent implements OnInit {
                 const response: SpecialResponse = data as SpecialResponse;
                 if (response.status === 409) {
                     this.personnage.setErrors({unavailablePersonnageName: true});
-                    setTimeout( () => { this.personnageNameUnavailable = true; }, 10);
+                    setTimeout(() => {
+                        this.personnageNameUnavailable = true;
+                    }, 10);
                 }
             }
         );
