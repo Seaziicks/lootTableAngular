@@ -29,32 +29,22 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
         super(jsonService);
     }
 
-    ngOnInit(): void {
-        this.jsonService.getJSON('magique', 'effetsMagiquesArmes').then(
-            (effetsMagiquesArmes: any) => {
-                this.allProprietesMagiques = JSON.parse(effetsMagiquesArmes) as SortedMagicalProperty;
-                this.jsonService.getJSON('magique', 'armesSpeciales').then(
-                    (armesSpeciales: any) => {
-                        this.allArmesSpeciales = JSON.parse(armesSpeciales) as SortedMagicalProperty;
-                    }
-                );
-            }
+    async ngOnInit() {
+        // Permet de faire les requêtes en parallèle.
+        const donnees = await Promise.all(
+            [
+                this.jsonService.getJSON('magique', 'effetsMagiquesArmes'),
+                this.jsonService.getJSON('magique', 'armesSpeciales'),
+                this.jsonService.getJSON('objets/classique', 'armesCourantes'),
+                this.jsonService.getJSON('objets/classique', 'armesGuerre'),
+                this.jsonService.getJSON('objets/classique', 'armesExotiques'),
+            ]
         );
-        this.jsonService.getJSON('objets/classique', 'armesCourantes').then(
-            (armesCourantes: any) => {
-                this.allArmeCourantes = JSON.parse(armesCourantes) as CategoriesArmes;
-            }
-        );
-        this.jsonService.getJSON('objets/classique', 'armesGuerre').then(
-            (armesCourantes: any) => {
-                this.allArmesGuerre = JSON.parse(armesCourantes) as CategoriesArmes;
-            }
-        );
-        this.jsonService.getJSON('objets/classique', 'armesExotiques').then(
-            (armesCourantes: any) => {
-                this.allArmesExotiques = JSON.parse(armesCourantes) as CategoriesArmes;
-            }
-        );
+        this.allProprietesMagiques = donnees[0] as SortedMagicalProperty;
+        this.allArmesSpeciales = donnees[1] as SortedMagicalProperty;
+        this.allArmeCourantes = donnees[2] as CategoriesArmes;
+        this.allArmesGuerre = donnees[3] as CategoriesArmes;
+        this.allArmesExotiques = donnees[4] as CategoriesArmes;
         this.getArrayPourNbProprieteMagique();
     }
 

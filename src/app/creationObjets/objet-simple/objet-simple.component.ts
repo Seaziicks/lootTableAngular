@@ -20,15 +20,11 @@ export class ObjetSimpleComponent extends ObjetCommun implements OnInit {
         super(jsonService);
     }
 
-    ngOnInit(): void {
-        this.jsonService.getJSON(this.parametres[3], this.parametres[4]).then(
-            (effetsObjet: any) => {
-                // console.log(effetsObjet);
-                this.allProprietesMagiques = JSON.parse(effetsObjet) as SortedMagicalProperty;
-                // console.log(JSON.parse(effetsObjet).strongAnfPowerful[9]);
-                // console.log(this.allObjets.strongAnfPowerful[9]);
-            }
-        );
+    async ngOnInit() {
+        const donnees = await this.jsonService.getJSON(this.parametres[3], this.parametres[4]);
+        // console.log(donnees);
+        // console.log((donnees as SortedMagicalProperty).strongAnfPowerful[9]);
+        this.allProprietesMagiques = donnees as SortedMagicalProperty;
         this.type = this.parametres[2];
         this.getArrayPourNbProprieteMagique();
     }

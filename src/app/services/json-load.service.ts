@@ -9,9 +9,9 @@ export class JSonLoadService {
     constructor(private http: HttpClient) {
     }
 
-    public getJSON(folder: string, fileToLoad: string): Promise<string> {
+    public async getJSON(folder: string, fileToLoad: string): Promise<Object> {
         const baseUrlBis = fileToLoad.endsWith('.json') ?
             'assets/json/' + folder + '/' + fileToLoad : 'assets/json/' + folder + '/' + fileToLoad + '.json';
-        return this.http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise();
+        return await this.http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise();
     }
 }

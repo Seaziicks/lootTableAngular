@@ -31,36 +31,21 @@ export class MaledictionsComponent implements OnInit {
     constructor(private jsonService: JSonLoadService) {
     }
 
-    ngOnInit(): void {
-        this.jsonService.getJSON('magique', 'inconvenientsMalediction').then(
-            (data: any) => {
-                // console.log(data);
-                this.inconveniants = JSON.parse(data) as TablesChances;
-                // console.log(this.inconveniants);
-            }
+    async ngOnInit() {
+        const donnees = await Promise.all(
+            [
+                this.jsonService.getJSON('magique', 'inconvenientsMalediction'),
+                this.jsonService.getJSON('magique', 'conditionsMalediction'),
+                this.jsonService.getJSON('magique', 'conditionExterieurMaledition'),
+                this.jsonService.getJSON('magique', 'objetsMauditsSpeciaux')
+            ]
         );
-        this.jsonService.getJSON('magique', 'conditionsMalediction').then(
-            (data: any) => {
-                // console.log(data);
-                this.conditionsDeFonctionnement = JSON.parse(data) as TablesChances;
-                // console.log(this.conditions);
-            }
-        );
-        this.jsonService.getJSON('magique', 'conditionExterieurMaledition').then(
-            (data: any) => {
-                // console.log(data);
-                this.conditionsExterieur = JSON.parse(data) as MagicalProperty;
-                // console.log(this.conditionsExterieur);
-            }
-        );
-        this.jsonService.getJSON('magique', 'objetsMauditsSpeciaux').then(
-            (mauditsSpeciaux: any) => {
-                // console.log(mauditsSpeciaux);
-                this.allObjetsMaudits = JSON.parse(mauditsSpeciaux) as SortedMagicalProperty;
-                // console.log(JSON.parse(mauditsSpeciaux).strongAnfPowerful[9]);
-                // console.log(this.allObjetsMaudits.strongAnfPowerful[9]);
-            }
-        );
+        // console.log((donnees[3] as SortedMagicalProperty).strongAnfPowerful[9]);
+        this.inconveniants = donnees[0] as TablesChances;
+        this.conditionsDeFonctionnement = donnees[1] as TablesChances;
+        this.conditionsExterieur = donnees[2] as MagicalProperty;
+        this.allObjetsMaudits = donnees[3] as SortedMagicalProperty;
+        // console.log(this.allObjetsMaudits.strongAnfPowerful[9]);
     }
 
     loadComplete(): boolean {

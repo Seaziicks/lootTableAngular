@@ -28,27 +28,20 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
         super(jsonService);
     }
 
-    ngOnInit(): void {
-        this.jsonService.getJSON('magique', 'effetsArmuresMagiques').then(
-            (effetsArmuresMagiques: any) => {
-                this.allProprietesMagiques = JSON.parse(effetsArmuresMagiques) as SortedMagicalProperty;
-                this.jsonService.getJSON('magique', 'armuresMagiquesSpeciales').then(
-                    (armuresMagiquesSpeciales: any) => {
-                        this.allArmuresSpeciales = JSON.parse(armuresMagiquesSpeciales) as SortedMagicalProperty;
-                        this.jsonService.getJSON('magique', 'boucliersSpeciaux').then(
-                            (boucliersSpeciaux: any) => {
-                                this.allBoucliersSpeciaux = JSON.parse(boucliersSpeciaux) as SortedMagicalProperty;
-                            }
-                        );
-                    }
-                );
-            }
+    async ngOnInit() {
+        const donnees = await Promise.all(
+            [
+                this.jsonService.getJSON('magique', 'effetsArmuresMagiques'),
+                this.jsonService.getJSON('magique', 'armuresMagiquesSpeciales'),
+                this.jsonService.getJSON('magique', 'boucliersSpeciaux'),
+                this.jsonService.getJSON('objets/classique', 'armures'),
+
+            ]
         );
-        this.jsonService.getJSON('objets/classique', 'armures').then(
-            (armuresCourantes: any) => {
-                this.allArmures = JSON.parse(armuresCourantes) as CategoriesArmures;
-            }
-        );
+        this.allProprietesMagiques = donnees[0] as SortedMagicalProperty;
+        this.allArmuresSpeciales = donnees[1] as SortedMagicalProperty;
+        this.allBoucliersSpeciaux = donnees[2] as SortedMagicalProperty;
+        this.allArmures = donnees[3] as CategoriesArmures;
         this.getArrayPourNbProprieteMagique();
     }
 
