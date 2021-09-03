@@ -23,10 +23,10 @@ export class MonstreLootChanceService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Loot', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod, baseUrlBis, {
-            responseType: 'text',
+        return await http.request(httpMethod, baseUrlBis, {
+            responseType: 'json',
             params
-        }).toPromise()) as SpecialResponse;
+        }).toPromise() as SpecialResponse;
     }
 
     public async envoyerLootChancesBis(http: HttpClient, httpMethod: string, idMonstre: number, Loot: MonstreLootChanceBis[])
@@ -43,24 +43,24 @@ export class MonstreLootChanceService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Loot', JSON.stringify(values));
 
-        const retour = await http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise();
+        const retour = await http.request(httpMethod, baseUrlBis, {responseType: 'json', params}).toPromise();
         console.log(retour);
 
-        return JSON.parse(retour) as SpecialResponse;
+        return retour as SpecialResponse;
     }
 
     public async getMonstreLootChanceTest(http: HttpClient, idMonstre: number): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idMonstre=' + idMonstre;
-        return JSON.parse(await http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise()) as SpecialResponse;
+        return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     public async getMonstreLootChanceBis(http: HttpClient, idMonstre: number): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_DROP_CHANCE_BIS + '?idMonstre=' + idMonstre;
-        return JSON.parse(await http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise()) as SpecialResponse;
+        return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     public async getLootPossibles(http: HttpClient): Promise<SpecialResponse> {
-        return JSON.parse(await http.request('GET', BASE_URL + 'lootPossiblesRest.php', {responseType: 'text'})
-            .toPromise()) as SpecialResponse;
+        return await http.request('GET', BASE_URL + 'lootPossiblesRest.php', {responseType: 'json'})
+            .toPromise() as SpecialResponse;
     }
 }

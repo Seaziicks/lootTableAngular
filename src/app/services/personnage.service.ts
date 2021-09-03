@@ -46,8 +46,8 @@ export class PersonnageService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('ProgressionPersonnage', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     async getNiveauEnAttente(http: HttpClient, niveau: number): Promise<SpecialResponse> {
@@ -67,8 +67,8 @@ export class PersonnageService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Niveau', JSON.stringify(values));
 
-        return JSON.parse(await http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     async gererNiveau(http: HttpClient, idPersonnage: number, monte: boolean): Promise<SpecialResponse> {

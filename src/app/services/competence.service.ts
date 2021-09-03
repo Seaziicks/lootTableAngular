@@ -40,7 +40,7 @@ export class CompetenceService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Competence', JSON.stringify(values));
 
-        return JSON.parse(await http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
+        return await http.request('PUT', baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     async updateCompetenceContenu(http: HttpClient, competenceContenu: CompetenceContenu): Promise<SpecialResponse> {
@@ -55,6 +55,6 @@ export class CompetenceService {
 
         console.log(params);
 
-        return JSON.parse(await http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
+        return await http.request('PUT', baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 }

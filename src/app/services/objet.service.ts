@@ -28,7 +28,7 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueDescriptions', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
+        return await http.request(httpMethod, baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     public async envoyerObjetComplet(http: HttpClient, httpMethod: string, idObjet: number, objet: any): Promise<SpecialResponse> {
@@ -40,7 +40,7 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Objet', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
+        return await http.request(httpMethod, baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     public async getObjetComplet(http: HttpClient, idObjet: number): Promise<SpecialResponse> {
@@ -65,8 +65,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueDecouvert', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async getAllObjetsComplets(http: HttpClient, idPersonnage: number): Promise<SpecialResponse> {
@@ -106,14 +106,18 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagique', JSON.stringify(values));
 
-        const response1: SpecialResponse = JSON.parse(await http.request(httpMethod, baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        // Envoie des effets généraux de l'effet magique.
+        const response1: SpecialResponse = await http.request(httpMethod, baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
         const idEffetMagique = response1.data.idEffetMagique;
         console.log(response1);
         console.log(response1.data);
+
+        // Envoie des tables html associées à l'effet magique.
         const response2: SpecialResponse = await this.envoyerEffetMagiqueTable(http, httpMethod, idEffetMagique, effet.table);
         console.log(response2);
 
+        // Evoie des listes html associés à l'effet magique.
         return await this.envoyerEffetMagiqueUl(http, httpMethod, idEffetMagique, effet.ul);
     }
 
@@ -127,7 +131,7 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTable', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
+        return await http.request(httpMethod, baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     private async envoyerEffetMagiqueUl(http: HttpClient, httpMethod: string, idEffetMagique: number, effetUl: UlMagicalProperty[])
@@ -140,7 +144,7 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueUl', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod, baseUrlBis, {responseType: 'text', params}).toPromise()) as SpecialResponse;
+        return await http.request(httpMethod, baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     public async ulContent(http: HttpClient, httpMethod: HttpMethods,
@@ -153,8 +157,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueUlContent', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async ul(http: HttpClient, httpMethod: HttpMethods, idEffetMagique: number, effetMagiqueUl: EffetMagiqueUl)
@@ -169,8 +173,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueUl', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async titleContent(http: HttpClient, httpMethod: HttpMethods, idEffetMagiqueTableTitle: number,
@@ -184,8 +188,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTableTitleContent', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async title(http: HttpClient, httpMethod: HttpMethods, idEffetMagiqueTable: number,
@@ -199,8 +203,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTableTitle', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async trContent(http: HttpClient, httpMethod: HttpMethods, idEffetMagiqueTableTr: number,
@@ -214,8 +218,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTableTrContent', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async tr(http: HttpClient, httpMethod: HttpMethods, idEffetMagiqueTable: number, effetMagiqueTableTr: EffetMagiqueTableTr)
@@ -229,8 +233,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTableTr', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async table(http: HttpClient, httpMethod: HttpMethods, idEffetMagique: number, effetMagiqueTable: EffetMagiqueTable)
@@ -245,8 +249,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTable', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async effetMagique(http: HttpClient, httpMethod: HttpMethods, idObjet: number, effetMagique: EffetMagiqueDB)
@@ -259,8 +263,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagique', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async description(http: HttpClient, httpMethod: HttpMethods,
@@ -274,8 +278,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueDescription', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async infos(http: HttpClient, httpMethod: HttpMethods, idEffetMagique: number, effetMagiqueInfos: EffetMagiqueDBInfos)
@@ -288,8 +292,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueInfos', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async objet(http: HttpClient, httpMethod: HttpMethods, idPersonnage: number, objet: ObjetCommunFromDB)
@@ -307,8 +311,8 @@ export class ObjetService {
         const params = new HttpParams().set('Objet', JSON.stringify(values));
         console.log(values);
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async malediction(http: HttpClient, httpMethod: HttpMethods, idMalediction: number, malediction: Malediction)
@@ -321,8 +325,8 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Malediction', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     public async materiau(http: HttpClient, httpMethod: HttpMethods, idMateriaux: number, materiaux: Materiau)
@@ -335,7 +339,7 @@ export class ObjetService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Materiaux', JSON.stringify(values));
 
-        return JSON.parse(await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request(httpMethod.toString(), baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 }

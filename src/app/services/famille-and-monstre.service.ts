@@ -64,7 +64,7 @@ export class FamilleAndMonstreService {
 
     public async getFamillesAvecMonstres(http: HttpClient): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_MONSTRES + '?withFamille=true';
-        return JSON.parse(await http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise()) as SpecialResponse;
+        return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     /* ---------------------------------------------------*
@@ -79,10 +79,10 @@ export class FamilleAndMonstreService {
         const baseUrlBis = BASE_URL + URL_MONSTRE;
         const params = new HttpParams().set('Monstre', JSON.stringify(values));
 
-        const leretour = await http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise();
+        const leretour = await http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
         console.log(leretour);
 
-        return JSON.parse(leretour) as SpecialResponse;
+        return leretour as SpecialResponse;
     }
 
     public async modifierMonstre(http: HttpClient, idMonstre: number, idFamilleMonstre: number, libelle: string): Promise<SpecialResponse> {
@@ -93,8 +93,8 @@ export class FamilleAndMonstreService {
         const baseUrlBis = BASE_URL + URL_MONSTRE + '?idMonstre=' + idMonstre;
         const params = new HttpParams().set('Monstre', JSON.stringify(values));
 
-        return JSON.parse(await http.request('PUT', baseUrlBis, {responseType: 'text', params})
-            .toPromise()) as SpecialResponse;
+        return await http.request('PUT', baseUrlBis, {responseType: 'json', params})
+            .toPromise() as SpecialResponse;
     }
 
     /* ---------------------------------------------------*
@@ -103,7 +103,7 @@ export class FamilleAndMonstreService {
 
     public async getAllFamilles(http: HttpClient): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
-        return JSON.parse(await http.request('GET', baseUrlBis, {responseType: 'text'}).toPromise()) as SpecialResponse;
+        return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     public async creerFamille(http: HttpClient, libelle: string): Promise<SpecialResponse> {
@@ -111,10 +111,10 @@ export class FamilleAndMonstreService {
         values.libelle = libelle;
         const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
         const params = new HttpParams().set('Famille', JSON.stringify(values));
-        return JSON.parse(await http.request('POST', baseUrlBis, {
-            responseType: 'text',
+        return await http.request('POST', baseUrlBis, {
+            responseType: 'json',
             params
-        }).toPromise()) as SpecialResponse;
+        }).toPromise() as SpecialResponse;
     }
 
     public async modifierFamille(http: HttpClient, idFamilleMonstre: number, libelle: string): Promise<SpecialResponse> {
@@ -125,12 +125,9 @@ export class FamilleAndMonstreService {
         console.log(baseUrlBis);
         const params = new HttpParams().set('Famille', JSON.stringify(values));
 
-        const leretour = await http.request('PUT', baseUrlBis, {responseType: 'text', params}).toPromise();
+        const leretour = await http.request('PUT', baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
         console.log(leretour);
 
-        return JSON.parse(await http.request('PUT', baseUrlBis, {
-            responseType: 'text',
-            params
-        }).toPromise()) as SpecialResponse;
+        return leretour;
     }
 }
