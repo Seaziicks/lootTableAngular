@@ -16,17 +16,14 @@ export class TestInsertTableComponent implements OnInit {
                 private jsonService: JSonLoadService) {
     }
 
-    ngOnInit(): void {
-        this.jsonService.getJSON('magique', 'objetsMerveilleux').then(
-            (effetsObjet: any) => {
-                // console.log(effetsObjet);
-                this.allProprietesMagiques = JSON.parse(effetsObjet) as SortedMagicalProperty;
-                console.log(this.allProprietesMagiques);
-            }
-        );
+    async ngOnInit() {
+        const donnees = await this.jsonService.getJSON('magique', 'objetsMerveilleux');
+        console.log(donnees);
+        this.allProprietesMagiques = donnees as SortedMagicalProperty;
+        console.log(this.allProprietesMagiques);
     }
 
-    testTable() {
+    async testTable() {
         let sacAMalice: MagicalProperty;
         console.log(this.allProprietesMagiques.weakAndSmall[237]);
         sacAMalice = this.allProprietesMagiques.weakAndSmall[237];
@@ -38,14 +35,12 @@ export class TestInsertTableComponent implements OnInit {
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTable.php' + '?idEffetMagique=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTable', JSON.stringify(values));
-        return this.http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise().then(
-            (data: any) => {
-                console.log(data);
-            }
-        );
+        const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
+        console.log(data);
+        return data;
     }
 
-    testUl() {
+    async testUl() {
         let casqueDeMilleFeux: MagicalProperty;
         console.log(this.allProprietesMagiques);
         console.log(this.allProprietesMagiques.strongAnfPowerful[21]);
@@ -58,14 +53,12 @@ export class TestInsertTableComponent implements OnInit {
         const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueUl.php' + '?idEffetMagique=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueUl', JSON.stringify(values));
-        return this.http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise().then(
-            (data: any) => {
-                console.log(data);
-            }
-        );
+        const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
+        console.log(data);
+        return data;
     }
 
-    testDescriptions() {
+    async testDescriptions() {
         const values = {idEffetMagique: undefined, Descriptions: undefined};
         values.idEffetMagique = 2;
         values.Descriptions = this.allProprietesMagiques.strongAnfPowerful[21].description;
@@ -74,14 +67,12 @@ export class TestInsertTableComponent implements OnInit {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueDescriptions', JSON.stringify(values));
 
-        return this.http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise().then(
-            (data: any) => {
-                console.log(data);
-            }
-        );
+        const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
+        console.log(data);
+        return data;
     }
 
-    testInfos() {
+    async testInfos() {
         const values = {idEffetMagique: undefined, Infos: undefined};
         values.idEffetMagique = 2;
         values.Infos = this.allProprietesMagiques.strongAnfPowerful[21].infos.data;
@@ -90,11 +81,9 @@ export class TestInsertTableComponent implements OnInit {
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueInfos', JSON.stringify(values));
 
-        return this.http.request('POST', baseUrlBis, {responseType: 'text', params}).toPromise().then(
-            (data: any) => {
-                console.log(data);
-            }
-        );
+        const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
+        console.log(data);
+        return data;
     }
 
 }
