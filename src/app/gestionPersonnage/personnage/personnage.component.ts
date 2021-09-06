@@ -40,8 +40,9 @@ export class PersonnageComponent implements OnInit {
         if (+this.route.snapshot.paramMap.get('idPersonnage')) { // Permet de selectionner un personnage, si j'arrive à le faire passer en param un jour.
             this.idPersonnageSelectionne = +this.route.snapshot.paramMap.get('idPersonnage');
             await this.selectPersonnage();
-        } else if (this.authService.personnage) { // Permet de charger le personnage courant qui a été enregistré en dernier.
-            this.idPersonnageSelectionne = this.authService.personnage.idPersonnage;
+        } else if (this.personnageService.personnageCourant) { // Permet de charger le personnage courant qui a été enregistré en dernier.
+            this.currentPersonnage = this.personnageService.personnageCourant;
+            this.idPersonnageSelectionne = this.currentPersonnage.idPersonnage;
             await this.selectPersonnage();
         }
     }
@@ -50,20 +51,24 @@ export class PersonnageComponent implements OnInit {
         if (+this.idPersonnageSelectionne !== 0 && +this.idPersonnageSelectionne !== -1) {
             this.objetCourantID = null;
             this.currentPersonnage = this.personnages.find(f => f.idPersonnage === +this.idPersonnageSelectionne);
-            this.authService.personnage = this.currentPersonnage; // Permet de sauvegarder le personnage courant.
-            await this.loadObjetsNames();
+            this.personnageService.personnageCourant = this.currentPersonnage; // Permet de sauvegarder le personnage courant.
         } else if (+this.idPersonnageSelectionne === 0 || +this.idPersonnageSelectionne === -1) {
-            this.idPersonnageSelectionne = undefined;
             this.currentPersonnage = null;
-            this.authService.personnage = null;
+            this.idPersonnageSelectionne = undefined;
+            this.personnageService.personnageCourant = null;
         }
+        await this.loadObjetsNames();
     }
 
     public async loadObjetsNames() {
-        const response: SpecialResponse = await this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne);
-        console.log(response);
-        this.objetMinimisations = response.data as ObjetMinimisation[];
-        console.log(this.objetMinimisations);
+        if (this.idPersonnageSelectionne) {
+            const response: SpecialResponse = await this.objetService.getAllObjetsNames(this.http, this.idPersonnageSelectionne);
+            console.log(response);
+            this.objetMinimisations = response.data as ObjetMinimisation[];
+            console.log(this.objetMinimisations);
+        } else {
+            this.objetMinimisations = undefined;
+        }
     }
 
     public selectObjet(idObjet: number) {
@@ -119,6 +124,6 @@ export class PersonnageComponent implements OnInit {
 
     getIdPersonnage() {
         return this.idPersonnageSelectionne ? this.idPersonnageSelectionne
-            : this.authService.personnage ? this.authService.personnage.idPersonnage : undefined;
+            : this.authService.getPersonnage() ? this.authService.getPersonnage().idPersonnage : undefined;
     }
 }

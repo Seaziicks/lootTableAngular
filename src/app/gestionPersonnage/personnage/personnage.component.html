@@ -1,6 +1,6 @@
 <div id="fakeBody">
 
-    <div *ngIf="(this.authService.personnage || this.authService.isGameMaster()) && this.getIdPersonnage()" class="gestion-personnage-boutons">
+    <div *ngIf="(this.authService.getPersonnage() || this.authService.isGameMaster()) && this.getIdPersonnage() && this.currentPersonnage" class="gestion-personnage-boutons">
         <div (click)="this.allerAPageGestionPersonnage()"
              class="col-md-3 mb-3 button-icon">
             <div class="btn btn-primary w-100 align-items-stretch d-flex">

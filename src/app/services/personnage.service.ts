@@ -9,6 +9,8 @@ import {SpecialResponse} from '../loot-table/loot-table.component';
 })
 export class PersonnageService {
 
+    public personnageCourant: Personnage;
+
     constructor() {
     }
 
