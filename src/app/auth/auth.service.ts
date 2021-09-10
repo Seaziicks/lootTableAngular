@@ -19,7 +19,8 @@ export class AuthService {
 
     user: User;
 
-    personnage: Personnage;
+    // Personnage reçu après avoir été identifié. Ne devrait pas être accessible par tout le monde.
+    private personnage: Personnage = null;
 
     redirectUrl: string;
 
@@ -41,7 +42,7 @@ export class AuthService {
         if (response.status === 200) {
             this.isAuth = true;
             this.user = response.data as User;
-            this.personnage = response.data.personnage as Personnage;
+            this.personnage = response.data.personnage as Personnage ? response.data.personnage as Personnage : null;
         } else {
             throw new Error('Utilisateur ou mot de passe incorrect.');
         }
@@ -123,5 +124,14 @@ export class AuthService {
     async checkUserInLocalStorageAsPromise(http: HttpClient) {
         const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
         return await this.signIn(http, userSession.username, userSession.password);
+    }
+
+    public getPersonnage(): Personnage {
+
+        return ((JSON.parse(JSON.stringify(this.personnage))) as Personnage);
+    }
+
+    public resetPersonnage() {
+        this.personnage = null;
     }
 }

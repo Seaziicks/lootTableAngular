@@ -13,7 +13,7 @@ import {AuthService} from '../../auth/auth.service';
 })
 export class PersonnageObjetPersonnageComponent implements OnInit {
 
-    @Input() set idObj(id: number) { this.idObjet = id; this.loadObjet(); }
+    @Input() set idObj(id: number) { this.idObjet = id; this.loadObjet().then(); }
     @Input() idPersonnage: number;
     @Input() personnages: Personnage[];
     @Output() changingObjetEffetDecouvert = new EventEmitter<any>();
@@ -43,14 +43,14 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         console.log(response);
         this.objet = response.data as ObjetCommunFromDB;
         console.log(this.objet);
-        if (this.authService.personnage) {
-            this.loadEffetsMagiquesDecouverts();
+        if (this.authService.getPersonnage()) {
+            await this.loadEffetsMagiquesDecouverts();
         }
     }
 
     async loadEffetsMagiquesDecouverts() {
         const response: SpecialResponse = await this.objetService
-            .getEffetsMagiquesDecouverts(this.http, this.idObjet, this.authService.personnage.idPersonnage);
+            .getEffetsMagiquesDecouverts(this.http, this.idObjet, this.authService.getPersonnage().idPersonnage);
         console.log(response);
         this.effetsMagiquesDecouverts = response.data as EffetMagiqueDecouvert[];
         this.effetsMagiquesDecouvertsOriginal = JSON.parse(
@@ -91,7 +91,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         this.modificationsEnCours[indexEffetDecouvert] = false;
 
         this.reloadingInterface();
-        this.loadEffetsMagiquesDecouverts();
+        await this.loadEffetsMagiquesDecouverts();
     }
 
     async modifierEffetDecouvert(indexEffetDecouvert: number) {
@@ -126,7 +126,7 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
         const effetMagiqueDecouvert = {
             idEffetMagiqueDecouvert: null,
             idObjet: this.idObjet,
-            idPersonnage: this.authService.personnage.idPersonnage,
+            idPersonnage: this.authService.getPersonnage().idPersonnage,
             effet: this.effetDecouvertAAjouter,
         } as EffetMagiqueDecouvert;
         const response: SpecialResponse = await this.objetService
@@ -145,8 +145,8 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     reloadingInterface() {
         this.updating = true;
         this.changingObjetEffetDecouvert.emit(this.objet.idObjet);
-        if (this.authService.personnage) {
-            setTimeout(() => { this.loadEffetsMagiquesDecouverts(); }, 1250);
+        if (this.authService.getPersonnage()) {
+            setTimeout(async () => { await this.loadEffetsMagiquesDecouverts(); }, 1250);
         }
         setTimeout( () => {
             this.updating = false;
@@ -166,13 +166,13 @@ export class PersonnageObjetPersonnageComponent implements OnInit {
     }
 
     effetsMagiquesDecouvertsAffichables(indexEffetMagiqueDecouvert: number): boolean {
-        return (this.authService.personnage
-            && this.authService.personnage.idPersonnage === this.effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].idPersonnage)
+        return (this.authService.getPersonnage()
+            && this.authService.getPersonnage().idPersonnage === this.effetsMagiquesDecouverts[indexEffetMagiqueDecouvert].idPersonnage)
             || this.authService.isGameMaster();
     }
 
     effetsMagiquesDecouvertsAjoutable(): boolean {
-        return !!this.authService.personnage || this.authService.isGameMaster();
+        return !!this.authService.getPersonnage() || this.authService.isGameMaster();
     }
 
     getAutheurEffetMagiqueDecouvert(indexEffetMagiqueDecouvert: number) {

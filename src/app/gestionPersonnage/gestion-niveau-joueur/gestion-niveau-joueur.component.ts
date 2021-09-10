@@ -52,9 +52,9 @@ export class GestionNiveauJoueurComponent implements OnInit {
         console.log(this.route.snapshot.paramMap.get('idPersonnage'));
         console.log(this.authService.isGameMaster());
         console.log(this.authService.user);
-        if (this.authService.personnage) {
+        if (this.authService.getPersonnage()) {
             console.log('ici');
-            this.idPersonnage = this.authService.personnage.idPersonnage;
+            this.idPersonnage = this.authService.getPersonnage().idPersonnage;
         } else if (this.authService.isGameMaster()) {
             console.log('là');
             this.idPersonnage = +this.route.snapshot.paramMap.get('idPersonnage');
