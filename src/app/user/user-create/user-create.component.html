@@ -60,15 +60,15 @@
                 <br/>
                 <mat-checkbox
                     *ngIf="this.creationPersonnageChecked"
-                    formControlName="personnageLeftChecked"
+                    formControlName="personnageUnassingedChecked"
                     labelPosition="after"
-                    (change)="personnageLeftFunction()">
+                    (change)="personnageUnassignedFunction()">
                     <span style="word-break: break-word; width: 180px;">
                         Choisir parmi les personnages existants restants
                     </span>
                 </mat-checkbox>
             </div>
-            <div *ngIf="this.creationPersonnageChecked && !this.personnageLeft">
+            <div *ngIf="this.creationPersonnageChecked && !this.personnageUnassigned">
                 <div class="needSpace">
                     <mat-form-field appearance="outline">
                         <mat-label>Personnage name</mat-label>
@@ -84,14 +84,14 @@
                 </div>
             </div>
 
-            <div *ngIf="this.creationPersonnageChecked && this.personnageLeft">
+            <div *ngIf="this.creationPersonnageChecked && this.personnageUnassigned">
                 <div class="needSpace">
                     <label for="selectPersonnageRestant">Selection du personnage</label>
                     <select id="selectPersonnageRestant" class="form-control" (change)="this.selectionPersonnage()"
                             name="selectPersonnageRestant"
                             formControlName="personnage">
                         <option selected value=""> </option>
-                        <option *ngFor="let personnage of this.leftPersonnage" [value]="personnage.nom">
+                        <option *ngFor="let personnage of this.unassignedPersonnages" [value]="personnage.nom">
                             {{personnage.idPersonnage}} - {{personnage.nom}}
                         </option>
                     </select>

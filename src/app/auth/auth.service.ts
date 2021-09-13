@@ -68,7 +68,7 @@ export class AuthService {
         return await http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
-    async getAllLeftPersonnage(http: HttpClient): Promise<SpecialResponse> {
+    async getAllUnassignedPersonnage(http: HttpClient): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'connexion.php' + '?leftPersonnage=true';
         console.log(baseUrlBis);
         return await http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;

@@ -65,10 +65,10 @@ export class UserCreateComponent implements OnInit {
     message: string;
 
     creationPersonnageChecked = false;
-    personnageLeft = false;
+    personnageUnassigned = false;
     idPersonnage: number;
 
-    leftPersonnage: PersonnageMinimisation[];
+    unassignedPersonnages: PersonnageMinimisation[];
 
     private timerUsername: any;
     private timerPersonnageName: any;
@@ -89,7 +89,7 @@ export class UserCreateComponent implements OnInit {
             password: new FormControl('', [Validators.required, Validators.minLength(9)]),
             passwordRepeat: new FormControl('', [Validators.required]),
             creationPersonnageChecked: new FormControl(''),
-            personnageLeftChecked: new FormControl(''),
+            personnageUnassingedChecked: new FormControl(''),
             personnage: new FormControl(''),
         }, [passwordMatchValidator, personnageSelection, usernameValid]);
         if (this.authService.isAuth) {
@@ -102,12 +102,12 @@ export class UserCreateComponent implements OnInit {
             await this.router.navigate([redirectUrl]);
         }
         try {
-            const response: SpecialResponse = await this.authService.getAllLeftPersonnage(this.http);
+            const response: SpecialResponse = await this.authService.getAllUnassignedPersonnage(this.http);
             console.log(response);
-            this.leftPersonnage = response.data as PersonnageMinimisation[];
+            this.unassignedPersonnages = response.data as PersonnageMinimisation[];
             console.log(response.data as PersonnageMinimisation[]);
-            console.log(this.leftPersonnage[0]);
-        } catch(error) {
+            console.log(this.unassignedPersonnages[0]);
+        } catch (error) {
             console.log(error);
         }
     }
@@ -260,9 +260,9 @@ export class UserCreateComponent implements OnInit {
         console.log(this.createUserForm.status);
     }
 
-    personnageLeftFunction() {
-        this.personnageLeft = !this.personnageLeft;
-        if (!this.personnageLeft) {
+    personnageUnassignedFunction() {
+        this.personnageUnassigned = !this.personnageUnassigned;
+        if (!this.personnageUnassigned) {
             this.idPersonnage = null;
             this.personnage.patchValue(null);
         }
@@ -271,7 +271,7 @@ export class UserCreateComponent implements OnInit {
     selectionPersonnage() {
         const personnage = (document.getElementById('selectPersonnageRestant') as HTMLSelectElement).value;
         if (personnage.length > 0) {
-            this.idPersonnage = this.leftPersonnage.find(f => f.nom === personnage).idPersonnage;
+            this.idPersonnage = this.unassignedPersonnages.find(f => f.nom === personnage).idPersonnage;
         }
         console.log(this.idPersonnage);
     }
@@ -296,7 +296,7 @@ export class UserCreateComponent implements OnInit {
             this.lookingForUsernameAvailability = false;
             this.username.setErrors(null);
             this.usernameUnavailable = false;
-        } catch(error) {
+        } catch (error) {
             console.log(error);
             const response: SpecialResponse = error.error as SpecialResponse;
             if (response.status === 409) {
