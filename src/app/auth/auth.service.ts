@@ -5,12 +5,14 @@ import {SpecialResponse} from '../loot-table/loot-table.component';
 import {UserForCreation} from '../user/user-create/user-create.component';
 import {UserSession} from '../user/user-login/user-login.component';
 import {Router} from '@angular/router';
+import {JwtHelperService} from '@auth0/angular-jwt';
 
 export class User {
     idUser: number;
     username: string;
-    isGameMaster: false;
-    isAdmin: false;
+    isGameMaster: boolean;
+    isAdmin: boolean;
+    jwtToken: string;
 }
 
 export class AuthService {
@@ -25,6 +27,7 @@ export class AuthService {
     redirectUrl: string;
 
     async signIn(http: HttpClient, username: string, password: string): Promise<SpecialResponse> {
+        /*
         const values = {username: undefined, password: undefined};
         values.username = username;
         values.password = password;
@@ -39,9 +42,48 @@ export class AuthService {
             params
         }).toPromise() as SpecialResponse;
         console.log(response);
+        */
+        /*
         if (response.status === 200) {
             this.isAuth = true;
             this.user = response.data as User;
+            this.personnage = response.data.personnage as Personnage ? response.data.personnage as Personnage : null;
+        } else {
+            throw new Error('Utilisateur ou mot de passe incorrect.');
+        }
+        */
+        return await this.getJWTToken(http, username, password);
+    }
+
+    async getJWTToken(http: HttpClient, username: string, password: string) {
+        const values = {username: undefined, password: undefined};
+        values.username = username;
+        values.password = password;
+        console.log(values);
+        const baseUrlBis = BASE_URL + 'JWTToken.php';
+        console.log(baseUrlBis);
+
+        const params = new HttpParams().set('Connexion', JSON.stringify(values));
+
+        const response: SpecialResponse = await http.request(HttpMethods.GET.toString(), baseUrlBis, {
+            responseType: 'json',
+            params
+        }).toPromise() as SpecialResponse;
+
+        console.log(response);
+
+        if (response.status === 200) {
+            this.isAuth = true;
+            const helper = new JwtHelperService();
+            const decodedToken = helper.decodeToken(response.data);
+            this.user = {
+                username: decodedToken.username,
+                idUser: decodedToken.idUser,
+                isAdmin: decodedToken.isAdmin,
+                isGameMaster: decodedToken.isGameMaster,
+                jwtToken: response.data
+            } as User;
+            console.log(decodedToken);
             this.personnage = response.data.personnage as Personnage ? response.data.personnage as Personnage : null;
         } else {
             throw new Error('Utilisateur ou mot de passe incorrect.');

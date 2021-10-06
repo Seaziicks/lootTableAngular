@@ -47,6 +47,7 @@ import { PersonnageCompetencesComponent } from './gestionPersonnage/personnageCo
 import {MyComponentWrapperComponent} from './gestionPersonnage/personnageCompetences/MyReactComponentWrapper';
 import {ModifierCompetenceComponent} from './gestionPersonnage/personnageCompetences/modifier-competence/modifier-competence.component';
 import {CompetenceComponent} from './gestionPersonnage/personnageCompetences/competence/competence.component';
+import {JwtModule} from '@auth0/angular-jwt';
 
 
 @NgModule({
@@ -100,6 +101,7 @@ import {CompetenceComponent} from './gestionPersonnage/personnageCompetences/com
         DemoMaterialModule,
         MatNativeDateModule,
         FlexLayoutModule,
+        JwtModule
     ],
     entryComponents: [],
     bootstrap: [AppComponent],
