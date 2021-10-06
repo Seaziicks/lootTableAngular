@@ -9,7 +9,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {DemoMaterialModule} from './material-module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatNativeDateModule} from '@angular/material/core';
@@ -48,6 +48,7 @@ import {MyComponentWrapperComponent} from './gestionPersonnage/personnageCompete
 import {ModifierCompetenceComponent} from './gestionPersonnage/personnageCompetences/modifier-competence/modifier-competence.component';
 import {CompetenceComponent} from './gestionPersonnage/personnageCompetences/competence/competence.component';
 import {JwtModule} from '@auth0/angular-jwt';
+import {UniversalAppInterceptor} from './services/universal-app-interceptor';
 
 
 @NgModule({
@@ -87,7 +88,6 @@ import {JwtModule} from '@auth0/angular-jwt';
         ModifierCompetenceComponent,
         ModifierCompetenceComponent,
         CompetenceComponent,
-        CompetenceComponent,
     ],
     imports: [
         BrowserModule,
@@ -101,11 +101,12 @@ import {JwtModule} from '@auth0/angular-jwt';
         DemoMaterialModule,
         MatNativeDateModule,
         FlexLayoutModule,
-        JwtModule
+        JwtModule,
     ],
     entryComponents: [],
     bootstrap: [AppComponent],
     providers: [
+        { provide: HTTP_INTERCEPTORS, useClass: UniversalAppInterceptor, multi: true },
         {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}},
         AuthService,
     ]
