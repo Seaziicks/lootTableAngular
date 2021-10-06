@@ -6,6 +6,8 @@ import {UserForCreation} from '../user/user-create/user-create.component';
 import {UserSession} from '../user/user-login/user-login.component';
 import {Router} from '@angular/router';
 import {JwtHelperService} from '@auth0/angular-jwt';
+import {LocalStorageService} from '../services/local-storage.service';
+import {Injectable} from '@angular/core';
 
 export class User {
     idUser: number;
@@ -15,6 +17,9 @@ export class User {
     jwtToken: string;
 }
 
+@Injectable({
+    providedIn: 'root'
+})
 export class AuthService {
 
     isAuth = false;
@@ -25,6 +30,11 @@ export class AuthService {
     private personnage: Personnage = null;
 
     redirectUrl: string;
+
+    constructor(
+        private http: HttpClient,
+        private localStorageService: LocalStorageService
+    ) {}
 
     async signIn(http: HttpClient, username: string, password: string): Promise<SpecialResponse> {
         /*
@@ -52,10 +62,10 @@ export class AuthService {
             throw new Error('Utilisateur ou mot de passe incorrect.');
         }
         */
-        return await this.getJWTToken(http, username, password);
+        return await this.acquireJWTToken(http, username, password);
     }
 
-    async getJWTToken(http: HttpClient, username: string, password: string) {
+    async acquireJWTToken(http: HttpClient, username: string, password: string) {
         const values = {username: undefined, password: undefined};
         values.username = username;
         values.password = password;
@@ -84,11 +94,16 @@ export class AuthService {
                 jwtToken: response.data
             } as User;
             console.log(decodedToken);
+            this.localStorageService.set('JWTToken', response.data);
             this.personnage = response.data.personnage as Personnage ? response.data.personnage as Personnage : null;
         } else {
             throw new Error('Utilisateur ou mot de passe incorrect.');
         }
         return response;
+    }
+
+    getJWTToken() {
+        return this.localStorageService.get('JWTToken') ? this.localStorageService.get('JWTToken') : '';
     }
 
     signOut() {

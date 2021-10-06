@@ -17,8 +17,9 @@ export class AuthGuard implements CanActivate {
         next: ActivatedRouteSnapshot,
         state: RouterStateSnapshot): Promise<boolean | UrlTree> {
         const url: string = state.url;
-        if (!this.authService.isAuth && localStorage.getItem('userSession'))
+        if (!this.authService.isAuth && localStorage.getItem('userSession')) {
             await this.authService.checkUserInLocalStorageAsPromise(this.http);
+        }
         return this.checkLogin(url);
     }
 
