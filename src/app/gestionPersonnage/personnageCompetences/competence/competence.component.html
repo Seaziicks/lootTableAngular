@@ -6,17 +6,9 @@
         <h4 *ngIf="this.competence.niveau"> Niveau : {{this.competence.niveau}}</h4>
         <div *ngIf="this.competence.etat">{{this.competence.etat}}</div>
         <p *ngIf="this.competence.optionnelle">{{this.competence.optionnelle}}</p>
-        <p *ngIf="this.competence.icone">{{this.competence.icone}}</p>
+        <span *ngIf="this.competence.icone">{{this.competence.icone}}</span> : <img [src]="'assets/icones/' + this.competence.icone" alt="iconeCompetence"/>
         <br/>
         <button class="btn btn-light" (click)="this.modifierCompetence()" [disabled]="this.valide">Modifier competence</button>
-        <button class="btn btn-success" *ngIf="!this.valide else competenceValidee" (click)="this.envoyerModification()"
-                [disabled]="!this.areDifferentCompetences(this.competence, this.competenceOriginal)"
-                title="Des modifications doivent être faites pour valider un changement.">
-            Valider competence
-        </button>
-        <ng-template #competenceValidee>
-            <button class="btn btn-outline-warning" (click)="this.envoyerModification()">Dévalider competence</button>
-        </ng-template>
     </div>
 
     <div style="width: 100%" *ngIf="this.modificationEnCours">
@@ -45,8 +37,13 @@
             <mat-label>Icone de la competence</mat-label>
             <textarea [(ngModel)]="this.competence.icone" matInput></textarea>
         </mat-form-field>
-        <button class="btn btn-outline-light" (click)="this.modifierCompetence()">Valider modification competence</button>
-        <button class="btn btn-outline-warning" (click)="this.resetCompetence()">Reset competence</button>
+        <button class="btn btn-outline-light" (click)="this.modifierCompetence()" [disabled]="!this.competenceChanged()">Valider modification competence</button>
+        <ng-container *ngIf="!this.competenceChanged() else resetCompetenceState">
+            <button class="btn btn-outline-info" (click)="this.modificationEnCours = !this.modificationEnCours">Annuler</button>
+        </ng-container>
+        <ng-template #resetCompetenceState>
+            <button class="btn btn-outline-warning"  (click)="this.resetCompetence()">Reset competence</button>
+        </ng-template>
     </div>
 
     <ng-container *ngFor="let contenu of this.competence.contenu; let indexContenu = index; trackBy: trackByFn">

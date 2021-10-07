@@ -47,6 +47,10 @@ export class CompetenceComponent implements OnInit, OnChanges {
         }
     }
 
+    competenceChanged(): boolean {
+        return this.areDifferentCompetences(this.competenceOriginal, this.competence);
+    }
+
     areDifferentCompetences(competence1: Competence, competence2: Competence): boolean {
         const objetTemp1 = JSON.parse(JSON.stringify(competence1)) as Competence;
         // objetTemp1.effetMagique = null;
@@ -81,7 +85,7 @@ export class CompetenceComponent implements OnInit, OnChanges {
         this.competence.niveau = comp.niveau;
         this.competence.titre = comp.titre;
         console.log(this.competence);
-        this.modificationEnCours = false;
+        // this.modificationEnCours = false;
     }
 
     modifierCompetenceContenu(idCompetence: number) {
@@ -96,9 +100,9 @@ export class CompetenceComponent implements OnInit, OnChanges {
             console.log(response.data.contenu);
             console.log(response.data.niveauCompetenceRequis);
         } catch (error) {
-        this.competence.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu =
-            this.competenceOriginal.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu;
-
+            console.log(error);
+            this.competence.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu =
+                this.competenceOriginal.contenu.find(f => f.idCompetenceContenu === this.idCompetenceContenuModifieEnCours).contenu;
         }
         this.idCompetenceContenuModifieEnCours = null;
     }
