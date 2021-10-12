@@ -1,11 +1,14 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class LocalStorageService {
 
-  constructor() { }
+    static readonly JWTToken = 'JWTToken';
+
+    constructor() {
+    }
 
     set(key: string, value: string) {
         localStorage.setItem(key, value);

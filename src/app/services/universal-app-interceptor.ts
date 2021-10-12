@@ -5,7 +5,7 @@ import {AuthService} from '../auth/auth.service';
 @Injectable()
 export class UniversalAppInterceptor implements HttpInterceptor {
 
-    constructor( private authService: AuthService) { }
+    constructor(private authService: AuthService) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
         const token = this.authService.getJWTToken();

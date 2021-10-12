@@ -8,6 +8,7 @@ import {Router} from '@angular/router';
 import {JwtHelperService} from '@auth0/angular-jwt';
 import {LocalStorageService} from '../services/local-storage.service';
 import {Injectable} from '@angular/core';
+import {JWTTokenError} from '../errors/JWTToken.error';
 
 export class User {
     idUser: number;
@@ -94,7 +95,7 @@ export class AuthService {
                 jwtToken: response.data
             } as User;
             console.log(decodedToken);
-            this.localStorageService.set('JWTToken', response.data);
+            this.localStorageService.set(LocalStorageService.JWTToken, response.data);
             this.personnage = response.data.personnage as Personnage ? response.data.personnage as Personnage : null;
         } else {
             throw new Error('Utilisateur ou mot de passe incorrect.');
@@ -103,7 +104,11 @@ export class AuthService {
     }
 
     getJWTToken() {
-        return this.localStorageService.get('JWTToken') ? this.localStorageService.get('JWTToken') : '';
+        if (!this.localStorageService.get(LocalStorageService.JWTToken)
+            || this.localStorageService.get(LocalStorageService.JWTToken) == null) {
+            throw new JWTTokenError(JWTTokenError.TOKEN_NON_TROUVE);
+        }
+        return this.localStorageService.get(LocalStorageService.JWTToken);
     }
 
     signOut() {
