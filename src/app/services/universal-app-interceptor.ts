@@ -1,4 +1,4 @@
-import { Injectable, Inject, Optional } from '@angular/core';
+import {Injectable} from '@angular/core';
 import { HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';
 import {AuthService} from '../auth/auth.service';
 

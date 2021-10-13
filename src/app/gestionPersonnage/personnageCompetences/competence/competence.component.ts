@@ -40,10 +40,10 @@ export class CompetenceComponent implements OnInit, OnChanges {
         return index;
     }
 
-    modifierCompetence() {
+    async modifierCompetence() {
         this.modificationEnCours = !this.modificationEnCours;
         if (!this.modificationEnCours) {
-            this.envoyerModification();
+            await this.envoyerModification();
         }
     }
 
@@ -74,7 +74,6 @@ export class CompetenceComponent implements OnInit, OnChanges {
         const response: SpecialResponse = await this.competenceService.updateCompetence(this.http, this.competence);
         console.log(response);
         this.competence = response.data as Competence;
-
     }
 
     resetCompetence() {

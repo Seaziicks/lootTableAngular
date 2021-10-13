@@ -99,9 +99,9 @@ export class UserLoginComponent implements OnInit {
 
         // trigger the search action after 400 millis
         if (this.username.value.length > 0) {
-            this.timerUsername = setTimeout(() => {
+            this.timerUsername = setTimeout(async () => {
                 this.lookingForUsernameAvailability = true;
-                this.searchUsername();
+                await this.searchUsername();
             }, 1500);
         }
     }
