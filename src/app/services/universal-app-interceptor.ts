@@ -8,13 +8,18 @@ export class UniversalAppInterceptor implements HttpInterceptor {
     constructor(private authService: AuthService) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
-        const token = this.authService.getJWTToken();
-        req = req.clone({
-            url:  req.url,
-            setHeaders: {
-                Authorization: `Bearer ${token}`
-            }
-        });
+        try {
+            const token = this.authService.getJWTToken();
+            req = req.clone({
+                url: req.url,
+                setHeaders: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+        } catch (e) {
+            // console.log(e);
+            console.log('JWT non trouvé');
+        }
         return next.handle(req);
     }
 }
