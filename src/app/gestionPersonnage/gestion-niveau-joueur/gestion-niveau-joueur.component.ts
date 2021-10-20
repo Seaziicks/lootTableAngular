@@ -47,7 +47,7 @@ export class GestionNiveauJoueurComponent implements OnInit {
     }
 
     async ngOnInit() {
-        await this.authService.checkUserInLocalStorage(this.http, this.router);
+        // await this.authService.checkUserInLocalStorage(this.router); A supprimer. Normalement Jwt maintenant.
         console.log('caca');
         console.log(this.route.snapshot.paramMap.get('idPersonnage'));
         console.log(this.authService.isGameMaster());

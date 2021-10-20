@@ -1,0 +1,54 @@
+<h1 mat-dialog-title>JWT</h1>
+<div *ngIf="!this.reconnect else reconnectComponent">
+    <div mat-dialog-content>
+        <p *ngIf="this.getRemainingTime(this.expieryTime) > 0 else expiredToken">La session va expirer dans {{ this.remainingTime | async }} secondes.</p>
+        <ng-template #expiredToken>
+            <p>La session a expirée.</p>
+        </ng-template>
+        <p>Voulez-vous vous reconnecter ?</p>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">No Thanks</button>
+        <button mat-button color="primary" (click)="this.triggerReconnect()" cdkFocusInitial>Ok</button>
+    </div>
+</div>
+<ng-template #reconnectComponent>
+    <div>
+        <form [formGroup]="loginUserForm" autocomplete="off" novalidate (ngSubmit)="this.signIn()">
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your username</mat-label>
+                    <input matInput placeholder="Username" id="usernameUser" formControlName="username"
+                           (input)="this.onUsernameInput()" (keydown.enter)="this.signIn()">
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                    <mat-hint align="end" [ngClass]="{'available': usernameUnknown === false}">19 characters max
+                    </mat-hint>
+                    <mat-error *ngIf="hasError('username', 'required')">Username is required</mat-error>
+                    <mat-error *ngIf="hasError('username', 'maxlength')">You have more than 19 characters</mat-error>
+                    <mat-error *ngIf="hasError('username', 'usernameUnknown')">Unknown username</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordUser"
+                           formControlName="password" (input)="onPasswordInput()" (keydown.enter)="this.signIn()">
+                    <button type="button" mat-icon-button matSuffix (click)="hide = !hide"
+                            [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-hint align="end">9 characters min</mat-hint>
+                    <mat-error *ngIf="hasError('password', 'required')">Password is required</mat-error>
+                    <mat-error *ngIf="hasError('password', 'minlength')">You have less than 9 characters</mat-error>
+                </mat-form-field>
+            </div>
+        </form>
+
+        <div mat-dialog-actions>
+            <button mat-button (click)="triggerReconnect()">Annuler</button>
+            <button type="button" mat-button color="primary" (click)="signIn()" cdkFocusInitial>Ok</button>
+        </div>
+    </div>
+</ng-template>
+

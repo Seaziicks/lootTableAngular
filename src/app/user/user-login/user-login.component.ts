@@ -17,7 +17,10 @@ export class UserSession {
 })
 export class UserLoginComponent implements OnInit {
 
-    public loginUserForm: FormGroup;
+    public loginUserForm = new FormGroup({
+        username: new FormControl('', [Validators.required, Validators.maxLength(19)]),
+        password: new FormControl('', [Validators.required, Validators.minLength(9)]),
+    });
 
     hide = true;
 
@@ -33,10 +36,6 @@ export class UserLoginComponent implements OnInit {
     }
 
     async ngOnInit() {
-        this.loginUserForm = new FormGroup({
-            username: new FormControl('', [Validators.required, Validators.maxLength(19)]),
-            password: new FormControl('', [Validators.required, Validators.minLength(9)]),
-        });
         // console.log(this.router.url);
         // console.log(localStorage.getItem('userSession'));
         if (!this.authService.isAuth && localStorage.getItem('userSession')) {
@@ -137,7 +136,7 @@ export class UserLoginComponent implements OnInit {
         console.log(username);
         console.log(password);
         try {
-            const response: SpecialResponse = await this.authService.signIn(this.http, username, password);
+            const response: SpecialResponse = await this.authService.signIn(username, password);
             console.log(response);
             if (this.authService.isAuth) {
                 localStorage.setItem('userSession', JSON.stringify({username, password}));
@@ -153,7 +152,6 @@ export class UserLoginComponent implements OnInit {
             if (!this.authService.isAuth) {
                 this.afficherMessageErreur('Utilisateur ou mot de passe incorrect.');
             }
-
         }
     }
 

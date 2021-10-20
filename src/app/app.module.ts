@@ -48,6 +48,7 @@ import {ModifierCompetenceComponent} from './gestionPersonnage/personnageCompete
 import {CompetenceComponent} from './gestionPersonnage/personnageCompetences/competence/competence.component';
 import {JwtModule} from '@auth0/angular-jwt';
 import {UniversalAppInterceptor} from './services/universal-app-interceptor';
+import { JwtModalComponent } from './jwt-modal/jwt-modal.component';
 
 
 @NgModule({
@@ -87,6 +88,7 @@ import {UniversalAppInterceptor} from './services/universal-app-interceptor';
         ModifierCompetenceComponent,
         ModifierCompetenceComponent,
         CompetenceComponent,
+        JwtModalComponent,
     ],
     imports: [
         BrowserModule,

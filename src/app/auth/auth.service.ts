@@ -37,7 +37,7 @@ export class AuthService {
         private localStorageService: LocalStorageService
     ) {}
 
-    async signIn(http: HttpClient, username: string, password: string): Promise<SpecialResponse> {
+    async signIn(username: string, password: string): Promise<SpecialResponse> {
         /*
         const values = {username: undefined, password: undefined};
         values.username = username;
@@ -63,7 +63,7 @@ export class AuthService {
             throw new Error('Utilisateur ou mot de passe incorrect.');
         }
         */
-        return await this.acquireJWTToken(http, username, password);
+        return await this.acquireJWTToken(this.http, username, password);
     }
 
     async acquireJWTToken(http: HttpClient, username: string, password: string) {
@@ -109,6 +109,12 @@ export class AuthService {
             throw new JWTTokenError(JWTTokenError.TOKEN_NON_TROUVE);
         }
         return this.localStorageService.get(LocalStorageService.JWTToken);
+    }
+
+    getJwtExpieryTime() {
+        const helper = new JwtHelperService();
+        const decodedToken = helper.decodeToken(this.getJWTToken());
+        return decodedToken.exp;
     }
 
     signOut() {
@@ -169,10 +175,10 @@ export class AuthService {
         return this.isAuth;
     }
 
-    async checkUserInLocalStorage(http: HttpClient, router: Router, url: string = router.url) {
+    async checkUserInLocalStorage(router: Router, url: string = router.url) {
         const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
         if (userSession && ! this.isAuth) {
-            await this.signIn(http, userSession.username, userSession.password);
+            await this.signIn(userSession.username, userSession.password);
             if (this.isAuth) {
                 // Usually you would use the redirect URL from the auth service.
                 // However to keep the example simple, we will always redirect to `/admin`.
@@ -185,7 +191,7 @@ export class AuthService {
 
     async checkUserInLocalStorageAsPromise(http: HttpClient) {
         const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
-        return await this.signIn(http, userSession.username, userSession.password);
+        return await this.signIn(userSession.username, userSession.password);
     }
 
     public getPersonnage(): Personnage {

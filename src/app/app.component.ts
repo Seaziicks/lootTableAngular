@@ -6,7 +6,7 @@ import {filter} from 'rxjs/operators';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 import {environment} from '../environments/environment';
-import {CustomIcons} from "./interface/custom-icons";
+import {CustomIcons} from './interface/custom-icons';
 
 @Component({
     selector: 'app-root',
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
             { name: 'minus', localisation: '/assets/fond/pounceTest.svg' },
             { name: 'upgrade', localisation: '/assets/fond/upgrade.svg' },
             { name: 'skills', localisation: '/assets/fond/skills.svg' }
-        ]
+        ];
         for (const icon of icons) {
             this.matIconRegistry.addSvgIcon(
                 icon.name,
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
             filter(event => event instanceof NavigationEnd)
         ).subscribe(async event => {
             const url = JSON.parse(JSON.stringify(event)).url;
-            await this.authService.checkUserInLocalStorage(this.http, this.router, url);
+            // await this.authService.checkUserInLocalStorage(this.router, url); A supprimer, je pense. Normalement wt maintenant.
         });
     }
 

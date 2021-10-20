@@ -10,11 +10,16 @@ import {
 import {AuthService} from '../auth/auth.service';
 import {Observable} from 'rxjs';
 import {tap} from 'rxjs/operators';
+import {JwtModalComponent} from '../jwt-modal/jwt-modal.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Injectable()
 export class UniversalAppInterceptor implements HttpInterceptor {
 
-    constructor(private authService: AuthService) { }
+    jwtDialogOpened = false;
+
+    constructor(private authService: AuthService,
+                private dialog: MatDialog) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         try {
@@ -25,6 +30,14 @@ export class UniversalAppInterceptor implements HttpInterceptor {
                     Authorization: `Bearer ${token}`
                 }
             });
+            console.log(token);
+            const newDate = new Date(this.authService.getJwtExpieryTime()).getTime(); // convert string date to Date object
+            const currentDate = new Date().getTime() / 1000; // Pour avoir un temps en secondes, et non en millisecondes.
+            const diff = Math.floor(newDate - currentDate);
+            if (diff < 300) {
+                this.openJwtRefreshDialog(newDate);
+            }
+            // console.log(diff);
         } catch (e) {
             // console.log(e);
             console.log('JWT non trouvé');
@@ -46,5 +59,24 @@ export class UniversalAppInterceptor implements HttpInterceptor {
                 }
             })
         );
+    }
+
+    openJwtRefreshDialog(newDate: number): void {
+        if (!this.jwtDialogOpened) {
+            this.jwtDialogOpened = true;
+            const dialogRef = this.dialog.open(JwtModalComponent, {
+                // width: '250px',
+                data: newDate
+            });
+
+            dialogRef.afterClosed().subscribe(result => {
+                clearInterval(dialogRef.componentInstance.interval);
+                this.jwtDialogOpened = false;
+                // console.log(result);
+                if (result) {
+                    console.log(result);
+                }
+            });
+        }
     }
 }

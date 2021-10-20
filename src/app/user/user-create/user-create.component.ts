@@ -172,7 +172,7 @@ export class UserCreateComponent implements OnInit {
         console.log(username);
         console.log(password);
         try {
-            const response: SpecialResponse = await this.authService.signIn(this.http, username, password);
+            const response: SpecialResponse = await this.authService.signIn(username, password);
             console.log(response);
             if (this.authService.isAuth) {
                 this.message = null;
