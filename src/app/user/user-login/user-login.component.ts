@@ -39,7 +39,7 @@ export class UserLoginComponent implements OnInit {
         // console.log(this.router.url);
         // console.log(localStorage.getItem('userSession'));
         if (!this.authService.isAuth && localStorage.getItem('userSession')) {
-            await this.authService.checkUserInLocalStorageAsPromise(this.http);
+            await this.authService.checkUserInLocalStorageAsPromise();
             if (this.authService.isAuth) {
                 this.message = null;
                 // Usually you would use the redirect URL from the auth service.

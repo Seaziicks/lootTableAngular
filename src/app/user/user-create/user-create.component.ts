@@ -102,7 +102,7 @@ export class UserCreateComponent implements OnInit {
             await this.router.navigate([redirectUrl]);
         }
         try {
-            const response: SpecialResponse = await this.authService.getAllUnassignedPersonnage(this.http);
+            const response: SpecialResponse = await this.authService.getAllUnassignedPersonnage();
             console.log(response);
             this.unassignedPersonnages = response.data as PersonnageMinimisation[];
             console.log(response.data as PersonnageMinimisation[]);
@@ -323,7 +323,7 @@ export class UserCreateComponent implements OnInit {
     async searchPersonnageName() {
         console.log(this.authService);
         try {
-            const response: SpecialResponse = await this.authService.checkPersonnageNomAvailable(this.http, this.personnage.value);
+            const response: SpecialResponse = await this.authService.checkPersonnageNameAvailable(this.personnage.value);
             console.log(response);
             this.lookingForPersonnageNameAvailability = false;
             this.personnage.setErrors(null);

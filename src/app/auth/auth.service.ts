@@ -111,6 +111,9 @@ export class AuthService {
         return this.localStorageService.get(LocalStorageService.JWTToken);
     }
 
+    /**
+     * Renvoie la date d'expiration du Jwt.
+     */
     getJwtExpieryTime() {
         const helper = new JwtHelperService();
         const decodedToken = helper.decodeToken(this.getJWTToken());
@@ -136,10 +139,13 @@ export class AuthService {
         return await http.request(HttpMethods.POST.toString(), baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
-    async getAllUnassignedPersonnage(http: HttpClient): Promise<SpecialResponse> {
+    /**
+     * Permet de recupere tous les personnages cres mais non assignes à des users.
+     */
+    async getAllUnassignedPersonnage(): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'connexion.php' + '?leftPersonnage=true';
         console.log(baseUrlBis);
-        return await http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
+        return await this.http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }
 
     async checkUsernameAvailable(http: HttpClient, usernameToCheck: string): Promise<SpecialResponse> {
@@ -157,10 +163,10 @@ export class AuthService {
         return await http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
-    async checkPersonnageNomAvailable(http: HttpClient, personnageNomToCheck: string): Promise<SpecialResponse> {
+    async checkPersonnageNameAvailable(personnageNomToCheck: string): Promise<SpecialResponse> {
         const baseUrlBis = BASE_URL + 'connexion.php' + '?nomPersonnage=' + personnageNomToCheck + '&checkAvailable=true';
         console.log(baseUrlBis);
-        return await http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
+        return await this.http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }
 
     isAdmin() {
@@ -189,13 +195,12 @@ export class AuthService {
         }
     }
 
-    async checkUserInLocalStorageAsPromise(http: HttpClient) {
+    async checkUserInLocalStorageAsPromise() {
         const userSession = JSON.parse(localStorage.getItem('userSession')) as UserSession;
         return await this.signIn(userSession.username, userSession.password);
     }
 
     public getPersonnage(): Personnage {
-
         return ((JSON.parse(JSON.stringify(this.personnage))) as Personnage);
     }
 

@@ -58,6 +58,10 @@ export class JwtModalComponent implements OnInit {
         }
     }
 
+    /**
+     * Permet d'avoir le temps restant avant l'expiration du Jwt.
+     * @param timeToSubstractFrom   La date d'expiration du Jwt.
+     */
     getRemainingTime(timeToSubstractFrom: number) {
         const currentDate = new Date().getTime() / 1000; // Pour avoir un temps en secondes, et non en millisecondes.;
         return Math.floor(timeToSubstractFrom - currentDate);
@@ -68,6 +72,9 @@ export class JwtModalComponent implements OnInit {
         this.dialogRef.close();
     }
 
+    /**
+     * Permet de savoir si on est dans la phase de reconnexion (usename / password) ou non.
+     */
     triggerReconnect() {
         this.reconnect = !this.reconnect;
     }
