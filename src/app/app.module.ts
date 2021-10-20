@@ -13,7 +13,6 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {DemoMaterialModule} from './material-module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatNativeDateModule} from '@angular/material/core';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AutocompleteGroupeComponent} from './autocomplete-groupe/autocomplete-groupe.component';
 import {GestionDropMonstreComponent} from './gestion-drop-monstre/gestion-drop-monstre.component';
 import {GestionMonstreComponent} from './gestion-monstre/gestion-monstre.component';
@@ -107,7 +106,7 @@ import {UniversalAppInterceptor} from './services/universal-app-interceptor';
     bootstrap: [AppComponent],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: UniversalAppInterceptor, multi: true },
-        {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}},
+        { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'} },
         AuthService,
     ]
 })
