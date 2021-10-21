@@ -24,6 +24,8 @@ export class UniversalAppInterceptor implements HttpInterceptor {
     /**
      * Permet d'intercepter les requetes http pour les gerer.
      * Ici, cela sert principalement pour le Jwt.
+     * Recupere le Jwt et l'insere dans le header de la requete avant son envoi.
+     * Apres chaque requete, si il y a un code http 401 qui contient comme message de statut 'expired' et 'jwt', lance la modale.
      * @param req   La requete a gerer.
      * @param next  Le handler http.
      */
