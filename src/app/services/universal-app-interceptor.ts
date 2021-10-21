@@ -18,6 +18,8 @@ export class UniversalAppInterceptor implements HttpInterceptor {
 
     jwtDialogOpened = false;
 
+    lastModalRefused: number;
+
     constructor(private authService: AuthService,
                 private dialog: MatDialog) { }
 
@@ -41,9 +43,10 @@ export class UniversalAppInterceptor implements HttpInterceptor {
             console.log(token);
             const JwtExpieryDate = new Date(this.authService.getJwtExpieryTime()).getTime(); // convert string date to Date object
             const currentDate = new Date().getTime() / 1000; // Pour avoir un temps en secondes, et non en millisecondes.
-            const diff = Math.floor(JwtExpieryDate - currentDate);
-            if (diff < 300) {
-                // Si je suis a moins de 5 minutes de l'expiration, je previens l'utilisateur.
+            const jwtExpieryDelay = Math.floor(JwtExpieryDate - currentDate);
+            const lastJwtModalAskedDelay = Math.floor(currentDate - this.lastModalRefused);
+            if (jwtExpieryDelay < 300 && (!this.lastModalRefused || lastJwtModalAskedDelay > 45)) {
+                // Si je suis a moins de 5 minutes de l'expiration et que je n'ai pas demandé depuis 45s, je previens l'utilisateur.
                 this.openJwtRefreshDialog(JwtExpieryDate);
             }
             // console.log(diff);
@@ -80,11 +83,15 @@ export class UniversalAppInterceptor implements HttpInterceptor {
             this.jwtDialogOpened = true;
             const dialogRef = this.dialog.open(JwtModalComponent, {
                 // width: '250px',
-                data: JwtExpieryDate
+                data: JwtExpieryDate,
+                disableClose: true,
+                hasBackdrop: false,
+                position: {top: '64px', right: '10px'}
             });
 
             dialogRef.afterClosed().subscribe(result => {
                 clearInterval(dialogRef.componentInstance.interval);
+                this.lastModalRefused = new Date().getTime() / 1000;
                 this.jwtDialogOpened = false;
                 // console.log(result);
                 if (result) {
