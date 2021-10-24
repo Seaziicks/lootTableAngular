@@ -43,7 +43,7 @@
             <a mat-button routerLink="/GestionDropMonstreBis" *ngIf="isGameMaster()">Gestion Drop Monstre</a>
             <a mat-button routerLink="/sources">Sources</a>
             <button class="btn btn-outline-danger" routerLink="/login" *ngIf="!this.isAuth()">Connexion</button>
-            <button class="btn btn-outline-danger" routerLink="/deconnexion" *ngIf="this.isAuth()">Déconnexion</button>
+            <button class="btn btn-outline-danger" (click)="this.signOut()" *ngIf="this.isAuth()">Déconnexion</button>
         </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
