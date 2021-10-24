@@ -9,6 +9,8 @@ import {JwtHelperService} from '@auth0/angular-jwt';
 import {LocalStorageService} from '../services/local-storage.service';
 import {Injectable} from '@angular/core';
 import {JWTTokenError} from '../errors/JWTToken.error';
+import {JwtModalComponent} from '../jwt-modal/jwt-modal.component';
+import {MatDialog} from '@angular/material/dialog';
 
 export class User {
     idUser: number;
@@ -32,9 +34,13 @@ export class AuthService {
 
     redirectUrl: string;
 
+    jwtDialogOpened = false;
+    lastModalRefused: number;
+
     constructor(
         private http: HttpClient,
-        private localStorageService: LocalStorageService
+        private localStorageService: LocalStorageService,
+        private dialog: MatDialog
     ) {}
 
     async signIn(username: string, password: string): Promise<SpecialResponse> {
@@ -84,23 +90,27 @@ export class AuthService {
         console.log(response);
 
         if (response.status === 200) {
-            this.isAuth = true;
-            const helper = new JwtHelperService();
-            const decodedToken = helper.decodeToken(response.data);
-            this.user = {
-                username: decodedToken.username,
-                idUser: decodedToken.idUser,
-                isAdmin: decodedToken.isAdmin,
-                isGameMaster: decodedToken.isGameMaster,
-                jwtToken: response.data
-            } as User;
-            console.log(decodedToken);
-            this.localStorageService.set(LocalStorageService.JWTToken, response.data);
-            this.personnage = response.data.personnage as Personnage ? response.data.personnage as Personnage : null;
+            this.setUserFromJwt(response.data);
         } else {
             throw new Error('Utilisateur ou mot de passe incorrect.');
         }
         return response;
+    }
+
+    setUserFromJwt(Jwt: any) {
+        this.isAuth = true;
+        const helper = new JwtHelperService();
+        const decodedToken = helper.decodeToken(Jwt);
+        this.user = {
+            username: decodedToken.username,
+            idUser: decodedToken.idUser,
+            isAdmin: decodedToken.isAdmin,
+            isGameMaster: decodedToken.isGameMaster,
+            jwtToken: Jwt
+        } as User;
+        console.log(decodedToken);
+        this.localStorageService.set(LocalStorageService.JWTToken, Jwt);
+        this.personnage = Jwt.personnage as Personnage ? Jwt.personnage as Personnage : null;
     }
 
     getJWTToken() {
@@ -112,18 +122,56 @@ export class AuthService {
     }
 
     /**
-     * Renvoie la date d'expiration du Jwt.
+     * Renvoie la date d'expiration du Jwt, au format Unix timestamp.
      */
-    getJwtExpieryTime() {
+    getJwtExpieryTime(): number {
         const helper = new JwtHelperService();
         const decodedToken = helper.decodeToken(this.getJWTToken());
         return decodedToken.exp;
     }
 
+    /**
+     * Renvoie le temps avant expiration du Jwt.
+     */
+    getJwtExpieryDelay(): number {
+        const JwtExpieryTime = new Date(this.getJwtExpieryTime()).getTime(); // convert string date to Date object
+        const currentDate = this.getCurrentTimeForJwt(); // Pour avoir un temps en secondes, et non en millisecondes.
+        return Math.floor(JwtExpieryTime - currentDate);
+    }
+
+    getCurrentTimeForJwt(): number {
+        return Math.floor((new Date().getTime()) / 1000);
+    }
+
+    jwtHasExpired(): boolean {
+        return (Math.floor(this.getCurrentTimeForJwt()) >= this.getJwtExpieryTime());
+    }
+
+    checkJwtInLocalStorage(): void {
+        try {
+            if (this.getJWTToken() && !this.jwtHasExpired()) {
+                console.log('Je set la session.');
+                this.setUserFromJwt(this.getJWTToken());
+                this.openJwtRefreshDialog();
+            }
+        } catch (e) {
+            if (e instanceof JWTTokenError) {
+                console.log('Pas de Jwt trouvé.');
+            }
+        }
+    }
+
     signOut() {
+        console.log('J\'ai sign out');
         this.user = null;
         this.personnage = null;
         this.isAuth = false;
+        console.log(this.getJWTToken());
+        console.log(this.localStorageService.get(LocalStorageService.JWTToken));
+        if (this.getJWTToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
+            // On enlève le token si expiré, pour éviter des incoherences d'etat. Et si il reste moins de 30 secondes.
+            this.localStorageService.remove(LocalStorageService.JWTToken);
+        }
     }
 
     async createUser(http: HttpClient, user: UserForCreation, personnage: Personnage): Promise<SpecialResponse> {
@@ -206,5 +254,38 @@ export class AuthService {
 
     public resetPersonnage() {
         this.personnage = null;
+    }
+
+    /**
+     * Permet de generer la modale Jwt. Cette modale permet de prevenir l'utilisateur que le Jwt va expirer.
+     * Elle lui permet egalement de s'authentifier de nouveau, sans aller sur la page de login.
+     */
+    openJwtRefreshDialog(): void {
+        const jwtExpieryDelay = this.getJwtExpieryDelay();
+        const currentTimeForJwt = this.getCurrentTimeForJwt();
+        const lastJwtModalAskedDelay = Math.floor(currentTimeForJwt - this.lastModalRefused);
+        if (jwtExpieryDelay < 300 && (!this.lastModalRefused || lastJwtModalAskedDelay > 45)) {
+            // Si je suis a moins de 5 minutes de l'expiration et que je n'ai pas demandé depuis 45s, je previens l'utilisateur.
+            if (!this.jwtDialogOpened) {
+                this.jwtDialogOpened = true;
+                const dialogRef = this.dialog.open(JwtModalComponent, {
+                    // width: '250px',
+                    data: new Date(this.getJwtExpieryTime()).getTime(),
+                    disableClose: true,
+                    hasBackdrop: false,
+                    position: {top: '64px', right: '10px'}
+                });
+
+                dialogRef.afterClosed().subscribe(result => {
+                    clearInterval(dialogRef.componentInstance.interval);
+                    this.lastModalRefused = currentTimeForJwt;
+                    this.jwtDialogOpened = false;
+                    // console.log(result);
+                    if (result) {
+                        console.log(result);
+                    }
+                });
+            }
+        }
     }
 }

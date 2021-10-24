@@ -16,12 +16,7 @@ import {MatDialog} from '@angular/material/dialog';
 @Injectable()
 export class UniversalAppInterceptor implements HttpInterceptor {
 
-    jwtDialogOpened = false;
-
-    lastModalRefused: number;
-
-    constructor(private authService: AuthService,
-                private dialog: MatDialog) { }
+    constructor(private authService: AuthService) { }
 
     /**
      * Permet d'intercepter les requetes http pour les gerer.
@@ -41,17 +36,10 @@ export class UniversalAppInterceptor implements HttpInterceptor {
                 }
             });
             console.log(token);
-            const JwtExpieryDate = new Date(this.authService.getJwtExpieryTime()).getTime(); // convert string date to Date object
-            const currentDate = new Date().getTime() / 1000; // Pour avoir un temps en secondes, et non en millisecondes.
-            const jwtExpieryDelay = Math.floor(JwtExpieryDate - currentDate);
-            const lastJwtModalAskedDelay = Math.floor(currentDate - this.lastModalRefused);
-            if (jwtExpieryDelay < 300 && (!this.lastModalRefused || lastJwtModalAskedDelay > 45)) {
-                // Si je suis a moins de 5 minutes de l'expiration et que je n'ai pas demandé depuis 45s, je previens l'utilisateur.
-                this.openJwtRefreshDialog(JwtExpieryDate);
-            }
+            this.authService.openJwtRefreshDialog();
             // console.log(diff);
         } catch (e) {
-            // console.log(e);
+            console.log(e);
             console.log('JWT non trouvé');
         }
         return next.handle(req).pipe(
@@ -71,33 +59,5 @@ export class UniversalAppInterceptor implements HttpInterceptor {
                 }
             })
         );
-    }
-
-    /**
-     * Permet de generer la modale Jwt. Cette modale permet de prevenir l'utilisateur que le Jwt va expirer.
-     * Elle lui permet egalement de s'authentifier de nouveau, sans aller sur la page de login.
-     * @param JwtExpieryDate   La date d'expiration du Jwt.
-     */
-    openJwtRefreshDialog(JwtExpieryDate: number): void {
-        if (!this.jwtDialogOpened) {
-            this.jwtDialogOpened = true;
-            const dialogRef = this.dialog.open(JwtModalComponent, {
-                // width: '250px',
-                data: JwtExpieryDate,
-                disableClose: true,
-                hasBackdrop: false,
-                position: {top: '64px', right: '10px'}
-            });
-
-            dialogRef.afterClosed().subscribe(result => {
-                clearInterval(dialogRef.componentInstance.interval);
-                this.lastModalRefused = new Date().getTime() / 1000;
-                this.jwtDialogOpened = false;
-                // console.log(result);
-                if (result) {
-                    console.log(result);
-                }
-            });
-        }
     }
 }

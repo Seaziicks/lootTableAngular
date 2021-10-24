@@ -63,7 +63,7 @@ export class JwtModalComponent implements OnInit {
      * @param timeToSubstractFrom   La date d'expiration du Jwt.
      */
     getRemainingTime(timeToSubstractFrom: number) {
-        const currentDate = new Date().getTime() / 1000; // Pour avoir un temps en secondes, et non en millisecondes.;
+        const currentDate = this.authService.getCurrentTimeForJwt(); // Pour avoir un temps en secondes, et non en millisecondes.;
         return Math.floor(timeToSubstractFrom - currentDate);
     }
 
