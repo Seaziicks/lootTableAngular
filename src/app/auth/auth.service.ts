@@ -166,9 +166,7 @@ export class AuthService {
         this.user = null;
         this.personnage = null;
         this.isAuth = false;
-        console.log(this.getJWTToken());
-        console.log(this.localStorageService.get(LocalStorageService.JWTToken));
-        if (this.getJWTToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
+        if (!!this.getJWTToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
             // On enlève le token si expiré, pour éviter des incoherences d'etat. Et si il reste moins de 30 secondes.
             this.localStorageService.remove(LocalStorageService.JWTToken);
         }
