@@ -10,7 +10,7 @@ import {LocalStorageService} from '../services/local-storage.service';
 import {Injectable} from '@angular/core';
 import {JWTTokenError} from '../errors/JWTToken.error';
 import {JwtModalComponent} from '../jwt-modal/jwt-modal.component';
-import {MatDialog} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 export class User {
     idUser: number;
@@ -34,8 +34,9 @@ export class AuthService {
 
     redirectUrl: string;
 
-    jwtDialogOpened = false;
+    jwtModalDialogOpened = false;
     lastModalRefused: number;
+    jwtModalDialog: MatDialogRef<JwtModalComponent, any>;
 
     constructor(
         private http: HttpClient,
@@ -113,7 +114,7 @@ export class AuthService {
         this.personnage = Jwt.personnage as Personnage ? Jwt.personnage as Personnage : null;
     }
 
-    getJWTToken() {
+    getJwtToken() {
         if (!this.localStorageService.get(LocalStorageService.JWTToken)
             || this.localStorageService.get(LocalStorageService.JWTToken) == null) {
             throw new JWTTokenError(JWTTokenError.TOKEN_NON_TROUVE);
@@ -126,7 +127,7 @@ export class AuthService {
      */
     getJwtExpieryTime(): number {
         const helper = new JwtHelperService();
-        const decodedToken = helper.decodeToken(this.getJWTToken());
+        const decodedToken = helper.decodeToken(this.getJwtToken());
         return decodedToken.exp;
     }
 
@@ -149,9 +150,9 @@ export class AuthService {
 
     checkJwtInLocalStorage(): void {
         try {
-            if (this.getJWTToken() && !this.jwtHasExpired()) {
+            if (this.getJwtToken() && !this.jwtHasExpired()) {
                 console.log('Je set la session.');
-                this.setUserFromJwt(this.getJWTToken());
+                this.setUserFromJwt(this.getJwtToken());
                 this.openJwtRefreshDialog();
             }
         } catch (e) {
@@ -166,9 +167,13 @@ export class AuthService {
         this.user = null;
         this.personnage = null;
         this.isAuth = false;
-        if (!!this.getJWTToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
+        if (!!this.getJwtToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
             // On enlève le token si expiré, pour éviter des incoherences d'etat. Et si il reste moins de 30 secondes.
             this.localStorageService.remove(LocalStorageService.JWTToken);
+        }
+        if (this.jwtModalDialogOpened) {
+            this.jwtModalDialog.componentInstance.onNoClick();
+            this.jwtModalDialog.close();
         }
     }
 
@@ -262,11 +267,12 @@ export class AuthService {
         const jwtExpieryDelay = this.getJwtExpieryDelay();
         const currentTimeForJwt = this.getCurrentTimeForJwt();
         const lastJwtModalAskedDelay = Math.floor(currentTimeForJwt - this.lastModalRefused);
-        if (jwtExpieryDelay < 300 && (!this.lastModalRefused || lastJwtModalAskedDelay > 45)) {
+        if ((jwtExpieryDelay < 300 && (!this.lastModalRefused || lastJwtModalAskedDelay > 45))
+            || this.jwtHasExpired() || jwtExpieryDelay < 15) {
             // Si je suis a moins de 5 minutes de l'expiration et que je n'ai pas demandé depuis 45s, je previens l'utilisateur.
-            if (!this.jwtDialogOpened) {
-                this.jwtDialogOpened = true;
-                const dialogRef = this.dialog.open(JwtModalComponent, {
+            if (!this.jwtModalDialogOpened) {
+                this.jwtModalDialogOpened = true;
+                this.jwtModalDialog = this.dialog.open(JwtModalComponent, {
                     // width: '250px',
                     data: new Date(this.getJwtExpieryTime()).getTime(),
                     disableClose: true,
@@ -274,10 +280,10 @@ export class AuthService {
                     position: {top: '64px', right: '10px'}
                 });
 
-                dialogRef.afterClosed().subscribe(result => {
-                    clearInterval(dialogRef.componentInstance.interval);
+                this.jwtModalDialog.afterClosed().subscribe(result => {
+                    clearInterval(this.jwtModalDialog.componentInstance.interval);
                     this.lastModalRefused = currentTimeForJwt;
-                    this.jwtDialogOpened = false;
+                    this.jwtModalDialogOpened = false;
                     // console.log(result);
                     if (result) {
                         console.log(result);

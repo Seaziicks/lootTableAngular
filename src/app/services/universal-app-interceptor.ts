@@ -10,8 +10,6 @@ import {
 import {AuthService} from '../auth/auth.service';
 import {Observable} from 'rxjs';
 import {tap} from 'rxjs/operators';
-import {JwtModalComponent} from '../jwt-modal/jwt-modal.component';
-import {MatDialog} from '@angular/material/dialog';
 
 @Injectable()
 export class UniversalAppInterceptor implements HttpInterceptor {
@@ -28,7 +26,7 @@ export class UniversalAppInterceptor implements HttpInterceptor {
      */
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         try {
-            const token = this.authService.getJWTToken();
+            const token = this.authService.getJwtToken();
             req = req.clone({
                 url: req.url,
                 setHeaders: {
@@ -39,7 +37,7 @@ export class UniversalAppInterceptor implements HttpInterceptor {
             this.authService.openJwtRefreshDialog();
             // console.log(diff);
         } catch (e) {
-            console.log(e);
+            // console.log(e);
             console.log('JWT non trouvé');
         }
         return next.handle(req).pipe(
