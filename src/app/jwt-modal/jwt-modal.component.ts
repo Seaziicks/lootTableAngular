@@ -70,8 +70,13 @@ export class JwtModalComponent implements OnInit {
     onNoClick(): void {
         clearInterval(this.interval);
         this.dialogRef.close();
-        if (this.authService.jwtHasExpired()) {
-            this.authService.signOut();
+        try {
+            if (!!this.authService.getJwtToken() && this.authService.jwtHasExpired()) {
+                this.authService.signOut();
+            }
+        } catch (e) {
+            // console.log(e);
+            // console.log('Pas de Jwt trouvé.');
         }
     }
 
