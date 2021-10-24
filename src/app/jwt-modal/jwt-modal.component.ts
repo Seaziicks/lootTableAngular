@@ -1,4 +1,4 @@
-import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Observable, Observer} from 'rxjs';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {AuthService} from '../auth/auth.service';
@@ -70,6 +70,9 @@ export class JwtModalComponent implements OnInit {
     onNoClick(): void {
         clearInterval(this.interval);
         this.dialogRef.close();
+        if (this.authService.jwtHasExpired()) {
+            this.authService.signOut();
+        }
     }
 
     /**
