@@ -40,8 +40,8 @@ export class AppComponent implements OnInit {
         // console.log(localStorage);
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd)
-        ).subscribe(async event => {
-            // const url = JSON.parse(JSON.stringify(event)).url;
+        ).subscribe(event => {
+            const url = JSON.parse(JSON.stringify(event)).url;
             // await this.authService.checkUserInLocalStorage(this.router, url); A supprimer, je pense. Normalement wt maintenant.
             this.authService.checkJwtInLocalStorage(false);
         });
@@ -57,5 +57,9 @@ export class AppComponent implements OnInit {
 
     isAuth() {
         return this.authService.isAuthenticated();
+    }
+
+    signOut() {
+        this.authService.signOut();
     }
 }
