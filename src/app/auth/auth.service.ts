@@ -148,7 +148,7 @@ export class AuthService {
         return (Math.floor(this.getCurrentTimeForJwt()) >= this.getJwtExpieryTime());
     }
 
-    checkJwtInLocalStorage(): void {
+    checkJwtInLocalStorage(openDialog = true): void {
         try {
             if (this.getJwtToken() && !this.jwtHasExpired()) {
                 console.log('Je set la session.');

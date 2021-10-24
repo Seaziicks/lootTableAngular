@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
         ).subscribe(async event => {
             const url = JSON.parse(JSON.stringify(event)).url;
             // await this.authService.checkUserInLocalStorage(this.router, url); A supprimer, je pense. Normalement wt maintenant.
-            this.authService.checkJwtInLocalStorage();
+            this.authService.checkJwtInLocalStorage(false);
         });
     }
 
