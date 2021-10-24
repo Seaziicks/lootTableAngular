@@ -173,7 +173,6 @@ export class AuthService {
         }
         if (this.jwtModalDialogOpened) {
             this.jwtModalDialog.componentInstance.onNoClick();
-            this.jwtModalDialog.close();
         }
     }
 
