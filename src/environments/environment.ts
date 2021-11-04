@@ -4,7 +4,9 @@
 
 export const environment = {
     production: false,
-    deployUrl: '..'
+    deployUrl: '..',
+    BASE_URL: 'http://192.168.1.73/lootTable/lootTablePHP/Rest/',
+    // BASE_URL: 'http://localhost:81/lootTable/lootTablePHP/Rest/'
 };
 
 /*

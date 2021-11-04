@@ -1,7 +1,11 @@
-export let BASE_URL = 'http://192.168.1.73/lootTable/lootTablePHP/Rest/';
+import { environment } from '../../environments/environment';
+
+// export let BASE_URL = 'http://192.168.1.73/lootTable/lootTablePHP/Rest/';
 // export let BASE_URL = 'http://localhost:81/lootTable/lootTablePHP/Rest/';
 // Production url
 // export let BASE_URL = '../lootTablePHP/Rest/';
+
+export let BASE_URL = environment.BASE_URL;
 export let URL_DROP_CHANCE = 'dropChanceRest.php';
 export let URL_DROP_CHANCE_BIS = 'dropChanceBisRest.php';
 export let URL_MONSTRES = 'monstresRest.php';

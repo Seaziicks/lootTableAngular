@@ -1,4 +1,5 @@
 export const environment = {
     production: true,
-    deployUrl: 'https://baichoo.fr/lootTable/lootTableAngular'
+    deployUrl: 'https://loottable.baichoo.fr',
+    BASE_URL: '/lootTablePHP/Rest/'
 };
