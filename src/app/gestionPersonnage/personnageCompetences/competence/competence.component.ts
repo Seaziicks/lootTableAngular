@@ -71,7 +71,7 @@ export class CompetenceComponent implements OnInit, OnChanges {
 
     async envoyerModification() {
         // TODO: envoyer les informations au serveur
-        const response: SpecialResponse = await this.competenceService.updateCompetence(this.http, this.competence);
+        const response: SpecialResponse = await this.competenceService.updateCompetence(this.competence);
         console.log(response);
         this.competence = response.data as Competence;
     }

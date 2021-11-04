@@ -8,7 +8,7 @@ import {SpecialResponse} from '../loot-table/loot-table.component';
 })
 export class CompetenceService {
 
-    constructor() {
+    constructor(private http: HttpClient) {
     }
 
 
@@ -32,15 +32,16 @@ export class CompetenceService {
         return competences;
     }
 
-    async updateCompetence(http: HttpClient, competence: Competence): Promise<SpecialResponse> {
+    async updateCompetence(competence: Competence): Promise<SpecialResponse> {
         const values = { idCompetence: undefined, Competence: undefined };
         values.idCompetence = competence.idCompetence;
         values.Competence = competence;
         const baseUrlBis = BASE_URL + 'competenceRest.php' + '?idCompetence=' + competence.idCompetence;
         console.log(baseUrlBis);
         const params = new HttpParams().set('Competence', JSON.stringify(values));
+        console.log(values);
 
-        return await http.request('PUT', baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
+        return await this.http.request('PUT', baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     async updateCompetenceContenu(http: HttpClient, competenceContenu: CompetenceContenu): Promise<SpecialResponse> {
