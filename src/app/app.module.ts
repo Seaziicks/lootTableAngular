@@ -49,6 +49,7 @@ import {CompetenceComponent} from './gestionPersonnage/personnageCompetences/com
 import {JwtModule} from '@auth0/angular-jwt';
 import {UniversalAppInterceptor} from './services/universal-app-interceptor';
 import { JwtModalComponent } from './jwt-modal/jwt-modal.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -107,6 +108,7 @@ import { JwtModalComponent } from './jwt-modal/jwt-modal.component';
     entryComponents: [],
     bootstrap: [AppComponent],
     providers: [
+        { provide: LocationStrategy, useClass: HashLocationStrategy },
         { provide: HTTP_INTERCEPTORS, useClass: UniversalAppInterceptor, multi: true },
         { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'} },
         AuthService,
