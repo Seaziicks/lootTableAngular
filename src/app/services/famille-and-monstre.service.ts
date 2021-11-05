@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
 // @ts-ignore
 import {Famille, MonstreGroupe} from '../interface/MonstreGroupe';
-import {BASE_URL, URL_FAMILLE_MONSTRE, URL_MONSTRE, URL_MONSTRES} from './rest.service';
+import {BACKEND_URL, URL_FAMILLE_MONSTRE, URL_MONSTRE, URL_MONSTRES} from './rest.service';
 import {Observable, Subscription} from 'rxjs';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
@@ -16,7 +16,7 @@ export class FamilleAndMonstreService {
 
     public chargerFamillesAvecMonstres(http: HttpClient): MonstreGroupe[] {
         const monstresGroupes: MonstreGroupe[] = [];
-        const baseUrlBis = BASE_URL + URL_MONSTRES + '?withFamille=true';
+        const baseUrlBis = BACKEND_URL + URL_MONSTRES + '?withFamille=true';
         const applicationTypeObservable: Observable<SpecialResponse> =
             http.get<SpecialResponse>(baseUrlBis);
         const applicationTypeSubscription: Subscription = applicationTypeObservable.subscribe(
@@ -38,7 +38,7 @@ export class FamilleAndMonstreService {
 
     public chargerAllFamilles(http: HttpClient): Famille[] {
         const allFamilles: Famille[] = [];
-        const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
+        const baseUrlBis = BACKEND_URL + URL_FAMILLE_MONSTRE;
         const applicationTypeObservable: Observable<SpecialResponse> =
             http.get<SpecialResponse>(baseUrlBis);
         const applicationTypeSubscription: Subscription = applicationTypeObservable.subscribe(
@@ -63,7 +63,7 @@ export class FamilleAndMonstreService {
     *-----------------------------------------------------*/
 
     public async getFamillesAvecMonstres(http: HttpClient): Promise<SpecialResponse> {
-        const baseUrlBis = BASE_URL + URL_MONSTRES + '?withFamille=true';
+        const baseUrlBis = BACKEND_URL + URL_MONSTRES + '?withFamille=true';
         return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
@@ -76,7 +76,7 @@ export class FamilleAndMonstreService {
         values.idFamilleMonstre = idFamilleMonstre;
         values.libelle = libelle;
         console.log(values);
-        const baseUrlBis = BASE_URL + URL_MONSTRE;
+        const baseUrlBis = BACKEND_URL + URL_MONSTRE;
         const params = new HttpParams().set('Monstre', JSON.stringify(values));
 
         const leretour = await http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
@@ -90,7 +90,7 @@ export class FamilleAndMonstreService {
         values.idMonstre = idMonstre;
         values.idFamilleMonstre = idFamilleMonstre === 0 ? 'NULL' : idFamilleMonstre;
         values.libelle = libelle;
-        const baseUrlBis = BASE_URL + URL_MONSTRE + '?idMonstre=' + idMonstre;
+        const baseUrlBis = BACKEND_URL + URL_MONSTRE + '?idMonstre=' + idMonstre;
         const params = new HttpParams().set('Monstre', JSON.stringify(values));
 
         return await http.request('PUT', baseUrlBis, {responseType: 'json', params})
@@ -102,14 +102,14 @@ export class FamilleAndMonstreService {
     *-----------------------------------------------------*/
 
     public async getAllFamilles(http: HttpClient): Promise<SpecialResponse> {
-        const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
+        const baseUrlBis = BACKEND_URL + URL_FAMILLE_MONSTRE;
         return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     public async creerFamille(http: HttpClient, libelle: string): Promise<SpecialResponse> {
         const values = {libelle: undefined};
         values.libelle = libelle;
-        const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE;
+        const baseUrlBis = BACKEND_URL + URL_FAMILLE_MONSTRE;
         const params = new HttpParams().set('Famille', JSON.stringify(values));
         return await http.request('POST', baseUrlBis, {
             responseType: 'json',
@@ -121,7 +121,7 @@ export class FamilleAndMonstreService {
         const values = {idFamilleMonstre: undefined, libelle: undefined};
         values.idFamilleMonstre = idFamilleMonstre;
         values.libelle = libelle;
-        const baseUrlBis = BASE_URL + URL_FAMILLE_MONSTRE + '?idFamilleMonstre=' + idFamilleMonstre;
+        const baseUrlBis = BACKEND_URL + URL_FAMILLE_MONSTRE + '?idFamilleMonstre=' + idFamilleMonstre;
         console.log(baseUrlBis);
         const params = new HttpParams().set('Famille', JSON.stringify(values));
 

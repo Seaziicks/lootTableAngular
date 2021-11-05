@@ -1,6 +1,6 @@
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {HttpMethods} from '../interface/http-methods.enum';
-import {BASE_URL} from '../services/rest.service';
+import {BACKEND_URL} from '../services/rest.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 import {UserForCreation} from '../user/user-create/user-create.component';
 import {UserSession} from '../user/user-login/user-login.component';
@@ -78,7 +78,7 @@ export class AuthService {
         values.username = username;
         values.password = password;
         console.log(values);
-        const baseUrlBis = BASE_URL + 'JWTToken.php';
+        const baseUrlBis = BACKEND_URL + 'JWTToken.php';
         console.log(baseUrlBis);
 
         const params = new HttpParams().set('Connexion', JSON.stringify(values));
@@ -181,7 +181,7 @@ export class AuthService {
         values.User = user;
         values.Personnage = personnage;
         console.log(values);
-        const baseUrlBis = BASE_URL + 'connexion.php';
+        const baseUrlBis = BACKEND_URL + 'connexion.php';
         console.log(baseUrlBis);
 
         const params = new HttpParams().set('Creation', JSON.stringify(values));
@@ -193,7 +193,7 @@ export class AuthService {
      * Permet de recupere tous les personnages cres mais non assignes à des users.
      */
     async getAllUnassignedPersonnage(): Promise<SpecialResponse> {
-        const baseUrlBis = BASE_URL + 'connexion.php' + '?leftPersonnage=true';
+        const baseUrlBis = BACKEND_URL + 'connexion.php' + '?leftPersonnage=true';
         console.log(baseUrlBis);
         return await this.http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }
@@ -208,13 +208,13 @@ export class AuthService {
         const values = {User: undefined};
         values.User = fakeUser;
         const params = new HttpParams().set('User', JSON.stringify(values));
-        const baseUrlBis = BASE_URL + 'connexion.php' + '?checkAvailable=true';
+        const baseUrlBis = BACKEND_URL + 'connexion.php' + '?checkAvailable=true';
         console.log(baseUrlBis);
         return await http.request(HttpMethods.GET.toString(), baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
 
     async checkPersonnageNameAvailable(personnageNomToCheck: string): Promise<SpecialResponse> {
-        const baseUrlBis = BASE_URL + 'connexion.php' + '?nomPersonnage=' + personnageNomToCheck + '&checkAvailable=true';
+        const baseUrlBis = BACKEND_URL + 'connexion.php' + '?nomPersonnage=' + personnageNomToCheck + '&checkAvailable=true';
         console.log(baseUrlBis);
         return await this.http.request(HttpMethods.GET.toString(), baseUrlBis).toPromise() as SpecialResponse;
     }

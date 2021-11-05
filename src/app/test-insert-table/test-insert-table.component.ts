@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {BASE_URL} from '../services/rest.service';
+import {BACKEND_URL} from '../services/rest.service';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {JSonLoadService} from '../services/json-load.service';
 
@@ -32,7 +32,7 @@ export class TestInsertTableComponent implements OnInit {
         values.idEffetMagique = 2;
         values.Table = sacAMalice.table[0];
         console.log(values);
-        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueTable.php' + '?idEffetMagique=' + 2 + '';
+        const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueTable.php' + '?idEffetMagique=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueTable', JSON.stringify(values));
         const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
@@ -50,7 +50,7 @@ export class TestInsertTableComponent implements OnInit {
         values.idEffetMagique = 2;
         values.Ul = casqueDeMilleFeux.ul[0];
         console.log(values);
-        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueUl.php' + '?idEffetMagique=' + 2 + '';
+        const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueUl.php' + '?idEffetMagique=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueUl', JSON.stringify(values));
         const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
@@ -63,7 +63,7 @@ export class TestInsertTableComponent implements OnInit {
         values.idEffetMagique = 2;
         values.Descriptions = this.allProprietesMagiques.strongAnfPowerful[21].description;
         console.log(values);
-        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueDescription.php' + '?idEffet=' + 2 + '';
+        const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueDescription.php' + '?idEffet=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueDescriptions', JSON.stringify(values));
 
@@ -77,7 +77,7 @@ export class TestInsertTableComponent implements OnInit {
         values.idEffetMagique = 2;
         values.Infos = this.allProprietesMagiques.strongAnfPowerful[21].infos.data;
         console.log(values);
-        const baseUrlBis = BASE_URL + 'effetMagique/effetMagiqueInfos.php' + '?idEffet=' + 2 + '';
+        const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueInfos.php' + '?idEffet=' + 2 + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagiqueInfos', JSON.stringify(values));
 

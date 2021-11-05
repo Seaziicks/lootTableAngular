@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {BASE_URL, URL_DROP_CHANCE, URL_DROP_CHANCE_BIS} from './rest.service';
+import {BACKEND_URL, URL_DROP_CHANCE, URL_DROP_CHANCE_BIS} from './rest.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
 @Injectable({
@@ -19,7 +19,7 @@ export class MonstreLootChanceService {
         values.idMonstre = idMonstre;
         values.Loot = Loot;
         console.log(values);
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idMonstre=' + idMonstre + '&multipleInput=true';
+        const baseUrlBis = BACKEND_URL + URL_DROP_CHANCE + '?idMonstre=' + idMonstre + '&multipleInput=true';
         console.log(baseUrlBis);
         const params = new HttpParams().set('Loot', JSON.stringify(values));
 
@@ -39,7 +39,7 @@ export class MonstreLootChanceService {
         }
         console.log(httpMethod);
         console.log(JSON.stringify(values.Loot));
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE_BIS + '?idMonstre=' + idMonstre + '&multipleInput=true';
+        const baseUrlBis = BACKEND_URL + URL_DROP_CHANCE_BIS + '?idMonstre=' + idMonstre + '&multipleInput=true';
         console.log(baseUrlBis);
         const params = new HttpParams().set('Loot', JSON.stringify(values));
 
@@ -50,17 +50,17 @@ export class MonstreLootChanceService {
     }
 
     public async getMonstreLootChanceTest(http: HttpClient, idMonstre: number): Promise<SpecialResponse> {
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE + '?idMonstre=' + idMonstre;
+        const baseUrlBis = BACKEND_URL + URL_DROP_CHANCE + '?idMonstre=' + idMonstre;
         return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     public async getMonstreLootChanceBis(http: HttpClient, idMonstre: number): Promise<SpecialResponse> {
-        const baseUrlBis = BASE_URL + URL_DROP_CHANCE_BIS + '?idMonstre=' + idMonstre;
+        const baseUrlBis = BACKEND_URL + URL_DROP_CHANCE_BIS + '?idMonstre=' + idMonstre;
         return await http.request('GET', baseUrlBis, {responseType: 'json'}).toPromise() as SpecialResponse;
     }
 
     public async getLootPossibles(http: HttpClient): Promise<SpecialResponse> {
-        return await http.request('GET', BASE_URL + 'lootPossiblesRest.php', {responseType: 'json'})
+        return await http.request('GET', BACKEND_URL + 'lootPossiblesRest.php', {responseType: 'json'})
             .toPromise() as SpecialResponse;
     }
 }

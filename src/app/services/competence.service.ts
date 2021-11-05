@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {BASE_URL} from './rest.service';
+import {BACKEND_URL} from './rest.service';
 import {SpecialResponse} from '../loot-table/loot-table.component';
 
 @Injectable({
@@ -36,7 +36,7 @@ export class CompetenceService {
         const values = { idCompetence: undefined, Competence: undefined };
         values.idCompetence = competence.idCompetence;
         values.Competence = competence;
-        const baseUrlBis = BASE_URL + 'competenceRest.php' + '?idCompetence=' + competence.idCompetence;
+        const baseUrlBis = BACKEND_URL + 'competenceRest.php' + '?idCompetence=' + competence.idCompetence;
         console.log(baseUrlBis);
         const params = new HttpParams().set('Competence', JSON.stringify(values));
         console.log(values);
@@ -50,7 +50,7 @@ export class CompetenceService {
         values.CompetenceContenu = competenceContenu;
         // values.CompetenceContenu.contenu = values.CompetenceContenu.contenu.replace('+', '\u002B');
         console.log(values.CompetenceContenu.contenu);
-        const baseUrlBis = BASE_URL + 'competenceRest.php' + '?idCompetenceContenu=' + competenceContenu.idCompetenceContenu;
+        const baseUrlBis = BACKEND_URL + 'competenceRest.php' + '?idCompetenceContenu=' + competenceContenu.idCompetenceContenu;
         console.log(baseUrlBis);
         const params = new HttpParams().set('CompetenceContenu', JSON.stringify(values));
 
