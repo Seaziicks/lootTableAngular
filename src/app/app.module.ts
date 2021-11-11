@@ -50,6 +50,8 @@ import {JwtModule} from '@auth0/angular-jwt';
 import {UniversalAppInterceptor} from './services/universal-app-interceptor';
 import { JwtModalComponent } from './jwt-modal/jwt-modal.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -104,6 +106,12 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
         MatNativeDateModule,
         FlexLayoutModule,
         JwtModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+          enabled: environment.production,
+          // Register the ServiceWorker as soon as the app is stable
+          // or after 30 seconds (whichever comes first).
+          registrationStrategy: 'registerWhenStable:30000'
+        }),
     ],
     entryComponents: [],
     bootstrap: [AppComponent],
