@@ -20,5 +20,13 @@ textarea, .example-full-width  {
 
 .titleTop .h1Fake {
     min-width: 250px;
+    max-width: 100%;
     text-align: left;
+}
+
+/*
+    Sinon les liens dans les titres des objets ne s'affichaient pas correctement pour les versions mobiles.
+ */
+::ng-deep .titleTop .h1Fake a {
+    display: contents;
 }
