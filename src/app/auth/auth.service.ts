@@ -109,9 +109,8 @@ export class AuthService {
             isGameMaster: decodedToken.isGameMaster,
             jwtToken: Jwt
         } as User;
-        console.log(decodedToken);
         this.localStorageService.set(LocalStorageService.JWTToken, Jwt);
-        this.personnage = Jwt.personnage as Personnage ? Jwt.personnage as Personnage : null;
+        this.personnage = decodedToken.personnage as Personnage ? decodedToken.personnage as Personnage : null;
     }
 
     getJwtToken() {
@@ -163,17 +162,18 @@ export class AuthService {
     }
 
     signOut() {
-        console.log('J\'ai sign out');
+        // if (!!this.getJwtToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
+        //     // On enlève le token si expiré, pour éviter des incoherences d'etat. Et si il reste moins de 30 secondes.
+        //     this.localStorageService.remove(LocalStorageService.JWTToken);
+        // }
+        this.localStorageService.remove(LocalStorageService.JWTToken);
         this.user = null;
         this.personnage = null;
         this.isAuth = false;
-        if (!!this.getJwtToken() && (this.jwtHasExpired() || this.getJwtExpieryDelay() < 30)) {
-            // On enlève le token si expiré, pour éviter des incoherences d'etat. Et si il reste moins de 30 secondes.
-            this.localStorageService.remove(LocalStorageService.JWTToken);
-        }
         if (this.jwtModalDialogOpened) {
             this.jwtModalDialog.componentInstance.onNoClick();
         }
+        console.log('J\'ai sign out');
     }
 
     async createUser(http: HttpClient, user: UserForCreation, personnage: Personnage): Promise<SpecialResponse> {
