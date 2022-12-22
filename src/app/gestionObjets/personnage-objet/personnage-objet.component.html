@@ -185,6 +185,9 @@
                     <textarea
                         [(ngModel)]="this.objet.effetMagique[indexPropriete].effetMagiqueDescription[indexDescription].contenu"></textarea><br/>
 
+                <button *ngIf="this.descriptionHasTableOrUlAfter(indexPropriete, indexDescription)"
+                (click)="ajouterDescription(indexPropriete, indexDescription)"> Ajouter description </button>
+
                     <ng-container
                         *ngFor="let table of this.objet.effetMagique[indexPropriete].effetMagiqueTable; let indexTable = index">
                         <span *ngIf="+table.position === indexDescription + 1">
@@ -217,6 +220,7 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <button (click)="ajouterLigneTable(indexPropriete, indexTable)">Ajouter une ligne</button>
                         </span>
                     </ng-container>
 
@@ -230,6 +234,7 @@
                                         [name]="'positon'+this.objet.effetMagique[indexPropriete].effetMagiqueUl[indexUl].position+'ul'+indexUl+'li'+indexLi"></textarea>
                                 </li>
                             </ul>
+                            <button (click)="ajouterLigneUl(indexPropriete, indexUl)">Ajouter une ligne</button>
                         </span>
                     </ng-container>
                 </span>

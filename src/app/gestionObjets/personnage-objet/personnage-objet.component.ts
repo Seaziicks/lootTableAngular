@@ -15,8 +15,15 @@ export class PersonnageObjetComponent implements OnInit {
 
     @Input() personnages: Personnage[];
     @Input() personnageCourant: Personnage;
-    @Input() set idObj(id: number) { this.idObjet = id; this.valide = false; this.modificationEnCours = false;
-                                     this.loadObjet(); this.idPersonnageSelectionne = this.personnageCourant.idPersonnage; }
+
+    @Input() set idObj(id: number) {
+        this.idObjet = id;
+        this.valide = false;
+        this.modificationEnCours = false;
+        this.loadObjet();
+        this.idPersonnageSelectionne = this.personnageCourant.idPersonnage;
+    }
+
     @Output() changingObjet = new EventEmitter<any>();
 
     idObjet: number;
@@ -31,7 +38,8 @@ export class PersonnageObjetComponent implements OnInit {
     updating = false;
 
     constructor(private http: HttpClient,
-                private objetService: ObjetService) { }
+                private objetService: ObjetService) {
+    }
 
     ngOnInit(): void {
     }
@@ -70,12 +78,14 @@ export class PersonnageObjetComponent implements OnInit {
             this.updating = true;
             this.updateObjet();
             this.changingObjet.emit(this.objet.idObjet);
-            setTimeout( () => { this.loadObjet(); }, 1250 );
-            setTimeout( () => {
+            setTimeout(() => {
+                this.loadObjet();
+            }, 1250);
+            setTimeout(() => {
                 this.updating = false;
                 this.valide = false;
                 this.modificationEnCours = false;
-            }, 2500 );
+            }, 2500);
         }
     }
 
@@ -91,9 +101,9 @@ export class PersonnageObjetComponent implements OnInit {
     }
 
     checkProprietesMagiquesIntegrity() {
-        for (let i = 0 ; i < this.objet.effetMagique.length ; i++) {
-            for (let indexDescription = 0 ;
-                 indexDescription < this.objet.effetMagique[i].effetMagiqueDescription.length ; indexDescription++) {
+        for (let i = 0; i < this.objet.effetMagique.length; i++) {
+            for (let indexDescription = 0;
+                 indexDescription < this.objet.effetMagique[i].effetMagiqueDescription.length; indexDescription++) {
                 if (this.objet.effetMagique[i].effetMagiqueDescription[indexDescription].contenu.length === 0) {
                     this.objet.effetMagique[i].effetMagiqueDescription.splice(indexDescription, 1);
                     indexDescription--;
@@ -161,8 +171,8 @@ export class PersonnageObjetComponent implements OnInit {
                 }
             }
 
-            for (let indexInfos = 0 ;
-                 indexInfos < this.objet.effetMagique[i].effetMagiqueDBInfos.length ; indexInfos++) {
+            for (let indexInfos = 0;
+                 indexInfos < this.objet.effetMagique[i].effetMagiqueDBInfos.length; indexInfos++) {
                 if (this.objet.effetMagique[i].effetMagiqueDBInfos[indexInfos].contenu.length === 0) {
                     this.objet.effetMagique[i].effetMagiqueDBInfos.splice(indexInfos, 1);
                     indexInfos--;
@@ -232,6 +242,7 @@ export class PersonnageObjetComponent implements OnInit {
                         .effetMagique(this.http, HttpMethods.DELETE, 0, this.objet.effetMagique[indexEffet]);
                     console.log(response);
                 } else {
+                    // Gestion des tables de l'effet magique.
                     for (let indexTable = 0; indexTable < this.objet.effetMagique[indexEffet].effetMagiqueTable.length; indexTable++) {
                         if (this.isEmptyTable(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
                             // TODO : Supprimer table
@@ -241,11 +252,12 @@ export class PersonnageObjetComponent implements OnInit {
                         } else {
                             if (this.areDifferentTables(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
-                                // TODO : Modifier la table.
+                                // TODO : Modifier la table
                                 const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.PUT, 0,
                                     this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]);
                                 console.log(response);
                             }
+                            // Gestion des tables title de la table.
                             for (let indexTitle = 0;
                                  indexTitle < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                      .effetMagiqueTableTitle.length;
@@ -268,6 +280,7 @@ export class PersonnageObjetComponent implements OnInit {
                                                 .effetMagiqueTableTitle[indexTitle]);
                                         console.log(response);
                                     }
+                                    // Gestion des table title content
                                     for (let indexTitleContent = 0;
                                          indexTitleContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                              .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent.length;
@@ -277,9 +290,9 @@ export class PersonnageObjetComponent implements OnInit {
                                             // TODO : Supprimer title content
                                             const response: SpecialResponse = await this.objetService
                                                 .titleContent(this.http, HttpMethods.DELETE, 0,
-                                                this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                    .effetMagiqueTableTitle[indexTitle]
-                                                    .effetMagiqueTableTitleContent[indexTitleContent]);
+                                                    this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                        .effetMagiqueTableTitle[indexTitle]
+                                                        .effetMagiqueTableTitleContent[indexTitleContent]);
                                             console.log(response);
                                         } else {
                                             if (this.areDifferentTableTitleContents(this.objet.effetMagique[indexEffet]
@@ -291,19 +304,29 @@ export class PersonnageObjetComponent implements OnInit {
                                                 // TODO : Modifier title content
                                                 const response: SpecialResponse = await this.objetService
                                                     .titleContent(this.http, HttpMethods.PUT, 0,
-                                                    this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                        .effetMagiqueTableTitle[indexTitle]
-                                                        .effetMagiqueTableTitleContent[indexTitleContent]);
+                                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                            .effetMagiqueTableTitle[indexTitle]
+                                                            .effetMagiqueTableTitleContent[indexTitleContent]);
                                                 console.log(response);
                                             }
                                         }
                                     }
                                 }
                             }
+                            // Gestion des table tr de la table en cours de l'effet magique
                             for (let indexTr = 0;
                                  indexTr < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr.length;
                                  indexTr++) {
-                                if (this.isEmptyTableTr(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                let tableTrIndex: number;
+                                if (indexTr >=
+                                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr.length) {
+                                    // TODO : Ajouter tr
+                                    const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.POST,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].idEffetMagiqueTable,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]);
+                                    tableTrIndex = (response.data as unknown as EffetMagiqueTableTr).idEffetMagiqueTableTr;
+                                    console.log(response);
+                                } else if (this.isEmptyTableTr(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                     .effetMagiqueTableTr[indexTr])) {
                                     // TODO : Supprimer tr
                                     const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.DELETE, 0,
@@ -319,38 +342,62 @@ export class PersonnageObjetComponent implements OnInit {
                                             this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]);
                                         console.log(response);
                                     }
-                                    for (let indexTrContent = 0;
-                                         indexTrContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                             .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent.length;
-                                         indexTrContent++) {
-                                        if (this.isEmptyTableTrContent(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                            .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent])) {
-                                            // TODO : Supprimer tr content
-                                            const response: SpecialResponse = await this.objetService
-                                                .trContent(this.http, HttpMethods.DELETE, 0,
+                                }
+                                // Gestion des table tr content de la table en cours de l'ffet magique
+                                for (let indexTrContent = 0;
+                                     indexTrContent < this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                         .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent.length;
+                                     indexTrContent++) {
+                                    if (indexTr >=
+                                        // tslint:disable-next-line:max-line-length
+                                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr.length) {
+                                        // TODO : Ajouter tr content sur un nouveau tr
+                                        const response: SpecialResponse = await this.objetService
+                                            .trContent(this.http, HttpMethods.POST, tableTrIndex,
                                                 this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                     .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]);
-                                            console.log(response);
-                                        } else {
-                                            if (this.areDifferentTableTrContents(this.objet.effetMagique[indexEffet]
-                                                    .effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]
-                                                    .effetMagiqueTableTrContent[indexTrContent],
-                                                this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
-                                                    .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent])) {
-                                                // TODO : Modifier tr content
-                                                const response: SpecialResponse = await this.objetService
-                                                    .trContent(this.http, HttpMethods.PUT, 0,
+                                        console.log(response);
+                                    } else if (indexTrContent >=
+                                        // tslint:disable-next-line:max-line-length
+                                        this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent.length) {
+                                        // TODO : Ajouter tr content sur tr déjà existant
+                                        tableTrIndex = this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                            .effetMagiqueTableTr[indexTr].idEffetMagiqueTableTr;
+                                        const response: SpecialResponse = await this.objetService
+                                            .trContent(this.http, HttpMethods.POST, tableTrIndex,
+                                                this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                    .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]);
+                                        console.log(response);
+                                    } else if (this.isEmptyTableTrContent(this.objet.effetMagique[indexEffet]
+                                        .effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]
+                                        .effetMagiqueTableTrContent[indexTrContent])) {
+                                        // TODO : Supprimer tr content
+                                        const response: SpecialResponse = await this.objetService
+                                            .trContent(this.http, HttpMethods.DELETE, 0,
+                                                this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                    .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]);
+                                        console.log(response);
+                                    } else {
+                                        if (this.areDifferentTableTrContents(this.objet.effetMagique[indexEffet]
+                                                .effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]
+                                                .effetMagiqueTableTrContent[indexTrContent],
+                                            this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent])) {
+                                            // TODO : Modifier tr content
+                                            const response: SpecialResponse = await this.objetService
+                                                .trContent(this.http, HttpMethods.PUT, 0,
                                                     this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                         .effetMagiqueTableTr[indexTr].effetMagiqueTableTrContent[indexTrContent]);
-                                                console.log(response);
-                                            }
+                                            console.log(response);
                                         }
                                     }
                                 }
+
                             }
                         }
                     }
 
+                    // Gestion des listes (uls) de l'effet magique
                     for (let indexUl = 0; indexUl < this.objet.effetMagique[indexEffet].effetMagiqueUl.length; indexUl++) {
                         if (this.isEmptyUl(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl])) {
                             // TODO : Supprimer ul
@@ -365,10 +412,21 @@ export class PersonnageObjetComponent implements OnInit {
                                     this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]);
                                 console.log(response);
                             }
+                            // Gestion des ul content de l'ul en cours de l'effet magique
                             for (let indexUlContent = 0;
                                  indexUlContent < this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent.length;
                                  indexUlContent++) {
-                                if (this.isEmptyUlContent(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                if (indexUlContent >=
+                                    this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl].effetMagiqueUlContent.length) {
+                                    // TODO : Ajouter ul content (une ligne à une ul).
+                                    const idEffetMagiqueUl = this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].idEffetMagiqueUl;
+                                    const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.POST,
+                                        idEffetMagiqueUl, this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
+                                            .effetMagiqueUlContent[indexUlContent]);
+                                    console.log('==================================================================');
+                                    console.log('Ajout d\'une ligne de ul !');
+                                    console.log(response);
+                                } else if (this.isEmptyUlContent(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                     .effetMagiqueUlContent[indexUlContent])) {
                                     // TODO : Supprimer ul content
                                     const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.DELETE, 0,
@@ -396,10 +454,16 @@ export class PersonnageObjetComponent implements OnInit {
                         }
                     }
 
-
+                    // Gestion des description de l'effet magique. Chaque description est séparée par une table,
+                    // et par une ul quand il n'y a plus de table
                     for (let indexDescription = 0; indexDescription < this.objet.effetMagique[indexEffet].effetMagiqueDescription.length;
                          indexDescription++) {
-                        if (this.isEmptyDescription(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
+                        if (indexDescription >= this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription.length) {
+                            const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.POST,
+                                this.objetOriginal.effetMagique[indexEffet].idEffetMagique,
+                                this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
+                            console.log(response);
+                        } else if (this.isEmptyDescription(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
                             // TODO : Supprimer description
                             const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.DELETE, 0,
                                 this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
@@ -415,7 +479,8 @@ export class PersonnageObjetComponent implements OnInit {
                         }
                     }
 
-
+                    // Gestion des infos de l'effet magique. Plusieurs lignes pour résumer quelques infos distinctes,
+                    // mais peu utiles, comme la puissance d'invocation, la méthode de création, le prix, etc ...
                     for (let indexInfos = 0; indexInfos < this.objet.effetMagique[indexEffet].effetMagiqueDBInfos.length;
                          indexInfos++) {
                         if (this.isEmptyInfo(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])) {
@@ -434,6 +499,8 @@ export class PersonnageObjetComponent implements OnInit {
                         }
                     }
 
+                    // Comme tout le reste est géré avant (les descriptions, tables, ul et touti quanti),
+                    // on ne regarde ici que  l'id et le titre.
                     if (this.areDifferentEffetsMagiques(this.objet.effetMagique[indexEffet], this.objetOriginal.effetMagique[indexEffet])) {
                         // TODO : Modifier effet
                         const response: SpecialResponse = await this.objetService
@@ -442,6 +509,10 @@ export class PersonnageObjetComponent implements OnInit {
                     }
                 }
             }
+            // Cette update, si elle se fait, ne va modifier que l'objet en lui même, avec les ids.
+            // Mais pas les effets magiques associés.
+            // Un problème semble tout de même subsister. La comparaison se fait avec les effets magiques complets,
+            // pas seulement les ids ... Je ne sais que faire, car normalement, ça a été géré avant.
             if (this.areDifferentObjets(this.objet, this.objetOriginal)) {
                 const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.PUT, 0, this.objet);
                 console.log(response);
@@ -629,5 +700,90 @@ export class PersonnageObjetComponent implements OnInit {
         // console.log(!equal(objetTemp1, objetTemp2)); // true
         // return JSON.stringify(objetTemp1) !== JSON.stringify(objetTemp2);
         return !equal(objetTemp1, objetTemp2);
+    }
+
+    descriptionHasTableOrUlAfter(indexEffetMagique: number, indexDescription: number): boolean {
+        for (const table of this.objet.effetMagique[indexEffetMagique].effetMagiqueTable) {
+            if (indexDescription === table.position - 1) {
+                return true;
+            }
+        }
+        for (const ul of this.objet.effetMagique[indexEffetMagique].effetMagiqueUl) {
+            if (indexDescription === ul.position - 1) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    ajouterDescription(indexEffetMagique: number, indexDescription: number) {
+        // On récupère les index et on ajoute la description à l'endroit correspondant dans le tableau des descriptions.
+        const addingIndex = indexDescription + 1;
+        const newDescriptionIndex = this.objet.effetMagique[indexEffetMagique]
+            .effetMagiqueDescription[addingIndex].idEffetMagiqueDescription;
+        const idEffetMagique = this.objet.effetMagique[indexEffetMagique]
+            .effetMagiqueDescription[addingIndex].idEffetMagique;
+
+        if (this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription[indexDescription].contenu !== '') {
+            this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription.splice(addingIndex, 0,
+                {
+                    contenu: '',
+                    idEffetMagique,
+                    idEffetMagiqueDescription: newDescriptionIndex
+                } as EffetMagiqueDescription);
+
+            console.log(this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription.length);
+            // On déplace tous les index des descriptions qui arrivent après, sauf la dernière qui prend null.
+            for (let i = addingIndex + 1; i < this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription.length - 1; i++) {
+                this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription[i].idEffetMagiqueDescription =
+                    this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription[i + 1].idEffetMagiqueDescription;
+            }
+            this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription[
+            this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription.length - 1].idEffetMagiqueDescription = null;
+
+            console.log(this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription);
+
+            // On décale toutes les tables et toutes les listes éventuelles.
+            for (const table of this.objet.effetMagique[indexEffetMagique].effetMagiqueTable) {
+                if (table.position >= indexDescription) {
+                    table.position++;
+                }
+            }
+            for (const ul of this.objet.effetMagique[indexEffetMagique].effetMagiqueUl) {
+                if (ul.position >= indexDescription) {
+                    ul.position++;
+                }
+            }
+            console.log(this.objet.effetMagique[indexEffetMagique].effetMagiqueDescription);
+        }
+    }
+
+    ajouterLigneTable(indexEffetMagique: number, indexTable: number) {
+
+        const idEffetMagiqueTable = this.objet.effetMagique[indexEffetMagique].effetMagiqueTable[indexTable].idEffetMagiqueTable;
+
+        this.objet.effetMagique[indexEffetMagique].effetMagiqueTable[indexTable]
+            .effetMagiqueTableTr.push({idEffetMagiqueTable, effetMagiqueTableTrContent: []} as EffetMagiqueTableTr);
+
+        const tableLineNumber: number = this.objet.effetMagique[indexEffetMagique].effetMagiqueTable[indexTable]
+            .effetMagiqueTableTr.length;
+
+        // tslint:disable-next-line:max-line-length
+        for (const line of this.objet.effetMagique[indexEffetMagique].effetMagiqueTable[indexTable].effetMagiqueTableTitle[0].effetMagiqueTableTitleContent) {
+            this.objet.effetMagique[indexEffetMagique].effetMagiqueTable[indexTable]
+                .effetMagiqueTableTr[tableLineNumber - 1].effetMagiqueTableTrContent
+                .push({contenu: ''} as EffetMagiqueTableTrContent);
+        }
+    }
+
+    ajouterLigneUl(indexEffetMagique: number, indexUl: number) {
+
+        const idEffetMagiqueUl = this.objet.effetMagique[indexEffetMagique].effetMagiqueUl[indexUl].idEffetMagiqueUl;
+        const listLength: number = this.objet.effetMagique[indexEffetMagique].effetMagiqueUl[indexUl].effetMagiqueUlContent.length;
+
+        if (this.objet.effetMagique[indexEffetMagique].effetMagiqueUl[indexUl].effetMagiqueUlContent[listLength - 1].contenu !== '') {
+            this.objet.effetMagique[indexEffetMagique].effetMagiqueUl[indexUl].effetMagiqueUlContent
+                .push({idEffetMagiqueUl, contenu: ''} as EffetMagiqueUlContent);
+        }
     }
 }
