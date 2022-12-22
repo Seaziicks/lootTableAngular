@@ -65,7 +65,7 @@ export class TestInsertTableComponent implements OnInit {
         console.log(values);
         const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueDescription.php' + '?idEffet=' + 2 + '';
         console.log(baseUrlBis);
-        const params = new HttpParams().set('EffetMagiqueDescriptions', JSON.stringify(values));
+        const params = new HttpParams().set('EffetMagiqueDescription', JSON.stringify(values));
 
         const data = await this.http.request('POST', baseUrlBis, {responseType: 'json', params}).toPromise();
         console.log(data);

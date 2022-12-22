@@ -26,7 +26,7 @@ export class ObjetService {
         console.log(values);
         const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueDescription.php' + '?idEffet=' + idEffet + '';
         console.log(baseUrlBis);
-        const params = new HttpParams().set('EffetMagiqueDescriptions', JSON.stringify(values));
+        const params = new HttpParams().set('EffetMagiqueDescription', JSON.stringify(values));
 
         return await http.request(httpMethod, baseUrlBis, {responseType: 'json', params}).toPromise() as SpecialResponse;
     }
@@ -259,7 +259,7 @@ export class ObjetService {
         const values = {idObjet: undefined, EffetMagique: effetMagiqueToUSe};
         values.idObjet = idObjet;
         console.log(values);
-        const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagique.php' + '?idObjet=' + idObjet + '';
+        const baseUrlBis = BACKEND_URL + URL_EFFET_MAGIQUE + '?idObjet=' + idObjet + '';
         console.log(baseUrlBis);
         const params = new HttpParams().set('EffetMagique', JSON.stringify(values));
 
@@ -296,7 +296,7 @@ export class ObjetService {
             .toPromise() as SpecialResponse;
     }
 
-    public async objet(http: HttpClient, httpMethod: HttpMethods, idPersonnage: number, objet: ObjetCommunFromDB)
+    public async  objet(http: HttpClient, httpMethod: HttpMethods, idPersonnage: number, objet: ObjetCommunFromDB)
         : Promise<SpecialResponse> {
         const objetCopie = JSON.parse(JSON.stringify(objet)) as ObjetCommunFromDB;
         objetCopie.effetMagique = null;
