@@ -270,8 +270,8 @@ export class ObjetService {
     public async description(http: HttpClient, httpMethod: HttpMethods,
                              idEffetMagique: number, effetMagiqueDescription: EffetMagiqueDescription)
         : Promise<SpecialResponse> {
-        const values = {idObjet: undefined, EffetMagiqueDescription: undefined};
-        values.idObjet = idEffetMagique;
+        const values = {idEffetMagique: undefined, EffetMagiqueDescription: undefined};
+        values.idEffetMagique = idEffetMagique;
         values.EffetMagiqueDescription = effetMagiqueDescription;
         console.log(values);
         const baseUrlBis = BACKEND_URL + 'effetMagique/effetMagiqueDescription.php' + '?idEffetMagique=' + idEffetMagique + '';
