@@ -232,28 +232,32 @@ export class PersonnageObjetComponent implements OnInit {
         this.setEmptyToNull();
         if (this.isEmptyObjet()) {
             // TODO : Supprimer objet
-            const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.DELETE, 0, this.objet);
+            const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.DELETE,
+                this.objet.idPersonnage, this.objet);
             console.log(response);
         } else {
             for (let indexEffet = 0; indexEffet < this.objet.effetMagique.length; indexEffet++) {
                 if (this.isEmptyEffetMagique(this.objet.effetMagique[indexEffet])) {
                     // TODO : Supprimer effet
                     const response: SpecialResponse = await this.objetService
-                        .effetMagique(this.http, HttpMethods.DELETE, 0, this.objet.effetMagique[indexEffet]);
+                        .effetMagique(this.http, HttpMethods.DELETE,
+                            this.objet.idObjet, this.objet.effetMagique[indexEffet]);
                     console.log(response);
                 } else {
                     // Gestion des tables de l'effet magique.
                     for (let indexTable = 0; indexTable < this.objet.effetMagique[indexEffet].effetMagiqueTable.length; indexTable++) {
                         if (this.isEmptyTable(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
                             // TODO : Supprimer table
-                            const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.DELETE, 0,
+                            const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.DELETE,
+                                this.objet.effetMagique[indexEffet].idEffetMagique,
                                 this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]);
                             console.log(response);
                         } else {
                             if (this.areDifferentTables(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable])) {
                                 // TODO : Modifier la table
-                                const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.PUT, 0,
+                                const response: SpecialResponse = await this.objetService.table(this.http, HttpMethods.PUT,
+                                    this.objet.effetMagique[indexEffet].idEffetMagique,
                                     this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]);
                                 console.log(response);
                             }
@@ -265,7 +269,8 @@ export class PersonnageObjetComponent implements OnInit {
                                 if (this.isEmptyTableTitle(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                     .effetMagiqueTableTitle[indexTitle])) {
                                     // TODO : Supprimer title
-                                    const response: SpecialResponse = await this.objetService.title(this.http, HttpMethods.DELETE, 0,
+                                    const response: SpecialResponse = await this.objetService.title(this.http, HttpMethods.DELETE,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].idEffetMagiqueTable,
                                         this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTitle[indexTitle]);
                                     console.log(response);
@@ -275,7 +280,8 @@ export class PersonnageObjetComponent implements OnInit {
                                         this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTitle[indexTitle])) {
                                         // TODO : Modifier title
-                                        const response: SpecialResponse = await this.objetService.title(this.http, HttpMethods.PUT, 0,
+                                        const response: SpecialResponse = await this.objetService.title(this.http, HttpMethods.PUT,
+                                            this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].idEffetMagiqueTable,
                                             this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                 .effetMagiqueTableTitle[indexTitle]);
                                         console.log(response);
@@ -289,7 +295,9 @@ export class PersonnageObjetComponent implements OnInit {
                                             .effetMagiqueTableTitle[indexTitle].effetMagiqueTableTitleContent[indexTitleContent])) {
                                             // TODO : Supprimer title content
                                             const response: SpecialResponse = await this.objetService
-                                                .titleContent(this.http, HttpMethods.DELETE, 0,
+                                                .titleContent(this.http, HttpMethods.DELETE,
+                                                    this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                        .effetMagiqueTableTitle[indexTitle].idEffetMagiqueTableTitle,
                                                     this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                         .effetMagiqueTableTitle[indexTitle]
                                                         .effetMagiqueTableTitleContent[indexTitleContent]);
@@ -303,7 +311,9 @@ export class PersonnageObjetComponent implements OnInit {
                                                     .effetMagiqueTableTitleContent[indexTitleContent])) {
                                                 // TODO : Modifier title content
                                                 const response: SpecialResponse = await this.objetService
-                                                    .titleContent(this.http, HttpMethods.PUT, 0,
+                                                    .titleContent(this.http, HttpMethods.PUT,
+                                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
+                                                            .effetMagiqueTableTitle[indexTitle].idEffetMagiqueTableTitle,
                                                         this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                                             .effetMagiqueTableTitle[indexTitle]
                                                             .effetMagiqueTableTitleContent[indexTitleContent]);
@@ -329,7 +339,8 @@ export class PersonnageObjetComponent implements OnInit {
                                 } else if (this.isEmptyTableTr(this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                     .effetMagiqueTableTr[indexTr])) {
                                     // TODO : Supprimer tr
-                                    const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.DELETE, 0,
+                                    const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.DELETE,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].idEffetMagiqueTable,
                                         this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]);
                                     console.log(response);
                                 } else {
@@ -338,7 +349,8 @@ export class PersonnageObjetComponent implements OnInit {
                                         this.objetOriginal.effetMagique[indexEffet].effetMagiqueTable[indexTable]
                                             .effetMagiqueTableTr[indexTr])) {
                                         // TODO : Modifier tr
-                                        const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.PUT, 0,
+                                        const response: SpecialResponse = await this.objetService.tr(this.http, HttpMethods.PUT,
+                                            this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].idEffetMagiqueTable,
                                             this.objet.effetMagique[indexEffet].effetMagiqueTable[indexTable].effetMagiqueTableTr[indexTr]);
                                         console.log(response);
                                     }
@@ -401,14 +413,16 @@ export class PersonnageObjetComponent implements OnInit {
                     for (let indexUl = 0; indexUl < this.objet.effetMagique[indexEffet].effetMagiqueUl.length; indexUl++) {
                         if (this.isEmptyUl(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl])) {
                             // TODO : Supprimer ul
-                            const response: SpecialResponse = await this.objetService.ul(this.http, HttpMethods.DELETE, 0,
+                            const response: SpecialResponse = await this.objetService.ul(this.http, HttpMethods.DELETE,
+                                this.objet.effetMagique[indexEffet].idEffetMagique,
                                 this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]);
                             console.log(response);
                         } else {
                             if (this.areDifferentUls(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl])) {
                                 // TODO : Modifier ul
-                                const response: SpecialResponse = await this.objetService.ul(this.http, HttpMethods.PUT, 0,
+                                const response: SpecialResponse = await this.objetService.ul(this.http, HttpMethods.PUT,
+                                    this.objet.effetMagique[indexEffet].idEffetMagique,
                                     this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]);
                                 console.log(response);
                             }
@@ -429,7 +443,8 @@ export class PersonnageObjetComponent implements OnInit {
                                 } else if (this.isEmptyUlContent(this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                     .effetMagiqueUlContent[indexUlContent])) {
                                     // TODO : Supprimer ul content
-                                    const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.DELETE, 0,
+                                    const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.DELETE,
+                                        this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].idEffetMagiqueUl,
                                         this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                             .effetMagiqueUlContent[indexUlContent]);
                                     console.log(response);
@@ -444,7 +459,8 @@ export class PersonnageObjetComponent implements OnInit {
                                                 .effetMagiqueUlContent[indexUlContent].contenu + ' !== ' +
                                             this.objetOriginal.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                                 .effetMagiqueUlContent[indexUlContent].contenu);
-                                        const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.PUT, 0,
+                                        const response: SpecialResponse = await this.objetService.ulContent(this.http, HttpMethods.PUT,
+                                            this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl].idEffetMagiqueUl,
                                             this.objet.effetMagique[indexEffet].effetMagiqueUl[indexUl]
                                                 .effetMagiqueUlContent[indexUlContent]);
                                         console.log(response);
@@ -460,19 +476,21 @@ export class PersonnageObjetComponent implements OnInit {
                          indexDescription++) {
                         if (indexDescription >= this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription.length) {
                             const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.POST,
-                                this.objetOriginal.effetMagique[indexEffet].idEffetMagique,
+                                this.objet.effetMagique[indexEffet].idEffetMagique,
                                 this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
                             console.log(response);
                         } else if (this.isEmptyDescription(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
                             // TODO : Supprimer description
-                            const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.DELETE, 0,
+                            const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.DELETE,
+                                this.objet.effetMagique[indexEffet].idEffetMagique,
                                 this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
                             console.log(response);
                         } else {
                             if (this.areDifferentDescriptions(this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueDescription[indexDescription])) {
                                 // TODO : Modifier description
-                                const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.PUT, 0,
+                                const response: SpecialResponse = await this.objetService.description(this.http, HttpMethods.PUT,
+                                    this.objet.effetMagique[indexEffet].idEffetMagique,
                                     this.objet.effetMagique[indexEffet].effetMagiqueDescription[indexDescription]);
                                 console.log(response);
                             }
@@ -485,14 +503,16 @@ export class PersonnageObjetComponent implements OnInit {
                          indexInfos++) {
                         if (this.isEmptyInfo(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])) {
                             // TODO : Supprimer infos
-                            const response: SpecialResponse = await this.objetService.infos(this.http, HttpMethods.DELETE, 0,
+                            const response: SpecialResponse = await this.objetService.infos(this.http, HttpMethods.DELETE,
+                                this.objet.effetMagique[indexEffet].idEffetMagique,
                                 this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos]);
                             console.log(response);
                         } else {
                             if (this.areDifferentInfos(this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos],
                                 this.objetOriginal.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos])) {
                                 // TODO : Modifier infos
-                                const response: SpecialResponse = await this.objetService.infos(this.http, HttpMethods.PUT, 0,
+                                const response: SpecialResponse = await this.objetService.infos(this.http, HttpMethods.PUT,
+                                    this.objet.effetMagique[indexEffet].idEffetMagique,
                                     this.objet.effetMagique[indexEffet].effetMagiqueDBInfos[indexInfos]);
                                 console.log(response);
                             }
@@ -504,7 +524,7 @@ export class PersonnageObjetComponent implements OnInit {
                     if (this.areDifferentEffetsMagiques(this.objet.effetMagique[indexEffet], this.objetOriginal.effetMagique[indexEffet])) {
                         // TODO : Modifier effet
                         const response: SpecialResponse = await this.objetService
-                            .effetMagique(this.http, HttpMethods.PUT, 0, this.objet.effetMagique[indexEffet]);
+                            .effetMagique(this.http, HttpMethods.PUT, this.objet.idObjet, this.objet.effetMagique[indexEffet]);
                         console.log(response);
                     }
                 }
@@ -514,7 +534,8 @@ export class PersonnageObjetComponent implements OnInit {
             // Un problème semble tout de même subsister. La comparaison se fait avec les effets magiques complets,
             // pas seulement les ids ... Je ne sais que faire, car normalement, ça a été géré avant.
             if (this.areDifferentObjets(this.objet, this.objetOriginal)) {
-                const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.PUT, 0, this.objet);
+                const response: SpecialResponse = await this.objetService.objet(this.http, HttpMethods.PUT,
+                    this.objet.idPersonnage, this.objet);
                 console.log(response);
             }
         }
