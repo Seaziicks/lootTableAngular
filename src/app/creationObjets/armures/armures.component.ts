@@ -121,6 +121,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
                 }
                 break;
         }
+        this.nom = '';
         if (!this.isSpecial && this.categorieObjet) {
             this.armure = JSON.parse(JSON.stringify(
                 this.allArmures.Categories.find(f => f.title === this.categorieObjet).armures[this.deObjet - 1])) as Armure;
@@ -128,7 +129,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
             this.setType();
         } else {
             this.type = null;
-            this.nom = null;
+            this.nom = '';
         }
         return this.bouclier;
     }
@@ -172,7 +173,7 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
             this.setNom();
         } else {
             this.type = null;
-            this.nom = null;
+            this.nom = '';
         }
     }
 
@@ -224,16 +225,21 @@ export class ArmuresComponent extends ObjetCombat implements OnInit {
     }
 
     setNom() {
-        if (this.armure) {
-            this.nom = this.armure.nom;
+        this.nom = '';
+        if (!this.isSpecial) {
+            if (this.armure) {
+                this.nom = this.armure.nom;
+            }
+            if (this.taille) {
+                this.nom += ' ' + this.taille.taille;
+            }
+            if (this.materiau) {
+                this.nom += ' en ' + this.materiau.nom;
+            }
+            this.nom += ' ' + this.getNomsProprieteMagique();
+        } else {
+            this.nom = this.getNomsProprieteMagique();
         }
-        if (this.taille) {
-            this.nom += ' ' + this.taille.taille;
-        }
-        if (this.materiau) {
-            this.nom += ' en ' + this.materiau.nom;
-        }
-        this.nom += ' ' + this.getNomsProprieteMagique();
         // console.log(this.nom);
     }
 

@@ -74,7 +74,7 @@
         </div>
         <div class="form-row">
             <div class="col-md-2 mb-3">
-                <label for="dePuissanceArme">Dé de puissance de l'arme
+                <label for="dePuissanceArme">Dé de puissance de l'arme (1D3)
                 </label>
                 <input min="1" max="3" type="number" class="form-control" id="dePuissanceArme"
                        name="dePuissanceArme"
@@ -85,7 +85,7 @@
             </div>
 
             <div class="col-md-2 mb-3" *ngIf="this.dePuissance">
-                <label for="DeBonusArme">Dé de bonus de l'arme
+                <label for="DeBonusArme">Dé de bonus de l'arme (1D100)
                 </label>
                 <input min="1" max="100" type="number" class="form-control" id="DeBonusArme"
                        name="DeBonusArme"
@@ -150,7 +150,7 @@
                 *ngIf="this.bonus"> - Bonus +{{this.bonus}}</span></p>
 
             <div *ngIf="this.materiau"><span [innerHTML]="this.materiau.nom"></span> : <span>{{materiau.effet}}</span></div>
-            <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier propriété magique</button>
+            <button (click)="this.modifierContenu()" [disabled]="this.valide">Modifier informations</button>
         </div>
 
 

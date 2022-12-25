@@ -231,16 +231,21 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
     }
 
     setNom() {
-        if (this.arme) {
-            this.nom = this.arme.nom;
+        this.nom = '';
+        if (!this.isSpecial) {
+            if (this.arme) {
+                this.nom = this.arme.nom;
+            }
+            if (this.taille) {
+                this.nom += ' ' + this.taille.taille;
+            }
+            if (this.materiau) {
+                this.nom += ' en ' + this.materiau.nom;
+            }
+            this.nom += ' ' + this.getNomsProprieteMagique();
+        } else {
+            this.nom = this.getNomsProprieteMagique();
         }
-        if (this.taille) {
-            this.nom += ' ' + this.taille.taille;
-        }
-        if (this.materiau) {
-            this.nom += ' en ' + this.materiau.nom;
-        }
-        this.nom += ' ' + this.getNomsProprieteMagique();
         // console.log(this.nom);
     }
 
@@ -296,6 +301,8 @@ export class ArmesComponent extends ObjetCombat implements OnInit {
             bonusDexteriteMax: null,
             malusArmureTests: null,
             risqueEchecSorts: null,
+            solidite: this.materiau ? this.materiau.solidite : null,
+            resistance: this.materiau ? this.materiau.resistance : null,
             afficherNom: this.afficherNom,
             afficherEffetMagique: this.afficherEffetMagique,
             afficherMalediction: this.afficherMalediction,

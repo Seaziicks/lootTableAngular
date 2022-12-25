@@ -24,6 +24,8 @@ declare interface ObjetCommunDB {
     bonusDexteriteMax: number;
     malusArmureTests: number;
     risqueEchecSorts: string;
+    solidite: number;
+    resistance: number;
     afficherNom: boolean;
     afficherEffetMagique: boolean;
     afficherMalediction: boolean;
@@ -160,8 +162,8 @@ declare interface Materiau {
     idMateriaux: number;
     nom: string;
     prix: string;
-    solidite: string;
-    pointsDeResistance: string;
+    solidite: number;
+    resistance: number;
     effet: string;
     source: string;
 }
